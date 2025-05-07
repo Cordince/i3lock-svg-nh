@@ -8,7 +8,7 @@ i3lock is a simple screen locker like slock. After starting it, you will
 see a white screen (you can configure the color/an image). You can return
 to your screen by entering your password.
 
-i3lock-svg builds on i3lock and adds in random animations as you type.  Nathan Harrington did not wriote this, just customized it. The original author appears to be https://github.com/ravinrabbid/i3lock-svg/  That appears to be an abandoned, broken project on Fedora and recreating it here is hopefully the easiest way to keep them separate instead of forking.
+i3lock-svg builds on i3lock and adds in random animations as you type.  Nathan Harrington did not write this, just customized it. The original author appears to be https://github.com/ravinrabbid/i3lock-svg/  That appears to be an abandoned, broken project on Fedora and recreating it here is hopefully the easiest way to keep them separate instead of forking.
 
 
 Requirements
