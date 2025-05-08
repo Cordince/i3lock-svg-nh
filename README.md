@@ -70,8 +70,13 @@ In each state a specific object id will be rendered. Used ids are:
 If the id "sequential_animation" is present, animation frames will be
 rendered in ascending order instead of random order.
 
-If the id "remove_background" is present "idle", "verfiy" and "fail"
+If the id "remove_background" is present "idle", "verify" and "fail"
 won't be rendered when drawing the animation frames.
+
+Before you enter a world of frustration, note the following limitations: 
+No Gradients in Strokes - they will disappear.
+Embed images and anim00 level only, no image linking or sub-svgs.
+
 
 For easier testing, uncomment lines in i3lock.c:
 ```
