@@ -37,15 +37,7 @@ pam-devel libev-devel libxkbfile-devel libxkbcommon-devel libxkbcommon-x11-devel
 
 Installation
 ----------------------
-When you first run i3lock it will always gives you the wrong password,
-either install i3lock from the package manager, or update your pam
-configuration as described here:
-https://bbs.archlinux.org/viewtopic.php?id=170300
-
-echo "auth include login" > /etc/pam.d/i3lock 
-
-You must do the above or you will always get the wrong password
-reported.
+sudo make install
 
 
 Running i3lock
