@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "professional",
+  "files": [
+    {
+      "bytes": 149579,
+      "path": "blueprint-vault.svg",
+      "sha256": "80cd5a0045c702dedfc8fc0925bfc873b3e7e02c41e0cb003ba395dfee060943"
+    },
+    {
+      "bytes": 368805,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "61c3d83652afd2cb65dc0d4f1ac43e807df8eeb79c49f84dc501511f81a1def9"
+    },
+    {
+      "bytes": 19274,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "a0491a1f640f062b0ebcd4bfdcbfb02f587b0732db2030778fcb0045039a797d"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "29487d66571db45848fb66deeee27f5773770fcce4d06a907e19d7858127bcfc"
+    },
+    {
+      "bytes": 1560,
+      "path": "README.md",
+      "sha256": "e10c9b27799bc39c85ea56ca269c5b67145ce4491cdc303ad784392b01d5b38e"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "blueprint-vault",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "blueprint-vault.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "BlueprintVault",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

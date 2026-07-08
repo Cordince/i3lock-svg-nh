@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "professional",
+  "files": [
+    {
+      "bytes": 151650,
+      "path": "brutalist-console.svg",
+      "sha256": "63a477c94d08e6ccbfb5ba5be06c1d72a71d79f1fcb96c7e06418fd0e7fe74de"
+    },
+    {
+      "bytes": 367666,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "3d48caf707a9da8c7a7c16d030bc69108b42a51212156d99f0bd2faee9351322"
+    },
+    {
+      "bytes": 19306,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "2df4e8bcc77119785ec3ac12f27cc37794e5788e494fd94c79b1c0952e1f5415"
+    },
+    {
+      "bytes": 1189,
+      "path": "lock.sh",
+      "sha256": "a58deb91b2d7046c29d9764893cfe1f7cfae6e1644109aaa74acc6dac042c29d"
+    },
+    {
+      "bytes": 1562,
+      "path": "README.md",
+      "sha256": "2baa15242366369a0c3255ab21d5d98154f57f2be5e2ae8b79978d135140cf39"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "brutalist-console",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "brutalist-console.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "BrutalistConsole",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

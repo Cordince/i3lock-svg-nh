@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 85704,
+      "path": "container-orbits.svg",
+      "sha256": "13b0c9bb7a923b54436c000cb675a935346af35c0745c38f55cd05674327b2fe"
+    },
+    {
+      "bytes": 427465,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "57c7d229dc49fc3afbb333f18ae02110f0e6706d3590565fedb9e7aa1000bc19"
+    },
+    {
+      "bytes": 21493,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "07d9c5c1fa4c5d8159e4f4690a4cd8658415bc4710cae965ed375880176fa344"
+    },
+    {
+      "bytes": 1188,
+      "path": "lock.sh",
+      "sha256": "955ddfd0d4c2226e80cf7f392054087d8569be7c84da6cf514cfae9fc8fdfb60"
+    },
+    {
+      "bytes": 1540,
+      "path": "README.md",
+      "sha256": "1c4a0adbcac6c25789a851ea721125a9774504fffb763342bd6c7cdca8e78964"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "container-orbits",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "container-orbits.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "ContainerOrbits",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "retro",
+  "files": [
+    {
+      "bytes": 161629,
+      "path": "vector-cabinet.svg",
+      "sha256": "c45974de6c46b30673dc799d9fd0d941fe63b130bd2c08e6dc70d789f47c093d"
+    },
+    {
+      "bytes": 405234,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "033bbbfe5d9b65365fc0d83fad78f901544a318dfb5fb36796a5ae9bc71b3ff2"
+    },
+    {
+      "bytes": 18723,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "947344f674f2710cb2ded3b2c9705267b411e29478709823a580381644868f8f"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "08419e9ffaddaeee1052692c39e2ceb77ef3fc7744fe7b2911f9b3f461e60872"
+    },
+    {
+      "bytes": 1542,
+      "path": "README.md",
+      "sha256": "94ab240025ffeed8564417ca55351a47e8cbf81aac60ea2117050c2dcbb7c54e"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "vector-cabinet",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "vector-cabinet.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "VectorCabinet",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

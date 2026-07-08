@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 133584,
+      "path": "quantum-latch.svg",
+      "sha256": "301f5e401dc9026eca5e3e1c149633a708b93afb2efb3ff8f7b2fc320b09a8db"
+    },
+    {
+      "bytes": 414902,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "f23a38f7a5de184044639451096be65da6adc420508ab2f07b1affcd3209a808"
+    },
+    {
+      "bytes": 19161,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "5ea80ca1618f7896e1a8bf125aef6e153603eff13c60c24c069f894bbda15d42"
+    },
+    {
+      "bytes": 1185,
+      "path": "lock.sh",
+      "sha256": "d79479d8ad71258192294d21757ff64104e546673d770ce74f968c3901ec62cd"
+    },
+    {
+      "bytes": 1542,
+      "path": "README.md",
+      "sha256": "db6edd45579815c4db98b4f7f4c7b00f8beb18121be22b077d7db2757b78bb68"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "quantum-latch",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "quantum-latch.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "QuantumLatch",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "professional",
+  "files": [
+    {
+      "bytes": 70739,
+      "path": "executive-glass.svg",
+      "sha256": "fdd996399e4b68fdfd27fb68cbda463febe91eb1963b886ded81e5d3644376e9"
+    },
+    {
+      "bytes": 342041,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "760262c4bd02bb5b478a28d62e34ec5ae398ef7dde9bcbf92098393dc86672a2"
+    },
+    {
+      "bytes": 14335,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "e2495c68e1c93958d6b871ae30a3cbee53228629053c062032b0b258a9a3e292"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "8a7e31aea58735df916810f7d5d376fe3eff97092450a6827c211b04be1ff809"
+    },
+    {
+      "bytes": 1547,
+      "path": "README.md",
+      "sha256": "3d20171c91959148f1a6b79bb71596f569c2ece32e0de9e2005874419becbec1"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "executive-glass",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "executive-glass.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "ExecutiveGlass",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

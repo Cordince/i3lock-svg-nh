@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "dark",
+  "files": [
+    {
+      "bytes": 142934,
+      "path": "eclipse-gate.svg",
+      "sha256": "2ace6d4eb2483065aa22150e1aad9626f8d524cd66f83f2e85ec5201db8f1c3a"
+    },
+    {
+      "bytes": 332752,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "711099fa3032773be4e96e994c4b4541501ed18dd5694f66fc6d4b719d51818a"
+    },
+    {
+      "bytes": 14901,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "bac4c88b8df3563a6982ba6b198263d18bfa0fdd22899bc643c48f8f507bae68"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "c6593866bcca485663235a2b93c21452c90ae8e13d4b5e414addb5627e0e4f3e"
+    },
+    {
+      "bytes": 1502,
+      "path": "README.md",
+      "sha256": "6573d149ff58b44d64686436922b6f02c772edafeb1d1ec6b387e013cc9209df"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "eclipse-gate",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "eclipse-gate.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "EclipseGate",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

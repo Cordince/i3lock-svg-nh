@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 240407,
+      "path": "crystal-lattice.svg",
+      "sha256": "830b00bd1d791361c0e76f6329ddf6b038134dc80bcd25d30fa9044d627f053c"
+    },
+    {
+      "bytes": 407106,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "ae551caa1d0647fd6c95e9e8d24e2610e7af2ec8ea389ba7d165ef9362eab39a"
+    },
+    {
+      "bytes": 19328,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "4748521d95c0ffc6558deec9823f3f4eff86c6913e248ceb4c17a710e6eb6a43"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "889223d49277409f4f5beb3ef77d315228d691ff63602e7ddaf6770ed805c26f"
+    },
+    {
+      "bytes": 1545,
+      "path": "README.md",
+      "sha256": "586a0311c19186d6a5ddb415b29b853e9dab64535023bd2bed4656e3fe7b4e8d"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "crystal-lattice",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "crystal-lattice.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "CrystalLattice",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,111 @@
+{
+  "_generated_file_header": "Generated generic i3lock-svg-nh theme. No external assets.",
+  "backgrounds": [
+    "background-1920x1080.png",
+    "background-2560x1440.png",
+    "background-3840x2160.png",
+    "tile-512.png"
+  ],
+  "files": [
+    {
+      "bytes": 501448,
+      "path": "compute-field.svg",
+      "sha256": "83ea2f5d6e416fcdc19f7ccbca967a4cbb7bf49302788e272a9ec89afaf6fe1b"
+    },
+    {
+      "bytes": 237036,
+      "path": "background-1920x1080.png",
+      "sha256": "aedf631315137194a838da325d8701715d19cfa12c7fd5202ea11cfbfd5aa498"
+    },
+    {
+      "bytes": 342969,
+      "path": "background-2560x1440.png",
+      "sha256": "fe2917f965f554ed7ecf46bfc71f27ec3cd6fa1d2a9231595c88defa2555f048"
+    },
+    {
+      "bytes": 610721,
+      "path": "background-3840x2160.png",
+      "sha256": "b9da5c4e8c163cab5100df34261c5ccfc267b31bd6a3e96579406abfcc69f632"
+    },
+    {
+      "bytes": 16638,
+      "path": "tile-512.png",
+      "sha256": "82c13311ac4afdd197461bdbfbca5072503a406855edbed141bd5955ce09ef27"
+    },
+    {
+      "bytes": 1050,
+      "path": "lock.sh",
+      "sha256": "545ce2ceae92f3a0bc935b72d2072498118fad37916d19161ca2c754660bb794"
+    },
+    {
+      "bytes": 1360,
+      "path": "README.md",
+      "sha256": "d40b0c588abdd64bd8deb4c3d48d52f5193b9494d5a6a11dd17b1082c6122b1e"
+    }
+  ],
+  "indicator_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "indicator_svg": "compute-field.svg",
+  "renderer_contract": {
+    "future_success_frames": [
+      "success00",
+      "success01",
+      "success02",
+      "success03",
+      "success04",
+      "success05",
+      "success06",
+      "success07",
+      "success08",
+      "success09",
+      "success10",
+      "success11",
+      "success12",
+      "success13",
+      "success14",
+      "success15"
+    ],
+    "static_ids": [
+      "bg",
+      "idle",
+      "verify",
+      "fail",
+      "backspace",
+      "fg",
+      "remove_background",
+      "sequential_animation",
+      "success"
+    ],
+    "typing_frames": [
+      "anim00",
+      "anim01",
+      "anim02",
+      "anim03",
+      "anim04",
+      "anim05",
+      "anim06",
+      "anim07",
+      "anim08",
+      "anim09",
+      "anim10",
+      "anim11",
+      "anim12",
+      "anim13",
+      "anim14",
+      "anim15",
+      "anim16",
+      "anim17",
+      "anim18",
+      "anim19",
+      "anim20",
+      "anim21",
+      "anim22",
+      "anim23"
+    ]
+  },
+  "slug": "compute-field",
+  "theme": "ComputeField"
+}

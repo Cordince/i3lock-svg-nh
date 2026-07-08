@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "cultural",
+  "files": [
+    {
+      "bytes": 152014,
+      "path": "space-opera-console.svg",
+      "sha256": "62ab96f9dff519cac61aecff2dc84a766b8ae8a607e94c82cdac1b5deaccbbe7"
+    },
+    {
+      "bytes": 466967,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "1efe3585cd7161bdb26fcf8fc7fe57d7dad5add63ba49469d2d8b2f0517074d2"
+    },
+    {
+      "bytes": 25268,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "21c98bb877d76fb98359af3403b0e1dffe92eeaeba3d9f706a9763cbf8a55040"
+    },
+    {
+      "bytes": 1191,
+      "path": "lock.sh",
+      "sha256": "ed2ca47897ccc0269c09f2601c41780f5f242046f9812fe79584188936e2b539"
+    },
+    {
+      "bytes": 1562,
+      "path": "README.md",
+      "sha256": "2c807382f60e42e5e09d7e818d154e4779f475d29a52b91c7be966bac273a3c4"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "space-opera-console",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "space-opera-console.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "SpaceOperaConsole",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

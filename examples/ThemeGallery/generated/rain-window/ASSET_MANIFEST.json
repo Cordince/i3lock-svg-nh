@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 156694,
+      "path": "rain-window.svg",
+      "sha256": "39816391867d287ef45d7dde5850585dcc500fa7c3b46fdaef27b641776f61fc"
+    },
+    {
+      "bytes": 410417,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "9c5490b6e4ccc0a2a49711400747bb87f0d53b5c7819b3d422c58874238ef823"
+    },
+    {
+      "bytes": 18775,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "7866c7a4440478862d053977df1abef1952c0d7e05311a0201033ff098005e5b"
+    },
+    {
+      "bytes": 1183,
+      "path": "lock.sh",
+      "sha256": "9dcd97a7651a534ab14b268e321745b76d5cf59e70c845070b2b6cf0965a3b51"
+    },
+    {
+      "bytes": 1541,
+      "path": "README.md",
+      "sha256": "743128093bbadf7223f4b0cb31d4a11baafca7a06ee93e9dbd71b0fa814f385e"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "rain-window",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "rain-window.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "RainWindow",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

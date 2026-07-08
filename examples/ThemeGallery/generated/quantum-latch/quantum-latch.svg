@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme gallery asset. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs>
+  <radialGradient id="quantum_latch_base_field" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#2ed8f2" stop-opacity="0.18"/>
+    <stop offset="0.52" stop-color="#386df5" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070b10" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="quantum_latch_base_core" cx="50%" cy="48%" r="55%">
+    <stop offset="0" stop-color="#48e5b4" stop-opacity="0.24"/>
+    <stop offset="0.62" stop-color="#2ed8f2" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070b10" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="quantum_latch_base_facet" x1="210" y1="210" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#2ed8f2" stop-opacity="0.20"/>
+    <stop offset="0.55" stop-color="#386df5" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#48e5b4" stop-opacity="0.18"/>
+  </linearGradient>
+  <filter id="quantum_latch_base_glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="quantum_latch_base_soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g id="bg"><circle cx="320.000" cy="320.000" r="226.000" fill="url(#quantum_latch_base_field)" opacity="1.000"/>
+<circle cx="320.000" cy="320.000" r="206.000" fill="none" stroke="#386df5" stroke-width="0.900" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#2ed8f2" stroke-width="0.600" opacity="0.080"/>
+<line x1="200.000" y1="208.000" x2="200.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="200.000" x2="432.000" y2="200.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="234.000" y1="208.000" x2="234.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="234.000" x2="432.000" y2="234.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="268.000" y1="208.000" x2="268.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="268.000" x2="432.000" y2="268.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="302.000" y1="208.000" x2="302.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="302.000" x2="432.000" y2="302.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="336.000" y1="208.000" x2="336.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="336.000" x2="432.000" y2="336.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="370.000" y1="208.000" x2="370.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="370.000" x2="432.000" y2="370.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="404.000" y1="208.000" x2="404.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="404.000" x2="432.000" y2="404.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="438.000" y1="208.000" x2="438.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="438.000" x2="432.000" y2="438.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/></g>
+<g id="idle"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.213"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.820" opacity="0.355" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.760" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.422"/>
+<path d="M 343.326 262.555 A 62.000 62.000 0 0 1 370.725 355.650" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<path d="M 375.959 264.236 A 79.000 79.000 0 0 1 361.747 387.069" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<path d="M 409.072 284.193 A 96.000 96.000 0 0 1 334.852 414.844" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<path d="M 432.979 322.169 A 113.000 113.000 0 0 1 292.472 429.596" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<path d="M 438.668 373.083 A 130.000 130.000 0 0 1 241.583 423.686" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<path d="M 420.066 427.684 A 147.000 147.000 0 0 1 192.566 393.278" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<path d="M 375.822 474.207 A 164.000 164.000 0 0 1 157.188 339.702" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.420" opacity="0.244"/>
+<circle cx="417.085" cy="400.315" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="334.493" cy="473.317" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="239.685" cy="417.085" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="166.683" cy="334.493" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="222.915" cy="239.685" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="305.507" cy="166.683" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="400.315" cy="222.915" r="2.600" fill="#48e5b4" opacity="0.315"/>
+<circle cx="473.317" cy="305.507" r="2.600" fill="#48e5b4" opacity="0.315"/></g>
+<g id="anim00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.186"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.642" opacity="0.310" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.372"/>
+<path d="M 333.199 259.421 A 62.000 62.000 0 0 1 379.485 337.479" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<path d="M 365.641 255.518 A 79.000 79.000 0 0 1 381.068 370.117" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<path d="M 401.671 269.543 A 96.000 96.000 0 0 1 364.514 405.056" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<path d="M 431.697 302.891 A 113.000 113.000 0 0 1 329.112 432.632" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<path d="M 445.977 352.092 A 130.000 130.000 0 0 1 279.019 443.372" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<path d="M 436.948 409.063 A 147.000 147.000 0 0 1 222.835 430.309" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<path d="M 401.276 462.444 A 164.000 164.000 0 0 1 172.130 390.927" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.242" opacity="0.208"/>
+<circle cx="444.922" cy="336.446" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="413.749" cy="442.176" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="303.554" cy="444.922" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="197.824" cy="413.749" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="195.078" cy="303.554" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="226.251" cy="197.824" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="336.446" cy="195.078" r="2.600" fill="#48e5b4" opacity="0.254"/>
+<circle cx="442.176" cy="226.251" r="2.600" fill="#48e5b4" opacity="0.254"/></g>
+<g id="anim01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.193"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.683" opacity="0.321" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.383"/>
+<path d="M 335.611 259.997 A 62.000 62.000 0 0 1 377.978 341.966" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<path d="M 368.183 257.395 A 79.000 79.000 0 0 1 377.067 374.630" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<path d="M 403.623 272.849 A 96.000 96.000 0 0 1 357.895 408.204" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<path d="M 432.292 307.371 A 113.000 113.000 0 0 1 320.493 432.999" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<path d="M 444.593 357.103 A 130.000 130.000 0 0 1 269.728 439.886" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<path d="M 433.293 413.668 A 147.000 147.000 0 0 1 214.704 422.575" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<path d="M 395.515 465.580 A 164.000 164.000 0 0 1 167.151 379.440" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.283" opacity="0.217"/>
+<circle cx="441.707" cy="352.611" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="397.000" cy="453.368" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="287.389" cy="441.707" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="186.632" cy="397.000" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="198.293" cy="287.389" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="243.000" cy="186.632" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="352.611" cy="198.293" r="2.600" fill="#48e5b4" opacity="0.268"/>
+<circle cx="453.368" cy="243.000" r="2.600" fill="#48e5b4" opacity="0.268"/></g>
+<g id="anim02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.199"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.725" opacity="0.331" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.395"/>
+<path d="M 337.998 260.670 A 62.000 62.000 0 0 1 376.134 346.325" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<path d="M 370.648 259.372 A 79.000 79.000 0 0 1 372.733 378.824" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<path d="M 405.441 276.230 A 96.000 96.000 0 0 1 351.056 410.838" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<path d="M 432.707 311.872 A 113.000 113.000 0 0 1 311.872 432.707" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<path d="M 443.009 362.056 A 130.000 130.000 0 0 1 260.729 435.702" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<path d="M 429.457 418.124 A 147.000 147.000 0 0 1 207.186 414.244" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<path d="M 389.633 468.483 A 164.000 164.000 0 0 1 163.062 367.607" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.325" opacity="0.225"/>
+<circle cx="436.409" cy="368.218" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="378.933" cy="462.277" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="271.782" cy="436.409" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="177.723" cy="378.933" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="203.591" cy="271.782" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="261.067" cy="177.723" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="368.218" cy="203.591" r="2.600" fill="#48e5b4" opacity="0.282"/>
+<circle cx="462.277" cy="261.067" r="2.600" fill="#48e5b4" opacity="0.282"/></g>
+<g id="anim03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.205"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.767" opacity="0.342" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.407"/>
+<path d="M 340.356 261.437 A 62.000 62.000 0 0 1 373.962 350.530" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<path d="M 373.032 261.446 A 79.000 79.000 0 0 1 368.092 382.675" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<path d="M 407.123 279.682 A 96.000 96.000 0 0 1 344.036 412.942" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<path d="M 432.942 316.385 A 113.000 113.000 0 0 1 303.298 431.759" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<path d="M 441.229 366.941 A 130.000 130.000 0 0 1 252.075 430.843" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<path d="M 425.445 422.422 A 147.000 147.000 0 0 1 200.325 405.363" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<path d="M 383.641 471.149 A 164.000 164.000 0 0 1 159.887 355.496" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.367" opacity="0.233"/>
+<circle cx="429.119" cy="383.000" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="359.858" cy="468.753" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="257.000" cy="429.119" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="171.247" cy="359.858" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="210.881" cy="257.000" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="280.142" cy="171.247" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="383.000" cy="210.881" r="2.600" fill="#48e5b4" opacity="0.297"/>
+<circle cx="468.753" cy="280.142" r="2.600" fill="#48e5b4" opacity="0.297"/></g>
+<g id="anim04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.211"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.808" opacity="0.352" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.418"/>
+<path d="M 342.681 262.298 A 62.000 62.000 0 0 1 371.476 354.558" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<path d="M 375.331 263.613 A 79.000 79.000 0 0 1 363.171 386.161" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<path d="M 408.666 283.198 A 96.000 96.000 0 0 1 336.876 414.505" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<path d="M 432.996 320.904 A 113.000 113.000 0 0 1 294.821 430.159" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<path d="M 439.255 371.751 A 130.000 130.000 0 0 1 243.818 425.339" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<path d="M 421.266 426.556 A 147.000 147.000 0 0 1 194.162 395.985" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<path d="M 377.546 473.572 A 164.000 164.000 0 0 1 157.646 343.179" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.408" opacity="0.242"/>
+<circle cx="419.963" cy="396.704" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="340.101" cy="472.683" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="243.296" cy="419.963" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="167.317" cy="340.101" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="220.037" cy="243.296" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="299.899" cy="167.317" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="396.704" cy="220.037" r="2.600" fill="#48e5b4" opacity="0.311"/>
+<circle cx="472.683" cy="299.899" r="2.600" fill="#48e5b4" opacity="0.311"/></g>
+<g id="anim05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.217"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.850" opacity="0.362" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.430"/>
+<path d="M 344.970 263.251 A 62.000 62.000 0 0 1 368.690 358.384" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<path d="M 377.541 265.871 A 79.000 79.000 0 0 1 357.998 389.261" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<path d="M 410.066 286.773 A 96.000 96.000 0 0 1 329.618 415.517" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<path d="M 432.870 325.422 A 113.000 113.000 0 0 1 286.491 427.917" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<path d="M 437.091 376.478 A 130.000 130.000 0 0 1 236.004 419.220" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<path d="M 416.924 430.520 A 147.000 147.000 0 0 1 188.732 386.164" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<path d="M 371.359 475.751 A 164.000 164.000 0 0 1 156.351 330.726" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.450" opacity="0.250"/>
+<circle cx="409.095" cy="409.095" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="320.000" cy="474.000" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="230.905" cy="409.095" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="166.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="230.905" cy="230.905" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="320.000" cy="166.000" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="409.095" cy="230.905" r="2.600" fill="#48e5b4" opacity="0.325"/>
+<circle cx="474.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.325"/></g>
+<g id="anim06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.224"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.892" opacity="0.373" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.442"/>
+<path d="M 347.220 264.295 A 62.000 62.000 0 0 1 365.620 361.986" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<path d="M 379.660 268.215 A 79.000 79.000 0 0 1 352.604 391.958" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<path d="M 411.323 290.401 A 96.000 96.000 0 0 1 322.304 415.972" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<path d="M 432.563 329.930 A 113.000 113.000 0 0 1 278.356 425.047" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<path d="M 434.739 381.115 A 130.000 130.000 0 0 1 228.680 412.524" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<path d="M 412.427 434.308 A 147.000 147.000 0 0 1 184.067 375.958" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<path d="M 365.090 477.680 A 164.000 164.000 0 0 1 156.010 318.211" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.492" opacity="0.258"/>
+<circle cx="396.704" cy="419.963" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="299.899" cy="472.683" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="220.037" cy="396.704" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="167.317" cy="299.899" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="243.296" cy="220.037" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="340.101" cy="167.317" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="419.963" cy="243.296" r="2.600" fill="#48e5b4" opacity="0.339"/>
+<circle cx="472.683" cy="340.101" r="2.600" fill="#48e5b4" opacity="0.339"/></g>
+<g id="anim07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.230"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.933" opacity="0.383" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.453"/>
+<path d="M 349.425 265.428 A 62.000 62.000 0 0 1 362.284 365.344" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<path d="M 381.683 270.642 A 79.000 79.000 0 0 1 347.020 394.236" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<path d="M 412.434 294.076 A 96.000 96.000 0 0 1 314.976 415.868" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<path d="M 432.076 334.424 A 113.000 113.000 0 0 1 270.464 421.564" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<path d="M 432.203 385.654 A 130.000 130.000 0 0 1 221.888 405.288" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<path d="M 407.782 437.912 A 147.000 147.000 0 0 1 180.195 365.425" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<path d="M 358.749 479.357 A 164.000 164.000 0 0 1 156.624 305.706" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.533" opacity="0.267"/>
+<circle cx="383.000" cy="429.119" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="280.142" cy="468.753" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="210.881" cy="383.000" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="171.247" cy="280.142" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="257.000" cy="210.881" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="359.858" cy="171.247" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="429.119" cy="257.000" r="2.600" fill="#48e5b4" opacity="0.353"/>
+<circle cx="468.753" cy="359.858" r="2.600" fill="#48e5b4" opacity="0.353"/></g>
+<g id="anim08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.236"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.975" opacity="0.394" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.465"/>
+<path d="M 351.584 266.648 A 62.000 62.000 0 0 1 358.702 368.437" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<path d="M 383.607 273.148 A 79.000 79.000 0 0 1 341.278 396.081" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<path d="M 413.396 297.793 A 96.000 96.000 0 0 1 307.677 415.206" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<path d="M 431.409 338.893 A 113.000 113.000 0 0 1 262.861 417.489" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<path d="M 429.488 390.088 A 130.000 130.000 0 0 1 215.668 397.555" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<path d="M 402.997 441.328 A 147.000 147.000 0 0 1 177.137 354.628" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<path d="M 352.346 480.779 A 164.000 164.000 0 0 1 158.190 293.285" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.575" opacity="0.275"/>
+<circle cx="368.218" cy="436.409" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="261.067" cy="462.277" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="203.591" cy="368.218" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="177.723" cy="261.067" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="271.782" cy="203.591" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="378.933" cy="177.723" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="436.409" cy="271.782" r="2.600" fill="#48e5b4" opacity="0.367"/>
+<circle cx="462.277" cy="378.933" r="2.600" fill="#48e5b4" opacity="0.367"/></g>
+<g id="anim09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.242"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.017" opacity="0.404" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.477"/>
+<path d="M 353.692 267.953 A 62.000 62.000 0 0 1 354.894 371.249" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<path d="M 385.430 275.729 A 79.000 79.000 0 0 1 335.412 397.482" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<path d="M 414.209 301.545 A 96.000 96.000 0 0 1 300.450 413.988" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<path d="M 430.565 343.333 A 113.000 113.000 0 0 1 255.590 412.846" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<path d="M 426.598 394.410 A 130.000 130.000 0 0 1 210.055 389.370" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<path d="M 398.079 444.550 A 147.000 147.000 0 0 1 174.912 343.629" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<path d="M 345.891 481.943 A 164.000 164.000 0 0 1 160.700 281.020" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.617" opacity="0.283"/>
+<circle cx="352.611" cy="441.707" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="243.000" cy="453.368" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="198.293" cy="352.611" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="186.632" cy="243.000" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="287.389" cy="198.293" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="397.000" cy="186.632" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="441.707" cy="287.389" r="2.600" fill="#48e5b4" opacity="0.382"/>
+<circle cx="453.368" cy="397.000" r="2.600" fill="#48e5b4" opacity="0.382"/></g>
+<g id="anim10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.249"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.058" opacity="0.415" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.488"/>
+<path d="M 355.746 269.342 A 62.000 62.000 0 0 1 350.883 373.761" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<path d="M 387.148 278.380 A 79.000 79.000 0 0 1 329.457 398.432" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<path d="M 414.872 305.327 A 96.000 96.000 0 0 1 293.338 412.223" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<path d="M 429.543 347.736 A 113.000 113.000 0 0 1 248.695 407.662" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<path d="M 423.537 398.613 A 130.000 130.000 0 0 1 205.084 380.781" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<path d="M 393.037 447.572 A 147.000 147.000 0 0 1 173.532 332.492" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<path d="M 339.395 482.849 A 164.000 164.000 0 0 1 164.138 268.981" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.658" opacity="0.292"/>
+<circle cx="336.446" cy="444.922" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="226.251" cy="442.176" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="195.078" cy="336.446" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="197.824" cy="226.251" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="303.554" cy="195.078" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="413.749" cy="197.824" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="444.922" cy="303.554" r="2.600" fill="#48e5b4" opacity="0.396"/>
+<circle cx="442.176" cy="413.749" r="2.600" fill="#48e5b4" opacity="0.396"/></g>
+<g id="anim11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.255"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.100" opacity="0.425" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.500"/>
+<path d="M 357.743 270.812 A 62.000 62.000 0 0 1 346.692 375.960" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<path d="M 388.758 281.099 A 79.000 79.000 0 0 1 323.446 398.925" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<path d="M 415.383 309.132 A 96.000 96.000 0 0 1 286.380 409.921" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<path d="M 428.347 352.094 A 113.000 113.000 0 0 1 242.216 401.967" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<path d="M 420.311 402.690 A 130.000 130.000 0 0 1 200.782 371.837" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<path d="M 387.877 450.391 A 147.000 147.000 0 0 1 173.006 321.283" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<path d="M 332.867 483.494 A 164.000 164.000 0 0 1 168.484 257.240" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.700" opacity="0.300"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.410"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.410"/></g>
+<g id="anim12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.261"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.142" opacity="0.435" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.512"/>
+<path d="M 359.680 272.361 A 62.000 62.000 0 0 1 342.345 377.833" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<path d="M 390.259 283.879 A 79.000 79.000 0 0 1 317.415 398.958" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<path d="M 415.741 312.955 A 96.000 96.000 0 0 1 279.619 407.094" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<path d="M 426.977 356.400 A 113.000 113.000 0 0 1 236.190 395.795" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<path d="M 416.924 406.635 A 130.000 130.000 0 0 1 197.175 362.592" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<path d="M 382.609 453.000 A 147.000 147.000 0 0 1 173.336 310.066" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<path d="M 326.319 483.878 A 164.000 164.000 0 0 1 173.713 245.865" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.742" opacity="0.308"/>
+<circle cx="303.554" cy="444.922" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="197.824" cy="413.749" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="195.078" cy="303.554" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="226.251" cy="197.824" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="336.446" cy="195.078" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="442.176" cy="226.251" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="444.922" cy="336.446" r="2.600" fill="#48e5b4" opacity="0.424"/>
+<circle cx="413.749" cy="442.176" r="2.600" fill="#48e5b4" opacity="0.424"/></g>
+<g id="anim13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.268"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.183" opacity="0.446" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.523"/>
+<path d="M 361.553 273.985 A 62.000 62.000 0 0 1 337.868 379.369" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<path d="M 391.647 286.717 A 79.000 79.000 0 0 1 311.400 398.530" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<path d="M 415.946 316.789 A 96.000 96.000 0 0 1 273.092 403.760" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<path d="M 425.436 360.649 A 113.000 113.000 0 0 1 230.652 389.181" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<path d="M 413.383 410.442 A 130.000 130.000 0 0 1 194.284 353.098" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<path d="M 377.241 455.398 A 147.000 147.000 0 0 1 174.521 298.907" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<path d="M 319.761 484.000 A 164.000 164.000 0 0 1 179.794 234.921" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.783" opacity="0.317"/>
+<circle cx="287.389" cy="441.707" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="186.632" cy="397.000" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="198.293" cy="287.389" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="243.000" cy="186.632" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="352.611" cy="198.293" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="453.368" cy="243.000" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="441.707" cy="352.611" r="2.600" fill="#48e5b4" opacity="0.438"/>
+<circle cx="397.000" cy="453.368" r="2.600" fill="#48e5b4" opacity="0.438"/></g>
+<g id="anim14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.274"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.225" opacity="0.456" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.535"/>
+<path d="M 363.360 275.684 A 62.000 62.000 0 0 1 333.287 380.559" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<path d="M 392.920 289.609 A 79.000 79.000 0 0 1 305.434 397.646" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<path d="M 415.998 320.628 A 96.000 96.000 0 0 1 266.840 399.937" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<path d="M 423.726 364.832 A 113.000 113.000 0 0 1 225.635 382.163" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<path d="M 409.692 414.103 A 130.000 130.000 0 0 1 192.125 343.412" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<path d="M 371.781 457.578 A 147.000 147.000 0 0 1 176.554 287.870" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<path d="M 313.204 483.859 A 164.000 164.000 0 0 1 186.693 224.474" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.825" opacity="0.325"/>
+<circle cx="271.782" cy="436.409" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="177.723" cy="378.933" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="203.591" cy="271.782" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="261.067" cy="177.723" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="368.218" cy="203.591" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="462.277" cy="261.067" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="436.409" cy="368.218" r="2.600" fill="#48e5b4" opacity="0.453"/>
+<circle cx="378.933" cy="462.277" r="2.600" fill="#48e5b4" opacity="0.453"/></g>
+<g id="anim15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.280"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.267" opacity="0.467" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.547"/>
+<path d="M 365.097 277.453 A 62.000 62.000 0 0 1 328.629 381.397" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<path d="M 394.077 292.549 A 79.000 79.000 0 0 1 299.553 396.308" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<path d="M 415.896 324.466 A 96.000 96.000 0 0 1 260.896 395.649" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<path d="M 421.850 368.944 A 113.000 113.000 0 0 1 221.168 374.783" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<path d="M 405.857 417.614 A 130.000 130.000 0 0 1 190.712 333.589" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<path d="M 366.238 459.539 A 147.000 147.000 0 0 1 179.423 277.021" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<path d="M 306.657 483.456 A 164.000 164.000 0 0 1 194.369 214.583" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.867" opacity="0.333"/>
+<circle cx="257.000" cy="429.119" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="171.247" cy="359.858" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="210.881" cy="257.000" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="280.142" cy="171.247" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="383.000" cy="210.881" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="468.753" cy="280.142" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="429.119" cy="383.000" r="2.600" fill="#48e5b4" opacity="0.467"/>
+<circle cx="359.858" cy="468.753" r="2.600" fill="#48e5b4" opacity="0.467"/></g>
+<g id="anim16"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.286"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.308" opacity="0.477" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.558"/>
+<path d="M 366.762 279.290 A 62.000 62.000 0 0 1 323.920 381.876" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<path d="M 395.116 295.533 A 79.000 79.000 0 0 1 293.792 394.526" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<path d="M 415.641 328.297 A 96.000 96.000 0 0 1 255.298 390.920" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<path d="M 419.812 372.978 A 113.000 113.000 0 0 1 217.277 367.085" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<path d="M 401.885 420.969 A 130.000 130.000 0 0 1 190.052 323.687" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<path d="M 360.621 461.276 A 147.000 147.000 0 0 1 183.111 266.423" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<path d="M 300.132 482.792 A 164.000 164.000 0 0 1 202.776 205.306" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.908" opacity="0.342"/>
+<circle cx="243.296" cy="419.963" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="167.317" cy="340.101" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="220.037" cy="243.296" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="299.899" cy="167.317" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="396.704" cy="220.037" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="472.683" cy="299.899" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="419.963" cy="396.704" r="2.600" fill="#48e5b4" opacity="0.481"/>
+<circle cx="340.101" cy="472.683" r="2.600" fill="#48e5b4" opacity="0.481"/></g>
+<g id="anim17"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.292"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.350" opacity="0.487" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.570"/>
+<path d="M 368.353 281.193 A 62.000 62.000 0 0 1 319.188 381.995" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<path d="M 396.034 298.556 A 79.000 79.000 0 0 1 288.183 392.310" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<path d="M 415.232 332.115 A 96.000 96.000 0 0 1 250.076 385.778" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<path d="M 417.613 376.926 A 113.000 113.000 0 0 1 213.984 359.111" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<path d="M 397.782 424.163 A 130.000 130.000 0 0 1 190.150 313.763" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<path d="M 354.940 462.787 A 147.000 147.000 0 0 1 187.597 256.137" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<path d="M 293.638 481.867 A 164.000 164.000 0 0 1 211.867 196.698" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.950" opacity="0.350"/>
+<circle cx="230.905" cy="409.095" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="166.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="230.905" cy="230.905" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="320.000" cy="166.000" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="409.095" cy="230.905" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="474.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="409.095" cy="409.095" r="2.600" fill="#48e5b4" opacity="0.495"/>
+<circle cx="320.000" cy="474.000" r="2.600" fill="#48e5b4" opacity="0.495"/></g>
+<g id="anim18"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.299"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.392" opacity="0.498" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.582"/>
+<path d="M 369.866 283.157 A 62.000 62.000 0 0 1 314.462 381.752" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<path d="M 396.831 301.614 A 79.000 79.000 0 0 1 282.760 389.672" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<path d="M 414.672 335.913 A 96.000 96.000 0 0 1 245.262 380.252" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<path d="M 415.259 380.784 A 113.000 113.000 0 0 1 211.310 350.910" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<path d="M 393.555 427.190 A 130.000 130.000 0 0 1 191.004 303.876" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<path d="M 349.202 464.070 A 147.000 147.000 0 0 1 192.855 246.222" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<path d="M 287.187 480.684 A 164.000 164.000 0 0 1 221.588 188.809" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.992" opacity="0.358"/>
+<circle cx="220.037" cy="396.704" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="167.317" cy="299.899" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="243.296" cy="220.037" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="340.101" cy="167.317" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="419.963" cy="243.296" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="472.683" cy="340.101" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="396.704" cy="419.963" r="2.600" fill="#48e5b4" opacity="0.509"/>
+<circle cx="299.899" cy="472.683" r="2.600" fill="#48e5b4" opacity="0.509"/></g>
+<g id="anim19"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.305"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.433" opacity="0.508" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.593"/>
+<path d="M 371.299 285.181 A 62.000 62.000 0 0 1 309.767 381.150" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<path d="M 397.504 304.701 A 79.000 79.000 0 0 1 277.553 386.628" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<path d="M 413.960 339.686 A 96.000 96.000 0 0 1 240.884 374.375" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<path d="M 412.752 384.545 A 113.000 113.000 0 0 1 209.269 342.529" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<path d="M 389.210 430.045 A 130.000 130.000 0 0 1 192.610 294.082" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<path d="M 343.418 465.123 A 147.000 147.000 0 0 1 198.853 236.738" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<path d="M 280.788 479.243 A 164.000 164.000 0 0 1 231.883 181.684" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.033" opacity="0.367"/>
+<circle cx="210.881" cy="383.000" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="171.247" cy="280.142" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="257.000" cy="210.881" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="359.858" cy="171.247" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="429.119" cy="257.000" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="468.753" cy="359.858" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="383.000" cy="429.119" r="2.600" fill="#48e5b4" opacity="0.523"/>
+<circle cx="280.142" cy="468.753" r="2.600" fill="#48e5b4" opacity="0.523"/></g>
+<g id="anim20"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.311"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.475" opacity="0.519" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.605"/>
+<path d="M 372.651 287.260 A 62.000 62.000 0 0 1 305.132 380.191" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<path d="M 398.054 307.812 A 79.000 79.000 0 0 1 272.594 383.196" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<path d="M 413.098 343.428 A 96.000 96.000 0 0 1 236.966 368.181" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<path d="M 410.097 388.202 A 113.000 113.000 0 0 1 207.873 334.016" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<path d="M 384.754 432.725 A 130.000 130.000 0 0 1 194.958 284.440" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<path d="M 337.596 465.943 A 147.000 147.000 0 0 1 205.558 227.739" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<path d="M 274.452 477.548 A 164.000 164.000 0 0 1 242.691 175.365" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.075" opacity="0.375"/>
+<circle cx="203.591" cy="368.218" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="177.723" cy="261.067" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="271.782" cy="203.591" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="378.933" cy="177.723" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="436.409" cy="271.782" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="462.277" cy="378.933" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="368.218" cy="436.409" r="2.600" fill="#48e5b4" opacity="0.538"/>
+<circle cx="261.067" cy="462.277" r="2.600" fill="#48e5b4" opacity="0.538"/></g>
+<g id="anim21"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.318"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.517" opacity="0.529" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.333" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.617"/>
+<path d="M 373.918 289.391 A 62.000 62.000 0 0 1 300.584 378.881" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<path d="M 398.479 310.943 A 79.000 79.000 0 0 1 267.912 379.395" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<path d="M 412.086 347.132 A 96.000 96.000 0 0 1 233.533 361.707" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<path d="M 407.298 391.750 A 113.000 113.000 0 0 1 207.130 325.422" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<path d="M 380.195 435.224 A 130.000 130.000 0 0 1 198.035 275.005" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<path d="M 331.747 466.530 A 147.000 147.000 0 0 1 212.929 219.278" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<path d="M 268.188 475.601 A 164.000 164.000 0 0 1 253.950 169.889" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.117" opacity="0.383"/>
+<circle cx="198.293" cy="352.611" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="186.632" cy="243.000" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="287.389" cy="198.293" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="397.000" cy="186.632" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="441.707" cy="287.389" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="453.368" cy="397.000" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="352.611" cy="441.707" r="2.600" fill="#48e5b4" opacity="0.552"/>
+<circle cx="243.000" cy="453.368" r="2.600" fill="#48e5b4" opacity="0.552"/></g>
+<g id="anim22"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.324"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.558" opacity="0.540" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.667" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.628"/>
+<path d="M 375.098 291.572 A 62.000 62.000 0 0 1 296.149 377.229" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<path d="M 398.778 314.088 A 79.000 79.000 0 0 1 263.533 375.249" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<path d="M 410.928 350.792 A 96.000 96.000 0 0 1 230.603 354.989" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<path d="M 404.359 395.183 A 113.000 113.000 0 0 1 207.045 316.796" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<path d="M 375.539 437.539 A 130.000 130.000 0 0 1 201.823 265.832" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<path d="M 325.878 466.882 A 147.000 147.000 0 0 1 220.925 211.404" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<path d="M 262.008 473.404 A 164.000 164.000 0 0 1 265.593 165.288" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.158" opacity="0.392"/>
+<circle cx="195.078" cy="336.446" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="197.824" cy="226.251" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="303.554" cy="195.078" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="413.749" cy="197.824" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="444.922" cy="303.554" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="442.176" cy="413.749" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="336.446" cy="444.922" r="2.600" fill="#48e5b4" opacity="0.566"/>
+<circle cx="226.251" cy="442.176" r="2.600" fill="#48e5b4" opacity="0.566"/></g>
+<g id="anim23"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/></g>
+<g id="verify"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.297"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.380" opacity="0.495" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.240" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.578"/>
+<path d="M 369.450 282.601 A 62.000 62.000 0 0 1 315.783 381.856" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<path d="M 396.620 300.754 A 79.000 79.000 0 0 1 284.258 390.452" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<path d="M 414.844 334.852 A 96.000 96.000 0 0 1 246.568 381.836" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<path d="M 415.934 379.714 A 113.000 113.000 0 0 1 211.995 353.227" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<path d="M 394.751 426.359 A 130.000 130.000 0 0 1 190.689 306.637" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<path d="M 350.814 463.734 A 147.000 147.000 0 0 1 191.307 248.957" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<path d="M 288.988 481.041 A 164.000 164.000 0 0 1 218.806 190.943" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.980" opacity="0.356"/>
+<circle cx="222.915" cy="400.315" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="166.683" cy="305.507" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="239.685" cy="222.915" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="334.493" cy="166.683" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="417.085" cy="239.685" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="473.317" cy="334.493" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="400.315" cy="417.085" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<circle cx="305.507" cy="473.317" r="2.600" fill="#48e5b4" opacity="0.505"/>
+<rect x="196.000" y="304.000" width="248.000" height="34.000" fill="#2ed8f2" opacity="0.055"/>
+<line x1="196.000" y1="321.000" x2="444.000" y2="321.000" stroke="#48e5b4" stroke-width="2.000" stroke-linecap="round" opacity="0.420" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 175.984 199.156 A 188.000 188.000 0 1 1 175.984 440.844" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.100" opacity="0.360"/></g>
+<g id="fail"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.267"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#ff7a4d" stroke-width="2.180" opacity="0.445" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.640" fill="url(#quantum_latch_base_core)" stroke="#ff7a4d" stroke-width="1.000" opacity="0.522"/>
+<path d="M 361.406 273.853 A 62.000 62.000 0 0 1 338.231 379.259" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<path d="M 391.540 286.488 A 79.000 79.000 0 0 1 311.879 398.582" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<path d="M 415.936 316.482 A 96.000 96.000 0 0 1 273.605 404.045" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<path d="M 425.565 360.311 A 113.000 113.000 0 0 1 231.076 389.725" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<path d="M 413.672 410.142 A 130.000 130.000 0 0 1 194.489 353.866" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<path d="M 377.674 455.214 A 147.000 147.000 0 0 1 174.395 299.796" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<path d="M 320.286 484.000 A 164.000 164.000 0 0 1 179.277 235.779" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.780" opacity="0.316"/>
+<circle cx="288.665" cy="442.041" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="187.446" cy="398.392" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="197.959" cy="288.665" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="241.608" cy="187.446" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="351.335" cy="197.959" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="452.554" cy="241.608" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="442.041" cy="351.335" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<circle cx="398.392" cy="452.554" r="2.600" fill="#48e5b4" opacity="0.437"/>
+<line x1="342.795" y1="273.263" x2="420.968" y2="190.766" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#quantum_latch_base_glow)"/>
+<line x1="367.128" y1="298.024" x2="479.797" y2="283.108" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#quantum_latch_base_glow)"/>
+<line x1="369.986" y1="334.333" x2="464.803" y2="396.993" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#quantum_latch_base_glow)"/>
+<line x1="352.014" y1="360.977" x2="391.893" y2="467.402" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#quantum_latch_base_glow)"/>
+<line x1="295.587" y1="365.913" x2="214.583" y2="445.631" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#quantum_latch_base_glow)"/>
+<line x1="272.872" y1="298.024" x2="189.024" y2="221.302" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 146.973 270.385 A 180.000 180.000 0 0 1 481.783 241.093" fill="none" stroke="#ff7a4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.800" opacity="0.480"/></g>
+<g id="backspace"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.243"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.020" opacity="0.405" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.360" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.478"/>
+<path d="M 353.858 268.061 A 62.000 62.000 0 0 1 354.580 371.461" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<path d="M 385.571 275.938 A 79.000 79.000 0 0 1 334.939 397.575" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<path d="M 414.268 301.847 A 96.000 96.000 0 0 1 299.877 413.867" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<path d="M 430.490 343.687 A 113.000 113.000 0 0 1 255.024 412.451" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<path d="M 426.359 394.751 A 130.000 130.000 0 0 1 209.634 388.697" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<path d="M 397.680 444.799 A 147.000 147.000 0 0 1 174.770 342.742" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<path d="M 345.373 482.025 A 164.000 164.000 0 0 1 160.941 280.047" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.620" opacity="0.284"/>
+<circle cx="351.335" cy="442.041" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="241.608" cy="452.554" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="197.959" cy="351.335" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="187.446" cy="241.608" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="288.665" cy="197.959" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="398.392" cy="187.446" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="442.041" cy="288.665" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<circle cx="452.554" cy="398.392" r="2.600" fill="#48e5b4" opacity="0.383"/>
+<path d="M 208.924 443.362 A 166.000 166.000 0 1 1 454.297 222.428" fill="none" stroke="#ff7a4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.000" opacity="0.520" filter="url(#quantum_latch_base_glow)"/>
+<line x1="432.000" y1="320.000" x2="214.000" y2="320.000" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.420"/>
+<polygon points="212.000,320.000 234.000,307.000 234.000,333.000" fill="#ff7a4d" opacity="0.540"/></g>
+<g id="fg"><path d="M 496.366 191.863 A 218.000 218.000 0 0 1 522.126 401.664" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.150"/>
+<path d="M 127.517 422.345 A 218.000 218.000 0 0 1 143.634 191.863" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="236.000" fill="none" stroke="#ffffff" stroke-width="0.600" opacity="0.035"/></g>
+<g opacity="0" id="remove_background"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g opacity="0" id="sequential_animation"><rect x="1" y="0" width="1" height="1" fill="#000000"/></g>
+<g id="success"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="184.000" fill="none" stroke="#48e5b4" stroke-width="2.600" opacity="0.440" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 327.746 172.203 A 148.000 148.000 0 0 1 350.771 175.234" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 365.735 179.244 A 148.000 148.000 0 0 1 387.191 188.131" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 400.607 195.877 A 148.000 148.000 0 0 1 419.031 210.015" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 429.985 220.969 A 148.000 148.000 0 0 1 444.123 239.393" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 451.869 252.809 A 148.000 148.000 0 0 1 460.756 274.265" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 464.766 289.229 A 148.000 148.000 0 0 1 467.797 312.254" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 467.797 327.746 A 148.000 148.000 0 0 1 464.766 350.771" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 460.756 365.735 A 148.000 148.000 0 0 1 451.869 387.191" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 444.123 400.607 A 148.000 148.000 0 0 1 429.985 419.031" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 419.031 429.985 A 148.000 148.000 0 0 1 400.607 444.123" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 387.191 451.869 A 148.000 148.000 0 0 1 365.735 460.756" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 350.771 464.766 A 148.000 148.000 0 0 1 327.746 467.797" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 312.254 467.797 A 148.000 148.000 0 0 1 289.229 464.766" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 274.265 460.756 A 148.000 148.000 0 0 1 252.809 451.869" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 239.393 444.123 A 148.000 148.000 0 0 1 220.969 429.985" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 210.015 419.031 A 148.000 148.000 0 0 1 195.877 400.607" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 188.131 387.191 A 148.000 148.000 0 0 1 179.244 365.735" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 175.234 350.771 A 148.000 148.000 0 0 1 172.203 327.746" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 172.203 312.254 A 148.000 148.000 0 0 1 175.234 289.229" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 179.244 274.265 A 148.000 148.000 0 0 1 188.131 252.809" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 195.877 239.393 A 148.000 148.000 0 0 1 210.015 220.969" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 220.969 210.015 A 148.000 148.000 0 0 1 239.393 195.877" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 252.809 188.131 A 148.000 148.000 0 0 1 274.265 179.244" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/>
+<path d="M 289.229 175.234 A 148.000 148.000 0 0 1 312.254 172.203" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#quantum_latch_base_glow)"/></g>
+<g id="success00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="100.625" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.470" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="392.095" cy="324.725" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="367.638" cy="374.320" r="2.800" fill="#2ed8f2" opacity="0.529"/>
+<circle cx="315.275" cy="392.095" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="265.680" cy="367.638" r="2.800" fill="#2ed8f2" opacity="0.529"/>
+<circle cx="247.905" cy="315.275" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="272.362" cy="265.680" r="2.800" fill="#2ed8f2" opacity="0.529"/>
+<circle cx="324.725" cy="247.905" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="374.320" cy="272.362" r="2.800" fill="#2ed8f2" opacity="0.529"/></g>
+<g id="success01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="109.250" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.461" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="399.811" cy="330.507" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="369.005" cy="383.865" r="2.800" fill="#2ed8f2" opacity="0.517"/>
+<circle cx="309.493" cy="399.811" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="256.135" cy="369.005" r="2.800" fill="#2ed8f2" opacity="0.517"/>
+<circle cx="240.189" cy="309.493" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="270.995" cy="256.135" r="2.800" fill="#2ed8f2" opacity="0.517"/>
+<circle cx="330.507" cy="240.189" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="383.865" cy="270.995" r="2.800" fill="#2ed8f2" opacity="0.517"/></g>
+<g id="success02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="117.875" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.451" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="407.045" cy="337.314" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="369.307" cy="393.793" r="2.800" fill="#2ed8f2" opacity="0.506"/>
+<circle cx="302.686" cy="407.045" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="246.207" cy="369.307" r="2.800" fill="#2ed8f2" opacity="0.506"/>
+<circle cx="232.955" cy="302.686" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="270.693" cy="246.207" r="2.800" fill="#2ed8f2" opacity="0.506"/>
+<circle cx="337.314" cy="232.955" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="393.793" cy="270.693" r="2.800" fill="#2ed8f2" opacity="0.506"/></g>
+<g id="success03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="126.500" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.442" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="413.695" cy="345.105" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="368.500" cy="404.004" r="2.800" fill="#2ed8f2" opacity="0.495"/>
+<circle cx="294.895" cy="413.695" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="235.996" cy="368.500" r="2.800" fill="#2ed8f2" opacity="0.495"/>
+<circle cx="226.305" cy="294.895" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="271.500" cy="235.996" r="2.800" fill="#2ed8f2" opacity="0.495"/>
+<circle cx="345.105" cy="226.305" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="404.004" cy="271.500" r="2.800" fill="#2ed8f2" opacity="0.495"/></g>
+<g id="success04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="135.125" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.432" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="419.664" cy="353.832" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="366.551" cy="414.396" r="2.800" fill="#2ed8f2" opacity="0.484"/>
+<circle cx="286.168" cy="419.664" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="225.604" cy="366.551" r="2.800" fill="#2ed8f2" opacity="0.484"/>
+<circle cx="220.336" cy="286.168" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="273.449" cy="225.604" r="2.800" fill="#2ed8f2" opacity="0.484"/>
+<circle cx="353.832" cy="220.336" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="414.396" cy="273.449" r="2.800" fill="#2ed8f2" opacity="0.484"/></g>
+<g id="success05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="143.750" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.422" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="424.860" cy="363.435" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="363.435" cy="424.860" r="2.800" fill="#2ed8f2" opacity="0.472"/>
+<circle cx="276.565" cy="424.860" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="215.140" cy="363.435" r="2.800" fill="#2ed8f2" opacity="0.472"/>
+<circle cx="215.140" cy="276.565" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="276.565" cy="215.140" r="2.800" fill="#2ed8f2" opacity="0.472"/>
+<circle cx="363.435" cy="215.140" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="424.860" cy="276.565" r="2.800" fill="#2ed8f2" opacity="0.472"/></g>
+<g id="success06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="152.375" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.413" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="429.194" cy="373.849" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="359.135" cy="435.289" r="2.800" fill="#2ed8f2" opacity="0.461"/>
+<circle cx="266.151" cy="429.194" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="204.711" cy="359.135" r="2.800" fill="#2ed8f2" opacity="0.461"/>
+<circle cx="210.806" cy="266.151" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="280.865" cy="204.711" r="2.800" fill="#2ed8f2" opacity="0.461"/>
+<circle cx="373.849" cy="210.806" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="435.289" cy="280.865" r="2.800" fill="#2ed8f2" opacity="0.461"/></g>
+<g id="success07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="161.000" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.403" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="432.583" cy="385.000" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="353.646" cy="445.570" r="2.800" fill="#2ed8f2" opacity="0.450"/>
+<circle cx="255.000" cy="432.583" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="194.430" cy="353.646" r="2.800" fill="#2ed8f2" opacity="0.450"/>
+<circle cx="207.417" cy="255.000" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="286.354" cy="194.430" r="2.800" fill="#2ed8f2" opacity="0.450"/>
+<circle cx="385.000" cy="207.417" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="445.570" cy="286.354" r="2.800" fill="#2ed8f2" opacity="0.450"/></g>
+<g id="success08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="169.625" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.394" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="434.951" cy="396.808" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="346.971" cy="455.594" r="2.800" fill="#2ed8f2" opacity="0.439"/>
+<circle cx="243.192" cy="434.951" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="184.406" cy="346.971" r="2.800" fill="#2ed8f2" opacity="0.439"/>
+<circle cx="205.049" cy="243.192" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="293.029" cy="184.406" r="2.800" fill="#2ed8f2" opacity="0.439"/>
+<circle cx="396.808" cy="205.049" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="455.594" cy="293.029" r="2.800" fill="#2ed8f2" opacity="0.439"/></g>
+<g id="success09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="178.250" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.384" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="436.226" cy="409.184" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="339.122" cy="465.247" r="2.800" fill="#2ed8f2" opacity="0.427"/>
+<circle cx="230.816" cy="436.226" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="174.753" cy="339.122" r="2.800" fill="#2ed8f2" opacity="0.427"/>
+<circle cx="203.774" cy="230.816" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="300.878" cy="174.753" r="2.800" fill="#2ed8f2" opacity="0.427"/>
+<circle cx="409.184" cy="203.774" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="465.247" cy="300.878" r="2.800" fill="#2ed8f2" opacity="0.427"/></g>
+<g id="success10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="186.875" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.374" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="436.347" cy="422.034" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="330.121" cy="474.419" r="2.800" fill="#2ed8f2" opacity="0.416"/>
+<circle cx="217.966" cy="436.347" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="165.581" cy="330.121" r="2.800" fill="#2ed8f2" opacity="0.416"/>
+<circle cx="203.653" cy="217.966" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="309.879" cy="165.581" r="2.800" fill="#2ed8f2" opacity="0.416"/>
+<circle cx="422.034" cy="203.653" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="474.419" cy="309.879" r="2.800" fill="#2ed8f2" opacity="0.416"/></g>
+<g id="success11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="195.500" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.365" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="435.258" cy="435.258" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="320.000" cy="483.000" r="2.800" fill="#2ed8f2" opacity="0.405"/>
+<circle cx="204.742" cy="435.258" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="157.000" cy="320.000" r="2.800" fill="#2ed8f2" opacity="0.405"/>
+<circle cx="204.742" cy="204.742" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="320.000" cy="157.000" r="2.800" fill="#2ed8f2" opacity="0.405"/>
+<circle cx="435.258" cy="204.742" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="483.000" cy="320.000" r="2.800" fill="#2ed8f2" opacity="0.405"/></g>
+<g id="success12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="204.125" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.355" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="432.913" cy="448.753" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="308.800" cy="490.883" r="2.800" fill="#2ed8f2" opacity="0.394"/>
+<circle cx="191.247" cy="432.913" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="149.117" cy="308.800" r="2.800" fill="#2ed8f2" opacity="0.394"/>
+<circle cx="207.087" cy="191.247" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="331.200" cy="149.117" r="2.800" fill="#2ed8f2" opacity="0.394"/>
+<circle cx="448.753" cy="207.087" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="490.883" cy="331.200" r="2.800" fill="#2ed8f2" opacity="0.394"/></g>
+<g id="success13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="212.750" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.346" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="429.273" cy="462.407" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="296.571" cy="497.964" r="2.800" fill="#2ed8f2" opacity="0.383"/>
+<circle cx="177.593" cy="429.273" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="142.036" cy="296.571" r="2.800" fill="#2ed8f2" opacity="0.383"/>
+<circle cx="210.727" cy="177.593" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="343.429" cy="142.036" r="2.800" fill="#2ed8f2" opacity="0.383"/>
+<circle cx="462.407" cy="210.727" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="497.964" cy="343.429" r="2.800" fill="#2ed8f2" opacity="0.383"/></g>
+<g id="success14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="221.375" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.336" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="424.308" cy="476.108" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="283.372" cy="504.142" r="2.800" fill="#2ed8f2" opacity="0.371"/>
+<circle cx="163.892" cy="424.308" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="135.858" cy="283.372" r="2.800" fill="#2ed8f2" opacity="0.371"/>
+<circle cx="215.692" cy="163.892" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="356.628" cy="135.858" r="2.800" fill="#2ed8f2" opacity="0.371"/>
+<circle cx="476.108" cy="215.692" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="504.142" cy="356.628" r="2.800" fill="#2ed8f2" opacity="0.371"/></g>
+<g id="success15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#quantum_latch_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#quantum_latch_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#quantum_latch_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<path d="M 376.191 293.798 A 62.000 62.000 0 0 1 291.853 375.242" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 398.952 317.243 A 79.000 79.000 0 0 1 259.482 370.780" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 409.624 354.403 A 96.000 96.000 0 0 1 228.195 348.068" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 401.285 398.496 A 113.000 113.000 0 0 1 207.619 308.188" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 370.795 439.666 A 130.000 130.000 0 0 1 206.299 256.975" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 320.000 467.000 A 147.000 147.000 0 0 1 229.498 204.162" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<path d="M 255.920 470.963 A 164.000 164.000 0 0 1 277.554 161.588" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.400"/>
+<circle cx="194.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="194.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="211.106" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="446.000" cy="320.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="428.894" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="446.000" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="211.106" cy="428.894" r="2.600" fill="#48e5b4" opacity="0.580"/>
+<circle cx="320.000" cy="320.000" r="230.000" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.326" filter="url(#quantum_latch_base_glow)"/>
+<circle cx="418.000" cy="489.741" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="269.271" cy="509.321" r="2.800" fill="#2ed8f2" opacity="0.360"/>
+<circle cx="150.259" cy="418.000" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="130.679" cy="269.271" r="2.800" fill="#2ed8f2" opacity="0.360"/>
+<circle cx="222.000" cy="150.259" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="370.729" cy="130.679" r="2.800" fill="#2ed8f2" opacity="0.360"/>
+<circle cx="489.741" cy="222.000" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="509.321" cy="370.729" r="2.800" fill="#2ed8f2" opacity="0.360"/></g>
+</svg>

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 285874,
+      "path": "mechanical-koi.svg",
+      "sha256": "ef5f16d5fbb6e2efac3e80b7a2a5ded21fc584270b55bffc8676966cfa96a7b4"
+    },
+    {
+      "bytes": 401678,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "d1c870330be9b4bb265315b4a1775b8f93149ff58e94523d4581ca26d13ca749"
+    },
+    {
+      "bytes": 17138,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "2690d3527052663924897cba4d0728dea2e1f53d17787957298029a1715f5342"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "60d6bc7aeb6244cd015b4037f192bec61feed2cc61540a9fa559867ab1479e2c"
+    },
+    {
+      "bytes": 1535,
+      "path": "README.md",
+      "sha256": "0135bbe578c30544b3c674376bf7a87c9b9236dffed7f41ba4fd08352c3d36a3"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "mechanical-koi",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "mechanical-koi.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MechanicalKoi",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

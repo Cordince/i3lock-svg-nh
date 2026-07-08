@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 193197,
+      "path": "molecule-lock.svg",
+      "sha256": "0a866dabe02db0e5848635fd78c1dee6298b07086692d5b1e5ab451ba4039c46"
+    },
+    {
+      "bytes": 366775,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "a2159e341e7b5da0796815dae34655d2f13b3009a4d737b940144cafcb1cae8c"
+    },
+    {
+      "bytes": 15710,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "9aa6a27b2c15be3f1bcecbc6b43ba8d2a15cea45fea9db8df30a607a8f42f12b"
+    },
+    {
+      "bytes": 1185,
+      "path": "lock.sh",
+      "sha256": "f7eb95efdba77b5df5b931e12fd621a3f4bed9ece96a65bd9f1f5cb7adf298e5"
+    },
+    {
+      "bytes": 1542,
+      "path": "README.md",
+      "sha256": "d28c0908b9b4a2e1370416647238c2c98273d2a0b6ceac83051bc8a47ff1aa31"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "molecule-lock",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "molecule-lock.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MoleculeLock",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

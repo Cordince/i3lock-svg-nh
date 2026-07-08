@@ -1,0 +1,111 @@
+{
+  "_generated_file_header": "Generated generic i3lock-svg-nh theme. No external assets.",
+  "backgrounds": [
+    "background-1920x1080.png",
+    "background-2560x1440.png",
+    "background-3840x2160.png",
+    "tile-512.png"
+  ],
+  "files": [
+    {
+      "bytes": 165061,
+      "path": "signal-trace.svg",
+      "sha256": "333d2438371d822bdc2f667aa41b7314ee747c79347eb0dbbe55da168f975e15"
+    },
+    {
+      "bytes": 276020,
+      "path": "background-1920x1080.png",
+      "sha256": "4866331a7258ede484dd1cf7853e18a6212c963e2cf4216bd5a140ee215e0c73"
+    },
+    {
+      "bytes": 399773,
+      "path": "background-2560x1440.png",
+      "sha256": "14848f4d401caff8360da22cad71366aba49b6d81815b070596df4ad5a78af72"
+    },
+    {
+      "bytes": 711513,
+      "path": "background-3840x2160.png",
+      "sha256": "22711f040169a9d4331c397f80a434c241f3f37defc07c168f037c730db24603"
+    },
+    {
+      "bytes": 19606,
+      "path": "tile-512.png",
+      "sha256": "813aafd554383840298b6792d109a80716b8ed1c190f3bcf3bf0a0effd76969f"
+    },
+    {
+      "bytes": 1049,
+      "path": "lock.sh",
+      "sha256": "31977478d9379c4615c0abbc26cb06c3804816d7324cb9b5a8e3730f3ff15924"
+    },
+    {
+      "bytes": 1370,
+      "path": "README.md",
+      "sha256": "85a9fbad1c3a76a2a3a3a9bd51108bf5a40ea1d6558c6f04b4f2412e1756e3d7"
+    }
+  ],
+  "indicator_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "indicator_svg": "signal-trace.svg",
+  "renderer_contract": {
+    "future_success_frames": [
+      "success00",
+      "success01",
+      "success02",
+      "success03",
+      "success04",
+      "success05",
+      "success06",
+      "success07",
+      "success08",
+      "success09",
+      "success10",
+      "success11",
+      "success12",
+      "success13",
+      "success14",
+      "success15"
+    ],
+    "static_ids": [
+      "bg",
+      "idle",
+      "verify",
+      "fail",
+      "backspace",
+      "fg",
+      "remove_background",
+      "sequential_animation",
+      "success"
+    ],
+    "typing_frames": [
+      "anim00",
+      "anim01",
+      "anim02",
+      "anim03",
+      "anim04",
+      "anim05",
+      "anim06",
+      "anim07",
+      "anim08",
+      "anim09",
+      "anim10",
+      "anim11",
+      "anim12",
+      "anim13",
+      "anim14",
+      "anim15",
+      "anim16",
+      "anim17",
+      "anim18",
+      "anim19",
+      "anim20",
+      "anim21",
+      "anim22",
+      "anim23"
+    ]
+  },
+  "slug": "signal-trace",
+  "theme": "SignalTrace"
+}

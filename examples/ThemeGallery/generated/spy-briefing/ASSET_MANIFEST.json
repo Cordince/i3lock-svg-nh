@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "cultural",
+  "files": [
+    {
+      "bytes": 100859,
+      "path": "spy-briefing.svg",
+      "sha256": "6930a328a32fb080fc453f3a82187a4ba25ece46fe7918207cb4a33000d0fade"
+    },
+    {
+      "bytes": 462455,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "f173a0de55a1750269158db652b9bee44de83a18ea16319515fc429b10238761"
+    },
+    {
+      "bytes": 25696,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "ef2c34e4791b5ee5bbce1985c70c63dd6cb469fbe9858bbfb36bbb83d7c21f82"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "d5d65e524dd89bc66a70ab1c30888064b6f47dde309c73caf9ac5a65ba42fc84"
+    },
+    {
+      "bytes": 1533,
+      "path": "README.md",
+      "sha256": "9dbb2db279a3133974bd59eb7e20bdce44e3ae766fbac18c56332f6fb0ae5873"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "spy-briefing",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "spy-briefing.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "SpyBriefing",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

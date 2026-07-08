@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs>
+  <radialGradient id="st_field" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#a462ff" stop-opacity="0.16"/>
+    <stop offset="0.5" stop-color="#477fff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="st_pulse" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g id="bg"><circle cx="320.000" cy="320.000" r="238.000" fill="url(#st_field)" opacity="1.000"/>
+<line x1="206.000" y1="206.000" x2="434.000" y2="206.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="206.000" x2="206.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="244.000" x2="434.000" y2="244.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="244.000" y1="206.000" x2="244.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="282.000" x2="434.000" y2="282.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="282.000" y1="206.000" x2="282.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="320.000" x2="434.000" y2="320.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="320.000" y1="206.000" x2="320.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="358.000" x2="434.000" y2="358.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="358.000" y1="206.000" x2="358.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="396.000" x2="434.000" y2="396.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="396.000" y1="206.000" x2="396.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="206.000" y1="434.000" x2="434.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<line x1="434.000" y1="206.000" x2="434.000" y2="434.000" stroke="#477fff" stroke-width="0.700" stroke-linecap="round" opacity="0.055"/>
+<circle cx="320.000" cy="320.000" r="184.000" fill="none" stroke="#477fff" stroke-width="0.900" opacity="0.120"/></g>
+<g id="idle"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.100" stroke-linecap="round" opacity="0.160"/>
+<circle cx="320.000" cy="320.000" r="7.000" fill="#37eed7" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.500" fill="#a462ff" opacity="0.480" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.220"/>
+<circle cx="320.000" cy="172.000" r="3.200" fill="#477fff" opacity="0.320"/>
+<circle cx="406.992" cy="200.265" r="3.200" fill="#477fff" opacity="0.320"/>
+<circle cx="460.756" cy="274.265" r="3.200" fill="#477fff" opacity="0.320"/>
+<circle cx="460.756" cy="365.735" r="3.200" fill="#477fff" opacity="0.320"/>
+<circle cx="406.992" cy="439.735" r="3.200" fill="#477fff" opacity="0.320"/>
+<circle cx="320.000" cy="468.000" r="2.000" fill="#477fff" opacity="0.070"/>
+<circle cx="233.008" cy="439.735" r="2.000" fill="#477fff" opacity="0.070"/>
+<circle cx="179.244" cy="365.735" r="2.000" fill="#477fff" opacity="0.070"/>
+<circle cx="179.244" cy="274.265" r="2.000" fill="#477fff" opacity="0.070"/>
+<circle cx="233.008" cy="200.265" r="2.000" fill="#477fff" opacity="0.070"/></g>
+<g id="anim00"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.142" stroke-linecap="round" opacity="0.169"/>
+<circle cx="320.000" cy="320.000" r="7.075" fill="#37eed7" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.575" fill="#a462ff" opacity="0.491" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.229"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.275" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.200" fill="#37eed7" opacity="0.432" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.600" fill="#a462ff" opacity="0.432" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="4.000" fill="#37eed7" opacity="0.432" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.400" fill="#a462ff" opacity="0.432" filter="url(#st_pulse)"/>
+<path d="M 255.333 207.994 A 129.333 129.333 0 0 1 441.534 364.235" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.209"/></g>
+<g id="anim01"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.183" stroke-linecap="round" opacity="0.178"/>
+<circle cx="320.000" cy="320.000" r="7.150" fill="#37eed7" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.650" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.238"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.290" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.200" fill="#37eed7" opacity="0.443" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.600" fill="#a462ff" opacity="0.443" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.000" fill="#37eed7" opacity="0.443" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.400" fill="#a462ff" opacity="0.443" filter="url(#st_pulse)"/>
+<path d="M 268.944 199.721 A 130.667 130.667 0 0 1 436.425 379.321" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.218"/></g>
+<g id="anim02"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.225" stroke-linecap="round" opacity="0.188"/>
+<circle cx="320.000" cy="320.000" r="7.225" fill="#37eed7" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.725" fill="#a462ff" opacity="0.514" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.247"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.305" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.305" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="3.200" fill="#37eed7" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.600" fill="#a462ff" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.000" fill="#37eed7" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.400" fill="#a462ff" opacity="0.455" filter="url(#st_pulse)"/>
+<path d="M 283.616 193.113 A 132.000 132.000 0 0 1 429.433 393.813" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.228"/></g>
+<g id="anim03"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.267" stroke-linecap="round" opacity="0.197"/>
+<circle cx="320.000" cy="320.000" r="7.300" fill="#37eed7" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.800" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.257"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.320" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.320" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.200" fill="#37eed7" opacity="0.467" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.600" fill="#a462ff" opacity="0.467" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.000" fill="#37eed7" opacity="0.467" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="4.400" fill="#a462ff" opacity="0.467" filter="url(#st_pulse)"/>
+<path d="M 299.142 188.308 A 133.333 133.333 0 0 1 420.628 407.475" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.237"/></g>
+<g id="anim04"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.308" stroke-linecap="round" opacity="0.206"/>
+<circle cx="320.000" cy="320.000" r="7.375" fill="#37eed7" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.875" fill="#a462ff" opacity="0.536" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.266"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.335" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.335" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.200" fill="#37eed7" opacity="0.478" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.600" fill="#a462ff" opacity="0.478" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.000" fill="#37eed7" opacity="0.478" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.400" fill="#a462ff" opacity="0.478" filter="url(#st_pulse)"/>
+<path d="M 315.300 185.415 A 134.667 134.667 0 0 1 410.110 420.077" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.246"/></g>
+<g id="anim05"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.350" stroke-linecap="round" opacity="0.215"/>
+<circle cx="320.000" cy="320.000" r="7.450" fill="#37eed7" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.950" fill="#a462ff" opacity="0.547" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.275"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.350" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.350" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.350" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.200" fill="#37eed7" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="3.600" fill="#a462ff" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.000" fill="#37eed7" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.400" fill="#a462ff" opacity="0.490" filter="url(#st_pulse)"/>
+<path d="M 331.853 184.518 A 136.000 136.000 0 0 1 398.006 431.405" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.255"/></g>
+<g id="anim06"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.392" stroke-linecap="round" opacity="0.224"/>
+<circle cx="320.000" cy="320.000" r="7.525" fill="#37eed7" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.025" fill="#a462ff" opacity="0.559" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.284"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.365" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.365" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.365" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.200" fill="#37eed7" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.600" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.000" fill="#37eed7" opacity="0.502" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.400" fill="#a462ff" opacity="0.502" filter="url(#st_pulse)"/>
+<path d="M 348.553 185.668 A 137.333 137.333 0 0 1 384.474 441.258" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.264"/></g>
+<g id="anim07"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#477fff" stroke-width="1.433" stroke-linecap="round" opacity="0.233"/>
+<circle cx="320.000" cy="320.000" r="7.600" fill="#37eed7" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.100" fill="#a462ff" opacity="0.570" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.293"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.380" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.380" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.380" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.200" fill="#37eed7" opacity="0.513" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.600" fill="#a462ff" opacity="0.513" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.000" fill="#37eed7" opacity="0.513" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.400" fill="#a462ff" opacity="0.513" filter="url(#st_pulse)"/>
+<path d="M 365.145 188.888 A 138.667 138.667 0 0 1 369.694 449.456" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.273"/></g>
+<g id="anim08"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.475" stroke-linecap="round" opacity="0.242"/>
+<circle cx="320.000" cy="320.000" r="7.675" fill="#37eed7" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.175" fill="#a462ff" opacity="0.581" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.302"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.395" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.395" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.395" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.395" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.200" fill="#37eed7" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.600" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="4.000" fill="#37eed7" opacity="0.525" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.400" fill="#a462ff" opacity="0.525" filter="url(#st_pulse)"/>
+<path d="M 381.372 194.169 A 140.000 140.000 0 0 1 353.869 455.841" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.283"/></g>
+<g id="anim09"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.517" stroke-linecap="round" opacity="0.252"/>
+<circle cx="320.000" cy="320.000" r="7.750" fill="#37eed7" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.250" fill="#a462ff" opacity="0.593" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.312"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.410" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.410" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.410" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.410" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.200" fill="#37eed7" opacity="0.537" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.600" fill="#a462ff" opacity="0.537" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.000" fill="#37eed7" opacity="0.537" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.400" fill="#a462ff" opacity="0.537" filter="url(#st_pulse)"/>
+<path d="M 396.976 201.468 A 141.333 141.333 0 0 1 337.224 460.280" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.292"/></g>
+<g id="anim10"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.558" stroke-linecap="round" opacity="0.261"/>
+<circle cx="320.000" cy="320.000" r="7.825" fill="#37eed7" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.325" fill="#a462ff" opacity="0.604" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.321"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.425" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.425" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.425" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.425" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="3.200" fill="#37eed7" opacity="0.548" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.600" fill="#a462ff" opacity="0.548" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.000" fill="#37eed7" opacity="0.548" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.400" fill="#a462ff" opacity="0.548" filter="url(#st_pulse)"/>
+<path d="M 411.704 210.711 A 142.667 142.667 0 0 1 320.000 462.667" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.301"/></g>
+<g id="anim11"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.600" stroke-linecap="round" opacity="0.270"/>
+<circle cx="320.000" cy="320.000" r="7.900" fill="#37eed7" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.400" fill="#a462ff" opacity="0.615" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.330"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.440" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.440" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.440" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.440" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.440" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.200" fill="#37eed7" opacity="0.560" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.600" fill="#a462ff" opacity="0.560" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.000" fill="#37eed7" opacity="0.560" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="4.400" fill="#a462ff" opacity="0.560" filter="url(#st_pulse)"/>
+<path d="M 425.315 221.792 A 144.000 144.000 0 0 1 302.451 462.927" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.310"/></g>
+<g id="anim12"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.642" stroke-linecap="round" opacity="0.279"/>
+<circle cx="320.000" cy="320.000" r="7.975" fill="#37eed7" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.475" fill="#a462ff" opacity="0.626" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.339"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.455" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.455" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.455" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.455" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.200" fill="#37eed7" opacity="0.572" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.600" fill="#a462ff" opacity="0.572" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.000" fill="#37eed7" opacity="0.572" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.400" fill="#a462ff" opacity="0.572" filter="url(#st_pulse)"/>
+<path d="M 437.577 234.575 A 145.333 145.333 0 0 1 284.841 461.016" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.319"/></g>
+<g id="anim13"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.683" stroke-linecap="round" opacity="0.288"/>
+<circle cx="320.000" cy="320.000" r="8.050" fill="#37eed7" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.550" fill="#a462ff" opacity="0.637" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.348"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.470" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.470" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.470" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.470" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.470" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.200" fill="#37eed7" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="3.600" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.000" fill="#37eed7" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.400" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<path d="M 448.278 248.895 A 146.667 146.667 0 0 1 267.439 456.925" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.328"/></g>
+<g id="anim14"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.725" stroke-linecap="round" opacity="0.297"/>
+<circle cx="320.000" cy="320.000" r="8.125" fill="#37eed7" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.625" fill="#a462ff" opacity="0.649" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.358"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.485" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.485" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.485" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.485" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.485" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.485" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.200" fill="#37eed7" opacity="0.595" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.600" fill="#a462ff" opacity="0.595" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.000" fill="#37eed7" opacity="0.595" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.400" fill="#a462ff" opacity="0.595" filter="url(#st_pulse)"/>
+<path d="M 457.223 264.558 A 148.000 148.000 0 0 1 250.518 450.676" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.338"/></g>
+<g id="anim15"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.767" stroke-linecap="round" opacity="0.307"/>
+<circle cx="320.000" cy="320.000" r="8.200" fill="#37eed7" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.700" fill="#a462ff" opacity="0.660" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.367"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.500" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.500" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.500" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.500" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.500" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.500" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.200" fill="#37eed7" opacity="0.607" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.600" fill="#a462ff" opacity="0.607" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.000" fill="#37eed7" opacity="0.607" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.400" fill="#a462ff" opacity="0.607" filter="url(#st_pulse)"/>
+<path d="M 464.245 281.350 A 149.333 149.333 0 0 1 234.346 442.327" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.347"/></g>
+<g id="anim16"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.808" stroke-linecap="round" opacity="0.316"/>
+<circle cx="320.000" cy="320.000" r="8.275" fill="#37eed7" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.775" fill="#a462ff" opacity="0.671" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.376"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.515" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.515" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.515" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.515" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.515" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.515" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.200" fill="#37eed7" opacity="0.618" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.600" fill="#a462ff" opacity="0.618" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="4.000" fill="#37eed7" opacity="0.618" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.400" fill="#a462ff" opacity="0.618" filter="url(#st_pulse)"/>
+<path d="M 469.200 299.031 A 150.667 150.667 0 0 1 219.184 431.967" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.356"/></g>
+<g id="anim17"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.850" stroke-linecap="round" opacity="0.325"/>
+<circle cx="320.000" cy="320.000" r="8.350" fill="#37eed7" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.850" fill="#a462ff" opacity="0.682" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.385"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.530" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.200" fill="#37eed7" opacity="0.630" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.600" fill="#a462ff" opacity="0.630" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.000" fill="#37eed7" opacity="0.630" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.400" fill="#a462ff" opacity="0.630" filter="url(#st_pulse)"/>
+<path d="M 471.977 317.347 A 152.000 152.000 0 0 1 205.284 419.721" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.365"/></g>
+<g id="anim18"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.892" stroke-linecap="round" opacity="0.334"/>
+<circle cx="320.000" cy="320.000" r="8.425" fill="#37eed7" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.925" fill="#a462ff" opacity="0.694" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.394"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.545" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="3.200" fill="#37eed7" opacity="0.642" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.600" fill="#a462ff" opacity="0.642" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.000" fill="#37eed7" opacity="0.642" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.400" fill="#a462ff" opacity="0.642" filter="url(#st_pulse)"/>
+<path d="M 472.493 336.028 A 153.333 153.333 0 0 1 192.881 405.743" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.374"/></g>
+<g id="anim19"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.933" stroke-linecap="round" opacity="0.343"/>
+<circle cx="320.000" cy="320.000" r="8.500" fill="#37eed7" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.000" fill="#a462ff" opacity="0.705" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.403"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.560" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.200" fill="#37eed7" opacity="0.653" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="3.600" fill="#a462ff" opacity="0.653" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.000" fill="#37eed7" opacity="0.653" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="4.400" fill="#a462ff" opacity="0.653" filter="url(#st_pulse)"/>
+<path d="M 470.703 354.792 A 154.667 154.667 0 0 1 182.191 390.217" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.383"/></g>
+<g id="anim20"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.975" stroke-linecap="round" opacity="0.353"/>
+<circle cx="320.000" cy="320.000" r="8.575" fill="#37eed7" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.075" fill="#a462ff" opacity="0.716" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.412"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.575" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.200" fill="#37eed7" opacity="0.665" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="3.600" fill="#a462ff" opacity="0.665" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.000" fill="#37eed7" opacity="0.665" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.400" fill="#a462ff" opacity="0.665" filter="url(#st_pulse)"/>
+<path d="M 466.592 373.355 A 156.000 156.000 0 0 1 173.408 373.355" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.393"/></g>
+<g id="anim21"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.017" stroke-linecap="round" opacity="0.362"/>
+<circle cx="320.000" cy="320.000" r="8.650" fill="#37eed7" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.150" fill="#a462ff" opacity="0.728" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.422"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.590" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="3.200" fill="#37eed7" opacity="0.677" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="3.600" fill="#a462ff" opacity="0.677" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.000" fill="#37eed7" opacity="0.677" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.400" fill="#a462ff" opacity="0.677" filter="url(#st_pulse)"/>
+<path d="M 460.185 391.428 A 157.333 157.333 0 0 1 166.699 355.392" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.402"/></g>
+<g id="anim22"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.058" stroke-linecap="round" opacity="0.371"/>
+<circle cx="320.000" cy="320.000" r="8.725" fill="#37eed7" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.225" fill="#a462ff" opacity="0.739" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.431"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.605" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="3.200" fill="#37eed7" opacity="0.688" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="3.600" fill="#a462ff" opacity="0.688" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.000" fill="#37eed7" opacity="0.688" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.400" fill="#a462ff" opacity="0.688" filter="url(#st_pulse)"/>
+<path d="M 451.541 408.725 A 158.667 158.667 0 0 1 162.203 336.585" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.411"/></g>
+<g id="anim23"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="272.000" y1="300.000" x2="320.000" y2="320.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="320.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="368.000" y1="302.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="402.000" y1="244.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="426.000" y1="360.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.000" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="3.200" fill="#37eed7" opacity="0.700" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="3.600" fill="#a462ff" opacity="0.700" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.000" fill="#37eed7" opacity="0.700" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.400" fill="#a462ff" opacity="0.700" filter="url(#st_pulse)"/>
+<path d="M 440.754 424.969 A 160.000 160.000 0 0 1 160.024 317.208" fill="none" stroke="#477fff" stroke-width="1.600" stroke-linecap="round" stroke-linejoin="round" opacity="0.420"/></g>
+<g id="verify"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.920" stroke-linecap="round" opacity="0.340"/>
+<circle cx="320.000" cy="320.000" r="8.476" fill="#37eed7" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.976" fill="#a462ff" opacity="0.701" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.400"/>
+<rect x="188" y="304" width="264" height="32" fill="#37eed7" opacity="0.075"/>
+<line x1="188.000" y1="320.000" x2="452.000" y2="320.000" stroke="#37eed7" stroke-width="2.500" stroke-linecap="round" opacity="0.420" filter="url(#st_pulse)"/>
+<path d="M 160.252 261.857 A 170.000 170.000 0 1 1 160.252 378.143" fill="none" stroke="#a462ff" stroke-width="2.100" stroke-linecap="round" stroke-linejoin="round" opacity="0.360"/></g>
+<g id="fail"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#ff4f42" stroke-width="1.650" stroke-linecap="round" opacity="0.281"/>
+<circle cx="320.000" cy="320.000" r="7.990" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.490" fill="#ff4f42" opacity="0.629" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#ff4f42" stroke-width="1.300" opacity="0.341"/>
+<line x1="334.235" y1="284.767" x2="411.708" y2="184.038" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="351.503" y1="298.751" x2="483.184" y2="254.069" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="357.907" y1="322.651" x2="500.717" y2="371.820" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="349.944" y1="343.395" x2="425.417" y2="445.631" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="325.289" y1="357.630" x2="307.723" y2="495.571" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="287.774" y1="340.137" x2="143.338" y2="384.300" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<line x1="288.497" y1="298.751" x2="206.076" y2="202.028" stroke="#ff4f42" stroke-width="2.200" stroke-linecap="round" opacity="0.620" filter="url(#st_pulse)"/>
+<path d="M 180.429 254.917 A 154.000 154.000 0 0 1 455.974 247.701" fill="none" stroke="#ff4f42" stroke-width="3.200" stroke-linecap="round" stroke-linejoin="round" opacity="0.500"/>
+<path d="M 427.798 367.995 A 118.000 118.000 0 0 1 233.700 400.476" fill="none" stroke="#ff4f42" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round" opacity="0.380"/></g>
+<g id="backspace"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="1.480" stroke-linecap="round" opacity="0.244"/>
+<circle cx="320.000" cy="320.000" r="7.684" fill="#37eed7" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="4.184" fill="#a462ff" opacity="0.583" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.304"/>
+<path d="M 209.222 426.977 A 154.000 154.000 0 0 1 430.778 213.023" fill="none" stroke="#ff4f42" stroke-width="3.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.520" filter="url(#st_pulse)"/>
+<line x1="420.000" y1="260.000" x2="278.000" y2="320.000" stroke="#ff4f42" stroke-width="1.800" stroke-linecap="round" opacity="0.420"/>
+<line x1="278.000" y1="320.000" x2="214.000" y2="366.000" stroke="#ff4f42" stroke-width="1.800" stroke-linecap="round" opacity="0.340"/>
+<circle cx="278.000" cy="320.000" r="5.000" fill="#ff4f42" opacity="0.550"/></g>
+<g id="fg"><path d="M 489.124 205.925 A 204.000 204.000 0 0 1 489.124 434.075" fill="none" stroke="#37eed7" stroke-width="1.400" stroke-linecap="round" stroke-linejoin="round" opacity="0.180"/>
+<path d="M 150.876 434.075 A 204.000 204.000 0 0 1 150.876 205.925" fill="none" stroke="#a462ff" stroke-width="1.400" stroke-linecap="round" stroke-linejoin="round" opacity="0.160"/>
+<circle cx="320.000" cy="320.000" r="216.000" fill="none" stroke="#ffffff" stroke-width="0.700" opacity="0.040"/></g>
+<g opacity="0" id="remove_background"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g opacity="0" id="sequential_animation"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g id="success"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="170.000" fill="none" stroke="#a462ff" stroke-width="2.500" opacity="0.460" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="172.000" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="376.637" cy="183.266" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="424.652" cy="215.348" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="456.734" cy="263.363" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="468.000" cy="320.000" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="456.734" cy="376.637" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="424.652" cy="424.652" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="376.637" cy="456.734" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="320.000" cy="468.000" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="263.363" cy="456.734" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="215.348" cy="424.652" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="183.266" cy="376.637" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="172.000" cy="320.000" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="183.266" cy="263.363" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="215.348" cy="215.348" r="3.200" fill="#37eed7" opacity="0.580"/>
+<circle cx="263.363" cy="183.266" r="3.200" fill="#37eed7" opacity="0.580"/></g>
+<g id="success00"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="88.125" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.412"/>
+<circle cx="359.260" cy="323.004" r="3.000" fill="#a462ff" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="345.637" cy="349.885" r="3.000" fill="#37eed7" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="316.996" cy="359.260" r="3.000" fill="#a462ff" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="290.115" cy="345.637" r="3.000" fill="#37eed7" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="280.740" cy="316.996" r="3.000" fill="#a462ff" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="294.363" cy="290.115" r="3.000" fill="#37eed7" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="323.004" cy="280.740" r="3.000" fill="#a462ff" opacity="0.541" filter="url(#st_pulse)"/>
+<circle cx="349.885" cy="294.363" r="3.000" fill="#37eed7" opacity="0.541" filter="url(#st_pulse)"/></g>
+<g id="success01"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="96.250" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.404"/>
+<circle cx="368.183" cy="327.416" r="3.000" fill="#a462ff" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="348.826" cy="359.314" r="3.000" fill="#37eed7" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="312.584" cy="368.183" r="3.000" fill="#a462ff" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="280.686" cy="348.826" r="3.000" fill="#37eed7" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="271.817" cy="312.584" r="3.000" fill="#a462ff" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="291.174" cy="280.686" r="3.000" fill="#37eed7" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="327.416" cy="271.817" r="3.000" fill="#a462ff" opacity="0.533" filter="url(#st_pulse)"/>
+<circle cx="359.314" cy="291.174" r="3.000" fill="#37eed7" opacity="0.533" filter="url(#st_pulse)"/></g>
+<g id="success02"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="104.375" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.396"/>
+<circle cx="376.607" cy="333.199" r="3.000" fill="#a462ff" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="350.694" cy="369.360" r="3.000" fill="#37eed7" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="306.801" cy="376.607" r="3.000" fill="#a462ff" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="270.640" cy="350.694" r="3.000" fill="#37eed7" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="263.393" cy="306.801" r="3.000" fill="#a462ff" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="289.306" cy="270.640" r="3.000" fill="#37eed7" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="333.199" cy="263.393" r="3.000" fill="#a462ff" opacity="0.524" filter="url(#st_pulse)"/>
+<circle cx="369.360" cy="289.306" r="3.000" fill="#37eed7" opacity="0.524" filter="url(#st_pulse)"/></g>
+<g id="success03"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="112.500" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.389"/>
+<circle cx="384.376" cy="340.298" r="3.000" fill="#a462ff" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="351.168" cy="379.873" r="3.000" fill="#37eed7" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="299.702" cy="384.376" r="3.000" fill="#a462ff" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="260.127" cy="351.168" r="3.000" fill="#37eed7" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="255.624" cy="299.702" r="3.000" fill="#a462ff" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="288.832" cy="260.127" r="3.000" fill="#37eed7" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="340.298" cy="255.624" r="3.000" fill="#a462ff" opacity="0.516" filter="url(#st_pulse)"/>
+<circle cx="379.873" cy="288.832" r="3.000" fill="#37eed7" opacity="0.516" filter="url(#st_pulse)"/></g>
+<g id="success04"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="120.625" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.381"/>
+<circle cx="391.340" cy="348.642" r="3.000" fill="#a462ff" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="350.192" cy="390.698" r="3.000" fill="#37eed7" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="291.358" cy="391.340" r="3.000" fill="#a462ff" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="249.302" cy="350.192" r="3.000" fill="#37eed7" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="248.660" cy="291.358" r="3.000" fill="#a462ff" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="289.808" cy="249.302" r="3.000" fill="#37eed7" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="348.642" cy="248.660" r="3.000" fill="#a462ff" opacity="0.507" filter="url(#st_pulse)"/>
+<circle cx="390.698" cy="289.808" r="3.000" fill="#37eed7" opacity="0.507" filter="url(#st_pulse)"/></g>
+<g id="success05"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="128.750" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.373"/>
+<circle cx="397.355" cy="358.147" r="3.000" fill="#a462ff" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="347.724" cy="401.673" r="3.000" fill="#37eed7" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="281.853" cy="397.355" r="3.000" fill="#a462ff" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="238.327" cy="347.724" r="3.000" fill="#37eed7" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="242.645" cy="281.853" r="3.000" fill="#a462ff" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="292.276" cy="238.327" r="3.000" fill="#37eed7" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="358.147" cy="242.645" r="3.000" fill="#a462ff" opacity="0.498" filter="url(#st_pulse)"/>
+<circle cx="401.673" cy="292.276" r="3.000" fill="#37eed7" opacity="0.498" filter="url(#st_pulse)"/></g>
+<g id="success06"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="136.875" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.365"/>
+<circle cx="402.287" cy="368.713" r="3.000" fill="#a462ff" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="343.741" cy="412.631" r="3.000" fill="#37eed7" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="271.287" cy="402.287" r="3.000" fill="#a462ff" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="227.369" cy="343.741" r="3.000" fill="#37eed7" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="237.713" cy="271.287" r="3.000" fill="#a462ff" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="296.259" cy="227.369" r="3.000" fill="#37eed7" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="368.713" cy="237.713" r="3.000" fill="#a462ff" opacity="0.490" filter="url(#st_pulse)"/>
+<circle cx="412.631" cy="296.259" r="3.000" fill="#37eed7" opacity="0.490" filter="url(#st_pulse)"/></g>
+<g id="success07"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="145.000" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.357"/>
+<circle cx="406.011" cy="380.226" r="3.000" fill="#a462ff" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="338.233" cy="423.405" r="3.000" fill="#37eed7" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="259.774" cy="406.011" r="3.000" fill="#a462ff" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="216.595" cy="338.233" r="3.000" fill="#37eed7" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="233.989" cy="259.774" r="3.000" fill="#a462ff" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="301.767" cy="216.595" r="3.000" fill="#37eed7" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="380.226" cy="233.989" r="3.000" fill="#a462ff" opacity="0.481" filter="url(#st_pulse)"/>
+<circle cx="423.405" cy="301.767" r="3.000" fill="#37eed7" opacity="0.481" filter="url(#st_pulse)"/></g>
+<g id="success08"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="153.125" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.349"/>
+<circle cx="408.413" cy="392.559" r="3.000" fill="#a462ff" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="331.211" cy="433.824" r="3.000" fill="#37eed7" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="247.441" cy="408.413" r="3.000" fill="#a462ff" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="206.176" cy="331.211" r="3.000" fill="#37eed7" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="231.587" cy="247.441" r="3.000" fill="#a462ff" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="308.789" cy="206.176" r="3.000" fill="#37eed7" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="392.559" cy="231.587" r="3.000" fill="#a462ff" opacity="0.473" filter="url(#st_pulse)"/>
+<circle cx="433.824" cy="308.789" r="3.000" fill="#37eed7" opacity="0.473" filter="url(#st_pulse)"/></g>
+<g id="success09"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="161.250" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.341"/>
+<circle cx="409.393" cy="405.575" r="3.000" fill="#a462ff" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="322.700" cy="443.721" r="3.000" fill="#37eed7" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="234.425" cy="409.393" r="3.000" fill="#a462ff" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="196.279" cy="322.700" r="3.000" fill="#37eed7" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="230.607" cy="234.425" r="3.000" fill="#a462ff" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="317.300" cy="196.279" r="3.000" fill="#37eed7" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="405.575" cy="230.607" r="3.000" fill="#a462ff" opacity="0.464" filter="url(#st_pulse)"/>
+<circle cx="443.721" cy="317.300" r="3.000" fill="#37eed7" opacity="0.464" filter="url(#st_pulse)"/></g>
+<g id="success10"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="169.375" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.333"/>
+<circle cx="408.862" cy="419.125" r="3.000" fill="#a462ff" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="312.743" cy="452.927" r="3.000" fill="#37eed7" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="220.875" cy="408.862" r="3.000" fill="#a462ff" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="187.073" cy="312.743" r="3.000" fill="#37eed7" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="231.138" cy="220.875" r="3.000" fill="#a462ff" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="327.257" cy="187.073" r="3.000" fill="#37eed7" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="419.125" cy="231.138" r="3.000" fill="#a462ff" opacity="0.455" filter="url(#st_pulse)"/>
+<circle cx="452.927" cy="327.257" r="3.000" fill="#37eed7" opacity="0.455" filter="url(#st_pulse)"/></g>
+<g id="success11"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="177.500" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.326"/>
+<circle cx="406.749" cy="433.053" r="3.000" fill="#a462ff" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="301.400" cy="461.281" r="3.000" fill="#37eed7" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="206.947" cy="406.749" r="3.000" fill="#a462ff" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="178.719" cy="301.400" r="3.000" fill="#37eed7" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="233.251" cy="206.947" r="3.000" fill="#a462ff" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="338.600" cy="178.719" r="3.000" fill="#37eed7" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="433.053" cy="233.251" r="3.000" fill="#a462ff" opacity="0.447" filter="url(#st_pulse)"/>
+<circle cx="461.281" cy="338.600" r="3.000" fill="#37eed7" opacity="0.447" filter="url(#st_pulse)"/></g>
+<g id="success12"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="185.625" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.318"/>
+<circle cx="402.995" cy="447.192" r="3.000" fill="#a462ff" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="288.748" cy="468.625" r="3.000" fill="#37eed7" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="192.808" cy="402.995" r="3.000" fill="#a462ff" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="171.375" cy="288.748" r="3.000" fill="#37eed7" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="237.005" cy="192.808" r="3.000" fill="#a462ff" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="351.252" cy="171.375" r="3.000" fill="#37eed7" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="447.192" cy="237.005" r="3.000" fill="#a462ff" opacity="0.438" filter="url(#st_pulse)"/>
+<circle cx="468.625" cy="351.252" r="3.000" fill="#37eed7" opacity="0.438" filter="url(#st_pulse)"/></g>
+<g id="success13"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="193.750" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.310"/>
+<circle cx="397.559" cy="461.372" r="3.000" fill="#a462ff" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="274.878" cy="474.808" r="3.000" fill="#37eed7" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="178.628" cy="397.559" r="3.000" fill="#a462ff" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="165.192" cy="274.878" r="3.000" fill="#37eed7" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="242.441" cy="178.628" r="3.000" fill="#a462ff" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="365.122" cy="165.192" r="3.000" fill="#37eed7" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="461.372" cy="242.441" r="3.000" fill="#a462ff" opacity="0.430" filter="url(#st_pulse)"/>
+<circle cx="474.808" cy="365.122" r="3.000" fill="#37eed7" opacity="0.430" filter="url(#st_pulse)"/></g>
+<g id="success14"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="201.875" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.302"/>
+<circle cx="390.418" cy="475.416" r="3.000" fill="#a462ff" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="259.897" cy="479.689" r="3.000" fill="#37eed7" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="164.584" cy="390.418" r="3.000" fill="#a462ff" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="160.311" cy="259.897" r="3.000" fill="#37eed7" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="249.582" cy="164.584" r="3.000" fill="#a462ff" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="380.103" cy="160.311" r="3.000" fill="#37eed7" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="475.416" cy="249.582" r="3.000" fill="#a462ff" opacity="0.421" filter="url(#st_pulse)"/>
+<circle cx="479.689" cy="380.103" r="3.000" fill="#37eed7" opacity="0.421" filter="url(#st_pulse)"/></g>
+<g id="success15"><line x1="320.000" y1="320.000" x2="238.000" y2="245.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="402.000" y2="244.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="320.000" x2="320.000" y2="438.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="238.000" y1="245.000" x2="272.000" y2="300.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="402.000" y1="244.000" x2="368.000" y2="302.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="272.000" y1="300.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="368.000" y1="302.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="426.000" y2="360.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<line x1="320.000" y1="438.000" x2="210.000" y2="366.000" stroke="#37eed7" stroke-width="2.100" stroke-linecap="round" opacity="0.380"/>
+<circle cx="320.000" cy="320.000" r="8.800" fill="#37eed7" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="238.000" cy="245.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="402.000" cy="244.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="426.000" cy="360.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="210.000" cy="366.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="438.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="272.000" cy="300.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="368.000" cy="302.000" r="5.300" fill="#a462ff" opacity="0.750" filter="url(#st_pulse)"/>
+<circle cx="320.000" cy="320.000" r="102.000" fill="none" stroke="#37eed7" stroke-width="1.300" opacity="0.440"/>
+<circle cx="320.000" cy="320.000" r="210.000" fill="none" stroke="#a462ff" stroke-width="2.200" opacity="0.294"/>
+<circle cx="381.564" cy="489.145" r="3.000" fill="#a462ff" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="243.929" cy="483.135" r="3.000" fill="#37eed7" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="150.855" cy="381.564" r="3.000" fill="#a462ff" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="156.865" cy="243.929" r="3.000" fill="#37eed7" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="258.436" cy="150.855" r="3.000" fill="#a462ff" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="396.071" cy="156.865" r="3.000" fill="#37eed7" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="489.145" cy="258.436" r="3.000" fill="#a462ff" opacity="0.413" filter="url(#st_pulse)"/>
+<circle cx="483.135" cy="396.071" r="3.000" fill="#37eed7" opacity="0.413" filter="url(#st_pulse)"/></g>
+</svg>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme gallery asset. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="1816" viewBox="0 0 1260 1816">
+<rect x="0.000" y="0.000" width="1260.000" height="1816.000" fill="#080a0f"/>
+<text x="24" y="34" fill="#e8eef5" font-size="20" font-family="sans-serif">Theme Gallery Contact Sheet</text>
+<rect x="18.000" y="62.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="118.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 64.000 A 54.000 54.000 0 0 1 132.000 164.765" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="118.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="28" y="174" fill="#d9e4ef" font-size="12" font-family="sans-serif">QuantumLatch</text>
+<text x="28" y="189" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="228.000" y="62.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="118.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 64.000 A 54.000 54.000 0 0 1 324.377 171.180" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="118.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="238" y="174" fill="#d9e4ef" font-size="12" font-family="sans-serif">NeuralMesh</text>
+<text x="238" y="189" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="438.000" y="62.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="118.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 64.000 A 54.000 54.000 0 1 1 515.623 171.180" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="118.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="448" y="174" fill="#d9e4ef" font-size="12" font-family="sans-serif">PacketStorm</text>
+<text x="448" y="189" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="648.000" y="62.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="118.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 64.000 A 54.000 54.000 0 1 1 708.000 164.765" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="118.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="658" y="174" fill="#d9e4ef" font-size="12" font-family="sans-serif">CryptoSeal</text>
+<text x="658" y="189" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="858.000" y="62.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="118.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 64.000 A 54.000 54.000 0 1 1 903.634 152.711" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="118.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="868" y="174" fill="#d9e4ef" font-size="12" font-family="sans-serif">CompilerPass</text>
+<text x="868" y="189" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="1068.000" y="62.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="118.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 64.000 A 54.000 54.000 0 1 1 1104.257 136.469" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="118.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="1078" y="174" fill="#d9e4ef" font-size="12" font-family="sans-serif">DatacenterNight</text>
+<text x="1078" y="189" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="18.000" y="238.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="294.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 240.000 A 54.000 54.000 0 1 1 51.000 294.000" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="294.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="28" y="350" fill="#d9e4ef" font-size="12" font-family="sans-serif">Observability</text>
+<text x="28" y="365" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="228.000" y="238.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="294.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 240.000 A 54.000 54.000 0 1 1 264.257 275.531" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="294.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="238" y="350" fill="#d9e4ef" font-size="12" font-family="sans-serif">ZeroTrust</text>
+<text x="238" y="365" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="438.000" y="238.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="294.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 240.000 A 54.000 54.000 0 1 1 483.634 259.289" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="294.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="448" y="350" fill="#d9e4ef" font-size="12" font-family="sans-serif">MainframeGreen</text>
+<text x="448" y="365" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="648.000" y="238.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="294.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 240.000 A 54.000 54.000 0 0 1 762.000 340.765" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="294.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="658" y="350" fill="#d9e4ef" font-size="12" font-family="sans-serif">PCBBlackGold</text>
+<text x="658" y="365" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="858.000" y="238.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="294.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 240.000 A 54.000 54.000 0 0 1 954.377 347.180" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="294.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="868" y="350" fill="#d9e4ef" font-size="12" font-family="sans-serif">FirmwareBoot</text>
+<text x="868" y="365" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="1068.000" y="238.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="294.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 240.000 A 54.000 54.000 0 1 1 1145.623 347.180" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="294.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="1078" y="350" fill="#d9e4ef" font-size="12" font-family="sans-serif">ContainerOrbits</text>
+<text x="1078" y="365" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="18.000" y="414.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="470.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 416.000 A 54.000 54.000 0 1 1 78.000 516.765" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="470.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="28" y="526" fill="#d9e4ef" font-size="12" font-family="sans-serif">GitGraph</text>
+<text x="28" y="541" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="228.000" y="414.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="470.000" r="42.000" fill="none" stroke="#386df5" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 416.000 A 54.000 54.000 0 1 1 273.634 504.711" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="470.000" r="13.000" fill="#48e5b4" opacity="0.550"/>
+<text x="238" y="526" fill="#d9e4ef" font-size="12" font-family="sans-serif">HexDump</text>
+<text x="238" y="541" fill="#8d9aa7" font-size="10" font-family="sans-serif">technical</text>
+<rect x="438.000" y="414.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="470.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 416.000 A 54.000 54.000 0 1 1 474.257 488.469" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="470.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="448" y="526" fill="#d9e4ef" font-size="12" font-family="sans-serif">OrbitalMechanics</text>
+<text x="448" y="541" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="648.000" y="414.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="470.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 416.000 A 54.000 54.000 0 1 1 681.000 470.000" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="470.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="658" y="526" fill="#d9e4ef" font-size="12" font-family="sans-serif">DeepSpaceArray</text>
+<text x="658" y="541" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="858.000" y="414.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="470.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 416.000 A 54.000 54.000 0 1 1 894.257 451.531" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="470.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="868" y="526" fill="#d9e4ef" font-size="12" font-family="sans-serif">EventHorizon</text>
+<text x="868" y="541" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="1068.000" y="414.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="470.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 416.000 A 54.000 54.000 0 1 1 1113.634 435.289" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="470.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="1078" y="526" fill="#d9e4ef" font-size="12" font-family="sans-serif">SpectralLines</text>
+<text x="1078" y="541" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="18.000" y="590.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="646.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 592.000 A 54.000 54.000 0 0 1 132.000 692.765" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="646.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="28" y="702" fill="#d9e4ef" font-size="12" font-family="sans-serif">MoleculeLock</text>
+<text x="28" y="717" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="228.000" y="590.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="646.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 592.000 A 54.000 54.000 0 0 1 324.377 699.180" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="646.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="238" y="702" fill="#d9e4ef" font-size="12" font-family="sans-serif">CrystalLattice</text>
+<text x="238" y="717" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="438.000" y="590.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="646.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 592.000 A 54.000 54.000 0 1 1 515.623 699.180" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="646.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="448" y="702" fill="#d9e4ef" font-size="12" font-family="sans-serif">TesseractGate</text>
+<text x="448" y="717" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="648.000" y="590.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="646.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 592.000 A 54.000 54.000 0 1 1 708.000 692.765" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="646.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="658" y="702" fill="#d9e4ef" font-size="12" font-family="sans-serif">FractalBloom</text>
+<text x="658" y="717" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="858.000" y="590.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="646.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 592.000 A 54.000 54.000 0 1 1 903.634 680.711" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="646.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="868" y="702" fill="#d9e4ef" font-size="12" font-family="sans-serif">GoldenRatio</text>
+<text x="868" y="717" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="1068.000" y="590.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="646.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 592.000 A 54.000 54.000 0 1 1 1104.257 664.469" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="646.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="1078" y="702" fill="#d9e4ef" font-size="12" font-family="sans-serif">CelestialChart</text>
+<text x="1078" y="717" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="18.000" y="766.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="822.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 768.000 A 54.000 54.000 0 1 1 51.000 822.000" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="822.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="28" y="878" fill="#d9e4ef" font-size="12" font-family="sans-serif">WeatherRadar</text>
+<text x="28" y="893" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="228.000" y="766.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="822.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 768.000 A 54.000 54.000 0 1 1 264.257 803.531" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="822.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="238" y="878" fill="#d9e4ef" font-size="12" font-family="sans-serif">ParticleChamber</text>
+<text x="238" y="893" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="438.000" y="766.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="822.000" r="42.000" fill="none" stroke="#8478ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 768.000 A 54.000 54.000 0 1 1 483.634 787.289" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="822.000" r="13.000" fill="#d5f6ff" opacity="0.550"/>
+<text x="448" y="878" fill="#d9e4ef" font-size="12" font-family="sans-serif">MagneticField</text>
+<text x="448" y="893" fill="#8d9aa7" font-size="10" font-family="sans-serif">science</text>
+<rect x="648.000" y="766.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="822.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 768.000 A 54.000 54.000 0 0 1 762.000 868.765" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="822.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="658" y="878" fill="#d9e4ef" font-size="12" font-family="sans-serif">ArtDecoCipher</text>
+<text x="658" y="893" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="858.000" y="766.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="822.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 768.000 A 54.000 54.000 0 0 1 954.377 875.180" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="822.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="868" y="878" fill="#d9e4ef" font-size="12" font-family="sans-serif">BauhausGrid</text>
+<text x="868" y="893" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="1068.000" y="766.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="822.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 768.000 A 54.000 54.000 0 1 1 1145.623 875.180" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="822.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="1078" y="878" fill="#d9e4ef" font-size="12" font-family="sans-serif">BlueprintVault</text>
+<text x="1078" y="893" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="18.000" y="942.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="998.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 944.000 A 54.000 54.000 0 1 1 78.000 1044.765" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="998.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="28" y="1054" fill="#d9e4ef" font-size="12" font-family="sans-serif">Monolith</text>
+<text x="28" y="1069" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="228.000" y="942.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="998.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 944.000 A 54.000 54.000 0 1 1 273.634 1032.711" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="998.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="238" y="1054" fill="#d9e4ef" font-size="12" font-family="sans-serif">ExecutiveGlass</text>
+<text x="238" y="1069" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="438.000" y="942.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="998.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 944.000 A 54.000 54.000 0 1 1 474.257 1016.469" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="998.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="448" y="1054" fill="#d9e4ef" font-size="12" font-family="sans-serif">BrutalistConsole</text>
+<text x="448" y="1069" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="648.000" y="942.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="998.000" r="42.000" fill="none" stroke="#627487" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 944.000 A 54.000 54.000 0 1 1 681.000 998.000" fill="none" stroke="#d6b66a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="998.000" r="13.000" fill="#f0ead9" opacity="0.550"/>
+<text x="658" y="1054" fill="#d9e4ef" font-size="12" font-family="sans-serif">LuxuryWatch</text>
+<text x="658" y="1069" fill="#8d9aa7" font-size="10" font-family="sans-serif">professional</text>
+<rect x="858.000" y="942.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="998.000" r="42.000" fill="none" stroke="#ff4fd8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 944.000 A 54.000 54.000 0 1 1 894.257 979.531" fill="none" stroke="#4cf2ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="998.000" r="13.000" fill="#78ff78" opacity="0.550"/>
+<text x="868" y="1054" fill="#d9e4ef" font-size="12" font-family="sans-serif">CRTGlow</text>
+<text x="868" y="1069" fill="#8d9aa7" font-size="10" font-family="sans-serif">retro</text>
+<rect x="1068.000" y="942.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="998.000" r="42.000" fill="none" stroke="#ff4fd8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 944.000 A 54.000 54.000 0 1 1 1113.634 963.289" fill="none" stroke="#4cf2ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="998.000" r="13.000" fill="#78ff78" opacity="0.550"/>
+<text x="1078" y="1054" fill="#d9e4ef" font-size="12" font-family="sans-serif">DialupHandshake</text>
+<text x="1078" y="1069" fill="#8d9aa7" font-size="10" font-family="sans-serif">retro</text>
+<rect x="18.000" y="1118.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="1174.000" r="42.000" fill="none" stroke="#ff4fd8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 1120.000 A 54.000 54.000 0 0 1 132.000 1220.765" fill="none" stroke="#4cf2ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="1174.000" r="13.000" fill="#78ff78" opacity="0.550"/>
+<text x="28" y="1230" fill="#d9e4ef" font-size="12" font-family="sans-serif">TapeArchive</text>
+<text x="28" y="1245" fill="#8d9aa7" font-size="10" font-family="sans-serif">retro</text>
+<rect x="228.000" y="1118.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="1174.000" r="42.000" fill="none" stroke="#ff4fd8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 1120.000 A 54.000 54.000 0 0 1 324.377 1227.180" fill="none" stroke="#4cf2ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="1174.000" r="13.000" fill="#78ff78" opacity="0.550"/>
+<text x="238" y="1230" fill="#d9e4ef" font-size="12" font-family="sans-serif">VectorCabinet</text>
+<text x="238" y="1245" fill="#8d9aa7" font-size="10" font-family="sans-serif">retro</text>
+<rect x="438.000" y="1118.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="1174.000" r="42.000" fill="none" stroke="#ff4fd8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 1120.000 A 54.000 54.000 0 1 1 515.623 1227.180" fill="none" stroke="#4cf2ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="1174.000" r="13.000" fill="#78ff78" opacity="0.550"/>
+<text x="448" y="1230" fill="#d9e4ef" font-size="12" font-family="sans-serif">TerminalDungeon</text>
+<text x="448" y="1245" fill="#8d9aa7" font-size="10" font-family="sans-serif">retro</text>
+<rect x="648.000" y="1118.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="1174.000" r="42.000" fill="none" stroke="#ff4fd8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 1120.000 A 54.000 54.000 0 1 1 708.000 1220.765" fill="none" stroke="#4cf2ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="1174.000" r="13.000" fill="#78ff78" opacity="0.550"/>
+<text x="658" y="1230" fill="#d9e4ef" font-size="12" font-family="sans-serif">SynthGrid</text>
+<text x="658" y="1245" fill="#8d9aa7" font-size="10" font-family="sans-serif">retro</text>
+<rect x="858.000" y="1118.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="1174.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 1120.000 A 54.000 54.000 0 1 1 903.634 1208.711" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="1174.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="868" y="1230" fill="#d9e4ef" font-size="12" font-family="sans-serif">TinyRobots</text>
+<text x="868" y="1245" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="1068.000" y="1118.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="1174.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 1120.000 A 54.000 54.000 0 1 1 1104.257 1192.469" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="1174.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="1078" y="1230" fill="#d9e4ef" font-size="12" font-family="sans-serif">MoonGarden</text>
+<text x="1078" y="1245" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="18.000" y="1294.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="1350.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 1296.000 A 54.000 54.000 0 1 1 51.000 1350.000" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="1350.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="28" y="1406" fill="#d9e4ef" font-size="12" font-family="sans-serif">PocketUniverse</text>
+<text x="28" y="1421" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="228.000" y="1294.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="1350.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 1296.000 A 54.000 54.000 0 1 1 264.257 1331.531" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="1350.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="238" y="1406" fill="#d9e4ef" font-size="12" font-family="sans-serif">ClockworkOwls</text>
+<text x="238" y="1421" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="438.000" y="1294.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="1350.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 1296.000 A 54.000 54.000 0 1 1 483.634 1315.289" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="1350.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="448" y="1406" fill="#d9e4ef" font-size="12" font-family="sans-serif">LibraryAtMidnight</text>
+<text x="448" y="1421" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="648.000" y="1294.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="1350.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 1296.000 A 54.000 54.000 0 0 1 762.000 1396.765" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="1350.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="658" y="1406" fill="#d9e4ef" font-size="12" font-family="sans-serif">RainWindow</text>
+<text x="658" y="1421" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="858.000" y="1294.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="1350.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 1296.000 A 54.000 54.000 0 0 1 954.377 1403.180" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="1350.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="868" y="1406" fill="#d9e4ef" font-size="12" font-family="sans-serif">FireflyCircuit</text>
+<text x="868" y="1421" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="1068.000" y="1294.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="1350.000" r="42.000" fill="none" stroke="#8ad7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 1296.000 A 54.000 54.000 0 1 1 1145.623 1403.180" fill="none" stroke="#ffe071" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="1350.000" r="13.000" fill="#c7a6ff" opacity="0.550"/>
+<text x="1078" y="1406" fill="#d9e4ef" font-size="12" font-family="sans-serif">MechanicalKoi</text>
+<text x="1078" y="1421" fill="#8d9aa7" font-size="10" font-family="sans-serif">whimsical</text>
+<rect x="18.000" y="1470.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="1526.000" r="42.000" fill="none" stroke="#5ea0b8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 1472.000 A 54.000 54.000 0 1 1 78.000 1572.765" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="1526.000" r="13.000" fill="#f0dfb2" opacity="0.550"/>
+<text x="28" y="1582" fill="#d9e4ef" font-size="12" font-family="sans-serif">RunicGate</text>
+<text x="28" y="1597" fill="#8d9aa7" font-size="10" font-family="sans-serif">mythic</text>
+<rect x="228.000" y="1470.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="1526.000" r="42.000" fill="none" stroke="#5ea0b8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 1472.000 A 54.000 54.000 0 1 1 273.634 1560.711" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="1526.000" r="13.000" fill="#f0dfb2" opacity="0.550"/>
+<text x="238" y="1582" fill="#d9e4ef" font-size="12" font-family="sans-serif">Astrolabe</text>
+<text x="238" y="1597" fill="#8d9aa7" font-size="10" font-family="sans-serif">mythic</text>
+<rect x="438.000" y="1470.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="1526.000" r="42.000" fill="none" stroke="#5ea0b8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 1472.000 A 54.000 54.000 0 1 1 474.257 1544.469" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="1526.000" r="13.000" fill="#f0dfb2" opacity="0.550"/>
+<text x="448" y="1582" fill="#d9e4ef" font-size="12" font-family="sans-serif">AlchemyCircle</text>
+<text x="448" y="1597" fill="#8d9aa7" font-size="10" font-family="sans-serif">mythic</text>
+<rect x="648.000" y="1470.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="1526.000" r="42.000" fill="none" stroke="#5ea0b8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 1472.000 A 54.000 54.000 0 1 1 681.000 1526.000" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="1526.000" r="13.000" fill="#f0dfb2" opacity="0.550"/>
+<text x="658" y="1582" fill="#d9e4ef" font-size="12" font-family="sans-serif">UkiyoWave</text>
+<text x="658" y="1597" fill="#8d9aa7" font-size="10" font-family="sans-serif">mythic</text>
+<rect x="858.000" y="1470.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="1526.000" r="42.000" fill="none" stroke="#5ea0b8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 1472.000 A 54.000 54.000 0 1 1 894.257 1507.531" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="1526.000" r="13.000" fill="#f0dfb2" opacity="0.550"/>
+<text x="868" y="1582" fill="#d9e4ef" font-size="12" font-family="sans-serif">MosaicVault</text>
+<text x="868" y="1597" fill="#8d9aa7" font-size="10" font-family="sans-serif">mythic</text>
+<rect x="1068.000" y="1470.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="1526.000" r="42.000" fill="none" stroke="#5ea0b8" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 1472.000 A 54.000 54.000 0 1 1 1113.634 1491.289" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="1526.000" r="13.000" fill="#f0dfb2" opacity="0.550"/>
+<text x="1078" y="1582" fill="#d9e4ef" font-size="12" font-family="sans-serif">TempleMechanism</text>
+<text x="1078" y="1597" fill="#8d9aa7" font-size="10" font-family="sans-serif">mythic</text>
+<rect x="18.000" y="1646.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="105.000" cy="1702.000" r="42.000" fill="none" stroke="#38e6ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 105.000 1648.000 A 54.000 54.000 0 0 1 132.000 1748.765" fill="none" stroke="#ff4fd8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="105.000" cy="1702.000" r="13.000" fill="#ffd166" opacity="0.550"/>
+<text x="28" y="1758" fill="#d9e4ef" font-size="12" font-family="sans-serif">NeonLightCycle</text>
+<text x="28" y="1773" fill="#8d9aa7" font-size="10" font-family="sans-serif">cultural</text>
+<rect x="228.000" y="1646.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="315.000" cy="1702.000" r="42.000" fill="none" stroke="#38e6ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 315.000 1648.000 A 54.000 54.000 0 0 1 324.377 1755.180" fill="none" stroke="#ff4fd8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="315.000" cy="1702.000" r="13.000" fill="#ffd166" opacity="0.550"/>
+<text x="238" y="1758" fill="#d9e4ef" font-size="12" font-family="sans-serif">SpaceOperaConsole</text>
+<text x="238" y="1773" fill="#8d9aa7" font-size="10" font-family="sans-serif">cultural</text>
+<rect x="438.000" y="1646.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="525.000" cy="1702.000" r="42.000" fill="none" stroke="#38e6ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 525.000 1648.000 A 54.000 54.000 0 1 1 515.623 1755.180" fill="none" stroke="#ff4fd8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="525.000" cy="1702.000" r="13.000" fill="#ffd166" opacity="0.550"/>
+<text x="448" y="1758" fill="#d9e4ef" font-size="12" font-family="sans-serif">SpyBriefing</text>
+<text x="448" y="1773" fill="#8d9aa7" font-size="10" font-family="sans-serif">cultural</text>
+<rect x="648.000" y="1646.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="735.000" cy="1702.000" r="42.000" fill="none" stroke="#38e6ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 735.000 1648.000 A 54.000 54.000 0 1 1 708.000 1748.765" fill="none" stroke="#ff4fd8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="735.000" cy="1702.000" r="13.000" fill="#ffd166" opacity="0.550"/>
+<text x="658" y="1758" fill="#d9e4ef" font-size="12" font-family="sans-serif">MechaHangar</text>
+<text x="658" y="1773" fill="#8d9aa7" font-size="10" font-family="sans-serif">cultural</text>
+<rect x="858.000" y="1646.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="945.000" cy="1702.000" r="42.000" fill="none" stroke="#44d7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 945.000 1648.000 A 54.000 54.000 0 1 1 903.634 1736.711" fill="none" stroke="#7d8cff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="945.000" cy="1702.000" r="13.000" fill="#d7ddff" opacity="0.550"/>
+<text x="868" y="1758" fill="#d9e4ef" font-size="12" font-family="sans-serif">BlackVault</text>
+<text x="868" y="1773" fill="#8d9aa7" font-size="10" font-family="sans-serif">dark</text>
+<rect x="1068.000" y="1646.000" width="174.000" height="126.000" fill="#10151c" stroke="#2b3542" stroke-width="1.000" opacity="1.000" rx="6.000"/>
+<circle cx="1155.000" cy="1702.000" r="42.000" fill="none" stroke="#44d7ff" stroke-width="1.200" opacity="0.550"/>
+<path d="M 1155.000 1648.000 A 54.000 54.000 0 1 1 1104.257 1720.469" fill="none" stroke="#7d8cff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.200" opacity="0.700"/>
+<circle cx="1155.000" cy="1702.000" r="13.000" fill="#d7ddff" opacity="0.550"/>
+<text x="1078" y="1758" fill="#d9e4ef" font-size="12" font-family="sans-serif">EclipseGate</text>
+<text x="1078" y="1773" fill="#8d9aa7" font-size="10" font-family="sans-serif">dark</text>
+</svg>

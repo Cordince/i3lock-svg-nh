@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "dark",
+  "files": [
+    {
+      "bytes": 115069,
+      "path": "black-vault.svg",
+      "sha256": "c5053335e9c485389a42e2454dfd108f1f0c50a42810e9f6fa9fff15c896dff4"
+    },
+    {
+      "bytes": 372427,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "4cc863d36dc23fd7606cf7c47f5011774fc968761f650c195df52debfeaf349c"
+    },
+    {
+      "bytes": 19255,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "1662670c6bea73341f59019d8a4ed6e00a00e94dee56710473188f142cf6aafe"
+    },
+    {
+      "bytes": 1183,
+      "path": "lock.sh",
+      "sha256": "ad562d4f58ec5ad39c22de632163ef79212ab43ebd8a71acf93d0b945f8757f7"
+    },
+    {
+      "bytes": 1511,
+      "path": "README.md",
+      "sha256": "2c86176eb848dbacff5f2010d81d3b7e98d48979b68bfdeeed9c056457330238"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "black-vault",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "black-vault.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "BlackVault",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

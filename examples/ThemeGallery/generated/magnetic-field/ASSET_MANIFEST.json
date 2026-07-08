@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 157264,
+      "path": "magnetic-field.svg",
+      "sha256": "bc8d65d9548c506c648621489b7ca2e2f4adff621f05773b30f0fbb9e1087cee"
+    },
+    {
+      "bytes": 397795,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "6d372d1d1df58055d1ff6be0b9af90edc29dcf8bac99b9bec2d197c74720d472"
+    },
+    {
+      "bytes": 18839,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "096960fb31406fee3cf702bff267447bd5d38024b9e0b9b988360dad86de2bd9"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "00297b581531d5ec91e34057eff87fabe557fa9c1993de35504a018d6abe8535"
+    },
+    {
+      "bytes": 1539,
+      "path": "README.md",
+      "sha256": "52592a615776b1e00bd5dd318b40ad502a4b981a314336eef5777f0485d398f8"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "magnetic-field",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "magnetic-field.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MagneticField",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

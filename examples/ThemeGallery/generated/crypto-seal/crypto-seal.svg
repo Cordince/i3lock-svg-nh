@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme gallery asset. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs>
+  <radialGradient id="crypto_seal_base_field" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#2ed8f2" stop-opacity="0.18"/>
+    <stop offset="0.52" stop-color="#386df5" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070b10" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="crypto_seal_base_core" cx="50%" cy="48%" r="55%">
+    <stop offset="0" stop-color="#48e5b4" stop-opacity="0.24"/>
+    <stop offset="0.62" stop-color="#2ed8f2" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070b10" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="crypto_seal_base_facet" x1="210" y1="210" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#2ed8f2" stop-opacity="0.20"/>
+    <stop offset="0.55" stop-color="#386df5" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#48e5b4" stop-opacity="0.18"/>
+  </linearGradient>
+  <filter id="crypto_seal_base_glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="crypto_seal_base_soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g id="bg"><circle cx="320.000" cy="320.000" r="226.000" fill="url(#crypto_seal_base_field)" opacity="1.000"/>
+<circle cx="320.000" cy="320.000" r="206.000" fill="none" stroke="#386df5" stroke-width="0.900" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#2ed8f2" stroke-width="0.600" opacity="0.080"/>
+<line x1="200.000" y1="208.000" x2="200.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="200.000" x2="432.000" y2="200.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="234.000" y1="208.000" x2="234.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="234.000" x2="432.000" y2="234.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="268.000" y1="208.000" x2="268.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="268.000" x2="432.000" y2="268.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="302.000" y1="208.000" x2="302.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="302.000" x2="432.000" y2="302.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="336.000" y1="208.000" x2="336.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="336.000" x2="432.000" y2="336.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="370.000" y1="208.000" x2="370.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="370.000" x2="432.000" y2="370.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="404.000" y1="208.000" x2="404.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="404.000" x2="432.000" y2="404.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="438.000" y1="208.000" x2="438.000" y2="432.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="438.000" x2="432.000" y2="438.000" stroke="#386df5" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/></g>
+<g id="idle"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.213"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.820" opacity="0.355" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.760" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.422"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.364"/>
+<rect x="462.465" y="325.656" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.344" rx="3.000"/>
+<rect x="436.113" y="398.693" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.344" rx="3.000"/>
+<rect x="376.772" y="448.769" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.344" rx="3.000"/>
+<rect x="300.344" y="462.465" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="227.307" y="436.113" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="177.231" y="376.772" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.535" y="300.344" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="189.887" y="227.307" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="249.228" y="177.231" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="325.656" y="163.535" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="398.693" y="189.887" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="448.769" y="249.228" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.186"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.642" opacity="0.310" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.372"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.328"/>
+<rect x="462.981" y="315.400" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.308" rx="3.000"/>
+<rect x="441.687" y="390.069" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="385.912" y="444.087" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="310.600" y="462.981" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="235.931" y="441.687" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="181.913" y="385.912" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.019" y="310.600" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="184.313" y="235.931" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="240.088" y="181.913" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="315.400" y="163.019" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="390.069" y="184.313" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="444.087" y="240.088" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.193"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.683" opacity="0.321" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.383"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.337"/>
+<rect x="462.923" y="317.799" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.317" rx="3.000"/>
+<rect x="440.438" y="392.118" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="383.806" y="445.237" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="308.201" y="462.923" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="233.882" y="440.438" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="180.763" y="383.806" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.077" y="308.201" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="185.562" y="233.882" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="242.194" y="180.763" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="317.799" y="163.077" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="392.118" y="185.562" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="445.237" y="242.194" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.199"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.725" opacity="0.331" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.395"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.345"/>
+<rect x="462.827" y="320.197" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.325" rx="3.000"/>
+<rect x="439.156" y="394.146" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.325" rx="3.000"/>
+<rect x="381.681" y="446.353" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="305.803" y="462.827" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="231.854" y="439.156" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="179.647" y="381.681" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.173" y="305.803" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="186.844" y="231.854" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="244.319" y="179.647" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="320.197" y="163.173" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="394.146" y="186.844" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="446.353" y="244.319" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.205"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.767" opacity="0.342" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.407"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.353"/>
+<rect x="462.693" y="322.593" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.333" rx="3.000"/>
+<rect x="437.842" y="396.154" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.333" rx="3.000"/>
+<rect x="379.539" y="447.434" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="303.407" y="462.693" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="229.846" y="437.842" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="178.566" y="379.539" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.307" y="303.407" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="188.158" y="229.846" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="246.461" y="178.566" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="322.593" y="163.307" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="396.154" y="188.158" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="447.434" y="246.461" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.211"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.808" opacity="0.352" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.418"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.362"/>
+<rect x="462.520" y="324.986" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.342" rx="3.000"/>
+<rect x="436.495" y="398.141" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.342" rx="3.000"/>
+<rect x="377.380" y="448.482" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.342" rx="3.000"/>
+<rect x="301.014" y="462.520" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="227.859" y="436.495" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="177.518" y="377.380" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.480" y="301.014" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="189.505" y="227.859" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="248.620" y="177.518" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="324.986" y="163.480" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="398.141" y="189.505" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="448.482" y="248.620" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.217"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.850" opacity="0.362" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.430"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.370"/>
+<rect x="462.309" y="327.377" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.350" rx="3.000"/>
+<rect x="435.117" y="400.105" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.350" rx="3.000"/>
+<rect x="375.204" y="449.494" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.350" rx="3.000"/>
+<rect x="298.623" y="462.309" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="225.895" y="435.117" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="176.506" y="375.204" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.691" y="298.623" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="190.883" y="225.895" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="250.796" y="176.506" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="327.377" y="163.691" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="400.105" y="190.883" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="449.494" y="250.796" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.224"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.892" opacity="0.373" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.442"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.378"/>
+<rect x="462.060" y="329.764" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.358" rx="3.000"/>
+<rect x="433.708" y="402.048" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.358" rx="3.000"/>
+<rect x="373.012" y="450.472" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.358" rx="3.000"/>
+<rect x="296.236" y="462.060" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.358" rx="3.000"/>
+<rect x="223.952" y="433.708" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="175.528" y="373.012" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="163.940" y="296.236" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="192.292" y="223.952" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="252.988" y="175.528" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="329.764" y="163.940" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="402.048" y="192.292" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="450.472" y="252.988" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.230"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.933" opacity="0.383" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.453"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.387"/>
+<rect x="461.773" y="332.146" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.367" rx="3.000"/>
+<rect x="432.268" y="403.968" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.367" rx="3.000"/>
+<rect x="370.805" y="451.414" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.367" rx="3.000"/>
+<rect x="293.854" y="461.773" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.367" rx="3.000"/>
+<rect x="222.032" y="432.268" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="174.586" y="370.805" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="164.227" y="293.854" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="193.732" y="222.032" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="255.195" y="174.586" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="332.146" y="164.227" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="403.968" y="193.732" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="451.414" y="255.195" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.236"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="1.975" opacity="0.394" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.465"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.395"/>
+<rect x="461.448" y="334.524" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.375" rx="3.000"/>
+<rect x="430.798" y="405.864" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.375" rx="3.000"/>
+<rect x="368.584" y="452.321" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.375" rx="3.000"/>
+<rect x="291.476" y="461.448" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.375" rx="3.000"/>
+<rect x="220.136" y="430.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.375" rx="3.000"/>
+<rect x="173.679" y="368.584" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="164.552" y="291.476" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="195.202" y="220.136" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="257.416" y="173.679" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="334.524" y="164.552" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="405.864" y="195.202" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="452.321" y="257.416" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.242"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.017" opacity="0.404" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.477"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.403"/>
+<rect x="461.084" y="336.896" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.383" rx="3.000"/>
+<rect x="429.297" y="407.737" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.383" rx="3.000"/>
+<rect x="366.348" y="453.193" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.383" rx="3.000"/>
+<rect x="289.104" y="461.084" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.383" rx="3.000"/>
+<rect x="218.263" y="429.297" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.383" rx="3.000"/>
+<rect x="172.807" y="366.348" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="164.916" y="289.104" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="196.703" y="218.263" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="259.652" y="172.807" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="336.896" y="164.916" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="407.737" y="196.703" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="453.193" y="259.652" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.249"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.058" opacity="0.415" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.488"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.412"/>
+<rect x="460.683" y="339.262" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.392" rx="3.000"/>
+<rect x="427.766" y="409.585" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.392" rx="3.000"/>
+<rect x="364.098" y="454.028" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.392" rx="3.000"/>
+<rect x="286.738" y="460.683" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.392" rx="3.000"/>
+<rect x="216.415" y="427.766" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.392" rx="3.000"/>
+<rect x="171.972" y="364.098" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.392" rx="3.000"/>
+<rect x="165.317" y="286.738" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="198.234" y="216.415" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="261.902" y="171.972" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="339.262" y="165.317" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="409.585" y="198.234" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="454.028" y="261.902" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.255"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.100" opacity="0.425" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.500"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.420"/>
+<rect x="460.244" y="341.621" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.400" rx="3.000"/>
+<rect x="426.206" y="411.409" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.400" rx="3.000"/>
+<rect x="361.835" y="454.828" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.400" rx="3.000"/>
+<rect x="284.379" y="460.244" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.400" rx="3.000"/>
+<rect x="214.591" y="426.206" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.400" rx="3.000"/>
+<rect x="171.172" y="361.835" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.400" rx="3.000"/>
+<rect x="165.756" y="284.379" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="199.794" y="214.591" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="264.165" y="171.172" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="341.621" y="165.756" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="411.409" y="199.794" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="454.828" y="264.165" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.261"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.142" opacity="0.435" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.512"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.428"/>
+<rect x="459.767" y="343.973" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="424.618" y="413.207" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="359.560" y="455.591" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="282.027" y="459.767" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="212.793" y="424.618" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="170.409" y="359.560" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="166.233" y="282.027" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.408" rx="3.000"/>
+<rect x="201.382" y="212.793" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="266.440" y="170.409" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="343.973" y="166.233" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="413.207" y="201.382" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="455.591" y="266.440" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.268"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.183" opacity="0.446" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.523"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.437"/>
+<rect x="459.253" y="346.317" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="423.000" y="414.980" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="357.273" y="456.318" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="279.683" y="459.253" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="211.020" y="423.000" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="169.682" y="357.273" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="166.747" y="279.683" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.417" rx="3.000"/>
+<rect x="203.000" y="211.020" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="268.727" y="169.682" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="346.317" y="166.747" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="414.980" y="203.000" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="456.318" y="268.727" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.274"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.225" opacity="0.456" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.535"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.445"/>
+<rect x="458.701" y="348.653" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="421.355" y="416.727" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="354.974" y="457.007" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="277.347" y="458.701" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="209.273" y="421.355" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="168.993" y="354.974" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="167.299" y="277.347" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="204.645" y="209.273" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.425" rx="3.000"/>
+<rect x="271.026" y="168.993" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="348.653" y="167.299" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="416.727" y="204.645" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="457.007" y="271.026" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.280"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.267" opacity="0.467" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.547"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.453"/>
+<rect x="458.112" y="350.979" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="419.681" y="418.447" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="352.665" y="457.661" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="275.021" y="458.112" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="207.553" y="419.681" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="168.339" y="352.665" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="167.888" y="275.021" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="206.319" y="207.553" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.433" rx="3.000"/>
+<rect x="273.335" y="168.339" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="350.979" y="167.888" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="418.447" y="206.319" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="457.661" y="273.335" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim16"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.286"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.308" opacity="0.477" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.558"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.462"/>
+<rect x="457.486" y="353.296" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="417.981" y="420.140" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="350.346" y="458.277" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="272.704" y="457.486" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="205.860" y="417.981" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="167.723" y="350.346" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="168.514" y="272.704" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="208.019" y="205.860" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="275.654" y="167.723" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.442" rx="3.000"/>
+<rect x="353.296" y="168.514" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="420.140" y="208.019" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="458.277" y="275.654" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim17"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.292"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.350" opacity="0.487" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.570"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.470"/>
+<rect x="456.823" y="355.602" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="416.253" y="421.806" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="348.017" y="458.855" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="270.398" y="456.823" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="204.194" y="416.253" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="167.145" y="348.017" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="169.177" y="270.398" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="209.747" y="204.194" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="277.983" y="167.145" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.450" rx="3.000"/>
+<rect x="355.602" y="169.177" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="421.806" y="209.747" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="458.855" y="277.983" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim18"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.299"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.392" opacity="0.498" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.582"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.478"/>
+<rect x="456.123" y="357.898" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="414.499" y="423.444" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="345.679" y="459.397" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="268.102" y="456.123" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="202.556" y="414.499" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="166.603" y="345.679" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="169.877" y="268.102" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="211.501" y="202.556" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="280.321" y="166.603" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="357.898" y="169.877" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.458" rx="3.000"/>
+<rect x="423.444" y="211.501" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="459.397" y="280.321" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim19"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.305"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.433" opacity="0.508" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.593"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.487"/>
+<rect x="455.386" y="360.182" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="412.719" y="425.054" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="343.333" y="459.901" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="265.818" y="455.386" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="200.946" y="412.719" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="166.099" y="343.333" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="170.614" y="265.818" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="213.281" y="200.946" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="282.667" y="166.099" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="360.182" y="170.614" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.467" rx="3.000"/>
+<rect x="425.054" y="213.281" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="459.901" y="282.667" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim20"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.311"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.475" opacity="0.519" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.605"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.495"/>
+<rect x="454.613" y="362.454" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="410.914" y="426.635" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="340.979" y="460.368" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="263.546" y="454.613" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="199.365" y="410.914" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="165.632" y="340.979" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="171.387" y="263.546" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="215.086" y="199.365" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="285.021" y="165.632" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="362.454" y="171.387" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="426.635" y="215.086" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.475" rx="3.000"/>
+<rect x="460.368" y="285.021" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim21"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.318"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.517" opacity="0.529" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.333" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.617"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.503"/>
+<rect x="453.804" y="364.713" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="409.083" y="428.187" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="338.617" y="460.796" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="261.287" y="453.804" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="197.813" y="409.083" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="165.204" y="338.617" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="172.196" y="261.287" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="216.917" y="197.813" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="287.383" y="165.204" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="364.713" y="172.196" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="428.187" y="216.917" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.483" rx="3.000"/>
+<rect x="460.796" y="287.383" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/></g>
+<g id="anim22"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.324"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.558" opacity="0.540" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.667" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.628"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.512"/>
+<rect x="452.959" y="366.959" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="407.228" y="429.709" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="336.250" y="461.187" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="259.041" y="452.959" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="196.291" y="407.228" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="164.813" y="336.250" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="173.041" y="259.041" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="218.772" y="196.291" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="289.750" y="164.813" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="366.959" y="173.041" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="429.709" y="218.772" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/>
+<rect x="461.187" y="289.750" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.492" rx="3.000"/></g>
+<g id="anim23"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/></g>
+<g id="verify"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.297"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.380" opacity="0.495" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.240" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.578"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.476"/>
+<rect x="456.323" y="357.256" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="414.993" y="422.988" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="346.334" y="459.249" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="268.744" y="456.323" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="203.012" y="414.993" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="166.751" y="346.334" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="169.677" y="268.744" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="211.007" y="203.012" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="279.666" y="166.751" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="357.256" y="169.677" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.456" rx="3.000"/>
+<rect x="422.988" y="211.007" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="459.249" y="279.666" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="196.000" y="304.000" width="248.000" height="34.000" fill="#2ed8f2" opacity="0.055"/>
+<line x1="196.000" y1="321.000" x2="444.000" y2="321.000" stroke="#48e5b4" stroke-width="2.000" stroke-linecap="round" opacity="0.420" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 175.984 199.156 A 188.000 188.000 0 1 1 175.984 440.844" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.100" opacity="0.360"/></g>
+<g id="fail"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.267"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#ff7a4d" stroke-width="2.180" opacity="0.445" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.640" fill="url(#crypto_seal_base_core)" stroke="#ff7a4d" stroke-width="1.000" opacity="0.522"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.436"/>
+<rect x="459.296" y="346.130" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="423.131" y="414.839" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="357.456" y="456.261" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="279.870" y="459.296" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="211.161" y="423.131" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="169.739" y="357.456" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="166.704" y="279.870" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.416" rx="3.000"/>
+<rect x="202.869" y="211.161" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="268.544" y="169.739" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="346.130" y="166.704" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="414.839" y="202.869" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="456.261" y="268.544" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<line x1="342.795" y1="273.263" x2="420.968" y2="190.766" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#crypto_seal_base_glow)"/>
+<line x1="367.128" y1="298.024" x2="479.797" y2="283.108" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#crypto_seal_base_glow)"/>
+<line x1="369.986" y1="334.333" x2="464.803" y2="396.993" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#crypto_seal_base_glow)"/>
+<line x1="352.014" y1="360.977" x2="391.893" y2="467.402" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#crypto_seal_base_glow)"/>
+<line x1="295.587" y1="365.913" x2="214.583" y2="445.631" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#crypto_seal_base_glow)"/>
+<line x1="272.872" y1="298.024" x2="189.024" y2="221.302" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 146.973 270.385 A 180.000 180.000 0 0 1 481.783 241.093" fill="none" stroke="#ff7a4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.800" opacity="0.480"/></g>
+<g id="backspace"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.243"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.020" opacity="0.405" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.360" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.478"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.404"/>
+<rect x="461.054" y="337.086" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.384" rx="3.000"/>
+<rect x="429.175" y="407.886" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.384" rx="3.000"/>
+<rect x="366.168" y="453.261" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.384" rx="3.000"/>
+<rect x="288.914" y="461.054" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.384" rx="3.000"/>
+<rect x="218.114" y="429.175" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.384" rx="3.000"/>
+<rect x="172.739" y="366.168" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.384" rx="3.000"/>
+<rect x="164.946" y="288.914" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="196.825" y="218.114" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="259.832" y="172.739" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="337.086" y="164.946" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="407.886" y="196.825" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<rect x="453.261" y="259.832" width="14.000" height="14.000" fill="#132349" opacity="0.130" rx="3.000"/>
+<path d="M 208.924 443.362 A 166.000 166.000 0 1 1 454.297 222.428" fill="none" stroke="#ff7a4d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.000" opacity="0.520" filter="url(#crypto_seal_base_glow)"/>
+<line x1="432.000" y1="320.000" x2="214.000" y2="320.000" stroke="#ff7a4d" stroke-width="2.000" stroke-linecap="round" opacity="0.420"/>
+<polygon points="212.000,320.000 234.000,307.000 234.000,333.000" fill="#ff7a4d" opacity="0.540"/></g>
+<g id="fg"><path d="M 496.366 191.863 A 218.000 218.000 0 0 1 522.126 401.664" fill="none" stroke="#48e5b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.150"/>
+<path d="M 127.517 422.345 A 218.000 218.000 0 0 1 143.634 191.863" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="236.000" fill="none" stroke="#ffffff" stroke-width="0.600" opacity="0.035"/></g>
+<g opacity="0" id="remove_background"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g opacity="0" id="sequential_animation"><rect x="1" y="0" width="1" height="1" fill="#000000"/></g>
+<g id="success"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="184.000" fill="none" stroke="#48e5b4" stroke-width="2.600" opacity="0.440" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 327.746 172.203 A 148.000 148.000 0 0 1 350.771 175.234" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 365.735 179.244 A 148.000 148.000 0 0 1 387.191 188.131" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 400.607 195.877 A 148.000 148.000 0 0 1 419.031 210.015" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 429.985 220.969 A 148.000 148.000 0 0 1 444.123 239.393" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 451.869 252.809 A 148.000 148.000 0 0 1 460.756 274.265" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 464.766 289.229 A 148.000 148.000 0 0 1 467.797 312.254" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 467.797 327.746 A 148.000 148.000 0 0 1 464.766 350.771" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 460.756 365.735 A 148.000 148.000 0 0 1 451.869 387.191" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 444.123 400.607 A 148.000 148.000 0 0 1 429.985 419.031" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 419.031 429.985 A 148.000 148.000 0 0 1 400.607 444.123" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 387.191 451.869 A 148.000 148.000 0 0 1 365.735 460.756" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 350.771 464.766 A 148.000 148.000 0 0 1 327.746 467.797" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 312.254 467.797 A 148.000 148.000 0 0 1 289.229 464.766" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 274.265 460.756 A 148.000 148.000 0 0 1 252.809 451.869" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 239.393 444.123 A 148.000 148.000 0 0 1 220.969 429.985" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 210.015 419.031 A 148.000 148.000 0 0 1 195.877 400.607" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 188.131 387.191 A 148.000 148.000 0 0 1 179.244 365.735" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 175.234 350.771 A 148.000 148.000 0 0 1 172.203 327.746" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 172.203 312.254 A 148.000 148.000 0 0 1 175.234 289.229" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 179.244 274.265 A 148.000 148.000 0 0 1 188.131 252.809" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 195.877 239.393 A 148.000 148.000 0 0 1 210.015 220.969" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 220.969 210.015 A 148.000 148.000 0 0 1 239.393 195.877" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 252.809 188.131 A 148.000 148.000 0 0 1 274.265 179.244" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/>
+<path d="M 289.229 175.234 A 148.000 148.000 0 0 1 312.254 172.203" fill="none" stroke="#2ed8f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#crypto_seal_base_glow)"/></g>
+<g id="success00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="100.625" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.470" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="392.095" cy="324.725" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="367.638" cy="374.320" r="2.800" fill="#2ed8f2" opacity="0.529"/>
+<circle cx="315.275" cy="392.095" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="265.680" cy="367.638" r="2.800" fill="#2ed8f2" opacity="0.529"/>
+<circle cx="247.905" cy="315.275" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="272.362" cy="265.680" r="2.800" fill="#2ed8f2" opacity="0.529"/>
+<circle cx="324.725" cy="247.905" r="2.800" fill="#48e5b4" opacity="0.529"/>
+<circle cx="374.320" cy="272.362" r="2.800" fill="#2ed8f2" opacity="0.529"/></g>
+<g id="success01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="109.250" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.461" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="399.811" cy="330.507" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="369.005" cy="383.865" r="2.800" fill="#2ed8f2" opacity="0.517"/>
+<circle cx="309.493" cy="399.811" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="256.135" cy="369.005" r="2.800" fill="#2ed8f2" opacity="0.517"/>
+<circle cx="240.189" cy="309.493" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="270.995" cy="256.135" r="2.800" fill="#2ed8f2" opacity="0.517"/>
+<circle cx="330.507" cy="240.189" r="2.800" fill="#48e5b4" opacity="0.517"/>
+<circle cx="383.865" cy="270.995" r="2.800" fill="#2ed8f2" opacity="0.517"/></g>
+<g id="success02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="117.875" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.451" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="407.045" cy="337.314" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="369.307" cy="393.793" r="2.800" fill="#2ed8f2" opacity="0.506"/>
+<circle cx="302.686" cy="407.045" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="246.207" cy="369.307" r="2.800" fill="#2ed8f2" opacity="0.506"/>
+<circle cx="232.955" cy="302.686" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="270.693" cy="246.207" r="2.800" fill="#2ed8f2" opacity="0.506"/>
+<circle cx="337.314" cy="232.955" r="2.800" fill="#48e5b4" opacity="0.506"/>
+<circle cx="393.793" cy="270.693" r="2.800" fill="#2ed8f2" opacity="0.506"/></g>
+<g id="success03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="126.500" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.442" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="413.695" cy="345.105" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="368.500" cy="404.004" r="2.800" fill="#2ed8f2" opacity="0.495"/>
+<circle cx="294.895" cy="413.695" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="235.996" cy="368.500" r="2.800" fill="#2ed8f2" opacity="0.495"/>
+<circle cx="226.305" cy="294.895" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="271.500" cy="235.996" r="2.800" fill="#2ed8f2" opacity="0.495"/>
+<circle cx="345.105" cy="226.305" r="2.800" fill="#48e5b4" opacity="0.495"/>
+<circle cx="404.004" cy="271.500" r="2.800" fill="#2ed8f2" opacity="0.495"/></g>
+<g id="success04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="135.125" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.432" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="419.664" cy="353.832" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="366.551" cy="414.396" r="2.800" fill="#2ed8f2" opacity="0.484"/>
+<circle cx="286.168" cy="419.664" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="225.604" cy="366.551" r="2.800" fill="#2ed8f2" opacity="0.484"/>
+<circle cx="220.336" cy="286.168" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="273.449" cy="225.604" r="2.800" fill="#2ed8f2" opacity="0.484"/>
+<circle cx="353.832" cy="220.336" r="2.800" fill="#48e5b4" opacity="0.484"/>
+<circle cx="414.396" cy="273.449" r="2.800" fill="#2ed8f2" opacity="0.484"/></g>
+<g id="success05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="143.750" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.422" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="424.860" cy="363.435" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="363.435" cy="424.860" r="2.800" fill="#2ed8f2" opacity="0.472"/>
+<circle cx="276.565" cy="424.860" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="215.140" cy="363.435" r="2.800" fill="#2ed8f2" opacity="0.472"/>
+<circle cx="215.140" cy="276.565" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="276.565" cy="215.140" r="2.800" fill="#2ed8f2" opacity="0.472"/>
+<circle cx="363.435" cy="215.140" r="2.800" fill="#48e5b4" opacity="0.472"/>
+<circle cx="424.860" cy="276.565" r="2.800" fill="#2ed8f2" opacity="0.472"/></g>
+<g id="success06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="152.375" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.413" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="429.194" cy="373.849" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="359.135" cy="435.289" r="2.800" fill="#2ed8f2" opacity="0.461"/>
+<circle cx="266.151" cy="429.194" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="204.711" cy="359.135" r="2.800" fill="#2ed8f2" opacity="0.461"/>
+<circle cx="210.806" cy="266.151" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="280.865" cy="204.711" r="2.800" fill="#2ed8f2" opacity="0.461"/>
+<circle cx="373.849" cy="210.806" r="2.800" fill="#48e5b4" opacity="0.461"/>
+<circle cx="435.289" cy="280.865" r="2.800" fill="#2ed8f2" opacity="0.461"/></g>
+<g id="success07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="161.000" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.403" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="432.583" cy="385.000" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="353.646" cy="445.570" r="2.800" fill="#2ed8f2" opacity="0.450"/>
+<circle cx="255.000" cy="432.583" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="194.430" cy="353.646" r="2.800" fill="#2ed8f2" opacity="0.450"/>
+<circle cx="207.417" cy="255.000" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="286.354" cy="194.430" r="2.800" fill="#2ed8f2" opacity="0.450"/>
+<circle cx="385.000" cy="207.417" r="2.800" fill="#48e5b4" opacity="0.450"/>
+<circle cx="445.570" cy="286.354" r="2.800" fill="#2ed8f2" opacity="0.450"/></g>
+<g id="success08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="169.625" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.394" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="434.951" cy="396.808" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="346.971" cy="455.594" r="2.800" fill="#2ed8f2" opacity="0.439"/>
+<circle cx="243.192" cy="434.951" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="184.406" cy="346.971" r="2.800" fill="#2ed8f2" opacity="0.439"/>
+<circle cx="205.049" cy="243.192" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="293.029" cy="184.406" r="2.800" fill="#2ed8f2" opacity="0.439"/>
+<circle cx="396.808" cy="205.049" r="2.800" fill="#48e5b4" opacity="0.439"/>
+<circle cx="455.594" cy="293.029" r="2.800" fill="#2ed8f2" opacity="0.439"/></g>
+<g id="success09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="178.250" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.384" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="436.226" cy="409.184" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="339.122" cy="465.247" r="2.800" fill="#2ed8f2" opacity="0.427"/>
+<circle cx="230.816" cy="436.226" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="174.753" cy="339.122" r="2.800" fill="#2ed8f2" opacity="0.427"/>
+<circle cx="203.774" cy="230.816" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="300.878" cy="174.753" r="2.800" fill="#2ed8f2" opacity="0.427"/>
+<circle cx="409.184" cy="203.774" r="2.800" fill="#48e5b4" opacity="0.427"/>
+<circle cx="465.247" cy="300.878" r="2.800" fill="#2ed8f2" opacity="0.427"/></g>
+<g id="success10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="186.875" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.374" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="436.347" cy="422.034" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="330.121" cy="474.419" r="2.800" fill="#2ed8f2" opacity="0.416"/>
+<circle cx="217.966" cy="436.347" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="165.581" cy="330.121" r="2.800" fill="#2ed8f2" opacity="0.416"/>
+<circle cx="203.653" cy="217.966" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="309.879" cy="165.581" r="2.800" fill="#2ed8f2" opacity="0.416"/>
+<circle cx="422.034" cy="203.653" r="2.800" fill="#48e5b4" opacity="0.416"/>
+<circle cx="474.419" cy="309.879" r="2.800" fill="#2ed8f2" opacity="0.416"/></g>
+<g id="success11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="195.500" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.365" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="435.258" cy="435.258" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="320.000" cy="483.000" r="2.800" fill="#2ed8f2" opacity="0.405"/>
+<circle cx="204.742" cy="435.258" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="157.000" cy="320.000" r="2.800" fill="#2ed8f2" opacity="0.405"/>
+<circle cx="204.742" cy="204.742" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="320.000" cy="157.000" r="2.800" fill="#2ed8f2" opacity="0.405"/>
+<circle cx="435.258" cy="204.742" r="2.800" fill="#48e5b4" opacity="0.405"/>
+<circle cx="483.000" cy="320.000" r="2.800" fill="#2ed8f2" opacity="0.405"/></g>
+<g id="success12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="204.125" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.355" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="432.913" cy="448.753" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="308.800" cy="490.883" r="2.800" fill="#2ed8f2" opacity="0.394"/>
+<circle cx="191.247" cy="432.913" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="149.117" cy="308.800" r="2.800" fill="#2ed8f2" opacity="0.394"/>
+<circle cx="207.087" cy="191.247" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="331.200" cy="149.117" r="2.800" fill="#2ed8f2" opacity="0.394"/>
+<circle cx="448.753" cy="207.087" r="2.800" fill="#48e5b4" opacity="0.394"/>
+<circle cx="490.883" cy="331.200" r="2.800" fill="#2ed8f2" opacity="0.394"/></g>
+<g id="success13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="212.750" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.346" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="429.273" cy="462.407" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="296.571" cy="497.964" r="2.800" fill="#2ed8f2" opacity="0.383"/>
+<circle cx="177.593" cy="429.273" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="142.036" cy="296.571" r="2.800" fill="#2ed8f2" opacity="0.383"/>
+<circle cx="210.727" cy="177.593" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="343.429" cy="142.036" r="2.800" fill="#2ed8f2" opacity="0.383"/>
+<circle cx="462.407" cy="210.727" r="2.800" fill="#48e5b4" opacity="0.383"/>
+<circle cx="497.964" cy="343.429" r="2.800" fill="#2ed8f2" opacity="0.383"/></g>
+<g id="success14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="221.375" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.336" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="424.308" cy="476.108" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="283.372" cy="504.142" r="2.800" fill="#2ed8f2" opacity="0.371"/>
+<circle cx="163.892" cy="424.308" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="135.858" cy="283.372" r="2.800" fill="#2ed8f2" opacity="0.371"/>
+<circle cx="215.692" cy="163.892" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="356.628" cy="135.858" r="2.800" fill="#2ed8f2" opacity="0.371"/>
+<circle cx="476.108" cy="215.692" r="2.800" fill="#48e5b4" opacity="0.371"/>
+<circle cx="504.142" cy="356.628" r="2.800" fill="#2ed8f2" opacity="0.371"/></g>
+<g id="success15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#crypto_seal_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#386df5" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#2ed8f2" stroke-width="2.600" opacity="0.550" filter="url(#crypto_seal_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#crypto_seal_base_core)" stroke="#2ed8f2" stroke-width="1.000" opacity="0.640"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#386df5" stroke-width="3.000" opacity="0.220"/>
+<circle cx="320.000" cy="320.000" r="124.000" fill="none" stroke="#2ed8f2" stroke-width="2.200" opacity="0.520"/>
+<rect x="452.078" y="369.191" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="405.349" y="431.202" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="333.876" y="461.540" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="256.809" y="452.078" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="194.798" y="405.349" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="164.460" y="333.876" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="173.922" y="256.809" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="220.651" y="194.798" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="292.124" y="164.460" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="369.191" y="173.922" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="431.202" y="220.651" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<rect x="461.540" y="292.124" width="14.000" height="14.000" fill="#2ed8f2" opacity="0.500" rx="3.000"/>
+<circle cx="320.000" cy="320.000" r="230.000" fill="none" stroke="#48e5b4" stroke-width="2.200" opacity="0.326" filter="url(#crypto_seal_base_glow)"/>
+<circle cx="418.000" cy="489.741" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="269.271" cy="509.321" r="2.800" fill="#2ed8f2" opacity="0.360"/>
+<circle cx="150.259" cy="418.000" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="130.679" cy="269.271" r="2.800" fill="#2ed8f2" opacity="0.360"/>
+<circle cx="222.000" cy="150.259" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="370.729" cy="130.679" r="2.800" fill="#2ed8f2" opacity="0.360"/>
+<circle cx="489.741" cy="222.000" r="2.800" fill="#48e5b4" opacity="0.360"/>
+<circle cx="509.321" cy="370.729" r="2.800" fill="#2ed8f2" opacity="0.360"/></g>
+</svg>

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 199727,
+      "path": "tiny-robots.svg",
+      "sha256": "d96db5f7eb2da0a15cdc1259950317b9fcec85da79cd4dcb9868eb82528fde04"
+    },
+    {
+      "bytes": 408780,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "f108c2b9d0d9e53e1ac513f28737c60a5972bd50a691c7cc043a7bce69deb65f"
+    },
+    {
+      "bytes": 18886,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "a2069c11dc0d191e25868054f1fcee0f1557207dfc0a457d2b854cba1e0f4b33"
+    },
+    {
+      "bytes": 1183,
+      "path": "lock.sh",
+      "sha256": "46c6ba4d6d007790fc95157910eab24196a1e4c484799ad6f31ae1fbba42abde"
+    },
+    {
+      "bytes": 1537,
+      "path": "README.md",
+      "sha256": "48f6b259c64480219dd3a7025fd7161b166b663866b32ed59e38c304ae0c493f"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "tiny-robots",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "tiny-robots.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "TinyRobots",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

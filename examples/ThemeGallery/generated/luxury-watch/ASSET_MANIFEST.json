@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "professional",
+  "files": [
+    {
+      "bytes": 285494,
+      "path": "luxury-watch.svg",
+      "sha256": "9f79c2051a63b4b73c5b93d73dce8a0bbe659054e71b52a6fd14bd1b47a18dde"
+    },
+    {
+      "bytes": 350987,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "07cfbfaba2de3579a50b8c5c3da9f8cc51aa28c4f995e4d31b6454979d7e10f3"
+    },
+    {
+      "bytes": 17048,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "01009414f55bb01ba902cbf6e27fb2d6c4db3ee846bf1712663bcff4047089e4"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "46529a789fb9ec6d199a8a75cf569ae6902a2adcd3ae6062873d43ab8827b2d3"
+    },
+    {
+      "bytes": 1542,
+      "path": "README.md",
+      "sha256": "c261bd51bebf54c57b7b40081bd10be6b4f4af9466be3a04153f51db767061e8"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "luxury-watch",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "luxury-watch.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "LuxuryWatch",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

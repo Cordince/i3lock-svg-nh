@@ -1,0 +1,111 @@
+{
+  "_generated_file_header": "Generated generic i3lock-svg-nh theme. No external assets.",
+  "backgrounds": [
+    "background-1920x1080.png",
+    "background-2560x1440.png",
+    "background-3840x2160.png",
+    "tile-512.png"
+  ],
+  "files": [
+    {
+      "bytes": 34181,
+      "path": "minimal-core.svg",
+      "sha256": "179a33acd5e36e9d246510bdbc7acd036e1d04c917bde1f0c184d147e7af3482"
+    },
+    {
+      "bytes": 149195,
+      "path": "background-1920x1080.png",
+      "sha256": "2e6220e60068a493a4aabce47edbdb4f2b602839dd94c66fd0ed6a7ec89934c1"
+    },
+    {
+      "bytes": 219115,
+      "path": "background-2560x1440.png",
+      "sha256": "81add49f40c4e5874ac4f45f7da99d5edda3d9dddb5bcc960311bf8b59cb9d01"
+    },
+    {
+      "bytes": 408363,
+      "path": "background-3840x2160.png",
+      "sha256": "e265c4fecbb986beb94392e3bf446c3d92ddea4c4768f0f44b21197176e4f16f"
+    },
+    {
+      "bytes": 4801,
+      "path": "tile-512.png",
+      "sha256": "70ef6a87b206f88fca3e57d8494e4bfcee2c2af91234c2e37e38b609dd168b4f"
+    },
+    {
+      "bytes": 1049,
+      "path": "lock.sh",
+      "sha256": "f2996adbaa66a4e1470145bc42bf496a1a1c2b829028f901dda03a4a02ce8034"
+    },
+    {
+      "bytes": 1361,
+      "path": "README.md",
+      "sha256": "4fe5d0bf1dd5134108957225566fccff74b6785c28434120fd60fa6eb224915a"
+    }
+  ],
+  "indicator_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "indicator_svg": "minimal-core.svg",
+  "renderer_contract": {
+    "future_success_frames": [
+      "success00",
+      "success01",
+      "success02",
+      "success03",
+      "success04",
+      "success05",
+      "success06",
+      "success07",
+      "success08",
+      "success09",
+      "success10",
+      "success11",
+      "success12",
+      "success13",
+      "success14",
+      "success15"
+    ],
+    "static_ids": [
+      "bg",
+      "idle",
+      "verify",
+      "fail",
+      "backspace",
+      "fg",
+      "remove_background",
+      "sequential_animation",
+      "success"
+    ],
+    "typing_frames": [
+      "anim00",
+      "anim01",
+      "anim02",
+      "anim03",
+      "anim04",
+      "anim05",
+      "anim06",
+      "anim07",
+      "anim08",
+      "anim09",
+      "anim10",
+      "anim11",
+      "anim12",
+      "anim13",
+      "anim14",
+      "anim15",
+      "anim16",
+      "anim17",
+      "anim18",
+      "anim19",
+      "anim20",
+      "anim21",
+      "anim22",
+      "anim23"
+    ]
+  },
+  "slug": "minimal-core",
+  "theme": "MinimalCore"
+}

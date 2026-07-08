@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 186072,
+      "path": "golden-ratio.svg",
+      "sha256": "1048b67c5ef073ad23fa95a4d9dc937e3a17511c61a57688a2900c6b58e80127"
+    },
+    {
+      "bytes": 397928,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "7770e443224446e4b3b4af394be14714005dac406eb38a58c9faa8f3145aae4a"
+    },
+    {
+      "bytes": 18856,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "ccb8926e2b025434719880d4ce7e8311312fa47e08233a489668386424324895"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "89268366c23f8070bd28480ab62ec22d247644bc86562169f52b1c7f04cf84fb"
+    },
+    {
+      "bytes": 1539,
+      "path": "README.md",
+      "sha256": "a12f55e22eb549d3165ab1ca9cf5c4a4cc62727e7f62849eaa82d59e34a2d118"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "golden-ratio",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "golden-ratio.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "GoldenRatio",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

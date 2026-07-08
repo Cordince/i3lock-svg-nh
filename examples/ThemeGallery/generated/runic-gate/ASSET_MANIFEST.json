@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "mythic",
+  "files": [
+    {
+      "bytes": 195879,
+      "path": "runic-gate.svg",
+      "sha256": "70877d04f5dd4cc7405b995cfaf99c32724392843abc9e5a9092aa95923935b6"
+    },
+    {
+      "bytes": 349652,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "0e66ec507d9d7874f9992fd6eeaea214e1916ab15389d82436c3d593553587bb"
+    },
+    {
+      "bytes": 15647,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "17f4c4e3e1a1a6a1027f3317d27c48b310b589435556c9eb9ac51fa42ff43300"
+    },
+    {
+      "bytes": 1182,
+      "path": "lock.sh",
+      "sha256": "a706fb4555485c8b846641b94cb200273f665476baefc0c8a16fe0dbe2394364"
+    },
+    {
+      "bytes": 1524,
+      "path": "README.md",
+      "sha256": "a10841626a3eb630ec27e866e58e62bee529129298663efeb237f4f51c037e72"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "runic-gate",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "runic-gate.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "RunicGate",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

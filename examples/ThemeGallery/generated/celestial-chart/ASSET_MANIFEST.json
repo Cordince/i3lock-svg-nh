@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 85379,
+      "path": "celestial-chart.svg",
+      "sha256": "3e0c3795dca7257588a09c700f56e51a3fd6cca9f81abf5466200638402d76cc"
+    },
+    {
+      "bytes": 389899,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "dfcf3c8e42c11104c6f092aafc69b71b20f75c8d7bcbaedd1836098e23631b7f"
+    },
+    {
+      "bytes": 17070,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "c9714f64c3aca9b92f63a6c7e4bb32481f2b23e2c3ce2fd942b79d5443bb0c57"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "658c48167611b278ab77ae779e247b561f2f2f41ddc5bf38e839467d9de150b9"
+    },
+    {
+      "bytes": 1546,
+      "path": "README.md",
+      "sha256": "626f2fcbbea3cddf805893ab951c798f73f7b2591b9ad3428ce18c27614877b0"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "celestial-chart",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "celestial-chart.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "CelestialChart",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

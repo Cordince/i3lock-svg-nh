@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 115069,
+      "path": "crypto-seal.svg",
+      "sha256": "155b45fa36cd79b2c8314b01f5ad24d9596fc5945902c3c82ffd270a232712c3"
+    },
+    {
+      "bytes": 449048,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "6c613547db5554071c0744a372e873b1c72444ddd99fdf5ee283db1b4d9cf908"
+    },
+    {
+      "bytes": 25339,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "76af08559b7b83eb2b43c3029247666a86ee661eac7a6cc60e2154f8ec346f41"
+    },
+    {
+      "bytes": 1183,
+      "path": "lock.sh",
+      "sha256": "3d9cb5fb916ede22a7c826b8d6b41ed470c0b180e7d88625034fcdce6dbccf36"
+    },
+    {
+      "bytes": 1535,
+      "path": "README.md",
+      "sha256": "57396e095e4a4ba80c140a1349cc9f028bc8b865ee4f0ad9bdd4e6f9623ede0e"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "crypto-seal",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "crypto-seal.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "CryptoSeal",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

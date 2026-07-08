@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme gallery asset. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs>
+  <radialGradient id="fractal_bloom_base_field" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#77d7ff" stop-opacity="0.18"/>
+    <stop offset="0.52" stop-color="#8478ff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070814" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="fractal_bloom_base_core" cx="50%" cy="48%" r="55%">
+    <stop offset="0" stop-color="#d5f6ff" stop-opacity="0.24"/>
+    <stop offset="0.62" stop-color="#77d7ff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070814" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="fractal_bloom_base_facet" x1="210" y1="210" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#77d7ff" stop-opacity="0.20"/>
+    <stop offset="0.55" stop-color="#8478ff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#d5f6ff" stop-opacity="0.18"/>
+  </linearGradient>
+  <filter id="fractal_bloom_base_glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="fractal_bloom_base_soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g id="bg"><circle cx="320.000" cy="320.000" r="226.000" fill="url(#fractal_bloom_base_field)" opacity="1.000"/>
+<circle cx="320.000" cy="320.000" r="206.000" fill="none" stroke="#8478ff" stroke-width="0.900" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#77d7ff" stroke-width="0.600" opacity="0.080"/>
+<line x1="200.000" y1="208.000" x2="200.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="200.000" x2="432.000" y2="200.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="234.000" y1="208.000" x2="234.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="234.000" x2="432.000" y2="234.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="268.000" y1="208.000" x2="268.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="268.000" x2="432.000" y2="268.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="302.000" y1="208.000" x2="302.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="302.000" x2="432.000" y2="302.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="336.000" y1="208.000" x2="336.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="336.000" x2="432.000" y2="336.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="370.000" y1="208.000" x2="370.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="370.000" x2="432.000" y2="370.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="404.000" y1="208.000" x2="404.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="404.000" x2="432.000" y2="404.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="438.000" y1="208.000" x2="438.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="438.000" x2="432.000" y2="438.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/></g>
+<g id="idle"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.213"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.820" opacity="0.355" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.760" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.422"/>
+<circle cx="327.474" cy="322.854" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="328.740" cy="332.436" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="320.430" cy="342.396" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="303.922" cy="344.853" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.474,322.854 328.740,332.436" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.474" y1="322.854" x2="337.277" y2="337.950" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="328.740" y1="332.436" x2="321.419" y2="348.880" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.186"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.642" opacity="0.310" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.372"/>
+<circle cx="327.981" cy="320.552" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.981,320.552" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.981" y1="320.552" x2="337.784" y2="335.648" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.193"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.683" opacity="0.321" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.383"/>
+<circle cx="327.924" cy="321.102" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="331.311" cy="330.154" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.924,321.102" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.924" y1="321.102" x2="337.727" y2="336.198" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.199"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.725" opacity="0.331" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.395"/>
+<circle cx="327.829" cy="321.646" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="330.583" cy="330.911" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="323.938" cy="342.051" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.829,321.646" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.829" y1="321.646" x2="337.632" y2="336.742" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.205"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.767" opacity="0.342" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.407"/>
+<circle cx="327.696" cy="322.183" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="329.804" cy="331.615" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="322.406" cy="342.270" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.696,322.183 329.804,331.615" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.696" y1="322.183" x2="337.500" y2="337.279" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="329.804" y1="331.615" x2="322.483" y2="348.059" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.211"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.808" opacity="0.352" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.418"/>
+<circle cx="327.527" cy="322.709" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="328.979" cy="332.264" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="320.863" cy="342.383" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="304.406" cy="345.159" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.527,322.709 328.979,332.264" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.527" y1="322.709" x2="337.331" y2="337.805" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="328.979" y1="332.264" x2="321.658" y2="348.708" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.217"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.850" opacity="0.362" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.430"/>
+<circle cx="327.322" cy="323.222" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="328.111" cy="332.855" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="319.316" cy="342.390" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="302.706" cy="344.023" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="285.475" cy="332.737" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.322,323.222 328.111,332.855 319.316,342.390" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.322" y1="323.222" x2="337.126" y2="338.318" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="328.111" y1="332.855" x2="320.790" y2="349.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.316" y1="342.390" x2="301.538" y2="345.205" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.224"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.892" opacity="0.373" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.442"/>
+<circle cx="327.083" cy="323.720" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="327.204" cy="333.384" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="317.772" cy="342.289" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="301.089" cy="342.771" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="284.678" cy="330.323" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="278.085" cy="306.616" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 327.083,323.720 327.204,333.384 317.772,342.289 301.089,342.771" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.083" y1="323.720" x2="336.886" y2="338.816" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.204" y1="333.384" x2="319.883" y2="349.828" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="317.772" y1="342.289" x2="299.994" y2="345.105" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="301.089" y1="342.771" x2="289.045" y2="329.395" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.230"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.933" opacity="0.383" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.453"/>
+<circle cx="326.809" cy="324.200" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="326.263" cy="333.850" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="316.239" cy="342.082" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="299.562" cy="341.412" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="284.049" cy="327.860" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="279.109" cy="303.755" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 326.809,324.200 326.263,333.850 316.239,342.082 299.562,341.412 284.049,327.860" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="326.809" y1="324.200" x2="336.612" y2="339.296" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="326.263" y1="333.850" x2="318.942" y2="350.294" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.239" y1="342.082" x2="298.460" y2="344.898" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="299.562" y1="341.412" x2="287.518" y2="328.035" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="284.049" y1="327.860" x2="288.708" y2="310.474" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.236"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.975" opacity="0.394" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.465"/>
+<circle cx="326.503" cy="324.660" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="325.292" cy="334.249" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="314.723" cy="341.770" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="298.133" cy="339.950" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.592" cy="325.360" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="280.328" cy="300.971" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="294.110" cy="275.828" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 326.503,324.660 325.292,334.249 314.723,341.770 298.133,339.950 283.592,325.360" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="326.503" y1="324.660" x2="336.306" y2="339.756" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="325.292" y1="334.249" x2="317.971" y2="350.693" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="314.723" y1="341.770" x2="296.945" y2="344.585" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.133" y1="339.950" x2="286.089" y2="326.573" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.592" y1="325.360" x2="288.251" y2="307.973" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.242"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.017" opacity="0.404" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.477"/>
+<circle cx="326.166" cy="325.098" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="324.296" cy="334.580" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="313.233" cy="341.353" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="296.808" cy="338.393" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.309" cy="322.834" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="281.736" cy="298.278" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="297.221" cy="274.146" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="327.707" cy="262.111" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 326.166,325.098 324.296,334.580 313.233,341.353 296.808,338.393 283.309,322.834 281.736,298.278" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="326.166" y1="325.098" x2="335.969" y2="340.194" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.296" y1="334.580" x2="316.975" y2="351.024" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="313.233" y1="341.353" x2="295.455" y2="344.169" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.808" y1="338.393" x2="284.764" y2="325.016" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.309" y1="322.834" x2="287.968" y2="305.447" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="281.736" y1="298.278" x2="298.855" y2="292.715" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.249"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.058" opacity="0.415" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.488"/>
+<circle cx="325.799" cy="325.511" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="323.279" cy="334.842" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="311.775" cy="340.835" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="295.594" cy="336.748" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.201" cy="320.294" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="283.327" cy="295.688" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="300.441" cy="272.683" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="331.685" cy="262.781" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="366.823" cy="274.054" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 325.799,325.511 323.279,334.842 311.775,340.835 295.594,336.748 283.201,320.294 283.327,295.688 300.441,272.683" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="325.799" y1="325.511" x2="335.602" y2="340.607" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="323.279" y1="334.842" x2="315.958" y2="351.286" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="311.775" y1="340.835" x2="293.997" y2="343.651" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="295.594" y1="336.748" x2="283.549" y2="323.371" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.201" y1="320.294" x2="287.860" y2="302.908" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.327" y1="295.688" x2="300.446" y2="290.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="300.441" y1="272.683" x2="314.430" y2="284.011" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.255"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.100" opacity="0.425" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.500"/>
+<circle cx="325.405" cy="325.898" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="322.247" cy="335.033" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="310.357" cy="340.218" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="294.496" cy="335.023" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.269" cy="317.753" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="285.092" cy="293.214" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="303.754" cy="271.446" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="335.607" cy="263.724" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="369.883" cy="277.396" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 325.405,325.898 322.247,335.033 310.357,340.218 294.496,335.023 283.269,317.753 285.092,293.214 303.754,271.446 335.607,263.724" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="325.405" y1="325.898" x2="335.208" y2="340.994" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="322.247" y1="335.033" x2="314.925" y2="351.477" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.357" y1="340.218" x2="292.578" y2="343.034" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="294.496" y1="335.023" x2="282.451" y2="321.647" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.269" y1="317.753" x2="287.927" y2="300.367" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="285.092" y1="293.214" x2="302.211" y2="287.652" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="303.754" y1="271.446" x2="317.743" y2="282.774" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="335.607" y1="263.724" x2="333.725" y2="281.625" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.261"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.142" opacity="0.435" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.512"/>
+<circle cx="324.985" cy="326.257" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="321.204" cy="335.152" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="308.984" cy="339.504" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="293.520" cy="333.227" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.511" cy="315.223" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="287.025" cy="290.869" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="307.144" cy="270.440" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="339.454" cy="264.936" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="372.705" cy="280.941" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="392.728" cy="316.772" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 324.985,326.257 321.204,335.152 308.984,339.504 293.520,333.227 283.511,315.223 287.025,290.869 307.144,270.440 339.454,264.936" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.985" y1="326.257" x2="334.788" y2="341.353" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="321.204" y1="335.152" x2="313.882" y2="351.596" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="308.984" y1="339.504" x2="291.206" y2="342.320" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="293.520" y1="333.227" x2="281.475" y2="319.850" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.511" y1="315.223" x2="288.170" y2="297.837" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="287.025" y1="290.869" x2="304.144" y2="285.306" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="307.144" y1="270.440" x2="321.133" y2="281.768" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.454" y1="264.936" x2="337.573" y2="282.837" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.268"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.183" opacity="0.446" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.523"/>
+<circle cx="324.541" cy="326.586" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="320.155" cy="335.199" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="307.664" cy="338.697" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="292.670" cy="331.367" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.928" cy="312.716" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="289.114" cy="288.662" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="310.596" cy="269.671" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="343.209" cy="266.410" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="375.275" cy="284.673" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="392.778" cy="321.800" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.197" cy="366.361" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 324.541,326.586 320.155,335.199 307.664,338.697 292.670,331.367 283.928,312.716 289.114,288.662 310.596,269.671 343.209,266.410 375.275,284.673" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.541" y1="326.586" x2="334.344" y2="341.682" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="320.155" y1="335.199" x2="312.833" y2="351.643" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="307.664" y1="338.697" x2="289.885" y2="341.513" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="292.670" y1="331.367" x2="280.625" y2="317.991" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.928" y1="312.716" x2="288.587" y2="295.329" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="289.114" y1="288.662" x2="306.233" y2="283.100" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.596" y1="269.671" x2="324.585" y2="280.999" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="343.209" y1="266.410" x2="341.328" y2="284.311" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="375.275" y1="284.673" x2="359.237" y2="292.845" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.274"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.225" opacity="0.456" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.535"/>
+<circle cx="324.075" cy="326.884" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="319.105" cy="335.174" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="306.403" cy="337.801" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.950" cy="329.453" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="284.517" cy="310.243" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.351" cy="286.605" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="314.093" cy="269.142" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="346.853" cy="268.140" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="377.582" cy="288.573" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="392.480" cy="326.819" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="381.841" cy="370.751" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="344.948" cy="403.555" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 324.075,326.884 319.105,335.174 306.403,337.801 291.950,329.453 284.517,310.243 291.351,286.605 314.093,269.142 346.853,268.140 377.582,288.573 392.480,326.819" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.075" y1="326.884" x2="333.879" y2="341.980" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.105" y1="335.174" x2="311.784" y2="351.617" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="306.403" y1="337.801" x2="288.624" y2="340.617" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.950" y1="329.453" x2="279.906" y2="316.077" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="284.517" y1="310.243" x2="289.176" y2="292.856" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.351" y1="286.605" x2="308.470" y2="281.042" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="314.093" y1="269.142" x2="328.082" y2="280.470" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="346.853" y1="268.140" x2="344.972" y2="286.041" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="377.582" y1="288.573" x2="361.544" y2="296.745" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="392.480" y1="326.819" x2="376.891" y2="317.819" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.280"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.267" opacity="0.467" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.547"/>
+<circle cx="323.590" cy="327.149" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="318.060" cy="335.076" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="305.206" cy="336.820" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.365" cy="327.495" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="285.275" cy="307.817" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="293.725" cy="284.707" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="317.618" cy="268.855" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="350.369" cy="270.117" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="379.614" cy="292.623" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="391.836" cy="331.807" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="378.190" cy="374.899" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="339.121" cy="405.078" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 323.590,327.149 318.060,335.076 305.206,336.820 291.365,327.495 285.275,307.817 293.725,284.707 317.618,268.855 350.369,270.117 379.614,292.623 391.836,331.807 378.190,374.899" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="323.590" y1="327.149" x2="333.394" y2="342.245" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="318.060" y1="335.076" x2="310.739" y2="351.519" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="305.206" y1="336.820" x2="287.428" y2="339.636" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.365" y1="327.495" x2="279.320" y2="314.118" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="285.275" y1="307.817" x2="289.934" y2="290.430" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="293.725" y1="284.707" x2="310.844" y2="279.144" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="317.618" y1="268.855" x2="331.607" y2="280.183" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="350.369" y1="270.117" x2="348.487" y2="288.019" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="379.614" y1="292.623" x2="363.576" y2="300.794" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="391.836" y1="331.807" x2="376.248" y2="322.807" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="378.190" y1="374.899" x2="377.248" y2="356.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim16"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.286"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.308" opacity="0.477" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.558"/>
+<circle cx="323.088" cy="327.380" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="317.024" cy="334.906" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="304.080" cy="335.758" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.915" cy="325.500" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="286.199" cy="305.449" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="296.224" cy="282.977" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="321.154" cy="268.813" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="353.740" cy="272.333" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="381.362" cy="296.803" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="390.850" cy="336.737" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="374.261" cy="378.785" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="333.202" cy="406.195" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="279.670" cy="405.351" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 323.088,327.380 317.024,334.906 304.080,335.758 290.915,325.500 286.199,305.449 296.224,282.977 321.154,268.813 353.740,272.333 381.362,296.803 390.850,336.737 374.261,378.785" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="323.088" y1="327.380" x2="332.892" y2="342.476" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="317.024" y1="334.906" x2="309.703" y2="351.350" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="304.080" y1="335.758" x2="286.302" y2="338.574" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.915" y1="325.500" x2="278.871" y2="312.123" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="286.199" y1="305.449" x2="290.858" y2="288.062" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.224" y1="282.977" x2="313.343" y2="277.415" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="321.154" y1="268.813" x2="335.143" y2="280.141" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="353.740" y1="272.333" x2="351.858" y2="290.234" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="381.362" y1="296.803" x2="365.324" y2="304.975" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="390.850" y1="336.737" x2="375.261" y2="327.737" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.261" y1="378.785" x2="373.319" y2="360.810" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim17"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.292"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.350" opacity="0.487" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.570"/>
+<circle cx="322.572" cy="327.575" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.002" cy="334.665" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="303.031" cy="334.622" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.605" cy="323.479" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="287.284" cy="303.150" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="298.836" cy="281.424" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="324.685" cy="269.015" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="356.950" cy="274.775" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="382.817" cy="301.094" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="389.525" cy="341.588" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="370.074" cy="382.391" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="327.221" cy="406.901" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="273.874" cy="402.364" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="229.273" cy="365.730" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 322.572,327.575 316.002,334.665 303.031,334.622 290.605,323.479 287.284,303.150 298.836,281.424 324.685,269.015 356.950,274.775 382.817,301.094 389.525,341.588 370.074,382.391 327.221,406.901" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="322.572" y1="327.575" x2="332.375" y2="342.672" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.002" y1="334.665" x2="308.681" y2="351.109" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="303.031" y1="334.622" x2="285.252" y2="337.438" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.605" y1="323.479" x2="278.561" y2="310.103" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="287.284" y1="303.150" x2="291.943" y2="285.764" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.836" y1="281.424" x2="315.956" y2="275.862" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.685" y1="269.015" x2="338.674" y2="280.343" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="356.950" y1="274.775" x2="355.068" y2="292.677" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="382.817" y1="301.094" x2="366.779" y2="309.266" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="389.525" y1="341.588" x2="373.937" y2="332.588" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="370.074" y1="382.391" x2="369.132" y2="364.415" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.221" y1="406.901" x2="341.783" y2="396.320" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim18"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.299"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.392" opacity="0.498" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.582"/>
+<circle cx="322.042" cy="327.735" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="314.999" cy="334.354" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="302.062" cy="333.416" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.435" cy="321.442" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="288.525" cy="300.932" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="301.550" cy="280.055" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="328.193" cy="269.460" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="359.984" cy="277.434" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="383.972" cy="305.476" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="387.869" cy="346.336" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="365.648" cy="385.699" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="321.205" cy="407.192" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="268.299" cy="398.983" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="226.333" cy="359.358" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="213.275" cy="298.852" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 322.042,327.735 314.999,334.354 302.062,333.416 290.435,321.442 288.525,300.932 301.550,280.055 328.193,269.460 359.984,277.434 383.972,305.476 387.869,346.336 365.648,385.699 321.205,407.192 268.299,398.983" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="322.042" y1="327.735" x2="331.846" y2="342.831" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="314.999" y1="334.354" x2="307.678" y2="350.798" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="302.062" y1="333.416" x2="284.283" y2="336.231" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.435" y1="321.442" x2="278.391" y2="308.065" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="288.525" y1="300.932" x2="293.184" y2="283.545" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="301.550" y1="280.055" x2="318.669" y2="274.493" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="328.193" y1="269.460" x2="342.182" y2="280.788" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="359.984" y1="277.434" x2="358.102" y2="295.335" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="383.972" y1="305.476" x2="367.934" y2="313.648" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="387.869" y1="346.336" x2="372.281" y2="337.336" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="365.648" y1="385.699" x2="364.705" y2="367.723" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="321.205" y1="407.192" x2="335.767" y2="396.612" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="268.299" y1="398.983" x2="285.103" y2="405.434" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim19"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.305"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.433" opacity="0.508" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.593"/>
+<circle cx="321.504" cy="327.857" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="314.020" cy="333.974" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="301.178" cy="332.145" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.406" cy="319.397" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="289.917" cy="298.805" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="304.351" cy="278.877" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="331.663" cy="270.146" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="362.827" cy="280.296" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="384.822" cy="309.926" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="385.889" cy="350.958" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="361.003" cy="388.693" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="315.183" cy="407.067" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="262.970" cy="395.226" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="223.840" cy="352.798" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="214.990" cy="291.535" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 321.504,327.857 314.020,333.974 301.178,332.145 290.406,319.397 289.917,298.805 304.351,278.877 331.663,270.146 362.827,280.296 384.822,309.926 385.889,350.958 361.003,388.693 315.183,407.067 262.970,395.226 223.840,352.798" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="321.504" y1="327.857" x2="331.307" y2="342.953" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="314.020" y1="333.974" x2="306.699" y2="350.418" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="301.178" y1="332.145" x2="283.400" y2="334.961" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.406" y1="319.397" x2="278.362" y2="306.021" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="289.917" y1="298.805" x2="294.575" y2="281.418" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="304.351" y1="278.877" x2="321.470" y2="273.314" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="331.663" y1="270.146" x2="345.651" y2="281.474" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="362.827" y1="280.296" x2="360.945" y2="298.197" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="384.822" y1="309.926" x2="368.784" y2="318.098" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.889" y1="350.958" x2="370.301" y2="341.958" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="361.003" y1="388.693" x2="360.061" y2="370.718" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="315.183" y1="407.067" x2="329.745" y2="396.487" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="262.970" y1="395.226" x2="279.774" y2="401.676" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="223.840" y1="352.798" x2="227.582" y2="370.405" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim20"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.311"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.475" opacity="0.519" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.605"/>
+<circle cx="320.958" cy="327.942" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="313.070" cy="333.528" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="300.385" cy="330.817" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.518" cy="317.356" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="291.452" cy="296.779" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="307.227" cy="277.895" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="335.076" cy="271.070" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="365.465" cy="283.347" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.363" cy="314.425" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="383.595" cy="355.433" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="356.164" cy="391.360" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="309.184" cy="406.527" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="257.913" cy="391.109" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="221.805" cy="346.082" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="217.205" cy="284.354" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="250.392" cy="227.206" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 320.958,327.942 313.070,333.528 300.385,330.817 290.518,317.356 291.452,296.779 307.227,277.895 335.076,271.070 365.465,283.347 385.363,314.425 383.595,355.433 356.164,391.360 309.184,406.527 257.913,391.109 221.805,346.082" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="320.958" y1="327.942" x2="330.761" y2="343.039" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="313.070" y1="333.528" x2="305.749" y2="349.972" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="300.385" y1="330.817" x2="282.606" y2="333.633" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.518" y1="317.356" x2="278.474" y2="303.979" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.452" y1="296.779" x2="296.110" y2="279.392" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="307.227" y1="277.895" x2="324.346" y2="272.332" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="335.076" y1="271.070" x2="349.065" y2="282.398" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="365.465" y1="283.347" x2="363.584" y2="301.248" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.363" y1="314.425" x2="369.325" y2="322.597" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="383.595" y1="355.433" x2="368.007" y2="346.433" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="356.164" y1="391.360" x2="355.222" y2="373.384" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="309.184" y1="406.527" x2="323.747" y2="395.946" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="257.913" y1="391.109" x2="274.717" y2="397.560" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="221.805" y1="346.082" x2="225.547" y2="363.689" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim21"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.318"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.517" opacity="0.529" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.333" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.617"/>
+<circle cx="320.407" cy="327.990" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="312.152" cy="333.018" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="299.685" cy="329.437" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.771" cy="315.327" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="293.123" cy="294.863" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.165" cy="277.113" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="338.418" cy="272.227" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="367.887" cy="286.573" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.592" cy="318.951" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="380.997" cy="359.738" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="351.151" cy="393.686" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="303.237" cy="405.574" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="253.152" cy="386.654" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="220.239" cy="339.241" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="219.911" cy="277.343" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="256.963" cy="222.622" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="322.329" cy="196.822" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 320.407,327.990 312.152,333.018 299.685,329.437 290.771,315.327 293.123,294.863 310.165,277.113 338.418,272.227 367.887,286.573 385.592,318.951 380.997,359.738 351.151,393.686 303.237,405.574 253.152,386.654 220.239,339.241 219.911,277.343" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="320.407" y1="327.990" x2="330.211" y2="343.086" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="312.152" y1="333.018" x2="304.831" y2="349.461" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="299.685" y1="329.437" x2="281.907" y2="332.253" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.771" y1="315.327" x2="278.727" y2="301.950" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="293.123" y1="294.863" x2="297.781" y2="277.477" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.165" y1="277.113" x2="327.284" y2="271.551" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="338.418" y1="272.227" x2="352.407" y2="283.555" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="367.887" y1="286.573" x2="366.006" y2="304.474" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.592" y1="318.951" x2="369.553" y2="327.122" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="380.997" y1="359.738" x2="365.409" y2="350.738" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="351.151" y1="393.686" x2="350.209" y2="375.710" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="303.237" y1="405.574" x2="317.799" y2="394.993" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="253.152" y1="386.654" x2="269.957" y2="393.104" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="220.239" y1="339.241" x2="223.981" y2="356.848" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="219.911" y1="277.343" x2="207.183" y2="290.071" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim22"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.324"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.558" opacity="0.540" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.667" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.628"/>
+<circle cx="319.855" cy="327.999" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="311.273" cy="332.445" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="299.082" cy="328.012" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.163" cy="313.320" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="294.922" cy="293.068" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="313.148" cy="276.537" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="341.672" cy="273.613" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="370.080" cy="289.958" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.508" cy="323.481" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="378.109" cy="363.854" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="345.990" cy="395.660" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="297.370" cy="404.212" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="248.710" cy="381.880" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="219.148" cy="332.309" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="223.094" cy="270.535" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="263.836" cy="218.503" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="330.827" cy="197.277" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="402.137" cy="218.720" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.855,327.999 311.273,332.445 299.082,328.012 291.163,313.320 294.922,293.068 313.148,276.537 341.672,273.613 370.080,289.958 385.508,323.481 378.109,363.854 345.990,395.660 297.370,404.212 248.710,381.880 219.148,332.309 223.094,270.535 263.836,218.503" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.855" y1="327.999" x2="329.658" y2="343.095" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="311.273" y1="332.445" x2="303.951" y2="348.889" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="299.082" y1="328.012" x2="281.304" y2="330.828" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.163" y1="313.320" x2="279.119" y2="299.944" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="294.922" y1="293.068" x2="299.581" y2="275.681" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="313.148" y1="276.537" x2="330.268" y2="270.974" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="341.672" y1="273.613" x2="355.660" y2="284.941" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="370.080" y1="289.958" x2="368.199" y2="307.860" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.508" y1="323.481" x2="369.469" y2="331.653" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="378.109" y1="363.854" x2="362.520" y2="354.854" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="345.990" y1="395.660" x2="345.048" y2="377.685" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="297.370" y1="404.212" x2="311.932" y2="393.632" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="248.710" y1="381.880" x2="265.515" y2="388.331" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="219.148" y1="332.309" x2="222.891" y2="349.915" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="223.094" y1="270.535" x2="210.367" y2="283.263" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="263.836" y1="218.503" x2="246.229" y2="214.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="anim23"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/></g>
+<g id="verify"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.297"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.380" opacity="0.495" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.240" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.578"/>
+<circle cx="322.192" cy="327.694" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="315.278" cy="334.448" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="302.325" cy="333.760" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="290.469" cy="322.013" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="288.162" cy="301.544" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="300.781" cy="280.419" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="327.214" cy="269.311" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="359.153" cy="276.669" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="383.679" cy="304.241" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="388.366" cy="345.018" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="366.910" cy="384.803" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="322.891" cy="407.152" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="269.836" cy="399.968" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="227.112" cy="361.162" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="212.886" cy="300.920" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 322.192,327.694 315.278,334.448 302.325,333.760 290.469,322.013 288.162,301.544 300.781,280.419 327.214,269.311 359.153,276.669 383.679,304.241 388.366,345.018 366.910,384.803 322.891,407.152 269.836,399.968" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="322.192" y1="327.694" x2="331.995" y2="342.790" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="315.278" y1="334.448" x2="307.956" y2="350.892" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="302.325" y1="333.760" x2="284.546" y2="336.576" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="290.469" y1="322.013" x2="278.424" y2="308.637" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="288.162" y1="301.544" x2="292.821" y2="284.158" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="300.781" y1="280.419" x2="317.900" y2="274.857" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="327.214" y1="269.311" x2="341.203" y2="280.639" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="359.153" y1="276.669" x2="357.271" y2="294.570" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="383.679" y1="304.241" x2="367.641" y2="312.413" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="388.366" y1="345.018" x2="372.778" y2="336.018" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="366.910" y1="384.803" x2="365.968" y2="366.828" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="322.891" y1="407.152" x2="337.453" y2="396.572" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="269.836" y1="399.968" x2="286.640" y2="406.419" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<rect x="196.000" y="304.000" width="248.000" height="34.000" fill="#77d7ff" opacity="0.055"/>
+<line x1="196.000" y1="321.000" x2="444.000" y2="321.000" stroke="#d5f6ff" stroke-width="2.000" stroke-linecap="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 175.984 199.156 A 188.000 188.000 0 1 1 175.984 440.844" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.100" opacity="0.360"/></g>
+<g id="fail"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.267"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#ff735f" stroke-width="2.180" opacity="0.445" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.640" fill="url(#fractal_bloom_base_core)" stroke="#ff735f" stroke-width="1.000" opacity="0.522"/>
+<circle cx="324.577" cy="326.561" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="320.239" cy="335.198" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="307.767" cy="338.765" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="292.733" cy="331.518" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.888" cy="312.915" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="288.942" cy="288.833" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="310.318" cy="269.724" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="342.912" cy="266.282" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="375.079" cy="284.368" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="392.787" cy="321.398" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.452" cy="366.000" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<polyline points="320.000,320.000 324.577,326.561 320.239,335.198 307.767,338.765 292.733,331.518 283.888,312.915 288.942,288.833 310.318,269.724 342.912,266.282 375.079,284.368" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.577" y1="326.561" x2="334.381" y2="341.657" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="320.239" y1="335.198" x2="312.917" y2="351.642" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="307.767" y1="338.765" x2="289.989" y2="341.581" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="292.733" y1="331.518" x2="280.689" y2="318.141" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.888" y1="312.915" x2="288.547" y2="295.529" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="288.942" y1="288.833" x2="306.061" y2="283.271" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.318" y1="269.724" x2="324.307" y2="281.051" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="342.912" y1="266.282" x2="341.031" y2="284.184" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="375.079" y1="284.368" x2="359.041" y2="292.540" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="342.795" y1="273.263" x2="420.968" y2="190.766" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="367.128" y1="298.024" x2="479.797" y2="283.108" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="369.986" y1="334.333" x2="464.803" y2="396.993" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="352.014" y1="360.977" x2="391.893" y2="467.402" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="295.587" y1="365.913" x2="214.583" y2="445.631" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="272.872" y1="298.024" x2="189.024" y2="221.302" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 146.973 270.385 A 180.000 180.000 0 0 1 481.783 241.093" fill="none" stroke="#ff735f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.800" opacity="0.480"/></g>
+<g id="backspace"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.243"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.020" opacity="0.405" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.360" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.478"/>
+<circle cx="326.137" cy="325.132" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="324.215" cy="334.604" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="313.115" cy="341.316" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="296.707" cy="338.264" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="283.294" cy="322.631" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="281.857" cy="298.067" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="297.475" cy="274.021" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="328.027" cy="262.154" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 326.137,325.132 324.215,334.604 313.115,341.316 296.707,338.264 283.294,322.631 281.857,298.067" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="326.137" y1="325.132" x2="335.941" y2="340.228" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="324.215" y1="334.604" x2="316.894" y2="351.048" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="313.115" y1="341.316" x2="295.337" y2="344.132" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.707" y1="338.264" x2="284.662" y2="324.888" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="283.294" y1="322.631" x2="287.953" y2="305.244" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="281.857" y1="298.067" x2="298.976" y2="292.504" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<path d="M 208.924 443.362 A 166.000 166.000 0 1 1 454.297 222.428" fill="none" stroke="#ff735f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.000" opacity="0.520" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="432.000" y1="320.000" x2="214.000" y2="320.000" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.420"/>
+<polygon points="212.000,320.000 234.000,307.000 234.000,333.000" fill="#ff735f" opacity="0.540"/></g>
+<g id="fg"><path d="M 496.366 191.863 A 218.000 218.000 0 0 1 522.126 401.664" fill="none" stroke="#d5f6ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.150"/>
+<path d="M 127.517 422.345 A 218.000 218.000 0 0 1 143.634 191.863" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="236.000" fill="none" stroke="#ffffff" stroke-width="0.600" opacity="0.035"/></g>
+<g opacity="0" id="remove_background"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g opacity="0" id="sequential_animation"><rect x="1" y="0" width="1" height="1" fill="#000000"/></g>
+<g id="success"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="184.000" fill="none" stroke="#d5f6ff" stroke-width="2.600" opacity="0.440" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 327.746 172.203 A 148.000 148.000 0 0 1 350.771 175.234" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 365.735 179.244 A 148.000 148.000 0 0 1 387.191 188.131" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 400.607 195.877 A 148.000 148.000 0 0 1 419.031 210.015" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 429.985 220.969 A 148.000 148.000 0 0 1 444.123 239.393" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 451.869 252.809 A 148.000 148.000 0 0 1 460.756 274.265" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 464.766 289.229 A 148.000 148.000 0 0 1 467.797 312.254" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 467.797 327.746 A 148.000 148.000 0 0 1 464.766 350.771" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 460.756 365.735 A 148.000 148.000 0 0 1 451.869 387.191" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 444.123 400.607 A 148.000 148.000 0 0 1 429.985 419.031" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 419.031 429.985 A 148.000 148.000 0 0 1 400.607 444.123" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 387.191 451.869 A 148.000 148.000 0 0 1 365.735 460.756" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 350.771 464.766 A 148.000 148.000 0 0 1 327.746 467.797" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 312.254 467.797 A 148.000 148.000 0 0 1 289.229 464.766" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 274.265 460.756 A 148.000 148.000 0 0 1 252.809 451.869" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 239.393 444.123 A 148.000 148.000 0 0 1 220.969 429.985" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 210.015 419.031 A 148.000 148.000 0 0 1 195.877 400.607" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 188.131 387.191 A 148.000 148.000 0 0 1 179.244 365.735" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 175.234 350.771 A 148.000 148.000 0 0 1 172.203 327.746" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 172.203 312.254 A 148.000 148.000 0 0 1 175.234 289.229" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 179.244 274.265 A 148.000 148.000 0 0 1 188.131 252.809" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 195.877 239.393 A 148.000 148.000 0 0 1 210.015 220.969" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 220.969 210.015 A 148.000 148.000 0 0 1 239.393 195.877" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 252.809 188.131 A 148.000 148.000 0 0 1 274.265 179.244" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/>
+<path d="M 289.229 175.234 A 148.000 148.000 0 0 1 312.254 172.203" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#fractal_bloom_base_glow)"/></g>
+<g id="success00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="100.625" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.470" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="392.095" cy="324.725" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="367.638" cy="374.320" r="2.800" fill="#77d7ff" opacity="0.529"/>
+<circle cx="315.275" cy="392.095" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="265.680" cy="367.638" r="2.800" fill="#77d7ff" opacity="0.529"/>
+<circle cx="247.905" cy="315.275" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="272.362" cy="265.680" r="2.800" fill="#77d7ff" opacity="0.529"/>
+<circle cx="324.725" cy="247.905" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="374.320" cy="272.362" r="2.800" fill="#77d7ff" opacity="0.529"/></g>
+<g id="success01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="109.250" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.461" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="399.811" cy="330.507" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="369.005" cy="383.865" r="2.800" fill="#77d7ff" opacity="0.517"/>
+<circle cx="309.493" cy="399.811" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="256.135" cy="369.005" r="2.800" fill="#77d7ff" opacity="0.517"/>
+<circle cx="240.189" cy="309.493" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="270.995" cy="256.135" r="2.800" fill="#77d7ff" opacity="0.517"/>
+<circle cx="330.507" cy="240.189" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="383.865" cy="270.995" r="2.800" fill="#77d7ff" opacity="0.517"/></g>
+<g id="success02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="117.875" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.451" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="407.045" cy="337.314" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="369.307" cy="393.793" r="2.800" fill="#77d7ff" opacity="0.506"/>
+<circle cx="302.686" cy="407.045" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="246.207" cy="369.307" r="2.800" fill="#77d7ff" opacity="0.506"/>
+<circle cx="232.955" cy="302.686" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="270.693" cy="246.207" r="2.800" fill="#77d7ff" opacity="0.506"/>
+<circle cx="337.314" cy="232.955" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="393.793" cy="270.693" r="2.800" fill="#77d7ff" opacity="0.506"/></g>
+<g id="success03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="126.500" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.442" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="413.695" cy="345.105" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="368.500" cy="404.004" r="2.800" fill="#77d7ff" opacity="0.495"/>
+<circle cx="294.895" cy="413.695" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="235.996" cy="368.500" r="2.800" fill="#77d7ff" opacity="0.495"/>
+<circle cx="226.305" cy="294.895" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="271.500" cy="235.996" r="2.800" fill="#77d7ff" opacity="0.495"/>
+<circle cx="345.105" cy="226.305" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="404.004" cy="271.500" r="2.800" fill="#77d7ff" opacity="0.495"/></g>
+<g id="success04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="135.125" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.432" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="419.664" cy="353.832" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="366.551" cy="414.396" r="2.800" fill="#77d7ff" opacity="0.484"/>
+<circle cx="286.168" cy="419.664" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="225.604" cy="366.551" r="2.800" fill="#77d7ff" opacity="0.484"/>
+<circle cx="220.336" cy="286.168" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="273.449" cy="225.604" r="2.800" fill="#77d7ff" opacity="0.484"/>
+<circle cx="353.832" cy="220.336" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="414.396" cy="273.449" r="2.800" fill="#77d7ff" opacity="0.484"/></g>
+<g id="success05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="143.750" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.422" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="424.860" cy="363.435" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="363.435" cy="424.860" r="2.800" fill="#77d7ff" opacity="0.472"/>
+<circle cx="276.565" cy="424.860" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="215.140" cy="363.435" r="2.800" fill="#77d7ff" opacity="0.472"/>
+<circle cx="215.140" cy="276.565" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="276.565" cy="215.140" r="2.800" fill="#77d7ff" opacity="0.472"/>
+<circle cx="363.435" cy="215.140" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="424.860" cy="276.565" r="2.800" fill="#77d7ff" opacity="0.472"/></g>
+<g id="success06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="152.375" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.413" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="429.194" cy="373.849" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="359.135" cy="435.289" r="2.800" fill="#77d7ff" opacity="0.461"/>
+<circle cx="266.151" cy="429.194" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="204.711" cy="359.135" r="2.800" fill="#77d7ff" opacity="0.461"/>
+<circle cx="210.806" cy="266.151" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="280.865" cy="204.711" r="2.800" fill="#77d7ff" opacity="0.461"/>
+<circle cx="373.849" cy="210.806" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="435.289" cy="280.865" r="2.800" fill="#77d7ff" opacity="0.461"/></g>
+<g id="success07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="161.000" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.403" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="432.583" cy="385.000" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="353.646" cy="445.570" r="2.800" fill="#77d7ff" opacity="0.450"/>
+<circle cx="255.000" cy="432.583" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="194.430" cy="353.646" r="2.800" fill="#77d7ff" opacity="0.450"/>
+<circle cx="207.417" cy="255.000" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="286.354" cy="194.430" r="2.800" fill="#77d7ff" opacity="0.450"/>
+<circle cx="385.000" cy="207.417" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="445.570" cy="286.354" r="2.800" fill="#77d7ff" opacity="0.450"/></g>
+<g id="success08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="169.625" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.394" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="434.951" cy="396.808" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="346.971" cy="455.594" r="2.800" fill="#77d7ff" opacity="0.439"/>
+<circle cx="243.192" cy="434.951" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="184.406" cy="346.971" r="2.800" fill="#77d7ff" opacity="0.439"/>
+<circle cx="205.049" cy="243.192" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="293.029" cy="184.406" r="2.800" fill="#77d7ff" opacity="0.439"/>
+<circle cx="396.808" cy="205.049" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="455.594" cy="293.029" r="2.800" fill="#77d7ff" opacity="0.439"/></g>
+<g id="success09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="178.250" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.384" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="436.226" cy="409.184" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="339.122" cy="465.247" r="2.800" fill="#77d7ff" opacity="0.427"/>
+<circle cx="230.816" cy="436.226" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="174.753" cy="339.122" r="2.800" fill="#77d7ff" opacity="0.427"/>
+<circle cx="203.774" cy="230.816" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="300.878" cy="174.753" r="2.800" fill="#77d7ff" opacity="0.427"/>
+<circle cx="409.184" cy="203.774" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="465.247" cy="300.878" r="2.800" fill="#77d7ff" opacity="0.427"/></g>
+<g id="success10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="186.875" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.374" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="436.347" cy="422.034" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="330.121" cy="474.419" r="2.800" fill="#77d7ff" opacity="0.416"/>
+<circle cx="217.966" cy="436.347" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="165.581" cy="330.121" r="2.800" fill="#77d7ff" opacity="0.416"/>
+<circle cx="203.653" cy="217.966" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="309.879" cy="165.581" r="2.800" fill="#77d7ff" opacity="0.416"/>
+<circle cx="422.034" cy="203.653" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="474.419" cy="309.879" r="2.800" fill="#77d7ff" opacity="0.416"/></g>
+<g id="success11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="195.500" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.365" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="435.258" cy="435.258" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="320.000" cy="483.000" r="2.800" fill="#77d7ff" opacity="0.405"/>
+<circle cx="204.742" cy="435.258" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="157.000" cy="320.000" r="2.800" fill="#77d7ff" opacity="0.405"/>
+<circle cx="204.742" cy="204.742" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="320.000" cy="157.000" r="2.800" fill="#77d7ff" opacity="0.405"/>
+<circle cx="435.258" cy="204.742" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="483.000" cy="320.000" r="2.800" fill="#77d7ff" opacity="0.405"/></g>
+<g id="success12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="204.125" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.355" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="432.913" cy="448.753" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="308.800" cy="490.883" r="2.800" fill="#77d7ff" opacity="0.394"/>
+<circle cx="191.247" cy="432.913" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="149.117" cy="308.800" r="2.800" fill="#77d7ff" opacity="0.394"/>
+<circle cx="207.087" cy="191.247" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="331.200" cy="149.117" r="2.800" fill="#77d7ff" opacity="0.394"/>
+<circle cx="448.753" cy="207.087" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="490.883" cy="331.200" r="2.800" fill="#77d7ff" opacity="0.394"/></g>
+<g id="success13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="212.750" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.346" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="429.273" cy="462.407" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="296.571" cy="497.964" r="2.800" fill="#77d7ff" opacity="0.383"/>
+<circle cx="177.593" cy="429.273" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="142.036" cy="296.571" r="2.800" fill="#77d7ff" opacity="0.383"/>
+<circle cx="210.727" cy="177.593" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="343.429" cy="142.036" r="2.800" fill="#77d7ff" opacity="0.383"/>
+<circle cx="462.407" cy="210.727" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="497.964" cy="343.429" r="2.800" fill="#77d7ff" opacity="0.383"/></g>
+<g id="success14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="221.375" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.336" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="424.308" cy="476.108" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="283.372" cy="504.142" r="2.800" fill="#77d7ff" opacity="0.371"/>
+<circle cx="163.892" cy="424.308" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="135.858" cy="283.372" r="2.800" fill="#77d7ff" opacity="0.371"/>
+<circle cx="215.692" cy="163.892" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="356.628" cy="135.858" r="2.800" fill="#77d7ff" opacity="0.371"/>
+<circle cx="476.108" cy="215.692" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="504.142" cy="356.628" r="2.800" fill="#77d7ff" opacity="0.371"/></g>
+<g id="success15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#fractal_bloom_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#fractal_bloom_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#fractal_bloom_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<circle cx="319.303" cy="327.970" r="2.400" fill="#77d7ff" opacity="0.340"/>
+<circle cx="310.434" cy="331.813" r="2.450" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="298.579" cy="326.549" r="2.500" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.693" cy="311.346" r="2.550" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="296.841" cy="291.401" r="2.600" fill="#77d7ff" opacity="0.340"/>
+<circle cx="316.165" cy="276.167" r="2.650" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="344.822" cy="275.219" r="2.700" fill="#77d7ff" opacity="0.340"/>
+<circle cx="372.035" cy="293.487" r="2.750" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="385.111" cy="327.995" r="2.800" fill="#77d7ff" opacity="0.340"/>
+<circle cx="374.943" cy="367.761" r="2.850" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="340.706" cy="397.274" r="2.900" fill="#77d7ff" opacity="0.340"/>
+<circle cx="291.610" cy="402.449" r="2.950" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="244.609" cy="376.811" r="3.000" fill="#77d7ff" opacity="0.340"/>
+<circle cx="218.539" cy="325.317" r="3.050" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="226.740" cy="263.964" r="3.100" fill="#77d7ff" opacity="0.340"/>
+<circle cx="270.976" cy="214.868" r="3.150" fill="#d5f6ff" opacity="0.340"/>
+<circle cx="339.273" cy="198.317" r="3.200" fill="#77d7ff" opacity="0.340"/>
+<circle cx="408.933" cy="224.631" r="3.250" fill="#d5f6ff" opacity="0.340"/>
+<polyline points="320.000,320.000 319.303,327.970 310.434,331.813 298.579,326.549 291.693,311.346 296.841,291.401 316.165,276.167 344.822,275.219 372.035,293.487 385.111,327.995 374.943,367.761 340.706,397.274 291.610,402.449 244.609,376.811 218.539,325.317 226.740,263.964 270.976,214.868 339.273,198.317" fill="none" stroke="#77d7ff" stroke-width="2.000" stroke-linecap="round" stroke-linejoin="round" opacity="0.420" filter="url(#fractal_bloom_base_glow)"/>
+<line x1="320.000" y1="320.000" x2="338.000" y2="320.000" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="319.303" y1="327.970" x2="329.106" y2="343.066" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="310.434" y1="331.813" x2="303.113" y2="348.256" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="298.579" y1="326.549" x2="280.800" y2="329.365" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.693" y1="311.346" x2="279.649" y2="297.969" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="296.841" y1="291.401" x2="301.500" y2="274.014" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="316.165" y1="276.167" x2="333.284" y2="270.605" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="344.822" y1="275.219" x2="358.811" y2="286.547" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="372.035" y1="293.487" x2="370.153" y2="311.388" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="385.111" y1="327.995" x2="369.073" y2="336.166" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="374.943" y1="367.761" x2="359.354" y2="358.761" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="340.706" y1="397.274" x2="339.763" y2="379.299" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="291.610" y1="402.449" x2="306.173" y2="391.869" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="244.609" y1="376.811" x2="261.413" y2="383.262" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="218.539" y1="325.317" x2="222.282" y2="342.924" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="226.740" y1="263.964" x2="214.012" y2="276.692" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="270.976" y1="214.868" x2="253.370" y2="211.126" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<line x1="339.273" y1="198.317" x2="332.822" y2="181.512" stroke="#8478ff" stroke-width="0.700" stroke-linecap="round" opacity="0.200"/>
+<circle cx="320.000" cy="320.000" r="230.000" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.326" filter="url(#fractal_bloom_base_glow)"/>
+<circle cx="418.000" cy="489.741" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="269.271" cy="509.321" r="2.800" fill="#77d7ff" opacity="0.360"/>
+<circle cx="150.259" cy="418.000" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="130.679" cy="269.271" r="2.800" fill="#77d7ff" opacity="0.360"/>
+<circle cx="222.000" cy="150.259" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="370.729" cy="130.679" r="2.800" fill="#77d7ff" opacity="0.360"/>
+<circle cx="489.741" cy="222.000" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="509.321" cy="370.729" r="2.800" fill="#77d7ff" opacity="0.360"/></g>
+</svg>

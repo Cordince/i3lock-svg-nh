@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 85704,
+      "path": "particle-chamber.svg",
+      "sha256": "f20a483dfb6ce74c1da9524d15b6141e7f6fa5e9c09f2dbbf9a04b1940ef4b18"
+    },
+    {
+      "bytes": 389058,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "2299ace6bae3f7bd6800fe1ca1d1fd14bb6d4e32c0b022078f6bcfba05d1cc01"
+    },
+    {
+      "bytes": 17108,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "baf619d48037da797540042a2f8de58aa3e2a366b34fd9982bb393e6ad1ab3d4"
+    },
+    {
+      "bytes": 1188,
+      "path": "lock.sh",
+      "sha256": "b9c558ce7899f2390586793098cd8f66c9b29f884fbab36cc9484597818e614b"
+    },
+    {
+      "bytes": 1531,
+      "path": "README.md",
+      "sha256": "9852e87ada1275c792a41a0c996dff7230686d0158937b32989e22d84effb617"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "particle-chamber",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "particle-chamber.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "ParticleChamber",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

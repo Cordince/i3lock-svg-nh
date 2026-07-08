@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 285874,
+      "path": "clockwork-owls.svg",
+      "sha256": "5e396295a67480e0fe363dd1ab2f543003045c7dd5c872e9f20d66405fe2dd96"
+    },
+    {
+      "bytes": 401783,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "15dabdf619ddbfaeff4238f255e8b740dc5c6f89193c7d6b8bcac4f52531add3"
+    },
+    {
+      "bytes": 17204,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "be9d0f68e64594574fb1d063a22578fe32b1a1d2ab97828f72f0af2b1386b9d9"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "56b4f84cfcaa75698b7f6fa1808ed1b6a343ffc4773c617fa67248035bfc28fe"
+    },
+    {
+      "bytes": 1537,
+      "path": "README.md",
+      "sha256": "6346a802b2b8e7de376c904693f664168e46795a4d17825d7f810452be53bacd"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "clockwork-owls",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "clockwork-owls.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "ClockworkOwls",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

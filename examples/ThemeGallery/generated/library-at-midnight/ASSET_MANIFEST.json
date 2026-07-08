@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 71859,
+      "path": "library-at-midnight.svg",
+      "sha256": "7d920d7d2d8434bd805018f1c131edcd5d94d7cc3d54c668d4a4feb843d0ce14"
+    },
+    {
+      "bytes": 391788,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "6fdd86d6969bc0ff961705e99cfcddbaca891ba2eaf3f628ebb75a53fccb2aab"
+    },
+    {
+      "bytes": 14418,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "d4aeb74e1b076e2ac204b2d537ff9a2e9ea214300c6c38254e2c6fc3f0a6a099"
+    },
+    {
+      "bytes": 1191,
+      "path": "lock.sh",
+      "sha256": "d47e302b7427866d650ca998b3e737465b49d02067b8ec9a8fabb06115c82c59"
+    },
+    {
+      "bytes": 1559,
+      "path": "README.md",
+      "sha256": "2e55c40a03d6ce408066c2eeefad17115fcd675dc58fc346133dfa30b51b5556"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "library-at-midnight",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "library-at-midnight.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "LibraryAtMidnight",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

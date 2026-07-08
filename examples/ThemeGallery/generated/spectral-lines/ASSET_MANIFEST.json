@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 151041,
+      "path": "spectral-lines.svg",
+      "sha256": "59b3241204fa0464119d48b210827aa3749cad4cab4ac64f2b2c5b6aab9a6e75"
+    },
+    {
+      "bytes": 406420,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "0c835772306a300286a685a05c26e5085de8ccac9905a5806a2be9c749ab71b2"
+    },
+    {
+      "bytes": 19260,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "fd75db2c60a38a5dd5b9c91c4481823ee37c50166be09e5dfe5081cf822bc655"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "c5ca2de48153cf7d6bcaa9d80bbf65ec5c594f99fbafefa2d38033b6e2bbe045"
+    },
+    {
+      "bytes": 1546,
+      "path": "README.md",
+      "sha256": "829efe818b59f5fff005d734087e20e27a4833b5b8ddcbbe75c5b5110ee49a5e"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "spectral-lines",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "spectral-lines.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "SpectralLines",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

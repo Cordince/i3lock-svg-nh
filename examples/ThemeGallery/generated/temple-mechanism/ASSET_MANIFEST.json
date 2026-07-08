@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "mythic",
+  "files": [
+    {
+      "bytes": 116019,
+      "path": "temple-mechanism.svg",
+      "sha256": "93d60288fe9e710796c4f6a2d08da9517cf8399a4bf4a567328a5b7428e50038"
+    },
+    {
+      "bytes": 388957,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "eb31a16404caa43ce618e8f67f0556f0e9e23b0212c1ec87b7775ce7344108c1"
+    },
+    {
+      "bytes": 19365,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "c8ce8c76371dcaf91b07fe9736776bda6c2dc275198e347b31e91313ca5f5062"
+    },
+    {
+      "bytes": 1188,
+      "path": "lock.sh",
+      "sha256": "0d0c2d43d133d163a7592cbe01b067e6d42f4e32c7f2032d9bb76fa7b709106e"
+    },
+    {
+      "bytes": 1538,
+      "path": "README.md",
+      "sha256": "aa43d7d6ced3407a12d5622b5ac55f1a99ec48345916d79c85d32e1775a09749"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "temple-mechanism",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "temple-mechanism.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "TempleMechanism",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

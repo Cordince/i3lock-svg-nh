@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 192093,
+      "path": "neural-mesh.svg",
+      "sha256": "3f411b55f87f8ce8db25b218cf4053383a2eda3b56022cc55575c69d26a9336f"
+    },
+    {
+      "bytes": 389922,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "cd3679ccaee2bb23ed93893996e790c4766cad418df508b4217c8c1dfd6ba241"
+    },
+    {
+      "bytes": 18719,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "21a4de6780f91db8b8bd4311e14c650153d74841ab2ec86a8cf49c2ff597a9d2"
+    },
+    {
+      "bytes": 1183,
+      "path": "lock.sh",
+      "sha256": "88d665dd9ee3b7c72b870e30d24a46f62ba51a58408cef99930c4af86029a2a4"
+    },
+    {
+      "bytes": 1541,
+      "path": "README.md",
+      "sha256": "7aebf9981f7e0917e85ee748e83ce9c190e343a0e2671d1f552f903ece07ff1b"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "neural-mesh",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "neural-mesh.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "NeuralMesh",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

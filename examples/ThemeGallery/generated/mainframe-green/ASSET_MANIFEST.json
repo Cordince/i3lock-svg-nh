@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 151332,
+      "path": "mainframe-green.svg",
+      "sha256": "7a588dce5cc8428b7092fe4de1db1038a59610bfe01c7f5da39128bbcb3b419d"
+    },
+    {
+      "bytes": 448193,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "03cb2880ca5215f2425a7f0e90253d4d4bbcaec15944b5a22e5610998171fb75"
+    },
+    {
+      "bytes": 25277,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "ced18bee245878c9ff1b226141183b8dfcfed1cc6884692d546b82caad33e5e8"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "c7f08bcacc7f6aa34269139194c92ab3c52f4908064023593ea83bf5920ef4ca"
+    },
+    {
+      "bytes": 1553,
+      "path": "README.md",
+      "sha256": "816f6ccedb52835084f484ddd66f51828662e8050b372c45f72fee5bfec8b2fd"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "mainframe-green",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "mainframe-green.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MainframeGreen",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

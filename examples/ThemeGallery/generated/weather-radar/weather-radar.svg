@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme gallery asset. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs>
+  <radialGradient id="weather_radar_base_field" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#77d7ff" stop-opacity="0.18"/>
+    <stop offset="0.52" stop-color="#8478ff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070814" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="weather_radar_base_core" cx="50%" cy="48%" r="55%">
+    <stop offset="0" stop-color="#d5f6ff" stop-opacity="0.24"/>
+    <stop offset="0.62" stop-color="#77d7ff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#070814" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="weather_radar_base_facet" x1="210" y1="210" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#77d7ff" stop-opacity="0.20"/>
+    <stop offset="0.55" stop-color="#8478ff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#d5f6ff" stop-opacity="0.18"/>
+  </linearGradient>
+  <filter id="weather_radar_base_glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="weather_radar_base_soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g id="bg"><circle cx="320.000" cy="320.000" r="226.000" fill="url(#weather_radar_base_field)" opacity="1.000"/>
+<circle cx="320.000" cy="320.000" r="206.000" fill="none" stroke="#8478ff" stroke-width="0.900" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#77d7ff" stroke-width="0.600" opacity="0.080"/>
+<line x1="200.000" y1="208.000" x2="200.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="200.000" x2="432.000" y2="200.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="234.000" y1="208.000" x2="234.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="234.000" x2="432.000" y2="234.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="268.000" y1="208.000" x2="268.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="268.000" x2="432.000" y2="268.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="302.000" y1="208.000" x2="302.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="302.000" x2="432.000" y2="302.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="336.000" y1="208.000" x2="336.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="336.000" x2="432.000" y2="336.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="370.000" y1="208.000" x2="370.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="370.000" x2="432.000" y2="370.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="404.000" y1="208.000" x2="404.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="404.000" x2="432.000" y2="404.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="438.000" y1="208.000" x2="438.000" y2="432.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="438.000" x2="432.000" y2="438.000" stroke="#8478ff" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/></g>
+<g id="idle"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.213"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.820" opacity="0.355" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.760" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.422"/>
+<path d="M 238.411 311.803 A 82.000 82.000 0 0 1 401.991 321.235" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 226.162 305.185 A 95.000 95.000 0 0 1 414.919 316.069" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 212.752 307.279 A 108.000 108.000 0 0 1 428.000 319.691" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 199.004 319.042 A 121.000 121.000 0 1 1 440.304 332.955" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 186.767 334.313 A 134.000 134.000 0 1 1 450.705 349.532" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 174.809 342.991 A 147.000 147.000 0 1 1 461.586 359.526" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 160.999 337.852 A 160.000 160.000 0 1 1 475.895 356.009" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 147.000 319.784 A 173.000 173.000 0 1 1 491.878 339.669" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<path d="M 135.198 298.925 A 186.000 186.000 0 0 1 506.000 320.305" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.200"/>
+<circle cx="429.408" cy="364.204" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="402.667" cy="452.296" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="311.769" cy="437.713" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="219.725" cy="439.503" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="205.505" cy="348.547" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="175.359" cy="261.561" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="257.470" cy="219.930" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="330.882" cy="164.380" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="395.849" cy="229.607" r="2.500" fill="#d5f6ff" opacity="0.242"/>
+<circle cx="471.366" cy="282.260" r="2.500" fill="#d5f6ff" opacity="0.242"/></g>
+<g id="anim00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.186"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.642" opacity="0.310" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.372"/>
+<path d="M 238.017 318.319 A 82.000 82.000 0 0 1 402.000 320.108" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 225.753 308.061 A 95.000 95.000 0 0 1 414.485 310.120" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 213.296 303.319 A 108.000 108.000 0 0 1 427.043 305.651" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 199.491 309.116 A 121.000 121.000 0 0 1 440.718 311.747" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 186.059 323.960 A 134.000 134.000 0 1 1 453.823 326.881" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 174.265 339.240 A 147.000 147.000 0 1 1 465.281 342.415" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 161.877 344.439 A 160.000 160.000 0 1 1 477.552 347.883" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 147.587 334.241 A 173.000 173.000 0 1 1 492.061 337.998" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<path d="M 134.138 312.838 A 186.000 186.000 0 0 1 505.974 316.894" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.168"/>
+<circle cx="437.688" cy="328.574" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="439.211" cy="420.622" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="348.214" cy="434.577" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="261.141" cy="464.470" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="219.749" cy="382.239" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="164.412" cy="308.665" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="229.828" cy="243.888" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="282.701" cy="168.525" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="364.522" cy="210.721" r="2.500" fill="#d5f6ff" opacity="0.192"/>
+<circle cx="452.535" cy="237.718" r="2.500" fill="#d5f6ff" opacity="0.192"/></g>
+<g id="anim01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.193"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.683" opacity="0.321" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.383"/>
+<path d="M 238.068 316.667 A 82.000 82.000 0 0 1 402.000 320.244" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 225.892 307.010 A 95.000 95.000 0 0 1 414.585 311.127" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 213.220 303.810 A 108.000 108.000 0 0 1 427.384 308.483" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 199.318 311.234 A 121.000 121.000 0 0 1 440.950 316.507" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 186.164 326.623 A 134.000 134.000 0 1 1 453.420 332.454" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 174.467 340.717 A 147.000 147.000 0 1 1 464.491 347.045" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 161.739 343.528 A 160.000 160.000 0 1 1 477.084 350.409" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 147.357 331.108 A 173.000 173.000 0 1 1 491.994 338.628" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<path d="M 134.313 309.207 A 186.000 186.000 0 0 1 505.981 317.316" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.175"/>
+<circle cx="436.754" cy="337.102" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="431.585" cy="429.018" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="339.814" cy="436.325" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="250.800" cy="459.812" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="215.492" cy="374.791" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="165.647" cy="297.391" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="235.596" cy="237.538" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="293.805" cy="166.215" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="372.344" cy="214.245" r="2.500" fill="#d5f6ff" opacity="0.203"/>
+<circle cx="458.164" cy="247.565" r="2.500" fill="#d5f6ff" opacity="0.203"/></g>
+<g id="anim02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.199"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.725" opacity="0.331" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.395"/>
+<path d="M 238.148 315.074 A 82.000 82.000 0 0 1 401.999 320.438" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 226.011 306.181 A 95.000 95.000 0 0 1 414.692 312.357" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 213.107 304.576 A 108.000 108.000 0 0 1 427.673 311.600" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 199.174 313.506 A 121.000 121.000 0 0 1 440.992 321.422" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 186.314 329.169 A 134.000 134.000 0 1 1 452.800 337.893" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 174.631 341.840 A 147.000 147.000 0 1 1 463.629 351.300" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 161.550 342.217 A 160.000 160.000 0 1 1 476.658 352.533" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 147.175 327.781 A 173.000 173.000 0 1 1 491.946 339.067" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<path d="M 134.546 305.763 A 186.000 186.000 0 0 1 505.988 317.923" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.182"/>
+<circle cx="435.203" cy="345.540" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="423.369" cy="436.837" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="331.310" cy="437.457" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="240.824" cy="454.414" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="211.787" cy="367.052" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="167.698" cy="286.235" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="241.811" cy="231.623" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="305.048" cy="164.718" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="379.890" cy="218.328" r="2.500" fill="#d5f6ff" opacity="0.215"/>
+<circle cx="463.061" cy="257.795" r="2.500" fill="#d5f6ff" opacity="0.215"/></g>
+<g id="anim03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.205"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.767" opacity="0.342" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.407"/>
+<path d="M 238.253 313.566 A 82.000 82.000 0 0 1 401.997 320.716" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 226.100 305.587 A 95.000 95.000 0 0 1 414.799 313.826" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 212.964 305.605 A 108.000 108.000 0 0 1 427.884 314.989" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 199.070 315.890 A 121.000 121.000 0 1 1 440.828 326.446" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 186.499 331.556 A 134.000 134.000 0 1 1 451.986 343.147" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 174.746 342.591 A 147.000 147.000 0 1 1 462.732 355.164" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 161.322 340.526 A 160.000 160.000 0 1 1 476.285 354.277" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 147.054 324.318 A 173.000 173.000 0 1 1 491.912 339.375" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<path d="M 134.819 302.568 A 186.000 186.000 0 0 1 505.996 318.774" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.190"/>
+<circle cx="433.043" cy="353.843" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="414.606" cy="444.039" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="322.746" cy="437.968" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="231.267" cy="448.306" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="208.654" cy="359.065" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="170.554" cy="275.259" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="248.439" cy="226.176" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="316.370" cy="164.042" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="387.119" cy="222.948" r="2.500" fill="#d5f6ff" opacity="0.227"/>
+<circle cx="467.203" cy="268.354" r="2.500" fill="#d5f6ff" opacity="0.227"/></g>
+<g id="anim04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.211"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.808" opacity="0.352" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.418"/>
+<path d="M 238.375 312.171 A 82.000 82.000 0 0 1 401.993 321.104" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 226.154 305.238 A 95.000 95.000 0 0 1 414.895 315.543" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 212.800 306.881 A 108.000 108.000 0 0 1 427.991 318.629" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 199.011 318.347 A 121.000 121.000 0 1 1 440.450 331.528" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 186.707 333.742 A 134.000 134.000 0 1 1 451.005 348.172" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 174.804 342.958 A 147.000 147.000 0 1 1 461.834 358.628" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 161.071 338.483 A 160.000 160.000 0 1 1 475.972 355.675" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 147.002 320.779 A 173.000 173.000 0 1 1 491.885 339.609" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<path d="M 135.114 299.674 A 186.000 186.000 0 0 1 506.000 319.923" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.198"/>
+<circle cx="430.285" cy="361.967" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="405.344" cy="450.585" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="314.167" cy="437.856" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="222.179" cy="441.520" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="206.110" cy="350.872" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="174.199" cy="264.518" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="255.445" cy="221.224" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="327.711" cy="164.191" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="393.993" cy="228.081" r="2.500" fill="#d5f6ff" opacity="0.238"/>
+<circle cx="470.566" cy="279.186" r="2.500" fill="#d5f6ff" opacity="0.238"/></g>
+<g id="anim05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.217"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.850" opacity="0.362" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.430"/>
+<path d="M 238.505 310.911 A 82.000 82.000 0 0 1 401.984 321.626" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 226.169 305.140 A 95.000 95.000 0 0 1 414.967 317.515" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 212.627 308.382 A 108.000 108.000 0 0 1 427.971 322.497" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 199.003 320.832 A 121.000 121.000 0 1 1 439.853 336.618" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 186.922 335.691 A 134.000 134.000 0 1 1 449.892 352.927" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 174.800 342.935 A 147.000 147.000 0 1 1 460.964 361.691" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 160.814 336.121 A 160.000 160.000 0 1 1 475.720 356.761" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 147.022 317.227 A 173.000 173.000 0 1 1 491.860 339.829" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<path d="M 135.411 297.132 A 186.000 186.000 0 0 1 505.995 321.421" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.205"/>
+<circle cx="426.944" cy="369.869" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="395.630" cy="456.441" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="305.619" cy="437.120" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="213.608" cy="434.091" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="204.168" cy="342.515" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="178.616" cy="254.072" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="262.792" cy="216.795" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="339.012" cy="165.163" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="400.476" cy="233.700" r="2.500" fill="#d5f6ff" opacity="0.250"/>
+<circle cx="473.134" cy="290.234" r="2.500" fill="#d5f6ff" opacity="0.250"/></g>
+<g id="anim06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.224"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.892" opacity="0.373" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.442"/>
+<path d="M 238.636 309.808 A 82.000 82.000 0 0 1 401.968 322.304" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 226.145 305.294 A 95.000 95.000 0 0 1 415.000 319.743" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 212.456 310.084 A 108.000 108.000 0 0 1 427.801 326.559" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 199.045 323.303 A 121.000 121.000 0 1 1 439.045 341.665" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 187.131 337.370 A 134.000 134.000 0 1 1 448.681 357.380" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 174.736 342.523 A 147.000 147.000 0 1 1 460.147 364.359" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 160.569 333.481 A 160.000 160.000 0 1 1 475.525 357.577" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 147.114 313.724 A 173.000 173.000 0 1 1 491.829 340.097" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<path d="M 135.690 294.982 A 186.000 186.000 0 0 1 505.971 323.311" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.212"/>
+<circle cx="423.038" cy="377.508" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="385.517" cy="461.575" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="297.148" cy="435.766" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="205.600" cy="426.059" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="202.838" cy="334.040" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="183.780" cy="243.973" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="270.442" cy="212.911" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="350.212" cy="166.953" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="406.533" cy="239.776" r="2.500" fill="#d5f6ff" opacity="0.262"/>
+<circle cx="474.892" cy="301.439" r="2.500" fill="#d5f6ff" opacity="0.262"/></g>
+<g id="anim07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.230"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.933" opacity="0.383" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.453"/>
+<path d="M 238.758 308.880 A 82.000 82.000 0 0 1 401.939 323.156" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 226.083 305.698 A 95.000 95.000 0 0 1 414.974 322.224" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 212.300 311.958 A 108.000 108.000 0 1 1 427.460 330.782" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 199.135 325.716 A 121.000 121.000 0 1 1 438.036 346.618" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 187.318 338.750 A 134.000 134.000 0 1 1 447.410 361.505" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 174.615 341.729 A 147.000 147.000 0 1 1 459.403 366.644" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 160.352 330.606 A 160.000 160.000 0 1 1 475.381 358.167" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 147.270 310.330 A 173.000 173.000 0 1 1 491.785 340.471" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<path d="M 135.932 293.260 A 186.000 186.000 0 0 1 505.915 325.630" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.220"/>
+<circle cx="418.588" cy="384.842" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="375.057" cy="465.961" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="288.797" cy="433.800" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="198.196" cy="417.467" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="202.128" cy="325.490" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="189.664" cy="234.277" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="278.354" cy="209.593" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="361.252" cy="169.553" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="412.134" cy="246.275" r="2.500" fill="#d5f6ff" opacity="0.273"/>
+<circle cx="475.831" cy="312.742" r="2.500" fill="#d5f6ff" opacity="0.273"/></g>
+<g id="anim08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.236"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="1.975" opacity="0.394" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.465"/>
+<path d="M 238.862 308.142 A 82.000 82.000 0 0 1 401.892 324.199" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 225.986 306.346 A 95.000 95.000 0 0 1 414.871 324.949" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 212.168 313.971 A 108.000 108.000 0 1 1 426.936 335.124" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 199.267 328.030 A 121.000 121.000 0 1 1 436.847 351.429" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 187.472 339.811 A 134.000 134.000 0 1 1 446.116 365.285" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 174.445 340.564 A 147.000 147.000 0 1 1 458.746 368.565" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 160.178 327.547 A 160.000 160.000 0 1 1 475.279 358.581" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 147.481 307.105 A 173.000 173.000 0 1 1 491.720 341.010" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<path d="M 136.120 291.995 A 186.000 186.000 0 0 1 505.810 328.406" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.228"/>
+<circle cx="413.616" cy="391.834" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="364.306" cy="469.576" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="280.611" cy="431.232" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="191.436" cy="408.359" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="202.040" cy="316.911" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="196.237" cy="225.033" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="286.486" cy="206.859" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="372.074" cy="172.948" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="417.247" cy="253.164" r="2.500" fill="#d5f6ff" opacity="0.285"/>
+<circle cx="475.947" cy="324.084" r="2.500" fill="#d5f6ff" opacity="0.285"/></g>
+<g id="anim09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.242"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.017" opacity="0.404" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.477"/>
+<path d="M 238.942 307.606 A 82.000 82.000 0 0 1 401.819 325.444" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 225.863 307.226 A 95.000 95.000 0 0 1 414.671 327.904" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 212.071 316.090 A 108.000 108.000 0 1 1 426.217 339.543" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 199.431 330.203 A 121.000 121.000 0 1 1 435.503 356.057" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 187.583 340.534 A 134.000 134.000 0 1 1 444.834 368.707" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 174.239 339.048 A 147.000 147.000 0 1 1 458.183 370.145" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 160.059 324.355 A 160.000 160.000 0 1 1 475.207 358.869" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 147.732 304.105 A 173.000 173.000 0 1 1 491.625 341.767" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<path d="M 136.242 291.206 A 186.000 186.000 0 0 1 505.634 331.661" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.235"/>
+<circle cx="408.149" cy="398.446" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="353.321" cy="472.400" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="272.633" cy="428.076" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="185.356" cy="398.785" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="202.577" cy="308.349" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="203.464" cy="216.292" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="294.795" cy="204.723" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="382.621" cy="177.120" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="421.846" cy="260.406" r="2.500" fill="#d5f6ff" opacity="0.297"/>
+<circle cx="475.238" cy="335.404" r="2.500" fill="#d5f6ff" opacity="0.297"/></g>
+<g id="anim10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.249"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.058" opacity="0.415" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.488"/>
+<path d="M 238.992 307.281 A 82.000 82.000 0 0 1 401.709 326.900" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 225.720 308.325 A 95.000 95.000 0 0 1 414.353 331.068" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 212.014 318.278 A 108.000 108.000 0 1 1 425.301 343.994" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 199.617 332.199 A 121.000 121.000 0 1 1 434.034 360.463" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 187.641 340.908 A 134.000 134.000 0 1 1 443.596 371.768" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 174.010 337.205 A 147.000 147.000 0 1 1 457.716 371.412" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 160.004 321.088 A 160.000 160.000 0 1 1 475.153 359.085" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 148.005 301.380 A 173.000 173.000 0 1 1 491.492 342.794" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<path d="M 136.290 290.906 A 186.000 186.000 0 0 1 505.361 335.405" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.242"/>
+<circle cx="402.216" cy="404.643" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="342.160" cy="474.418" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="264.906" cy="424.349" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="179.988" cy="388.793" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="203.734" cy="299.848" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="211.307" cy="208.099" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="303.238" cy="203.197" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="392.837" cy="182.048" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="425.907" cy="267.964" r="2.500" fill="#d5f6ff" opacity="0.308"/>
+<circle cx="473.708" cy="346.642" r="2.500" fill="#d5f6ff" opacity="0.308"/></g>
+<g id="anim11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.255"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.100" opacity="0.425" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.500"/>
+<path d="M 239.010 307.172 A 82.000 82.000 0 0 1 401.551 328.571" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 225.568 309.624 A 95.000 95.000 0 1 1 413.899 334.418" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 212.001 320.495 A 108.000 108.000 0 1 1 424.191 348.431" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 199.811 333.984 A 121.000 121.000 0 1 1 432.475 364.615" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 187.644 340.927 A 134.000 134.000 0 1 1 442.430 374.470" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 173.774 335.067 A 147.000 147.000 0 1 1 457.344 372.399" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 160.015 317.801 A 160.000 160.000 0 1 1 475.103 359.283" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 148.282 298.976 A 173.000 173.000 0 1 1 491.308 344.136" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<path d="M 136.259 291.100 A 186.000 186.000 0 0 1 504.960 339.640" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.250"/>
+<circle cx="395.849" cy="410.393" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="330.882" cy="475.620" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="257.470" cy="420.070" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="175.359" cy="378.439" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="205.505" cy="291.453" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="219.725" cy="200.497" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="311.769" cy="202.287" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="402.667" cy="187.704" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="429.408" cy="275.796" r="2.500" fill="#d5f6ff" opacity="0.320"/>
+<circle cx="471.366" cy="357.740" r="2.500" fill="#d5f6ff" opacity="0.320"/></g>
+<g id="anim12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.261"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.142" opacity="0.435" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.512"/>
+<path d="M 238.992 307.281 A 82.000 82.000 0 0 1 401.330 330.458" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 225.418 311.103 A 95.000 95.000 0 1 1 413.294 337.925" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 212.034 322.704 A 108.000 108.000 0 1 1 422.896 352.808" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 200.001 335.528 A 121.000 121.000 0 1 1 430.860 368.487" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 187.591 340.591 A 134.000 134.000 0 1 1 441.357 376.820" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 173.547 332.667 A 147.000 147.000 0 1 1 457.058 373.143" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 160.093 314.553 A 160.000 160.000 0 1 1 475.043 359.517" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 148.545 296.934 A 173.000 173.000 0 1 1 491.060 345.834" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<path d="M 136.153 291.784 A 186.000 186.000 0 0 1 504.398 344.357" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.258"/>
+<circle cx="389.081" cy="415.665" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="319.546" cy="475.999" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="250.364" cy="415.262" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="171.496" cy="367.775" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="207.882" cy="283.210" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="228.673" cy="193.527" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="320.343" cy="202.000" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="412.061" cy="194.061" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="432.330" cy="283.863" r="2.500" fill="#d5f6ff" opacity="0.332"/>
+<circle cx="468.224" cy="368.638" r="2.500" fill="#d5f6ff" opacity="0.332"/></g>
+<g id="anim13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.268"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.183" opacity="0.446" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.523"/>
+<path d="M 238.942 307.606 A 82.000 82.000 0 1 1 401.033 332.554" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 225.278 312.735 A 95.000 95.000 0 1 1 412.522 341.555" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 212.110 324.866 A 108.000 108.000 0 1 1 421.434 357.084" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 200.173 336.806 A 121.000 121.000 0 1 1 429.228 372.061" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 187.487 339.905 A 134.000 134.000 0 1 1 440.395 378.831" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 173.344 330.048 A 147.000 147.000 0 1 1 456.847 373.683" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 160.231 311.400 A 160.000 160.000 0 1 1 474.960 359.842" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 148.774 295.287 A 173.000 173.000 0 1 1 490.732 347.920" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<path d="M 135.978 292.949 A 186.000 186.000 0 1 1 503.640 349.537" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.265"/>
+<circle cx="381.947" cy="420.432" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="308.213" cy="475.554" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="243.626" cy="409.950" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="168.417" cy="356.859" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="210.851" cy="275.161" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="238.104" cy="187.226" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="328.916" cy="202.337" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="420.968" cy="201.082" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="434.659" cy="292.120" r="2.500" fill="#d5f6ff" opacity="0.343"/>
+<circle cx="464.298" cy="379.279" r="2.500" fill="#d5f6ff" opacity="0.343"/></g>
+<g id="anim14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.274"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.225" opacity="0.456" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.535"/>
+<path d="M 238.862 308.142 A 82.000 82.000 0 1 1 400.644 334.852" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 225.160 314.494 A 95.000 95.000 0 1 1 411.577 345.272" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 212.223 326.942 A 108.000 108.000 0 1 1 419.825 361.217" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 200.316 337.797 A 121.000 121.000 0 1 1 427.612 375.323" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 187.337 338.880 A 134.000 134.000 0 1 1 439.554 380.521" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 173.179 327.254 A 147.000 147.000 0 1 1 456.697 374.063" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 160.421 308.398 A 160.000 160.000 0 1 1 474.839 360.308" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 148.956 294.062 A 173.000 173.000 0 1 1 490.305 350.419" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<path d="M 135.746 294.574 A 186.000 186.000 0 1 1 502.649 355.150" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.272"/>
+<circle cx="374.486" cy="424.667" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="296.942" cy="474.286" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="237.293" cy="404.164" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="166.139" cy="345.747" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="214.398" cy="267.349" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="247.967" cy="181.626" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="337.442" cy="203.296" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="429.342" cy="208.733" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="436.382" cy="300.524" r="2.500" fill="#d5f6ff" opacity="0.355"/>
+<circle cx="459.610" cy="389.607" r="2.500" fill="#d5f6ff" opacity="0.355"/></g>
+<g id="anim15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.280"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.267" opacity="0.467" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.547"/>
+<path d="M 238.758 308.880 A 82.000 82.000 0 1 1 400.146 337.337" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 225.070 316.350 A 95.000 95.000 0 1 1 410.453 349.038" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 212.367 328.898 A 108.000 108.000 0 1 1 418.099 365.174" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 200.420 338.484 A 121.000 121.000 0 1 1 426.046 378.268" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 187.152 337.533 A 134.000 134.000 0 1 1 438.840 381.912" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 173.064 324.333 A 147.000 147.000 0 1 1 456.593 374.327" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 160.650 305.597 A 160.000 160.000 0 1 1 474.667 360.967" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 149.076 293.278 A 173.000 173.000 0 1 1 489.755 353.349" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<path d="M 135.473 296.634 A 186.000 186.000 0 1 1 501.390 361.155" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.280"/>
+<circle cx="366.737" cy="428.350" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="285.793" cy="472.203" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="231.396" cy="397.932" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="164.675" cy="334.500" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="218.502" cy="259.815" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="258.212" cy="176.758" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="345.875" cy="204.872" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="437.137" cy="216.972" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="437.489" cy="309.032" r="2.500" fill="#d5f6ff" opacity="0.367"/>
+<circle cx="454.183" cy="399.567" r="2.500" fill="#d5f6ff" opacity="0.367"/></g>
+<g id="anim16"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.286"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.308" opacity="0.477" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.558"/>
+<path d="M 238.636 309.808 A 82.000 82.000 0 1 1 399.526 339.990" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 225.016 318.269 A 95.000 95.000 0 1 1 409.154 352.812" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 212.531 330.698 A 108.000 108.000 0 1 1 416.284 368.922" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 200.478 338.857 A 121.000 121.000 0 1 1 424.560 380.894" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 186.945 335.885 A 134.000 134.000 0 1 1 438.251 383.029" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 173.006 321.336 A 147.000 147.000 0 1 1 456.515 374.521" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 160.901 303.046 A 160.000 160.000 0 1 1 474.426 361.862" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 149.128 292.948 A 173.000 173.000 0 1 1 489.059 356.718" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<path d="M 135.178 299.096 A 186.000 186.000 0 1 1 499.832 367.504" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.287"/>
+<circle cx="358.741" cy="431.459" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="274.824" cy="469.316" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="225.968" cy="391.288" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="164.032" cy="323.176" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="223.144" cy="252.599" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="268.783" cy="172.647" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="354.171" cy="207.056" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="444.314" cy="225.755" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="437.976" cy="317.597" r="2.500" fill="#d5f6ff" opacity="0.378"/>
+<circle cx="448.047" cy="409.106" r="2.500" fill="#d5f6ff" opacity="0.378"/></g>
+<g id="anim17"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.292"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.350" opacity="0.487" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.570"/>
+<path d="M 238.505 310.911 A 82.000 82.000 0 1 1 398.770 342.789" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 225.000 320.218 A 95.000 95.000 0 1 1 407.685 356.556" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 212.704 332.314 A 108.000 108.000 0 1 1 414.416 372.437" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 200.487 338.911 A 121.000 121.000 0 1 1 423.179 383.207" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 186.730 333.964 A 134.000 134.000 0 1 1 437.782 383.901" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 173.010 318.316 A 147.000 147.000 0 1 1 456.446 374.695" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 161.158 300.788 A 160.000 160.000 0 1 1 474.103 363.037" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 149.108 293.077 A 173.000 173.000 0 1 1 488.187 360.524" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<path d="M 134.881 301.918 A 186.000 186.000 0 1 1 497.947 374.136" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.295"/>
+<circle cx="350.541" cy="433.979" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="264.095" cy="465.639" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="221.037" cy="384.267" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="164.214" cy="311.836" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="228.297" cy="245.740" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="279.624" cy="169.316" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="362.287" cy="209.838" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="450.833" cy="235.036" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="437.838" cy="326.176" r="2.500" fill="#d5f6ff" opacity="0.390"/>
+<circle cx="441.235" cy="418.174" r="2.500" fill="#d5f6ff" opacity="0.390"/></g>
+<g id="anim18"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.299"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.392" opacity="0.498" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.582"/>
+<path d="M 238.375 312.171 A 82.000 82.000 0 1 1 397.866 345.708" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 225.025 322.163 A 95.000 95.000 0 1 1 406.061 360.231" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 212.875 333.718 A 108.000 108.000 0 1 1 412.528 375.700" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 200.445 338.643 A 121.000 121.000 0 1 1 421.922 385.214" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 186.521 331.802 A 134.000 134.000 0 1 1 437.422 384.561" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 173.074 315.325 A 147.000 147.000 0 1 1 456.366 374.895" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 161.403 298.861 A 160.000 160.000 0 1 1 473.680 364.525" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 149.016 293.663 A 173.000 173.000 0 1 1 487.110 364.757" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<path d="M 134.602 305.053 A 186.000 186.000 0 1 1 495.717 380.987" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.302"/>
+<circle cx="342.178" cy="435.897" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="253.661" cy="461.192" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="216.629" cy="376.907" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="165.219" cy="300.538" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="233.935" cy="239.273" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="290.679" cy="166.780" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="370.180" cy="213.201" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="456.660" cy="244.767" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="437.078" cy="334.721" r="2.500" fill="#d5f6ff" opacity="0.402"/>
+<circle cx="433.781" cy="426.723" r="2.500" fill="#d5f6ff" opacity="0.402"/></g>
+<g id="anim19"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.305"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.433" opacity="0.508" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.593"/>
+<path d="M 238.253 313.566 A 82.000 82.000 0 1 1 396.807 348.717" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 225.087 324.071 A 95.000 95.000 0 1 1 404.300 363.801" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 213.031 334.886 A 108.000 108.000 0 1 1 410.656 378.698" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 200.355 338.058 A 121.000 121.000 0 1 1 420.803 386.930" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 186.333 329.434 A 134.000 134.000 0 1 1 437.157 385.041" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 173.196 312.416 A 147.000 147.000 0 1 1 456.255 375.169" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 161.619 297.295 A 160.000 160.000 0 1 1 473.137 366.357" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 148.860 294.697 A 173.000 173.000 0 1 1 485.799 369.394" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<path d="M 134.359 308.448 A 186.000 186.000 0 1 1 493.130 387.985" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.310"/>
+<circle cx="333.699" cy="437.202" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="243.577" cy="455.998" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="212.767" cy="369.246" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="167.042" cy="289.343" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="240.028" cy="233.234" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="301.890" cy="165.055" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="377.807" cy="217.129" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="461.765" cy="254.895" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="435.699" cy="343.189" r="2.500" fill="#d5f6ff" opacity="0.413"/>
+<circle cx="425.726" cy="434.708" r="2.500" fill="#d5f6ff" opacity="0.413"/></g>
+<g id="anim20"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.311"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.475" opacity="0.519" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.605"/>
+<path d="M 238.148 315.074 A 82.000 82.000 0 1 1 395.590 351.784" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 225.184 325.907 A 95.000 95.000 0 1 1 402.425 367.234" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 213.162 335.799 A 108.000 108.000 0 1 1 408.832 381.423" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 200.224 337.166 A 121.000 121.000 0 1 1 419.831 388.372" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 186.178 326.903 A 134.000 134.000 0 1 1 436.968 385.379" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 173.366 309.640 A 147.000 147.000 0 1 1 456.095 375.563" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 161.792 296.117 A 160.000 160.000 0 1 1 472.455 368.554" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 148.650 296.162 A 173.000 173.000 0 1 1 484.222 374.406" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<path d="M 134.170 312.044 A 186.000 186.000 0 1 1 490.185 395.055" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.318"/>
+<circle cx="325.147" cy="437.888" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="233.898" cy="450.086" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="209.473" cy="361.324" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="169.674" cy="278.311" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="246.543" cy="227.652" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="313.195" cy="164.148" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="385.129" cy="221.601" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="466.121" cy="265.368" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="433.708" cy="351.534" r="2.500" fill="#d5f6ff" opacity="0.425"/>
+<circle cx="417.112" cy="442.087" r="2.500" fill="#d5f6ff" opacity="0.425"/></g>
+<g id="anim21"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.318"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.517" opacity="0.529" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.333" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.617"/>
+<path d="M 238.068 316.667 A 82.000 82.000 0 1 1 394.214 354.876" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 225.308 327.641 A 95.000 95.000 0 1 1 400.465 370.502" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 213.259 336.444 A 108.000 108.000 0 1 1 407.087 383.873" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 200.060 335.981 A 121.000 121.000 0 1 1 419.009 389.558" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 186.067 324.251 A 134.000 134.000 0 1 1 436.837 385.614" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 173.572 307.044 A 147.000 147.000 0 1 1 455.866 376.120" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 161.911 295.346 A 160.000 160.000 0 1 1 471.611 371.129" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 148.400 298.035 A 173.000 173.000 0 1 1 482.353 379.752" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<path d="M 134.048 315.779 A 186.000 186.000 0 1 1 486.890 402.119" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.325"/>
+<circle cx="316.568" cy="437.950" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="224.674" cy="443.486" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="206.762" cy="353.185" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="173.100" cy="267.499" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="253.447" cy="222.559" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="324.537" cy="164.066" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="392.106" cy="226.594" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="469.704" cy="276.129" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="431.117" cy="359.713" r="2.500" fill="#d5f6ff" opacity="0.437"/>
+<circle cx="407.985" cy="448.820" r="2.500" fill="#d5f6ff" opacity="0.437"/></g>
+<g id="anim22"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.324"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.558" opacity="0.540" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.667" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.628"/>
+<path d="M 238.017 318.319 A 82.000 82.000 0 1 1 392.685 357.959" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 225.451 329.242 A 95.000 95.000 0 1 1 398.449 373.580" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 213.316 336.808 A 108.000 108.000 0 1 1 405.448 386.050" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 199.875 334.523 A 121.000 121.000 0 1 1 418.332 390.511" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 186.009 321.524 A 134.000 134.000 0 1 1 436.741 385.785" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 173.801 304.672 A 147.000 147.000 0 1 1 455.549 376.882" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 161.966 294.994 A 160.000 160.000 0 1 1 470.580 374.089" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 148.127 300.284 A 173.000 173.000 0 1 1 480.169 385.384" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<path d="M 134.000 319.588 A 186.000 186.000 0 1 1 483.269 409.103" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.333"/>
+<circle cx="308.007" cy="437.389" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="215.953" cy="436.234" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="204.650" cy="344.869" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="177.303" cy="256.964" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="260.703" cy="217.981" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="335.855" cy="164.808" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="398.702" cy="232.080" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="472.496" cy="287.122" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="427.938" cy="367.681" r="2.500" fill="#d5f6ff" opacity="0.448"/>
+<circle cx="398.393" cy="454.872" r="2.500" fill="#d5f6ff" opacity="0.448"/></g>
+<g id="anim23"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/></g>
+<g id="verify"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.297"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.380" opacity="0.495" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.240" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.578"/>
+<path d="M 238.411 311.803 A 82.000 82.000 0 1 1 398.134 344.881" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 225.014 321.621 A 95.000 95.000 0 1 1 406.530 359.211" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 212.828 333.347 A 108.000 108.000 0 1 1 413.057 374.813" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 200.462 338.750 A 121.000 121.000 0 1 1 422.260 384.682" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 186.578 332.429 A 134.000 134.000 0 1 1 437.513 384.396" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 173.050 316.156 A 147.000 147.000 0 1 1 456.390 374.833" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 161.336 299.365 A 160.000 160.000 0 1 1 473.810 364.075" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 149.049 293.453 A 173.000 173.000 0 1 1 487.434 363.529" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<path d="M 134.677 304.146 A 186.000 186.000 0 1 1 496.377 379.051" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.300"/>
+<circle cx="344.534" cy="435.421" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="256.549" cy="462.513" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="217.809" cy="379.000" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="164.855" cy="303.694" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="232.309" cy="241.043" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="287.566" cy="167.409" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="367.995" cy="212.202" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="455.100" cy="242.000" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="437.354" cy="332.334" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<circle cx="435.931" cy="424.384" r="2.500" fill="#d5f6ff" opacity="0.398"/>
+<rect x="196.000" y="304.000" width="248.000" height="34.000" fill="#77d7ff" opacity="0.055"/>
+<line x1="196.000" y1="321.000" x2="444.000" y2="321.000" stroke="#d5f6ff" stroke-width="2.000" stroke-linecap="round" opacity="0.420" filter="url(#weather_radar_base_glow)"/>
+<path d="M 175.984 199.156 A 188.000 188.000 0 1 1 175.984 440.844" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.100" opacity="0.360"/></g>
+<g id="fail"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.267"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#ff735f" stroke-width="2.180" opacity="0.445" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.640" fill="url(#weather_radar_base_core)" stroke="#ff735f" stroke-width="1.000" opacity="0.522"/>
+<path d="M 238.947 307.572 A 82.000 82.000 0 0 1 401.060 332.379" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 225.289 312.600 A 95.000 95.000 0 1 1 412.590 341.261" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 212.102 324.695 A 108.000 108.000 0 1 1 421.556 356.746" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 200.160 336.714 A 121.000 121.000 0 1 1 429.358 371.786" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 187.497 339.972 A 134.000 134.000 0 1 1 440.467 378.682" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 173.359 330.265 A 147.000 147.000 0 1 1 456.861 373.647" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 160.218 311.648 A 160.000 160.000 0 1 1 474.968 359.811" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 148.757 295.404 A 173.000 173.000 0 1 1 490.762 347.738" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<path d="M 135.994 292.838 A 186.000 186.000 0 1 1 503.708 349.106" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.264"/>
+<circle cx="382.530" cy="420.070" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="309.118" cy="475.620" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="244.151" cy="410.393" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="168.634" cy="357.740" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="210.592" cy="275.796" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="237.333" cy="187.704" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="328.231" cy="202.287" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="420.275" cy="200.497" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="434.495" cy="291.453" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<circle cx="464.641" cy="378.439" r="2.500" fill="#d5f6ff" opacity="0.342"/>
+<line x1="342.795" y1="273.263" x2="420.968" y2="190.766" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#weather_radar_base_glow)"/>
+<line x1="367.128" y1="298.024" x2="479.797" y2="283.108" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#weather_radar_base_glow)"/>
+<line x1="369.986" y1="334.333" x2="464.803" y2="396.993" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#weather_radar_base_glow)"/>
+<line x1="352.014" y1="360.977" x2="391.893" y2="467.402" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#weather_radar_base_glow)"/>
+<line x1="295.587" y1="365.913" x2="214.583" y2="445.631" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#weather_radar_base_glow)"/>
+<line x1="272.872" y1="298.024" x2="189.024" y2="221.302" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#weather_radar_base_glow)"/>
+<path d="M 146.973 270.385 A 180.000 180.000 0 0 1 481.783 241.093" fill="none" stroke="#ff735f" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.800" opacity="0.480"/></g>
+<g id="backspace"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.243"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.020" opacity="0.405" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.360" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.478"/>
+<path d="M 238.947 307.572 A 82.000 82.000 0 0 1 401.812 325.553" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 225.852 307.306 A 95.000 95.000 0 0 1 414.650 328.149" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 212.065 316.263 A 108.000 108.000 0 1 1 426.151 339.899" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 199.445 330.370 A 121.000 121.000 0 1 1 435.389 356.418" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 187.589 340.576 A 134.000 134.000 0 1 1 444.733 368.965" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 174.222 338.912 A 147.000 147.000 0 1 1 458.142 370.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 160.052 324.096 A 160.000 160.000 0 1 1 475.202 358.889" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 147.753 303.876 A 173.000 173.000 0 1 1 491.616 341.839" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<path d="M 136.249 291.164 A 186.000 186.000 0 0 1 505.616 331.942" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.236"/>
+<circle cx="407.691" cy="398.957" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="352.434" cy="472.591" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="272.005" cy="427.798" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="184.900" cy="398.000" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="202.646" cy="307.666" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="204.069" cy="215.616" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="295.466" cy="204.579" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="383.451" cy="177.487" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="422.191" cy="261.000" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<circle cx="475.145" cy="336.306" r="2.500" fill="#d5f6ff" opacity="0.298"/>
+<path d="M 208.924 443.362 A 166.000 166.000 0 1 1 454.297 222.428" fill="none" stroke="#ff735f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.000" opacity="0.520" filter="url(#weather_radar_base_glow)"/>
+<line x1="432.000" y1="320.000" x2="214.000" y2="320.000" stroke="#ff735f" stroke-width="2.000" stroke-linecap="round" opacity="0.420"/>
+<polygon points="212.000,320.000 234.000,307.000 234.000,333.000" fill="#ff735f" opacity="0.540"/></g>
+<g id="fg"><path d="M 496.366 191.863 A 218.000 218.000 0 0 1 522.126 401.664" fill="none" stroke="#d5f6ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.150"/>
+<path d="M 127.517 422.345 A 218.000 218.000 0 0 1 143.634 191.863" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="236.000" fill="none" stroke="#ffffff" stroke-width="0.600" opacity="0.035"/></g>
+<g opacity="0" id="remove_background"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g opacity="0" id="sequential_animation"><rect x="1" y="0" width="1" height="1" fill="#000000"/></g>
+<g id="success"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="184.000" fill="none" stroke="#d5f6ff" stroke-width="2.600" opacity="0.440" filter="url(#weather_radar_base_glow)"/>
+<path d="M 327.746 172.203 A 148.000 148.000 0 0 1 350.771 175.234" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 365.735 179.244 A 148.000 148.000 0 0 1 387.191 188.131" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 400.607 195.877 A 148.000 148.000 0 0 1 419.031 210.015" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 429.985 220.969 A 148.000 148.000 0 0 1 444.123 239.393" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 451.869 252.809 A 148.000 148.000 0 0 1 460.756 274.265" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 464.766 289.229 A 148.000 148.000 0 0 1 467.797 312.254" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 467.797 327.746 A 148.000 148.000 0 0 1 464.766 350.771" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 460.756 365.735 A 148.000 148.000 0 0 1 451.869 387.191" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 444.123 400.607 A 148.000 148.000 0 0 1 429.985 419.031" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 419.031 429.985 A 148.000 148.000 0 0 1 400.607 444.123" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 387.191 451.869 A 148.000 148.000 0 0 1 365.735 460.756" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 350.771 464.766 A 148.000 148.000 0 0 1 327.746 467.797" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 312.254 467.797 A 148.000 148.000 0 0 1 289.229 464.766" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 274.265 460.756 A 148.000 148.000 0 0 1 252.809 451.869" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 239.393 444.123 A 148.000 148.000 0 0 1 220.969 429.985" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 210.015 419.031 A 148.000 148.000 0 0 1 195.877 400.607" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 188.131 387.191 A 148.000 148.000 0 0 1 179.244 365.735" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 175.234 350.771 A 148.000 148.000 0 0 1 172.203 327.746" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 172.203 312.254 A 148.000 148.000 0 0 1 175.234 289.229" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 179.244 274.265 A 148.000 148.000 0 0 1 188.131 252.809" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 195.877 239.393 A 148.000 148.000 0 0 1 210.015 220.969" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 220.969 210.015 A 148.000 148.000 0 0 1 239.393 195.877" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 252.809 188.131 A 148.000 148.000 0 0 1 274.265 179.244" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/>
+<path d="M 289.229 175.234 A 148.000 148.000 0 0 1 312.254 172.203" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#weather_radar_base_glow)"/></g>
+<g id="success00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="100.625" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.470" filter="url(#weather_radar_base_glow)"/>
+<circle cx="392.095" cy="324.725" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="367.638" cy="374.320" r="2.800" fill="#77d7ff" opacity="0.529"/>
+<circle cx="315.275" cy="392.095" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="265.680" cy="367.638" r="2.800" fill="#77d7ff" opacity="0.529"/>
+<circle cx="247.905" cy="315.275" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="272.362" cy="265.680" r="2.800" fill="#77d7ff" opacity="0.529"/>
+<circle cx="324.725" cy="247.905" r="2.800" fill="#d5f6ff" opacity="0.529"/>
+<circle cx="374.320" cy="272.362" r="2.800" fill="#77d7ff" opacity="0.529"/></g>
+<g id="success01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="109.250" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.461" filter="url(#weather_radar_base_glow)"/>
+<circle cx="399.811" cy="330.507" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="369.005" cy="383.865" r="2.800" fill="#77d7ff" opacity="0.517"/>
+<circle cx="309.493" cy="399.811" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="256.135" cy="369.005" r="2.800" fill="#77d7ff" opacity="0.517"/>
+<circle cx="240.189" cy="309.493" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="270.995" cy="256.135" r="2.800" fill="#77d7ff" opacity="0.517"/>
+<circle cx="330.507" cy="240.189" r="2.800" fill="#d5f6ff" opacity="0.517"/>
+<circle cx="383.865" cy="270.995" r="2.800" fill="#77d7ff" opacity="0.517"/></g>
+<g id="success02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="117.875" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.451" filter="url(#weather_radar_base_glow)"/>
+<circle cx="407.045" cy="337.314" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="369.307" cy="393.793" r="2.800" fill="#77d7ff" opacity="0.506"/>
+<circle cx="302.686" cy="407.045" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="246.207" cy="369.307" r="2.800" fill="#77d7ff" opacity="0.506"/>
+<circle cx="232.955" cy="302.686" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="270.693" cy="246.207" r="2.800" fill="#77d7ff" opacity="0.506"/>
+<circle cx="337.314" cy="232.955" r="2.800" fill="#d5f6ff" opacity="0.506"/>
+<circle cx="393.793" cy="270.693" r="2.800" fill="#77d7ff" opacity="0.506"/></g>
+<g id="success03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="126.500" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.442" filter="url(#weather_radar_base_glow)"/>
+<circle cx="413.695" cy="345.105" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="368.500" cy="404.004" r="2.800" fill="#77d7ff" opacity="0.495"/>
+<circle cx="294.895" cy="413.695" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="235.996" cy="368.500" r="2.800" fill="#77d7ff" opacity="0.495"/>
+<circle cx="226.305" cy="294.895" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="271.500" cy="235.996" r="2.800" fill="#77d7ff" opacity="0.495"/>
+<circle cx="345.105" cy="226.305" r="2.800" fill="#d5f6ff" opacity="0.495"/>
+<circle cx="404.004" cy="271.500" r="2.800" fill="#77d7ff" opacity="0.495"/></g>
+<g id="success04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="135.125" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.432" filter="url(#weather_radar_base_glow)"/>
+<circle cx="419.664" cy="353.832" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="366.551" cy="414.396" r="2.800" fill="#77d7ff" opacity="0.484"/>
+<circle cx="286.168" cy="419.664" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="225.604" cy="366.551" r="2.800" fill="#77d7ff" opacity="0.484"/>
+<circle cx="220.336" cy="286.168" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="273.449" cy="225.604" r="2.800" fill="#77d7ff" opacity="0.484"/>
+<circle cx="353.832" cy="220.336" r="2.800" fill="#d5f6ff" opacity="0.484"/>
+<circle cx="414.396" cy="273.449" r="2.800" fill="#77d7ff" opacity="0.484"/></g>
+<g id="success05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="143.750" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.422" filter="url(#weather_radar_base_glow)"/>
+<circle cx="424.860" cy="363.435" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="363.435" cy="424.860" r="2.800" fill="#77d7ff" opacity="0.472"/>
+<circle cx="276.565" cy="424.860" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="215.140" cy="363.435" r="2.800" fill="#77d7ff" opacity="0.472"/>
+<circle cx="215.140" cy="276.565" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="276.565" cy="215.140" r="2.800" fill="#77d7ff" opacity="0.472"/>
+<circle cx="363.435" cy="215.140" r="2.800" fill="#d5f6ff" opacity="0.472"/>
+<circle cx="424.860" cy="276.565" r="2.800" fill="#77d7ff" opacity="0.472"/></g>
+<g id="success06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="152.375" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.413" filter="url(#weather_radar_base_glow)"/>
+<circle cx="429.194" cy="373.849" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="359.135" cy="435.289" r="2.800" fill="#77d7ff" opacity="0.461"/>
+<circle cx="266.151" cy="429.194" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="204.711" cy="359.135" r="2.800" fill="#77d7ff" opacity="0.461"/>
+<circle cx="210.806" cy="266.151" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="280.865" cy="204.711" r="2.800" fill="#77d7ff" opacity="0.461"/>
+<circle cx="373.849" cy="210.806" r="2.800" fill="#d5f6ff" opacity="0.461"/>
+<circle cx="435.289" cy="280.865" r="2.800" fill="#77d7ff" opacity="0.461"/></g>
+<g id="success07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="161.000" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.403" filter="url(#weather_radar_base_glow)"/>
+<circle cx="432.583" cy="385.000" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="353.646" cy="445.570" r="2.800" fill="#77d7ff" opacity="0.450"/>
+<circle cx="255.000" cy="432.583" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="194.430" cy="353.646" r="2.800" fill="#77d7ff" opacity="0.450"/>
+<circle cx="207.417" cy="255.000" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="286.354" cy="194.430" r="2.800" fill="#77d7ff" opacity="0.450"/>
+<circle cx="385.000" cy="207.417" r="2.800" fill="#d5f6ff" opacity="0.450"/>
+<circle cx="445.570" cy="286.354" r="2.800" fill="#77d7ff" opacity="0.450"/></g>
+<g id="success08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="169.625" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.394" filter="url(#weather_radar_base_glow)"/>
+<circle cx="434.951" cy="396.808" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="346.971" cy="455.594" r="2.800" fill="#77d7ff" opacity="0.439"/>
+<circle cx="243.192" cy="434.951" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="184.406" cy="346.971" r="2.800" fill="#77d7ff" opacity="0.439"/>
+<circle cx="205.049" cy="243.192" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="293.029" cy="184.406" r="2.800" fill="#77d7ff" opacity="0.439"/>
+<circle cx="396.808" cy="205.049" r="2.800" fill="#d5f6ff" opacity="0.439"/>
+<circle cx="455.594" cy="293.029" r="2.800" fill="#77d7ff" opacity="0.439"/></g>
+<g id="success09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="178.250" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.384" filter="url(#weather_radar_base_glow)"/>
+<circle cx="436.226" cy="409.184" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="339.122" cy="465.247" r="2.800" fill="#77d7ff" opacity="0.427"/>
+<circle cx="230.816" cy="436.226" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="174.753" cy="339.122" r="2.800" fill="#77d7ff" opacity="0.427"/>
+<circle cx="203.774" cy="230.816" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="300.878" cy="174.753" r="2.800" fill="#77d7ff" opacity="0.427"/>
+<circle cx="409.184" cy="203.774" r="2.800" fill="#d5f6ff" opacity="0.427"/>
+<circle cx="465.247" cy="300.878" r="2.800" fill="#77d7ff" opacity="0.427"/></g>
+<g id="success10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="186.875" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.374" filter="url(#weather_radar_base_glow)"/>
+<circle cx="436.347" cy="422.034" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="330.121" cy="474.419" r="2.800" fill="#77d7ff" opacity="0.416"/>
+<circle cx="217.966" cy="436.347" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="165.581" cy="330.121" r="2.800" fill="#77d7ff" opacity="0.416"/>
+<circle cx="203.653" cy="217.966" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="309.879" cy="165.581" r="2.800" fill="#77d7ff" opacity="0.416"/>
+<circle cx="422.034" cy="203.653" r="2.800" fill="#d5f6ff" opacity="0.416"/>
+<circle cx="474.419" cy="309.879" r="2.800" fill="#77d7ff" opacity="0.416"/></g>
+<g id="success11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="195.500" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.365" filter="url(#weather_radar_base_glow)"/>
+<circle cx="435.258" cy="435.258" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="320.000" cy="483.000" r="2.800" fill="#77d7ff" opacity="0.405"/>
+<circle cx="204.742" cy="435.258" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="157.000" cy="320.000" r="2.800" fill="#77d7ff" opacity="0.405"/>
+<circle cx="204.742" cy="204.742" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="320.000" cy="157.000" r="2.800" fill="#77d7ff" opacity="0.405"/>
+<circle cx="435.258" cy="204.742" r="2.800" fill="#d5f6ff" opacity="0.405"/>
+<circle cx="483.000" cy="320.000" r="2.800" fill="#77d7ff" opacity="0.405"/></g>
+<g id="success12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="204.125" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.355" filter="url(#weather_radar_base_glow)"/>
+<circle cx="432.913" cy="448.753" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="308.800" cy="490.883" r="2.800" fill="#77d7ff" opacity="0.394"/>
+<circle cx="191.247" cy="432.913" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="149.117" cy="308.800" r="2.800" fill="#77d7ff" opacity="0.394"/>
+<circle cx="207.087" cy="191.247" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="331.200" cy="149.117" r="2.800" fill="#77d7ff" opacity="0.394"/>
+<circle cx="448.753" cy="207.087" r="2.800" fill="#d5f6ff" opacity="0.394"/>
+<circle cx="490.883" cy="331.200" r="2.800" fill="#77d7ff" opacity="0.394"/></g>
+<g id="success13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="212.750" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.346" filter="url(#weather_radar_base_glow)"/>
+<circle cx="429.273" cy="462.407" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="296.571" cy="497.964" r="2.800" fill="#77d7ff" opacity="0.383"/>
+<circle cx="177.593" cy="429.273" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="142.036" cy="296.571" r="2.800" fill="#77d7ff" opacity="0.383"/>
+<circle cx="210.727" cy="177.593" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="343.429" cy="142.036" r="2.800" fill="#77d7ff" opacity="0.383"/>
+<circle cx="462.407" cy="210.727" r="2.800" fill="#d5f6ff" opacity="0.383"/>
+<circle cx="497.964" cy="343.429" r="2.800" fill="#77d7ff" opacity="0.383"/></g>
+<g id="success14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="221.375" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.336" filter="url(#weather_radar_base_glow)"/>
+<circle cx="424.308" cy="476.108" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="283.372" cy="504.142" r="2.800" fill="#77d7ff" opacity="0.371"/>
+<circle cx="163.892" cy="424.308" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="135.858" cy="283.372" r="2.800" fill="#77d7ff" opacity="0.371"/>
+<circle cx="215.692" cy="163.892" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="356.628" cy="135.858" r="2.800" fill="#77d7ff" opacity="0.371"/>
+<circle cx="476.108" cy="215.692" r="2.800" fill="#d5f6ff" opacity="0.371"/>
+<circle cx="504.142" cy="356.628" r="2.800" fill="#77d7ff" opacity="0.371"/></g>
+<g id="success15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#weather_radar_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#8478ff" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#77d7ff" stroke-width="2.600" opacity="0.550" filter="url(#weather_radar_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#weather_radar_base_core)" stroke="#77d7ff" stroke-width="1.000" opacity="0.640"/>
+<path d="M 238.000 320.000 A 82.000 82.000 0 1 1 391.014 361.000" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 225.602 330.682 A 95.000 95.000 0 1 1 396.410 376.450" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 213.329 336.888 A 108.000 108.000 0 1 1 403.936 387.961" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 199.680 332.814 A 121.000 121.000 0 1 1 417.793 391.257" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 186.006 318.771 A 134.000 134.000 0 1 1 436.657 385.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 174.037 302.566 A 147.000 147.000 0 1 1 455.124 377.883" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 161.955 295.066 A 160.000 160.000 0 1 1 469.338 377.429" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 147.850 302.874 A 173.000 173.000 0 1 1 477.650 391.243" fill="none" stroke="#77d7ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<path d="M 134.031 323.405 A 186.000 186.000 0 1 1 479.351 415.933" fill="none" stroke="#8478ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.100" opacity="0.340"/>
+<circle cx="299.510" cy="436.207" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="207.783" cy="428.367" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="203.148" cy="336.422" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="182.260" cy="246.762" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="268.272" cy="213.942" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="347.089" cy="166.370" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="404.882" cy="238.030" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="474.482" cy="298.289" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="424.188" cy="375.398" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="388.386" cy="460.212" r="2.500" fill="#d5f6ff" opacity="0.460"/>
+<circle cx="320.000" cy="320.000" r="230.000" fill="none" stroke="#d5f6ff" stroke-width="2.200" opacity="0.326" filter="url(#weather_radar_base_glow)"/>
+<circle cx="418.000" cy="489.741" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="269.271" cy="509.321" r="2.800" fill="#77d7ff" opacity="0.360"/>
+<circle cx="150.259" cy="418.000" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="130.679" cy="269.271" r="2.800" fill="#77d7ff" opacity="0.360"/>
+<circle cx="222.000" cy="150.259" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="370.729" cy="130.679" r="2.800" fill="#77d7ff" opacity="0.360"/>
+<circle cx="489.741" cy="222.000" r="2.800" fill="#d5f6ff" opacity="0.360"/>
+<circle cx="509.321" cy="370.729" r="2.800" fill="#77d7ff" opacity="0.360"/></g>
+</svg>

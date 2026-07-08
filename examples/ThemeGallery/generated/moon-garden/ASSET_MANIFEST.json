@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 199727,
+      "path": "moon-garden.svg",
+      "sha256": "51e183ba4c2a516f66bfa4329a431174fd5fa419c27ccba8eabb44f4166f2332"
+    },
+    {
+      "bytes": 373657,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "13dc1f6f93d40ff591f9467e3111ac03cc9f185ef831e097d9348ede4331de36"
+    },
+    {
+      "bytes": 14339,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "b97832ff94b86f00631291cf77871db2eaaf145d429fa9fa0df006e9dda00eb5"
+    },
+    {
+      "bytes": 1183,
+      "path": "lock.sh",
+      "sha256": "81210b96bf7a95f8506b2cf632482934564315eff300e6919a160a295eff9cd3"
+    },
+    {
+      "bytes": 1533,
+      "path": "README.md",
+      "sha256": "e15978c872bee6cb73fb2fa106dd92fcb787c30090aff5c1d7f520e0b8a85751"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "moon-garden",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "moon-garden.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MoonGarden",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

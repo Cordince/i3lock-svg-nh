@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 395387,
+      "path": "pcb-black-gold.svg",
+      "sha256": "283d8dd7e8fb4de5b99be6434eed5f40248c0845856234688a7285a8d3501b4d"
+    },
+    {
+      "bytes": 393468,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "66e6234a046bbd1d2b359f421132a27b0c24b7038d14a7657438c922969b6054"
+    },
+    {
+      "bytes": 18252,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "e979c3d8f9bf9c2d3c630498a2ab3392ee357b80aa7a68be4c3457882ab1278a"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "a66f84bec4cfc9c26afed51c9acdeacab58bd76266c73337bc867448116316bb"
+    },
+    {
+      "bytes": 1553,
+      "path": "README.md",
+      "sha256": "3bbbf509e8ee1aa6404dd85127db5125e1eccecc7feaf2ee5399fbc8e3f8e145"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "pcb-black-gold",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "pcb-black-gold.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "PCBBlackGold",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

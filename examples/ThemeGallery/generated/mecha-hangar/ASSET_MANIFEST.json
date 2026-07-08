@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "cultural",
+  "files": [
+    {
+      "bytes": 108824,
+      "path": "mecha-hangar.svg",
+      "sha256": "0be797f5b6498e20fd9f502ba42734bbfaba289e49273324499aeb4dc7f24855"
+    },
+    {
+      "bytes": 405314,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "62fe93e0554dc822c51df695cf6667a064adf1eb39cbd175583735a9c2777df7"
+    },
+    {
+      "bytes": 18635,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "9dbf0ce4ccd1cc50a08d4a44445bdc6ca35c1efb2930d4e83c07621daf009485"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "4be57dbe10e9871e10c310ea0dd570b9c930a39a805c109c375f6ee299ced321"
+    },
+    {
+      "bytes": 1523,
+      "path": "README.md",
+      "sha256": "cdd08fcea0eb596bf11484f2dc999a5b1846132bedb2973278723f6e6ddddf3a"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "mecha-hangar",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "mecha-hangar.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MechaHangar",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

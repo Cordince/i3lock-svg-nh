@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 151481,
+      "path": "datacenter-night.svg",
+      "sha256": "102683b14a381e757df9ba24a8cc2a667678c9456c6808f8dc9c1709ff15623b"
+    },
+    {
+      "bytes": 448546,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "f961de71b0eed5958cce7be120f8c72180d7268bdf376f3a4bb780714b872ce5"
+    },
+    {
+      "bytes": 25345,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "a04f1ab7550c56a6c4f2d315d3ffe831ce91baf579950000df0c3d04b422c864"
+    },
+    {
+      "bytes": 1188,
+      "path": "lock.sh",
+      "sha256": "6a6c651c95b0f7b30d26812a6bbd4086d64ba7d25b0eb6227cac0a14d0582259"
+    },
+    {
+      "bytes": 1558,
+      "path": "README.md",
+      "sha256": "d987511fdc9f0e1928fd5df257263219b874857a0966a26c00e5e1295585467b"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "datacenter-night",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "datacenter-night.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "DatacenterNight",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "mythic",
+  "files": [
+    {
+      "bytes": 154559,
+      "path": "astrolabe.svg",
+      "sha256": "07b6464874877cc4b2fe4a556716755f9bdbaf999e9b8b383e95b80157b04f85"
+    },
+    {
+      "bytes": 388596,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "939d374269b61b4b2283a73f677234dfbe9b03e40e33b95eb45c7bc45b96c76b"
+    },
+    {
+      "bytes": 19285,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "0c89ee1eb3db90544deed73cfc1ac84bdb9d36aabca7085c6e25c6081b9d925d"
+    },
+    {
+      "bytes": 1181,
+      "path": "lock.sh",
+      "sha256": "1f322147c08f38c872130853dc8144881e351a632650314cc40bc9a58fb37c46"
+    },
+    {
+      "bytes": 1529,
+      "path": "README.md",
+      "sha256": "462506f785afb8f81f9c05ee2da382c9aee7c37d9979eb1bf60f70a4edc7070d"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "astrolabe",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "astrolabe.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "Astrolabe",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

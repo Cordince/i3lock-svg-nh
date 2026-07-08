@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "mythic",
+  "files": [
+    {
+      "bytes": 220424,
+      "path": "mosaic-vault.svg",
+      "sha256": "9b9800f49ca7f3b41dd7aa34462244fd2dcfef3c4950f2b7ab5ed2f79d78424f"
+    },
+    {
+      "bytes": 349239,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "3434b04a650e33560099535fca10c5271f40c949f466dbb090a309fef80336b8"
+    },
+    {
+      "bytes": 15707,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "22cfe05a9309a81d5618a50d6dd74135ccab146de185ef19bf3863a843fca003"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "24ecc02795b3bb8e8533c70219da3f4ec1351b5aaa055b0725f15457e1685d3a"
+    },
+    {
+      "bytes": 1526,
+      "path": "README.md",
+      "sha256": "e1127ed9b54b877afdc1ea1fed05aa80684a83a7c462eecfaa0b52ec5ec1b3bb"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "mosaic-vault",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "mosaic-vault.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "MosaicVault",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

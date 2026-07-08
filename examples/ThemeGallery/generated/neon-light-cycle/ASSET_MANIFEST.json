@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "cultural",
+  "files": [
+    {
+      "bytes": 162009,
+      "path": "neon-light-cycle.svg",
+      "sha256": "fd99fc5d01f58d43fb67a5bb7d2cc6cf2e005a4d13c808232a818058b4b2edce"
+    },
+    {
+      "bytes": 405280,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "2cf735739ccc53845fc9968494aec8a207a8b251aac20133486a6002f6529748"
+    },
+    {
+      "bytes": 18688,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "f444ff8e85fdf308d324cbf8d14c34dc0784c2c28ec270148071e9c6e7a80639"
+    },
+    {
+      "bytes": 1188,
+      "path": "lock.sh",
+      "sha256": "05efefe5eba8e2b01d5c79e1ae91111482fe651171fa0d8feb5026fc0e14f2e9"
+    },
+    {
+      "bytes": 1542,
+      "path": "README.md",
+      "sha256": "7e9988835ed52e0c154c3344481387e217fa3561bb74a0b4e768706938317e52"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "neon-light-cycle",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "neon-light-cycle.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "NeonLightCycle",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

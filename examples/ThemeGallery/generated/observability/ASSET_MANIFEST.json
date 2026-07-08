@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 394059,
+      "path": "observability.svg",
+      "sha256": "ea5749ee0691a721b27b4361ae1796d4337477e181df952eab99d8326ec04727"
+    },
+    {
+      "bytes": 393464,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "7da12f8fcc1922879db629588af24ce3e4d30733bb35b6cfd2ff36129b85fe92"
+    },
+    {
+      "bytes": 18274,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "43cb196790fee1071ac3908061c3aa3df64aa5e89ce4b4c2d22e24f3edd50a12"
+    },
+    {
+      "bytes": 1185,
+      "path": "lock.sh",
+      "sha256": "f4f5c29de1d41bb96d9b01ca8f60b6927cadfea4b95a7552d1d1277f351538ca"
+    },
+    {
+      "bytes": 1556,
+      "path": "README.md",
+      "sha256": "5c4e09fcbf9c278317e641fefef8f4bf614b48c04aa603a662dfc63191349260"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "observability",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "observability.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "Observability",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 186307,
+      "path": "fractal-bloom.svg",
+      "sha256": "dddecf6cb9c1030418ed67ab1a5d743de2a4527751402c0ea3f2c2223b4526e4"
+    },
+    {
+      "bytes": 398138,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "e6d6c1a1aeeafe1db8febd7cb5ed59c1e22c4f337e689282cd29dce7bc6c50ac"
+    },
+    {
+      "bytes": 18841,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "5833b9eccd2a0663028176ef098e820aad645383f29a1fd4de35442055f28699"
+    },
+    {
+      "bytes": 1185,
+      "path": "lock.sh",
+      "sha256": "4b184512af044fb16981186122806c8ba5b187d3a6781e1a36d7c0ed2a9e768f"
+    },
+    {
+      "bytes": 1533,
+      "path": "README.md",
+      "sha256": "4c5e9962185c7081a107c4ca65363ab614b463d6cf8e367576447b3de9e2603e"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "fractal-bloom",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "fractal-bloom.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "FractalBloom",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

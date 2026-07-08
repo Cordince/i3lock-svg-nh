@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated generic i3lock-svg-nh theme gallery asset. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs>
+  <radialGradient id="astrolabe_base_field" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#d5a64e" stop-opacity="0.18"/>
+    <stop offset="0.52" stop-color="#5ea0b8" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#0b0906" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="astrolabe_base_core" cx="50%" cy="48%" r="55%">
+    <stop offset="0" stop-color="#f0dfb2" stop-opacity="0.24"/>
+    <stop offset="0.62" stop-color="#d5a64e" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#0b0906" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="astrolabe_base_facet" x1="210" y1="210" x2="430" y2="430" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#d5a64e" stop-opacity="0.20"/>
+    <stop offset="0.55" stop-color="#5ea0b8" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#f0dfb2" stop-opacity="0.18"/>
+  </linearGradient>
+  <filter id="astrolabe_base_glow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="3.0" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="astrolabe_base_soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="1.4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g id="bg"><circle cx="320.000" cy="320.000" r="226.000" fill="url(#astrolabe_base_field)" opacity="1.000"/>
+<circle cx="320.000" cy="320.000" r="206.000" fill="none" stroke="#5ea0b8" stroke-width="0.900" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="172.000" fill="none" stroke="#d5a64e" stroke-width="0.600" opacity="0.080"/>
+<line x1="200.000" y1="208.000" x2="200.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="200.000" x2="432.000" y2="200.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="234.000" y1="208.000" x2="234.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="234.000" x2="432.000" y2="234.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="268.000" y1="208.000" x2="268.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="268.000" x2="432.000" y2="268.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="302.000" y1="208.000" x2="302.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="302.000" x2="432.000" y2="302.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="336.000" y1="208.000" x2="336.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="336.000" x2="432.000" y2="336.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="370.000" y1="208.000" x2="370.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="370.000" x2="432.000" y2="370.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="404.000" y1="208.000" x2="404.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="404.000" x2="432.000" y2="404.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="438.000" y1="208.000" x2="438.000" y2="432.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/>
+<line x1="208.000" y1="438.000" x2="432.000" y2="438.000" stroke="#5ea0b8" stroke-width="0.550" stroke-linecap="round" opacity="0.035"/></g>
+<g id="idle"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.213"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.820" opacity="0.355" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.760" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.422"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 406.441 303.510" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.260"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 439.054 335.040" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.260"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 459.343 385.570" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.260"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 457.046 448.695" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.260"/>
+<line x1="401.758" y1="326.291" x2="507.446" y2="334.423" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="387.659" y1="366.327" x2="475.121" y2="426.214" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="355.431" y1="393.950" x2="401.232" y2="489.545" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="313.709" y1="401.758" x2="305.577" y2="507.446" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="273.673" y1="387.659" x2="213.786" y2="475.121" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="246.050" y1="355.431" x2="150.455" y2="401.232" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.242" y1="313.709" x2="132.554" y2="305.577" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="252.341" y1="273.673" x2="164.879" y2="213.786" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="284.569" y1="246.050" x2="238.768" y2="150.455" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="326.291" y1="238.242" x2="334.423" y2="132.554" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="366.327" y1="252.341" x2="426.214" y2="164.879" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="393.950" y1="284.569" x2="489.545" y2="238.768" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.186"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.642" opacity="0.310" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.372"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 342.776 234.999" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.228"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 385.357 219.360" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.228"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 439.680 223.085" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.228"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 495.513 252.627" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.228"/>
+<line x1="401.991" y1="321.193" x2="507.980" y2="322.734" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="390.410" y1="362.028" x2="481.428" y2="416.358" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="359.963" y1="391.603" x2="411.622" y2="484.163" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="318.807" y1="401.991" x2="317.266" y2="507.980" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="277.972" y1="390.410" x2="223.642" y2="481.428" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="248.397" y1="359.963" x2="155.837" y2="411.622" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.009" y1="318.807" x2="132.020" y2="317.266" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="249.590" y1="277.972" x2="158.572" y2="223.642" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="280.037" y1="248.397" x2="228.378" y2="155.837" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="321.193" y1="238.009" x2="322.734" y2="132.020" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="362.028" y1="249.590" x2="416.358" y2="158.572" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="391.603" y1="280.037" x2="484.163" y2="228.378" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.193"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.683" opacity="0.321" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="58.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.383"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 364.000 243.790" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.235"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 409.177 239.704" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.235"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 460.686 257.363" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.235"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 506.970 300.349" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.235"/>
+<line x1="401.965" y1="322.385" x2="507.920" y2="325.468" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="389.792" y1="363.048" x2="480.010" y2="418.696" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="358.917" y1="392.177" x2="409.225" y2="485.478" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="317.615" y1="401.965" x2="314.532" y2="507.920" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="276.952" y1="389.792" x2="221.304" y2="480.010" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="247.823" y1="358.917" x2="154.522" y2="409.225" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.035" y1="317.615" x2="132.080" y2="314.532" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="250.208" y1="276.952" x2="159.990" y2="221.304" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="281.083" y1="247.823" x2="230.775" y2="154.522" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="322.385" y1="238.035" x2="325.468" y2="132.080" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="363.048" y1="250.208" x2="418.696" y2="159.990" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="392.177" y1="281.083" x2="485.478" y2="230.775" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.199"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.725" opacity="0.331" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.395"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 382.225 257.775" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.242"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 426.921 265.521" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.242"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 472.104 295.909" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.242"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 505.685 349.410" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.242"/>
+<line x1="401.922" y1="323.577" x2="507.821" y2="328.200" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="389.158" y1="364.059" x2="478.558" y2="421.012" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="357.863" y1="392.735" x2="406.809" y2="486.758" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="316.423" y1="401.922" x2="311.800" y2="507.821" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="275.941" y1="389.158" x2="218.988" y2="478.558" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="247.265" y1="357.863" x2="153.242" y2="406.809" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.078" y1="316.423" x2="132.179" y2="311.800" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="250.842" y1="275.941" x2="161.442" y2="218.988" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="282.137" y1="247.265" x2="233.191" y2="153.242" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="323.577" y1="238.078" x2="328.200" y2="132.179" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="364.059" y1="250.842" x2="421.012" y2="161.442" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="392.735" y1="282.137" x2="486.758" y2="233.191" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.205"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.767" opacity="0.342" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.407"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 396.210 276.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.250"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 437.378 295.051" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.250"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 473.156 336.097" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.250"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 491.747 396.466" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.250"/>
+<line x1="401.861" y1="324.768" x2="507.682" y2="330.931" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="388.510" y1="365.060" x2="477.072" y2="423.308" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="356.802" y1="393.278" x2="404.374" y2="488.003" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="315.232" y1="401.861" x2="309.069" y2="507.682" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="274.940" y1="388.510" x2="216.692" y2="477.072" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="246.722" y1="356.802" x2="151.997" y2="404.374" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.139" y1="315.232" x2="132.318" y2="309.069" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="251.490" y1="274.940" x2="162.928" y2="216.692" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="283.198" y1="246.722" x2="235.626" y2="151.997" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="324.768" y1="238.139" x2="330.931" y2="132.318" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="365.060" y1="251.490" x2="423.308" y2="162.928" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="393.278" y1="283.198" x2="488.003" y2="235.626" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.211"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.808" opacity="0.352" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="59.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.418"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 405.001 297.224" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.258"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 439.836 326.280" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.258"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 463.771 375.189" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.258"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 466.103 438.312" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.258"/>
+<line x1="401.783" y1="325.958" x2="507.503" y2="333.660" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="387.847" y1="366.051" x2="475.553" y2="425.581" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="355.732" y1="393.805" x2="401.922" y2="489.212" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="314.042" y1="401.783" x2="306.340" y2="507.503" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="273.949" y1="387.847" x2="214.419" y2="475.553" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="246.195" y1="355.732" x2="150.788" y2="401.922" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.217" y1="314.042" x2="132.497" y2="306.340" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="252.153" y1="273.949" x2="164.447" y2="214.419" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="284.268" y1="246.195" x2="238.078" y2="150.788" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="325.958" y1="238.217" x2="333.660" y2="132.497" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="366.051" y1="252.153" x2="425.581" y2="164.447" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="393.805" y1="284.268" x2="489.212" y2="238.078" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.217"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.850" opacity="0.362" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.430"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 408.000 320.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.265"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 434.127 357.082" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.265"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 444.589 410.519" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.265"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 430.504 472.095" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.265"/>
+<line x1="401.688" y1="327.147" x2="507.285" y2="336.385" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="387.170" y1="367.033" x2="474.001" y2="427.832" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="354.655" y1="394.317" x2="399.452" y2="490.386" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="312.853" y1="401.688" x2="303.615" y2="507.285" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="272.967" y1="387.170" x2="212.168" y2="474.001" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="245.683" y1="354.655" x2="149.614" y2="399.452" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.312" y1="312.853" x2="132.715" y2="303.615" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="252.830" y1="272.967" x2="165.999" y2="212.168" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="285.345" y1="245.683" x2="240.548" y2="149.614" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="327.147" y1="238.312" x2="336.385" y2="132.715" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="367.033" y1="252.830" x2="427.832" y2="165.999" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="394.317" y1="285.345" x2="490.386" y2="240.548" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.224"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.892" opacity="0.373" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.442"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 405.001 342.776" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.273"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 420.640 385.357" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.273"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 416.915 439.680" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.273"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 387.373 495.513" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.273"/>
+<line x1="401.575" y1="328.334" x2="507.026" y2="339.107" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="386.479" y1="368.005" x2="472.416" y2="430.061" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="353.570" y1="394.813" x2="396.966" y2="491.523" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="311.666" y1="401.575" x2="300.893" y2="507.026" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="271.995" y1="386.479" x2="209.939" y2="472.416" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="245.187" y1="353.570" x2="148.477" y2="396.966" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.425" y1="311.666" x2="132.974" y2="300.893" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="253.521" y1="271.995" x2="167.584" y2="209.939" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="286.430" y1="245.187" x2="243.034" y2="148.477" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="328.334" y1="238.425" x2="339.107" y2="132.974" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="368.005" y1="253.521" x2="430.061" y2="167.584" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="394.813" y1="286.430" x2="491.523" y2="243.034" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.230"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.933" opacity="0.383" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="60.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.453"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 396.210 364.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.280"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 400.296 409.177" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.280"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 382.637 460.686" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.280"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 339.651 506.970" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.280"/>
+<line x1="401.446" y1="329.520" x2="506.729" y2="341.825" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="385.774" y1="368.967" x2="470.799" y2="432.266" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="352.479" y1="395.294" x2="394.463" y2="492.625" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="310.480" y1="401.446" x2="298.175" y2="506.729" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="271.033" y1="385.774" x2="207.734" y2="470.799" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="244.706" y1="352.479" x2="147.375" y2="394.463" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.554" y1="310.480" x2="133.271" y2="298.175" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="254.226" y1="271.033" x2="169.201" y2="207.734" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="287.521" y1="244.706" x2="245.537" y2="147.375" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="329.520" y1="238.554" x2="341.825" y2="133.271" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="368.967" y1="254.226" x2="432.266" y2="169.201" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="395.294" y1="287.521" x2="492.625" y2="245.537" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.236"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="1.975" opacity="0.394" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.465"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 382.225 382.225" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.287"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 374.479 426.921" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.287"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 344.091 472.104" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.287"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 290.590 505.685" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.287"/>
+<line x1="401.298" y1="330.703" x2="506.392" y2="344.539" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="385.055" y1="369.918" x2="469.150" y2="434.447" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="351.380" y1="395.758" x2="391.944" y2="493.689" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="309.297" y1="401.298" x2="295.461" y2="506.392" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="270.082" y1="385.055" x2="205.553" y2="469.150" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="244.242" y1="351.380" x2="146.311" y2="391.944" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.702" y1="309.297" x2="133.608" y2="295.461" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="254.945" y1="270.082" x2="170.850" y2="205.553" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="288.620" y1="244.242" x2="248.056" y2="146.311" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="330.703" y1="238.702" x2="344.539" y2="133.608" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="369.918" y1="254.945" x2="434.447" y2="170.850" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="395.758" y1="288.620" x2="493.689" y2="248.056" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.242"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.017" opacity="0.404" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.477"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 364.000 396.210" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.295"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 344.949 437.378" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.295"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 303.903 473.156" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.295"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 243.534 491.747" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.295"/>
+<line x1="401.134" y1="331.884" x2="506.015" y2="347.247" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="384.322" y1="370.859" x2="467.470" y2="436.604" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="350.275" y1="396.206" x2="389.411" y2="494.717" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="308.116" y1="401.134" x2="292.753" y2="506.015" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="269.141" y1="384.322" x2="203.396" y2="467.470" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="243.794" y1="350.275" x2="145.283" y2="389.411" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.866" y1="308.116" x2="133.985" y2="292.753" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="255.678" y1="269.141" x2="172.530" y2="203.396" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="289.725" y1="243.794" x2="250.589" y2="145.283" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="331.884" y1="238.866" x2="347.247" y2="133.985" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="370.859" y1="255.678" x2="436.604" y2="172.530" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="396.206" y1="289.725" x2="494.717" y2="250.589" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.249"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.058" opacity="0.415" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.488"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 342.776 405.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.302"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 313.720 439.836" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.302"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 264.811 463.771" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.302"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 201.688 466.103" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.302"/>
+<line x1="400.953" y1="333.063" x2="505.599" y2="349.950" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="383.576" y1="371.789" x2="465.759" y2="438.737" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="349.163" y1="396.639" x2="386.862" y2="495.708" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="306.937" y1="400.953" x2="290.050" y2="505.599" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="268.211" y1="383.576" x2="201.263" y2="465.759" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="243.361" y1="349.163" x2="144.292" y2="386.862" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.047" y1="306.937" x2="134.401" y2="290.050" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="256.424" y1="268.211" x2="174.241" y2="201.263" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="290.837" y1="243.361" x2="253.138" y2="144.292" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="333.063" y1="239.047" x2="349.950" y2="134.401" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="371.789" y1="256.424" x2="438.737" y2="174.241" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="396.639" y1="290.837" x2="495.708" y2="253.138" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.255"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.100" opacity="0.425" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.500"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 320.000 408.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.310"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 282.918 434.127" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.310"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 229.481 444.589" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.310"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 167.905 430.504" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.310"/>
+<line x1="400.754" y1="334.239" x2="505.144" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="372.709" x2="464.016" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="397.055" x2="384.300" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="400.754" x2="287.354" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="382.816" x2="199.156" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="348.046" x2="143.338" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="305.761" x2="134.856" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="267.291" x2="175.984" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="242.945" x2="255.700" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="239.246" x2="352.646" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="257.184" x2="440.844" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="397.055" y1="291.954" x2="496.662" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.261"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.142" opacity="0.435" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.512"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 297.224 405.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.318"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 254.643 420.640" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.318"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 200.320 416.915" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.318"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 144.487 387.373" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.318"/>
+<line x1="400.539" y1="335.412" x2="504.649" y2="355.335" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.042" y1="373.617" x2="462.244" y2="442.926" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="346.922" y1="397.455" x2="381.724" y2="497.579" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="304.588" y1="400.539" x2="284.665" y2="504.649" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="266.383" y1="382.042" x2="197.074" y2="462.244" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.545" y1="346.922" x2="142.421" y2="381.724" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.461" y1="304.588" x2="135.351" y2="284.665" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.958" y1="266.383" x2="177.756" y2="197.074" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="293.078" y1="242.545" x2="258.276" y2="142.421" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="335.412" y1="239.461" x2="355.335" y2="135.351" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="373.617" y1="257.958" x2="442.926" y2="177.756" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="397.455" y1="293.078" x2="497.579" y2="258.276" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.268"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.183" opacity="0.446" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.523"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 276.000 396.210" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.325"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 230.823 400.296" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.325"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 179.314 382.637" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.325"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 133.030 339.651" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.325"/>
+<line x1="400.306" y1="336.582" x2="504.116" y2="358.017" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="381.256" y1="374.513" x2="460.441" y2="444.982" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="345.793" y1="397.838" x2="379.134" y2="498.458" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="303.418" y1="400.306" x2="281.983" y2="504.116" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="265.487" y1="381.256" x2="195.018" y2="460.441" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.162" y1="345.793" x2="141.542" y2="379.134" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.694" y1="303.418" x2="135.884" y2="281.983" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="258.744" y1="265.487" x2="179.559" y2="195.018" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="294.207" y1="242.162" x2="260.866" y2="141.542" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="336.582" y1="239.694" x2="358.017" y2="135.884" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="374.513" y1="258.744" x2="444.982" y2="179.559" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="397.838" y1="294.207" x2="498.458" y2="260.866" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.274"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.225" opacity="0.456" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.535"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 257.775 382.225" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.333"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 213.079 374.479" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.333"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 167.896 344.091" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.333"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 134.315 290.590" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.333"/>
+<line x1="400.056" y1="337.748" x2="503.544" y2="360.691" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="380.457" y1="375.398" x2="458.608" y2="447.011" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="344.658" y1="398.205" x2="376.533" y2="499.299" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="302.252" y1="400.056" x2="279.309" y2="503.544" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="264.602" y1="380.457" x2="192.989" y2="458.608" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.795" y1="344.658" x2="140.701" y2="376.533" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.944" y1="302.252" x2="136.456" y2="279.309" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="259.543" y1="264.602" x2="181.392" y2="192.989" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="295.342" y1="241.795" x2="263.467" y2="140.701" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="337.748" y1="239.944" x2="360.691" y2="136.456" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="375.398" y1="259.543" x2="447.011" y2="181.392" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="398.205" y1="295.342" x2="499.299" y2="263.467" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.280"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.267" opacity="0.467" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.547"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 243.790 364.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.340"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 202.622 344.949" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.340"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 166.844 303.903" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.340"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 148.253 243.534" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.340"/>
+<line x1="399.790" y1="338.911" x2="502.932" y2="363.356" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="379.645" y1="376.272" x2="456.746" y2="449.013" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="343.518" y1="398.555" x2="373.919" y2="500.102" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="301.089" y1="399.790" x2="276.644" y2="502.932" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="263.728" y1="379.645" x2="190.987" y2="456.746" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.445" y1="343.518" x2="139.898" y2="373.919" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.210" y1="301.089" x2="137.068" y2="276.644" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="260.355" y1="263.728" x2="183.254" y2="190.987" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="296.482" y1="241.445" x2="266.081" y2="139.898" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="338.911" y1="240.210" x2="363.356" y2="137.068" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="376.272" y1="260.355" x2="449.013" y2="183.254" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="398.555" y1="296.482" x2="500.102" y2="266.081" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim16"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.286"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.308" opacity="0.477" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="63.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.558"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 234.999 342.776" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.348"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 200.164 313.720" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.348"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 176.229 264.811" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.348"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 173.897 201.688" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.348"/>
+<line x1="399.506" y1="340.069" x2="502.283" y2="366.012" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="378.820" y1="377.133" x2="454.855" y2="450.989" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="342.373" y1="398.889" x2="371.294" y2="500.867" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="299.931" y1="399.506" x2="273.988" y2="502.283" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="262.867" y1="378.820" x2="189.011" y2="454.855" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.111" y1="342.373" x2="139.133" y2="371.294" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.494" y1="299.931" x2="137.717" y2="273.988" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="261.180" y1="262.867" x2="185.145" y2="189.011" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="297.627" y1="241.111" x2="268.706" y2="139.133" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="340.069" y1="240.494" x2="366.012" y2="137.717" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="377.133" y1="261.180" x2="450.989" y2="185.145" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="398.889" y1="297.627" x2="500.867" y2="268.706" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim17"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.292"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.350" opacity="0.487" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.570"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 232.000 320.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.355"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 205.873 282.918" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.355"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 195.411 229.481" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.355"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 209.496 167.905" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.355"/>
+<line x1="399.206" y1="341.223" x2="501.594" y2="368.658" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="377.983" y1="377.983" x2="452.936" y2="452.936" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="341.223" y1="399.206" x2="368.658" y2="501.594" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="298.777" y1="399.206" x2="271.342" y2="501.594" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="262.017" y1="377.983" x2="187.064" y2="452.936" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.794" y1="341.223" x2="138.406" y2="368.658" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.794" y1="298.777" x2="138.406" y2="271.342" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="262.017" y1="262.017" x2="187.064" y2="187.064" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="298.777" y1="240.794" x2="271.342" y2="138.406" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="341.223" y1="240.794" x2="368.658" y2="138.406" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="377.983" y1="262.017" x2="452.936" y2="187.064" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="399.206" y1="298.777" x2="501.594" y2="271.342" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim18"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.299"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.392" opacity="0.498" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.582"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 234.999 297.224" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.362"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 219.360 254.643" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.362"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 223.085 200.320" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.362"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 252.627 144.487" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.362"/>
+<line x1="398.889" y1="342.373" x2="500.867" y2="371.294" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="377.133" y1="378.820" x2="450.989" y2="454.855" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="340.069" y1="399.506" x2="366.012" y2="502.283" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="297.627" y1="398.889" x2="268.706" y2="500.867" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="261.180" y1="377.133" x2="185.145" y2="450.989" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.494" y1="340.069" x2="137.717" y2="366.012" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.111" y1="297.627" x2="139.133" y2="268.706" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="262.867" y1="261.180" x2="189.011" y2="185.145" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="299.931" y1="240.494" x2="273.988" y2="137.717" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="342.373" y1="241.111" x2="371.294" y2="139.133" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="378.820" y1="262.867" x2="454.855" y2="189.011" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="399.506" y1="299.931" x2="502.283" y2="273.988" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim19"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.305"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.433" opacity="0.508" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.593"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 243.790 276.000" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.370"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 239.704 230.823" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.370"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 257.363 179.314" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.370"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 300.349 133.030" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.370"/>
+<line x1="398.555" y1="343.518" x2="500.102" y2="373.919" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="376.272" y1="379.645" x2="449.013" y2="456.746" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="338.911" y1="399.790" x2="363.356" y2="502.932" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="296.482" y1="398.555" x2="266.081" y2="500.102" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="260.355" y1="376.272" x2="183.254" y2="449.013" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.210" y1="338.911" x2="137.068" y2="363.356" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.445" y1="296.482" x2="139.898" y2="266.081" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="263.728" y1="260.355" x2="190.987" y2="183.254" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="301.089" y1="240.210" x2="276.644" y2="137.068" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="343.518" y1="241.445" x2="373.919" y2="139.898" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="379.645" y1="263.728" x2="456.746" y2="190.987" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="399.790" y1="301.089" x2="502.932" y2="276.644" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim20"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.311"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.475" opacity="0.519" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.605"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 257.775 257.775" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.378"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 265.521 213.079" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.378"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 295.909 167.896" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.378"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 349.410 134.315" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.378"/>
+<line x1="398.205" y1="344.658" x2="499.299" y2="376.533" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="375.398" y1="380.457" x2="447.011" y2="458.608" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="337.748" y1="400.056" x2="360.691" y2="503.544" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="295.342" y1="398.205" x2="263.467" y2="499.299" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="259.543" y1="375.398" x2="181.392" y2="447.011" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.944" y1="337.748" x2="136.456" y2="360.691" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.795" y1="295.342" x2="140.701" y2="263.467" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="264.602" y1="259.543" x2="192.989" y2="181.392" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="302.252" y1="239.944" x2="279.309" y2="136.456" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="344.658" y1="241.795" x2="376.533" y2="140.701" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="380.457" y1="264.602" x2="458.608" y2="192.989" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.056" y1="302.252" x2="503.544" y2="279.309" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim21"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.318"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.517" opacity="0.529" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.333" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.617"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 276.000 243.790" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.385"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 295.051 202.622" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.385"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 336.097 166.844" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.385"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 396.466 148.253" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.385"/>
+<line x1="397.838" y1="345.793" x2="498.458" y2="379.134" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="374.513" y1="381.256" x2="444.982" y2="460.441" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="336.582" y1="400.306" x2="358.017" y2="504.116" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="294.207" y1="397.838" x2="260.866" y2="498.458" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="258.744" y1="374.513" x2="179.559" y2="444.982" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.694" y1="336.582" x2="135.884" y2="358.017" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.162" y1="294.207" x2="141.542" y2="260.866" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="265.487" y1="258.744" x2="195.018" y2="179.559" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="303.418" y1="239.694" x2="281.983" y2="135.884" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="345.793" y1="242.162" x2="379.134" y2="141.542" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="381.256" y1="265.487" x2="460.441" y2="195.018" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.306" y1="303.418" x2="504.116" y2="281.983" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim22"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.324"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.558" opacity="0.540" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="65.667" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.628"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 297.224 234.999" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.392"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 326.280 200.164" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.392"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 375.189 176.229" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.392"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 438.312 173.897" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.392"/>
+<line x1="397.455" y1="346.922" x2="497.579" y2="381.724" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="373.617" y1="382.042" x2="442.926" y2="462.244" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="335.412" y1="400.539" x2="355.335" y2="504.649" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="293.078" y1="397.455" x2="258.276" y2="497.579" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.958" y1="373.617" x2="177.756" y2="442.926" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.461" y1="335.412" x2="135.351" y2="355.335" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.545" y1="293.078" x2="142.421" y2="258.276" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="266.383" y1="257.958" x2="197.074" y2="177.756" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="304.588" y1="239.461" x2="284.665" y2="135.351" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="346.922" y1="242.545" x2="381.724" y2="142.421" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.042" y1="266.383" x2="462.244" y2="197.074" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.539" y1="304.588" x2="504.649" y2="284.665" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="anim23"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/></g>
+<g id="verify"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.297"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.380" opacity="0.495" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="64.240" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.578"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 233.559 303.510" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.360"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 214.843 262.190" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.360"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 214.580 207.739" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.360"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 239.953 149.893" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.360"/>
+<line x1="398.979" y1="342.051" x2="501.075" y2="370.557" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="377.372" y1="378.587" x2="451.537" y2="454.321" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="340.393" y1="399.424" x2="366.754" y2="502.094" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="297.949" y1="398.979" x2="269.443" y2="501.075" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="261.413" y1="377.372" x2="185.679" y2="451.537" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="240.576" y1="340.393" x2="137.906" y2="366.754" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="241.021" y1="297.949" x2="138.925" y2="269.443" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="262.628" y1="261.413" x2="188.463" y2="185.679" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="299.607" y1="240.576" x2="273.246" y2="137.906" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="342.051" y1="241.021" x2="370.557" y2="138.925" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="378.587" y1="262.628" x2="454.321" y2="188.463" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="399.424" y1="299.607" x2="502.094" y2="273.246" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<rect x="196.000" y="304.000" width="248.000" height="34.000" fill="#d5a64e" opacity="0.055"/>
+<line x1="196.000" y1="321.000" x2="444.000" y2="321.000" stroke="#f0dfb2" stroke-width="2.000" stroke-linecap="round" opacity="0.420" filter="url(#astrolabe_base_glow)"/>
+<path d="M 175.984 199.156 A 188.000 188.000 0 1 1 175.984 440.844" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.100" opacity="0.360"/></g>
+<g id="fail"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.267"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d85d46" stroke-width="2.180" opacity="0.445" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="62.640" fill="url(#astrolabe_base_core)" stroke="#d85d46" stroke-width="1.000" opacity="0.522"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 277.606 397.115" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.324"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 232.524 402.146" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.324"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 180.657 385.570" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.324"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 133.482 343.563" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.324"/>
+<line x1="400.325" y1="336.488" x2="504.160" y2="357.803" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="381.319" y1="374.442" x2="460.586" y2="444.818" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="345.883" y1="397.808" x2="379.342" y2="498.389" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="303.512" y1="400.325" x2="282.197" y2="504.160" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="265.558" y1="381.319" x2="195.182" y2="460.586" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.192" y1="345.883" x2="141.611" y2="379.342" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.675" y1="303.512" x2="135.840" y2="282.197" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="258.681" y1="265.558" x2="179.414" y2="195.182" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="294.117" y1="242.192" x2="260.658" y2="141.611" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="336.488" y1="239.675" x2="357.803" y2="135.840" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="374.442" y1="258.681" x2="444.818" y2="179.414" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="397.808" y1="294.117" x2="498.389" y2="260.658" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="342.795" y1="273.263" x2="420.968" y2="190.766" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#astrolabe_base_glow)"/>
+<line x1="367.128" y1="298.024" x2="479.797" y2="283.108" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#astrolabe_base_glow)"/>
+<line x1="369.986" y1="334.333" x2="464.803" y2="396.993" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#astrolabe_base_glow)"/>
+<line x1="352.014" y1="360.977" x2="391.893" y2="467.402" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#astrolabe_base_glow)"/>
+<line x1="295.587" y1="365.913" x2="214.583" y2="445.631" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#astrolabe_base_glow)"/>
+<line x1="272.872" y1="298.024" x2="189.024" y2="221.302" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.550" filter="url(#astrolabe_base_glow)"/>
+<path d="M 146.973 270.385 A 180.000 180.000 0 0 1 481.783 241.093" fill="none" stroke="#d85d46" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.800" opacity="0.480"/></g>
+<g id="backspace"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.243"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.020" opacity="0.405" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="61.360" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.478"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 0 1 362.394 397.115" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.296"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 0 1 342.486 437.874" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.296"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 0 1 300.699 472.786" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.296"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 0 1 239.953 490.107" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.296"/>
+<line x1="401.120" y1="331.979" x2="505.983" y2="347.464" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="384.263" y1="370.934" x2="467.334" y2="436.776" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="350.186" y1="396.242" x2="389.207" y2="494.798" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="308.021" y1="401.120" x2="292.536" y2="505.983" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="269.066" y1="384.263" x2="203.224" y2="467.334" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="243.758" y1="350.186" x2="145.202" y2="389.207" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="238.880" y1="308.021" x2="134.017" y2="292.536" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="255.737" y1="269.066" x2="172.666" y2="203.224" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="289.814" y1="243.758" x2="250.793" y2="145.202" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="331.979" y1="238.880" x2="347.464" y2="134.017" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="370.934" y1="255.737" x2="436.776" y2="172.666" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="396.242" y1="289.814" x2="494.798" y2="250.793" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<path d="M 208.924 443.362 A 166.000 166.000 0 1 1 454.297 222.428" fill="none" stroke="#d85d46" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.000" opacity="0.520" filter="url(#astrolabe_base_glow)"/>
+<line x1="432.000" y1="320.000" x2="214.000" y2="320.000" stroke="#d85d46" stroke-width="2.000" stroke-linecap="round" opacity="0.420"/>
+<polygon points="212.000,320.000 234.000,307.000 234.000,333.000" fill="#d85d46" opacity="0.540"/></g>
+<g id="fg"><path d="M 496.366 191.863 A 218.000 218.000 0 0 1 522.126 401.664" fill="none" stroke="#f0dfb2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.150"/>
+<path d="M 127.517 422.345 A 218.000 218.000 0 0 1 143.634 191.863" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.000" opacity="0.130"/>
+<circle cx="320.000" cy="320.000" r="236.000" fill="none" stroke="#ffffff" stroke-width="0.600" opacity="0.035"/></g>
+<g opacity="0" id="remove_background"><rect x="0" y="0" width="1" height="1" fill="#000000"/></g>
+<g opacity="0" id="sequential_animation"><rect x="1" y="0" width="1" height="1" fill="#000000"/></g>
+<g id="success"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="184.000" fill="none" stroke="#f0dfb2" stroke-width="2.600" opacity="0.440" filter="url(#astrolabe_base_glow)"/>
+<path d="M 327.746 172.203 A 148.000 148.000 0 0 1 350.771 175.234" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 365.735 179.244 A 148.000 148.000 0 0 1 387.191 188.131" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 400.607 195.877 A 148.000 148.000 0 0 1 419.031 210.015" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 429.985 220.969 A 148.000 148.000 0 0 1 444.123 239.393" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 451.869 252.809 A 148.000 148.000 0 0 1 460.756 274.265" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 464.766 289.229 A 148.000 148.000 0 0 1 467.797 312.254" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 467.797 327.746 A 148.000 148.000 0 0 1 464.766 350.771" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 460.756 365.735 A 148.000 148.000 0 0 1 451.869 387.191" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 444.123 400.607 A 148.000 148.000 0 0 1 429.985 419.031" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 419.031 429.985 A 148.000 148.000 0 0 1 400.607 444.123" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 387.191 451.869 A 148.000 148.000 0 0 1 365.735 460.756" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 350.771 464.766 A 148.000 148.000 0 0 1 327.746 467.797" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 312.254 467.797 A 148.000 148.000 0 0 1 289.229 464.766" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 274.265 460.756 A 148.000 148.000 0 0 1 252.809 451.869" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 239.393 444.123 A 148.000 148.000 0 0 1 220.969 429.985" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 210.015 419.031 A 148.000 148.000 0 0 1 195.877 400.607" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 188.131 387.191 A 148.000 148.000 0 0 1 179.244 365.735" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 175.234 350.771 A 148.000 148.000 0 0 1 172.203 327.746" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 172.203 312.254 A 148.000 148.000 0 0 1 175.234 289.229" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 179.244 274.265 A 148.000 148.000 0 0 1 188.131 252.809" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 195.877 239.393 A 148.000 148.000 0 0 1 210.015 220.969" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 220.969 210.015 A 148.000 148.000 0 0 1 239.393 195.877" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 252.809 188.131 A 148.000 148.000 0 0 1 274.265 179.244" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/>
+<path d="M 289.229 175.234 A 148.000 148.000 0 0 1 312.254 172.203" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000" opacity="0.920" filter="url(#astrolabe_base_glow)"/></g>
+<g id="success00"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="100.625" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.470" filter="url(#astrolabe_base_glow)"/>
+<circle cx="392.095" cy="324.725" r="2.800" fill="#f0dfb2" opacity="0.529"/>
+<circle cx="367.638" cy="374.320" r="2.800" fill="#d5a64e" opacity="0.529"/>
+<circle cx="315.275" cy="392.095" r="2.800" fill="#f0dfb2" opacity="0.529"/>
+<circle cx="265.680" cy="367.638" r="2.800" fill="#d5a64e" opacity="0.529"/>
+<circle cx="247.905" cy="315.275" r="2.800" fill="#f0dfb2" opacity="0.529"/>
+<circle cx="272.362" cy="265.680" r="2.800" fill="#d5a64e" opacity="0.529"/>
+<circle cx="324.725" cy="247.905" r="2.800" fill="#f0dfb2" opacity="0.529"/>
+<circle cx="374.320" cy="272.362" r="2.800" fill="#d5a64e" opacity="0.529"/></g>
+<g id="success01"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="109.250" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.461" filter="url(#astrolabe_base_glow)"/>
+<circle cx="399.811" cy="330.507" r="2.800" fill="#f0dfb2" opacity="0.517"/>
+<circle cx="369.005" cy="383.865" r="2.800" fill="#d5a64e" opacity="0.517"/>
+<circle cx="309.493" cy="399.811" r="2.800" fill="#f0dfb2" opacity="0.517"/>
+<circle cx="256.135" cy="369.005" r="2.800" fill="#d5a64e" opacity="0.517"/>
+<circle cx="240.189" cy="309.493" r="2.800" fill="#f0dfb2" opacity="0.517"/>
+<circle cx="270.995" cy="256.135" r="2.800" fill="#d5a64e" opacity="0.517"/>
+<circle cx="330.507" cy="240.189" r="2.800" fill="#f0dfb2" opacity="0.517"/>
+<circle cx="383.865" cy="270.995" r="2.800" fill="#d5a64e" opacity="0.517"/></g>
+<g id="success02"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="117.875" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.451" filter="url(#astrolabe_base_glow)"/>
+<circle cx="407.045" cy="337.314" r="2.800" fill="#f0dfb2" opacity="0.506"/>
+<circle cx="369.307" cy="393.793" r="2.800" fill="#d5a64e" opacity="0.506"/>
+<circle cx="302.686" cy="407.045" r="2.800" fill="#f0dfb2" opacity="0.506"/>
+<circle cx="246.207" cy="369.307" r="2.800" fill="#d5a64e" opacity="0.506"/>
+<circle cx="232.955" cy="302.686" r="2.800" fill="#f0dfb2" opacity="0.506"/>
+<circle cx="270.693" cy="246.207" r="2.800" fill="#d5a64e" opacity="0.506"/>
+<circle cx="337.314" cy="232.955" r="2.800" fill="#f0dfb2" opacity="0.506"/>
+<circle cx="393.793" cy="270.693" r="2.800" fill="#d5a64e" opacity="0.506"/></g>
+<g id="success03"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="126.500" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.442" filter="url(#astrolabe_base_glow)"/>
+<circle cx="413.695" cy="345.105" r="2.800" fill="#f0dfb2" opacity="0.495"/>
+<circle cx="368.500" cy="404.004" r="2.800" fill="#d5a64e" opacity="0.495"/>
+<circle cx="294.895" cy="413.695" r="2.800" fill="#f0dfb2" opacity="0.495"/>
+<circle cx="235.996" cy="368.500" r="2.800" fill="#d5a64e" opacity="0.495"/>
+<circle cx="226.305" cy="294.895" r="2.800" fill="#f0dfb2" opacity="0.495"/>
+<circle cx="271.500" cy="235.996" r="2.800" fill="#d5a64e" opacity="0.495"/>
+<circle cx="345.105" cy="226.305" r="2.800" fill="#f0dfb2" opacity="0.495"/>
+<circle cx="404.004" cy="271.500" r="2.800" fill="#d5a64e" opacity="0.495"/></g>
+<g id="success04"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="135.125" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.432" filter="url(#astrolabe_base_glow)"/>
+<circle cx="419.664" cy="353.832" r="2.800" fill="#f0dfb2" opacity="0.484"/>
+<circle cx="366.551" cy="414.396" r="2.800" fill="#d5a64e" opacity="0.484"/>
+<circle cx="286.168" cy="419.664" r="2.800" fill="#f0dfb2" opacity="0.484"/>
+<circle cx="225.604" cy="366.551" r="2.800" fill="#d5a64e" opacity="0.484"/>
+<circle cx="220.336" cy="286.168" r="2.800" fill="#f0dfb2" opacity="0.484"/>
+<circle cx="273.449" cy="225.604" r="2.800" fill="#d5a64e" opacity="0.484"/>
+<circle cx="353.832" cy="220.336" r="2.800" fill="#f0dfb2" opacity="0.484"/>
+<circle cx="414.396" cy="273.449" r="2.800" fill="#d5a64e" opacity="0.484"/></g>
+<g id="success05"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="143.750" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.422" filter="url(#astrolabe_base_glow)"/>
+<circle cx="424.860" cy="363.435" r="2.800" fill="#f0dfb2" opacity="0.472"/>
+<circle cx="363.435" cy="424.860" r="2.800" fill="#d5a64e" opacity="0.472"/>
+<circle cx="276.565" cy="424.860" r="2.800" fill="#f0dfb2" opacity="0.472"/>
+<circle cx="215.140" cy="363.435" r="2.800" fill="#d5a64e" opacity="0.472"/>
+<circle cx="215.140" cy="276.565" r="2.800" fill="#f0dfb2" opacity="0.472"/>
+<circle cx="276.565" cy="215.140" r="2.800" fill="#d5a64e" opacity="0.472"/>
+<circle cx="363.435" cy="215.140" r="2.800" fill="#f0dfb2" opacity="0.472"/>
+<circle cx="424.860" cy="276.565" r="2.800" fill="#d5a64e" opacity="0.472"/></g>
+<g id="success06"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="152.375" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.413" filter="url(#astrolabe_base_glow)"/>
+<circle cx="429.194" cy="373.849" r="2.800" fill="#f0dfb2" opacity="0.461"/>
+<circle cx="359.135" cy="435.289" r="2.800" fill="#d5a64e" opacity="0.461"/>
+<circle cx="266.151" cy="429.194" r="2.800" fill="#f0dfb2" opacity="0.461"/>
+<circle cx="204.711" cy="359.135" r="2.800" fill="#d5a64e" opacity="0.461"/>
+<circle cx="210.806" cy="266.151" r="2.800" fill="#f0dfb2" opacity="0.461"/>
+<circle cx="280.865" cy="204.711" r="2.800" fill="#d5a64e" opacity="0.461"/>
+<circle cx="373.849" cy="210.806" r="2.800" fill="#f0dfb2" opacity="0.461"/>
+<circle cx="435.289" cy="280.865" r="2.800" fill="#d5a64e" opacity="0.461"/></g>
+<g id="success07"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="161.000" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.403" filter="url(#astrolabe_base_glow)"/>
+<circle cx="432.583" cy="385.000" r="2.800" fill="#f0dfb2" opacity="0.450"/>
+<circle cx="353.646" cy="445.570" r="2.800" fill="#d5a64e" opacity="0.450"/>
+<circle cx="255.000" cy="432.583" r="2.800" fill="#f0dfb2" opacity="0.450"/>
+<circle cx="194.430" cy="353.646" r="2.800" fill="#d5a64e" opacity="0.450"/>
+<circle cx="207.417" cy="255.000" r="2.800" fill="#f0dfb2" opacity="0.450"/>
+<circle cx="286.354" cy="194.430" r="2.800" fill="#d5a64e" opacity="0.450"/>
+<circle cx="385.000" cy="207.417" r="2.800" fill="#f0dfb2" opacity="0.450"/>
+<circle cx="445.570" cy="286.354" r="2.800" fill="#d5a64e" opacity="0.450"/></g>
+<g id="success08"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="169.625" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.394" filter="url(#astrolabe_base_glow)"/>
+<circle cx="434.951" cy="396.808" r="2.800" fill="#f0dfb2" opacity="0.439"/>
+<circle cx="346.971" cy="455.594" r="2.800" fill="#d5a64e" opacity="0.439"/>
+<circle cx="243.192" cy="434.951" r="2.800" fill="#f0dfb2" opacity="0.439"/>
+<circle cx="184.406" cy="346.971" r="2.800" fill="#d5a64e" opacity="0.439"/>
+<circle cx="205.049" cy="243.192" r="2.800" fill="#f0dfb2" opacity="0.439"/>
+<circle cx="293.029" cy="184.406" r="2.800" fill="#d5a64e" opacity="0.439"/>
+<circle cx="396.808" cy="205.049" r="2.800" fill="#f0dfb2" opacity="0.439"/>
+<circle cx="455.594" cy="293.029" r="2.800" fill="#d5a64e" opacity="0.439"/></g>
+<g id="success09"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="178.250" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.384" filter="url(#astrolabe_base_glow)"/>
+<circle cx="436.226" cy="409.184" r="2.800" fill="#f0dfb2" opacity="0.427"/>
+<circle cx="339.122" cy="465.247" r="2.800" fill="#d5a64e" opacity="0.427"/>
+<circle cx="230.816" cy="436.226" r="2.800" fill="#f0dfb2" opacity="0.427"/>
+<circle cx="174.753" cy="339.122" r="2.800" fill="#d5a64e" opacity="0.427"/>
+<circle cx="203.774" cy="230.816" r="2.800" fill="#f0dfb2" opacity="0.427"/>
+<circle cx="300.878" cy="174.753" r="2.800" fill="#d5a64e" opacity="0.427"/>
+<circle cx="409.184" cy="203.774" r="2.800" fill="#f0dfb2" opacity="0.427"/>
+<circle cx="465.247" cy="300.878" r="2.800" fill="#d5a64e" opacity="0.427"/></g>
+<g id="success10"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="186.875" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.374" filter="url(#astrolabe_base_glow)"/>
+<circle cx="436.347" cy="422.034" r="2.800" fill="#f0dfb2" opacity="0.416"/>
+<circle cx="330.121" cy="474.419" r="2.800" fill="#d5a64e" opacity="0.416"/>
+<circle cx="217.966" cy="436.347" r="2.800" fill="#f0dfb2" opacity="0.416"/>
+<circle cx="165.581" cy="330.121" r="2.800" fill="#d5a64e" opacity="0.416"/>
+<circle cx="203.653" cy="217.966" r="2.800" fill="#f0dfb2" opacity="0.416"/>
+<circle cx="309.879" cy="165.581" r="2.800" fill="#d5a64e" opacity="0.416"/>
+<circle cx="422.034" cy="203.653" r="2.800" fill="#f0dfb2" opacity="0.416"/>
+<circle cx="474.419" cy="309.879" r="2.800" fill="#d5a64e" opacity="0.416"/></g>
+<g id="success11"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="195.500" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.365" filter="url(#astrolabe_base_glow)"/>
+<circle cx="435.258" cy="435.258" r="2.800" fill="#f0dfb2" opacity="0.405"/>
+<circle cx="320.000" cy="483.000" r="2.800" fill="#d5a64e" opacity="0.405"/>
+<circle cx="204.742" cy="435.258" r="2.800" fill="#f0dfb2" opacity="0.405"/>
+<circle cx="157.000" cy="320.000" r="2.800" fill="#d5a64e" opacity="0.405"/>
+<circle cx="204.742" cy="204.742" r="2.800" fill="#f0dfb2" opacity="0.405"/>
+<circle cx="320.000" cy="157.000" r="2.800" fill="#d5a64e" opacity="0.405"/>
+<circle cx="435.258" cy="204.742" r="2.800" fill="#f0dfb2" opacity="0.405"/>
+<circle cx="483.000" cy="320.000" r="2.800" fill="#d5a64e" opacity="0.405"/></g>
+<g id="success12"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="204.125" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.355" filter="url(#astrolabe_base_glow)"/>
+<circle cx="432.913" cy="448.753" r="2.800" fill="#f0dfb2" opacity="0.394"/>
+<circle cx="308.800" cy="490.883" r="2.800" fill="#d5a64e" opacity="0.394"/>
+<circle cx="191.247" cy="432.913" r="2.800" fill="#f0dfb2" opacity="0.394"/>
+<circle cx="149.117" cy="308.800" r="2.800" fill="#d5a64e" opacity="0.394"/>
+<circle cx="207.087" cy="191.247" r="2.800" fill="#f0dfb2" opacity="0.394"/>
+<circle cx="331.200" cy="149.117" r="2.800" fill="#d5a64e" opacity="0.394"/>
+<circle cx="448.753" cy="207.087" r="2.800" fill="#f0dfb2" opacity="0.394"/>
+<circle cx="490.883" cy="331.200" r="2.800" fill="#d5a64e" opacity="0.394"/></g>
+<g id="success13"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="212.750" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.346" filter="url(#astrolabe_base_glow)"/>
+<circle cx="429.273" cy="462.407" r="2.800" fill="#f0dfb2" opacity="0.383"/>
+<circle cx="296.571" cy="497.964" r="2.800" fill="#d5a64e" opacity="0.383"/>
+<circle cx="177.593" cy="429.273" r="2.800" fill="#f0dfb2" opacity="0.383"/>
+<circle cx="142.036" cy="296.571" r="2.800" fill="#d5a64e" opacity="0.383"/>
+<circle cx="210.727" cy="177.593" r="2.800" fill="#f0dfb2" opacity="0.383"/>
+<circle cx="343.429" cy="142.036" r="2.800" fill="#d5a64e" opacity="0.383"/>
+<circle cx="462.407" cy="210.727" r="2.800" fill="#f0dfb2" opacity="0.383"/>
+<circle cx="497.964" cy="343.429" r="2.800" fill="#d5a64e" opacity="0.383"/></g>
+<g id="success14"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="221.375" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.336" filter="url(#astrolabe_base_glow)"/>
+<circle cx="424.308" cy="476.108" r="2.800" fill="#f0dfb2" opacity="0.371"/>
+<circle cx="283.372" cy="504.142" r="2.800" fill="#d5a64e" opacity="0.371"/>
+<circle cx="163.892" cy="424.308" r="2.800" fill="#f0dfb2" opacity="0.371"/>
+<circle cx="135.858" cy="283.372" r="2.800" fill="#d5a64e" opacity="0.371"/>
+<circle cx="215.692" cy="163.892" r="2.800" fill="#f0dfb2" opacity="0.371"/>
+<circle cx="356.628" cy="135.858" r="2.800" fill="#d5a64e" opacity="0.371"/>
+<circle cx="476.108" cy="215.692" r="2.800" fill="#f0dfb2" opacity="0.371"/>
+<circle cx="504.142" cy="356.628" r="2.800" fill="#d5a64e" opacity="0.371"/></g>
+<g id="success15"><circle cx="320.000" cy="320.000" r="210.000" fill="url(#astrolabe_base_field)" opacity="0.820"/>
+<circle cx="320.000" cy="320.000" r="156.000" fill="none" stroke="#5ea0b8" stroke-width="1.100" opacity="0.330"/>
+<circle cx="320.000" cy="320.000" r="112.000" fill="none" stroke="#d5a64e" stroke-width="2.600" opacity="0.550" filter="url(#astrolabe_base_soft)"/>
+<circle cx="320.000" cy="320.000" r="66.000" fill="url(#astrolabe_base_core)" stroke="#d5a64e" stroke-width="1.000" opacity="0.640"/>
+<path d="M 320.000 232.000 A 88.000 88.000 0 1 1 319.693 232.001" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 357.082 205.873 A 120.000 120.000 0 1 1 356.683 205.744" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 410.519 195.411 A 154.000 154.000 0 1 1 410.083 195.096" fill="none" stroke="#5ea0b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<path d="M 472.095 209.496 A 188.000 188.000 0 1 1 471.709 208.966" fill="none" stroke="#d5a64e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.300" opacity="0.400"/>
+<line x1="397.055" y1="348.046" x2="496.662" y2="384.300" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="372.709" y1="382.816" x2="440.844" y2="464.016" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="334.239" y1="400.754" x2="352.646" y2="505.144" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="291.954" y1="397.055" x2="255.700" y2="496.662" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="257.184" y1="372.709" x2="175.984" y2="440.844" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="239.246" y1="334.239" x2="134.856" y2="352.646" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="242.945" y1="291.954" x2="143.338" y2="255.700" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="267.291" y1="257.184" x2="199.156" y2="175.984" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="305.761" y1="239.246" x2="287.354" y2="134.856" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="348.046" y1="242.945" x2="384.300" y2="143.338" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="382.816" y1="267.291" x2="464.016" y2="199.156" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<line x1="400.754" y1="305.761" x2="505.144" y2="287.354" stroke="#f0dfb2" stroke-width="0.700" stroke-linecap="round" opacity="0.120"/>
+<circle cx="320.000" cy="320.000" r="230.000" fill="none" stroke="#f0dfb2" stroke-width="2.200" opacity="0.326" filter="url(#astrolabe_base_glow)"/>
+<circle cx="418.000" cy="489.741" r="2.800" fill="#f0dfb2" opacity="0.360"/>
+<circle cx="269.271" cy="509.321" r="2.800" fill="#d5a64e" opacity="0.360"/>
+<circle cx="150.259" cy="418.000" r="2.800" fill="#f0dfb2" opacity="0.360"/>
+<circle cx="130.679" cy="269.271" r="2.800" fill="#d5a64e" opacity="0.360"/>
+<circle cx="222.000" cy="150.259" r="2.800" fill="#f0dfb2" opacity="0.360"/>
+<circle cx="370.729" cy="130.679" r="2.800" fill="#d5a64e" opacity="0.360"/>
+<circle cx="489.741" cy="222.000" r="2.800" fill="#f0dfb2" opacity="0.360"/>
+<circle cx="509.321" cy="370.729" r="2.800" fill="#d5a64e" opacity="0.360"/></g>
+</svg>

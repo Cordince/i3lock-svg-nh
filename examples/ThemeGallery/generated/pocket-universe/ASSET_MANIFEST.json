@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "whimsical",
+  "files": [
+    {
+      "bytes": 85379,
+      "path": "pocket-universe.svg",
+      "sha256": "eeb70b7cf2d2c3a1ec8ff89b9cdf745cea2e589a845cff8e27b217c7aee18dcc"
+    },
+    {
+      "bytes": 401219,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "b86e60d6a8810f4b85ec572058029066a0ea8d0398c9010aad8f8a7d306395d7"
+    },
+    {
+      "bytes": 17158,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "34a20bc28f6b4e75efead8b26fc1eeabe8322b953f964a4cbf0e0ebdcd9404bf"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "d24a6f0fada53745b378b3f5e83859dc5ca97ba8b9adf6a88f2b42c5ddf801b8"
+    },
+    {
+      "bytes": 1532,
+      "path": "README.md",
+      "sha256": "a3a2990bf7dd26811ce749f1a5e3c15f6229bb9feeb4728d2f86640e59c776d6"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "pocket-universe",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "pocket-universe.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "PocketUniverse",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 192645,
+      "path": "packet-storm.svg",
+      "sha256": "cb7f5523c076408284d985130407577b8307c1698b12a3fdbd2a0981895ed391"
+    },
+    {
+      "bytes": 389076,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "b72bb4ec81f937d039d4c539966c56c407022f55a14519d8c23a21f4794ba727"
+    },
+    {
+      "bytes": 18791,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "8747c439498d384939bf3c9c90f901aadca7e9076da2a2aa6b4ed062a3970115"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "c5494477f283c5722ba7616a9dc0a1797ddba0b2df979fc80630e236dd28b667"
+    },
+    {
+      "bytes": 1547,
+      "path": "README.md",
+      "sha256": "3729f96ebf036d31254edad4ffec999f2a1ba7b2e6d05afc11475879ebf69fec"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "packet-storm",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "packet-storm.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "PacketStorm",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

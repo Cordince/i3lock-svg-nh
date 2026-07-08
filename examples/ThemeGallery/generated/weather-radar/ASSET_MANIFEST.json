@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 157074,
+      "path": "weather-radar.svg",
+      "sha256": "84d7313527156c5d7131da2557d1de5eaa9ab699560970050470107cb8fba011"
+    },
+    {
+      "bytes": 397241,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "f124a3425525129853b33eff4eb36f9e6ddfa378a3ffceaec998a346b472ab6b"
+    },
+    {
+      "bytes": 18764,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "3d9930f51b46b7ae7a97e03497b82e80adf81d2458c870bd023d5f45fc29d57b"
+    },
+    {
+      "bytes": 1185,
+      "path": "lock.sh",
+      "sha256": "8c8d601c2e781c8266264b212dc4250ebf1892e3b5845e602f19fe64c2eac3ec"
+    },
+    {
+      "bytes": 1538,
+      "path": "README.md",
+      "sha256": "93efe643dcc42b55b3c4cdd9f5f4270f9196039a78f7b33f6a901766b6705f24"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "weather-radar",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "weather-radar.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "WeatherRadar",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

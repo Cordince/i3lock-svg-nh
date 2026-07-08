@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 150876,
+      "path": "firmware-boot.svg",
+      "sha256": "3e08777658d114721de72781f543386c7288d7556b8e69b5cefbc563b7bc5d8b"
+    },
+    {
+      "bytes": 448841,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "2dd0354c0d5840c982ac2866b145fc258f23a930d128167f11bc2ca8c4a217e4"
+    },
+    {
+      "bytes": 25213,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "f9b8db7f1a5a44b40b7fd27fa2709b4740a410749bd7a14825377156dad7b63c"
+    },
+    {
+      "bytes": 1185,
+      "path": "lock.sh",
+      "sha256": "25d6d4e599624e7eb4a4133e211699894838f68dc2b41b3c2bd768a582a6acd9"
+    },
+    {
+      "bytes": 1549,
+      "path": "README.md",
+      "sha256": "151274c3ebe04b3722181ea8b09f8e4037bf6fce79398d98cf08e2a5f10c7670"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "firmware-boot",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "firmware-boot.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "FirmwareBoot",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

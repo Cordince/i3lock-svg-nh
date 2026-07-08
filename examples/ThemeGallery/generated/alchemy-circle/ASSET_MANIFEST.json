@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "mythic",
+  "files": [
+    {
+      "bytes": 196639,
+      "path": "alchemy-circle.svg",
+      "sha256": "4ce4e3644a8babd770e107266d8c197565ee0327ac8d01b1d1cc06eedec00723"
+    },
+    {
+      "bytes": 350902,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "24922bb2fcc330921212265f2c7e237961a9033c0441dd1c36f2ff6e1a568260"
+    },
+    {
+      "bytes": 15643,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "a887f62983d150a802f9de6b37a6e8549a705c8321f083428a6fa0e02f935b87"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "645da562b8fbf8fe5c988e1dbec8b15e85cd9d76311708a5a016ba454885e7c1"
+    },
+    {
+      "bytes": 1529,
+      "path": "README.md",
+      "sha256": "f8352c41d03c2e2288e9ba47d545c674b4498e888c848164f7a1b65468b88a93"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "alchemy-circle",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "alchemy-circle.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "AlchemyCircle",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

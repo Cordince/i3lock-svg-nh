@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 239821,
+      "path": "tesseract-gate.svg",
+      "sha256": "41a02379fcbf8f22c5e140692aa5edfb07dfc4951bc1c32e66c1b490e99a94f4"
+    },
+    {
+      "bytes": 407013,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "ddaac7ce5191149d46144ebbcda393bc7f52b0fa73d32b6fee900231655c45aa"
+    },
+    {
+      "bytes": 19281,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "1825d0e76a319e25dbe854dd902919a94c34c9ccfcda9c2caa7fe5159a4e72d2"
+    },
+    {
+      "bytes": 1186,
+      "path": "lock.sh",
+      "sha256": "f5d2f374f33b0fe8fc0e55d79eacea2e222ac78c4c6c7da7803a325232fc0be6"
+    },
+    {
+      "bytes": 1550,
+      "path": "README.md",
+      "sha256": "cc2892c075c293c2febf1a809b9c40aa2fa7019d279f7fb768911dd0bf540d10"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "tesseract-gate",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "tesseract-gate.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "TesseractGate",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

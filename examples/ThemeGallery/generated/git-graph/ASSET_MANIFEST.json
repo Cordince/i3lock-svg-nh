@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 190989,
+      "path": "git-graph.svg",
+      "sha256": "e6ca898a78485d9c4b69a7227fa509f0f74fc9a0c2d2be46a4c70122534e0a64"
+    },
+    {
+      "bytes": 390445,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "a2cc7519306716a84ce95201d1341f8d043bf740f7b0d9e925894c3dead76e8c"
+    },
+    {
+      "bytes": 18792,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "7e176dc9610b96d2a9e44545902ee3c4ab5525bb45b00c1d59555ccf22c0b1ca"
+    },
+    {
+      "bytes": 1181,
+      "path": "lock.sh",
+      "sha256": "2e8b3077de2211749bcffca1eede3790abca254fb478c1eb28224b111d57c916"
+    },
+    {
+      "bytes": 1535,
+      "path": "README.md",
+      "sha256": "c6cba1d4d9112f15e475004a6bc5ccefcbacdb6ac574d95f92ea8b105816ae69"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "git-graph",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "git-graph.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "GitGraph",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "professional",
+  "files": [
+    {
+      "bytes": 183974,
+      "path": "bauhaus-grid.svg",
+      "sha256": "df8f9d4caa128e5ceab729eb034945705688407cf861778ecb1de0bda43b4e13"
+    },
+    {
+      "bytes": 326952,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "b84b792521bb1498d16151f6d00c6ad82575599152d65e832cf3adab7b38204a"
+    },
+    {
+      "bytes": 14912,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "07f799aeec6beb19c5ca61fd887256da5ef6ade40f89c253835beb6a5b567fb6"
+    },
+    {
+      "bytes": 1184,
+      "path": "lock.sh",
+      "sha256": "97b1c998731f918701b006519ef180d638242a78df3eb74756000e7705ab30b2"
+    },
+    {
+      "bytes": 1547,
+      "path": "README.md",
+      "sha256": "ef8efa6fab6dca86a6b626896d2ef6a92f900764054b780a615b7ce84b227358"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "bauhaus-grid",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "bauhaus-grid.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "BauhausGrid",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

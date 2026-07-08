@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "technical",
+  "files": [
+    {
+      "bytes": 149849,
+      "path": "hex-dump.svg",
+      "sha256": "150293162e5b6ebd1ed1de1dd1e2d439c7412ee0fbf0fbb9f09b7533c9bf0392"
+    },
+    {
+      "bytes": 448241,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "139cafb66021f8a0f2bfaf704c13b3687f7bfd3bd1417d7dcc5fa49fc3e1bd7d"
+    },
+    {
+      "bytes": 25327,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "d1ca9040000368d410a7fc4fe1e01c007fe7917a0fdaeab80d715e55eefbaaeb"
+    },
+    {
+      "bytes": 1180,
+      "path": "lock.sh",
+      "sha256": "3ecb06d131cdb2211d5700112aa46febe9f8449f4effdc9aea3a2df273a855c3"
+    },
+    {
+      "bytes": 1532,
+      "path": "README.md",
+      "sha256": "07f088abc82d7a0f73594480c9495205fcd402c817261f3eeed1944052858a42"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "hex-dump",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "hex-dump.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "HexDump",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

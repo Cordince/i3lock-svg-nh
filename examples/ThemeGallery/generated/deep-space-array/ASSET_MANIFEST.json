@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 85704,
+      "path": "deep-space-array.svg",
+      "sha256": "b8dc395ede12e52dc4c729f5ccd028499d047c9cf7381bcc0b0fe2d28a0f0b66"
+    },
+    {
+      "bytes": 389625,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "4ba2627fe92ea1132b25f560fcdf0369db2019fe95b64fd34b513725e5d55a77"
+    },
+    {
+      "bytes": 17124,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "dd1edc2ac5b1dd2cfe327c06e0f973da50f237320b8429847a89213de4fb2384"
+    },
+    {
+      "bytes": 1188,
+      "path": "lock.sh",
+      "sha256": "dfe99e16bc5792a5fbc51f2294908a6eff636252019c40067c32b18c9467470f"
+    },
+    {
+      "bytes": 1547,
+      "path": "README.md",
+      "sha256": "185da68b45e05cc6f434f30a077fc4de07f55a4ef1b60f72472f8ba4709f3f61"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "deep-space-array",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "deep-space-array.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "DeepSpaceArray",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

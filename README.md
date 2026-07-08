@@ -32,7 +32,17 @@ Compiling
 On Fedora Core 37:
 
 sudo dnf -y install \
-pam-devel libev-devel libxkbfile-devel libxkbcommon-devel libxkbcommon-x11-devel cairo-dock-devel cairo-devel glib-devel libxcb libxcb-util-image-devel libxcb-util-devel
+  pam-devel \
+  libev-devel \
+  libxkbfile-devel \
+  libxkbcommon-devel \
+  libxkbcommon-x11-devel \
+  cairo-dock-devel \
+  cairo-devel \
+  glib2-devel \
+  libxcb-devel \
+  xcb-util-devel \
+  xcb-util-image-devel
 
 
 Installation

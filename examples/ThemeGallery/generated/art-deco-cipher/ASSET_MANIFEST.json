@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "professional",
+  "files": [
+    {
+      "bytes": 184544,
+      "path": "art-deco-cipher.svg",
+      "sha256": "6f59beea0d9ad71f11041d6837b61dbc34c2ff6a2ef5004bfb6bbf4894221deb"
+    },
+    {
+      "bytes": 327206,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "cf0e3d3ce791668a5ef06a25c2c061e5a5ebfabcb400fbb1d37327a5a32fc2db"
+    },
+    {
+      "bytes": 14930,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "a7a9fa8bfb8cbb4d3fd783564212e9a119b8afca4e95799175a37beccf4e8a87"
+    },
+    {
+      "bytes": 1187,
+      "path": "lock.sh",
+      "sha256": "77b29552548588f176b451d7a96c86650a6cf1f911725531c933c07fa52fa354"
+    },
+    {
+      "bytes": 1546,
+      "path": "README.md",
+      "sha256": "ab0c435f3e54d0388ad577bbeca4ff364303acbb59caf676874e748f67be01f3"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "art-deco-cipher",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "art-deco-cipher.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "ArtDecoCipher",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

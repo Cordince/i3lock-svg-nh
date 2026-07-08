@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "science",
+  "files": [
+    {
+      "bytes": 86029,
+      "path": "orbital-mechanics.svg",
+      "sha256": "f50854638e8903fd6d124f3ab9eaf2c775ee13a542b68650563a5adf140eeef8"
+    },
+    {
+      "bytes": 389117,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "c650187194dcdc3e3cc631649d0d6a16a979ede866c1ffa8a4b6b0e203688820"
+    },
+    {
+      "bytes": 17114,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "c3d33588d61ddb04cd074c58706f8fe84c319810a312a1d4ff1190a5c1a58343"
+    },
+    {
+      "bytes": 1189,
+      "path": "lock.sh",
+      "sha256": "204ffc9d91ce48abade86b4c5218cb452bf5b7ab5608242521587fdb42f019f1"
+    },
+    {
+      "bytes": 1543,
+      "path": "README.md",
+      "sha256": "768956203122455ed0ba3260744f80ce40a9ac9eaeff1197c9e553d223f61118"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "orbital-mechanics",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "orbital-mechanics.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "OrbitalMechanics",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}

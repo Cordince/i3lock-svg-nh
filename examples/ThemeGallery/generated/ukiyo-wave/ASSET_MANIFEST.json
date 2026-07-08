@@ -1,0 +1,59 @@
+{
+  "animation_frame_count": 24,
+  "category": "mythic",
+  "files": [
+    {
+      "bytes": 156504,
+      "path": "ukiyo-wave.svg",
+      "sha256": "7f90af2943535cda55a254fd888d243c718a222460e5bfd9d16573c5e38bdc36"
+    },
+    {
+      "bytes": 377645,
+      "path": "background-1920x1080.png",
+      "png_dimensions": {
+        "height": 1080,
+        "width": 1920
+      },
+      "sha256": "f5a576667a8068cafaf004fb9be86e445bdd14c9caab7f074af9f34411963082"
+    },
+    {
+      "bytes": 18844,
+      "path": "tile-512.png",
+      "png_dimensions": {
+        "height": 512,
+        "width": 512
+      },
+      "sha256": "879225c2551eccac2bbe88cf348f05e2225c59bbe850c1e7c4f3535dbe1fe956"
+    },
+    {
+      "bytes": 1182,
+      "path": "lock.sh",
+      "sha256": "6656e5b9cc4e23902016347ebfec15fe3efe8b3b8108eb8917b7c04ec3fe9848"
+    },
+    {
+      "bytes": 1539,
+      "path": "README.md",
+      "sha256": "7af91484211c76da2cd7c520056ed5bf0f48f6c5b99820bfcd8bab798fa860cd"
+    }
+  ],
+  "generated_at_utc": "deterministic-not-stamped",
+  "generator": "generate_theme_gallery.py",
+  "generator_version": "1.0.0",
+  "no_external_assets": true,
+  "png_backgrounds": [
+    "background-1920x1080.png",
+    "tile-512.png"
+  ],
+  "slug": "ukiyo-wave",
+  "source_catalog_hash": "652e2ed0922b305e4fc990ef1242c499cfaa8986ade52ac696e00626c166571f",
+  "success_frame_count": 16,
+  "svg": "ukiyo-wave.svg",
+  "svg_size": {
+    "height": 640,
+    "viewBox": "0 0 640 640",
+    "width": 640
+  },
+  "theme": "UkiyoWave",
+  "trademark_safety_notes": "Generated from abstract procedural geometry only; no client marks, logos, protected characters, proprietary layouts, external fonts, or raster sources.",
+  "variant": "base"
+}
