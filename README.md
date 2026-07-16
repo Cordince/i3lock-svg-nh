@@ -87,6 +87,11 @@ example:
 ./i3lock -i examples/Cordince/*dark_letters.png \
          -s examples/Cordince/*i3lock.svg 
 
+Generic login example:
+
+./i3lock -i examples/Login/Login_Background_1920x1080_dark_letters.png \
+         -s examples/Login/Login_i3lock.svg
+
 Ideas for animations:
 --------------------
 The planets - displays solar system orbits with the various planets
