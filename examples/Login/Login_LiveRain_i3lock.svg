@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="login-live-rain-i3lock" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.45" y="-0.55" width="1.9" height="2.1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#030303" flood-opacity="0.82" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 9px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .dimletter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #7a6b70; opacity: 0.32; }
+      .line { fill: none; stroke: #d40000; stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2.5px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.62; }
+      .mark { fill: #ff3535; opacity: 0.78; }
+      .soft { fill: #d40000; opacity: 0.22; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 48px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="300" x2="790" y2="318" opacity="0.28" />
+    <line class="thin" x1="790" y1="348" x2="790" y2="366" opacity="0.40" />
+    <line class="thin" x1="790" y1="396" x2="790" y2="414" opacity="0.52" />
+    <line class="thin" x1="818" y1="321" x2="818" y2="339" opacity="0.28" />
+    <line class="thin" x1="818" y1="369" x2="818" y2="387" opacity="0.40" />
+    <line class="thin" x1="818" y1="417" x2="818" y2="435" opacity="0.52" />
+    <line class="thin" x1="846" y1="342" x2="846" y2="360" opacity="0.28" />
+    <line class="thin" x1="846" y1="390" x2="846" y2="408" opacity="0.40" />
+    <line class="thin" x1="846" y1="438" x2="846" y2="456" opacity="0.52" />
+    <line class="thin" x1="874" y1="363" x2="874" y2="381" opacity="0.28" />
+    <line class="thin" x1="874" y1="411" x2="874" y2="429" opacity="0.40" />
+    <line class="thin" x1="874" y1="309" x2="874" y2="327" opacity="0.52" />
+    <line class="thin" x1="902" y1="384" x2="902" y2="402" opacity="0.28" />
+    <line class="thin" x1="902" y1="432" x2="902" y2="450" opacity="0.40" />
+    <line class="thin" x1="902" y1="330" x2="902" y2="348" opacity="0.52" />
+    <line class="thin" x1="930" y1="405" x2="930" y2="423" opacity="0.28" />
+    <line class="thin" x1="930" y1="303" x2="930" y2="321" opacity="0.40" />
+    <line class="thin" x1="930" y1="351" x2="930" y2="369" opacity="0.52" />
+    <line class="thin" x1="958" y1="426" x2="958" y2="444" opacity="0.28" />
+    <line class="thin" x1="958" y1="324" x2="958" y2="342" opacity="0.40" />
+    <line class="thin" x1="958" y1="372" x2="958" y2="390" opacity="0.52" />
+    <line class="thin" x1="986" y1="447" x2="986" y2="465" opacity="0.28" />
+    <line class="thin" x1="986" y1="345" x2="986" y2="363" opacity="0.40" />
+    <line class="thin" x1="986" y1="393" x2="986" y2="411" opacity="0.52" />
+    <line class="thin" x1="1014" y1="318" x2="1014" y2="336" opacity="0.28" />
+    <line class="thin" x1="1014" y1="366" x2="1014" y2="384" opacity="0.40" />
+    <line class="thin" x1="1014" y1="414" x2="1014" y2="432" opacity="0.52" />
+    <line class="thin" x1="1042" y1="339" x2="1042" y2="357" opacity="0.28" />
+    <line class="thin" x1="1042" y1="387" x2="1042" y2="405" opacity="0.40" />
+    <line class="thin" x1="1042" y1="435" x2="1042" y2="453" opacity="0.52" />
+    <line class="thin" x1="1070" y1="360" x2="1070" y2="378" opacity="0.28" />
+    <line class="thin" x1="1070" y1="408" x2="1070" y2="426" opacity="0.40" />
+    <line class="thin" x1="1070" y1="306" x2="1070" y2="324" opacity="0.52" />
+    <line class="thin" x1="1098" y1="381" x2="1098" y2="399" opacity="0.28" />
+    <line class="thin" x1="1098" y1="429" x2="1098" y2="447" opacity="0.40" />
+    <line class="thin" x1="1098" y1="327" x2="1098" y2="345" opacity="0.52" />
+    <line class="thin" x1="1126" y1="402" x2="1126" y2="420" opacity="0.28" />
+    <line class="thin" x1="1126" y1="300" x2="1126" y2="318" opacity="0.40" />
+    <line class="thin" x1="1126" y1="348" x2="1126" y2="366" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim01">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="313" x2="790" y2="331" opacity="0.28" />
+    <line class="thin" x1="790" y1="361" x2="790" y2="379" opacity="0.40" />
+    <line class="thin" x1="790" y1="409" x2="790" y2="427" opacity="0.52" />
+    <line class="thin" x1="818" y1="334" x2="818" y2="352" opacity="0.28" />
+    <line class="thin" x1="818" y1="382" x2="818" y2="400" opacity="0.40" />
+    <line class="thin" x1="818" y1="430" x2="818" y2="448" opacity="0.52" />
+    <line class="thin" x1="846" y1="355" x2="846" y2="373" opacity="0.28" />
+    <line class="thin" x1="846" y1="403" x2="846" y2="421" opacity="0.40" />
+    <line class="thin" x1="846" y1="301" x2="846" y2="319" opacity="0.52" />
+    <line class="thin" x1="874" y1="376" x2="874" y2="394" opacity="0.28" />
+    <line class="thin" x1="874" y1="424" x2="874" y2="442" opacity="0.40" />
+    <line class="thin" x1="874" y1="322" x2="874" y2="340" opacity="0.52" />
+    <line class="thin" x1="902" y1="397" x2="902" y2="415" opacity="0.28" />
+    <line class="thin" x1="902" y1="445" x2="902" y2="463" opacity="0.40" />
+    <line class="thin" x1="902" y1="343" x2="902" y2="361" opacity="0.52" />
+    <line class="thin" x1="930" y1="418" x2="930" y2="436" opacity="0.28" />
+    <line class="thin" x1="930" y1="316" x2="930" y2="334" opacity="0.40" />
+    <line class="thin" x1="930" y1="364" x2="930" y2="382" opacity="0.52" />
+    <line class="thin" x1="958" y1="439" x2="958" y2="457" opacity="0.28" />
+    <line class="thin" x1="958" y1="337" x2="958" y2="355" opacity="0.40" />
+    <line class="thin" x1="958" y1="385" x2="958" y2="403" opacity="0.52" />
+    <line class="thin" x1="986" y1="310" x2="986" y2="328" opacity="0.28" />
+    <line class="thin" x1="986" y1="358" x2="986" y2="376" opacity="0.40" />
+    <line class="thin" x1="986" y1="406" x2="986" y2="424" opacity="0.52" />
+    <line class="thin" x1="1014" y1="331" x2="1014" y2="349" opacity="0.28" />
+    <line class="thin" x1="1014" y1="379" x2="1014" y2="397" opacity="0.40" />
+    <line class="thin" x1="1014" y1="427" x2="1014" y2="445" opacity="0.52" />
+    <line class="thin" x1="1042" y1="352" x2="1042" y2="370" opacity="0.28" />
+    <line class="thin" x1="1042" y1="400" x2="1042" y2="418" opacity="0.40" />
+    <line class="thin" x1="1042" y1="448" x2="1042" y2="466" opacity="0.52" />
+    <line class="thin" x1="1070" y1="373" x2="1070" y2="391" opacity="0.28" />
+    <line class="thin" x1="1070" y1="421" x2="1070" y2="439" opacity="0.40" />
+    <line class="thin" x1="1070" y1="319" x2="1070" y2="337" opacity="0.52" />
+    <line class="thin" x1="1098" y1="394" x2="1098" y2="412" opacity="0.28" />
+    <line class="thin" x1="1098" y1="442" x2="1098" y2="460" opacity="0.40" />
+    <line class="thin" x1="1098" y1="340" x2="1098" y2="358" opacity="0.52" />
+    <line class="thin" x1="1126" y1="415" x2="1126" y2="433" opacity="0.28" />
+    <line class="thin" x1="1126" y1="313" x2="1126" y2="331" opacity="0.40" />
+    <line class="thin" x1="1126" y1="361" x2="1126" y2="379" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim02">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="326" x2="790" y2="344" opacity="0.28" />
+    <line class="thin" x1="790" y1="374" x2="790" y2="392" opacity="0.40" />
+    <line class="thin" x1="790" y1="422" x2="790" y2="440" opacity="0.52" />
+    <line class="thin" x1="818" y1="347" x2="818" y2="365" opacity="0.28" />
+    <line class="thin" x1="818" y1="395" x2="818" y2="413" opacity="0.40" />
+    <line class="thin" x1="818" y1="443" x2="818" y2="461" opacity="0.52" />
+    <line class="thin" x1="846" y1="368" x2="846" y2="386" opacity="0.28" />
+    <line class="thin" x1="846" y1="416" x2="846" y2="434" opacity="0.40" />
+    <line class="thin" x1="846" y1="314" x2="846" y2="332" opacity="0.52" />
+    <line class="thin" x1="874" y1="389" x2="874" y2="407" opacity="0.28" />
+    <line class="thin" x1="874" y1="437" x2="874" y2="455" opacity="0.40" />
+    <line class="thin" x1="874" y1="335" x2="874" y2="353" opacity="0.52" />
+    <line class="thin" x1="902" y1="410" x2="902" y2="428" opacity="0.28" />
+    <line class="thin" x1="902" y1="308" x2="902" y2="326" opacity="0.40" />
+    <line class="thin" x1="902" y1="356" x2="902" y2="374" opacity="0.52" />
+    <line class="thin" x1="930" y1="431" x2="930" y2="449" opacity="0.28" />
+    <line class="thin" x1="930" y1="329" x2="930" y2="347" opacity="0.40" />
+    <line class="thin" x1="930" y1="377" x2="930" y2="395" opacity="0.52" />
+    <line class="thin" x1="958" y1="302" x2="958" y2="320" opacity="0.28" />
+    <line class="thin" x1="958" y1="350" x2="958" y2="368" opacity="0.40" />
+    <line class="thin" x1="958" y1="398" x2="958" y2="416" opacity="0.52" />
+    <line class="thin" x1="986" y1="323" x2="986" y2="341" opacity="0.28" />
+    <line class="thin" x1="986" y1="371" x2="986" y2="389" opacity="0.40" />
+    <line class="thin" x1="986" y1="419" x2="986" y2="437" opacity="0.52" />
+    <line class="thin" x1="1014" y1="344" x2="1014" y2="362" opacity="0.28" />
+    <line class="thin" x1="1014" y1="392" x2="1014" y2="410" opacity="0.40" />
+    <line class="thin" x1="1014" y1="440" x2="1014" y2="458" opacity="0.52" />
+    <line class="thin" x1="1042" y1="365" x2="1042" y2="383" opacity="0.28" />
+    <line class="thin" x1="1042" y1="413" x2="1042" y2="431" opacity="0.40" />
+    <line class="thin" x1="1042" y1="311" x2="1042" y2="329" opacity="0.52" />
+    <line class="thin" x1="1070" y1="386" x2="1070" y2="404" opacity="0.28" />
+    <line class="thin" x1="1070" y1="434" x2="1070" y2="452" opacity="0.40" />
+    <line class="thin" x1="1070" y1="332" x2="1070" y2="350" opacity="0.52" />
+    <line class="thin" x1="1098" y1="407" x2="1098" y2="425" opacity="0.28" />
+    <line class="thin" x1="1098" y1="305" x2="1098" y2="323" opacity="0.40" />
+    <line class="thin" x1="1098" y1="353" x2="1098" y2="371" opacity="0.52" />
+    <line class="thin" x1="1126" y1="428" x2="1126" y2="446" opacity="0.28" />
+    <line class="thin" x1="1126" y1="326" x2="1126" y2="344" opacity="0.40" />
+    <line class="thin" x1="1126" y1="374" x2="1126" y2="392" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim03">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="339" x2="790" y2="357" opacity="0.28" />
+    <line class="thin" x1="790" y1="387" x2="790" y2="405" opacity="0.40" />
+    <line class="thin" x1="790" y1="435" x2="790" y2="453" opacity="0.52" />
+    <line class="thin" x1="818" y1="360" x2="818" y2="378" opacity="0.28" />
+    <line class="thin" x1="818" y1="408" x2="818" y2="426" opacity="0.40" />
+    <line class="thin" x1="818" y1="306" x2="818" y2="324" opacity="0.52" />
+    <line class="thin" x1="846" y1="381" x2="846" y2="399" opacity="0.28" />
+    <line class="thin" x1="846" y1="429" x2="846" y2="447" opacity="0.40" />
+    <line class="thin" x1="846" y1="327" x2="846" y2="345" opacity="0.52" />
+    <line class="thin" x1="874" y1="402" x2="874" y2="420" opacity="0.28" />
+    <line class="thin" x1="874" y1="300" x2="874" y2="318" opacity="0.40" />
+    <line class="thin" x1="874" y1="348" x2="874" y2="366" opacity="0.52" />
+    <line class="thin" x1="902" y1="423" x2="902" y2="441" opacity="0.28" />
+    <line class="thin" x1="902" y1="321" x2="902" y2="339" opacity="0.40" />
+    <line class="thin" x1="902" y1="369" x2="902" y2="387" opacity="0.52" />
+    <line class="thin" x1="930" y1="444" x2="930" y2="462" opacity="0.28" />
+    <line class="thin" x1="930" y1="342" x2="930" y2="360" opacity="0.40" />
+    <line class="thin" x1="930" y1="390" x2="930" y2="408" opacity="0.52" />
+    <line class="thin" x1="958" y1="315" x2="958" y2="333" opacity="0.28" />
+    <line class="thin" x1="958" y1="363" x2="958" y2="381" opacity="0.40" />
+    <line class="thin" x1="958" y1="411" x2="958" y2="429" opacity="0.52" />
+    <line class="thin" x1="986" y1="336" x2="986" y2="354" opacity="0.28" />
+    <line class="thin" x1="986" y1="384" x2="986" y2="402" opacity="0.40" />
+    <line class="thin" x1="986" y1="432" x2="986" y2="450" opacity="0.52" />
+    <line class="thin" x1="1014" y1="357" x2="1014" y2="375" opacity="0.28" />
+    <line class="thin" x1="1014" y1="405" x2="1014" y2="423" opacity="0.40" />
+    <line class="thin" x1="1014" y1="303" x2="1014" y2="321" opacity="0.52" />
+    <line class="thin" x1="1042" y1="378" x2="1042" y2="396" opacity="0.28" />
+    <line class="thin" x1="1042" y1="426" x2="1042" y2="444" opacity="0.40" />
+    <line class="thin" x1="1042" y1="324" x2="1042" y2="342" opacity="0.52" />
+    <line class="thin" x1="1070" y1="399" x2="1070" y2="417" opacity="0.28" />
+    <line class="thin" x1="1070" y1="447" x2="1070" y2="465" opacity="0.40" />
+    <line class="thin" x1="1070" y1="345" x2="1070" y2="363" opacity="0.52" />
+    <line class="thin" x1="1098" y1="420" x2="1098" y2="438" opacity="0.28" />
+    <line class="thin" x1="1098" y1="318" x2="1098" y2="336" opacity="0.40" />
+    <line class="thin" x1="1098" y1="366" x2="1098" y2="384" opacity="0.52" />
+    <line class="thin" x1="1126" y1="441" x2="1126" y2="459" opacity="0.28" />
+    <line class="thin" x1="1126" y1="339" x2="1126" y2="357" opacity="0.40" />
+    <line class="thin" x1="1126" y1="387" x2="1126" y2="405" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim04">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="352" x2="790" y2="370" opacity="0.28" />
+    <line class="thin" x1="790" y1="400" x2="790" y2="418" opacity="0.40" />
+    <line class="thin" x1="790" y1="448" x2="790" y2="466" opacity="0.52" />
+    <line class="thin" x1="818" y1="373" x2="818" y2="391" opacity="0.28" />
+    <line class="thin" x1="818" y1="421" x2="818" y2="439" opacity="0.40" />
+    <line class="thin" x1="818" y1="319" x2="818" y2="337" opacity="0.52" />
+    <line class="thin" x1="846" y1="394" x2="846" y2="412" opacity="0.28" />
+    <line class="thin" x1="846" y1="442" x2="846" y2="460" opacity="0.40" />
+    <line class="thin" x1="846" y1="340" x2="846" y2="358" opacity="0.52" />
+    <line class="thin" x1="874" y1="415" x2="874" y2="433" opacity="0.28" />
+    <line class="thin" x1="874" y1="313" x2="874" y2="331" opacity="0.40" />
+    <line class="thin" x1="874" y1="361" x2="874" y2="379" opacity="0.52" />
+    <line class="thin" x1="902" y1="436" x2="902" y2="454" opacity="0.28" />
+    <line class="thin" x1="902" y1="334" x2="902" y2="352" opacity="0.40" />
+    <line class="thin" x1="902" y1="382" x2="902" y2="400" opacity="0.52" />
+    <line class="thin" x1="930" y1="307" x2="930" y2="325" opacity="0.28" />
+    <line class="thin" x1="930" y1="355" x2="930" y2="373" opacity="0.40" />
+    <line class="thin" x1="930" y1="403" x2="930" y2="421" opacity="0.52" />
+    <line class="thin" x1="958" y1="328" x2="958" y2="346" opacity="0.28" />
+    <line class="thin" x1="958" y1="376" x2="958" y2="394" opacity="0.40" />
+    <line class="thin" x1="958" y1="424" x2="958" y2="442" opacity="0.52" />
+    <line class="thin" x1="986" y1="349" x2="986" y2="367" opacity="0.28" />
+    <line class="thin" x1="986" y1="397" x2="986" y2="415" opacity="0.40" />
+    <line class="thin" x1="986" y1="445" x2="986" y2="463" opacity="0.52" />
+    <line class="thin" x1="1014" y1="370" x2="1014" y2="388" opacity="0.28" />
+    <line class="thin" x1="1014" y1="418" x2="1014" y2="436" opacity="0.40" />
+    <line class="thin" x1="1014" y1="316" x2="1014" y2="334" opacity="0.52" />
+    <line class="thin" x1="1042" y1="391" x2="1042" y2="409" opacity="0.28" />
+    <line class="thin" x1="1042" y1="439" x2="1042" y2="457" opacity="0.40" />
+    <line class="thin" x1="1042" y1="337" x2="1042" y2="355" opacity="0.52" />
+    <line class="thin" x1="1070" y1="412" x2="1070" y2="430" opacity="0.28" />
+    <line class="thin" x1="1070" y1="310" x2="1070" y2="328" opacity="0.40" />
+    <line class="thin" x1="1070" y1="358" x2="1070" y2="376" opacity="0.52" />
+    <line class="thin" x1="1098" y1="433" x2="1098" y2="451" opacity="0.28" />
+    <line class="thin" x1="1098" y1="331" x2="1098" y2="349" opacity="0.40" />
+    <line class="thin" x1="1098" y1="379" x2="1098" y2="397" opacity="0.52" />
+    <line class="thin" x1="1126" y1="304" x2="1126" y2="322" opacity="0.28" />
+    <line class="thin" x1="1126" y1="352" x2="1126" y2="370" opacity="0.40" />
+    <line class="thin" x1="1126" y1="400" x2="1126" y2="418" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim05">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="365" x2="790" y2="383" opacity="0.28" />
+    <line class="thin" x1="790" y1="413" x2="790" y2="431" opacity="0.40" />
+    <line class="thin" x1="790" y1="311" x2="790" y2="329" opacity="0.52" />
+    <line class="thin" x1="818" y1="386" x2="818" y2="404" opacity="0.28" />
+    <line class="thin" x1="818" y1="434" x2="818" y2="452" opacity="0.40" />
+    <line class="thin" x1="818" y1="332" x2="818" y2="350" opacity="0.52" />
+    <line class="thin" x1="846" y1="407" x2="846" y2="425" opacity="0.28" />
+    <line class="thin" x1="846" y1="305" x2="846" y2="323" opacity="0.40" />
+    <line class="thin" x1="846" y1="353" x2="846" y2="371" opacity="0.52" />
+    <line class="thin" x1="874" y1="428" x2="874" y2="446" opacity="0.28" />
+    <line class="thin" x1="874" y1="326" x2="874" y2="344" opacity="0.40" />
+    <line class="thin" x1="874" y1="374" x2="874" y2="392" opacity="0.52" />
+    <line class="thin" x1="902" y1="449" x2="902" y2="467" opacity="0.28" />
+    <line class="thin" x1="902" y1="347" x2="902" y2="365" opacity="0.40" />
+    <line class="thin" x1="902" y1="395" x2="902" y2="413" opacity="0.52" />
+    <line class="thin" x1="930" y1="320" x2="930" y2="338" opacity="0.28" />
+    <line class="thin" x1="930" y1="368" x2="930" y2="386" opacity="0.40" />
+    <line class="thin" x1="930" y1="416" x2="930" y2="434" opacity="0.52" />
+    <line class="thin" x1="958" y1="341" x2="958" y2="359" opacity="0.28" />
+    <line class="thin" x1="958" y1="389" x2="958" y2="407" opacity="0.40" />
+    <line class="thin" x1="958" y1="437" x2="958" y2="455" opacity="0.52" />
+    <line class="thin" x1="986" y1="362" x2="986" y2="380" opacity="0.28" />
+    <line class="thin" x1="986" y1="410" x2="986" y2="428" opacity="0.40" />
+    <line class="thin" x1="986" y1="308" x2="986" y2="326" opacity="0.52" />
+    <line class="thin" x1="1014" y1="383" x2="1014" y2="401" opacity="0.28" />
+    <line class="thin" x1="1014" y1="431" x2="1014" y2="449" opacity="0.40" />
+    <line class="thin" x1="1014" y1="329" x2="1014" y2="347" opacity="0.52" />
+    <line class="thin" x1="1042" y1="404" x2="1042" y2="422" opacity="0.28" />
+    <line class="thin" x1="1042" y1="302" x2="1042" y2="320" opacity="0.40" />
+    <line class="thin" x1="1042" y1="350" x2="1042" y2="368" opacity="0.52" />
+    <line class="thin" x1="1070" y1="425" x2="1070" y2="443" opacity="0.28" />
+    <line class="thin" x1="1070" y1="323" x2="1070" y2="341" opacity="0.40" />
+    <line class="thin" x1="1070" y1="371" x2="1070" y2="389" opacity="0.52" />
+    <line class="thin" x1="1098" y1="446" x2="1098" y2="464" opacity="0.28" />
+    <line class="thin" x1="1098" y1="344" x2="1098" y2="362" opacity="0.40" />
+    <line class="thin" x1="1098" y1="392" x2="1098" y2="410" opacity="0.52" />
+    <line class="thin" x1="1126" y1="317" x2="1126" y2="335" opacity="0.28" />
+    <line class="thin" x1="1126" y1="365" x2="1126" y2="383" opacity="0.40" />
+    <line class="thin" x1="1126" y1="413" x2="1126" y2="431" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim06">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="378" x2="790" y2="396" opacity="0.28" />
+    <line class="thin" x1="790" y1="426" x2="790" y2="444" opacity="0.40" />
+    <line class="thin" x1="790" y1="324" x2="790" y2="342" opacity="0.52" />
+    <line class="thin" x1="818" y1="399" x2="818" y2="417" opacity="0.28" />
+    <line class="thin" x1="818" y1="447" x2="818" y2="465" opacity="0.40" />
+    <line class="thin" x1="818" y1="345" x2="818" y2="363" opacity="0.52" />
+    <line class="thin" x1="846" y1="420" x2="846" y2="438" opacity="0.28" />
+    <line class="thin" x1="846" y1="318" x2="846" y2="336" opacity="0.40" />
+    <line class="thin" x1="846" y1="366" x2="846" y2="384" opacity="0.52" />
+    <line class="thin" x1="874" y1="441" x2="874" y2="459" opacity="0.28" />
+    <line class="thin" x1="874" y1="339" x2="874" y2="357" opacity="0.40" />
+    <line class="thin" x1="874" y1="387" x2="874" y2="405" opacity="0.52" />
+    <line class="thin" x1="902" y1="312" x2="902" y2="330" opacity="0.28" />
+    <line class="thin" x1="902" y1="360" x2="902" y2="378" opacity="0.40" />
+    <line class="thin" x1="902" y1="408" x2="902" y2="426" opacity="0.52" />
+    <line class="thin" x1="930" y1="333" x2="930" y2="351" opacity="0.28" />
+    <line class="thin" x1="930" y1="381" x2="930" y2="399" opacity="0.40" />
+    <line class="thin" x1="930" y1="429" x2="930" y2="447" opacity="0.52" />
+    <line class="thin" x1="958" y1="354" x2="958" y2="372" opacity="0.28" />
+    <line class="thin" x1="958" y1="402" x2="958" y2="420" opacity="0.40" />
+    <line class="thin" x1="958" y1="300" x2="958" y2="318" opacity="0.52" />
+    <line class="thin" x1="986" y1="375" x2="986" y2="393" opacity="0.28" />
+    <line class="thin" x1="986" y1="423" x2="986" y2="441" opacity="0.40" />
+    <line class="thin" x1="986" y1="321" x2="986" y2="339" opacity="0.52" />
+    <line class="thin" x1="1014" y1="396" x2="1014" y2="414" opacity="0.28" />
+    <line class="thin" x1="1014" y1="444" x2="1014" y2="462" opacity="0.40" />
+    <line class="thin" x1="1014" y1="342" x2="1014" y2="360" opacity="0.52" />
+    <line class="thin" x1="1042" y1="417" x2="1042" y2="435" opacity="0.28" />
+    <line class="thin" x1="1042" y1="315" x2="1042" y2="333" opacity="0.40" />
+    <line class="thin" x1="1042" y1="363" x2="1042" y2="381" opacity="0.52" />
+    <line class="thin" x1="1070" y1="438" x2="1070" y2="456" opacity="0.28" />
+    <line class="thin" x1="1070" y1="336" x2="1070" y2="354" opacity="0.40" />
+    <line class="thin" x1="1070" y1="384" x2="1070" y2="402" opacity="0.52" />
+    <line class="thin" x1="1098" y1="309" x2="1098" y2="327" opacity="0.28" />
+    <line class="thin" x1="1098" y1="357" x2="1098" y2="375" opacity="0.40" />
+    <line class="thin" x1="1098" y1="405" x2="1098" y2="423" opacity="0.52" />
+    <line class="thin" x1="1126" y1="330" x2="1126" y2="348" opacity="0.28" />
+    <line class="thin" x1="1126" y1="378" x2="1126" y2="396" opacity="0.40" />
+    <line class="thin" x1="1126" y1="426" x2="1126" y2="444" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim07">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="391" x2="790" y2="409" opacity="0.28" />
+    <line class="thin" x1="790" y1="439" x2="790" y2="457" opacity="0.40" />
+    <line class="thin" x1="790" y1="337" x2="790" y2="355" opacity="0.52" />
+    <line class="thin" x1="818" y1="412" x2="818" y2="430" opacity="0.28" />
+    <line class="thin" x1="818" y1="310" x2="818" y2="328" opacity="0.40" />
+    <line class="thin" x1="818" y1="358" x2="818" y2="376" opacity="0.52" />
+    <line class="thin" x1="846" y1="433" x2="846" y2="451" opacity="0.28" />
+    <line class="thin" x1="846" y1="331" x2="846" y2="349" opacity="0.40" />
+    <line class="thin" x1="846" y1="379" x2="846" y2="397" opacity="0.52" />
+    <line class="thin" x1="874" y1="304" x2="874" y2="322" opacity="0.28" />
+    <line class="thin" x1="874" y1="352" x2="874" y2="370" opacity="0.40" />
+    <line class="thin" x1="874" y1="400" x2="874" y2="418" opacity="0.52" />
+    <line class="thin" x1="902" y1="325" x2="902" y2="343" opacity="0.28" />
+    <line class="thin" x1="902" y1="373" x2="902" y2="391" opacity="0.40" />
+    <line class="thin" x1="902" y1="421" x2="902" y2="439" opacity="0.52" />
+    <line class="thin" x1="930" y1="346" x2="930" y2="364" opacity="0.28" />
+    <line class="thin" x1="930" y1="394" x2="930" y2="412" opacity="0.40" />
+    <line class="thin" x1="930" y1="442" x2="930" y2="460" opacity="0.52" />
+    <line class="thin" x1="958" y1="367" x2="958" y2="385" opacity="0.28" />
+    <line class="thin" x1="958" y1="415" x2="958" y2="433" opacity="0.40" />
+    <line class="thin" x1="958" y1="313" x2="958" y2="331" opacity="0.52" />
+    <line class="thin" x1="986" y1="388" x2="986" y2="406" opacity="0.28" />
+    <line class="thin" x1="986" y1="436" x2="986" y2="454" opacity="0.40" />
+    <line class="thin" x1="986" y1="334" x2="986" y2="352" opacity="0.52" />
+    <line class="thin" x1="1014" y1="409" x2="1014" y2="427" opacity="0.28" />
+    <line class="thin" x1="1014" y1="307" x2="1014" y2="325" opacity="0.40" />
+    <line class="thin" x1="1014" y1="355" x2="1014" y2="373" opacity="0.52" />
+    <line class="thin" x1="1042" y1="430" x2="1042" y2="448" opacity="0.28" />
+    <line class="thin" x1="1042" y1="328" x2="1042" y2="346" opacity="0.40" />
+    <line class="thin" x1="1042" y1="376" x2="1042" y2="394" opacity="0.52" />
+    <line class="thin" x1="1070" y1="301" x2="1070" y2="319" opacity="0.28" />
+    <line class="thin" x1="1070" y1="349" x2="1070" y2="367" opacity="0.40" />
+    <line class="thin" x1="1070" y1="397" x2="1070" y2="415" opacity="0.52" />
+    <line class="thin" x1="1098" y1="322" x2="1098" y2="340" opacity="0.28" />
+    <line class="thin" x1="1098" y1="370" x2="1098" y2="388" opacity="0.40" />
+    <line class="thin" x1="1098" y1="418" x2="1098" y2="436" opacity="0.52" />
+    <line class="thin" x1="1126" y1="343" x2="1126" y2="361" opacity="0.28" />
+    <line class="thin" x1="1126" y1="391" x2="1126" y2="409" opacity="0.40" />
+    <line class="thin" x1="1126" y1="439" x2="1126" y2="457" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim08">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="404" x2="790" y2="422" opacity="0.28" />
+    <line class="thin" x1="790" y1="302" x2="790" y2="320" opacity="0.40" />
+    <line class="thin" x1="790" y1="350" x2="790" y2="368" opacity="0.52" />
+    <line class="thin" x1="818" y1="425" x2="818" y2="443" opacity="0.28" />
+    <line class="thin" x1="818" y1="323" x2="818" y2="341" opacity="0.40" />
+    <line class="thin" x1="818" y1="371" x2="818" y2="389" opacity="0.52" />
+    <line class="thin" x1="846" y1="446" x2="846" y2="464" opacity="0.28" />
+    <line class="thin" x1="846" y1="344" x2="846" y2="362" opacity="0.40" />
+    <line class="thin" x1="846" y1="392" x2="846" y2="410" opacity="0.52" />
+    <line class="thin" x1="874" y1="317" x2="874" y2="335" opacity="0.28" />
+    <line class="thin" x1="874" y1="365" x2="874" y2="383" opacity="0.40" />
+    <line class="thin" x1="874" y1="413" x2="874" y2="431" opacity="0.52" />
+    <line class="thin" x1="902" y1="338" x2="902" y2="356" opacity="0.28" />
+    <line class="thin" x1="902" y1="386" x2="902" y2="404" opacity="0.40" />
+    <line class="thin" x1="902" y1="434" x2="902" y2="452" opacity="0.52" />
+    <line class="thin" x1="930" y1="359" x2="930" y2="377" opacity="0.28" />
+    <line class="thin" x1="930" y1="407" x2="930" y2="425" opacity="0.40" />
+    <line class="thin" x1="930" y1="305" x2="930" y2="323" opacity="0.52" />
+    <line class="thin" x1="958" y1="380" x2="958" y2="398" opacity="0.28" />
+    <line class="thin" x1="958" y1="428" x2="958" y2="446" opacity="0.40" />
+    <line class="thin" x1="958" y1="326" x2="958" y2="344" opacity="0.52" />
+    <line class="thin" x1="986" y1="401" x2="986" y2="419" opacity="0.28" />
+    <line class="thin" x1="986" y1="449" x2="986" y2="467" opacity="0.40" />
+    <line class="thin" x1="986" y1="347" x2="986" y2="365" opacity="0.52" />
+    <line class="thin" x1="1014" y1="422" x2="1014" y2="440" opacity="0.28" />
+    <line class="thin" x1="1014" y1="320" x2="1014" y2="338" opacity="0.40" />
+    <line class="thin" x1="1014" y1="368" x2="1014" y2="386" opacity="0.52" />
+    <line class="thin" x1="1042" y1="443" x2="1042" y2="461" opacity="0.28" />
+    <line class="thin" x1="1042" y1="341" x2="1042" y2="359" opacity="0.40" />
+    <line class="thin" x1="1042" y1="389" x2="1042" y2="407" opacity="0.52" />
+    <line class="thin" x1="1070" y1="314" x2="1070" y2="332" opacity="0.28" />
+    <line class="thin" x1="1070" y1="362" x2="1070" y2="380" opacity="0.40" />
+    <line class="thin" x1="1070" y1="410" x2="1070" y2="428" opacity="0.52" />
+    <line class="thin" x1="1098" y1="335" x2="1098" y2="353" opacity="0.28" />
+    <line class="thin" x1="1098" y1="383" x2="1098" y2="401" opacity="0.40" />
+    <line class="thin" x1="1098" y1="431" x2="1098" y2="449" opacity="0.52" />
+    <line class="thin" x1="1126" y1="356" x2="1126" y2="374" opacity="0.28" />
+    <line class="thin" x1="1126" y1="404" x2="1126" y2="422" opacity="0.40" />
+    <line class="thin" x1="1126" y1="302" x2="1126" y2="320" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim09">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="417" x2="790" y2="435" opacity="0.28" />
+    <line class="thin" x1="790" y1="315" x2="790" y2="333" opacity="0.40" />
+    <line class="thin" x1="790" y1="363" x2="790" y2="381" opacity="0.52" />
+    <line class="thin" x1="818" y1="438" x2="818" y2="456" opacity="0.28" />
+    <line class="thin" x1="818" y1="336" x2="818" y2="354" opacity="0.40" />
+    <line class="thin" x1="818" y1="384" x2="818" y2="402" opacity="0.52" />
+    <line class="thin" x1="846" y1="309" x2="846" y2="327" opacity="0.28" />
+    <line class="thin" x1="846" y1="357" x2="846" y2="375" opacity="0.40" />
+    <line class="thin" x1="846" y1="405" x2="846" y2="423" opacity="0.52" />
+    <line class="thin" x1="874" y1="330" x2="874" y2="348" opacity="0.28" />
+    <line class="thin" x1="874" y1="378" x2="874" y2="396" opacity="0.40" />
+    <line class="thin" x1="874" y1="426" x2="874" y2="444" opacity="0.52" />
+    <line class="thin" x1="902" y1="351" x2="902" y2="369" opacity="0.28" />
+    <line class="thin" x1="902" y1="399" x2="902" y2="417" opacity="0.40" />
+    <line class="thin" x1="902" y1="447" x2="902" y2="465" opacity="0.52" />
+    <line class="thin" x1="930" y1="372" x2="930" y2="390" opacity="0.28" />
+    <line class="thin" x1="930" y1="420" x2="930" y2="438" opacity="0.40" />
+    <line class="thin" x1="930" y1="318" x2="930" y2="336" opacity="0.52" />
+    <line class="thin" x1="958" y1="393" x2="958" y2="411" opacity="0.28" />
+    <line class="thin" x1="958" y1="441" x2="958" y2="459" opacity="0.40" />
+    <line class="thin" x1="958" y1="339" x2="958" y2="357" opacity="0.52" />
+    <line class="thin" x1="986" y1="414" x2="986" y2="432" opacity="0.28" />
+    <line class="thin" x1="986" y1="312" x2="986" y2="330" opacity="0.40" />
+    <line class="thin" x1="986" y1="360" x2="986" y2="378" opacity="0.52" />
+    <line class="thin" x1="1014" y1="435" x2="1014" y2="453" opacity="0.28" />
+    <line class="thin" x1="1014" y1="333" x2="1014" y2="351" opacity="0.40" />
+    <line class="thin" x1="1014" y1="381" x2="1014" y2="399" opacity="0.52" />
+    <line class="thin" x1="1042" y1="306" x2="1042" y2="324" opacity="0.28" />
+    <line class="thin" x1="1042" y1="354" x2="1042" y2="372" opacity="0.40" />
+    <line class="thin" x1="1042" y1="402" x2="1042" y2="420" opacity="0.52" />
+    <line class="thin" x1="1070" y1="327" x2="1070" y2="345" opacity="0.28" />
+    <line class="thin" x1="1070" y1="375" x2="1070" y2="393" opacity="0.40" />
+    <line class="thin" x1="1070" y1="423" x2="1070" y2="441" opacity="0.52" />
+    <line class="thin" x1="1098" y1="348" x2="1098" y2="366" opacity="0.28" />
+    <line class="thin" x1="1098" y1="396" x2="1098" y2="414" opacity="0.40" />
+    <line class="thin" x1="1098" y1="444" x2="1098" y2="462" opacity="0.52" />
+    <line class="thin" x1="1126" y1="369" x2="1126" y2="387" opacity="0.28" />
+    <line class="thin" x1="1126" y1="417" x2="1126" y2="435" opacity="0.40" />
+    <line class="thin" x1="1126" y1="315" x2="1126" y2="333" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim10">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="430" x2="790" y2="448" opacity="0.28" />
+    <line class="thin" x1="790" y1="328" x2="790" y2="346" opacity="0.40" />
+    <line class="thin" x1="790" y1="376" x2="790" y2="394" opacity="0.52" />
+    <line class="thin" x1="818" y1="301" x2="818" y2="319" opacity="0.28" />
+    <line class="thin" x1="818" y1="349" x2="818" y2="367" opacity="0.40" />
+    <line class="thin" x1="818" y1="397" x2="818" y2="415" opacity="0.52" />
+    <line class="thin" x1="846" y1="322" x2="846" y2="340" opacity="0.28" />
+    <line class="thin" x1="846" y1="370" x2="846" y2="388" opacity="0.40" />
+    <line class="thin" x1="846" y1="418" x2="846" y2="436" opacity="0.52" />
+    <line class="thin" x1="874" y1="343" x2="874" y2="361" opacity="0.28" />
+    <line class="thin" x1="874" y1="391" x2="874" y2="409" opacity="0.40" />
+    <line class="thin" x1="874" y1="439" x2="874" y2="457" opacity="0.52" />
+    <line class="thin" x1="902" y1="364" x2="902" y2="382" opacity="0.28" />
+    <line class="thin" x1="902" y1="412" x2="902" y2="430" opacity="0.40" />
+    <line class="thin" x1="902" y1="310" x2="902" y2="328" opacity="0.52" />
+    <line class="thin" x1="930" y1="385" x2="930" y2="403" opacity="0.28" />
+    <line class="thin" x1="930" y1="433" x2="930" y2="451" opacity="0.40" />
+    <line class="thin" x1="930" y1="331" x2="930" y2="349" opacity="0.52" />
+    <line class="thin" x1="958" y1="406" x2="958" y2="424" opacity="0.28" />
+    <line class="thin" x1="958" y1="304" x2="958" y2="322" opacity="0.40" />
+    <line class="thin" x1="958" y1="352" x2="958" y2="370" opacity="0.52" />
+    <line class="thin" x1="986" y1="427" x2="986" y2="445" opacity="0.28" />
+    <line class="thin" x1="986" y1="325" x2="986" y2="343" opacity="0.40" />
+    <line class="thin" x1="986" y1="373" x2="986" y2="391" opacity="0.52" />
+    <line class="thin" x1="1014" y1="448" x2="1014" y2="466" opacity="0.28" />
+    <line class="thin" x1="1014" y1="346" x2="1014" y2="364" opacity="0.40" />
+    <line class="thin" x1="1014" y1="394" x2="1014" y2="412" opacity="0.52" />
+    <line class="thin" x1="1042" y1="319" x2="1042" y2="337" opacity="0.28" />
+    <line class="thin" x1="1042" y1="367" x2="1042" y2="385" opacity="0.40" />
+    <line class="thin" x1="1042" y1="415" x2="1042" y2="433" opacity="0.52" />
+    <line class="thin" x1="1070" y1="340" x2="1070" y2="358" opacity="0.28" />
+    <line class="thin" x1="1070" y1="388" x2="1070" y2="406" opacity="0.40" />
+    <line class="thin" x1="1070" y1="436" x2="1070" y2="454" opacity="0.52" />
+    <line class="thin" x1="1098" y1="361" x2="1098" y2="379" opacity="0.28" />
+    <line class="thin" x1="1098" y1="409" x2="1098" y2="427" opacity="0.40" />
+    <line class="thin" x1="1098" y1="307" x2="1098" y2="325" opacity="0.52" />
+    <line class="thin" x1="1126" y1="382" x2="1126" y2="400" opacity="0.28" />
+    <line class="thin" x1="1126" y1="430" x2="1126" y2="448" opacity="0.40" />
+    <line class="thin" x1="1126" y1="328" x2="1126" y2="346" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim11">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="443" x2="790" y2="461" opacity="0.28" />
+    <line class="thin" x1="790" y1="341" x2="790" y2="359" opacity="0.40" />
+    <line class="thin" x1="790" y1="389" x2="790" y2="407" opacity="0.52" />
+    <line class="thin" x1="818" y1="314" x2="818" y2="332" opacity="0.28" />
+    <line class="thin" x1="818" y1="362" x2="818" y2="380" opacity="0.40" />
+    <line class="thin" x1="818" y1="410" x2="818" y2="428" opacity="0.52" />
+    <line class="thin" x1="846" y1="335" x2="846" y2="353" opacity="0.28" />
+    <line class="thin" x1="846" y1="383" x2="846" y2="401" opacity="0.40" />
+    <line class="thin" x1="846" y1="431" x2="846" y2="449" opacity="0.52" />
+    <line class="thin" x1="874" y1="356" x2="874" y2="374" opacity="0.28" />
+    <line class="thin" x1="874" y1="404" x2="874" y2="422" opacity="0.40" />
+    <line class="thin" x1="874" y1="302" x2="874" y2="320" opacity="0.52" />
+    <line class="thin" x1="902" y1="377" x2="902" y2="395" opacity="0.28" />
+    <line class="thin" x1="902" y1="425" x2="902" y2="443" opacity="0.40" />
+    <line class="thin" x1="902" y1="323" x2="902" y2="341" opacity="0.52" />
+    <line class="thin" x1="930" y1="398" x2="930" y2="416" opacity="0.28" />
+    <line class="thin" x1="930" y1="446" x2="930" y2="464" opacity="0.40" />
+    <line class="thin" x1="930" y1="344" x2="930" y2="362" opacity="0.52" />
+    <line class="thin" x1="958" y1="419" x2="958" y2="437" opacity="0.28" />
+    <line class="thin" x1="958" y1="317" x2="958" y2="335" opacity="0.40" />
+    <line class="thin" x1="958" y1="365" x2="958" y2="383" opacity="0.52" />
+    <line class="thin" x1="986" y1="440" x2="986" y2="458" opacity="0.28" />
+    <line class="thin" x1="986" y1="338" x2="986" y2="356" opacity="0.40" />
+    <line class="thin" x1="986" y1="386" x2="986" y2="404" opacity="0.52" />
+    <line class="thin" x1="1014" y1="311" x2="1014" y2="329" opacity="0.28" />
+    <line class="thin" x1="1014" y1="359" x2="1014" y2="377" opacity="0.40" />
+    <line class="thin" x1="1014" y1="407" x2="1014" y2="425" opacity="0.52" />
+    <line class="thin" x1="1042" y1="332" x2="1042" y2="350" opacity="0.28" />
+    <line class="thin" x1="1042" y1="380" x2="1042" y2="398" opacity="0.40" />
+    <line class="thin" x1="1042" y1="428" x2="1042" y2="446" opacity="0.52" />
+    <line class="thin" x1="1070" y1="353" x2="1070" y2="371" opacity="0.28" />
+    <line class="thin" x1="1070" y1="401" x2="1070" y2="419" opacity="0.40" />
+    <line class="thin" x1="1070" y1="449" x2="1070" y2="467" opacity="0.52" />
+    <line class="thin" x1="1098" y1="374" x2="1098" y2="392" opacity="0.28" />
+    <line class="thin" x1="1098" y1="422" x2="1098" y2="440" opacity="0.40" />
+    <line class="thin" x1="1098" y1="320" x2="1098" y2="338" opacity="0.52" />
+    <line class="thin" x1="1126" y1="395" x2="1126" y2="413" opacity="0.28" />
+    <line class="thin" x1="1126" y1="443" x2="1126" y2="461" opacity="0.40" />
+    <line class="thin" x1="1126" y1="341" x2="1126" y2="359" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim12">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="306" x2="790" y2="324" opacity="0.28" />
+    <line class="thin" x1="790" y1="354" x2="790" y2="372" opacity="0.40" />
+    <line class="thin" x1="790" y1="402" x2="790" y2="420" opacity="0.52" />
+    <line class="thin" x1="818" y1="327" x2="818" y2="345" opacity="0.28" />
+    <line class="thin" x1="818" y1="375" x2="818" y2="393" opacity="0.40" />
+    <line class="thin" x1="818" y1="423" x2="818" y2="441" opacity="0.52" />
+    <line class="thin" x1="846" y1="348" x2="846" y2="366" opacity="0.28" />
+    <line class="thin" x1="846" y1="396" x2="846" y2="414" opacity="0.40" />
+    <line class="thin" x1="846" y1="444" x2="846" y2="462" opacity="0.52" />
+    <line class="thin" x1="874" y1="369" x2="874" y2="387" opacity="0.28" />
+    <line class="thin" x1="874" y1="417" x2="874" y2="435" opacity="0.40" />
+    <line class="thin" x1="874" y1="315" x2="874" y2="333" opacity="0.52" />
+    <line class="thin" x1="902" y1="390" x2="902" y2="408" opacity="0.28" />
+    <line class="thin" x1="902" y1="438" x2="902" y2="456" opacity="0.40" />
+    <line class="thin" x1="902" y1="336" x2="902" y2="354" opacity="0.52" />
+    <line class="thin" x1="930" y1="411" x2="930" y2="429" opacity="0.28" />
+    <line class="thin" x1="930" y1="309" x2="930" y2="327" opacity="0.40" />
+    <line class="thin" x1="930" y1="357" x2="930" y2="375" opacity="0.52" />
+    <line class="thin" x1="958" y1="432" x2="958" y2="450" opacity="0.28" />
+    <line class="thin" x1="958" y1="330" x2="958" y2="348" opacity="0.40" />
+    <line class="thin" x1="958" y1="378" x2="958" y2="396" opacity="0.52" />
+    <line class="thin" x1="986" y1="303" x2="986" y2="321" opacity="0.28" />
+    <line class="thin" x1="986" y1="351" x2="986" y2="369" opacity="0.40" />
+    <line class="thin" x1="986" y1="399" x2="986" y2="417" opacity="0.52" />
+    <line class="thin" x1="1014" y1="324" x2="1014" y2="342" opacity="0.28" />
+    <line class="thin" x1="1014" y1="372" x2="1014" y2="390" opacity="0.40" />
+    <line class="thin" x1="1014" y1="420" x2="1014" y2="438" opacity="0.52" />
+    <line class="thin" x1="1042" y1="345" x2="1042" y2="363" opacity="0.28" />
+    <line class="thin" x1="1042" y1="393" x2="1042" y2="411" opacity="0.40" />
+    <line class="thin" x1="1042" y1="441" x2="1042" y2="459" opacity="0.52" />
+    <line class="thin" x1="1070" y1="366" x2="1070" y2="384" opacity="0.28" />
+    <line class="thin" x1="1070" y1="414" x2="1070" y2="432" opacity="0.40" />
+    <line class="thin" x1="1070" y1="312" x2="1070" y2="330" opacity="0.52" />
+    <line class="thin" x1="1098" y1="387" x2="1098" y2="405" opacity="0.28" />
+    <line class="thin" x1="1098" y1="435" x2="1098" y2="453" opacity="0.40" />
+    <line class="thin" x1="1098" y1="333" x2="1098" y2="351" opacity="0.52" />
+    <line class="thin" x1="1126" y1="408" x2="1126" y2="426" opacity="0.28" />
+    <line class="thin" x1="1126" y1="306" x2="1126" y2="324" opacity="0.40" />
+    <line class="thin" x1="1126" y1="354" x2="1126" y2="372" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim13">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="319" x2="790" y2="337" opacity="0.28" />
+    <line class="thin" x1="790" y1="367" x2="790" y2="385" opacity="0.40" />
+    <line class="thin" x1="790" y1="415" x2="790" y2="433" opacity="0.52" />
+    <line class="thin" x1="818" y1="340" x2="818" y2="358" opacity="0.28" />
+    <line class="thin" x1="818" y1="388" x2="818" y2="406" opacity="0.40" />
+    <line class="thin" x1="818" y1="436" x2="818" y2="454" opacity="0.52" />
+    <line class="thin" x1="846" y1="361" x2="846" y2="379" opacity="0.28" />
+    <line class="thin" x1="846" y1="409" x2="846" y2="427" opacity="0.40" />
+    <line class="thin" x1="846" y1="307" x2="846" y2="325" opacity="0.52" />
+    <line class="thin" x1="874" y1="382" x2="874" y2="400" opacity="0.28" />
+    <line class="thin" x1="874" y1="430" x2="874" y2="448" opacity="0.40" />
+    <line class="thin" x1="874" y1="328" x2="874" y2="346" opacity="0.52" />
+    <line class="thin" x1="902" y1="403" x2="902" y2="421" opacity="0.28" />
+    <line class="thin" x1="902" y1="301" x2="902" y2="319" opacity="0.40" />
+    <line class="thin" x1="902" y1="349" x2="902" y2="367" opacity="0.52" />
+    <line class="thin" x1="930" y1="424" x2="930" y2="442" opacity="0.28" />
+    <line class="thin" x1="930" y1="322" x2="930" y2="340" opacity="0.40" />
+    <line class="thin" x1="930" y1="370" x2="930" y2="388" opacity="0.52" />
+    <line class="thin" x1="958" y1="445" x2="958" y2="463" opacity="0.28" />
+    <line class="thin" x1="958" y1="343" x2="958" y2="361" opacity="0.40" />
+    <line class="thin" x1="958" y1="391" x2="958" y2="409" opacity="0.52" />
+    <line class="thin" x1="986" y1="316" x2="986" y2="334" opacity="0.28" />
+    <line class="thin" x1="986" y1="364" x2="986" y2="382" opacity="0.40" />
+    <line class="thin" x1="986" y1="412" x2="986" y2="430" opacity="0.52" />
+    <line class="thin" x1="1014" y1="337" x2="1014" y2="355" opacity="0.28" />
+    <line class="thin" x1="1014" y1="385" x2="1014" y2="403" opacity="0.40" />
+    <line class="thin" x1="1014" y1="433" x2="1014" y2="451" opacity="0.52" />
+    <line class="thin" x1="1042" y1="358" x2="1042" y2="376" opacity="0.28" />
+    <line class="thin" x1="1042" y1="406" x2="1042" y2="424" opacity="0.40" />
+    <line class="thin" x1="1042" y1="304" x2="1042" y2="322" opacity="0.52" />
+    <line class="thin" x1="1070" y1="379" x2="1070" y2="397" opacity="0.28" />
+    <line class="thin" x1="1070" y1="427" x2="1070" y2="445" opacity="0.40" />
+    <line class="thin" x1="1070" y1="325" x2="1070" y2="343" opacity="0.52" />
+    <line class="thin" x1="1098" y1="400" x2="1098" y2="418" opacity="0.28" />
+    <line class="thin" x1="1098" y1="448" x2="1098" y2="466" opacity="0.40" />
+    <line class="thin" x1="1098" y1="346" x2="1098" y2="364" opacity="0.52" />
+    <line class="thin" x1="1126" y1="421" x2="1126" y2="439" opacity="0.28" />
+    <line class="thin" x1="1126" y1="319" x2="1126" y2="337" opacity="0.40" />
+    <line class="thin" x1="1126" y1="367" x2="1126" y2="385" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim14">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="332" x2="790" y2="350" opacity="0.28" />
+    <line class="thin" x1="790" y1="380" x2="790" y2="398" opacity="0.40" />
+    <line class="thin" x1="790" y1="428" x2="790" y2="446" opacity="0.52" />
+    <line class="thin" x1="818" y1="353" x2="818" y2="371" opacity="0.28" />
+    <line class="thin" x1="818" y1="401" x2="818" y2="419" opacity="0.40" />
+    <line class="thin" x1="818" y1="449" x2="818" y2="467" opacity="0.52" />
+    <line class="thin" x1="846" y1="374" x2="846" y2="392" opacity="0.28" />
+    <line class="thin" x1="846" y1="422" x2="846" y2="440" opacity="0.40" />
+    <line class="thin" x1="846" y1="320" x2="846" y2="338" opacity="0.52" />
+    <line class="thin" x1="874" y1="395" x2="874" y2="413" opacity="0.28" />
+    <line class="thin" x1="874" y1="443" x2="874" y2="461" opacity="0.40" />
+    <line class="thin" x1="874" y1="341" x2="874" y2="359" opacity="0.52" />
+    <line class="thin" x1="902" y1="416" x2="902" y2="434" opacity="0.28" />
+    <line class="thin" x1="902" y1="314" x2="902" y2="332" opacity="0.40" />
+    <line class="thin" x1="902" y1="362" x2="902" y2="380" opacity="0.52" />
+    <line class="thin" x1="930" y1="437" x2="930" y2="455" opacity="0.28" />
+    <line class="thin" x1="930" y1="335" x2="930" y2="353" opacity="0.40" />
+    <line class="thin" x1="930" y1="383" x2="930" y2="401" opacity="0.52" />
+    <line class="thin" x1="958" y1="308" x2="958" y2="326" opacity="0.28" />
+    <line class="thin" x1="958" y1="356" x2="958" y2="374" opacity="0.40" />
+    <line class="thin" x1="958" y1="404" x2="958" y2="422" opacity="0.52" />
+    <line class="thin" x1="986" y1="329" x2="986" y2="347" opacity="0.28" />
+    <line class="thin" x1="986" y1="377" x2="986" y2="395" opacity="0.40" />
+    <line class="thin" x1="986" y1="425" x2="986" y2="443" opacity="0.52" />
+    <line class="thin" x1="1014" y1="350" x2="1014" y2="368" opacity="0.28" />
+    <line class="thin" x1="1014" y1="398" x2="1014" y2="416" opacity="0.40" />
+    <line class="thin" x1="1014" y1="446" x2="1014" y2="464" opacity="0.52" />
+    <line class="thin" x1="1042" y1="371" x2="1042" y2="389" opacity="0.28" />
+    <line class="thin" x1="1042" y1="419" x2="1042" y2="437" opacity="0.40" />
+    <line class="thin" x1="1042" y1="317" x2="1042" y2="335" opacity="0.52" />
+    <line class="thin" x1="1070" y1="392" x2="1070" y2="410" opacity="0.28" />
+    <line class="thin" x1="1070" y1="440" x2="1070" y2="458" opacity="0.40" />
+    <line class="thin" x1="1070" y1="338" x2="1070" y2="356" opacity="0.52" />
+    <line class="thin" x1="1098" y1="413" x2="1098" y2="431" opacity="0.28" />
+    <line class="thin" x1="1098" y1="311" x2="1098" y2="329" opacity="0.40" />
+    <line class="thin" x1="1098" y1="359" x2="1098" y2="377" opacity="0.52" />
+    <line class="thin" x1="1126" y1="434" x2="1126" y2="452" opacity="0.28" />
+    <line class="thin" x1="1126" y1="332" x2="1126" y2="350" opacity="0.40" />
+    <line class="thin" x1="1126" y1="380" x2="1126" y2="398" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim15">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="345" x2="790" y2="363" opacity="0.28" />
+    <line class="thin" x1="790" y1="393" x2="790" y2="411" opacity="0.40" />
+    <line class="thin" x1="790" y1="441" x2="790" y2="459" opacity="0.52" />
+    <line class="thin" x1="818" y1="366" x2="818" y2="384" opacity="0.28" />
+    <line class="thin" x1="818" y1="414" x2="818" y2="432" opacity="0.40" />
+    <line class="thin" x1="818" y1="312" x2="818" y2="330" opacity="0.52" />
+    <line class="thin" x1="846" y1="387" x2="846" y2="405" opacity="0.28" />
+    <line class="thin" x1="846" y1="435" x2="846" y2="453" opacity="0.40" />
+    <line class="thin" x1="846" y1="333" x2="846" y2="351" opacity="0.52" />
+    <line class="thin" x1="874" y1="408" x2="874" y2="426" opacity="0.28" />
+    <line class="thin" x1="874" y1="306" x2="874" y2="324" opacity="0.40" />
+    <line class="thin" x1="874" y1="354" x2="874" y2="372" opacity="0.52" />
+    <line class="thin" x1="902" y1="429" x2="902" y2="447" opacity="0.28" />
+    <line class="thin" x1="902" y1="327" x2="902" y2="345" opacity="0.40" />
+    <line class="thin" x1="902" y1="375" x2="902" y2="393" opacity="0.52" />
+    <line class="thin" x1="930" y1="300" x2="930" y2="318" opacity="0.28" />
+    <line class="thin" x1="930" y1="348" x2="930" y2="366" opacity="0.40" />
+    <line class="thin" x1="930" y1="396" x2="930" y2="414" opacity="0.52" />
+    <line class="thin" x1="958" y1="321" x2="958" y2="339" opacity="0.28" />
+    <line class="thin" x1="958" y1="369" x2="958" y2="387" opacity="0.40" />
+    <line class="thin" x1="958" y1="417" x2="958" y2="435" opacity="0.52" />
+    <line class="thin" x1="986" y1="342" x2="986" y2="360" opacity="0.28" />
+    <line class="thin" x1="986" y1="390" x2="986" y2="408" opacity="0.40" />
+    <line class="thin" x1="986" y1="438" x2="986" y2="456" opacity="0.52" />
+    <line class="thin" x1="1014" y1="363" x2="1014" y2="381" opacity="0.28" />
+    <line class="thin" x1="1014" y1="411" x2="1014" y2="429" opacity="0.40" />
+    <line class="thin" x1="1014" y1="309" x2="1014" y2="327" opacity="0.52" />
+    <line class="thin" x1="1042" y1="384" x2="1042" y2="402" opacity="0.28" />
+    <line class="thin" x1="1042" y1="432" x2="1042" y2="450" opacity="0.40" />
+    <line class="thin" x1="1042" y1="330" x2="1042" y2="348" opacity="0.52" />
+    <line class="thin" x1="1070" y1="405" x2="1070" y2="423" opacity="0.28" />
+    <line class="thin" x1="1070" y1="303" x2="1070" y2="321" opacity="0.40" />
+    <line class="thin" x1="1070" y1="351" x2="1070" y2="369" opacity="0.52" />
+    <line class="thin" x1="1098" y1="426" x2="1098" y2="444" opacity="0.28" />
+    <line class="thin" x1="1098" y1="324" x2="1098" y2="342" opacity="0.40" />
+    <line class="thin" x1="1098" y1="372" x2="1098" y2="390" opacity="0.52" />
+    <line class="thin" x1="1126" y1="447" x2="1126" y2="465" opacity="0.28" />
+    <line class="thin" x1="1126" y1="345" x2="1126" y2="363" opacity="0.40" />
+    <line class="thin" x1="1126" y1="393" x2="1126" y2="411" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim16">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="358" x2="790" y2="376" opacity="0.28" />
+    <line class="thin" x1="790" y1="406" x2="790" y2="424" opacity="0.40" />
+    <line class="thin" x1="790" y1="304" x2="790" y2="322" opacity="0.52" />
+    <line class="thin" x1="818" y1="379" x2="818" y2="397" opacity="0.28" />
+    <line class="thin" x1="818" y1="427" x2="818" y2="445" opacity="0.40" />
+    <line class="thin" x1="818" y1="325" x2="818" y2="343" opacity="0.52" />
+    <line class="thin" x1="846" y1="400" x2="846" y2="418" opacity="0.28" />
+    <line class="thin" x1="846" y1="448" x2="846" y2="466" opacity="0.40" />
+    <line class="thin" x1="846" y1="346" x2="846" y2="364" opacity="0.52" />
+    <line class="thin" x1="874" y1="421" x2="874" y2="439" opacity="0.28" />
+    <line class="thin" x1="874" y1="319" x2="874" y2="337" opacity="0.40" />
+    <line class="thin" x1="874" y1="367" x2="874" y2="385" opacity="0.52" />
+    <line class="thin" x1="902" y1="442" x2="902" y2="460" opacity="0.28" />
+    <line class="thin" x1="902" y1="340" x2="902" y2="358" opacity="0.40" />
+    <line class="thin" x1="902" y1="388" x2="902" y2="406" opacity="0.52" />
+    <line class="thin" x1="930" y1="313" x2="930" y2="331" opacity="0.28" />
+    <line class="thin" x1="930" y1="361" x2="930" y2="379" opacity="0.40" />
+    <line class="thin" x1="930" y1="409" x2="930" y2="427" opacity="0.52" />
+    <line class="thin" x1="958" y1="334" x2="958" y2="352" opacity="0.28" />
+    <line class="thin" x1="958" y1="382" x2="958" y2="400" opacity="0.40" />
+    <line class="thin" x1="958" y1="430" x2="958" y2="448" opacity="0.52" />
+    <line class="thin" x1="986" y1="355" x2="986" y2="373" opacity="0.28" />
+    <line class="thin" x1="986" y1="403" x2="986" y2="421" opacity="0.40" />
+    <line class="thin" x1="986" y1="301" x2="986" y2="319" opacity="0.52" />
+    <line class="thin" x1="1014" y1="376" x2="1014" y2="394" opacity="0.28" />
+    <line class="thin" x1="1014" y1="424" x2="1014" y2="442" opacity="0.40" />
+    <line class="thin" x1="1014" y1="322" x2="1014" y2="340" opacity="0.52" />
+    <line class="thin" x1="1042" y1="397" x2="1042" y2="415" opacity="0.28" />
+    <line class="thin" x1="1042" y1="445" x2="1042" y2="463" opacity="0.40" />
+    <line class="thin" x1="1042" y1="343" x2="1042" y2="361" opacity="0.52" />
+    <line class="thin" x1="1070" y1="418" x2="1070" y2="436" opacity="0.28" />
+    <line class="thin" x1="1070" y1="316" x2="1070" y2="334" opacity="0.40" />
+    <line class="thin" x1="1070" y1="364" x2="1070" y2="382" opacity="0.52" />
+    <line class="thin" x1="1098" y1="439" x2="1098" y2="457" opacity="0.28" />
+    <line class="thin" x1="1098" y1="337" x2="1098" y2="355" opacity="0.40" />
+    <line class="thin" x1="1098" y1="385" x2="1098" y2="403" opacity="0.52" />
+    <line class="thin" x1="1126" y1="310" x2="1126" y2="328" opacity="0.28" />
+    <line class="thin" x1="1126" y1="358" x2="1126" y2="376" opacity="0.40" />
+    <line class="thin" x1="1126" y1="406" x2="1126" y2="424" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim17">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="371" x2="790" y2="389" opacity="0.28" />
+    <line class="thin" x1="790" y1="419" x2="790" y2="437" opacity="0.40" />
+    <line class="thin" x1="790" y1="317" x2="790" y2="335" opacity="0.52" />
+    <line class="thin" x1="818" y1="392" x2="818" y2="410" opacity="0.28" />
+    <line class="thin" x1="818" y1="440" x2="818" y2="458" opacity="0.40" />
+    <line class="thin" x1="818" y1="338" x2="818" y2="356" opacity="0.52" />
+    <line class="thin" x1="846" y1="413" x2="846" y2="431" opacity="0.28" />
+    <line class="thin" x1="846" y1="311" x2="846" y2="329" opacity="0.40" />
+    <line class="thin" x1="846" y1="359" x2="846" y2="377" opacity="0.52" />
+    <line class="thin" x1="874" y1="434" x2="874" y2="452" opacity="0.28" />
+    <line class="thin" x1="874" y1="332" x2="874" y2="350" opacity="0.40" />
+    <line class="thin" x1="874" y1="380" x2="874" y2="398" opacity="0.52" />
+    <line class="thin" x1="902" y1="305" x2="902" y2="323" opacity="0.28" />
+    <line class="thin" x1="902" y1="353" x2="902" y2="371" opacity="0.40" />
+    <line class="thin" x1="902" y1="401" x2="902" y2="419" opacity="0.52" />
+    <line class="thin" x1="930" y1="326" x2="930" y2="344" opacity="0.28" />
+    <line class="thin" x1="930" y1="374" x2="930" y2="392" opacity="0.40" />
+    <line class="thin" x1="930" y1="422" x2="930" y2="440" opacity="0.52" />
+    <line class="thin" x1="958" y1="347" x2="958" y2="365" opacity="0.28" />
+    <line class="thin" x1="958" y1="395" x2="958" y2="413" opacity="0.40" />
+    <line class="thin" x1="958" y1="443" x2="958" y2="461" opacity="0.52" />
+    <line class="thin" x1="986" y1="368" x2="986" y2="386" opacity="0.28" />
+    <line class="thin" x1="986" y1="416" x2="986" y2="434" opacity="0.40" />
+    <line class="thin" x1="986" y1="314" x2="986" y2="332" opacity="0.52" />
+    <line class="thin" x1="1014" y1="389" x2="1014" y2="407" opacity="0.28" />
+    <line class="thin" x1="1014" y1="437" x2="1014" y2="455" opacity="0.40" />
+    <line class="thin" x1="1014" y1="335" x2="1014" y2="353" opacity="0.52" />
+    <line class="thin" x1="1042" y1="410" x2="1042" y2="428" opacity="0.28" />
+    <line class="thin" x1="1042" y1="308" x2="1042" y2="326" opacity="0.40" />
+    <line class="thin" x1="1042" y1="356" x2="1042" y2="374" opacity="0.52" />
+    <line class="thin" x1="1070" y1="431" x2="1070" y2="449" opacity="0.28" />
+    <line class="thin" x1="1070" y1="329" x2="1070" y2="347" opacity="0.40" />
+    <line class="thin" x1="1070" y1="377" x2="1070" y2="395" opacity="0.52" />
+    <line class="thin" x1="1098" y1="302" x2="1098" y2="320" opacity="0.28" />
+    <line class="thin" x1="1098" y1="350" x2="1098" y2="368" opacity="0.40" />
+    <line class="thin" x1="1098" y1="398" x2="1098" y2="416" opacity="0.52" />
+    <line class="thin" x1="1126" y1="323" x2="1126" y2="341" opacity="0.28" />
+    <line class="thin" x1="1126" y1="371" x2="1126" y2="389" opacity="0.40" />
+    <line class="thin" x1="1126" y1="419" x2="1126" y2="437" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim18">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="384" x2="790" y2="402" opacity="0.28" />
+    <line class="thin" x1="790" y1="432" x2="790" y2="450" opacity="0.40" />
+    <line class="thin" x1="790" y1="330" x2="790" y2="348" opacity="0.52" />
+    <line class="thin" x1="818" y1="405" x2="818" y2="423" opacity="0.28" />
+    <line class="thin" x1="818" y1="303" x2="818" y2="321" opacity="0.40" />
+    <line class="thin" x1="818" y1="351" x2="818" y2="369" opacity="0.52" />
+    <line class="thin" x1="846" y1="426" x2="846" y2="444" opacity="0.28" />
+    <line class="thin" x1="846" y1="324" x2="846" y2="342" opacity="0.40" />
+    <line class="thin" x1="846" y1="372" x2="846" y2="390" opacity="0.52" />
+    <line class="thin" x1="874" y1="447" x2="874" y2="465" opacity="0.28" />
+    <line class="thin" x1="874" y1="345" x2="874" y2="363" opacity="0.40" />
+    <line class="thin" x1="874" y1="393" x2="874" y2="411" opacity="0.52" />
+    <line class="thin" x1="902" y1="318" x2="902" y2="336" opacity="0.28" />
+    <line class="thin" x1="902" y1="366" x2="902" y2="384" opacity="0.40" />
+    <line class="thin" x1="902" y1="414" x2="902" y2="432" opacity="0.52" />
+    <line class="thin" x1="930" y1="339" x2="930" y2="357" opacity="0.28" />
+    <line class="thin" x1="930" y1="387" x2="930" y2="405" opacity="0.40" />
+    <line class="thin" x1="930" y1="435" x2="930" y2="453" opacity="0.52" />
+    <line class="thin" x1="958" y1="360" x2="958" y2="378" opacity="0.28" />
+    <line class="thin" x1="958" y1="408" x2="958" y2="426" opacity="0.40" />
+    <line class="thin" x1="958" y1="306" x2="958" y2="324" opacity="0.52" />
+    <line class="thin" x1="986" y1="381" x2="986" y2="399" opacity="0.28" />
+    <line class="thin" x1="986" y1="429" x2="986" y2="447" opacity="0.40" />
+    <line class="thin" x1="986" y1="327" x2="986" y2="345" opacity="0.52" />
+    <line class="thin" x1="1014" y1="402" x2="1014" y2="420" opacity="0.28" />
+    <line class="thin" x1="1014" y1="300" x2="1014" y2="318" opacity="0.40" />
+    <line class="thin" x1="1014" y1="348" x2="1014" y2="366" opacity="0.52" />
+    <line class="thin" x1="1042" y1="423" x2="1042" y2="441" opacity="0.28" />
+    <line class="thin" x1="1042" y1="321" x2="1042" y2="339" opacity="0.40" />
+    <line class="thin" x1="1042" y1="369" x2="1042" y2="387" opacity="0.52" />
+    <line class="thin" x1="1070" y1="444" x2="1070" y2="462" opacity="0.28" />
+    <line class="thin" x1="1070" y1="342" x2="1070" y2="360" opacity="0.40" />
+    <line class="thin" x1="1070" y1="390" x2="1070" y2="408" opacity="0.52" />
+    <line class="thin" x1="1098" y1="315" x2="1098" y2="333" opacity="0.28" />
+    <line class="thin" x1="1098" y1="363" x2="1098" y2="381" opacity="0.40" />
+    <line class="thin" x1="1098" y1="411" x2="1098" y2="429" opacity="0.52" />
+    <line class="thin" x1="1126" y1="336" x2="1126" y2="354" opacity="0.28" />
+    <line class="thin" x1="1126" y1="384" x2="1126" y2="402" opacity="0.40" />
+    <line class="thin" x1="1126" y1="432" x2="1126" y2="450" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim19">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="397" x2="790" y2="415" opacity="0.28" />
+    <line class="thin" x1="790" y1="445" x2="790" y2="463" opacity="0.40" />
+    <line class="thin" x1="790" y1="343" x2="790" y2="361" opacity="0.52" />
+    <line class="thin" x1="818" y1="418" x2="818" y2="436" opacity="0.28" />
+    <line class="thin" x1="818" y1="316" x2="818" y2="334" opacity="0.40" />
+    <line class="thin" x1="818" y1="364" x2="818" y2="382" opacity="0.52" />
+    <line class="thin" x1="846" y1="439" x2="846" y2="457" opacity="0.28" />
+    <line class="thin" x1="846" y1="337" x2="846" y2="355" opacity="0.40" />
+    <line class="thin" x1="846" y1="385" x2="846" y2="403" opacity="0.52" />
+    <line class="thin" x1="874" y1="310" x2="874" y2="328" opacity="0.28" />
+    <line class="thin" x1="874" y1="358" x2="874" y2="376" opacity="0.40" />
+    <line class="thin" x1="874" y1="406" x2="874" y2="424" opacity="0.52" />
+    <line class="thin" x1="902" y1="331" x2="902" y2="349" opacity="0.28" />
+    <line class="thin" x1="902" y1="379" x2="902" y2="397" opacity="0.40" />
+    <line class="thin" x1="902" y1="427" x2="902" y2="445" opacity="0.52" />
+    <line class="thin" x1="930" y1="352" x2="930" y2="370" opacity="0.28" />
+    <line class="thin" x1="930" y1="400" x2="930" y2="418" opacity="0.40" />
+    <line class="thin" x1="930" y1="448" x2="930" y2="466" opacity="0.52" />
+    <line class="thin" x1="958" y1="373" x2="958" y2="391" opacity="0.28" />
+    <line class="thin" x1="958" y1="421" x2="958" y2="439" opacity="0.40" />
+    <line class="thin" x1="958" y1="319" x2="958" y2="337" opacity="0.52" />
+    <line class="thin" x1="986" y1="394" x2="986" y2="412" opacity="0.28" />
+    <line class="thin" x1="986" y1="442" x2="986" y2="460" opacity="0.40" />
+    <line class="thin" x1="986" y1="340" x2="986" y2="358" opacity="0.52" />
+    <line class="thin" x1="1014" y1="415" x2="1014" y2="433" opacity="0.28" />
+    <line class="thin" x1="1014" y1="313" x2="1014" y2="331" opacity="0.40" />
+    <line class="thin" x1="1014" y1="361" x2="1014" y2="379" opacity="0.52" />
+    <line class="thin" x1="1042" y1="436" x2="1042" y2="454" opacity="0.28" />
+    <line class="thin" x1="1042" y1="334" x2="1042" y2="352" opacity="0.40" />
+    <line class="thin" x1="1042" y1="382" x2="1042" y2="400" opacity="0.52" />
+    <line class="thin" x1="1070" y1="307" x2="1070" y2="325" opacity="0.28" />
+    <line class="thin" x1="1070" y1="355" x2="1070" y2="373" opacity="0.40" />
+    <line class="thin" x1="1070" y1="403" x2="1070" y2="421" opacity="0.52" />
+    <line class="thin" x1="1098" y1="328" x2="1098" y2="346" opacity="0.28" />
+    <line class="thin" x1="1098" y1="376" x2="1098" y2="394" opacity="0.40" />
+    <line class="thin" x1="1098" y1="424" x2="1098" y2="442" opacity="0.52" />
+    <line class="thin" x1="1126" y1="349" x2="1126" y2="367" opacity="0.28" />
+    <line class="thin" x1="1126" y1="397" x2="1126" y2="415" opacity="0.40" />
+    <line class="thin" x1="1126" y1="445" x2="1126" y2="463" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim20">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="410" x2="790" y2="428" opacity="0.28" />
+    <line class="thin" x1="790" y1="308" x2="790" y2="326" opacity="0.40" />
+    <line class="thin" x1="790" y1="356" x2="790" y2="374" opacity="0.52" />
+    <line class="thin" x1="818" y1="431" x2="818" y2="449" opacity="0.28" />
+    <line class="thin" x1="818" y1="329" x2="818" y2="347" opacity="0.40" />
+    <line class="thin" x1="818" y1="377" x2="818" y2="395" opacity="0.52" />
+    <line class="thin" x1="846" y1="302" x2="846" y2="320" opacity="0.28" />
+    <line class="thin" x1="846" y1="350" x2="846" y2="368" opacity="0.40" />
+    <line class="thin" x1="846" y1="398" x2="846" y2="416" opacity="0.52" />
+    <line class="thin" x1="874" y1="323" x2="874" y2="341" opacity="0.28" />
+    <line class="thin" x1="874" y1="371" x2="874" y2="389" opacity="0.40" />
+    <line class="thin" x1="874" y1="419" x2="874" y2="437" opacity="0.52" />
+    <line class="thin" x1="902" y1="344" x2="902" y2="362" opacity="0.28" />
+    <line class="thin" x1="902" y1="392" x2="902" y2="410" opacity="0.40" />
+    <line class="thin" x1="902" y1="440" x2="902" y2="458" opacity="0.52" />
+    <line class="thin" x1="930" y1="365" x2="930" y2="383" opacity="0.28" />
+    <line class="thin" x1="930" y1="413" x2="930" y2="431" opacity="0.40" />
+    <line class="thin" x1="930" y1="311" x2="930" y2="329" opacity="0.52" />
+    <line class="thin" x1="958" y1="386" x2="958" y2="404" opacity="0.28" />
+    <line class="thin" x1="958" y1="434" x2="958" y2="452" opacity="0.40" />
+    <line class="thin" x1="958" y1="332" x2="958" y2="350" opacity="0.52" />
+    <line class="thin" x1="986" y1="407" x2="986" y2="425" opacity="0.28" />
+    <line class="thin" x1="986" y1="305" x2="986" y2="323" opacity="0.40" />
+    <line class="thin" x1="986" y1="353" x2="986" y2="371" opacity="0.52" />
+    <line class="thin" x1="1014" y1="428" x2="1014" y2="446" opacity="0.28" />
+    <line class="thin" x1="1014" y1="326" x2="1014" y2="344" opacity="0.40" />
+    <line class="thin" x1="1014" y1="374" x2="1014" y2="392" opacity="0.52" />
+    <line class="thin" x1="1042" y1="449" x2="1042" y2="467" opacity="0.28" />
+    <line class="thin" x1="1042" y1="347" x2="1042" y2="365" opacity="0.40" />
+    <line class="thin" x1="1042" y1="395" x2="1042" y2="413" opacity="0.52" />
+    <line class="thin" x1="1070" y1="320" x2="1070" y2="338" opacity="0.28" />
+    <line class="thin" x1="1070" y1="368" x2="1070" y2="386" opacity="0.40" />
+    <line class="thin" x1="1070" y1="416" x2="1070" y2="434" opacity="0.52" />
+    <line class="thin" x1="1098" y1="341" x2="1098" y2="359" opacity="0.28" />
+    <line class="thin" x1="1098" y1="389" x2="1098" y2="407" opacity="0.40" />
+    <line class="thin" x1="1098" y1="437" x2="1098" y2="455" opacity="0.52" />
+    <line class="thin" x1="1126" y1="362" x2="1126" y2="380" opacity="0.28" />
+    <line class="thin" x1="1126" y1="410" x2="1126" y2="428" opacity="0.40" />
+    <line class="thin" x1="1126" y1="308" x2="1126" y2="326" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim21">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="423" x2="790" y2="441" opacity="0.28" />
+    <line class="thin" x1="790" y1="321" x2="790" y2="339" opacity="0.40" />
+    <line class="thin" x1="790" y1="369" x2="790" y2="387" opacity="0.52" />
+    <line class="thin" x1="818" y1="444" x2="818" y2="462" opacity="0.28" />
+    <line class="thin" x1="818" y1="342" x2="818" y2="360" opacity="0.40" />
+    <line class="thin" x1="818" y1="390" x2="818" y2="408" opacity="0.52" />
+    <line class="thin" x1="846" y1="315" x2="846" y2="333" opacity="0.28" />
+    <line class="thin" x1="846" y1="363" x2="846" y2="381" opacity="0.40" />
+    <line class="thin" x1="846" y1="411" x2="846" y2="429" opacity="0.52" />
+    <line class="thin" x1="874" y1="336" x2="874" y2="354" opacity="0.28" />
+    <line class="thin" x1="874" y1="384" x2="874" y2="402" opacity="0.40" />
+    <line class="thin" x1="874" y1="432" x2="874" y2="450" opacity="0.52" />
+    <line class="thin" x1="902" y1="357" x2="902" y2="375" opacity="0.28" />
+    <line class="thin" x1="902" y1="405" x2="902" y2="423" opacity="0.40" />
+    <line class="thin" x1="902" y1="303" x2="902" y2="321" opacity="0.52" />
+    <line class="thin" x1="930" y1="378" x2="930" y2="396" opacity="0.28" />
+    <line class="thin" x1="930" y1="426" x2="930" y2="444" opacity="0.40" />
+    <line class="thin" x1="930" y1="324" x2="930" y2="342" opacity="0.52" />
+    <line class="thin" x1="958" y1="399" x2="958" y2="417" opacity="0.28" />
+    <line class="thin" x1="958" y1="447" x2="958" y2="465" opacity="0.40" />
+    <line class="thin" x1="958" y1="345" x2="958" y2="363" opacity="0.52" />
+    <line class="thin" x1="986" y1="420" x2="986" y2="438" opacity="0.28" />
+    <line class="thin" x1="986" y1="318" x2="986" y2="336" opacity="0.40" />
+    <line class="thin" x1="986" y1="366" x2="986" y2="384" opacity="0.52" />
+    <line class="thin" x1="1014" y1="441" x2="1014" y2="459" opacity="0.28" />
+    <line class="thin" x1="1014" y1="339" x2="1014" y2="357" opacity="0.40" />
+    <line class="thin" x1="1014" y1="387" x2="1014" y2="405" opacity="0.52" />
+    <line class="thin" x1="1042" y1="312" x2="1042" y2="330" opacity="0.28" />
+    <line class="thin" x1="1042" y1="360" x2="1042" y2="378" opacity="0.40" />
+    <line class="thin" x1="1042" y1="408" x2="1042" y2="426" opacity="0.52" />
+    <line class="thin" x1="1070" y1="333" x2="1070" y2="351" opacity="0.28" />
+    <line class="thin" x1="1070" y1="381" x2="1070" y2="399" opacity="0.40" />
+    <line class="thin" x1="1070" y1="429" x2="1070" y2="447" opacity="0.52" />
+    <line class="thin" x1="1098" y1="354" x2="1098" y2="372" opacity="0.28" />
+    <line class="thin" x1="1098" y1="402" x2="1098" y2="420" opacity="0.40" />
+    <line class="thin" x1="1098" y1="300" x2="1098" y2="318" opacity="0.52" />
+    <line class="thin" x1="1126" y1="375" x2="1126" y2="393" opacity="0.28" />
+    <line class="thin" x1="1126" y1="423" x2="1126" y2="441" opacity="0.40" />
+    <line class="thin" x1="1126" y1="321" x2="1126" y2="339" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim22">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="436" x2="790" y2="454" opacity="0.28" />
+    <line class="thin" x1="790" y1="334" x2="790" y2="352" opacity="0.40" />
+    <line class="thin" x1="790" y1="382" x2="790" y2="400" opacity="0.52" />
+    <line class="thin" x1="818" y1="307" x2="818" y2="325" opacity="0.28" />
+    <line class="thin" x1="818" y1="355" x2="818" y2="373" opacity="0.40" />
+    <line class="thin" x1="818" y1="403" x2="818" y2="421" opacity="0.52" />
+    <line class="thin" x1="846" y1="328" x2="846" y2="346" opacity="0.28" />
+    <line class="thin" x1="846" y1="376" x2="846" y2="394" opacity="0.40" />
+    <line class="thin" x1="846" y1="424" x2="846" y2="442" opacity="0.52" />
+    <line class="thin" x1="874" y1="349" x2="874" y2="367" opacity="0.28" />
+    <line class="thin" x1="874" y1="397" x2="874" y2="415" opacity="0.40" />
+    <line class="thin" x1="874" y1="445" x2="874" y2="463" opacity="0.52" />
+    <line class="thin" x1="902" y1="370" x2="902" y2="388" opacity="0.28" />
+    <line class="thin" x1="902" y1="418" x2="902" y2="436" opacity="0.40" />
+    <line class="thin" x1="902" y1="316" x2="902" y2="334" opacity="0.52" />
+    <line class="thin" x1="930" y1="391" x2="930" y2="409" opacity="0.28" />
+    <line class="thin" x1="930" y1="439" x2="930" y2="457" opacity="0.40" />
+    <line class="thin" x1="930" y1="337" x2="930" y2="355" opacity="0.52" />
+    <line class="thin" x1="958" y1="412" x2="958" y2="430" opacity="0.28" />
+    <line class="thin" x1="958" y1="310" x2="958" y2="328" opacity="0.40" />
+    <line class="thin" x1="958" y1="358" x2="958" y2="376" opacity="0.52" />
+    <line class="thin" x1="986" y1="433" x2="986" y2="451" opacity="0.28" />
+    <line class="thin" x1="986" y1="331" x2="986" y2="349" opacity="0.40" />
+    <line class="thin" x1="986" y1="379" x2="986" y2="397" opacity="0.52" />
+    <line class="thin" x1="1014" y1="304" x2="1014" y2="322" opacity="0.28" />
+    <line class="thin" x1="1014" y1="352" x2="1014" y2="370" opacity="0.40" />
+    <line class="thin" x1="1014" y1="400" x2="1014" y2="418" opacity="0.52" />
+    <line class="thin" x1="1042" y1="325" x2="1042" y2="343" opacity="0.28" />
+    <line class="thin" x1="1042" y1="373" x2="1042" y2="391" opacity="0.40" />
+    <line class="thin" x1="1042" y1="421" x2="1042" y2="439" opacity="0.52" />
+    <line class="thin" x1="1070" y1="346" x2="1070" y2="364" opacity="0.28" />
+    <line class="thin" x1="1070" y1="394" x2="1070" y2="412" opacity="0.40" />
+    <line class="thin" x1="1070" y1="442" x2="1070" y2="460" opacity="0.52" />
+    <line class="thin" x1="1098" y1="367" x2="1098" y2="385" opacity="0.28" />
+    <line class="thin" x1="1098" y1="415" x2="1098" y2="433" opacity="0.40" />
+    <line class="thin" x1="1098" y1="313" x2="1098" y2="331" opacity="0.52" />
+    <line class="thin" x1="1126" y1="388" x2="1126" y2="406" opacity="0.28" />
+    <line class="thin" x1="1126" y1="436" x2="1126" y2="454" opacity="0.40" />
+    <line class="thin" x1="1126" y1="334" x2="1126" y2="352" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="idle_anim23">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <line class="thin" x1="790" y1="449" x2="790" y2="467" opacity="0.28" />
+    <line class="thin" x1="790" y1="347" x2="790" y2="365" opacity="0.40" />
+    <line class="thin" x1="790" y1="395" x2="790" y2="413" opacity="0.52" />
+    <line class="thin" x1="818" y1="320" x2="818" y2="338" opacity="0.28" />
+    <line class="thin" x1="818" y1="368" x2="818" y2="386" opacity="0.40" />
+    <line class="thin" x1="818" y1="416" x2="818" y2="434" opacity="0.52" />
+    <line class="thin" x1="846" y1="341" x2="846" y2="359" opacity="0.28" />
+    <line class="thin" x1="846" y1="389" x2="846" y2="407" opacity="0.40" />
+    <line class="thin" x1="846" y1="437" x2="846" y2="455" opacity="0.52" />
+    <line class="thin" x1="874" y1="362" x2="874" y2="380" opacity="0.28" />
+    <line class="thin" x1="874" y1="410" x2="874" y2="428" opacity="0.40" />
+    <line class="thin" x1="874" y1="308" x2="874" y2="326" opacity="0.52" />
+    <line class="thin" x1="902" y1="383" x2="902" y2="401" opacity="0.28" />
+    <line class="thin" x1="902" y1="431" x2="902" y2="449" opacity="0.40" />
+    <line class="thin" x1="902" y1="329" x2="902" y2="347" opacity="0.52" />
+    <line class="thin" x1="930" y1="404" x2="930" y2="422" opacity="0.28" />
+    <line class="thin" x1="930" y1="302" x2="930" y2="320" opacity="0.40" />
+    <line class="thin" x1="930" y1="350" x2="930" y2="368" opacity="0.52" />
+    <line class="thin" x1="958" y1="425" x2="958" y2="443" opacity="0.28" />
+    <line class="thin" x1="958" y1="323" x2="958" y2="341" opacity="0.40" />
+    <line class="thin" x1="958" y1="371" x2="958" y2="389" opacity="0.52" />
+    <line class="thin" x1="986" y1="446" x2="986" y2="464" opacity="0.28" />
+    <line class="thin" x1="986" y1="344" x2="986" y2="362" opacity="0.40" />
+    <line class="thin" x1="986" y1="392" x2="986" y2="410" opacity="0.52" />
+    <line class="thin" x1="1014" y1="317" x2="1014" y2="335" opacity="0.28" />
+    <line class="thin" x1="1014" y1="365" x2="1014" y2="383" opacity="0.40" />
+    <line class="thin" x1="1014" y1="413" x2="1014" y2="431" opacity="0.52" />
+    <line class="thin" x1="1042" y1="338" x2="1042" y2="356" opacity="0.28" />
+    <line class="thin" x1="1042" y1="386" x2="1042" y2="404" opacity="0.40" />
+    <line class="thin" x1="1042" y1="434" x2="1042" y2="452" opacity="0.52" />
+    <line class="thin" x1="1070" y1="359" x2="1070" y2="377" opacity="0.28" />
+    <line class="thin" x1="1070" y1="407" x2="1070" y2="425" opacity="0.40" />
+    <line class="thin" x1="1070" y1="305" x2="1070" y2="323" opacity="0.52" />
+    <line class="thin" x1="1098" y1="380" x2="1098" y2="398" opacity="0.28" />
+    <line class="thin" x1="1098" y1="428" x2="1098" y2="446" opacity="0.40" />
+    <line class="thin" x1="1098" y1="326" x2="1098" y2="344" opacity="0.52" />
+    <line class="thin" x1="1126" y1="401" x2="1126" y2="419" opacity="0.28" />
+    <line class="thin" x1="1126" y1="449" x2="1126" y2="467" opacity="0.40" />
+    <line class="thin" x1="1126" y1="347" x2="1126" y2="365" opacity="0.52" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+  </g>
+
+  <g id="anim00">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="390">L</text>
+  </g>
+  <g id="anim01">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="906" y="390">O</text>
+  </g>
+  <g id="anim02">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="984" y="390">G</text>
+  </g>
+  <g id="anim03">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="1040" y="390">I</text>
+  </g>
+  <g id="anim04">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="1092" y="390">N</text>
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="515">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="515">LOGIN FAILED</text>
+  </g>
+</svg>

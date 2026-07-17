@@ -55,12 +55,19 @@ In each state a specific object id will be rendered. Used ids are:
 - "verify"
 - "fail"
 - "backspace"
+- "idle_animXX" for frames of an animation that runs while the lock screen is
+  idle, before the user types anything. XX is an ascending number starting at
+  "00". These frames are redrawn by a timer.
 - "animXX" for frames of the typing animation, where XX is a ascending number
   starting at "00".
 - "fg" and "bg" for foreground and background
 
 If the id "sequential_animation" is present, animation frames will be
 rendered in ascending order instead of random order.
+
+If any "idle_animXX" frames are present, they are rendered continuously while
+idle at 12 frames per second by default. Use "--animation-fps FPS" to change
+that rate, or "--animation-fps 0" to disable the idle animation timer.
 
 If the id "remove_background" is present "idle", "verify" and "fail"
 won't be rendered when drawing the animation frames.
@@ -98,6 +105,9 @@ Walk through every login visualization:
 
 examples/Login/PreviewLoginVisualizations.sh
 
+The first five examples in that script use live idle animation and move even
+when no key is pressed.
+
 List available login visualizations:
 
 examples/Login/PreviewLoginVisualizations.sh --list
@@ -105,6 +115,11 @@ examples/Login/PreviewLoginVisualizations.sh --list
 The available login SVGs are:
 
 - Login_i3lock.svg
+- Login_LiveOrbit_i3lock.svg
+- Login_LiveWave_i3lock.svg
+- Login_LiveRain_i3lock.svg
+- Login_LiveScanner_i3lock.svg
+- Login_LiveBreath_i3lock.svg
 - Login_Bounce_i3lock.svg
 - Login_Pulse_i3lock.svg
 - Login_Bubble_i3lock.svg

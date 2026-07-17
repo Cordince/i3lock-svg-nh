@@ -69,6 +69,7 @@ static struct ev_timer *clear_pam_wrong_timeout;
 static struct ev_timer *clear_indicator_timeout;
 static struct ev_timer *dpms_timeout;
 static struct ev_timer *discard_passwd_timeout;
+static struct ev_timer *idle_animation_timer;
 extern unlock_state_t unlock_state;
 extern pam_state_t pam_state;
 
@@ -83,6 +84,9 @@ static uint8_t xkb_base_error;
 cairo_surface_t *img = NULL;
 RsvgHandle *svg = NULL;
 int anim_layer_count = 0;
+int idle_anim_layer_count = 0;
+int idle_anim_current_frame = 0;
+double idle_animation_fps = 12.0;
 bool remove_background = false;
 bool sequential_animation = false;
 bool tile = false;
@@ -210,6 +214,44 @@ ev_timer *stop_timer(ev_timer *timer_obj) {
         free(timer_obj);
     }
     return NULL;
+}
+
+static int count_svg_layers(const char *prefix) {
+    int count = 0;
+
+    for (; count < 100; count++) {
+        char anim_id[32];
+        snprintf(anim_id, sizeof(anim_id), "#%s%02d", prefix, count);
+
+        if (rsvg_handle_has_sub(svg, anim_id) != TRUE)
+            break;
+    }
+
+    return count;
+}
+
+static void idle_animation_cb(EV_P_ ev_timer *w, int revents) {
+    if (idle_anim_layer_count <= 0)
+        return;
+
+    idle_anim_current_frame++;
+    if (idle_anim_current_frame >= idle_anim_layer_count)
+        idle_anim_current_frame = 0;
+
+    redraw_screen();
+}
+
+static void start_idle_animation_timer(void) {
+    if (idle_anim_layer_count <= 0 || idle_animation_fps <= 0.0)
+        return;
+
+    const ev_tstamp interval = 1.0 / idle_animation_fps;
+    idle_animation_timer = calloc(sizeof(struct ev_timer), 1);
+    if (idle_animation_timer == NULL)
+        return;
+
+    ev_timer_init(idle_animation_timer, idle_animation_cb, interval, interval);
+    ev_timer_start(main_loop, idle_animation_timer);
 }
 
 /*
@@ -805,6 +847,7 @@ int main(int argc, char *argv[]) {
         {"ignore-empty-password", no_argument, NULL, 'e'},
         {"inactivity-timeout", required_argument, NULL, 'I'},
         {"indicator-svg", required_argument, NULL, 's'},
+        {"animation-fps", required_argument, NULL, 0},
         {"show-failed-attempts", no_argument, NULL, 'f'},
         {NULL, no_argument, NULL, 0}
     };
@@ -872,15 +915,21 @@ int main(int argc, char *argv[]) {
                 ignore_empty_password = true;
                 break;
             case 0:
-                if (strcmp(longopts[optind].name, "debug") == 0)
+                if (strcmp(longopts[optind].name, "debug") == 0) {
                     debug_mode = true;
+                } else if (strcmp(longopts[optind].name, "animation-fps") == 0) {
+                    char *endptr = NULL;
+                    idle_animation_fps = strtod(optarg, &endptr);
+                    if (endptr == optarg || *endptr != '\0' || idle_animation_fps < 0.0)
+                        errx(EXIT_FAILURE, "invalid animation fps, it must be a non-negative number\n");
+                }
                 break;
 /*            case 'f':
                 show_failed_attempts = true;
                 break;*/
             default:
                 errx(EXIT_FAILURE, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
-                                   " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]");
+                                   " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg] [--animation-fps fps]");
         }
     }
 
@@ -1009,14 +1058,8 @@ int main(int argc, char *argv[]) {
         errx(EXIT_FAILURE, "Could not load indicator SVG: %s", e->message);
     }
 
-    for(;anim_layer_count < 100; anim_layer_count++) {
-        char anim_id[9];
-        snprintf(anim_id, sizeof(anim_id), "#anim%02d", anim_layer_count);
-
-        if(rsvg_handle_has_sub(svg, anim_id) != TRUE) {
-            break;
-        }
-    }
+    anim_layer_count = count_svg_layers("anim");
+    idle_anim_layer_count = count_svg_layers("idle_anim");
 
     if(rsvg_handle_has_sub(svg, "#remove_background") == TRUE) {
         remove_background = true;
@@ -1072,6 +1115,8 @@ int main(int argc, char *argv[]) {
 
     ev_prepare_init(xcb_prepare, xcb_prepare_cb);
     ev_prepare_start(main_loop, xcb_prepare);
+
+    start_idle_animation_timer();
 
     /* Invoke the event callback once to catch all the events which were
      * received up until now. ev will only pick up new events (when the X11

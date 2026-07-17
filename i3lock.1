@@ -30,6 +30,8 @@ i3lock \- improved screen locker
 .RB [\|\-e\|]
 .RB [\|\-I\|]
 .RB [\|\-f\|]
+.RB [\|\-\-animation\-fps
+.IR fps \|]
 
 .SH DESCRIPTION
 .B i3lock
@@ -124,6 +126,14 @@ Show the number of failed attempts, if any.
 .B \-\-debug
 Enables debug logging.
 Note, that this will log the password used for authentication to stdout.
+
+.TP
+.BI \-\-animation\-fps\  fps
+Set the frame rate for SVG idle animation frames named
+.BR idle_anim00 ,
+.BR idle_anim01 ,
+and so on. The default is 12. Set this to 0 to disable the idle animation
+timer.
 
 .SH SEE ALSO
 .IR xautolock(1)

@@ -4,9 +4,15 @@ set -euo pipefail
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 ROOT_DIR=$(cd "$SCRIPT_DIR/../.." && pwd)
 I3LOCK=${I3LOCK:-"$ROOT_DIR/i3lock"}
+ANIMATION_FPS=${ANIMATION_FPS:-12}
 BACKGROUND="$SCRIPT_DIR/Login_Background_1920x1080_dark_letters.png"
 
 VARIANTS=(
+  "Live orbit|Login_LiveOrbit_i3lock.svg"
+  "Live wave|Login_LiveWave_i3lock.svg"
+  "Live rain|Login_LiveRain_i3lock.svg"
+  "Live scanner|Login_LiveScanner_i3lock.svg"
+  "Live breath|Login_LiveBreath_i3lock.svg"
   "Generic|Login_i3lock.svg"
   "Bounce|Login_Bounce_i3lock.svg"
   "Pulse|Login_Pulse_i3lock.svg"
@@ -34,6 +40,7 @@ usage() {
   printf 'Usage: %s [--list]\n' "$(basename "$0")"
   printf '\nRuns each Login i3lock visualization. Each preview locks the screen; unlock with your password to return to this script.\n'
   printf 'Set I3LOCK=/path/to/i3lock to override the binary.\n'
+  printf 'Set ANIMATION_FPS=12 to control live idle animation speed.\n'
 }
 
 if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
@@ -81,7 +88,7 @@ for index in "${!VARIANTS[@]}"; do
     exit 0
   fi
 
-  "$I3LOCK" -i "$BACKGROUND" -s "$svg"
+  "$I3LOCK" --animation-fps "$ANIMATION_FPS" -i "$BACKGROUND" -s "$svg"
   printf '\n'
 done
 

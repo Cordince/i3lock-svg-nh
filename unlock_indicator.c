@@ -58,6 +58,12 @@ extern RsvgHandle* svg;
 /* Number of animation layers in the SVG */
 extern int anim_layer_count;
 
+/* Number of idle animation layers in the SVG */
+extern int idle_anim_layer_count;
+
+/* Current idle animation frame */
+extern int idle_anim_current_frame;
+
 /* Remove background layers when drawing animation */
 extern bool remove_background;
 
@@ -148,17 +154,24 @@ xcb_pixmap_t draw_image(uint32_t *resolution) {
         cairo_fill(xcb_ctx);
     }
 
-    if (unlock_state >= STATE_KEY_PRESSED && unlock_indicator) {
+    if ((unlock_state >= STATE_KEY_PRESSED || idle_anim_layer_count > 0) && unlock_indicator) {
         cairo_scale(ctx, scaling_factor(), scaling_factor());
 
         rsvg_handle_render_cairo_sub(svg, ctx, "#bg");
 
+        if (unlock_state == STATE_STARTED && pam_state == STATE_PAM_IDLE &&
+            idle_anim_layer_count > 0) {
+            char idle_anim_id[16];
+            snprintf(idle_anim_id, sizeof(idle_anim_id), "#idle_anim%02d", idle_anim_current_frame);
+            rsvg_handle_render_cairo_sub(svg, ctx, idle_anim_id);
+        }
 
         /* Use the appropriate color for the different PAM states
          * (currently verifying, wrong password, or default) */
-        if (!(unlock_state == STATE_KEY_ACTIVE ||
+        if (unlock_state != STATE_STARTED &&
+            (!(unlock_state == STATE_KEY_ACTIVE ||
             unlock_state == STATE_BACKSPACE_ACTIVE) ||
-            !remove_background) {
+            !remove_background)) {
 
             switch (pam_state) {
                 case STATE_PAM_VERIFY:
@@ -176,7 +189,7 @@ xcb_pixmap_t draw_image(uint32_t *resolution) {
         /* After the user pressed any valid key or the backspace key, we
          * highlight a random part of the unlock indicator to confirm this
          * keypress. */
-        if (unlock_state == STATE_KEY_ACTIVE ||
+        if ((unlock_state == STATE_KEY_ACTIVE && anim_layer_count > 0) ||
             unlock_state == STATE_BACKSPACE_ACTIVE) {
 
             if(++current_frame >= anim_layer_count)
