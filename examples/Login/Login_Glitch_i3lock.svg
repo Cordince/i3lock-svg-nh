@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="login-glitch-i3lock" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.45" y="-0.55" width="1.9" height="2.1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#030303" flood-opacity="0.82" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 9px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .dimletter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #7a6b70; opacity: 0.32; }
+      .line { fill: none; stroke: #d40000; stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2.5px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.62; }
+      .mark { fill: #ff3535; opacity: 0.78; }
+      .soft { fill: #d40000; opacity: 0.22; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 48px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="anim00">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="393">L</text>
+        <text class="letter" x="906" y="393">O</text>
+        <text class="letter" x="984" y="393">G</text>
+        <text class="letter" x="1040" y="393">I</text>
+        <text class="letter" x="1092" y="393">N</text>
+    <g opacity="0.35" transform="translate(-8 -3)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="810" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="1050" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim01">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="388">L</text>
+        <text class="letter" x="906" y="388">O</text>
+        <text class="letter" x="984" y="388">G</text>
+        <text class="letter" x="1040" y="388">I</text>
+        <text class="letter" x="1092" y="388">N</text>
+    <g opacity="0.35" transform="translate(7 2)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="832" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="1034" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim02">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="385">L</text>
+        <text class="letter" x="906" y="385">O</text>
+        <text class="letter" x="984" y="385">G</text>
+        <text class="letter" x="1040" y="385">I</text>
+        <text class="letter" x="1092" y="385">N</text>
+    <g opacity="0.35" transform="translate(-5 5)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="854" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="1018" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim03">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="394">L</text>
+        <text class="letter" x="906" y="394">O</text>
+        <text class="letter" x="984" y="394">G</text>
+        <text class="letter" x="1040" y="394">I</text>
+        <text class="letter" x="1092" y="394">N</text>
+    <g opacity="0.35" transform="translate(9 -4)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="876" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="1002" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim04">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="392">L</text>
+        <text class="letter" x="906" y="392">O</text>
+        <text class="letter" x="984" y="392">G</text>
+        <text class="letter" x="1040" y="392">I</text>
+        <text class="letter" x="1092" y="392">N</text>
+    <g opacity="0.35" transform="translate(-3 -2)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="898" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="986" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim05">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="386">L</text>
+        <text class="letter" x="906" y="386">O</text>
+        <text class="letter" x="984" y="386">G</text>
+        <text class="letter" x="1040" y="386">I</text>
+        <text class="letter" x="1092" y="386">N</text>
+    <g opacity="0.35" transform="translate(6 4)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="920" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="970" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim06">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text>
+    <g opacity="0.35" transform="translate(-10 0)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="942" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="954" y="414" width="74" height="10" rx="5" />
+  </g>
+  <g id="anim07">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="395">L</text>
+        <text class="letter" x="906" y="395">O</text>
+        <text class="letter" x="984" y="395">G</text>
+        <text class="letter" x="1040" y="395">I</text>
+        <text class="letter" x="1092" y="395">N</text>
+    <g opacity="0.35" transform="translate(4 -5)"><text class="letter" x="834" y="390">L</text>
+        <text class="letter" x="906" y="390">O</text>
+        <text class="letter" x="984" y="390">G</text>
+        <text class="letter" x="1040" y="390">I</text>
+        <text class="letter" x="1092" y="390">N</text></g>
+    <rect class="mark" x="964" y="356" width="92" height="8" rx="4" />
+    <rect class="soft" x="938" y="414" width="74" height="10" rx="5" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="515">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="515">LOGIN FAILED</text>
+  </g>
+</svg>

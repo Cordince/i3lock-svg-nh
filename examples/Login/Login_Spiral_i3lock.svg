@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="login-spiral-i3lock" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.45" y="-0.55" width="1.9" height="2.1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#030303" flood-opacity="0.82" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 9px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .dimletter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #7a6b70; opacity: 0.32; }
+      .line { fill: none; stroke: #d40000; stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2.5px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.62; }
+      .mark { fill: #ff3535; opacity: 0.78; }
+      .soft { fill: #d40000; opacity: 0.22; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 48px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="anim00">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="978.0" cy="390.0" r="8.0" />
+    <circle class="mark" cx="982.3" cy="410.1" r="7.5" />
+    <circle class="mark" cx="964.4" cy="431.8" r="7.1" />
+    <circle class="mark" cx="928.3" cy="433.7" r="6.7" />
+    <circle class="mark" cx="895.4" cy="403.7" r="6.2" />
+    <circle class="mark" cx="892.5" cy="351.0" r="5.8" />
+    <circle class="mark" cx="932.2" cy="304.4" r="5.3" />
+    <circle class="mark" cx="1001.5" cy="296.8" r="4.8" />
+    <circle class="mark" cx="1064.1" cy="343.6" r="4.4" />
+    <text class="letter" x="834" y="390">L</text>
+  </g>
+  <g id="anim01">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="980.4" cy="398.2" r="8.0" />
+    <circle class="mark" cx="974.9" cy="420.6" r="7.5" />
+    <circle class="mark" cx="947.3" cy="434.2" r="7.1" />
+    <circle class="mark" cx="910.8" cy="420.7" r="6.7" />
+    <circle class="mark" cx="891.1" cy="377.8" r="6.2" />
+    <circle class="mark" cx="909.5" cy="325.4" r="5.8" />
+    <circle class="mark" cx="966.6" cy="296.2" r="5.3" />
+    <circle class="mark" cx="1036.3" cy="316.4" r="4.8" />
+    <circle class="mark" cx="1077.9" cy="385.9" r="4.4" />
+    <text class="letter" x="906" y="390">O</text>
+  </g>
+  <g id="anim02">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="978.7" cy="408.1" r="8.0" />
+    <circle class="mark" cx="962.7" cy="427.9" r="7.5" />
+    <circle class="mark" cx="929.2" cy="429.4" r="7.1" />
+    <circle class="mark" cx="898.9" cy="400.8" r="6.7" />
+    <circle class="mark" cx="897.2" cy="350.8" r="6.2" />
+    <circle class="mark" cx="936.3" cy="307.3" r="5.8" />
+    <circle class="mark" cx="1003.0" cy="301.9" r="5.3" />
+    <circle class="mark" cx="1062.0" cy="348.8" r="4.8" />
+    <circle class="mark" cx="1074.6" cy="431.7" r="4.4" />
+    <text class="letter" x="984" y="390">G</text>
+  </g>
+  <g id="anim03">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="972.2" cy="417.4" r="8.0" />
+    <circle class="mark" cx="947.0" cy="429.9" r="7.5" />
+    <circle class="mark" cx="913.2" cy="417.0" r="7.1" />
+    <circle class="mark" cx="895.4" cy="376.3" r="6.7" />
+    <circle class="mark" cx="914.2" cy="326.9" r="6.2" />
+    <circle class="mark" cx="969.4" cy="300.5" r="5.8" />
+    <circle class="mark" cx="1035.8" cy="321.7" r="5.3" />
+    <circle class="mark" cx="1074.0" cy="390.0" r="4.8" />
+    <circle class="mark" cx="1053.6" cy="474.3" r="4.4" />
+    <text class="letter" x="1040" y="390">I</text>
+  </g>
+  <g id="anim04">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="961.2" cy="424.0" r="8.0" />
+    <circle class="mark" cx="930.4" cy="425.2" r="7.5" />
+    <circle class="mark" cx="902.6" cy="398.1" r="7.1" />
+    <circle class="mark" cx="902.0" cy="350.9" r="6.7" />
+    <circle class="mark" cx="940.2" cy="310.4" r="6.2" />
+    <circle class="mark" cx="1004.1" cy="307.0" r="5.8" />
+    <circle class="mark" cx="1059.6" cy="353.7" r="5.3" />
+    <circle class="mark" cx="1069.4" cy="434.2" r="4.8" />
+    <circle class="mark" cx="1017.0" cy="506.8" r="4.4" />
+    <text class="letter" x="1092" y="390">N</text>
+  </g>
+  <g id="anim05">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="947.0" cy="425.7" r="8.0" />
+    <circle class="mark" cx="915.9" cy="413.5" r="7.5" />
+    <circle class="mark" cx="899.8" cy="375.0" r="7.1" />
+    <circle class="mark" cx="918.6" cy="328.7" r="6.7" />
+    <circle class="mark" cx="972.0" cy="304.8" r="6.2" />
+    <circle class="mark" cx="1035.1" cy="327.0" r="5.8" />
+    <circle class="mark" cx="1069.9" cy="393.8" r="5.3" />
+    <circle class="mark" cx="1047.8" cy="474.7" r="4.8" />
+    <circle class="mark" cx="969.3" cy="523.7" r="4.4" />
+    <text class="letter" x="834" y="390">L</text>
+  </g>
+  <g id="anim06">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="931.9" cy="421.2" r="8.0" />
+    <circle class="mark" cx="906.3" cy="395.6" r="7.5" />
+    <circle class="mark" cx="906.6" cy="351.2" r="7.1" />
+    <circle class="mark" cx="943.8" cy="313.7" r="6.7" />
+    <circle class="mark" cx="1005.0" cy="312.1" r="6.2" />
+    <circle class="mark" cx="1057.0" cy="358.5" r="5.8" />
+    <circle class="mark" cx="1064.1" cy="436.4" r="5.3" />
+    <circle class="mark" cx="1011.2" cy="505.1" r="4.8" />
+    <circle class="mark" cx="917.4" cy="521.2" r="4.4" />
+    <text class="letter" x="906" y="390">O</text>
+  </g>
+  <g id="anim07">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="918.7" cy="410.2" r="8.0" />
+    <circle class="mark" cx="904.2" cy="374.0" r="7.5" />
+    <circle class="mark" cx="922.9" cy="330.6" r="7.1" />
+    <circle class="mark" cx="974.2" cy="309.2" r="6.7" />
+    <circle class="mark" cx="1034.1" cy="332.1" r="6.2" />
+    <circle class="mark" cx="1065.7" cy="397.4" r="5.8" />
+    <circle class="mark" cx="1042.0" cy="474.9" r="5.3" />
+    <circle class="mark" cx="964.5" cy="519.9" r="4.8" />
+    <circle class="mark" cx="868.7" cy="498.8" r="4.4" />
+    <text class="letter" x="984" y="390">G</text>
+  </g>
+  <g id="anim08">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="910.1" cy="393.5" r="8.0" />
+    <circle class="mark" cx="911.1" cy="351.8" r="7.5" />
+    <circle class="mark" cx="947.2" cy="317.1" r="7.1" />
+    <circle class="mark" cx="1005.6" cy="317.1" r="6.7" />
+    <circle class="mark" cx="1054.2" cy="363.0" r="6.2" />
+    <circle class="mark" cx="1058.9" cy="438.2" r="5.8" />
+    <circle class="mark" cx="1005.7" cy="503.1" r="5.3" />
+    <circle class="mark" cx="914.2" cy="515.9" r="4.8" />
+    <circle class="mark" cx="831.1" cy="458.5" r="4.4" />
+    <text class="letter" x="1040" y="390">I</text>
+  </g>
+  <g id="anim09">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <circle class="mark" cx="908.6" cy="373.3" r="8.0" />
+    <circle class="mark" cx="927.0" cy="332.8" r="7.5" />
+    <circle class="mark" cx="976.2" cy="313.7" r="7.1" />
+    <circle class="mark" cx="1032.8" cy="337.1" r="6.7" />
+    <circle class="mark" cx="1061.4" cy="400.7" r="6.2" />
+    <circle class="mark" cx="1036.3" cy="474.7" r="5.8" />
+    <circle class="mark" cx="960.0" cy="516.0" r="5.3" />
+    <circle class="mark" cx="867.7" cy="492.6" r="4.8" />
+    <circle class="mark" cx="810.8" cy="405.7" r="4.4" />
+    <text class="letter" x="1092" y="390">N</text>
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="515">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="515">LOGIN FAILED</text>
+  </g>
+</svg>

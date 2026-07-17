@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="login-shatter-i3lock" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.45" y="-0.55" width="1.9" height="2.1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#030303" flood-opacity="0.82" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 9px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .dimletter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #7a6b70; opacity: 0.32; }
+      .line { fill: none; stroke: #d40000; stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2.5px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.62; }
+      .mark { fill: #ff3535; opacity: 0.78; }
+      .soft { fill: #d40000; opacity: 0.22; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 48px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="anim00">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="390">L</text>
+    <path class="soft" d="M 872.0,390.0 l 9.2,7.7 l 3.3,-8.4 Z" />
+    <path class="soft" d="M 866.7,430.4 l -0.2,12.0 l 8.6,-2.7 Z" />
+    <path class="soft" d="M 820.3,454.6 l -9.5,7.4 l 7.5,4.9 Z" />
+    <path class="soft" d="M 800.1,407.3 l -11.7,-2.7 l 0.9,9.0 Z" />
+    <path class="soft" d="M 786.5,368.8 l -5.2,-10.8 l -6.4,6.3 Z" />
+    <path class="soft" d="M 816.9,326.2 l 5.1,-10.9 l -8.9,-1.0 Z" />
+    <path class="soft" d="M 856.3,359.3 l 11.6,-2.9 l -4.9,-7.6 Z" />
+  </g>
+  <g id="anim01">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="906" y="390">O</text>
+    <path class="soft" d="M 942.3,401.1 l 6.5,10.1 l 5.6,-7.1 Z" />
+    <path class="soft" d="M 925.5,438.2 l -3.7,11.4 l 9.0,-0.1 Z" />
+    <path class="soft" d="M 874.0,447.7 l -11.2,4.3 l 5.8,6.9 Z" />
+    <path class="soft" d="M 868.6,396.6 l -10.4,-6.0 l -1.8,8.8 Z" />
+    <path class="soft" d="M 866.8,355.9 l -1.9,-11.9 l -8.0,4.2 Z" />
+    <path class="soft" d="M 908.3,324.0 l 8.0,-8.9 l -8.3,-3.6 Z" />
+    <path class="soft" d="M 936.3,367.1 l 12.0,0.7 l -2.4,-8.7 Z" />
+  </g>
+  <g id="anim02">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="984" y="390">G</text>
+    <path class="soft" d="M 1015.5,411.2 l 3.3,11.5 l 7.4,-5.1 Z" />
+    <path class="soft" d="M 988.5,441.8 l -6.9,9.8 l 8.6,2.5 Z" />
+    <path class="soft" d="M 936.5,435.8 l -12.0,0.8 l 3.5,8.3 Z" />
+    <path class="soft" d="M 946.3,385.4 l -8.2,-8.8 l -4.3,7.9 Z" />
+    <path class="soft" d="M 956.4,345.9 l 1.7,-11.9 l -8.8,1.7 Z" />
+    <path class="soft" d="M 1005.5,327.6 l 10.3,-6.2 l -6.9,-5.8 Z" />
+    <path class="soft" d="M 1019.7,377.0 l 11.3,4.1 l 0.2,-9.0 Z" />
+  </g>
+  <g id="anim03">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="1040" y="390">I</text>
+    <path class="soft" d="M 1063.9,419.5 l -0.2,12.0 l 8.6,-2.7 Z" />
+    <path class="soft" d="M 1029.2,440.9 l -9.5,7.4 l 7.5,4.9 Z" />
+    <path class="soft" d="M 981.2,420.0 l -11.7,-2.7 l 0.9,9.0 Z" />
+    <path class="soft" d="M 1005.3,374.5 l -5.2,-10.8 l -6.4,6.3 Z" />
+    <path class="soft" d="M 1026.5,339.8 l 5.1,-10.9 l -8.9,-1.0 Z" />
+    <path class="soft" d="M 1078.8,336.6 l 11.6,-2.9 l -4.9,-7.6 Z" />
+    <path class="soft" d="M 1077.9,388.0 l 9.6,7.2 l 2.8,-8.5 Z" />
+  </g>
+  <g id="anim04">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="1092" y="390">N</text>
+    <path class="soft" d="M 1106.2,425.2 l -3.7,11.4 l 9.0,-0.1 Z" />
+    <path class="soft" d="M 1066.8,435.5 l -11.2,4.3 l 5.8,6.9 Z" />
+    <path class="soft" d="M 1027.0,401.5 l -10.4,-6.0 l -1.8,8.8 Z" />
+    <path class="soft" d="M 1063.3,365.1 l -1.9,-11.9 l -8.0,4.2 Z" />
+    <path class="soft" d="M 1093.8,338.0 l 8.0,-8.9 l -8.3,-3.6 Z" />
+    <path class="soft" d="M 1144.7,350.3 l 12.0,0.7 l -2.4,-8.7 Z" />
+    <path class="soft" d="M 1128.9,399.2 l 7.0,9.7 l 5.2,-7.4 Z" />
+  </g>
+  <g id="anim05">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="834" y="390">L</text>
+    <path class="soft" d="M 837.3,427.9 l -6.9,9.8 l 8.6,2.5 Z" />
+    <path class="soft" d="M 796.6,426.1 l -12.0,0.8 l 3.5,8.3 Z" />
+    <path class="soft" d="M 768.5,382.0 l -8.2,-8.8 l -4.3,7.9 Z" />
+    <path class="soft" d="M 813.9,357.8 l 1.7,-11.9 l -8.8,1.7 Z" />
+    <path class="soft" d="M 850.9,340.8 l 10.3,-6.2 l -6.9,-5.8 Z" />
+    <path class="soft" d="M 896.0,367.4 l 11.3,4.1 l 0.2,-9.0 Z" />
+    <path class="soft" d="M 866.6,409.6 l 3.9,11.4 l 7.1,-5.5 Z" />
+  </g>
+  <g id="anim06">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="906" y="390">O</text>
+    <path class="soft" d="M 898.1,427.2 l -9.5,7.4 l 7.5,4.9 Z" />
+    <path class="soft" d="M 859.7,413.6 l -11.7,-2.7 l 0.9,9.0 Z" />
+    <path class="soft" d="M 845.7,363.2 l -5.2,-10.8 l -6.4,6.3 Z" />
+    <path class="soft" d="M 896.2,353.3 l 5.1,-10.9 l -8.9,-1.0 Z" />
+    <path class="soft" d="M 936.6,347.9 l 11.6,-2.9 l -4.9,-7.6 Z" />
+    <path class="soft" d="M 971.9,386.5 l 9.6,7.2 l 2.8,-8.5 Z" />
+    <path class="soft" d="M 931.4,418.2 l 0.4,12.0 l 8.4,-3.2 Z" />
+  </g>
+  <g id="anim07">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="984" y="390">G</text>
+    <path class="soft" d="M 965.6,423.2 l -11.2,4.3 l 5.8,6.9 Z" />
+    <path class="soft" d="M 932.8,399.0 l -10.4,-6.0 l -1.8,8.8 Z" />
+    <path class="soft" d="M 934.2,346.7 l -1.9,-11.9 l -8.0,4.2 Z" />
+    <path class="soft" d="M 985.3,352.0 l 8.0,-8.9 l -8.3,-3.6 Z" />
+    <path class="soft" d="M 1025.5,358.7 l 12.0,0.7 l -2.4,-8.7 Z" />
+    <path class="soft" d="M 1048.0,406.0 l 7.0,9.7 l 5.2,-7.4 Z" />
+    <path class="soft" d="M 1000.1,424.4 l -3.1,11.6 l 9.0,-0.6 Z" />
+  </g>
+  <g id="anim08">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="1040" y="390">I</text>
+    <path class="soft" d="M 1012.7,416.4 l -12.0,0.8 l 3.5,8.3 Z" />
+    <path class="soft" d="M 988.4,383.7 l -8.2,-8.8 l -4.3,7.9 Z" />
+    <path class="soft" d="M 1005.0,334.0 l 1.7,-11.9 l -8.8,1.7 Z" />
+    <path class="soft" d="M 1052.4,354.1 l 10.3,-6.2 l -6.9,-5.8 Z" />
+    <path class="soft" d="M 1088.9,372.2 l 11.3,4.1 l 0.2,-9.0 Z" />
+    <path class="soft" d="M 1096.6,424.0 l 3.9,11.4 l 7.1,-5.5 Z" />
+    <path class="soft" d="M 1045.3,427.6 l -6.4,10.2 l 8.8,2.1 Z" />
+  </g>
+  <g id="anim09">
+    <text class="dimletter" x="834" y="390">L</text>
+        <text class="dimletter" x="906" y="390">O</text>
+        <text class="dimletter" x="984" y="390">G</text>
+        <text class="dimletter" x="1040" y="390">I</text>
+        <text class="dimletter" x="1092" y="390">N</text>
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+    <text class="letter" x="1092" y="390">N</text>
+    <path class="soft" d="M 1058.1,407.3 l -11.7,-2.7 l 0.9,9.0 Z" />
+    <path class="soft" d="M 1044.5,368.8 l -5.2,-10.8 l -6.4,6.3 Z" />
+    <path class="soft" d="M 1074.9,326.2 l 5.1,-10.9 l -8.9,-1.0 Z" />
+    <path class="soft" d="M 1114.3,359.3 l 11.6,-2.9 l -4.9,-7.6 Z" />
+    <path class="soft" d="M 1143.9,387.3 l 9.6,7.2 l 2.8,-8.5 Z" />
+    <path class="soft" d="M 1136.2,439.0 l 0.4,12.0 l 8.4,-3.2 Z" />
+    <path class="soft" d="M 1086.1,427.5 l -9.1,7.9 l 7.8,4.5 Z" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="515">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="515">LOGIN FAILED</text>
+  </g>
+</svg>

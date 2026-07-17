@@ -92,6 +92,40 @@ Generic login example:
 ./i3lock -i examples/Login/Login_Background_1920x1080_dark_letters.png \
          -s examples/Login/Login_i3lock.svg
 
+Additional login visualizations:
+
+Walk through every login visualization:
+
+examples/Login/PreviewLoginVisualizations.sh
+
+List available login visualizations:
+
+examples/Login/PreviewLoginVisualizations.sh --list
+
+The available login SVGs are:
+
+- Login_i3lock.svg
+- Login_Bounce_i3lock.svg
+- Login_Pulse_i3lock.svg
+- Login_Bubble_i3lock.svg
+- Login_UnderlineSweep_i3lock.svg
+- Login_Orbit_i3lock.svg
+- Login_Radar_i3lock.svg
+- Login_Equalizer_i3lock.svg
+- Login_Glitch_i3lock.svg
+- Login_Scanlines_i3lock.svg
+- Login_Constellation_i3lock.svg
+- Login_Circuit_i3lock.svg
+- Login_Spiral_i3lock.svg
+- Login_Shatter_i3lock.svg
+- Login_NeonBox_i3lock.svg
+- Login_Waveform_i3lock.svg
+- Login_Comet_i3lock.svg
+- Login_Cascade_i3lock.svg
+- Login_Bloom_i3lock.svg
+- Login_Morse_i3lock.svg
+- Login_Hex_i3lock.svg
+
 Ideas for animations:
 --------------------
 The planets - displays solar system orbits with the various planets

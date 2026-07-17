@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="login-waveform-i3lock" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.45" y="-0.55" width="1.9" height="2.1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#030303" flood-opacity="0.82" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 9px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .dimletter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 104px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #7a6b70; opacity: 0.32; }
+      .line { fill: none; stroke: #d40000; stroke-width: 5px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2.5px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.62; }
+      .mark { fill: #ff3535; opacity: 0.78; }
+      .soft { fill: #d40000; opacity: 0.22; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 48px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="anim00">
+    <polyline class="line" points="810.0,468.0 835.0,480.5 860.0,483.6 885.0,474.8 910.0,460.9 935.0,452.4 960.0,455.6 985.0,468.3 1010.0,480.7 1035.0,483.5 1060.0,474.6 1085.0,460.7 1110.0,452.3" />
+    <text class="letter" x="834" y="390.0">L</text>
+    <text class="letter" x="906" y="407.23319201180465">O</text>
+    <text class="letter" x="984" y="411.4246478793203">G</text>
+    <text class="letter" x="1040" y="399.40235736514427">I</text>
+    <text class="letter" x="1092" y="380.2645502475132">N</text>
+  </g>
+  <g id="anim01">
+    <polyline class="line" points="810.0,480.5 835.0,483.6 860.0,474.8 885.0,460.9 910.0,452.4 935.0,455.6 960.0,468.3 985.0,480.7 1010.0,483.5 1035.0,474.6 1060.0,460.7 1085.0,452.3 1110.0,455.8" />
+    <text class="letter" x="834" y="407.23319201180465">L</text>
+    <text class="letter" x="906" y="411.4246478793203">O</text>
+    <text class="letter" x="984" y="399.40235736514427">G</text>
+    <text class="letter" x="1040" y="380.2645502475132">I</text>
+    <text class="letter" x="1092" y="368.49433741136784">N</text>
+  </g>
+  <g id="anim02">
+    <polyline class="line" points="810.0,483.6 835.0,474.8 860.0,460.9 885.0,452.4 910.0,455.6 935.0,468.3 960.0,480.7 985.0,483.5 1010.0,474.6 1035.0,460.7 1060.0,452.3 1085.0,455.8 1110.0,468.5" />
+    <text class="letter" x="834" y="411.4246478793203">L</text>
+    <text class="letter" x="906" y="399.40235736514427">O</text>
+    <text class="letter" x="984" y="380.2645502475132">G</text>
+    <text class="letter" x="1040" y="368.49433741136784">I</text>
+    <text class="letter" x="1092" y="372.9991812737683">N</text>
+  </g>
+  <g id="anim03">
+    <polyline class="line" points="810.0,474.8 835.0,460.9 860.0,452.4 885.0,455.6 910.0,468.3 935.0,480.7 960.0,483.5 985.0,474.6 1010.0,460.7 1035.0,452.3 1060.0,455.8 1085.0,468.5 1110.0,480.9" />
+    <text class="letter" x="834" y="399.40235736514427">L</text>
+    <text class="letter" x="906" y="380.2645502475132">O</text>
+    <text class="letter" x="984" y="368.49433741136784">G</text>
+    <text class="letter" x="1040" y="372.9991812737683">I</text>
+    <text class="letter" x="1092" y="390.36990581065567">N</text>
+  </g>
+  <g id="anim04">
+    <polyline class="line" points="810.0,460.9 835.0,452.4 860.0,455.6 885.0,468.3 910.0,480.7 935.0,483.5 960.0,474.6 985.0,460.7 1010.0,452.3 1035.0,455.8 1060.0,468.5 1085.0,480.9 1110.0,483.5" />
+    <text class="letter" x="834" y="380.2645502475132">L</text>
+    <text class="letter" x="906" y="368.49433741136784">O</text>
+    <text class="letter" x="984" y="372.9991812737683">G</text>
+    <text class="letter" x="1040" y="390.36990581065567">I</text>
+    <text class="letter" x="1092" y="407.4606930046814">N</text>
+  </g>
+  <g id="anim05">
+    <polyline class="line" points="810.0,452.4 835.0,455.6 860.0,468.3 885.0,480.7 910.0,483.5 935.0,474.6 960.0,460.7 985.0,452.3 1010.0,455.8 1035.0,468.5 1060.0,480.9 1085.0,483.5 1110.0,474.3" />
+    <text class="letter" x="834" y="368.49433741136784">L</text>
+    <text class="letter" x="906" y="372.9991812737683">O</text>
+    <text class="letter" x="984" y="390.36990581065567">G</text>
+    <text class="letter" x="1040" y="407.4606930046814">I</text>
+    <text class="letter" x="1092" y="411.3375758385919">N</text>
+  </g>
+  <g id="anim06">
+    <polyline class="line" points="810.0,455.6 835.0,468.3 860.0,480.7 885.0,483.5 910.0,474.6 935.0,460.7 960.0,452.3 985.0,455.8 1010.0,468.5 1035.0,480.9 1060.0,483.5 1085.0,474.3 1110.0,460.4" />
+    <text class="letter" x="834" y="372.9991812737683">L</text>
+    <text class="letter" x="906" y="390.36990581065567">O</text>
+    <text class="letter" x="984" y="407.4606930046814">G</text>
+    <text class="letter" x="1040" y="411.3375758385919">I</text>
+    <text class="letter" x="1092" y="399.06660667531867">N</text>
+  </g>
+  <g id="anim07">
+    <polyline class="line" points="810.0,468.3 835.0,480.7 860.0,483.5 885.0,474.6 910.0,460.7 935.0,452.3 960.0,455.8 985.0,468.5 1010.0,480.9 1035.0,483.5 1060.0,474.3 1085.0,460.4 1110.0,452.3" />
+    <text class="letter" x="834" y="390.36990581065567">L</text>
+    <text class="letter" x="906" y="407.4606930046814">O</text>
+    <text class="letter" x="984" y="411.3375758385919">G</text>
+    <text class="letter" x="1040" y="399.06660667531867">I</text>
+    <text class="letter" x="1092" y="379.93421033694295">N</text>
+  </g>
+  <g id="anim08">
+    <polyline class="line" points="810.0,480.7 835.0,483.5 860.0,474.6 885.0,460.7 910.0,452.3 935.0,455.8 960.0,468.5 985.0,480.9 1010.0,483.5 1035.0,474.3 1060.0,460.4 1085.0,452.3 1110.0,456.0" />
+    <text class="letter" x="834" y="407.4606930046814">L</text>
+    <text class="letter" x="906" y="411.3375758385919">O</text>
+    <text class="letter" x="984" y="399.06660667531867">G</text>
+    <text class="letter" x="1040" y="379.93421033694295">I</text>
+    <text class="letter" x="1092" y="368.4194029385372">N</text>
+  </g>
+  <g id="anim09">
+    <polyline class="line" points="810.0,483.5 835.0,474.6 860.0,460.7 885.0,452.3 910.0,455.8 935.0,468.5 960.0,480.9 985.0,483.5 1010.0,474.3 1035.0,460.4 1060.0,452.3 1085.0,456.0 1110.0,468.8" />
+    <text class="letter" x="834" y="411.3375758385919">L</text>
+    <text class="letter" x="906" y="399.06660667531867">O</text>
+    <text class="letter" x="984" y="379.93421033694295">G</text>
+    <text class="letter" x="1040" y="368.4194029385372">I</text>
+    <text class="letter" x="1092" y="373.2363611537813">N</text>
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="515">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="468" x2="1110" y2="468" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="515">LOGIN FAILED</text>
+  </g>
+</svg>
