@@ -38,7 +38,7 @@ VARIANTS=(
 
 usage() {
   printf 'Usage: %s [--list]\n' "$(basename "$0")"
-  printf '\nRuns each Login i3lock visualization. Each preview locks the screen; unlock with your password to return to this script.\n'
+  printf '\nRuns each Login i3lock visualization in no-fork mode. Each preview locks the screen; unlock with your password to return to this script.\n'
   printf 'Set I3LOCK=/path/to/i3lock to override the binary.\n'
   printf 'Set ANIMATION_FPS=12 to control live idle animation speed.\n'
 }
@@ -69,7 +69,7 @@ if [[ ! -f "$BACKGROUND" ]]; then
 fi
 
 printf 'Login visualization preview runner\n'
-printf 'Each step locks the screen. Type your password to return, then continue to the next visualization.\n\n'
+printf 'Each step runs i3lock -n. Type your password to return, then continue to the next visualization.\n\n'
 
 for index in "${!VARIANTS[@]}"; do
   entry=${VARIANTS[$index]}
@@ -88,7 +88,7 @@ for index in "${!VARIANTS[@]}"; do
     exit 0
   fi
 
-  "$I3LOCK" --animation-fps "$ANIMATION_FPS" -i "$BACKGROUND" -s "$svg"
+  "$I3LOCK" -n --animation-fps "$ANIMATION_FPS" -i "$BACKGROUND" -s "$svg"
   printf '\n'
 done
 
