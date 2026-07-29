@@ -66,8 +66,9 @@ If the id "sequential_animation" is present, animation frames will be
 rendered in ascending order instead of random order.
 
 If any "idle_animXX" frames are present, they are rendered continuously while
-idle at 12 frames per second by default. Use "--animation-fps FPS" to change
-that rate, or "--animation-fps 0" to disable the idle animation timer.
+PAM is idle, including before typing and while the user is entering a password,
+at 12 frames per second by default. Use "--animation-fps FPS" to change that
+rate, or "--animation-fps 0" to disable the idle animation timer.
 
 If the id "remove_background" is present "idle", "verify" and "fail"
 won't be rendered when drawing the animation frames.

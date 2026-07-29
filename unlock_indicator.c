@@ -159,8 +159,7 @@ xcb_pixmap_t draw_image(uint32_t *resolution) {
 
         rsvg_handle_render_cairo_sub(svg, ctx, "#bg");
 
-        if (unlock_state == STATE_STARTED && pam_state == STATE_PAM_IDLE &&
-            idle_anim_layer_count > 0) {
+        if (pam_state == STATE_PAM_IDLE && idle_anim_layer_count > 0) {
             char idle_anim_id[16];
             snprintf(idle_anim_id, sizeof(idle_anim_id), "#idle_anim%02d", idle_anim_current_frame);
             rsvg_handle_render_cairo_sub(svg, ctx, idle_anim_id);
@@ -181,7 +180,8 @@ xcb_pixmap_t draw_image(uint32_t *resolution) {
                     rsvg_handle_render_cairo_sub(svg, ctx, "#fail");
                     break;
                 default:
-                    rsvg_handle_render_cairo_sub(svg, ctx, "#idle");
+                    if (idle_anim_layer_count == 0)
+                        rsvg_handle_render_cairo_sub(svg, ctx, "#idle");
                     break;
             }
         }

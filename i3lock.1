@@ -132,8 +132,9 @@ Note, that this will log the password used for authentication to stdout.
 Set the frame rate for SVG idle animation frames named
 .BR idle_anim00 ,
 .BR idle_anim01 ,
-and so on. The default is 12. Set this to 0 to disable the idle animation
-timer.
+and so on. These frames run while PAM is idle, including while the user is
+typing a password. The default is 12. Set this to 0 to disable the idle
+animation timer.
 
 .SH SEE ALSO
 .IR xautolock(1)
