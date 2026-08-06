@@ -55,9 +55,9 @@ In each state a specific object id will be rendered. Used ids are:
 - "verify"
 - "fail"
 - "backspace"
-- "idle_animXX" for frames of an animation that runs while the lock screen is
-  idle, before the user types anything. XX is an ascending number starting at
-  "00". These frames are redrawn by a timer.
+- "idle_animXX" for frames of an animation that runs while PAM is idle,
+  including before typing and while the user enters a password. XX is an
+  ascending number starting at "00". These frames are redrawn by a timer.
 - "animXX" for frames of the typing animation, where XX is a ascending number
   starting at "00".
 - "fg" and "bg" for foreground and background
@@ -141,6 +141,47 @@ The available login SVGs are:
 - Login_Bloom_i3lock.svg
 - Login_Morse_i3lock.svg
 - Login_Hex_i3lock.svg
+
+Ambient pulse login example:
+
+examples/LoginAmbientPulse/AmbientPulseLock.sh
+
+This is a separate 96-frame live idle animation. It keeps the LOGIN header
+quiet near the top and puts slow pulsing motion in the side and lower screen
+areas. Set ANIMATION_FPS=24 or ANIMATION_FPS=12 before running the script to
+adjust smoothness and speed. Values much higher than 24 usually make this
+renderer spend more time repainting full-screen frames than showing visibly
+smoother motion.
+
+Ambient gallery examples:
+
+examples/LoginAmbientGallery/PreviewAmbientGallery.sh
+
+Run one gallery example directly:
+
+examples/LoginAmbientGallery/PreviewAmbientGallery.sh RingField
+
+List available ambient gallery visualizations:
+
+examples/LoginAmbientGallery/PreviewAmbientGallery.sh --list
+
+The gallery examples all share the Ambient Pulse background and use 72-frame
+live idle animations with typing overlays:
+
+- Ambient_RingField_i3lock.svg
+- Ambient_BreathingGrid_i3lock.svg
+- Ambient_EqualizerField_i3lock.svg
+- Ambient_ConstellationDrift_i3lock.svg
+- Ambient_RadarSweep_i3lock.svg
+- Ambient_CometTrails_i3lock.svg
+- Ambient_CircuitFlow_i3lock.svg
+- Ambient_WaveGarden_i3lock.svg
+- Ambient_HexBreath_i3lock.svg
+- Ambient_ScanCurtains_i3lock.svg
+- Ambient_Orbitals_i3lock.svg
+- Ambient_DataRain_i3lock.svg
+- Ambient_TidePools_i3lock.svg
+- Ambient_SignalArcs_i3lock.svg
 
 Ideas for animations:
 --------------------

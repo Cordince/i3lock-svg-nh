@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="ambient-HexBreath" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.6" y="-0.7" width="2.2" height="2.4">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#020202" flood-opacity="0.84" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .login-dim { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #76666b; opacity: 0.42; }
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .fine { fill: none; stroke: #d40000; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #d40000; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.58; }
+      .soft { fill: #d40000; opacity: 0.11; }
+      .node { fill: #ff3535; opacity: 0.72; }
+      .node-dim { fill: #7a101b; opacity: 0.42; }
+      .panel { fill: #d40000; opacity: 0.16; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 46px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="304.2,675.5 260.0,701.0 215.8,675.5 215.8,624.5 260.0,599.0 304.2,624.5" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="5.5" opacity="0.5" />
+    <polyline class="thin" points="471.6,869.8 420.0,899.6 368.4,869.8 368.4,810.2 420.0,780.4 471.6,810.2" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="875.3,896.9 820.0,928.9 764.7,896.9 764.7,833.1 820.0,801.1 875.3,833.1" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1173.5,820.9 1120.0,851.8 1066.5,820.9 1066.5,759.1 1120.0,728.2 1173.5,759.1" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.6" opacity="0.6" />
+    <polyline class="thin" points="1557.1,887.2 1510.0,914.4 1462.9,887.2 1462.9,832.8 1510.0,805.6 1557.1,832.8" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.1" opacity="0.5" />
+    <polyline class="thin" points="1729.2,672.6 1690.0,695.2 1650.8,672.6 1650.8,627.4 1690.0,604.8 1729.2,627.4" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.4" opacity="0.4" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="305.1,676.1 260.0,702.1 214.9,676.1 214.9,623.9 260.0,597.9 305.1,623.9" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="5.7" opacity="0.5" />
+    <polyline class="thin" points="472.3,870.2 420.0,900.4 367.7,870.2 367.7,809.8 420.0,779.6 472.3,809.8" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="875.4,897.0 820.0,929.0 764.6,897.0 764.6,833.0 820.0,801.0 875.4,833.0" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1172.9,820.6 1120.0,851.1 1067.1,820.6 1067.1,759.4 1120.0,728.9 1172.9,759.4" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="1556.1,886.6 1510.0,913.3 1463.9,886.6 1463.9,833.4 1510.0,806.7 1556.1,833.4" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="5.9" opacity="0.5" />
+    <polyline class="thin" points="1728.3,672.1 1690.0,694.3 1651.7,672.1 1651.7,627.9 1690.0,605.7 1728.3,627.9" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.2" opacity="0.3" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="306.1,676.6 260.0,703.3 213.9,676.6 213.9,623.4 260.0,596.7 306.1,623.4" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="5.9" opacity="0.5" />
+    <polyline class="thin" points="472.9,870.6 420.0,901.1 367.1,870.6 367.1,809.4 420.0,778.9 472.9,809.4" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="875.4,897.0 820.0,929.0 764.6,897.0 764.6,833.0 820.0,801.0 875.4,833.0" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1172.3,820.2 1120.0,850.4 1067.7,820.2 1067.7,759.8 1120.0,729.6 1172.3,759.8" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="1555.1,886.1 1510.0,912.1 1464.9,886.1 1464.9,833.9 1510.0,807.9 1555.1,833.9" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="5.7" opacity="0.5" />
+    <polyline class="thin" points="1727.5,671.7 1690.0,693.3 1652.5,671.7 1652.5,628.3 1690.0,606.7 1727.5,628.3" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="4.0" opacity="0.3" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="307.1,677.2 260.0,704.4 212.9,677.2 212.9,622.8 260.0,595.6 307.1,622.8" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.1" opacity="0.5" />
+    <polyline class="thin" points="473.5,870.9 420.0,901.8 366.5,870.9 366.5,809.1 420.0,778.2 473.5,809.1" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.6" opacity="0.6" />
+    <polyline class="thin" points="875.3,896.9 820.0,928.9 764.7,896.9 764.7,833.1 820.0,801.1 875.3,833.1" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1171.6,819.8 1120.0,849.6 1068.4,819.8 1068.4,760.2 1120.0,730.4 1171.6,760.2" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="1554.2,885.5 1510.0,911.0 1465.8,885.5 1465.8,834.5 1510.0,809.0 1554.2,834.5" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="5.5" opacity="0.5" />
+    <polyline class="thin" points="1726.7,671.2 1690.0,692.4 1653.3,671.2 1653.3,628.8 1690.0,607.6 1726.7,628.8" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.9" opacity="0.3" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="308.0,677.7 260.0,705.4 212.0,677.7 212.0,622.3 260.0,594.6 308.0,622.3" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.4" opacity="0.5" />
+    <polyline class="thin" points="474.0,871.2 420.0,902.4 366.0,871.2 366.0,808.8 420.0,777.6 474.0,808.8" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="875.2,896.8 820.0,928.7 764.8,896.8 764.8,833.2 820.0,801.3 875.2,833.2" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1170.8,819.3 1120.0,848.7 1069.2,819.3 1069.2,760.7 1120.0,731.3 1170.8,760.7" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.0" opacity="0.6" />
+    <polyline class="thin" points="1553.2,884.9 1510.0,909.9 1466.8,884.9 1466.8,835.1 1510.0,810.1 1553.2,835.1" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="5.3" opacity="0.4" />
+    <polyline class="thin" points="1726.0,670.8 1690.0,691.6 1654.0,670.8 1654.0,629.2 1690.0,608.4 1726.0,629.2" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.7" opacity="0.3" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="308.9,678.2 260.0,706.5 211.1,678.2 211.1,621.8 260.0,593.5 308.9,621.8" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.6" opacity="0.6" />
+    <polyline class="thin" points="474.5,871.4 420.0,902.9 365.5,871.4 365.5,808.6 420.0,777.1 474.5,808.6" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="874.9,896.7 820.0,928.4 765.1,896.7 765.1,833.3 820.0,801.6 874.9,833.3" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1170.0,818.9 1120.0,847.7 1070.0,818.9 1070.0,761.1 1120.0,732.3 1170.0,761.1" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="1552.2,884.4 1510.0,908.7 1467.8,884.4 1467.8,835.6 1510.0,811.3 1552.2,835.6" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="5.1" opacity="0.4" />
+    <polyline class="thin" points="1725.4,670.4 1690.0,690.9 1654.6,670.4 1654.6,629.6 1690.0,609.1 1725.4,629.6" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.5" opacity="0.3" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="309.8,678.8 260.0,707.5 210.2,678.8 210.2,621.2 260.0,592.5 309.8,621.2" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="474.8,871.7 420.0,903.3 365.2,871.7 365.2,808.3 420.0,776.7 474.8,808.3" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="874.6,896.5 820.0,928.0 765.4,896.5 765.4,833.5 820.0,802.0 874.6,833.5" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1169.1,818.4 1120.0,846.7 1070.9,818.4 1070.9,761.6 1120.0,733.3 1169.1,761.6" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.6" opacity="0.6" />
+    <polyline class="thin" points="1551.3,883.8 1510.0,907.6 1468.7,883.8 1468.7,836.2 1510.0,812.4 1551.3,836.2" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.9" opacity="0.4" />
+    <polyline class="thin" points="1724.8,670.1 1690.0,690.2 1655.2,670.1 1655.2,629.9 1690.0,609.8 1724.8,629.9" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.4" opacity="0.3" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="310.6,679.2 260.0,708.5 209.4,679.2 209.4,620.8 260.0,591.5 310.6,620.8" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.9" opacity="0.6" />
+    <polyline class="thin" points="475.1,871.8 420.0,903.6 364.9,871.8 364.9,808.2 420.0,776.4 475.1,808.2" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="874.2,896.3 820.0,927.5 765.8,896.3 765.8,833.7 820.0,802.5 874.2,833.7" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="1168.2,817.9 1120.0,845.7 1071.8,817.9 1071.8,762.1 1120.0,734.3 1168.2,762.1" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.4" opacity="0.5" />
+    <polyline class="thin" points="1550.3,883.3 1510.0,906.6 1469.7,883.3 1469.7,836.7 1510.0,813.4 1550.3,836.7" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.6" opacity="0.4" />
+    <polyline class="thin" points="1724.3,669.8 1690.0,689.6 1655.7,669.8 1655.7,630.2 1690.0,610.4 1724.3,630.2" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.3" opacity="0.3" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="311.4,679.7 260.0,709.4 208.6,679.7 208.6,620.3 260.0,590.6 311.4,620.3" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="475.3,871.9 420.0,903.8 364.7,871.9 364.7,808.1 420.0,776.2 475.3,808.1" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="873.7,896.0 820.0,927.0 766.3,896.0 766.3,834.0 820.0,803.0 873.7,834.0" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.6" opacity="0.6" />
+    <polyline class="thin" points="1167.3,817.3 1120.0,844.6 1072.7,817.3 1072.7,762.7 1120.0,735.4 1167.3,762.7" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.2" opacity="0.5" />
+    <polyline class="thin" points="1549.4,882.8 1510.0,905.5 1470.6,882.8 1470.6,837.2 1510.0,814.5 1549.4,837.2" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.4" opacity="0.4" />
+    <polyline class="thin" points="1723.9,669.5 1690.0,689.1 1656.1,669.5 1656.1,630.5 1690.0,610.9 1723.9,630.5" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.2" opacity="0.3" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="312.1,680.1 260.0,710.2 207.9,680.1 207.9,619.9 260.0,589.8 312.1,619.9" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="475.4,872.0 420.0,904.0 364.6,872.0 364.6,808.0 420.0,776.0 475.4,808.0" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="873.1,895.7 820.0,926.3 766.9,895.7 766.9,834.3 820.0,803.7 873.1,834.3" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="1166.4,816.8 1120.0,843.5 1073.6,816.8 1073.6,763.2 1120.0,736.5 1166.4,763.2" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.0" opacity="0.5" />
+    <polyline class="thin" points="1548.5,882.2 1510.0,904.5 1471.5,882.2 1471.5,837.8 1510.0,815.5 1548.5,837.8" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.2" opacity="0.3" />
+    <polyline class="thin" points="1723.5,669.3 1690.0,688.7 1656.5,669.3 1656.5,630.7 1690.0,611.3 1723.5,630.7" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.1" opacity="0.3" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="312.8,680.5 260.0,711.0 207.2,680.5 207.2,619.5 260.0,589.0 312.8,619.5" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="475.4,872.0 420.0,904.0 364.6,872.0 364.6,808.0 420.0,776.0 475.4,808.0" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="872.5,895.3 820.0,925.6 767.5,895.3 767.5,834.7 820.0,804.4 872.5,834.7" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="1165.4,816.2 1120.0,842.4 1074.6,816.2 1074.6,763.8 1120.0,737.6 1165.4,763.8" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="5.8" opacity="0.5" />
+    <polyline class="thin" points="1547.7,881.8 1510.0,903.5 1472.3,881.8 1472.3,838.2 1510.0,816.5 1547.7,838.2" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.1" opacity="0.3" />
+    <polyline class="thin" points="1723.2,669.2 1690.0,688.4 1656.8,669.2 1656.8,630.8 1690.0,611.6 1723.2,630.8" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.1" opacity="0.2" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="313.4,680.8 260.0,711.6 206.6,680.8 206.6,619.2 260.0,588.4 313.4,619.2" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="475.4,872.0 420.0,903.9 364.6,872.0 364.6,808.0 420.0,776.1 475.4,808.0" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="871.8,894.9 820.0,924.8 768.2,894.9 768.2,835.1 820.0,805.2 871.8,835.1" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.2" opacity="0.6" />
+    <polyline class="thin" points="1164.4,815.6 1120.0,841.3 1075.6,815.6 1075.6,764.4 1120.0,738.7 1164.4,764.4" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="5.6" opacity="0.5" />
+    <polyline class="thin" points="1546.9,881.3 1510.0,902.6 1473.1,881.3 1473.1,838.7 1510.0,817.4 1546.9,838.7" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="1723.0,669.1 1690.0,688.2 1657.0,669.1 1657.0,630.9 1690.0,611.8 1723.0,630.9" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="313.9,681.1 260.0,712.3 206.1,681.1 206.1,618.9 260.0,587.7 313.9,618.9" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="475.2,871.9 420.0,903.8 364.8,871.9 364.8,808.1 420.0,776.2 475.2,808.1" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="871.0,894.5 820.0,923.9 769.0,894.5 769.0,835.5 820.0,806.1 871.0,835.5" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.0" opacity="0.6" />
+    <polyline class="thin" points="1163.4,815.1 1120.0,840.1 1076.6,815.1 1076.6,764.9 1120.0,739.9 1163.4,764.9" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="5.3" opacity="0.4" />
+    <polyline class="thin" points="1546.2,880.9 1510.0,901.8 1473.8,880.9 1473.8,839.1 1510.0,818.2 1546.2,839.1" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="1722.9,669.0 1690.0,688.0 1657.1,669.0 1657.1,631.0 1690.0,612.0 1722.9,631.0" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="314.4,681.4 260.0,712.8 205.6,681.4 205.6,618.6 260.0,587.2 314.4,618.6" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="475.0,871.7 420.0,903.5 365.0,871.7 365.0,808.3 420.0,776.5 475.0,808.3" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="870.2,894.0 820.0,923.0 769.8,894.0 769.8,836.0 820.0,807.0 870.2,836.0" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="1162.5,814.5 1120.0,839.0 1077.5,814.5 1077.5,765.5 1120.0,741.0 1162.5,765.5" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="5.1" opacity="0.4" />
+    <polyline class="thin" points="1545.5,880.5 1510.0,901.0 1474.5,880.5 1474.5,839.5 1510.0,819.0 1545.5,839.5" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="1722.9,669.0 1690.0,688.0 1657.1,669.0 1657.1,631.0 1690.0,612.0 1722.9,631.0" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="314.7,681.6 260.0,713.2 205.3,681.6 205.3,618.4 260.0,586.8 314.7,618.4" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="474.7,871.6 420.0,903.1 365.3,871.6 365.3,808.4 420.0,776.9 474.7,808.4" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="869.4,893.5 820.0,922.0 770.6,893.5 770.6,836.5 820.0,808.0 869.4,836.5" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.7" opacity="0.6" />
+    <polyline class="thin" points="1161.5,814.0 1120.0,837.9 1078.5,814.0 1078.5,766.0 1120.0,742.1 1161.5,766.0" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.9" opacity="0.4" />
+    <polyline class="thin" points="1544.9,880.2 1510.0,900.3 1475.1,880.2 1475.1,839.8 1510.0,819.7 1544.9,839.8" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="1723.0,669.0 1690.0,688.1 1657.0,669.0 1657.0,631.0 1690.0,611.9 1723.0,631.0" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.0,681.8 260.0,713.6 205.0,681.8 205.0,618.2 260.0,586.4 315.0,618.2" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="474.3,871.3 420.0,902.7 365.7,871.3 365.7,808.7 420.0,777.3 474.3,808.7" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="868.5,893.0 820.0,921.0 771.5,893.0 771.5,837.0 820.0,809.0 868.5,837.0" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.5" opacity="0.5" />
+    <polyline class="thin" points="1160.5,813.4 1120.0,836.8 1079.5,813.4 1079.5,766.6 1120.0,743.2 1160.5,766.6" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.7" opacity="0.4" />
+    <polyline class="thin" points="1544.4,879.9 1510.0,899.7 1475.6,879.9 1475.6,840.1 1510.0,820.3 1544.4,840.1" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="1723.1,669.1 1690.0,688.3 1656.9,669.1 1656.9,630.9 1690.0,611.7 1723.1,630.9" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.3,681.9 260.0,713.8 204.7,681.9 204.7,618.1 260.0,586.2 315.3,618.1" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="473.8,871.1 420.0,902.1 366.2,871.1 366.2,808.9 420.0,777.9 473.8,808.9" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.6" opacity="0.6" />
+    <polyline class="thin" points="867.6,892.5 820.0,919.9 772.4,892.5 772.4,837.5 820.0,810.1 867.6,837.5" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.3" opacity="0.5" />
+    <polyline class="thin" points="1159.6,812.9 1120.0,835.8 1080.4,812.9 1080.4,767.1 1120.0,744.2 1159.6,767.1" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.5" opacity="0.4" />
+    <polyline class="thin" points="1544.0,879.6 1510.0,899.2 1476.0,879.6 1476.0,840.4 1510.0,820.8 1544.0,840.4" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1723.4,669.3 1690.0,688.5 1656.6,669.3 1656.6,630.7 1690.0,611.5 1723.4,630.7" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.1" opacity="0.2" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.4,682.0 260.0,714.0 204.6,682.0 204.6,618.0 260.0,586.0 315.4,618.0" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="473.2,870.7 420.0,901.5 366.8,870.7 366.8,809.3 420.0,778.5 473.2,809.3" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="866.6,891.9 820.0,918.8 773.4,891.9 773.4,838.1 820.0,811.2 866.6,838.1" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.0" opacity="0.5" />
+    <polyline class="thin" points="1158.8,812.4 1120.0,834.7 1081.2,812.4 1081.2,767.6 1120.0,745.3 1158.8,767.6" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.3" opacity="0.4" />
+    <polyline class="thin" points="1543.6,879.4 1510.0,898.8 1476.4,879.4 1476.4,840.6 1510.0,821.2 1543.6,840.6" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1723.7,669.4 1690.0,688.9 1656.3,669.4 1656.3,630.6 1690.0,611.1 1723.7,630.6" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.2" opacity="0.3" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.4,682.0 260.0,714.0 204.6,682.0 204.6,618.0 260.0,586.0 315.4,618.0" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="472.6,870.4 420.0,900.8 367.4,870.4 367.4,809.6 420.0,779.2 472.6,809.6" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="865.6,891.3 820.0,917.7 774.4,891.3 774.4,838.7 820.0,812.3 865.6,838.7" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="5.8" opacity="0.5" />
+    <polyline class="thin" points="1157.9,811.9 1120.0,833.8 1082.1,811.9 1082.1,768.1 1120.0,746.2 1157.9,768.1" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.1" opacity="0.3" />
+    <polyline class="thin" points="1543.3,879.2 1510.0,898.4 1476.7,879.2 1476.7,840.8 1510.0,821.6 1543.3,840.8" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="1724.1,669.7 1690.0,689.3 1655.9,669.7 1655.9,630.3 1690.0,610.7 1724.1,630.3" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.3" opacity="0.3" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.4,682.0 260.0,714.0 204.6,682.0 204.6,618.0 260.0,586.0 315.4,618.0" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="472.0,870.0 420.0,900.0 368.0,870.0 368.0,810.0 420.0,780.0 472.0,810.0" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.2" opacity="0.6" />
+    <polyline class="thin" points="864.7,890.8 820.0,916.6 775.3,890.8 775.3,839.2 820.0,813.4 864.7,839.2" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="5.6" opacity="0.5" />
+    <polyline class="thin" points="1157.1,811.4 1120.0,832.9 1082.9,811.4 1082.9,768.6 1120.0,747.1 1157.1,768.6" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="1543.1,879.1 1510.0,898.2 1476.9,879.1 1476.9,840.9 1510.0,821.8 1543.1,840.9" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1724.5,669.9 1690.0,689.9 1655.5,669.9 1655.5,630.1 1690.0,610.1 1724.5,630.1" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.4" opacity="0.3" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.3,681.9 260.0,713.8 204.7,681.9 204.7,618.1 260.0,586.2 315.3,618.1" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="471.2,869.6 420.0,899.1 368.8,869.6 368.8,810.4 420.0,780.9 471.2,810.4" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="863.7,890.2 820.0,915.4 776.3,890.2 776.3,839.8 820.0,814.6 863.7,839.8" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="5.4" opacity="0.5" />
+    <polyline class="thin" points="1156.4,811.0 1120.0,832.0 1083.6,811.0 1083.6,769.0 1120.0,748.0 1156.4,769.0" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.8" opacity="0.3" />
+    <polyline class="thin" points="1543.0,879.0 1510.0,898.0 1477.0,879.0 1477.0,841.0 1510.0,822.0 1543.0,841.0" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1725.1,670.3 1690.0,690.5 1654.9,670.3 1654.9,629.7 1690.0,609.5 1725.1,629.7" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.5" opacity="0.3" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="315.0,681.8 260.0,713.6 205.0,681.8 205.0,618.2 260.0,586.4 315.0,618.2" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="470.4,869.1 420.0,898.2 369.6,869.1 369.6,810.9 420.0,781.8 470.4,810.9" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.9" opacity="0.6" />
+    <polyline class="thin" points="862.7,889.7 820.0,914.3 777.3,889.7 777.3,840.3 820.0,815.7 862.7,840.3" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="5.2" opacity="0.4" />
+    <polyline class="thin" points="1155.7,810.6 1120.0,831.2 1084.3,810.6 1084.3,769.4 1120.0,748.8 1155.7,769.4" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="1542.9,879.0 1510.0,898.0 1477.1,879.0 1477.1,841.0 1510.0,822.0 1542.9,841.0" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1725.7,670.6 1690.0,691.2 1654.3,670.6 1654.3,629.4 1690.0,608.8 1725.7,629.4" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.6" opacity="0.3" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="314.7,681.6 260.0,713.2 205.3,681.6 205.3,618.4 260.0,586.8 314.7,618.4" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="469.6,868.6 420.0,897.3 370.4,868.6 370.4,811.4 420.0,782.7 469.6,811.4" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.7" opacity="0.6" />
+    <polyline class="thin" points="861.7,889.1 820.0,913.2 778.3,889.1 778.3,840.9 820.0,816.8 861.7,840.9" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="5.0" opacity="0.4" />
+    <polyline class="thin" points="1155.1,810.3 1120.0,830.5 1084.9,810.3 1084.9,769.7 1120.0,749.5 1155.1,769.7" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="1543.0,879.0 1510.0,898.0 1477.0,879.0 1477.0,841.0 1510.0,822.0 1543.0,841.0" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1726.4,671.0 1690.0,692.0 1653.6,671.0 1653.6,629.0 1690.0,608.0 1726.4,629.0" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.8" opacity="0.3" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="314.4,681.4 260.0,712.8 205.6,681.4 205.6,618.6 260.0,587.2 314.4,618.6" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="468.7,868.1 420.0,896.2 371.3,868.1 371.3,811.9 420.0,783.8 468.7,811.9" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.5" opacity="0.5" />
+    <polyline class="thin" points="860.8,888.5 820.0,912.1 779.2,888.5 779.2,841.5 820.0,817.9 860.8,841.5" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.7" opacity="0.4" />
+    <polyline class="thin" points="1154.5,809.9 1120.0,829.9 1085.5,809.9 1085.5,770.1 1120.0,750.1 1154.5,770.1" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.4" opacity="0.3" />
+    <polyline class="thin" points="1543.1,879.1 1510.0,898.2 1476.9,879.1 1476.9,840.9 1510.0,821.8 1543.1,840.9" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1727.1,671.4 1690.0,692.9 1652.9,671.4 1652.9,628.6 1690.0,607.1 1727.1,628.6" opacity="0.2" />
+    <circle class="node" cx="1690" cy="650" r="3.9" opacity="0.3" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="313.9,681.1 260.0,712.3 206.1,681.1 206.1,618.9 260.0,587.7 313.9,618.9" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="467.8,867.6 420.0,895.2 372.2,867.6 372.2,812.4 420.0,784.8 467.8,812.4" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.3" opacity="0.5" />
+    <polyline class="thin" points="859.9,888.0 820.0,911.0 780.1,888.0 780.1,842.0 820.0,819.0 859.9,842.0" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.5" opacity="0.4" />
+    <polyline class="thin" points="1154.1,809.7 1120.0,829.3 1085.9,809.7 1085.9,770.3 1120.0,750.7 1154.1,770.3" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="1543.3,879.2 1510.0,898.4 1476.7,879.2 1476.7,840.8 1510.0,821.6 1543.3,840.8" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="1727.9,671.9 1690.0,693.8 1652.1,671.9 1652.1,628.1 1690.0,606.2 1727.9,628.1" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.1" opacity="0.3" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="313.4,680.8 260.0,711.6 206.6,680.8 206.6,619.2 260.0,588.4 313.4,619.2" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="466.8,867.0 420.0,894.1 373.2,867.0 373.2,813.0 420.0,785.9 466.8,813.0" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.1" opacity="0.5" />
+    <polyline class="thin" points="859.0,887.5 820.0,910.0 781.0,887.5 781.0,842.5 820.0,820.0 859.0,842.5" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.3" opacity="0.4" />
+    <polyline class="thin" points="1153.7,809.4 1120.0,828.9 1086.3,809.4 1086.3,770.6 1120.0,751.1 1153.7,770.6" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1543.6,879.4 1510.0,898.8 1476.4,879.4 1476.4,840.6 1510.0,821.2 1543.6,840.6" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1728.8,672.4 1690.0,694.8 1651.2,672.4 1651.2,627.6 1690.0,605.2 1728.8,627.6" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.3" opacity="0.4" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="312.8,680.5 260.0,711.0 207.2,680.5 207.2,619.5 260.0,589.0 312.8,619.5" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="465.9,866.5 420.0,893.0 374.1,866.5 374.1,813.5 420.0,787.0 465.9,813.5" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="5.9" opacity="0.5" />
+    <polyline class="thin" points="858.1,887.0 820.0,909.0 781.9,887.0 781.9,843.0 820.0,821.0 858.1,843.0" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.2" opacity="0.3" />
+    <polyline class="thin" points="1153.4,809.3 1120.0,828.5 1086.6,809.3 1086.6,770.7 1120.0,751.5 1153.4,770.7" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="1544.0,879.6 1510.0,899.2 1476.0,879.6 1476.0,840.4 1510.0,820.8 1544.0,840.4" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1729.6,672.9 1690.0,695.8 1650.4,672.9 1650.4,627.1 1690.0,604.2 1729.6,627.1" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.5" opacity="0.4" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="312.1,680.1 260.0,710.2 207.9,680.1 207.9,619.9 260.0,589.8 312.1,619.9" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="464.9,865.9 420.0,891.8 375.1,865.9 375.1,814.1 420.0,788.2 464.9,814.1" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="5.7" opacity="0.5" />
+    <polyline class="thin" points="857.3,886.5 820.0,908.1 782.7,886.5 782.7,843.5 820.0,821.9 857.3,843.5" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="4.0" opacity="0.3" />
+    <polyline class="thin" points="1153.1,809.1 1120.0,828.2 1086.9,809.1 1086.9,770.9 1120.0,751.8 1153.1,770.9" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1544.4,879.9 1510.0,899.7 1475.6,879.9 1475.6,840.1 1510.0,820.3 1544.4,840.1" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="1730.6,673.4 1690.0,696.8 1649.4,673.4 1649.4,626.6 1690.0,603.2 1730.6,626.6" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.7" opacity="0.4" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="311.4,679.7 260.0,709.4 208.6,679.7 208.6,620.3 260.0,590.6 311.4,620.3" opacity="0.5" />
+    <circle class="node" cx="260" cy="650" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="463.9,865.4 420.0,890.7 376.1,865.4 376.1,814.6 420.0,789.3 463.9,814.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="5.4" opacity="0.5" />
+    <polyline class="thin" points="856.6,886.1 820.0,907.2 783.4,886.1 783.4,843.9 820.0,822.8 856.6,843.9" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.8" opacity="0.3" />
+    <polyline class="thin" points="1153.0,809.0 1120.0,828.1 1087.0,809.0 1087.0,771.0 1120.0,751.9 1153.0,771.0" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1544.9,880.2 1510.0,900.4 1475.1,880.2 1475.1,839.8 1510.0,819.6 1544.9,839.8" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="1731.5,674.0 1690.0,697.9 1648.5,674.0 1648.5,626.0 1690.0,602.1 1731.5,626.0" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.9" opacity="0.4" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="310.6,679.2 260.0,708.5 209.4,679.2 209.4,620.8 260.0,591.5 310.6,620.8" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.9" opacity="0.6" />
+    <polyline class="thin" points="462.9,864.8 420.0,889.6 377.1,864.8 377.1,815.2 420.0,790.4 462.9,815.2" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="5.2" opacity="0.4" />
+    <polyline class="thin" points="855.9,885.7 820.0,906.4 784.1,885.7 784.1,844.3 820.0,823.6 855.9,844.3" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="1152.9,809.0 1120.0,828.0 1087.1,809.0 1087.1,771.0 1120.0,752.0 1152.9,771.0" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1545.5,880.5 1510.0,901.0 1474.5,880.5 1474.5,839.5 1510.0,819.0 1545.5,839.5" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="1732.5,674.5 1690.0,699.0 1647.5,674.5 1647.5,625.5 1690.0,601.0 1732.5,625.5" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="5.1" opacity="0.4" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="309.8,678.8 260.0,707.5 210.2,678.8 210.2,621.2 260.0,592.5 309.8,621.2" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="462.0,864.2 420.0,888.5 378.0,864.2 378.0,815.8 420.0,791.5 462.0,815.8" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="5.0" opacity="0.4" />
+    <polyline class="thin" points="855.2,885.3 820.0,905.7 784.8,885.3 784.8,844.7 820.0,824.3 855.2,844.7" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="1152.9,809.0 1120.0,828.0 1087.1,809.0 1087.1,771.0 1120.0,752.0 1152.9,771.0" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1546.2,880.9 1510.0,901.8 1473.8,880.9 1473.8,839.1 1510.0,818.2 1546.2,839.1" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="1733.4,675.1 1690.0,700.2 1646.6,675.1 1646.6,624.9 1690.0,599.8 1733.4,624.9" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="5.3" opacity="0.4" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="308.9,678.2 260.0,706.5 211.1,678.2 211.1,621.8 260.0,593.5 308.9,621.8" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.6" opacity="0.6" />
+    <polyline class="thin" points="461.0,863.7 420.0,887.4 379.0,863.7 379.0,816.3 420.0,792.6 461.0,816.3" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.8" opacity="0.4" />
+    <polyline class="thin" points="854.7,885.0 820.0,905.0 785.3,885.0 785.3,845.0 820.0,825.0 854.7,845.0" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.4" opacity="0.3" />
+    <polyline class="thin" points="1153.0,809.1 1120.0,828.2 1087.0,809.1 1087.0,770.9 1120.0,751.8 1153.0,770.9" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1546.9,881.3 1510.0,902.6 1473.1,881.3 1473.1,838.7 1510.0,817.4 1546.9,838.7" opacity="0.2" />
+    <circle class="node" cx="1510" cy="860" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="1734.4,675.6 1690.0,701.3 1645.6,675.6 1645.6,624.4 1690.0,598.7 1734.4,624.4" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="5.6" opacity="0.5" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="308.0,677.7 260.0,705.4 212.0,677.7 212.0,622.3 260.0,594.6 308.0,622.3" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.4" opacity="0.5" />
+    <polyline class="thin" points="460.1,863.1 420.0,886.3 379.9,863.1 379.9,816.9 420.0,793.7 460.1,816.9" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.6" opacity="0.4" />
+    <polyline class="thin" points="854.2,884.7 820.0,904.5 785.8,884.7 785.8,845.3 820.0,825.5 854.2,845.3" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="1153.2,809.2 1120.0,828.4 1086.8,809.2 1086.8,770.8 1120.0,751.6 1153.2,770.8" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="1547.7,881.8 1510.0,903.5 1472.3,881.8 1472.3,838.2 1510.0,816.5 1547.7,838.2" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.1" opacity="0.3" />
+    <polyline class="thin" points="1735.4,676.2 1690.0,702.4 1644.6,676.2 1644.6,623.8 1690.0,597.6 1735.4,623.8" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="5.8" opacity="0.5" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="307.1,677.2 260.0,704.4 212.9,677.2 212.9,622.8 260.0,595.6 307.1,622.8" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="6.1" opacity="0.5" />
+    <polyline class="thin" points="459.2,862.6 420.0,885.2 380.8,862.6 380.8,817.4 420.0,794.8 459.2,817.4" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.4" opacity="0.4" />
+    <polyline class="thin" points="853.8,884.5 820.0,904.0 786.2,884.5 786.2,845.5 820.0,826.0 853.8,845.5" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1153.5,809.3 1120.0,828.7 1086.5,809.3 1086.5,770.7 1120.0,751.3 1153.5,770.7" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.1" opacity="0.3" />
+    <polyline class="thin" points="1548.5,882.3 1510.0,904.5 1471.5,882.3 1471.5,837.7 1510.0,815.5 1548.5,837.7" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.3" opacity="0.4" />
+    <polyline class="thin" points="1736.4,676.8 1690.0,703.5 1643.6,676.8 1643.6,623.2 1690.0,596.5 1736.4,623.2" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.0" opacity="0.5" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="306.1,676.6 260.0,703.3 213.9,676.6 213.9,623.4 260.0,596.7 306.1,623.4" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="5.9" opacity="0.5" />
+    <polyline class="thin" points="458.3,862.1 420.0,884.3 381.7,862.1 381.7,817.9 420.0,795.7 458.3,817.9" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.2" opacity="0.3" />
+    <polyline class="thin" points="853.4,884.3 820.0,903.6 786.6,884.3 786.6,845.7 820.0,826.4 853.4,845.7" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.1" opacity="0.3" />
+    <polyline class="thin" points="1153.9,809.6 1120.0,829.1 1086.1,809.6 1086.1,770.4 1120.0,750.9 1153.9,770.4" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1549.4,882.8 1510.0,905.5 1470.6,882.8 1470.6,837.2 1510.0,814.5 1549.4,837.2" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.4" opacity="0.4" />
+    <polyline class="thin" points="1737.3,677.3 1690.0,704.6 1642.7,677.3 1642.7,622.7 1690.0,595.4 1737.3,622.7" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.2" opacity="0.5" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="305.1,676.1 260.0,702.1 214.9,676.1 214.9,623.9 260.0,597.9 305.1,623.9" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="5.7" opacity="0.5" />
+    <polyline class="thin" points="457.5,861.7 420.0,883.3 382.5,861.7 382.5,818.3 420.0,796.7 457.5,818.3" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="4.0" opacity="0.3" />
+    <polyline class="thin" points="853.2,884.2 820.0,903.3 786.8,884.2 786.8,845.8 820.0,826.7 853.2,845.8" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="1154.3,809.8 1120.0,829.6 1085.7,809.8 1085.7,770.2 1120.0,750.4 1154.3,770.2" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="1550.3,883.3 1510.0,906.6 1469.7,883.3 1469.7,836.7 1510.0,813.4 1550.3,836.7" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.6" opacity="0.4" />
+    <polyline class="thin" points="1738.3,677.9 1690.0,705.7 1641.7,677.9 1641.7,622.1 1690.0,594.3 1738.3,622.1" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.4" opacity="0.5" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="304.2,675.5 260.0,701.0 215.8,675.5 215.8,624.5 260.0,599.0 304.2,624.5" opacity="0.4" />
+    <circle class="node" cx="260" cy="650" r="5.5" opacity="0.5" />
+    <polyline class="thin" points="456.7,861.2 420.0,882.4 383.3,861.2 383.3,818.8 420.0,797.6 456.7,818.8" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="853.0,884.1 820.0,903.1 787.0,884.1 787.0,845.9 820.0,826.9 853.0,845.9" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1154.8,810.1 1120.0,830.2 1085.2,810.1 1085.2,769.9 1120.0,749.8 1154.8,769.9" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.4" opacity="0.3" />
+    <polyline class="thin" points="1551.3,883.8 1510.0,907.6 1468.7,883.8 1468.7,836.2 1510.0,812.4 1551.3,836.2" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="4.9" opacity="0.4" />
+    <polyline class="thin" points="1739.1,678.4 1690.0,706.8 1640.9,678.4 1640.9,621.6 1690.0,593.2 1739.1,621.6" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.6" opacity="0.6" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="303.2,674.9 260.0,699.9 216.8,674.9 216.8,625.1 260.0,600.1 303.2,625.1" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="5.3" opacity="0.4" />
+    <polyline class="thin" points="456.0,860.8 420.0,881.6 384.0,860.8 384.0,819.2 420.0,798.4 456.0,819.2" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="852.9,884.0 820.0,903.0 787.1,884.0 787.1,846.0 820.0,827.0 852.9,846.0" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1155.4,810.4 1120.0,830.9 1084.6,810.4 1084.6,769.6 1120.0,749.1 1155.4,769.6" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="1552.2,884.4 1510.0,908.7 1467.8,884.4 1467.8,835.6 1510.0,811.3 1552.2,835.6" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="5.1" opacity="0.4" />
+    <polyline class="thin" points="1740.0,678.9 1690.0,707.7 1640.0,678.9 1640.0,621.1 1690.0,592.3 1740.0,621.1" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.8" opacity="0.6" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="302.2,674.4 260.0,698.7 217.8,674.4 217.8,625.6 260.0,601.3 302.2,625.6" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="5.1" opacity="0.4" />
+    <polyline class="thin" points="455.4,860.4 420.0,880.9 384.6,860.4 384.6,819.6 420.0,799.1 455.4,819.6" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="852.9,884.0 820.0,903.0 787.1,884.0 787.1,846.0 820.0,827.0 852.9,846.0" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1156.0,810.8 1120.0,831.6 1084.0,810.8 1084.0,769.2 1120.0,748.4 1156.0,769.2" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="1553.2,884.9 1510.0,909.9 1466.8,884.9 1466.8,835.1 1510.0,810.1 1553.2,835.1" opacity="0.3" />
+    <circle class="node" cx="1510" cy="860" r="5.3" opacity="0.4" />
+    <polyline class="thin" points="1740.8,679.3 1690.0,708.7 1639.2,679.3 1639.2,620.7 1690.0,591.3 1740.8,620.7" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.0" opacity="0.6" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="301.3,673.8 260.0,697.6 218.7,673.8 218.7,626.2 260.0,602.4 301.3,626.2" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.9" opacity="0.4" />
+    <polyline class="thin" points="454.8,860.1 420.0,880.2 385.2,860.1 385.2,819.9 420.0,799.8 454.8,819.9" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.4" opacity="0.3" />
+    <polyline class="thin" points="853.0,884.1 820.0,903.1 787.0,884.1 787.0,845.9 820.0,826.9 853.0,845.9" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="1156.7,811.2 1120.0,832.4 1083.3,811.2 1083.3,768.8 1120.0,747.6 1156.7,768.8" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="1554.2,885.5 1510.0,911.0 1465.8,885.5 1465.8,834.5 1510.0,809.0 1554.2,834.5" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="5.5" opacity="0.5" />
+    <polyline class="thin" points="1741.6,679.8 1690.0,709.6 1638.4,679.8 1638.4,620.2 1690.0,590.4 1741.6,620.2" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.1" opacity="0.6" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="300.3,673.3 260.0,696.6 219.7,673.3 219.7,626.7 260.0,603.4 300.3,626.7" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.6" opacity="0.4" />
+    <polyline class="thin" points="454.3,859.8 420.0,879.6 385.7,859.8 385.7,820.2 420.0,800.4 454.3,820.2" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="853.2,884.2 820.0,903.3 786.8,884.2 786.8,845.8 820.0,826.7 853.2,845.8" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="1157.5,811.7 1120.0,833.3 1082.5,811.7 1082.5,768.3 1120.0,746.7 1157.5,768.3" opacity="0.2" />
+    <circle class="node" cx="1120" cy="790" r="4.0" opacity="0.3" />
+    <polyline class="thin" points="1555.2,886.1 1510.0,912.1 1464.8,886.1 1464.8,833.9 1510.0,807.9 1555.2,833.9" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="5.7" opacity="0.5" />
+    <polyline class="thin" points="1742.3,680.2 1690.0,710.4 1637.7,680.2 1637.7,619.8 1690.0,589.6 1742.3,619.8" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.3" opacity="0.6" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="299.4,672.8 260.0,695.5 220.6,672.8 220.6,627.2 260.0,604.5 299.4,627.2" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.4" opacity="0.4" />
+    <polyline class="thin" points="453.9,859.6 420.0,879.1 386.1,859.6 386.1,820.4 420.0,800.9 453.9,820.4" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="853.4,884.3 820.0,903.6 786.6,884.3 786.6,845.7 820.0,826.4 853.4,845.7" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.1" opacity="0.3" />
+    <polyline class="thin" points="1158.3,812.1 1120.0,834.3 1081.7,812.1 1081.7,767.9 1120.0,745.7 1158.3,767.9" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.2" opacity="0.3" />
+    <polyline class="thin" points="1556.1,886.6 1510.0,913.3 1463.9,886.6 1463.9,833.4 1510.0,806.7 1556.1,833.4" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="5.9" opacity="0.5" />
+    <polyline class="thin" points="1742.9,680.6 1690.0,711.1 1637.1,680.6 1637.1,619.4 1690.0,588.9 1742.9,619.4" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.5" opacity="0.6" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="298.5,672.2 260.0,694.5 221.5,672.2 221.5,627.8 260.0,605.5 298.5,627.8" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.2" opacity="0.3" />
+    <polyline class="thin" points="453.5,859.3 420.0,878.7 386.5,859.3 386.5,820.7 420.0,801.3 453.5,820.7" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.1" opacity="0.3" />
+    <polyline class="thin" points="853.8,884.5 820.0,904.0 786.2,884.5 786.2,845.5 820.0,826.0 853.8,845.5" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="1159.2,812.6 1120.0,835.3 1080.8,812.6 1080.8,767.4 1120.0,744.7 1159.2,767.4" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.4" opacity="0.4" />
+    <polyline class="thin" points="1557.1,887.2 1510.0,914.4 1462.9,887.2 1462.9,832.8 1510.0,805.6 1557.1,832.8" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.1" opacity="0.5" />
+    <polyline class="thin" points="1743.5,680.9 1690.0,711.8 1636.5,680.9 1636.5,619.1 1690.0,588.2 1743.5,619.1" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.6" opacity="0.6" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="297.7,671.8 260.0,693.5 222.3,671.8 222.3,628.2 260.0,606.5 297.7,628.2" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.1" opacity="0.3" />
+    <polyline class="thin" points="453.2,859.2 420.0,878.4 386.8,859.2 386.8,820.8 420.0,801.6 453.2,820.8" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="854.2,884.7 820.0,904.5 785.8,884.7 785.8,845.3 820.0,825.5 854.2,845.3" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="1160.1,813.1 1120.0,836.3 1079.9,813.1 1079.9,766.9 1120.0,743.7 1160.1,766.9" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.6" opacity="0.4" />
+    <polyline class="thin" points="1558.0,887.7 1510.0,915.4 1462.0,887.7 1462.0,832.3 1510.0,804.6 1558.0,832.3" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.4" opacity="0.5" />
+    <polyline class="thin" points="1744.0,681.2 1690.0,712.4 1636.0,681.2 1636.0,618.8 1690.0,587.6 1744.0,618.8" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.7" opacity="0.7" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="296.9,671.3 260.0,692.6 223.1,671.3 223.1,628.7 260.0,607.4 296.9,628.7" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="453.0,859.1 420.0,878.2 387.0,859.1 387.0,820.9 420.0,801.8 453.0,820.9" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="854.7,885.0 820.0,905.0 785.3,885.0 785.3,845.0 820.0,825.0 854.7,845.0" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.4" opacity="0.3" />
+    <polyline class="thin" points="1161.0,813.7 1120.0,837.4 1079.0,813.7 1079.0,766.3 1120.0,742.6 1161.0,766.3" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="4.8" opacity="0.4" />
+    <polyline class="thin" points="1558.9,888.2 1510.0,916.5 1461.1,888.2 1461.1,831.8 1510.0,803.5 1558.9,831.8" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.6" opacity="0.6" />
+    <polyline class="thin" points="1744.5,681.5 1690.0,712.9 1635.5,681.5 1635.5,618.5 1690.0,587.1 1744.5,618.5" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.8" opacity="0.7" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="296.2,670.9 260.0,691.8 223.8,670.9 223.8,629.1 260.0,608.2 296.2,629.1" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="452.9,859.0 420.0,878.0 387.1,859.0 387.1,821.0 420.0,802.0 452.9,821.0" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="855.2,885.3 820.0,905.7 784.8,885.3 784.8,844.7 820.0,824.3 855.2,844.7" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="1162.0,814.2 1120.0,838.5 1078.0,814.2 1078.0,765.8 1120.0,741.5 1162.0,765.8" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="5.0" opacity="0.4" />
+    <polyline class="thin" points="1559.8,888.8 1510.0,917.5 1460.2,888.8 1460.2,831.2 1510.0,802.5 1559.8,831.2" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="1744.8,681.7 1690.0,713.3 1635.2,681.7 1635.2,618.3 1690.0,586.7 1744.8,618.3" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.9" opacity="0.7" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="295.5,670.5 260.0,691.0 224.5,670.5 224.5,629.5 260.0,609.0 295.5,629.5" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="452.9,859.0 420.0,878.0 387.1,859.0 387.1,821.0 420.0,802.0 452.9,821.0" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="855.9,885.7 820.0,906.4 784.1,885.7 784.1,844.3 820.0,823.6 855.9,844.3" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="1162.9,814.8 1120.0,839.6 1077.1,814.8 1077.1,765.2 1120.0,740.4 1162.9,765.2" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="5.2" opacity="0.4" />
+    <polyline class="thin" points="1560.6,889.2 1510.0,918.5 1459.4,889.2 1459.4,830.8 1510.0,801.5 1560.6,830.8" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.9" opacity="0.6" />
+    <polyline class="thin" points="1745.1,681.8 1690.0,713.6 1634.9,681.8 1634.9,618.2 1690.0,586.4 1745.1,618.2" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.9" opacity="0.7" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="294.9,670.2 260.0,690.4 225.1,670.2 225.1,629.8 260.0,609.6 294.9,629.8" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="453.0,859.0 420.0,878.1 387.0,859.0 387.0,821.0 420.0,801.9 453.0,821.0" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="856.6,886.1 820.0,907.2 783.4,886.1 783.4,843.9 820.0,822.8 856.6,843.9" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="3.8" opacity="0.3" />
+    <polyline class="thin" points="1163.9,815.4 1120.0,840.7 1076.1,815.4 1076.1,764.6 1120.0,739.3 1163.9,764.6" opacity="0.3" />
+    <circle class="node" cx="1120" cy="790" r="5.4" opacity="0.5" />
+    <polyline class="thin" points="1561.4,889.7 1510.0,919.4 1458.6,889.7 1458.6,830.3 1510.0,800.6 1561.4,830.3" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="1745.3,681.9 1690.0,713.8 1634.7,681.9 1634.7,618.1 1690.0,586.2 1745.3,618.1" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="8.0" opacity="0.7" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="294.4,669.9 260.0,689.7 225.6,669.9 225.6,630.1 260.0,610.3 294.4,630.1" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="453.1,859.1 420.0,878.2 386.9,859.1 386.9,820.9 420.0,801.8 453.1,820.9" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="857.3,886.5 820.0,908.1 782.7,886.5 782.7,843.5 820.0,821.9 857.3,843.5" opacity="0.2" />
+    <circle class="node" cx="820" cy="865" r="4.0" opacity="0.3" />
+    <polyline class="thin" points="1164.9,815.9 1120.0,841.9 1075.1,815.9 1075.1,764.1 1120.0,738.1 1164.9,764.1" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="5.7" opacity="0.5" />
+    <polyline class="thin" points="1562.1,890.1 1510.0,920.2 1457.9,890.1 1457.9,829.9 1510.0,799.8 1562.1,829.9" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="1745.4,682.0 1690.0,714.0 1634.6,682.0 1634.6,618.0 1690.0,586.0 1745.4,618.0" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="8.0" opacity="0.7" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="294.0,669.6 260.0,689.2 226.0,669.6 226.0,630.4 260.0,610.8 294.0,630.4" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="453.4,859.3 420.0,878.5 386.6,859.3 386.6,820.7 420.0,801.5 453.4,820.7" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="858.1,887.0 820.0,909.0 781.9,887.0 781.9,843.0 820.0,821.0 858.1,843.0" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.2" opacity="0.3" />
+    <polyline class="thin" points="1165.9,816.5 1120.0,843.0 1074.1,816.5 1074.1,763.5 1120.0,737.0 1165.9,763.5" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="5.9" opacity="0.5" />
+    <polyline class="thin" points="1562.8,890.5 1510.0,921.0 1457.2,890.5 1457.2,829.5 1510.0,799.0 1562.8,829.5" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="1745.4,682.0 1690.0,714.0 1634.6,682.0 1634.6,618.0 1690.0,586.0 1745.4,618.0" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="8.0" opacity="0.7" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.6,669.4 260.0,688.8 226.4,669.4 226.4,630.6 260.0,611.2 293.6,630.6" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="453.7,859.4 420.0,878.9 386.3,859.4 386.3,820.6 420.0,801.1 453.7,820.6" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="859.0,887.5 820.0,910.0 781.0,887.5 781.0,842.5 820.0,820.0 859.0,842.5" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.3" opacity="0.4" />
+    <polyline class="thin" points="1166.8,817.0 1120.0,844.1 1073.2,817.0 1073.2,763.0 1120.0,735.9 1166.8,763.0" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.1" opacity="0.5" />
+    <polyline class="thin" points="1563.4,890.8 1510.0,921.7 1456.6,890.8 1456.6,829.2 1510.0,798.3 1563.4,829.2" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="1745.4,682.0 1690.0,713.9 1634.6,682.0 1634.6,618.0 1690.0,586.1 1745.4,618.0" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="8.0" opacity="0.7" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.3,669.2 260.0,688.4 226.7,669.2 226.7,630.8 260.0,611.6 293.3,630.8" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="454.1,859.7 420.0,879.3 385.9,859.7 385.9,820.3 420.0,800.7 454.1,820.3" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="859.9,888.0 820.0,911.0 780.1,888.0 780.1,842.0 820.0,819.0 859.9,842.0" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.5" opacity="0.4" />
+    <polyline class="thin" points="1167.8,817.6 1120.0,845.2 1072.2,817.6 1072.2,762.4 1120.0,734.8 1167.8,762.4" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.3" opacity="0.5" />
+    <polyline class="thin" points="1563.9,891.1 1510.0,922.3 1456.1,891.1 1456.1,828.9 1510.0,797.7 1563.9,828.9" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="1745.2,681.9 1690.0,713.7 1634.8,681.9 1634.8,618.1 1690.0,586.3 1745.2,618.1" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="8.0" opacity="0.7" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.1,669.1 260.0,688.2 226.9,669.1 226.9,630.9 260.0,611.8 293.1,630.9" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="454.5,859.9 420.0,879.9 385.5,859.9 385.5,820.1 420.0,800.1 454.5,820.1" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.4" opacity="0.3" />
+    <polyline class="thin" points="860.8,888.5 820.0,912.1 779.2,888.5 779.2,841.5 820.0,817.9 860.8,841.5" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="4.7" opacity="0.4" />
+    <polyline class="thin" points="1168.7,818.1 1120.0,846.2 1071.3,818.1 1071.3,761.9 1120.0,733.8 1168.7,761.9" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.5" opacity="0.5" />
+    <polyline class="thin" points="1564.4,891.4 1510.0,922.8 1455.6,891.4 1455.6,828.6 1510.0,797.2 1564.4,828.6" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1745.0,681.7 1690.0,713.5 1635.0,681.7 1635.0,618.3 1690.0,586.5 1745.0,618.3" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.9" opacity="0.7" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.0,669.0 260.0,688.0 227.0,669.0 227.0,631.0 260.0,612.0 293.0,631.0" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="455.1,860.3 420.0,880.5 384.9,860.3 384.9,819.7 420.0,799.5 455.1,819.7" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="861.7,889.1 820.0,913.2 778.3,889.1 778.3,840.9 820.0,816.8 861.7,840.9" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="5.0" opacity="0.4" />
+    <polyline class="thin" points="1169.6,818.6 1120.0,847.3 1070.4,818.6 1070.4,761.4 1120.0,732.7 1169.6,761.4" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.7" opacity="0.6" />
+    <polyline class="thin" points="1564.7,891.6 1510.0,923.2 1455.3,891.6 1455.3,828.4 1510.0,796.8 1564.7,828.4" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1744.7,681.6 1690.0,713.1 1635.3,681.6 1635.3,618.4 1690.0,586.9 1744.7,618.4" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.8" opacity="0.7" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="292.9,669.0 260.0,688.0 227.1,669.0 227.1,631.0 260.0,612.0 292.9,631.0" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="455.7,860.6 420.0,881.2 384.3,860.6 384.3,819.4 420.0,798.8 455.7,819.4" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="862.7,889.7 820.0,914.3 777.3,889.7 777.3,840.3 820.0,815.7 862.7,840.3" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="5.2" opacity="0.4" />
+    <polyline class="thin" points="1170.4,819.1 1120.0,848.2 1069.6,819.1 1069.6,760.9 1120.0,731.8 1170.4,760.9" opacity="0.4" />
+    <circle class="node" cx="1120" cy="790" r="6.9" opacity="0.6" />
+    <polyline class="thin" points="1565.0,891.8 1510.0,923.6 1455.0,891.8 1455.0,828.2 1510.0,796.4 1565.0,828.2" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1744.3,681.3 1690.0,712.7 1635.7,681.3 1635.7,618.7 1690.0,587.3 1744.3,618.7" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.7" opacity="0.7" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.0,669.0 260.0,688.0 227.0,669.0 227.0,631.0 260.0,612.0 293.0,631.0" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="456.4,861.0 420.0,882.0 383.6,861.0 383.6,819.0 420.0,798.0 456.4,819.0" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.8" opacity="0.3" />
+    <polyline class="thin" points="863.7,890.2 820.0,915.4 776.3,890.2 776.3,839.8 820.0,814.6 863.7,839.8" opacity="0.3" />
+    <circle class="node" cx="820" cy="865" r="5.4" opacity="0.5" />
+    <polyline class="thin" points="1171.2,819.6 1120.0,849.1 1068.8,819.6 1068.8,760.4 1120.0,730.9 1171.2,760.4" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="1565.3,891.9 1510.0,923.8 1454.7,891.9 1454.7,828.1 1510.0,796.2 1565.3,828.1" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1743.8,681.1 1690.0,712.1 1636.2,681.1 1636.2,618.9 1690.0,587.9 1743.8,618.9" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.6" opacity="0.6" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.1,669.1 260.0,688.2 226.9,669.1 226.9,630.9 260.0,611.8 293.1,630.9" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.0" opacity="0.2" />
+    <polyline class="thin" points="457.1,861.4 420.0,882.9 382.9,861.4 382.9,818.6 420.0,797.1 457.1,818.6" opacity="0.2" />
+    <circle class="node" cx="420" cy="840" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="864.7,890.8 820.0,916.6 775.3,890.8 775.3,839.2 820.0,813.4 864.7,839.2" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="5.6" opacity="0.5" />
+    <polyline class="thin" points="1172.0,820.0 1120.0,850.0 1068.0,820.0 1068.0,760.0 1120.0,730.0 1172.0,760.0" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.2" opacity="0.6" />
+    <polyline class="thin" points="1565.4,892.0 1510.0,924.0 1454.6,892.0 1454.6,828.0 1510.0,796.0 1565.4,828.0" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1743.2,680.7 1690.0,711.5 1636.8,680.7 1636.8,619.3 1690.0,588.5 1743.2,619.3" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.5" opacity="0.6" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.3,669.2 260.0,688.4 226.7,669.2 226.7,630.8 260.0,611.6 293.3,630.8" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.1" opacity="0.2" />
+    <polyline class="thin" points="457.9,861.9 420.0,883.8 382.1,861.9 382.1,818.1 420.0,796.2 457.9,818.1" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.1" opacity="0.3" />
+    <polyline class="thin" points="865.6,891.3 820.0,917.7 774.4,891.3 774.4,838.7 820.0,812.3 865.6,838.7" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="5.8" opacity="0.5" />
+    <polyline class="thin" points="1172.6,820.4 1120.0,850.8 1067.4,820.4 1067.4,759.6 1120.0,729.2 1172.6,759.6" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="1565.4,892.0 1510.0,924.0 1454.6,892.0 1454.6,828.0 1510.0,796.0 1565.4,828.0" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1742.6,680.4 1690.0,710.8 1637.4,680.4 1637.4,619.6 1690.0,589.2 1742.6,619.6" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.4" opacity="0.6" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="293.6,669.4 260.0,688.8 226.4,669.4 226.4,630.6 260.0,611.2 293.6,630.6" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="458.8,862.4 420.0,884.7 381.2,862.4 381.2,817.6 420.0,795.3 458.8,817.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.3" opacity="0.4" />
+    <polyline class="thin" points="866.6,891.9 820.0,918.8 773.4,891.9 773.4,838.1 820.0,811.2 866.6,838.1" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.0" opacity="0.5" />
+    <polyline class="thin" points="1173.2,820.7 1120.0,851.5 1066.8,820.7 1066.8,759.3 1120.0,728.5 1173.2,759.3" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="1565.4,892.0 1510.0,924.0 1454.6,892.0 1454.6,828.0 1510.0,796.0 1565.4,828.0" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1742.0,680.0 1690.0,710.0 1638.0,680.0 1638.0,620.0 1690.0,590.0 1742.0,620.0" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.2" opacity="0.6" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="294.0,669.6 260.0,689.2 226.0,669.6 226.0,630.4 260.0,610.8 294.0,630.4" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.2" opacity="0.3" />
+    <polyline class="thin" points="459.6,862.9 420.0,885.8 380.4,862.9 380.4,817.1 420.0,794.2 459.6,817.1" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.5" opacity="0.4" />
+    <polyline class="thin" points="867.6,892.5 820.0,919.9 772.4,892.5 772.4,837.5 820.0,810.1 867.6,837.5" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.3" opacity="0.5" />
+    <polyline class="thin" points="1173.8,821.1 1120.0,852.1 1066.2,821.1 1066.2,758.9 1120.0,727.9 1173.8,758.9" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.6" opacity="0.6" />
+    <polyline class="thin" points="1565.3,891.9 1510.0,923.8 1454.7,891.9 1454.7,828.1 1510.0,796.2 1565.3,828.1" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1741.2,679.6 1690.0,709.1 1638.8,679.6 1638.8,620.4 1690.0,590.9 1741.2,620.4" opacity="0.5" />
+    <circle class="node" cx="1690" cy="650" r="7.1" opacity="0.6" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="294.4,669.9 260.0,689.7 225.6,669.9 225.6,630.1 260.0,610.3 294.4,630.1" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.3" opacity="0.3" />
+    <polyline class="thin" points="460.5,863.4 420.0,886.8 379.5,863.4 379.5,816.6 420.0,793.2 460.5,816.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.7" opacity="0.4" />
+    <polyline class="thin" points="868.5,893.0 820.0,921.0 771.5,893.0 771.5,837.0 820.0,809.0 868.5,837.0" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.5" opacity="0.5" />
+    <polyline class="thin" points="1174.3,821.3 1120.0,852.7 1065.7,821.3 1065.7,758.7 1120.0,727.3 1174.3,758.7" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="1565.0,891.8 1510.0,923.6 1455.0,891.8 1455.0,828.2 1510.0,796.4 1565.0,828.2" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1740.4,679.1 1690.0,708.2 1639.6,679.1 1639.6,620.9 1690.0,591.8 1740.4,620.9" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.9" opacity="0.6" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="294.9,670.2 260.0,690.4 225.1,670.2 225.1,629.8 260.0,609.6 294.9,629.8" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.5" opacity="0.3" />
+    <polyline class="thin" points="461.5,864.0 420.0,887.9 378.5,864.0 378.5,816.0 420.0,792.1 461.5,816.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="4.9" opacity="0.4" />
+    <polyline class="thin" points="869.4,893.5 820.0,922.0 770.6,893.5 770.6,836.5 820.0,808.0 869.4,836.5" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.7" opacity="0.6" />
+    <polyline class="thin" points="1174.7,821.6 1120.0,853.1 1065.3,821.6 1065.3,758.4 1120.0,726.9 1174.7,758.4" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1564.7,891.6 1510.0,923.2 1455.3,891.6 1455.3,828.4 1510.0,796.8 1564.7,828.4" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1739.6,678.6 1690.0,707.2 1640.4,678.6 1640.4,621.4 1690.0,592.8 1739.6,621.4" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.7" opacity="0.6" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="295.5,670.5 260.0,691.0 224.5,670.5 224.5,629.5 260.0,609.0 295.5,629.5" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.6" opacity="0.3" />
+    <polyline class="thin" points="462.5,864.5 420.0,889.0 377.5,864.5 377.5,815.5 420.0,791.0 462.5,815.5" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="5.1" opacity="0.4" />
+    <polyline class="thin" points="870.2,894.0 820.0,923.0 769.8,894.0 769.8,836.0 820.0,807.0 870.2,836.0" opacity="0.4" />
+    <circle class="node" cx="820" cy="865" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="1175.0,821.7 1120.0,853.5 1065.0,821.7 1065.0,758.3 1120.0,726.5 1175.0,758.3" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1564.4,891.4 1510.0,922.8 1455.6,891.4 1455.6,828.6 1510.0,797.2 1564.4,828.6" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1738.7,678.1 1690.0,706.2 1641.3,678.1 1641.3,621.9 1690.0,593.8 1738.7,621.9" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.5" opacity="0.5" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="296.2,670.9 260.0,691.8 223.8,670.9 223.8,629.1 260.0,608.2 296.2,629.1" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.7" opacity="0.3" />
+    <polyline class="thin" points="463.4,865.1 420.0,890.2 376.6,865.1 376.6,814.9 420.0,789.8 463.4,814.9" opacity="0.3" />
+    <circle class="node" cx="420" cy="840" r="5.3" opacity="0.4" />
+    <polyline class="thin" points="871.0,894.5 820.0,923.9 769.0,894.5 769.0,835.5 820.0,806.1 871.0,835.5" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.0" opacity="0.6" />
+    <polyline class="thin" points="1175.2,821.9 1120.0,853.8 1064.8,821.9 1064.8,758.1 1120.0,726.2 1175.2,758.1" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1563.9,891.1 1510.0,922.3 1456.1,891.1 1456.1,828.9 1510.0,797.7 1563.9,828.9" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="1737.8,677.6 1690.0,705.2 1642.2,677.6 1642.2,622.4 1690.0,594.8 1737.8,622.4" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.3" opacity="0.5" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="296.9,671.3 260.0,692.6 223.1,671.3 223.1,628.7 260.0,607.4 296.9,628.7" opacity="0.2" />
+    <circle class="node" cx="260" cy="650" r="3.9" opacity="0.3" />
+    <polyline class="thin" points="464.4,865.6 420.0,891.3 375.6,865.6 375.6,814.4 420.0,788.7 464.4,814.4" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="5.6" opacity="0.5" />
+    <polyline class="thin" points="871.8,894.9 820.0,924.8 768.2,894.9 768.2,835.1 820.0,805.2 871.8,835.1" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.2" opacity="0.6" />
+    <polyline class="thin" points="1175.4,822.0 1120.0,853.9 1064.6,822.0 1064.6,758.0 1120.0,726.1 1175.4,758.0" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1563.4,890.8 1510.0,921.6 1456.6,890.8 1456.6,829.2 1510.0,798.4 1563.4,829.2" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="1736.8,677.0 1690.0,704.1 1643.2,677.0 1643.2,623.0 1690.0,595.9 1736.8,623.0" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="6.1" opacity="0.5" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="297.7,671.8 260.0,693.5 222.3,671.8 222.3,628.2 260.0,606.5 297.7,628.2" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.1" opacity="0.3" />
+    <polyline class="thin" points="465.4,866.2 420.0,892.4 374.6,866.2 374.6,813.8 420.0,787.6 465.4,813.8" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="5.8" opacity="0.5" />
+    <polyline class="thin" points="872.5,895.3 820.0,925.6 767.5,895.3 767.5,834.7 820.0,804.4 872.5,834.7" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="1175.4,822.0 1120.0,854.0 1064.6,822.0 1064.6,758.0 1120.0,726.0 1175.4,758.0" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1562.8,890.5 1510.0,921.0 1457.2,890.5 1457.2,829.5 1510.0,799.0 1562.8,829.5" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.4" opacity="0.6" />
+    <polyline class="thin" points="1735.9,676.5 1690.0,703.0 1644.1,676.5 1644.1,623.5 1690.0,597.0 1735.9,623.5" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="5.9" opacity="0.5" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="298.5,672.2 260.0,694.5 221.5,672.2 221.5,627.8 260.0,605.5 298.5,627.8" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.3" opacity="0.4" />
+    <polyline class="thin" points="466.4,866.8 420.0,893.5 373.6,866.8 373.6,813.2 420.0,786.5 466.4,813.2" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.0" opacity="0.5" />
+    <polyline class="thin" points="873.1,895.7 820.0,926.3 766.9,895.7 766.9,834.3 820.0,803.7 873.1,834.3" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.5" opacity="0.6" />
+    <polyline class="thin" points="1175.4,822.0 1120.0,854.0 1064.6,822.0 1064.6,758.0 1120.0,726.0 1175.4,758.0" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1562.1,890.1 1510.0,920.2 1457.9,890.1 1457.9,829.9 1510.0,799.8 1562.1,829.9" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.3" opacity="0.6" />
+    <polyline class="thin" points="1734.9,675.9 1690.0,701.8 1645.1,675.9 1645.1,624.1 1690.0,598.2 1734.9,624.1" opacity="0.4" />
+    <circle class="node" cx="1690" cy="650" r="5.7" opacity="0.5" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="299.4,672.8 260.0,695.5 220.6,672.8 220.6,627.2 260.0,604.5 299.4,627.2" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.4" opacity="0.4" />
+    <polyline class="thin" points="467.3,867.3 420.0,894.6 372.7,867.3 372.7,812.7 420.0,785.4 467.3,812.7" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.2" opacity="0.5" />
+    <polyline class="thin" points="873.7,896.0 820.0,927.0 766.3,896.0 766.3,834.0 820.0,803.0 873.7,834.0" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.6" opacity="0.6" />
+    <polyline class="thin" points="1175.3,821.9 1120.0,853.8 1064.7,821.9 1064.7,758.1 1120.0,726.2 1175.3,758.1" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="8.0" opacity="0.7" />
+    <polyline class="thin" points="1561.4,889.7 1510.0,919.4 1458.6,889.7 1458.6,830.3 1510.0,800.6 1561.4,830.3" opacity="0.5" />
+    <circle class="node" cx="1510" cy="860" r="7.1" opacity="0.6" />
+    <polyline class="thin" points="1733.9,675.4 1690.0,700.7 1646.1,675.4 1646.1,624.6 1690.0,599.3 1733.9,624.6" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="5.4" opacity="0.5" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="300.3,673.3 260.0,696.6 219.7,673.3 219.7,626.7 260.0,603.4 300.3,626.7" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.6" opacity="0.4" />
+    <polyline class="thin" points="468.2,867.9 420.0,895.7 371.8,867.9 371.8,812.1 420.0,784.3 468.2,812.1" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.4" opacity="0.5" />
+    <polyline class="thin" points="874.2,896.3 820.0,927.5 765.8,896.3 765.8,833.7 820.0,802.5 874.2,833.7" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="1175.1,821.8 1120.0,853.6 1064.9,821.8 1064.9,758.2 1120.0,726.4 1175.1,758.2" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1560.6,889.2 1510.0,918.5 1459.4,889.2 1459.4,830.8 1510.0,801.5 1560.6,830.8" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.9" opacity="0.6" />
+    <polyline class="thin" points="1732.9,674.8 1690.0,699.6 1647.1,674.8 1647.1,625.2 1690.0,600.4 1732.9,625.2" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="5.2" opacity="0.4" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="301.3,673.8 260.0,697.6 218.7,673.8 218.7,626.2 260.0,602.4 301.3,626.2" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="4.9" opacity="0.4" />
+    <polyline class="thin" points="469.1,868.4 420.0,896.8 370.9,868.4 370.9,811.6 420.0,783.2 469.1,811.6" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.6" opacity="0.6" />
+    <polyline class="thin" points="874.6,896.5 820.0,928.0 765.4,896.5 765.4,833.5 820.0,802.0 874.6,833.5" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1174.8,821.7 1120.0,853.3 1065.2,821.7 1065.2,758.3 1120.0,726.7 1174.8,758.3" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1559.8,888.7 1510.0,917.5 1460.2,888.7 1460.2,831.3 1510.0,802.5 1559.8,831.3" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.7" opacity="0.6" />
+    <polyline class="thin" points="1732.0,674.2 1690.0,698.5 1648.0,674.2 1648.0,625.8 1690.0,601.5 1732.0,625.8" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="5.0" opacity="0.4" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="302.2,674.4 260.0,698.7 217.8,674.4 217.8,625.6 260.0,601.3 302.2,625.6" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="5.1" opacity="0.4" />
+    <polyline class="thin" points="470.0,868.9 420.0,897.7 370.0,868.9 370.0,811.1 420.0,782.3 470.0,811.1" opacity="0.4" />
+    <circle class="node" cx="420" cy="840" r="6.8" opacity="0.6" />
+    <polyline class="thin" points="874.9,896.7 820.0,928.4 765.1,896.7 765.1,833.3 820.0,801.6 874.9,833.3" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1174.5,821.4 1120.0,852.9 1065.5,821.4 1065.5,758.6 1120.0,727.1 1174.5,758.6" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.8" opacity="0.7" />
+    <polyline class="thin" points="1558.9,888.2 1510.0,916.5 1461.1,888.2 1461.1,831.8 1510.0,803.5 1558.9,831.8" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.6" opacity="0.6" />
+    <polyline class="thin" points="1731.0,673.7 1690.0,697.4 1649.0,673.7 1649.0,626.3 1690.0,602.6 1731.0,626.3" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.8" opacity="0.4" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <polyline class="thin" points="303.2,674.9 260.0,699.9 216.8,674.9 216.8,625.1 260.0,600.1 303.2,625.1" opacity="0.3" />
+    <circle class="node" cx="260" cy="650" r="5.3" opacity="0.4" />
+    <polyline class="thin" points="470.8,869.3 420.0,898.7 369.2,869.3 369.2,810.7 420.0,781.3 470.8,810.7" opacity="0.5" />
+    <circle class="node" cx="420" cy="840" r="7.0" opacity="0.6" />
+    <polyline class="thin" points="875.2,896.8 820.0,928.7 764.8,896.8 764.8,833.2 820.0,801.3 875.2,833.2" opacity="0.5" />
+    <circle class="node" cx="820" cy="865" r="7.9" opacity="0.7" />
+    <polyline class="thin" points="1174.0,821.2 1120.0,852.4 1066.0,821.2 1066.0,758.8 1120.0,727.6 1174.0,758.8" opacity="0.5" />
+    <circle class="node" cx="1120" cy="790" r="7.7" opacity="0.7" />
+    <polyline class="thin" points="1558.0,887.7 1510.0,915.4 1462.0,887.7 1462.0,832.3 1510.0,804.6 1558.0,832.3" opacity="0.4" />
+    <circle class="node" cx="1510" cy="860" r="6.4" opacity="0.5" />
+    <polyline class="thin" points="1730.1,673.1 1690.0,696.3 1649.9,673.1 1649.9,626.9 1690.0,603.7 1730.1,626.9" opacity="0.3" />
+    <circle class="node" cx="1690" cy="650" r="4.6" opacity="0.4" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 836,284 C 766,420 340,500 260,650" opacity="0.60" />
+    <circle class="node" cx="260" cy="650" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 908,284 C 838,430 1740,500 1660,650" opacity="0.60" />
+    <circle class="node" cx="1660" cy="650" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 986,284 C 916,440 1040,725 960,875" opacity="0.60" />
+    <circle class="node" cx="960" cy="875" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1042,284 C 972,450 500,695 420,845" opacity="0.60" />
+    <circle class="node" cx="420" cy="845" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1094,284 C 1024,460 1590,695 1510,845" opacity="0.60" />
+    <circle class="node" cx="1510" cy="845" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="810" y1="286" x2="1110" y2="286" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="320">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="320">LOGIN FAILED</text>
+  </g>
+</svg>

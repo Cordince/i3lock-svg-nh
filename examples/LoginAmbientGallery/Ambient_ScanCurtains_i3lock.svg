@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="ambient-ScanCurtains" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.6" y="-0.7" width="2.2" height="2.4">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#020202" flood-opacity="0.84" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .login-dim { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #76666b; opacity: 0.42; }
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .fine { fill: none; stroke: #d40000; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #d40000; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.58; }
+      .soft { fill: #d40000; opacity: 0.11; }
+      .node { fill: #ff3535; opacity: 0.72; }
+      .node-dim { fill: #7a101b; opacity: 0.42; }
+      .panel { fill: #d40000; opacity: 0.16; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 46px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="960.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="983.1" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1006.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1029.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1052.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1074.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1097.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1119.4" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1141.3" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1162.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1184.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1204.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1225.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1244.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1264.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1282.6" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1300.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1318.1" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1334.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1350.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1366.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1380.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.4" />
+    <rect class="panel" x="1394.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1407.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1419.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1430.1" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1440.3" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1449.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1458.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1465.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1471.9" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1477.4" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1481.9" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1485.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1488.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1489.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1490.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1489.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1488.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1485.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1481.9" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1477.4" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1471.9" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1465.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1458.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1449.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1440.3" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1430.1" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1419.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1407.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1394.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1380.5" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1366.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1350.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1334.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1318.1" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.1" />
+    <rect class="panel" x="1300.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1282.6" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1264.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1244.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1225.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.1" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1204.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1184.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.4" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1162.8" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1141.3" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.2" />
+    <rect class="panel" x="1119.4" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1097.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1074.7" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1052.0" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1029.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="1006.2" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="80" y1="440.0" x2="330" y2="440.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="458.0" x2="1840" y2="458.0" opacity="0.3" />
+    <line class="thin" x1="80" y1="492.0" x2="330" y2="492.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="510.0" x2="1840" y2="510.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="544.0" x2="330" y2="544.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="562.0" x2="1840" y2="562.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="596.0" x2="330" y2="596.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="614.0" x2="1840" y2="614.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="648.0" x2="330" y2="648.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="666.0" x2="1840" y2="666.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="700.0" x2="330" y2="700.0" opacity="0.4" />
+    <line class="thin" x1="1590" y1="718.0" x2="1840" y2="718.0" opacity="0.1" />
+    <line class="thin" x1="80" y1="752.0" x2="330" y2="752.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="770.0" x2="1840" y2="770.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="804.0" x2="330" y2="804.0" opacity="0.3" />
+    <line class="thin" x1="1590" y1="822.0" x2="1840" y2="822.0" opacity="0.2" />
+    <line class="thin" x1="80" y1="856.0" x2="330" y2="856.0" opacity="0.2" />
+    <line class="thin" x1="1590" y1="874.0" x2="1840" y2="874.0" opacity="0.3" />
+    <rect class="panel" x="983.1" y="650" width="18" height="330" rx="5" opacity="0.28" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 836,284 C 766,420 340,500 260,650" opacity="0.60" />
+    <circle class="node" cx="260" cy="650" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 908,284 C 838,430 1740,500 1660,650" opacity="0.60" />
+    <circle class="node" cx="1660" cy="650" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 986,284 C 916,440 1040,725 960,875" opacity="0.60" />
+    <circle class="node" cx="960" cy="875" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1042,284 C 972,450 500,695 420,845" opacity="0.60" />
+    <circle class="node" cx="420" cy="845" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1094,284 C 1024,460 1590,695 1510,845" opacity="0.60" />
+    <circle class="node" cx="1510" cy="845" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="810" y1="286" x2="1110" y2="286" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="320">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="320">LOGIN FAILED</text>
+  </g>
+</svg>

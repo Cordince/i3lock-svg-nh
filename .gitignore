@@ -2,3 +2,5 @@ i3lock
 *.o
 tags
 *.swp
+__pycache__/
+*.pyc

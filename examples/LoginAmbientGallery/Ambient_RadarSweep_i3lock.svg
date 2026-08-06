@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="ambient-RadarSweep" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.6" y="-0.7" width="2.2" height="2.4">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#020202" flood-opacity="0.84" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .login-dim { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #76666b; opacity: 0.42; }
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .fine { fill: none; stroke: #d40000; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #d40000; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.58; }
+      .soft { fill: #d40000; opacity: 0.11; }
+      .node { fill: #ff3535; opacity: 0.72; }
+      .node-dim { fill: #7a101b; opacity: 0.42; }
+      .panel { fill: #d40000; opacity: 0.16; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 46px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="384.0" y2="780.0" opacity="0.48" />
+    <circle class="node" cx="384.0" cy="780.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1536.0" y2="780.0" opacity="0.48" />
+    <circle class="node" cx="1536.0" cy="780.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="981.1" y2="997.2" opacity="0.48" />
+    <circle class="node" cx="981.1" cy="997.2" r="7" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="383.5" y2="790.8" opacity="0.48" />
+    <circle class="node" cx="383.5" cy="790.8" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1536.5" y2="769.2" opacity="0.48" />
+    <circle class="node" cx="1536.5" cy="769.2" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="970.3" y2="998.6" opacity="0.48" />
+    <circle class="node" cx="970.3" cy="998.6" r="7" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="382.1" y2="801.5" opacity="0.48" />
+    <circle class="node" cx="382.1" cy="801.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1537.9" y2="758.5" opacity="0.48" />
+    <circle class="node" cx="1537.9" cy="758.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="959.5" y2="999.0" opacity="0.48" />
+    <circle class="node" cx="959.5" cy="999.0" r="7" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="379.8" y2="812.1" opacity="0.48" />
+    <circle class="node" cx="379.8" cy="812.1" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1540.2" y2="747.9" opacity="0.48" />
+    <circle class="node" cx="1540.2" cy="747.9" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="948.7" y2="998.5" opacity="0.48" />
+    <circle class="node" cx="948.7" cy="998.5" r="7" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="376.5" y2="822.4" opacity="0.48" />
+    <circle class="node" cx="376.5" cy="822.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1543.5" y2="737.6" opacity="0.48" />
+    <circle class="node" cx="1543.5" cy="737.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="938.0" y2="997.0" opacity="0.48" />
+    <circle class="node" cx="938.0" cy="997.0" r="7" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="372.4" y2="832.4" opacity="0.48" />
+    <circle class="node" cx="372.4" cy="832.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1547.6" y2="727.6" opacity="0.48" />
+    <circle class="node" cx="1547.6" cy="727.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="927.5" y2="994.7" opacity="0.48" />
+    <circle class="node" cx="927.5" cy="994.7" r="7" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="367.4" y2="842.0" opacity="0.48" />
+    <circle class="node" cx="367.4" cy="842.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1552.6" y2="718.0" opacity="0.48" />
+    <circle class="node" cx="1552.6" cy="718.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="917.2" y2="991.4" opacity="0.48" />
+    <circle class="node" cx="917.2" cy="991.4" r="7" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="361.6" y2="851.1" opacity="0.48" />
+    <circle class="node" cx="361.6" cy="851.1" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1558.4" y2="708.9" opacity="0.48" />
+    <circle class="node" cx="1558.4" cy="708.9" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="907.2" y2="987.2" opacity="0.48" />
+    <circle class="node" cx="907.2" cy="987.2" r="7" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="355.0" y2="859.7" opacity="0.48" />
+    <circle class="node" cx="355.0" cy="859.7" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1565.0" y2="700.3" opacity="0.48" />
+    <circle class="node" cx="1565.0" cy="700.3" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="897.6" y2="982.2" opacity="0.48" />
+    <circle class="node" cx="897.6" cy="982.2" r="7" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="347.7" y2="867.7" opacity="0.48" />
+    <circle class="node" cx="347.7" cy="867.7" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1572.3" y2="692.3" opacity="0.48" />
+    <circle class="node" cx="1572.3" cy="692.3" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="888.5" y2="976.3" opacity="0.48" />
+    <circle class="node" cx="888.5" cy="976.3" r="7" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="339.7" y2="875.0" opacity="0.48" />
+    <circle class="node" cx="339.7" cy="875.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1580.3" y2="685.0" opacity="0.48" />
+    <circle class="node" cx="1580.3" cy="685.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="879.9" y2="969.7" opacity="0.48" />
+    <circle class="node" cx="879.9" cy="969.7" r="7" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="331.1" y2="881.6" opacity="0.48" />
+    <circle class="node" cx="331.1" cy="881.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1588.9" y2="678.4" opacity="0.48" />
+    <circle class="node" cx="1588.9" cy="678.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="872.0" y2="962.4" opacity="0.48" />
+    <circle class="node" cx="872.0" cy="962.4" r="7" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="322.0" y2="887.4" opacity="0.48" />
+    <circle class="node" cx="322.0" cy="887.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1598.0" y2="672.6" opacity="0.48" />
+    <circle class="node" cx="1598.0" cy="672.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="864.7" y2="954.4" opacity="0.48" />
+    <circle class="node" cx="864.7" cy="954.4" r="7" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="312.4" y2="892.4" opacity="0.48" />
+    <circle class="node" cx="312.4" cy="892.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1607.6" y2="667.6" opacity="0.48" />
+    <circle class="node" cx="1607.6" cy="667.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="858.2" y2="945.7" opacity="0.48" />
+    <circle class="node" cx="858.2" cy="945.7" r="7" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="302.4" y2="896.5" opacity="0.48" />
+    <circle class="node" cx="302.4" cy="896.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1617.6" y2="663.5" opacity="0.48" />
+    <circle class="node" cx="1617.6" cy="663.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="852.4" y2="936.6" opacity="0.48" />
+    <circle class="node" cx="852.4" cy="936.6" r="7" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="292.1" y2="899.8" opacity="0.48" />
+    <circle class="node" cx="292.1" cy="899.8" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1627.9" y2="660.2" opacity="0.48" />
+    <circle class="node" cx="1627.9" cy="660.2" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="847.4" y2="927.0" opacity="0.48" />
+    <circle class="node" cx="847.4" cy="927.0" r="7" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="281.5" y2="902.1" opacity="0.48" />
+    <circle class="node" cx="281.5" cy="902.1" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1638.5" y2="657.9" opacity="0.48" />
+    <circle class="node" cx="1638.5" cy="657.9" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="843.3" y2="917.0" opacity="0.48" />
+    <circle class="node" cx="843.3" cy="917.0" r="7" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="270.8" y2="903.5" opacity="0.48" />
+    <circle class="node" cx="270.8" cy="903.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1649.2" y2="656.5" opacity="0.48" />
+    <circle class="node" cx="1649.2" cy="656.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="840.1" y2="906.6" opacity="0.48" />
+    <circle class="node" cx="840.1" cy="906.6" r="7" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="260.0" y2="904.0" opacity="0.48" />
+    <circle class="node" cx="260.0" cy="904.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1660.0" y2="656.0" opacity="0.48" />
+    <circle class="node" cx="1660.0" cy="656.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="837.8" y2="896.1" opacity="0.48" />
+    <circle class="node" cx="837.8" cy="896.1" r="7" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="249.2" y2="903.5" opacity="0.48" />
+    <circle class="node" cx="249.2" cy="903.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1670.8" y2="656.5" opacity="0.48" />
+    <circle class="node" cx="1670.8" cy="656.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="836.4" y2="885.3" opacity="0.48" />
+    <circle class="node" cx="836.4" cy="885.3" r="7" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="238.5" y2="902.1" opacity="0.48" />
+    <circle class="node" cx="238.5" cy="902.1" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1681.5" y2="657.9" opacity="0.48" />
+    <circle class="node" cx="1681.5" cy="657.9" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="836.0" y2="874.5" opacity="0.48" />
+    <circle class="node" cx="836.0" cy="874.5" r="7" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="227.9" y2="899.8" opacity="0.48" />
+    <circle class="node" cx="227.9" cy="899.8" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1692.1" y2="660.2" opacity="0.48" />
+    <circle class="node" cx="1692.1" cy="660.2" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="836.5" y2="863.7" opacity="0.48" />
+    <circle class="node" cx="836.5" cy="863.7" r="7" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="217.6" y2="896.5" opacity="0.48" />
+    <circle class="node" cx="217.6" cy="896.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1702.4" y2="663.5" opacity="0.48" />
+    <circle class="node" cx="1702.4" cy="663.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="838.0" y2="853.0" opacity="0.48" />
+    <circle class="node" cx="838.0" cy="853.0" r="7" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="207.6" y2="892.4" opacity="0.48" />
+    <circle class="node" cx="207.6" cy="892.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1712.4" y2="667.6" opacity="0.48" />
+    <circle class="node" cx="1712.4" cy="667.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="840.3" y2="842.5" opacity="0.48" />
+    <circle class="node" cx="840.3" cy="842.5" r="7" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="198.0" y2="887.4" opacity="0.48" />
+    <circle class="node" cx="198.0" cy="887.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1722.0" y2="672.6" opacity="0.48" />
+    <circle class="node" cx="1722.0" cy="672.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="843.6" y2="832.2" opacity="0.48" />
+    <circle class="node" cx="843.6" cy="832.2" r="7" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="188.9" y2="881.6" opacity="0.48" />
+    <circle class="node" cx="188.9" cy="881.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1731.1" y2="678.4" opacity="0.48" />
+    <circle class="node" cx="1731.1" cy="678.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="847.8" y2="822.2" opacity="0.48" />
+    <circle class="node" cx="847.8" cy="822.2" r="7" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="180.3" y2="875.0" opacity="0.48" />
+    <circle class="node" cx="180.3" cy="875.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1739.7" y2="685.0" opacity="0.48" />
+    <circle class="node" cx="1739.7" cy="685.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="852.8" y2="812.6" opacity="0.48" />
+    <circle class="node" cx="852.8" cy="812.6" r="7" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="172.3" y2="867.7" opacity="0.48" />
+    <circle class="node" cx="172.3" cy="867.7" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1747.7" y2="692.3" opacity="0.48" />
+    <circle class="node" cx="1747.7" cy="692.3" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="858.7" y2="803.5" opacity="0.48" />
+    <circle class="node" cx="858.7" cy="803.5" r="7" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="165.0" y2="859.7" opacity="0.48" />
+    <circle class="node" cx="165.0" cy="859.7" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1755.0" y2="700.3" opacity="0.48" />
+    <circle class="node" cx="1755.0" cy="700.3" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="865.3" y2="794.9" opacity="0.48" />
+    <circle class="node" cx="865.3" cy="794.9" r="7" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="158.4" y2="851.1" opacity="0.48" />
+    <circle class="node" cx="158.4" cy="851.1" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1761.6" y2="708.9" opacity="0.48" />
+    <circle class="node" cx="1761.6" cy="708.9" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="872.6" y2="787.0" opacity="0.48" />
+    <circle class="node" cx="872.6" cy="787.0" r="7" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="152.6" y2="842.0" opacity="0.48" />
+    <circle class="node" cx="152.6" cy="842.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1767.4" y2="718.0" opacity="0.48" />
+    <circle class="node" cx="1767.4" cy="718.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="880.6" y2="779.7" opacity="0.48" />
+    <circle class="node" cx="880.6" cy="779.7" r="7" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="147.6" y2="832.4" opacity="0.48" />
+    <circle class="node" cx="147.6" cy="832.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1772.4" y2="727.6" opacity="0.48" />
+    <circle class="node" cx="1772.4" cy="727.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="889.3" y2="773.2" opacity="0.48" />
+    <circle class="node" cx="889.3" cy="773.2" r="7" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="143.5" y2="822.4" opacity="0.48" />
+    <circle class="node" cx="143.5" cy="822.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1776.5" y2="737.6" opacity="0.48" />
+    <circle class="node" cx="1776.5" cy="737.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="898.4" y2="767.4" opacity="0.48" />
+    <circle class="node" cx="898.4" cy="767.4" r="7" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="140.2" y2="812.1" opacity="0.48" />
+    <circle class="node" cx="140.2" cy="812.1" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1779.8" y2="747.9" opacity="0.48" />
+    <circle class="node" cx="1779.8" cy="747.9" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="908.0" y2="762.4" opacity="0.48" />
+    <circle class="node" cx="908.0" cy="762.4" r="7" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="137.9" y2="801.5" opacity="0.48" />
+    <circle class="node" cx="137.9" cy="801.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1782.1" y2="758.5" opacity="0.48" />
+    <circle class="node" cx="1782.1" cy="758.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="918.0" y2="758.3" opacity="0.48" />
+    <circle class="node" cx="918.0" cy="758.3" r="7" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="136.5" y2="790.8" opacity="0.48" />
+    <circle class="node" cx="136.5" cy="790.8" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1783.5" y2="769.2" opacity="0.48" />
+    <circle class="node" cx="1783.5" cy="769.2" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="928.4" y2="755.1" opacity="0.48" />
+    <circle class="node" cx="928.4" cy="755.1" r="7" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="136.0" y2="780.0" opacity="0.48" />
+    <circle class="node" cx="136.0" cy="780.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1784.0" y2="780.0" opacity="0.48" />
+    <circle class="node" cx="1784.0" cy="780.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="938.9" y2="752.8" opacity="0.48" />
+    <circle class="node" cx="938.9" cy="752.8" r="7" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="136.5" y2="769.2" opacity="0.48" />
+    <circle class="node" cx="136.5" cy="769.2" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1783.5" y2="790.8" opacity="0.48" />
+    <circle class="node" cx="1783.5" cy="790.8" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="949.7" y2="751.4" opacity="0.48" />
+    <circle class="node" cx="949.7" cy="751.4" r="7" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="137.9" y2="758.5" opacity="0.48" />
+    <circle class="node" cx="137.9" cy="758.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1782.1" y2="801.5" opacity="0.48" />
+    <circle class="node" cx="1782.1" cy="801.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="960.5" y2="751.0" opacity="0.48" />
+    <circle class="node" cx="960.5" cy="751.0" r="7" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="140.2" y2="747.9" opacity="0.48" />
+    <circle class="node" cx="140.2" cy="747.9" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1779.8" y2="812.1" opacity="0.48" />
+    <circle class="node" cx="1779.8" cy="812.1" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="971.3" y2="751.5" opacity="0.48" />
+    <circle class="node" cx="971.3" cy="751.5" r="7" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="143.5" y2="737.6" opacity="0.48" />
+    <circle class="node" cx="143.5" cy="737.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1776.5" y2="822.4" opacity="0.48" />
+    <circle class="node" cx="1776.5" cy="822.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="982.0" y2="753.0" opacity="0.48" />
+    <circle class="node" cx="982.0" cy="753.0" r="7" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="147.6" y2="727.6" opacity="0.48" />
+    <circle class="node" cx="147.6" cy="727.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1772.4" y2="832.4" opacity="0.48" />
+    <circle class="node" cx="1772.4" cy="832.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="992.5" y2="755.3" opacity="0.48" />
+    <circle class="node" cx="992.5" cy="755.3" r="7" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="152.6" y2="718.0" opacity="0.48" />
+    <circle class="node" cx="152.6" cy="718.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1767.4" y2="842.0" opacity="0.48" />
+    <circle class="node" cx="1767.4" cy="842.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1002.8" y2="758.6" opacity="0.48" />
+    <circle class="node" cx="1002.8" cy="758.6" r="7" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="158.4" y2="708.9" opacity="0.48" />
+    <circle class="node" cx="158.4" cy="708.9" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1761.6" y2="851.1" opacity="0.48" />
+    <circle class="node" cx="1761.6" cy="851.1" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1012.8" y2="762.8" opacity="0.48" />
+    <circle class="node" cx="1012.8" cy="762.8" r="7" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="165.0" y2="700.3" opacity="0.48" />
+    <circle class="node" cx="165.0" cy="700.3" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1755.0" y2="859.7" opacity="0.48" />
+    <circle class="node" cx="1755.0" cy="859.7" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1022.4" y2="767.8" opacity="0.48" />
+    <circle class="node" cx="1022.4" cy="767.8" r="7" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="172.3" y2="692.3" opacity="0.48" />
+    <circle class="node" cx="172.3" cy="692.3" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1747.7" y2="867.7" opacity="0.48" />
+    <circle class="node" cx="1747.7" cy="867.7" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1031.5" y2="773.7" opacity="0.48" />
+    <circle class="node" cx="1031.5" cy="773.7" r="7" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="180.3" y2="685.0" opacity="0.48" />
+    <circle class="node" cx="180.3" cy="685.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1739.7" y2="875.0" opacity="0.48" />
+    <circle class="node" cx="1739.7" cy="875.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1040.1" y2="780.3" opacity="0.48" />
+    <circle class="node" cx="1040.1" cy="780.3" r="7" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="188.9" y2="678.4" opacity="0.48" />
+    <circle class="node" cx="188.9" cy="678.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1731.1" y2="881.6" opacity="0.48" />
+    <circle class="node" cx="1731.1" cy="881.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1048.0" y2="787.6" opacity="0.48" />
+    <circle class="node" cx="1048.0" cy="787.6" r="7" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="198.0" y2="672.6" opacity="0.48" />
+    <circle class="node" cx="198.0" cy="672.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1722.0" y2="887.4" opacity="0.48" />
+    <circle class="node" cx="1722.0" cy="887.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1055.3" y2="795.6" opacity="0.48" />
+    <circle class="node" cx="1055.3" cy="795.6" r="7" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="207.6" y2="667.6" opacity="0.48" />
+    <circle class="node" cx="207.6" cy="667.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1712.4" y2="892.4" opacity="0.48" />
+    <circle class="node" cx="1712.4" cy="892.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1061.8" y2="804.3" opacity="0.48" />
+    <circle class="node" cx="1061.8" cy="804.3" r="7" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="217.6" y2="663.5" opacity="0.48" />
+    <circle class="node" cx="217.6" cy="663.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1702.4" y2="896.5" opacity="0.48" />
+    <circle class="node" cx="1702.4" cy="896.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1067.6" y2="813.4" opacity="0.48" />
+    <circle class="node" cx="1067.6" cy="813.4" r="7" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="227.9" y2="660.2" opacity="0.48" />
+    <circle class="node" cx="227.9" cy="660.2" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1692.1" y2="899.8" opacity="0.48" />
+    <circle class="node" cx="1692.1" cy="899.8" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1072.6" y2="823.0" opacity="0.48" />
+    <circle class="node" cx="1072.6" cy="823.0" r="7" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="238.5" y2="657.9" opacity="0.48" />
+    <circle class="node" cx="238.5" cy="657.9" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1681.5" y2="902.1" opacity="0.48" />
+    <circle class="node" cx="1681.5" cy="902.1" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1076.7" y2="833.0" opacity="0.48" />
+    <circle class="node" cx="1076.7" cy="833.0" r="7" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="249.2" y2="656.5" opacity="0.48" />
+    <circle class="node" cx="249.2" cy="656.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1670.8" y2="903.5" opacity="0.48" />
+    <circle class="node" cx="1670.8" cy="903.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1079.9" y2="843.4" opacity="0.48" />
+    <circle class="node" cx="1079.9" cy="843.4" r="7" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="260.0" y2="656.0" opacity="0.48" />
+    <circle class="node" cx="260.0" cy="656.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1660.0" y2="904.0" opacity="0.48" />
+    <circle class="node" cx="1660.0" cy="904.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1082.2" y2="853.9" opacity="0.48" />
+    <circle class="node" cx="1082.2" cy="853.9" r="7" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="270.8" y2="656.5" opacity="0.48" />
+    <circle class="node" cx="270.8" cy="656.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1649.2" y2="903.5" opacity="0.48" />
+    <circle class="node" cx="1649.2" cy="903.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1083.6" y2="864.7" opacity="0.48" />
+    <circle class="node" cx="1083.6" cy="864.7" r="7" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="281.5" y2="657.9" opacity="0.48" />
+    <circle class="node" cx="281.5" cy="657.9" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1638.5" y2="902.1" opacity="0.48" />
+    <circle class="node" cx="1638.5" cy="902.1" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1084.0" y2="875.5" opacity="0.48" />
+    <circle class="node" cx="1084.0" cy="875.5" r="7" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="292.1" y2="660.2" opacity="0.48" />
+    <circle class="node" cx="292.1" cy="660.2" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1627.9" y2="899.8" opacity="0.48" />
+    <circle class="node" cx="1627.9" cy="899.8" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1083.5" y2="886.3" opacity="0.48" />
+    <circle class="node" cx="1083.5" cy="886.3" r="7" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="302.4" y2="663.5" opacity="0.48" />
+    <circle class="node" cx="302.4" cy="663.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1617.6" y2="896.5" opacity="0.48" />
+    <circle class="node" cx="1617.6" cy="896.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1082.0" y2="897.0" opacity="0.48" />
+    <circle class="node" cx="1082.0" cy="897.0" r="7" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="312.4" y2="667.6" opacity="0.48" />
+    <circle class="node" cx="312.4" cy="667.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1607.6" y2="892.4" opacity="0.48" />
+    <circle class="node" cx="1607.6" cy="892.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1079.7" y2="907.5" opacity="0.48" />
+    <circle class="node" cx="1079.7" cy="907.5" r="7" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="322.0" y2="672.6" opacity="0.48" />
+    <circle class="node" cx="322.0" cy="672.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1598.0" y2="887.4" opacity="0.48" />
+    <circle class="node" cx="1598.0" cy="887.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1076.4" y2="917.8" opacity="0.48" />
+    <circle class="node" cx="1076.4" cy="917.8" r="7" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="331.1" y2="678.4" opacity="0.48" />
+    <circle class="node" cx="331.1" cy="678.4" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1588.9" y2="881.6" opacity="0.48" />
+    <circle class="node" cx="1588.9" cy="881.6" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1072.2" y2="927.8" opacity="0.48" />
+    <circle class="node" cx="1072.2" cy="927.8" r="7" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="339.7" y2="685.0" opacity="0.48" />
+    <circle class="node" cx="339.7" cy="685.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1580.3" y2="875.0" opacity="0.48" />
+    <circle class="node" cx="1580.3" cy="875.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1067.2" y2="937.4" opacity="0.48" />
+    <circle class="node" cx="1067.2" cy="937.4" r="7" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="347.7" y2="692.3" opacity="0.48" />
+    <circle class="node" cx="347.7" cy="692.3" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1572.3" y2="867.7" opacity="0.48" />
+    <circle class="node" cx="1572.3" cy="867.7" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1061.3" y2="946.5" opacity="0.48" />
+    <circle class="node" cx="1061.3" cy="946.5" r="7" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="355.0" y2="700.3" opacity="0.48" />
+    <circle class="node" cx="355.0" cy="700.3" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1565.0" y2="859.7" opacity="0.48" />
+    <circle class="node" cx="1565.0" cy="859.7" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1054.7" y2="955.1" opacity="0.48" />
+    <circle class="node" cx="1054.7" cy="955.1" r="7" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="361.6" y2="708.9" opacity="0.48" />
+    <circle class="node" cx="361.6" cy="708.9" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1558.4" y2="851.1" opacity="0.48" />
+    <circle class="node" cx="1558.4" cy="851.1" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1047.4" y2="963.0" opacity="0.48" />
+    <circle class="node" cx="1047.4" cy="963.0" r="7" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="367.4" y2="718.0" opacity="0.48" />
+    <circle class="node" cx="367.4" cy="718.0" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1552.6" y2="842.0" opacity="0.48" />
+    <circle class="node" cx="1552.6" cy="842.0" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1039.4" y2="970.3" opacity="0.48" />
+    <circle class="node" cx="1039.4" cy="970.3" r="7" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="372.4" y2="727.6" opacity="0.48" />
+    <circle class="node" cx="372.4" cy="727.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1547.6" y2="832.4" opacity="0.48" />
+    <circle class="node" cx="1547.6" cy="832.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1030.7" y2="976.8" opacity="0.48" />
+    <circle class="node" cx="1030.7" cy="976.8" r="7" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="376.5" y2="737.6" opacity="0.48" />
+    <circle class="node" cx="376.5" cy="737.6" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1543.5" y2="822.4" opacity="0.48" />
+    <circle class="node" cx="1543.5" cy="822.4" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1021.6" y2="982.6" opacity="0.48" />
+    <circle class="node" cx="1021.6" cy="982.6" r="7" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="379.8" y2="747.9" opacity="0.48" />
+    <circle class="node" cx="379.8" cy="747.9" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1540.2" y2="812.1" opacity="0.48" />
+    <circle class="node" cx="1540.2" cy="812.1" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1012.0" y2="987.6" opacity="0.48" />
+    <circle class="node" cx="1012.0" cy="987.6" r="7" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="382.1" y2="758.5" opacity="0.48" />
+    <circle class="node" cx="382.1" cy="758.5" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1537.9" y2="801.5" opacity="0.48" />
+    <circle class="node" cx="1537.9" cy="801.5" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="1002.0" y2="991.7" opacity="0.48" />
+    <circle class="node" cx="1002.0" cy="991.7" r="7" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <circle class="fine" cx="260" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="260" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="260" y1="780" x2="383.5" y2="769.2" opacity="0.48" />
+    <circle class="node" cx="383.5" cy="769.2" r="7" />
+    <circle class="fine" cx="1660" cy="780" r="42" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="78" opacity="0.18" />
+    <circle class="fine" cx="1660" cy="780" r="114" opacity="0.18" />
+    <line class="line" x1="1660" y1="780" x2="1536.5" y2="790.8" opacity="0.48" />
+    <circle class="node" cx="1536.5" cy="790.8" r="7" />
+    <circle class="fine" cx="960" cy="875" r="42" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="78" opacity="0.18" />
+    <circle class="fine" cx="960" cy="875" r="114" opacity="0.18" />
+    <line class="line" x1="960" y1="875" x2="991.6" y2="994.9" opacity="0.48" />
+    <circle class="node" cx="991.6" cy="994.9" r="7" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 836,284 C 766,420 340,500 260,650" opacity="0.60" />
+    <circle class="node" cx="260" cy="650" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 908,284 C 838,430 1740,500 1660,650" opacity="0.60" />
+    <circle class="node" cx="1660" cy="650" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 986,284 C 916,440 1040,725 960,875" opacity="0.60" />
+    <circle class="node" cx="960" cy="875" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1042,284 C 972,450 500,695 420,845" opacity="0.60" />
+    <circle class="node" cx="420" cy="845" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1094,284 C 1024,460 1590,695 1510,845" opacity="0.60" />
+    <circle class="node" cx="1510" cy="845" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="810" y1="286" x2="1110" y2="286" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="320">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="320">LOGIN FAILED</text>
+  </g>
+</svg>

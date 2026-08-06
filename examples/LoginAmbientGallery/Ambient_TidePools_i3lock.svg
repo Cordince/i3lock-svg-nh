@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="ambient-TidePools" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="red-glow" x="-0.6" y="-0.7" width="2.2" height="2.4">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="5" dy="7" result="offset" />
+      <feFlood flood-color="#020202" flood-opacity="0.84" result="shadow-color" />
+      <feComposite in="shadow-color" in2="offset" operator="in" result="shadow" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.4" result="soft-red" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="soft-red" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .login-dim { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #76666b; opacity: 0.42; }
+      .letter { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 96px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #d40000; stroke: #303030; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; filter: url(#red-glow); }
+      .fine { fill: none; stroke: #d40000; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #d40000; stroke-width: 4px; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #ff3535; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round; opacity: 0.58; }
+      .soft { fill: #d40000; opacity: 0.11; }
+      .node { fill: #ff3535; opacity: 0.72; }
+      .node-dim { fill: #7a101b; opacity: 0.42; }
+      .panel { fill: #d40000; opacity: 0.16; }
+      .status { font-family: 'Liberation Sans', Arial, sans-serif; font-size: 46px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; fill: #c8102e; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="51.0" ry="23.0" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="79.0" ry="37.0" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="107.0" ry="51.0" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="57.1" ry="26.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="85.1" ry="40.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="113.1" ry="54.4" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="58.2" ry="27.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="86.2" ry="41.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="114.2" ry="55.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="52.6" ry="23.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="80.6" ry="37.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="108.6" ry="51.9" opacity="0.2" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="51.8" ry="23.4" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="79.8" ry="37.4" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="107.8" ry="51.4" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="57.6" ry="26.7" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="85.6" ry="40.7" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="113.6" ry="54.7" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="57.7" ry="26.7" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="85.7" ry="40.7" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="113.7" ry="54.7" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="51.8" ry="23.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="79.8" ry="37.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="107.8" ry="51.5" opacity="0.2" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="52.6" ry="23.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="80.6" ry="37.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="108.6" ry="51.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="58.1" ry="27.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="86.1" ry="41.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="114.1" ry="55.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="57.1" ry="26.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="85.1" ry="40.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="113.1" ry="54.4" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="51.1" ry="23.0" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="79.1" ry="37.0" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="107.1" ry="51.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="53.3" ry="24.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="81.3" ry="38.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="109.3" ry="52.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="58.6" ry="27.2" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="86.6" ry="41.2" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="114.6" ry="55.2" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.9" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.9" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.9" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="56.5" ry="26.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="84.5" ry="40.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="112.5" ry="54.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="50.3" ry="22.6" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="78.3" ry="36.6" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="106.3" ry="50.6" opacity="0.2" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="54.1" ry="24.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="82.1" ry="38.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="110.1" ry="52.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.0" ry="27.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.0" ry="41.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.0" ry="55.4" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.7" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.7" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.7" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="55.9" ry="25.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="83.9" ry="39.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="111.9" ry="53.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="49.5" ry="22.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="77.5" ry="36.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="105.5" ry="50.2" opacity="0.2" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="54.8" ry="25.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="82.8" ry="39.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="110.8" ry="53.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.3" ry="27.6" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.3" ry="41.6" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.3" ry="55.6" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.5" ry="27.7" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.5" ry="41.7" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.5" ry="55.7" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="55.2" ry="25.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="83.2" ry="39.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="111.2" ry="53.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="48.7" ry="21.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="76.7" ry="35.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="104.7" ry="49.7" opacity="0.2" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="55.5" ry="25.5" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="83.5" ry="39.5" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="111.5" ry="53.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.6" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.6" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.6" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.2" ry="27.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.2" ry="41.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.2" ry="55.5" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="54.5" ry="24.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="82.5" ry="38.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="110.5" ry="52.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="48.0" ry="21.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="76.0" ry="35.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="104.0" ry="49.3" opacity="0.2" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="56.2" ry="25.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="84.2" ry="39.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="112.2" ry="53.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.8" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.8" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.8" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="58.8" ry="27.3" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="86.8" ry="41.3" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="114.8" ry="55.3" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="53.8" ry="24.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="81.8" ry="38.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="109.8" ry="52.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="47.3" ry="20.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="75.3" ry="34.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="103.3" ry="48.9" opacity="0.2" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="56.8" ry="26.2" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="84.8" ry="40.2" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="112.8" ry="54.2" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.9" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.9" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.9" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="58.4" ry="27.1" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="86.4" ry="41.1" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="114.4" ry="55.1" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="53.0" ry="24.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="81.0" ry="38.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="109.0" ry="52.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="46.6" ry="20.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="74.6" ry="34.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="102.6" ry="48.5" opacity="0.1" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="57.4" ry="26.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="85.4" ry="40.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="113.4" ry="54.5" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="57.9" ry="26.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="85.9" ry="40.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="113.9" ry="54.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="52.2" ry="23.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="80.2" ry="37.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="108.2" ry="51.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="45.9" ry="20.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="73.9" ry="34.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="101.9" ry="48.2" opacity="0.1" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="57.9" ry="26.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="85.9" ry="40.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="113.9" ry="54.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="57.4" ry="26.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="85.4" ry="40.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="113.4" ry="54.5" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="51.4" ry="23.2" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="79.4" ry="37.2" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="107.4" ry="51.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="45.3" ry="19.8" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="73.3" ry="33.8" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="101.3" ry="47.8" opacity="0.1" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="58.4" ry="27.1" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="86.4" ry="41.1" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="114.4" ry="55.1" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.9" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.9" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.9" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="56.8" ry="26.2" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="84.8" ry="40.2" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="112.8" ry="54.2" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="50.7" ry="22.8" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="78.7" ry="36.8" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="106.7" ry="50.8" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="44.7" ry="19.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="72.7" ry="33.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="100.7" ry="47.5" opacity="0.1" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="58.8" ry="27.3" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="86.8" ry="41.3" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="114.8" ry="55.3" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.8" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.8" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.8" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="56.2" ry="25.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="84.2" ry="39.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="112.2" ry="53.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="49.9" ry="22.4" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="77.9" ry="36.4" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="105.9" ry="50.4" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="44.1" ry="19.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="72.1" ry="33.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="100.1" ry="47.2" opacity="0.1" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.2" ry="27.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.2" ry="41.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.2" ry="55.5" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.6" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.6" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.6" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="55.5" ry="25.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="83.5" ry="39.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="111.5" ry="53.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="49.1" ry="21.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="77.1" ry="35.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="105.1" ry="49.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="43.7" ry="18.9" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="71.7" ry="32.9" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="99.7" ry="46.9" opacity="0.1" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.5" ry="27.7" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.5" ry="41.7" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.5" ry="55.7" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.3" ry="27.6" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.3" ry="41.6" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.3" ry="55.6" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="54.8" ry="25.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="82.8" ry="39.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="110.8" ry="53.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="48.3" ry="21.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="76.3" ry="35.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="104.3" ry="49.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="43.2" ry="18.7" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="71.2" ry="32.7" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="99.2" ry="46.7" opacity="0.1" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.7" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.7" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.7" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="59.0" ry="27.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="87.0" ry="41.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="115.0" ry="55.4" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="54.1" ry="24.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="82.1" ry="38.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="110.1" ry="52.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="47.6" ry="21.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="75.6" ry="35.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="103.6" ry="49.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.9" ry="18.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.9" ry="32.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.9" ry="46.5" opacity="0.1" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.9" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.9" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.9" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="58.6" ry="27.2" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="86.6" ry="41.2" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="114.6" ry="55.2" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="53.4" ry="24.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="81.4" ry="38.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="109.4" ry="52.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="46.9" ry="20.7" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="74.9" ry="34.7" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="102.9" ry="48.7" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.6" ry="18.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.6" ry="32.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.6" ry="46.3" opacity="0.1" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="58.1" ry="27.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="86.1" ry="41.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="114.1" ry="55.0" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="52.6" ry="23.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="80.6" ry="37.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="108.6" ry="51.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="46.2" ry="20.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="74.2" ry="34.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="102.2" ry="48.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.3" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.3" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.3" ry="46.2" opacity="0.1" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="57.6" ry="26.7" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="85.6" ry="40.7" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="113.6" ry="54.7" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="51.8" ry="23.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="79.8" ry="37.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="107.8" ry="51.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="45.6" ry="20.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="73.6" ry="34.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="101.6" ry="48.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.1" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.1" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.1" ry="46.1" opacity="0.1" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="57.1" ry="26.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="85.1" ry="40.4" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="113.1" ry="54.4" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="51.0" ry="23.0" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="79.0" ry="37.0" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="107.0" ry="51.0" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="45.0" ry="19.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="73.0" ry="33.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="101.0" ry="47.6" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.0" ry="46.0" opacity="0.1" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.9" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.9" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.9" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="56.5" ry="26.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="84.5" ry="40.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="112.5" ry="54.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="50.2" ry="22.6" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="78.2" ry="36.6" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="106.2" ry="50.6" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="44.4" ry="19.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="72.4" ry="33.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="100.4" ry="47.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.0" ry="46.0" opacity="0.1" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.7" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.7" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.7" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="55.8" ry="25.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="83.8" ry="39.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="111.8" ry="53.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="49.5" ry="22.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="77.5" ry="36.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="105.5" ry="50.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="43.9" ry="19.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="71.9" ry="33.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="99.9" ry="47.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.0" ry="46.0" opacity="0.1" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.5" ry="27.7" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.5" ry="41.7" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.5" ry="55.7" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="55.2" ry="25.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="83.2" ry="39.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="111.2" ry="53.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="48.7" ry="21.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="76.7" ry="35.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="104.7" ry="49.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="43.4" ry="18.8" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="71.4" ry="32.8" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="99.4" ry="46.8" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.1" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.1" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.1" ry="46.1" opacity="0.1" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="59.2" ry="27.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="87.2" ry="41.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="115.2" ry="55.5" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="54.5" ry="24.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="82.5" ry="38.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="110.5" ry="52.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="48.0" ry="21.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="76.0" ry="35.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="104.0" ry="49.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="43.0" ry="18.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="71.0" ry="32.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="99.0" ry="46.6" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.3" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.3" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.3" ry="46.2" opacity="0.1" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="58.8" ry="27.3" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="86.8" ry="41.3" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="114.8" ry="55.3" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="53.7" ry="24.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="81.7" ry="38.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="109.7" ry="52.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="47.2" ry="20.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="75.2" ry="34.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="103.2" ry="48.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.7" ry="18.4" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.7" ry="32.4" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.7" ry="46.4" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.5" ry="18.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.5" ry="32.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.5" ry="46.3" opacity="0.1" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="58.4" ry="27.1" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="86.4" ry="41.1" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="114.4" ry="55.1" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="53.0" ry="24.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="81.0" ry="38.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="109.0" ry="52.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="46.5" ry="20.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="74.5" ry="34.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="102.5" ry="48.5" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.4" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.4" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.4" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="42.8" ry="18.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="70.8" ry="32.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="98.8" ry="46.5" opacity="0.1" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="57.9" ry="26.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="85.9" ry="40.8" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="113.9" ry="54.8" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="52.2" ry="23.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="80.2" ry="37.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="108.2" ry="51.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="45.9" ry="20.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="73.9" ry="34.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="101.9" ry="48.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.2" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.2" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.2" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="43.2" ry="18.7" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="71.2" ry="32.7" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="99.2" ry="46.7" opacity="0.1" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="57.4" ry="26.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="85.4" ry="40.5" opacity="0.3" />
+    <ellipse class="thin" cx="250" cy="860" rx="113.4" ry="54.5" opacity="0.3" />
+    <ellipse class="thin" cx="650" cy="825" rx="51.4" ry="23.2" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="79.4" ry="37.2" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="107.4" ry="51.2" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="45.2" ry="19.8" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="73.2" ry="33.8" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="101.2" ry="47.8" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.1" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.1" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.1" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="43.6" ry="18.9" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="71.6" ry="32.9" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="99.6" ry="46.9" opacity="0.1" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="56.8" ry="26.2" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="84.8" ry="40.2" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="112.8" ry="54.2" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="50.6" ry="22.8" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="78.6" ry="36.8" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="106.6" ry="50.8" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="44.7" ry="19.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="72.7" ry="33.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="100.7" ry="47.5" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="44.1" ry="19.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="72.1" ry="33.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="100.1" ry="47.1" opacity="0.1" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="56.2" ry="25.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="84.2" ry="39.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="112.2" ry="53.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="49.8" ry="22.4" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="77.8" ry="36.4" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="105.8" ry="50.4" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="44.1" ry="19.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="72.1" ry="33.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="100.1" ry="47.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="44.6" ry="19.4" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="72.6" ry="33.4" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="100.6" ry="47.4" opacity="0.1" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="55.5" ry="25.5" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="83.5" ry="39.5" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="111.5" ry="53.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="49.1" ry="21.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="77.1" ry="35.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="105.1" ry="49.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="43.6" ry="18.9" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="71.6" ry="32.9" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="99.6" ry="46.9" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.1" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.1" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.1" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="45.2" ry="19.8" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="73.2" ry="33.8" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="101.2" ry="47.8" opacity="0.1" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="54.8" ry="25.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="82.8" ry="39.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="110.8" ry="53.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="48.3" ry="21.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="76.3" ry="35.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="104.3" ry="49.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="43.2" ry="18.7" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="71.2" ry="32.7" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="99.2" ry="46.7" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.2" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.2" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.2" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="45.8" ry="20.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="73.8" ry="34.1" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="101.8" ry="48.1" opacity="0.1" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="54.1" ry="24.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="82.1" ry="38.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="110.1" ry="52.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="47.6" ry="21.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="75.6" ry="35.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="103.6" ry="49.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.9" ry="18.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.9" ry="32.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.9" ry="46.5" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.4" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.4" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.4" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="46.4" ry="20.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="74.4" ry="34.5" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="102.4" ry="48.5" opacity="0.1" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="53.3" ry="24.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="81.3" ry="38.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="109.3" ry="52.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="46.9" ry="20.7" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="74.9" ry="34.7" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="102.9" ry="48.7" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.6" ry="18.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.6" ry="32.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.6" ry="46.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="42.7" ry="18.4" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="70.7" ry="32.4" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="98.7" ry="46.4" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="47.1" ry="20.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="75.1" ry="34.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="103.1" ry="48.9" opacity="0.2" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="52.6" ry="23.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="80.6" ry="37.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="108.6" ry="51.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="46.2" ry="20.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="74.2" ry="34.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="102.2" ry="48.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.3" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.3" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.3" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="43.0" ry="18.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="71.0" ry="32.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="99.0" ry="46.6" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="47.9" ry="21.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="75.9" ry="35.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="103.9" ry="49.3" opacity="0.2" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="51.8" ry="23.4" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="79.8" ry="37.4" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="107.8" ry="51.4" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="45.5" ry="20.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="73.5" ry="34.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="101.5" ry="48.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.1" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.1" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.1" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="43.4" ry="18.8" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="71.4" ry="32.8" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="99.4" ry="46.8" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="48.6" ry="21.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="76.6" ry="35.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="104.6" ry="49.7" opacity="0.2" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="51.0" ry="23.0" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="79.0" ry="37.0" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="107.0" ry="51.0" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="44.9" ry="19.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="72.9" ry="33.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="100.9" ry="47.6" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="43.8" ry="19.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="71.8" ry="33.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="99.8" ry="47.0" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="49.4" ry="22.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="77.4" ry="36.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="105.4" ry="50.1" opacity="0.2" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="50.2" ry="22.6" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="78.2" ry="36.6" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="106.2" ry="50.6" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="44.4" ry="19.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="72.4" ry="33.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="100.4" ry="47.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="44.3" ry="19.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="72.3" ry="33.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="100.3" ry="47.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="50.2" ry="22.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="78.2" ry="36.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="106.2" ry="50.5" opacity="0.2" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="49.4" ry="22.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="77.4" ry="36.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="105.4" ry="50.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="43.9" ry="19.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="71.9" ry="33.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="99.9" ry="47.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="44.9" ry="19.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="72.9" ry="33.6" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="100.9" ry="47.6" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="50.9" ry="23.0" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="78.9" ry="37.0" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="106.9" ry="51.0" opacity="0.2" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="48.7" ry="21.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="76.7" ry="35.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="104.7" ry="49.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="43.4" ry="18.8" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="71.4" ry="32.8" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="99.4" ry="46.8" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.1" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.1" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.1" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="45.5" ry="19.9" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="73.5" ry="33.9" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="101.5" ry="47.9" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="51.7" ry="23.4" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="79.7" ry="37.4" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="107.7" ry="51.4" opacity="0.2" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="47.9" ry="21.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="75.9" ry="35.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="103.9" ry="49.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="43.0" ry="18.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="71.0" ry="32.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="99.0" ry="46.6" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.3" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.3" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.3" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="46.1" ry="20.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="74.1" ry="34.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="102.1" ry="48.3" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="52.5" ry="23.8" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="80.5" ry="37.8" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="108.5" ry="51.8" opacity="0.2" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="47.2" ry="20.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="75.2" ry="34.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="103.2" ry="48.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.7" ry="18.4" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.7" ry="32.4" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.7" ry="46.4" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.5" ry="18.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.5" ry="32.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.5" ry="46.3" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="46.8" ry="20.7" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="74.8" ry="34.7" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="102.8" ry="48.7" opacity="0.1" />
+    <ellipse class="thin" cx="1700" cy="900" rx="53.3" ry="24.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="81.3" ry="38.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="109.3" ry="52.3" opacity="0.2" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="46.5" ry="20.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="74.5" ry="34.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="102.5" ry="48.5" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.4" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.4" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.4" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="42.8" ry="18.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="70.8" ry="32.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="98.8" ry="46.5" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="47.5" ry="21.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="75.5" ry="35.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="103.5" ry="49.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="54.0" ry="24.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="82.0" ry="38.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="110.0" ry="52.7" opacity="0.2" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="45.8" ry="20.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="73.8" ry="34.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="101.8" ry="48.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.2" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.2" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.2" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="43.2" ry="18.7" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="71.2" ry="32.7" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="99.2" ry="46.7" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="48.2" ry="21.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="76.2" ry="35.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="104.2" ry="49.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="54.7" ry="25.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="82.7" ry="39.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="110.7" ry="53.1" opacity="0.2" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="45.2" ry="19.8" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="73.2" ry="33.8" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="101.2" ry="47.8" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.1" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.1" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.1" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="43.6" ry="18.9" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="71.6" ry="32.9" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="99.6" ry="46.9" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="49.0" ry="21.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="77.0" ry="35.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="105.0" ry="49.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="55.4" ry="25.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="83.4" ry="39.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="111.4" ry="53.5" opacity="0.2" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="44.6" ry="19.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="72.6" ry="33.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="100.6" ry="47.5" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="44.1" ry="19.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="72.1" ry="33.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="100.1" ry="47.2" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="49.8" ry="22.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="77.8" ry="36.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="105.8" ry="50.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="56.1" ry="25.8" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="84.1" ry="39.8" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="112.1" ry="53.8" opacity="0.2" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="44.1" ry="19.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="72.1" ry="33.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="100.1" ry="47.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="44.6" ry="19.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="72.6" ry="33.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="100.6" ry="47.5" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="50.6" ry="22.8" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="78.6" ry="36.8" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="106.6" ry="50.8" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="56.7" ry="26.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="84.7" ry="40.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="112.7" ry="54.2" opacity="0.2" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="43.6" ry="18.9" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="71.6" ry="32.9" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="99.6" ry="46.9" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.1" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.1" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.1" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="45.2" ry="19.8" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="73.2" ry="33.8" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="101.2" ry="47.8" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="51.3" ry="23.2" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="79.3" ry="37.2" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="107.3" ry="51.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="57.3" ry="26.5" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="85.3" ry="40.5" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="113.3" ry="54.5" opacity="0.3" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="43.2" ry="18.7" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="71.2" ry="32.7" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="99.2" ry="46.7" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.2" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.2" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.2" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="45.8" ry="20.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="73.8" ry="34.1" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="101.8" ry="48.1" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="52.1" ry="23.6" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="80.1" ry="37.6" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="108.1" ry="51.6" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="57.9" ry="26.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="85.9" ry="40.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="113.9" ry="54.8" opacity="0.3" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.8" ry="18.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.8" ry="32.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.8" ry="46.5" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.4" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.4" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.4" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="46.5" ry="20.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="74.5" ry="34.5" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="102.5" ry="48.5" opacity="0.1" />
+    <ellipse class="thin" cx="1430" cy="820" rx="52.9" ry="24.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="80.9" ry="38.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="108.9" ry="52.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="58.3" ry="27.1" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="86.3" ry="41.1" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="114.3" ry="55.1" opacity="0.3" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.5" ry="18.3" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.5" ry="32.3" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.5" ry="46.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="42.7" ry="18.4" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="70.7" ry="32.4" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="98.7" ry="46.4" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="47.2" ry="20.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="75.2" ry="34.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="103.2" ry="48.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="53.7" ry="24.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="81.7" ry="38.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="109.7" ry="52.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="58.8" ry="27.3" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="86.8" ry="41.3" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="114.8" ry="55.3" opacity="0.3" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.3" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.3" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.3" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="43.0" ry="18.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="71.0" ry="32.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="99.0" ry="46.6" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="47.9" ry="21.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="75.9" ry="35.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="103.9" ry="49.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="54.4" ry="24.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="82.4" ry="38.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="110.4" ry="52.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.1" ry="27.5" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.1" ry="41.5" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.1" ry="55.5" opacity="0.3" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.1" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.1" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.1" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="43.4" ry="18.8" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="71.4" ry="32.8" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="99.4" ry="46.8" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="48.6" ry="21.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="76.6" ry="35.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="104.6" ry="49.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="55.1" ry="25.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="83.1" ry="39.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="111.1" ry="53.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.4" ry="27.7" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.4" ry="41.7" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.4" ry="55.7" opacity="0.3" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="43.9" ry="19.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="71.9" ry="33.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="99.9" ry="47.0" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="49.4" ry="22.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="77.4" ry="36.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="105.4" ry="50.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="55.8" ry="25.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="83.8" ry="39.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="111.8" ry="53.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.7" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.7" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.7" ry="55.8" opacity="0.3" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="44.4" ry="19.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="72.4" ry="33.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="100.4" ry="47.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="50.2" ry="22.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="78.2" ry="36.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="106.2" ry="50.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="56.4" ry="26.0" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="84.4" ry="40.0" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="112.4" ry="54.0" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.9" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.9" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.9" ry="55.9" opacity="0.3" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.0" ry="18.0" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.0" ry="32.0" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.0" ry="46.0" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="44.9" ry="19.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="72.9" ry="33.6" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="100.9" ry="47.6" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="51.0" ry="23.0" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="79.0" ry="37.0" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="107.0" ry="51.0" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="57.0" ry="26.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="85.0" ry="40.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="113.0" ry="54.4" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="116.0" ry="56.0" opacity="0.3" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.1" ry="18.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.1" ry="32.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.1" ry="46.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="45.5" ry="19.9" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="73.5" ry="33.9" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="101.5" ry="47.9" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="51.8" ry="23.4" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="79.8" ry="37.4" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="107.8" ry="51.4" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="57.6" ry="26.7" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="85.6" ry="40.7" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="113.6" ry="54.7" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="116.0" ry="56.0" opacity="0.3" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.3" ry="18.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.3" ry="32.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.3" ry="46.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="46.2" ry="20.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="74.2" ry="34.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="102.2" ry="48.3" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="52.5" ry="23.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="80.5" ry="37.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="108.5" ry="51.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="58.1" ry="27.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="86.1" ry="41.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="114.1" ry="55.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="116.0" ry="56.0" opacity="0.3" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.5" ry="18.3" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.5" ry="32.3" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.5" ry="46.3" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="46.8" ry="20.7" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="74.8" ry="34.7" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="102.8" ry="48.7" opacity="0.1" />
+    <ellipse class="thin" cx="1040" cy="895" rx="53.3" ry="24.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="81.3" ry="38.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="109.3" ry="52.3" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="58.6" ry="27.2" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="86.6" ry="41.2" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="114.6" ry="55.2" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.9" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.9" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.9" ry="55.9" opacity="0.3" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="42.8" ry="18.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="70.8" ry="32.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="98.8" ry="46.5" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="47.5" ry="21.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="75.5" ry="35.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="103.5" ry="49.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="54.0" ry="24.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="82.0" ry="38.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="110.0" ry="52.7" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.0" ry="27.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.0" ry="41.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.0" ry="55.4" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.7" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.7" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.7" ry="55.8" opacity="0.3" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="43.2" ry="18.7" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="71.2" ry="32.7" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="99.2" ry="46.7" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="48.3" ry="21.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="76.3" ry="35.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="104.3" ry="49.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="54.8" ry="25.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="82.8" ry="39.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="110.8" ry="53.1" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.3" ry="27.6" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.3" ry="41.6" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.3" ry="55.6" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.5" ry="27.7" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.5" ry="41.7" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.5" ry="55.7" opacity="0.3" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="43.6" ry="18.9" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="71.6" ry="32.9" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="99.6" ry="46.9" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="49.0" ry="21.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="77.0" ry="35.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="105.0" ry="49.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="55.5" ry="25.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="83.5" ry="39.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="111.5" ry="53.5" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.6" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.6" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.6" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="59.2" ry="27.5" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="87.2" ry="41.5" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="115.2" ry="55.5" opacity="0.3" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="44.1" ry="19.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="72.1" ry="33.2" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="100.1" ry="47.2" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="49.8" ry="22.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="77.8" ry="36.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="105.8" ry="50.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="56.1" ry="25.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="84.1" ry="39.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="112.1" ry="53.9" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.8" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.8" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.8" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="58.8" ry="27.3" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="86.8" ry="41.3" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="114.8" ry="55.3" opacity="0.3" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="44.6" ry="19.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="72.6" ry="33.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="100.6" ry="47.5" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="50.6" ry="22.8" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="78.6" ry="36.8" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="106.6" ry="50.8" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="56.8" ry="26.2" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="84.8" ry="40.2" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="112.8" ry="54.2" opacity="0.2" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.9" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.9" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.9" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="58.4" ry="27.1" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="86.4" ry="41.1" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="114.4" ry="55.1" opacity="0.3" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="45.2" ry="19.8" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="73.2" ry="33.8" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="101.2" ry="47.8" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="51.4" ry="23.2" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="79.4" ry="37.2" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="107.4" ry="51.2" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="57.3" ry="26.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="85.3" ry="40.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="113.3" ry="54.5" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="57.9" ry="26.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="85.9" ry="40.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="113.9" ry="54.9" opacity="0.3" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="45.8" ry="20.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="73.8" ry="34.1" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="101.8" ry="48.1" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="52.2" ry="23.6" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="80.2" ry="37.6" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="108.2" ry="51.6" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="57.9" ry="26.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="85.9" ry="40.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="113.9" ry="54.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="60.0" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="88.0" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="116.0" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="57.4" ry="26.6" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="85.4" ry="40.6" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="113.4" ry="54.6" opacity="0.3" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="46.5" ry="20.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="74.5" ry="34.5" opacity="0.1" />
+    <ellipse class="thin" cx="250" cy="860" rx="102.5" ry="48.5" opacity="0.1" />
+    <ellipse class="thin" cx="650" cy="825" rx="52.9" ry="24.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="80.9" ry="38.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="108.9" ry="52.1" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="58.4" ry="27.1" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="86.4" ry="41.1" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="114.4" ry="55.1" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.9" ry="28.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.9" ry="42.0" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.9" ry="56.0" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="56.8" ry="26.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="84.8" ry="40.2" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="112.8" ry="54.2" opacity="0.2" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="47.2" ry="20.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="75.2" ry="34.9" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="103.2" ry="48.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="53.7" ry="24.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="81.7" ry="38.5" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="109.7" ry="52.5" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="58.8" ry="27.3" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="86.8" ry="41.3" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="114.8" ry="55.3" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.8" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.8" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.8" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="56.2" ry="25.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="84.2" ry="39.9" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="112.2" ry="53.9" opacity="0.2" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="47.9" ry="21.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="75.9" ry="35.3" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="103.9" ry="49.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="54.4" ry="24.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="82.4" ry="38.9" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="110.4" ry="52.9" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.1" ry="27.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.1" ry="41.5" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.1" ry="55.5" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.6" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.6" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.6" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="55.6" ry="25.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="83.6" ry="39.5" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="111.6" ry="53.5" opacity="0.2" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="48.7" ry="21.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="76.7" ry="35.7" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="104.7" ry="49.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="55.1" ry="25.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="83.1" ry="39.3" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="111.1" ry="53.3" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.4" ry="27.7" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.4" ry="41.7" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.4" ry="55.7" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.3" ry="27.6" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.3" ry="41.6" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.3" ry="55.6" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="54.9" ry="25.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="82.9" ry="39.1" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="110.9" ry="53.1" opacity="0.2" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="49.4" ry="22.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="77.4" ry="36.1" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="105.4" ry="50.1" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="55.8" ry="25.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="83.8" ry="39.7" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="111.8" ry="53.7" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.7" ry="27.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.7" ry="41.8" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.7" ry="55.8" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="59.0" ry="27.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="87.0" ry="41.4" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="115.0" ry="55.4" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="54.1" ry="24.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="82.1" ry="38.7" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="110.1" ry="52.7" opacity="0.2" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="810" y1="270" x2="1110" y2="270" />
+    <ellipse class="thin" cx="250" cy="860" rx="50.2" ry="22.6" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="78.2" ry="36.6" opacity="0.2" />
+    <ellipse class="thin" cx="250" cy="860" rx="106.2" ry="50.6" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="56.5" ry="26.0" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="84.5" ry="40.0" opacity="0.2" />
+    <ellipse class="thin" cx="650" cy="825" rx="112.5" ry="54.0" opacity="0.2" />
+    <ellipse class="thin" cx="1040" cy="895" rx="59.9" ry="27.9" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="87.9" ry="41.9" opacity="0.3" />
+    <ellipse class="thin" cx="1040" cy="895" rx="115.9" ry="55.9" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="58.6" ry="27.2" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="86.6" ry="41.2" opacity="0.3" />
+    <ellipse class="thin" cx="1430" cy="820" rx="114.6" ry="55.2" opacity="0.3" />
+    <ellipse class="thin" cx="1700" cy="900" rx="53.4" ry="24.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="81.4" ry="38.3" opacity="0.2" />
+    <ellipse class="thin" cx="1700" cy="900" rx="109.4" ry="52.3" opacity="0.2" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 836,284 C 766,420 340,500 260,650" opacity="0.60" />
+    <circle class="node" cx="260" cy="650" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 908,284 C 838,430 1740,500 1660,650" opacity="0.60" />
+    <circle class="node" cx="1660" cy="650" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 986,284 C 916,440 1040,725 960,875" opacity="0.60" />
+    <circle class="node" cx="960" cy="875" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1042,284 C 972,450 500,695 420,845" opacity="0.60" />
+    <circle class="node" cx="420" cy="845" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <path class="thin" d="M 1094,284 C 1024,460 1590,695 1510,845" opacity="0.60" />
+    <circle class="node" cx="1510" cy="845" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+    <line class="thin" x1="810" y1="286" x2="1110" y2="286" />
+  </g>
+  <g id="verify">
+    <text class="status" x="960" y="320">CHECKING</text>
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="810" y1="270" x2="1110" y2="270" />
+  </g>
+  <g id="fail">
+    <text class="status" x="960" y="320">LOGIN FAILED</text>
+  </g>
+</svg>
