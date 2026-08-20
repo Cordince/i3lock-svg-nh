@@ -1,0 +1,2188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="tron-ares2-DiscArray" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face { font-family: 'IBM Plex Mono'; src: url('assets/fonts/IBMPlexMono-Regular.otf') format('opentype'); font-weight: 400; }
+      @font-face { font-family: 'IBM Plex Mono'; src: url('assets/fonts/IBMPlexMono-Bold.otf') format('opentype'); font-weight: 700; }
+      .login-dim { font-family: 'IBM Plex Mono', monospace; font-size: 92px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #746466; opacity: 0.43; }
+      .letter { font-family: 'IBM Plex Mono', monospace; font-size: 92px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #ff2200; stroke: #1d2020; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; }
+      .fine { fill: none; stroke: #ff2600; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #ff2600; stroke-width: 4px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.74; }
+      .thin { fill: none; stroke: #ff5a2c; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.58; }
+      .cyan { fill: none; stroke: #9df4ff; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.30; }
+      .panel { fill: #ff2600; opacity: 0.12; }
+      .hot { fill: #ff4a20; opacity: 0.30; }
+      .dark { fill: #050808; opacity: 0.62; }
+      .node { fill: #ff3218; opacity: 0.72; }
+      .node-cyan { fill: #9df4ff; opacity: 0.42; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 304.0,820.0 A 34.0,34.0 0 0 1 262.6,853.2" opacity="0.1" />
+    <path class="thin" d="M 317.8,856.3 A 60.0,60.0 0 0 1 214.4,842.5" opacity="0.2" />
+    <path class="thin" d="M 293.0,902.9 A 86.0,86.0 0 0 1 187.6,795.3" opacity="0.3" />
+    <circle class="node" cx="344.0" cy="820.0" r="5" />
+    <path class="thin" d="M 583.2,759.9 A 34.0,34.0 0 0 1 526.8,742.2" opacity="0.1" />
+    <path class="thin" d="M 566.0,794.7 A 60.0,60.0 0 0 1 506.3,708.3" opacity="0.2" />
+    <path class="thin" d="M 515.1,808.4 A 86.0,86.0 0 0 1 501.5,672.0" opacity="0.3" />
+    <circle class="node" cx="610.5" cy="761.3" r="5" />
+    <path class="thin" d="M 957.6,895.9 A 34.0,34.0 0 0 1 932.6,841.9" opacity="0.1" />
+    <path class="thin" d="M 920.5,907.1 A 60.0,60.0 0 0 1 927.2,811.8" opacity="0.2" />
+    <path class="thin" d="M 875.7,879.2 A 86.0,86.0 0 0 1 937.3,779.0" opacity="0.3" />
+    <circle class="node" cx="954.9" cy="897.9" r="5" />
+    <path class="thin" d="M 1333.6,756.4 A 34.0,34.0 0 0 1 1346.5,703.8" opacity="0.1" />
+    <path class="thin" d="M 1300.0,736.9 A 60.0,60.0 0 0 1 1354.2,675.3" opacity="0.2" />
+    <path class="thin" d="M 1289.9,685.1 A 86.0,86.0 0 0 1 1399.5,658.6" opacity="0.3" />
+    <circle class="node" cx="1302.5" cy="757.7" r="5" />
+    <path class="thin" d="M 1616.3,815.3 A 34.0,34.0 0 0 1 1652.5,786.1" opacity="0.1" />
+    <path class="thin" d="M 1607.7,777.4 A 60.0,60.0 0 0 1 1686.2,772.1" opacity="0.2" />
+    <path class="thin" d="M 1638.6,734.8 A 86.0,86.0 0 0 1 1736.0,818.5" opacity="0.3" />
+    <circle class="node" cx="1576.7" cy="815.0" r="5" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 303.9,823.0 A 34.0,34.0 0 0 1 258.7,852.1" opacity="0.1" />
+    <path class="thin" d="M 314.4,860.3 A 60.0,60.0 0 0 1 212.3,836.6" opacity="0.2" />
+    <path class="thin" d="M 285.7,904.6 A 86.0,86.0 0 0 1 189.6,789.4" opacity="0.3" />
+    <circle class="node" cx="343.7" cy="823.1" r="5" />
+    <path class="thin" d="M 580.9,761.8 A 34.0,34.0 0 0 1 526.2,738.7" opacity="0.1" />
+    <path class="thin" d="M 560.8,795.0 A 60.0,60.0 0 0 1 508.4,704.5" opacity="0.2" />
+    <path class="thin" d="M 508.9,804.2 A 86.0,86.0 0 0 1 505.0,668.9" opacity="0.3" />
+    <circle class="node" cx="605.6" cy="763.4" r="5" />
+    <path class="thin" d="M 954.7,895.6 A 34.0,34.0 0 0 1 934.1,840.0" opacity="0.1" />
+    <path class="thin" d="M 916.7,903.5 A 60.0,60.0 0 0 1 930.0,810.0" opacity="0.2" />
+    <path class="thin" d="M 874.6,871.8 A 86.0,86.0 0 0 1 942.9,777.7" opacity="0.3" />
+    <circle class="node" cx="948.5" cy="897.6" r="5" />
+    <path class="thin" d="M 1331.8,754.0 A 34.0,34.0 0 0 1 1348.2,703.1" opacity="0.1" />
+    <path class="thin" d="M 1300.1,731.7 A 60.0,60.0 0 0 1 1358.2,675.0" opacity="0.2" />
+    <path class="thin" d="M 1294.5,679.2 A 86.0,86.0 0 0 1 1406.8,662.8" opacity="0.3" />
+    <circle class="node" cx="1298.7" cy="755.2" r="5" />
+    <path class="thin" d="M 1616.9,812.4 A 34.0,34.0 0 0 1 1654.7,786.3" opacity="0.1" />
+    <path class="thin" d="M 1611.6,773.9 A 60.0,60.0 0 0 1 1690.7,775.9" opacity="0.2" />
+    <path class="thin" d="M 1646.1,734.1 A 86.0,86.0 0 0 1 1735.6,828.7" opacity="0.3" />
+    <circle class="node" cx="1577.9" cy="811.9" r="5" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 303.5,825.9 A 34.0,34.0 0 0 1 254.9,850.5" opacity="0.1" />
+    <path class="thin" d="M 310.7,864.1 A 60.0,60.0 0 0 1 211.0,830.7" opacity="0.2" />
+    <path class="thin" d="M 278.3,905.6 A 86.0,86.0 0 0 1 192.0,783.8" opacity="0.3" />
+    <circle class="node" cx="342.9" cy="826.3" r="5" />
+    <path class="thin" d="M 578.5,763.5 A 34.0,34.0 0 0 1 526.0,735.3" opacity="0.1" />
+    <path class="thin" d="M 555.6,794.8 A 60.0,60.0 0 0 1 510.6,700.9" opacity="0.2" />
+    <path class="thin" d="M 503.1,799.4 A 86.0,86.0 0 0 1 508.7,666.0" opacity="0.3" />
+    <circle class="node" cx="600.3" cy="765.2" r="5" />
+    <path class="thin" d="M 951.8,895.0 A 34.0,34.0 0 0 1 935.7,838.2" opacity="0.1" />
+    <path class="thin" d="M 913.2,899.6 A 60.0,60.0 0 0 1 932.9,808.5" opacity="0.2" />
+    <path class="thin" d="M 874.0,864.3 A 86.0,86.0 0 0 1 948.8,776.7" opacity="0.3" />
+    <circle class="node" cx="942.1" cy="896.9" r="5" />
+    <path class="thin" d="M 1330.3,751.5 A 34.0,34.0 0 0 1 1350.0,702.5" opacity="0.1" />
+    <path class="thin" d="M 1300.6,726.5 A 60.0,60.0 0 0 1 1362.3,675.0" opacity="0.2" />
+    <path class="thin" d="M 1299.6,673.7 A 86.0,86.0 0 0 1 1413.8,667.9" opacity="0.3" />
+    <circle class="node" cx="1295.3" cy="752.5" r="5" />
+    <path class="thin" d="M 1617.7,809.5 A 34.0,34.0 0 0 1 1657.1,786.7" opacity="0.1" />
+    <path class="thin" d="M 1615.7,770.7 A 60.0,60.0 0 0 1 1694.9,780.2" opacity="0.2" />
+    <path class="thin" d="M 1653.6,734.1 A 86.0,86.0 0 0 1 1733.9,838.9" opacity="0.3" />
+    <circle class="node" cx="1579.6" cy="808.9" r="5" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 302.8,828.8 A 34.0,34.0 0 0 1 251.4,848.5" opacity="0.1" />
+    <path class="thin" d="M 306.7,867.4 A 60.0,60.0 0 0 1 210.2,824.8" opacity="0.2" />
+    <path class="thin" d="M 270.8,906.0 A 86.0,86.0 0 0 1 194.6,778.7" opacity="0.3" />
+    <circle class="node" cx="341.5" cy="829.3" r="5" />
+    <path class="thin" d="M 576.0,765.0 A 34.0,34.0 0 0 1 526.1,731.9" opacity="0.1" />
+    <path class="thin" d="M 550.4,794.2 A 60.0,60.0 0 0 1 513.0,697.7" opacity="0.2" />
+    <path class="thin" d="M 497.7,794.2 A 86.0,86.0 0 0 1 512.5,663.3" opacity="0.3" />
+    <circle class="node" cx="594.8" cy="766.8" r="5" />
+    <path class="thin" d="M 949.0,894.2 A 34.0,34.0 0 0 1 937.3,836.6" opacity="0.1" />
+    <path class="thin" d="M 910.1,895.4 A 60.0,60.0 0 0 1 935.8,807.1" opacity="0.2" />
+    <path class="thin" d="M 874.2,856.8 A 86.0,86.0 0 0 1 954.9,776.2" opacity="0.3" />
+    <circle class="node" cx="936.0" cy="896.0" r="5" />
+    <path class="thin" d="M 1329.0,748.9 A 34.0,34.0 0 0 1 1351.8,702.0" opacity="0.1" />
+    <path class="thin" d="M 1301.6,721.3 A 60.0,60.0 0 0 1 1366.6,675.4" opacity="0.2" />
+    <path class="thin" d="M 1305.2,668.7 A 86.0,86.0 0 0 1 1420.4,673.8" opacity="0.3" />
+    <circle class="node" cx="1292.4" cy="749.7" r="5" />
+    <path class="thin" d="M 1618.7,806.8 A 34.0,34.0 0 0 1 1659.4,787.3" opacity="0.1" />
+    <path class="thin" d="M 1620.2,767.9 A 60.0,60.0 0 0 1 1698.8,785.0" opacity="0.2" />
+    <path class="thin" d="M 1661.1,734.7 A 86.0,86.0 0 0 1 1731.0,848.8" opacity="0.3" />
+    <circle class="node" cx="1581.8" cy="806.0" r="5" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 301.9,831.6 A 34.0,34.0 0 0 1 248.2,846.1" opacity="0.1" />
+    <path class="thin" d="M 302.5,870.5 A 60.0,60.0 0 0 1 210.0,819.0" opacity="0.2" />
+    <path class="thin" d="M 263.3,905.7 A 86.0,86.0 0 0 1 197.4,773.8" opacity="0.3" />
+    <circle class="node" cx="339.5" cy="832.3" r="5" />
+    <path class="thin" d="M 573.3,766.3 A 34.0,34.0 0 0 1 526.6,728.7" opacity="0.1" />
+    <path class="thin" d="M 545.3,793.2 A 60.0,60.0 0 0 1 515.6,694.7" opacity="0.2" />
+    <path class="thin" d="M 492.7,788.6 A 86.0,86.0 0 0 1 516.5,660.8" opacity="0.3" />
+    <circle class="node" cx="588.9" cy="768.1" r="5" />
+    <path class="thin" d="M 946.2,893.1 A 34.0,34.0 0 0 1 939.0,835.2" opacity="0.1" />
+    <path class="thin" d="M 907.4,890.9 A 60.0,60.0 0 0 1 938.8,805.9" opacity="0.2" />
+    <path class="thin" d="M 874.9,849.4 A 86.0,86.0 0 0 1 961.3,776.0" opacity="0.3" />
+    <circle class="node" cx="929.9" cy="894.9" r="5" />
+    <path class="thin" d="M 1327.9,746.1 A 34.0,34.0 0 0 1 1353.6,701.6" opacity="0.1" />
+    <path class="thin" d="M 1303.0,716.3 A 60.0,60.0 0 0 1 1371.0,676.0" opacity="0.2" />
+    <path class="thin" d="M 1311.2,664.2 A 86.0,86.0 0 0 1 1426.5,680.5" opacity="0.3" />
+    <circle class="node" cx="1290.1" cy="746.8" r="5" />
+    <path class="thin" d="M 1620.0,804.1 A 34.0,34.0 0 0 1 1661.8,788.1" opacity="0.1" />
+    <path class="thin" d="M 1624.8,765.5 A 60.0,60.0 0 0 1 1702.2,790.4" opacity="0.2" />
+    <path class="thin" d="M 1668.5,736.0 A 86.0,86.0 0 0 1 1727.0,858.3" opacity="0.3" />
+    <circle class="node" cx="1584.6" cy="803.1" r="5" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 300.8,834.4 A 34.0,34.0 0 0 1 245.2,843.3" opacity="0.1" />
+    <path class="thin" d="M 297.9,873.1 A 60.0,60.0 0 0 1 210.4,813.5" opacity="0.2" />
+    <path class="thin" d="M 255.8,904.8 A 86.0,86.0 0 0 1 200.5,769.3" opacity="0.3" />
+    <circle class="node" cx="337.1" cy="835.2" r="5" />
+    <path class="thin" d="M 570.5,767.3 A 34.0,34.0 0 0 1 527.3,725.6" opacity="0.1" />
+    <path class="thin" d="M 540.2,791.7 A 60.0,60.0 0 0 1 518.2,692.0" opacity="0.2" />
+    <path class="thin" d="M 488.3,782.5 A 86.0,86.0 0 0 1 520.7,658.5" opacity="0.3" />
+    <circle class="node" cx="582.9" cy="769.2" r="5" />
+    <path class="thin" d="M 943.5,891.7 A 34.0,34.0 0 0 1 940.8,834.0" opacity="0.1" />
+    <path class="thin" d="M 905.1,886.2 A 60.0,60.0 0 0 1 942.0,804.8" opacity="0.2" />
+    <path class="thin" d="M 876.4,842.0 A 86.0,86.0 0 0 1 967.9,776.4" opacity="0.3" />
+    <circle class="node" cx="924.2" cy="893.5" r="5" />
+    <path class="thin" d="M 1327.0,743.3 A 34.0,34.0 0 0 1 1355.4,701.3" opacity="0.1" />
+    <path class="thin" d="M 1304.8,711.4 A 60.0,60.0 0 0 1 1375.5,677.0" opacity="0.2" />
+    <path class="thin" d="M 1317.6,660.2 A 86.0,86.0 0 0 1 1432.0,688.0" opacity="0.3" />
+    <circle class="node" cx="1288.2" cy="743.7" r="5" />
+    <path class="thin" d="M 1621.5,801.5 A 34.0,34.0 0 0 1 1664.2,789.1" opacity="0.1" />
+    <path class="thin" d="M 1629.6,763.6 A 60.0,60.0 0 0 1 1705.1,796.2" opacity="0.2" />
+    <path class="thin" d="M 1675.7,737.9 A 86.0,86.0 0 0 1 1721.9,867.2" opacity="0.3" />
+    <circle class="node" cx="1587.9" cy="800.4" r="5" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 299.4,837.0 A 34.0,34.0 0 0 1 242.7,840.3" opacity="0.1" />
+    <path class="thin" d="M 293.2,875.3 A 60.0,60.0 0 0 1 211.2,808.1" opacity="0.2" />
+    <path class="thin" d="M 248.5,903.3 A 86.0,86.0 0 0 1 203.7,765.2" opacity="0.3" />
+    <circle class="node" cx="334.1" cy="838.0" r="5" />
+    <path class="thin" d="M 567.7,768.1 A 34.0,34.0 0 0 1 528.3,722.7" opacity="0.1" />
+    <path class="thin" d="M 535.4,789.7 A 60.0,60.0 0 0 1 520.9,689.5" opacity="0.2" />
+    <path class="thin" d="M 484.4,776.1 A 86.0,86.0 0 0 1 525.0,656.4" opacity="0.3" />
+    <circle class="node" cx="576.7" cy="770.1" r="5" />
+    <path class="thin" d="M 941.0,890.2 A 34.0,34.0 0 0 1 942.5,832.8" opacity="0.1" />
+    <path class="thin" d="M 903.2,881.3 A 60.0,60.0 0 0 1 945.2,803.8" opacity="0.2" />
+    <path class="thin" d="M 878.4,834.8 A 86.0,86.0 0 0 1 974.7,777.3" opacity="0.3" />
+    <circle class="node" cx="918.7" cy="891.9" r="5" />
+    <path class="thin" d="M 1326.4,740.3 A 34.0,34.0 0 0 1 1357.3,701.1" opacity="0.1" />
+    <path class="thin" d="M 1307.1,706.7 A 60.0,60.0 0 0 1 1380.1,678.5" opacity="0.2" />
+    <path class="thin" d="M 1324.2,656.8 A 86.0,86.0 0 0 1 1436.7,696.2" opacity="0.3" />
+    <circle class="node" cx="1286.9" cy="740.7" r="5" />
+    <path class="thin" d="M 1623.2,799.1 A 34.0,34.0 0 0 1 1666.6,790.4" opacity="0.1" />
+    <path class="thin" d="M 1634.6,762.0 A 60.0,60.0 0 0 1 1707.3,802.4" opacity="0.2" />
+    <path class="thin" d="M 1682.8,740.5 A 86.0,86.0 0 0 1 1715.7,875.5" opacity="0.3" />
+    <circle class="node" cx="1591.6" cy="797.9" r="5" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 297.9,839.5 A 34.0,34.0 0 0 1 240.6,837.0" opacity="0.1" />
+    <path class="thin" d="M 288.3,877.1 A 60.0,60.0 0 0 1 212.4,803.0" opacity="0.2" />
+    <path class="thin" d="M 241.3,901.1 A 86.0,86.0 0 0 1 207.1,761.3" opacity="0.3" />
+    <circle class="node" cx="330.6" cy="840.6" r="5" />
+    <path class="thin" d="M 564.7,768.7 A 34.0,34.0 0 0 1 529.5,720.0" opacity="0.1" />
+    <path class="thin" d="M 530.7,787.4 A 60.0,60.0 0 0 1 523.7,687.2" opacity="0.2" />
+    <path class="thin" d="M 481.2,769.3 A 86.0,86.0 0 0 1 529.6,654.6" opacity="0.3" />
+    <circle class="node" cx="570.3" cy="770.6" r="5" />
+    <path class="thin" d="M 938.6,888.4 A 34.0,34.0 0 0 1 944.3,831.8" opacity="0.1" />
+    <path class="thin" d="M 901.7,876.3 A 60.0,60.0 0 0 1 948.6,803.1" opacity="0.2" />
+    <path class="thin" d="M 881.1,827.8 A 86.0,86.0 0 0 1 981.6,778.8" opacity="0.3" />
+    <circle class="node" cx="913.5" cy="890.0" r="5" />
+    <path class="thin" d="M 1326.1,737.4 A 34.0,34.0 0 0 1 1359.3,701.0" opacity="0.1" />
+    <path class="thin" d="M 1309.8,702.2 A 60.0,60.0 0 0 1 1384.7,680.3" opacity="0.2" />
+    <path class="thin" d="M 1331.2,654.0 A 86.0,86.0 0 0 1 1440.6,705.0" opacity="0.3" />
+    <circle class="node" cx="1286.2" cy="737.5" r="5" />
+    <path class="thin" d="M 1625.1,796.8 A 34.0,34.0 0 0 1 1669.0,791.8" opacity="0.1" />
+    <path class="thin" d="M 1639.8,760.9 A 60.0,60.0 0 0 1 1709.0,808.9" opacity="0.2" />
+    <path class="thin" d="M 1689.6,743.7 A 86.0,86.0 0 0 1 1708.7,882.9" opacity="0.3" />
+    <circle class="node" cx="1595.8" cy="795.5" r="5" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 296.0,841.9 A 34.0,34.0 0 0 1 238.8,833.6" opacity="0.1" />
+    <path class="thin" d="M 283.2,878.5 A 60.0,60.0 0 0 1 214.1,798.2" opacity="0.2" />
+    <path class="thin" d="M 234.4,898.3 A 86.0,86.0 0 0 1 210.6,757.8" opacity="0.3" />
+    <circle class="node" cx="326.7" cy="843.1" r="5" />
+    <path class="thin" d="M 561.8,769.0 A 34.0,34.0 0 0 1 530.9,717.5" opacity="0.1" />
+    <path class="thin" d="M 526.3,784.6 A 60.0,60.0 0 0 1 526.5,685.2" opacity="0.2" />
+    <path class="thin" d="M 478.5,762.3 A 86.0,86.0 0 0 1 534.4,652.9" opacity="0.3" />
+    <circle class="node" cx="563.9" cy="771.0" r="5" />
+    <path class="thin" d="M 936.4,886.5 A 34.0,34.0 0 0 1 946.1,831.0" opacity="0.1" />
+    <path class="thin" d="M 900.7,871.2 A 60.0,60.0 0 0 1 952.1,802.5" opacity="0.2" />
+    <path class="thin" d="M 884.4,821.0 A 86.0,86.0 0 0 1 988.6,780.9" opacity="0.3" />
+    <circle class="node" cx="908.6" cy="887.9" r="5" />
+    <path class="thin" d="M 1326.0,734.4 A 34.0,34.0 0 0 1 1361.3,701.0" opacity="0.1" />
+    <path class="thin" d="M 1312.8,697.9 A 60.0,60.0 0 0 1 1389.3,682.6" opacity="0.2" />
+    <path class="thin" d="M 1338.4,651.8 A 86.0,86.0 0 0 1 1443.5,714.3" opacity="0.3" />
+    <circle class="node" cx="1286.0" cy="734.4" r="5" />
+    <path class="thin" d="M 1627.2,794.8 A 34.0,34.0 0 0 1 1671.4,793.6" opacity="0.1" />
+    <path class="thin" d="M 1645.0,760.2 A 60.0,60.0 0 0 1 1709.8,815.7" opacity="0.2" />
+    <path class="thin" d="M 1696.1,747.4 A 86.0,86.0 0 0 1 1700.9,889.3" opacity="0.3" />
+    <circle class="node" cx="1600.4" cy="793.3" r="5" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 294.0,844.0 A 34.0,34.0 0 0 1 237.5,830.0" opacity="0.1" />
+    <path class="thin" d="M 278.1,879.5 A 60.0,60.0 0 0 1 216.0,793.7" opacity="0.2" />
+    <path class="thin" d="M 227.7,894.9 A 86.0,86.0 0 0 1 214.3,754.5" opacity="0.3" />
+    <circle class="node" cx="322.3" cy="845.5" r="5" />
+    <path class="thin" d="M 558.8,769.0 A 34.0,34.0 0 0 1 532.4,715.2" opacity="0.1" />
+    <path class="thin" d="M 522.1,781.5 A 60.0,60.0 0 0 1 529.4,683.4" opacity="0.2" />
+    <path class="thin" d="M 476.4,755.1 A 86.0,86.0 0 0 1 539.3,651.5" opacity="0.3" />
+    <circle class="node" cx="557.4" cy="771.0" r="5" />
+    <path class="thin" d="M 934.4,884.3 A 34.0,34.0 0 0 1 947.9,830.2" opacity="0.1" />
+    <path class="thin" d="M 900.1,866.0 A 60.0,60.0 0 0 1 955.6,802.2" opacity="0.2" />
+    <path class="thin" d="M 888.2,814.6 A 86.0,86.0 0 0 1 995.7,783.7" opacity="0.3" />
+    <circle class="node" cx="904.2" cy="885.6" r="5" />
+    <path class="thin" d="M 1326.2,731.5 A 34.0,34.0 0 0 1 1363.3,701.2" opacity="0.1" />
+    <path class="thin" d="M 1316.3,693.9 A 60.0,60.0 0 0 1 1393.8,685.4" opacity="0.2" />
+    <path class="thin" d="M 1345.7,650.2 A 86.0,86.0 0 0 1 1445.3,724.1" opacity="0.3" />
+    <circle class="node" cx="1286.4" cy="731.3" r="5" />
+    <path class="thin" d="M 1629.5,792.9 A 34.0,34.0 0 0 1 1673.6,795.5" opacity="0.1" />
+    <path class="thin" d="M 1650.2,760.0 A 60.0,60.0 0 0 1 1709.9,822.6" opacity="0.2" />
+    <path class="thin" d="M 1702.3,751.7 A 86.0,86.0 0 0 1 1692.5,894.8" opacity="0.3" />
+    <circle class="node" cx="1605.4" cy="791.3" r="5" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 291.9,846.0 A 34.0,34.0 0 0 1 236.6,826.4" opacity="0.1" />
+    <path class="thin" d="M 272.9,879.9 A 60.0,60.0 0 0 1 218.3,789.6" opacity="0.2" />
+    <path class="thin" d="M 221.3,890.9 A 86.0,86.0 0 0 1 218.0,751.5" opacity="0.3" />
+    <circle class="node" cx="317.6" cy="847.6" r="5" />
+    <path class="thin" d="M 555.9,768.7 A 34.0,34.0 0 0 1 534.0,713.1" opacity="0.1" />
+    <path class="thin" d="M 518.2,778.0 A 60.0,60.0 0 0 1 532.4,681.7" opacity="0.2" />
+    <path class="thin" d="M 475.0,747.8 A 86.0,86.0 0 0 1 544.5,650.4" opacity="0.3" />
+    <circle class="node" cx="551.0" cy="770.7" r="5" />
+    <path class="thin" d="M 932.5,882.0 A 34.0,34.0 0 0 1 949.7,829.6" opacity="0.1" />
+    <path class="thin" d="M 900.0,860.7 A 60.0,60.0 0 0 1 959.4,802.0" opacity="0.2" />
+    <path class="thin" d="M 892.6,808.5 A 86.0,86.0 0 0 1 1002.6,787.3" opacity="0.3" />
+    <circle class="node" cx="900.2" cy="883.2" r="5" />
+    <path class="thin" d="M 1326.6,728.5 A 34.0,34.0 0 0 1 1365.4,701.4" opacity="0.1" />
+    <path class="thin" d="M 1320.0,690.3 A 60.0,60.0 0 0 1 1398.1,688.7" opacity="0.2" />
+    <path class="thin" d="M 1353.2,649.3 A 86.0,86.0 0 0 1 1446.0,734.1" opacity="0.3" />
+    <circle class="node" cx="1287.3" cy="728.2" r="5" />
+    <path class="thin" d="M 1631.9,791.2 A 34.0,34.0 0 0 1 1675.7,797.8" opacity="0.1" />
+    <path class="thin" d="M 1655.4,760.2 A 60.0,60.0 0 0 1 1709.2,829.5" opacity="0.2" />
+    <path class="thin" d="M 1708.0,756.5 A 86.0,86.0 0 0 1 1683.6,899.2" opacity="0.3" />
+    <circle class="node" cx="1610.7" cy="789.5" r="5" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 289.5,847.9 A 34.0,34.0 0 0 1 236.1,822.8" opacity="0.1" />
+    <path class="thin" d="M 267.7,880.0 A 60.0,60.0 0 0 1 220.7,785.7" opacity="0.2" />
+    <path class="thin" d="M 215.3,886.4 A 86.0,86.0 0 0 1 221.9,748.7" opacity="0.3" />
+    <circle class="node" cx="312.4" cy="849.5" r="5" />
+    <path class="thin" d="M 552.9,768.3 A 34.0,34.0 0 0 1 535.8,711.1" opacity="0.1" />
+    <path class="thin" d="M 514.6,774.2 A 60.0,60.0 0 0 1 535.3,680.3" opacity="0.2" />
+    <path class="thin" d="M 474.2,740.3 A 86.0,86.0 0 0 1 550.0,649.6" opacity="0.3" />
+    <circle class="node" cx="544.6" cy="770.2" r="5" />
+    <path class="thin" d="M 930.9,879.5 A 34.0,34.0 0 0 1 951.5,829.1" opacity="0.1" />
+    <path class="thin" d="M 900.4,855.5 A 60.0,60.0 0 0 1 963.2,802.1" opacity="0.2" />
+    <path class="thin" d="M 897.6,802.9 A 86.0,86.0 0 0 1 1009.5,791.6" opacity="0.3" />
+    <circle class="node" cx="896.6" cy="880.6" r="5" />
+    <path class="thin" d="M 1327.3,725.7 A 34.0,34.0 0 0 1 1367.5,701.8" opacity="0.1" />
+    <path class="thin" d="M 1324.1,687.0 A 60.0,60.0 0 0 1 1402.3,692.5" opacity="0.2" />
+    <path class="thin" d="M 1360.6,649.0 A 86.0,86.0 0 0 1 1445.5,744.2" opacity="0.3" />
+    <circle class="node" cx="1288.8" cy="725.1" r="5" />
+    <path class="thin" d="M 1634.5,789.7 A 34.0,34.0 0 0 1 1677.7,800.3" opacity="0.1" />
+    <path class="thin" d="M 1660.6,760.9 A 60.0,60.0 0 0 1 1707.7,836.4" opacity="0.2" />
+    <path class="thin" d="M 1713.3,761.8 A 86.0,86.0 0 0 1 1674.4,902.5" opacity="0.3" />
+    <circle class="node" cx="1616.3" cy="787.9" r="5" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 287.0,849.4 A 34.0,34.0 0 0 1 236.0,819.2" opacity="0.1" />
+    <path class="thin" d="M 262.4,879.5 A 60.0,60.0 0 0 1 223.4,782.2" opacity="0.2" />
+    <path class="thin" d="M 209.7,881.4 A 86.0,86.0 0 0 1 225.9,746.2" opacity="0.3" />
+    <circle class="node" cx="307.0" cy="851.2" r="5" />
+    <path class="thin" d="M 550.1,767.5 A 34.0,34.0 0 0 1 537.6,709.4" opacity="0.1" />
+    <path class="thin" d="M 511.3,770.1 A 60.0,60.0 0 0 1 538.4,679.0" opacity="0.2" />
+    <path class="thin" d="M 474.0,732.8 A 86.0,86.0 0 0 1 555.6,649.1" opacity="0.3" />
+    <circle class="node" cx="538.4" cy="769.4" r="5" />
+    <path class="thin" d="M 929.5,876.9 A 34.0,34.0 0 0 1 953.3,828.7" opacity="0.1" />
+    <path class="thin" d="M 901.1,850.3 A 60.0,60.0 0 0 1 967.1,802.4" opacity="0.2" />
+    <path class="thin" d="M 903.0,797.6 A 86.0,86.0 0 0 1 1016.0,796.8" opacity="0.3" />
+    <circle class="node" cx="893.5" cy="877.8" r="5" />
+    <path class="thin" d="M 1328.2,722.8 A 34.0,34.0 0 0 1 1369.7,702.4" opacity="0.1" />
+    <path class="thin" d="M 1328.4,684.0 A 60.0,60.0 0 0 1 1406.2,696.7" opacity="0.2" />
+    <path class="thin" d="M 1368.1,649.4 A 86.0,86.0 0 0 1 1443.8,754.3" opacity="0.3" />
+    <circle class="node" cx="1290.9" cy="722.1" r="5" />
+    <path class="thin" d="M 1637.2,788.5 A 34.0,34.0 0 0 1 1679.5,803.1" opacity="0.1" />
+    <path class="thin" d="M 1665.7,762.1 A 60.0,60.0 0 0 1 1705.3,843.2" opacity="0.2" />
+    <path class="thin" d="M 1718.2,767.5 A 86.0,86.0 0 0 1 1665.0,904.7" opacity="0.3" />
+    <circle class="node" cx="1622.2" cy="786.6" r="5" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 284.4,850.8 A 34.0,34.0 0 0 1 236.3,815.8" opacity="0.1" />
+    <path class="thin" d="M 257.3,878.6 A 60.0,60.0 0 0 1 226.2,779.0" opacity="0.2" />
+    <path class="thin" d="M 204.6,875.9 A 86.0,86.0 0 0 1 229.9,743.9" opacity="0.3" />
+    <circle class="node" cx="301.3" cy="852.6" r="5" />
+    <path class="thin" d="M 547.3,766.5 A 34.0,34.0 0 0 1 539.5,707.9" opacity="0.1" />
+    <path class="thin" d="M 508.4,765.7 A 60.0,60.0 0 0 1 541.4,677.9" opacity="0.2" />
+    <path class="thin" d="M 474.5,725.3 A 86.0,86.0 0 0 1 561.5,649.0" opacity="0.3" />
+    <circle class="node" cx="532.3" cy="768.4" r="5" />
+    <path class="thin" d="M 928.3,874.2 A 34.0,34.0 0 0 1 955.1,828.4" opacity="0.1" />
+    <path class="thin" d="M 902.4,845.3 A 60.0,60.0 0 0 1 971.2,803.0" opacity="0.2" />
+    <path class="thin" d="M 908.8,792.9 A 86.0,86.0 0 0 1 1022.2,802.6" opacity="0.3" />
+    <circle class="node" cx="890.9" cy="874.9" r="5" />
+    <path class="thin" d="M 1329.4,720.1 A 34.0,34.0 0 0 1 1371.9,703.1" opacity="0.1" />
+    <path class="thin" d="M 1332.9,681.4 A 60.0,60.0 0 0 1 1409.8,701.5" opacity="0.2" />
+    <path class="thin" d="M 1375.6,650.4 A 86.0,86.0 0 0 1 1440.9,764.2" opacity="0.3" />
+    <circle class="node" cx="1293.5" cy="719.2" r="5" />
+    <path class="thin" d="M 1640.0,787.5 A 34.0,34.0 0 0 1 1681.0,806.1" opacity="0.1" />
+    <path class="thin" d="M 1670.7,763.7 A 60.0,60.0 0 0 1 1702.2,849.6" opacity="0.2" />
+    <path class="thin" d="M 1722.5,773.7 A 86.0,86.0 0 0 1 1655.6,905.8" opacity="0.3" />
+    <circle class="node" cx="1628.3" cy="785.6" r="5" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 281.6,851.9 A 34.0,34.0 0 0 1 236.9,812.4" opacity="0.1" />
+    <path class="thin" d="M 252.2,877.3 A 60.0,60.0 0 0 1 229.1,776.1" opacity="0.2" />
+    <path class="thin" d="M 200.0,870.0 A 86.0,86.0 0 0 1 234.1,741.8" opacity="0.3" />
+    <circle class="node" cx="295.3" cy="853.8" r="5" />
+    <path class="thin" d="M 544.6,765.3 A 34.0,34.0 0 0 1 541.4,706.6" opacity="0.1" />
+    <path class="thin" d="M 506.0,761.1 A 60.0,60.0 0 0 1 544.6,677.0" opacity="0.2" />
+    <path class="thin" d="M 475.7,717.9 A 86.0,86.0 0 0 1 567.5,649.3" opacity="0.3" />
+    <circle class="node" cx="526.4" cy="767.1" r="5" />
+    <path class="thin" d="M 927.3,871.4 A 34.0,34.0 0 0 1 956.9,828.1" opacity="0.1" />
+    <path class="thin" d="M 904.1,840.3 A 60.0,60.0 0 0 1 975.3,804.0" opacity="0.2" />
+    <path class="thin" d="M 915.0,788.7 A 86.0,86.0 0 0 1 1027.9,809.3" opacity="0.3" />
+    <circle class="node" cx="888.9" cy="871.9" r="5" />
+    <path class="thin" d="M 1330.8,717.5 A 34.0,34.0 0 0 1 1374.1,704.1" opacity="0.1" />
+    <path class="thin" d="M 1337.7,679.3 A 60.0,60.0 0 0 1 1412.9,706.8" opacity="0.2" />
+    <path class="thin" d="M 1382.9,652.1 A 86.0,86.0 0 0 1 1436.8,773.6" opacity="0.3" />
+    <circle class="node" cx="1296.5" cy="716.5" r="5" />
+    <path class="thin" d="M 1642.9,786.8 A 34.0,34.0 0 0 1 1682.3,809.3" opacity="0.1" />
+    <path class="thin" d="M 1675.5,765.7 A 60.0,60.0 0 0 1 1698.3,855.6" opacity="0.2" />
+    <path class="thin" d="M 1726.2,780.2 A 86.0,86.0 0 0 1 1646.3,905.9" opacity="0.3" />
+    <circle class="node" cx="1634.5" cy="784.8" r="5" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 278.8,852.8 A 34.0,34.0 0 0 1 237.8,809.2" opacity="0.1" />
+    <path class="thin" d="M 247.3,875.5 A 60.0,60.0 0 0 1 232.1,773.5" opacity="0.2" />
+    <path class="thin" d="M 195.9,863.7 A 86.0,86.0 0 0 1 238.5,740.0" opacity="0.3" />
+    <circle class="node" cx="289.2" cy="854.8" r="5" />
+    <path class="thin" d="M 542.0,763.8 A 34.0,34.0 0 0 1 543.3,705.4" opacity="0.1" />
+    <path class="thin" d="M 503.9,756.3 A 60.0,60.0 0 0 1 547.8,676.3" opacity="0.2" />
+    <path class="thin" d="M 477.5,710.6 A 86.0,86.0 0 0 1 573.8,650.1" opacity="0.3" />
+    <circle class="node" cx="520.8" cy="765.5" r="5" />
+    <path class="thin" d="M 926.6,868.5 A 34.0,34.0 0 0 1 958.8,828.0" opacity="0.1" />
+    <path class="thin" d="M 906.2,835.5 A 60.0,60.0 0 0 1 979.5,805.2" opacity="0.2" />
+    <path class="thin" d="M 921.6,785.1 A 86.0,86.0 0 0 1 1033.1,816.7" opacity="0.3" />
+    <circle class="node" cx="887.4" cy="868.9" r="5" />
+    <path class="thin" d="M 1332.5,715.0 A 34.0,34.0 0 0 1 1376.3,705.2" opacity="0.1" />
+    <path class="thin" d="M 1342.6,677.6 A 60.0,60.0 0 0 1 1415.6,712.4" opacity="0.2" />
+    <path class="thin" d="M 1390.0,654.4 A 86.0,86.0 0 0 1 1431.6,782.6" opacity="0.3" />
+    <circle class="node" cx="1300.1" cy="713.9" r="5" />
+    <path class="thin" d="M 1645.8,786.3 A 34.0,34.0 0 0 1 1683.2,812.7" opacity="0.1" />
+    <path class="thin" d="M 1680.2,768.1 A 60.0,60.0 0 0 1 1693.6,861.2" opacity="0.2" />
+    <path class="thin" d="M 1729.4,787.0 A 86.0,86.0 0 0 1 1637.3,905.1" opacity="0.3" />
+    <circle class="node" cx="1640.9" cy="784.3" r="5" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 275.9,853.5 A 34.0,34.0 0 0 1 238.9,806.2" opacity="0.1" />
+    <path class="thin" d="M 242.5,873.3 A 60.0,60.0 0 0 1 235.2,771.2" opacity="0.2" />
+    <path class="thin" d="M 192.4,857.0 A 86.0,86.0 0 0 1 242.9,738.4" opacity="0.3" />
+    <circle class="node" cx="282.8" cy="855.5" r="5" />
+    <path class="thin" d="M 539.5,762.2 A 34.0,34.0 0 0 1 545.2,704.4" opacity="0.1" />
+    <path class="thin" d="M 502.3,751.3 A 60.0,60.0 0 0 1 551.0,675.7" opacity="0.2" />
+    <path class="thin" d="M 480.0,703.5 A 86.0,86.0 0 0 1 580.1,651.4" opacity="0.3" />
+    <circle class="node" cx="515.5" cy="763.8" r="5" />
+    <path class="thin" d="M 926.2,865.6 A 34.0,34.0 0 0 1 960.7,828.0" opacity="0.1" />
+    <path class="thin" d="M 908.7,830.9 A 60.0,60.0 0 0 1 983.7,806.9" opacity="0.2" />
+    <path class="thin" d="M 928.4,782.0 A 86.0,86.0 0 0 1 1037.5,824.7" opacity="0.3" />
+    <circle class="node" cx="886.4" cy="865.8" r="5" />
+    <path class="thin" d="M 1334.3,712.7 A 34.0,34.0 0 0 1 1378.5,706.5" opacity="0.1" />
+    <path class="thin" d="M 1347.7,676.3 A 60.0,60.0 0 0 1 1417.7,718.5" opacity="0.2" />
+    <path class="thin" d="M 1396.9,657.3 A 86.0,86.0 0 0 1 1425.4,790.8" opacity="0.3" />
+    <circle class="node" cx="1304.1" cy="711.4" r="5" />
+    <path class="thin" d="M 1648.8,786.0 A 34.0,34.0 0 0 1 1683.8,816.3" opacity="0.1" />
+    <path class="thin" d="M 1684.6,771.0 A 60.0,60.0 0 0 1 1688.4,866.1" opacity="0.2" />
+    <path class="thin" d="M 1732.0,794.0 A 86.0,86.0 0 0 1 1628.6,903.3" opacity="0.3" />
+    <circle class="node" cx="1647.3" cy="784.0" r="5" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 273.0,853.9 A 34.0,34.0 0 0 1 240.3,803.5" opacity="0.1" />
+    <path class="thin" d="M 238.0,870.7 A 60.0,60.0 0 0 1 238.3,769.1" opacity="0.2" />
+    <path class="thin" d="M 189.5,850.1 A 86.0,86.0 0 0 1 247.5,737.0" opacity="0.3" />
+    <circle class="node" cx="276.4" cy="855.9" r="5" />
+    <path class="thin" d="M 537.3,760.3 A 34.0,34.0 0 0 1 547.1,703.5" opacity="0.1" />
+    <path class="thin" d="M 501.1,746.2 A 60.0,60.0 0 0 1 554.3,675.3" opacity="0.2" />
+    <path class="thin" d="M 483.0,696.7 A 86.0,86.0 0 0 1 586.6,653.2" opacity="0.3" />
+    <circle class="node" cx="510.5" cy="761.8" r="5" />
+    <path class="thin" d="M 926.0,862.6 A 34.0,34.0 0 0 1 962.6,828.1" opacity="0.1" />
+    <path class="thin" d="M 911.6,826.6 A 60.0,60.0 0 0 1 988.0,808.9" opacity="0.2" />
+    <path class="thin" d="M 935.5,779.6 A 86.0,86.0 0 0 1 1041.1,833.4" opacity="0.3" />
+    <circle class="node" cx="886.0" cy="862.7" r="5" />
+    <path class="thin" d="M 1336.4,710.6 A 34.0,34.0 0 0 1 1380.7,708.0" opacity="0.1" />
+    <path class="thin" d="M 1352.9,675.4 A 60.0,60.0 0 0 1 1419.1,724.9" opacity="0.2" />
+    <path class="thin" d="M 1403.6,660.8 A 86.0,86.0 0 0 1 1418.3,798.2" opacity="0.3" />
+    <circle class="node" cx="1308.5" cy="709.1" r="5" />
+    <path class="thin" d="M 1651.7,786.0 A 34.0,34.0 0 0 1 1684.0,820.0" opacity="0.1" />
+    <path class="thin" d="M 1688.7,774.2 A 60.0,60.0 0 0 1 1682.6,870.4" opacity="0.2" />
+    <path class="thin" d="M 1733.9,801.3 A 86.0,86.0 0 0 1 1620.4,900.7" opacity="0.3" />
+    <circle class="node" cx="1653.8" cy="784.0" r="5" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 270.0,854.0 A 34.0,34.0 0 0 1 241.9,800.9" opacity="0.1" />
+    <path class="thin" d="M 233.7,867.8 A 60.0,60.0 0 0 1 241.4,767.3" opacity="0.2" />
+    <path class="thin" d="M 187.1,843.0 A 86.0,86.0 0 0 1 252.3,735.8" opacity="0.3" />
+    <circle class="node" cx="270.0" cy="856.0" r="5" />
+    <path class="thin" d="M 535.1,758.2 A 34.0,34.0 0 0 1 549.1,702.8" opacity="0.1" />
+    <path class="thin" d="M 500.3,741.0 A 60.0,60.0 0 0 1 557.7,675.0" opacity="0.2" />
+    <path class="thin" d="M 486.6,690.1 A 86.0,86.0 0 0 1 593.2,655.7" opacity="0.3" />
+    <circle class="node" cx="505.9" cy="759.6" r="5" />
+    <path class="thin" d="M 926.1,859.6 A 34.0,34.0 0 0 1 964.5,828.3" opacity="0.1" />
+    <path class="thin" d="M 914.9,822.5 A 60.0,60.0 0 0 1 992.2,811.4" opacity="0.2" />
+    <path class="thin" d="M 942.8,777.7 A 86.0,86.0 0 0 1 1043.8,842.6" opacity="0.3" />
+    <circle class="node" cx="886.2" cy="859.5" r="5" />
+    <path class="thin" d="M 1338.6,708.6 A 34.0,34.0 0 0 1 1382.8,709.8" opacity="0.1" />
+    <path class="thin" d="M 1358.1,675.0 A 60.0,60.0 0 0 1 1419.9,731.5" opacity="0.2" />
+    <path class="thin" d="M 1409.9,664.9 A 86.0,86.0 0 0 1 1410.4,804.7" opacity="0.3" />
+    <circle class="node" cx="1313.4" cy="707.0" r="5" />
+    <path class="thin" d="M 1654.7,786.3 A 34.0,34.0 0 0 1 1683.8,823.8" opacity="0.1" />
+    <path class="thin" d="M 1692.6,777.7 A 60.0,60.0 0 0 1 1676.4,873.9" opacity="0.2" />
+    <path class="thin" d="M 1735.2,808.6 A 86.0,86.0 0 0 1 1612.6,897.5" opacity="0.3" />
+    <circle class="node" cx="1660.2" cy="784.3" r="5" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 267.0,853.9 A 34.0,34.0 0 0 1 243.6,798.5" opacity="0.1" />
+    <path class="thin" d="M 229.7,864.4 A 60.0,60.0 0 0 1 244.5,765.7" opacity="0.2" />
+    <path class="thin" d="M 185.4,835.7 A 86.0,86.0 0 0 1 257.2,735.0" opacity="0.3" />
+    <circle class="node" cx="263.6" cy="855.9" r="5" />
+    <path class="thin" d="M 533.2,755.9 A 34.0,34.0 0 0 1 551.0,702.2" opacity="0.1" />
+    <path class="thin" d="M 500.0,735.8 A 60.0,60.0 0 0 1 561.2,675.0" opacity="0.2" />
+    <path class="thin" d="M 490.8,683.9 A 86.0,86.0 0 0 1 599.7,658.7" opacity="0.3" />
+    <circle class="node" cx="501.7" cy="757.2" r="5" />
+    <path class="thin" d="M 926.4,856.7 A 34.0,34.0 0 0 1 966.4,828.6" opacity="0.1" />
+    <path class="thin" d="M 918.5,818.7 A 60.0,60.0 0 0 1 996.3,814.2" opacity="0.2" />
+    <path class="thin" d="M 950.2,776.6 A 86.0,86.0 0 0 1 1045.4,852.1" opacity="0.3" />
+    <circle class="node" cx="886.9" cy="856.4" r="5" />
+    <path class="thin" d="M 1341.0,706.8 A 34.0,34.0 0 0 1 1384.9,711.8" opacity="0.1" />
+    <path class="thin" d="M 1363.3,675.1 A 60.0,60.0 0 0 1 1419.9,738.3" opacity="0.2" />
+    <path class="thin" d="M 1415.8,669.5 A 86.0,86.0 0 0 1 1401.8,810.2" opacity="0.3" />
+    <circle class="node" cx="1318.6" cy="705.2" r="5" />
+    <path class="thin" d="M 1657.6,786.9 A 34.0,34.0 0 0 1 1683.1,827.6" opacity="0.1" />
+    <path class="thin" d="M 1696.1,781.6 A 60.0,60.0 0 0 1 1669.8,876.6" opacity="0.2" />
+    <path class="thin" d="M 1735.9,816.1 A 86.0,86.0 0 0 1 1605.4,893.6" opacity="0.3" />
+    <circle class="node" cx="1666.6" cy="784.9" r="5" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 264.1,853.5 A 34.0,34.0 0 0 1 245.5,796.4" opacity="0.1" />
+    <path class="thin" d="M 225.9,860.7 A 60.0,60.0 0 0 1 247.7,764.3" opacity="0.2" />
+    <path class="thin" d="M 184.4,828.3 A 86.0,86.0 0 0 1 262.2,734.4" opacity="0.3" />
+    <circle class="node" cx="257.2" cy="855.5" r="5" />
+    <path class="thin" d="M 531.5,753.5 A 34.0,34.0 0 0 1 552.9,701.8" opacity="0.1" />
+    <path class="thin" d="M 500.2,730.6 A 60.0,60.0 0 0 1 564.8,675.2" opacity="0.2" />
+    <path class="thin" d="M 495.6,678.1 A 86.0,86.0 0 0 1 606.2,662.5" opacity="0.3" />
+    <circle class="node" cx="498.0" cy="754.6" r="5" />
+    <path class="thin" d="M 927.0,853.8 A 34.0,34.0 0 0 1 968.4,829.1" opacity="0.1" />
+    <path class="thin" d="M 922.4,815.2 A 60.0,60.0 0 0 1 1000.3,817.6" opacity="0.2" />
+    <path class="thin" d="M 957.7,776.0 A 86.0,86.0 0 0 1 1046.0,862.0" opacity="0.3" />
+    <circle class="node" cx="888.2" cy="853.3" r="5" />
+    <path class="thin" d="M 1343.5,705.3 A 34.0,34.0 0 0 1 1386.8,714.0" opacity="0.1" />
+    <path class="thin" d="M 1368.5,675.6 A 60.0,60.0 0 0 1 1419.1,745.1" opacity="0.2" />
+    <path class="thin" d="M 1421.3,674.6 A 86.0,86.0 0 0 1 1392.7,814.5" opacity="0.3" />
+    <circle class="node" cx="1324.1" cy="703.5" r="5" />
+    <path class="thin" d="M 1660.5,787.7 A 34.0,34.0 0 0 1 1682.1,831.3" opacity="0.1" />
+    <path class="thin" d="M 1699.3,785.7 A 60.0,60.0 0 0 1 1663.1,878.6" opacity="0.2" />
+    <path class="thin" d="M 1735.9,823.6 A 86.0,86.0 0 0 1 1598.9,889.1" opacity="0.3" />
+    <circle class="node" cx="1672.8" cy="785.7" r="5" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 261.2,852.8 A 34.0,34.0 0 0 1 247.5,794.5" opacity="0.1" />
+    <path class="thin" d="M 222.6,856.7 A 60.0,60.0 0 0 1 250.9,763.1" opacity="0.2" />
+    <path class="thin" d="M 184.0,820.8 A 86.0,86.0 0 0 1 267.5,734.0" opacity="0.3" />
+    <circle class="node" cx="250.8" cy="854.8" r="5" />
+    <path class="thin" d="M 530.0,751.0 A 34.0,34.0 0 0 1 554.8,701.4" opacity="0.1" />
+    <path class="thin" d="M 500.8,725.4 A 60.0,60.0 0 0 1 568.4,675.6" opacity="0.2" />
+    <path class="thin" d="M 500.8,672.7 A 86.0,86.0 0 0 1 612.5,666.9" opacity="0.3" />
+    <circle class="node" cx="494.7" cy="751.9" r="5" />
+    <path class="thin" d="M 927.8,851.0 A 34.0,34.0 0 0 1 970.4,829.6" opacity="0.1" />
+    <path class="thin" d="M 926.6,812.1 A 60.0,60.0 0 0 1 1004.1,821.4" opacity="0.2" />
+    <path class="thin" d="M 965.2,776.2 A 86.0,86.0 0 0 1 1045.4,871.9" opacity="0.3" />
+    <circle class="node" cx="890.0" cy="850.3" r="5" />
+    <path class="thin" d="M 1346.1,704.0 A 34.0,34.0 0 0 1 1388.5,716.5" opacity="0.1" />
+    <path class="thin" d="M 1373.7,676.6 A 60.0,60.0 0 0 1 1417.6,751.9" opacity="0.2" />
+    <path class="thin" d="M 1426.3,680.2 A 86.0,86.0 0 0 1 1383.3,817.8" opacity="0.3" />
+    <circle class="node" cx="1329.8" cy="702.1" r="5" />
+    <path class="thin" d="M 1663.2,788.7 A 34.0,34.0 0 0 1 1680.5,835.0" opacity="0.1" />
+    <path class="thin" d="M 1702.1,790.2 A 60.0,60.0 0 0 1 1656.2,879.7" opacity="0.2" />
+    <path class="thin" d="M 1735.3,831.1 A 86.0,86.0 0 0 1 1592.9,884.3" opacity="0.3" />
+    <circle class="node" cx="1678.8" cy="786.8" r="5" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 258.4,851.9 A 34.0,34.0 0 0 1 249.5,792.9" opacity="0.1" />
+    <path class="thin" d="M 219.5,852.5 A 60.0,60.0 0 0 1 254.1,762.2" opacity="0.2" />
+    <path class="thin" d="M 184.3,813.3 A 86.0,86.0 0 0 1 272.9,734.0" opacity="0.3" />
+    <circle class="node" cx="244.7" cy="853.8" r="5" />
+    <path class="thin" d="M 528.7,748.3 A 34.0,34.0 0 0 1 556.6,701.2" opacity="0.1" />
+    <path class="thin" d="M 501.8,720.3 A 60.0,60.0 0 0 1 572.1,676.2" opacity="0.2" />
+    <path class="thin" d="M 506.4,667.7 A 86.0,86.0 0 0 1 618.6,672.0" opacity="0.3" />
+    <circle class="node" cx="491.9" cy="749.1" r="5" />
+    <path class="thin" d="M 928.9,848.2 A 34.0,34.0 0 0 1 972.4,830.3" opacity="0.1" />
+    <path class="thin" d="M 931.1,809.4 A 60.0,60.0 0 0 1 1007.7,825.6" opacity="0.2" />
+    <path class="thin" d="M 972.6,776.9 A 86.0,86.0 0 0 1 1043.7,881.9" opacity="0.3" />
+    <circle class="node" cx="892.4" cy="847.4" r="5" />
+    <path class="thin" d="M 1348.9,702.9 A 34.0,34.0 0 0 1 1390.1,719.3" opacity="0.1" />
+    <path class="thin" d="M 1378.7,678.0 A 60.0,60.0 0 0 1 1415.2,758.6" opacity="0.2" />
+    <path class="thin" d="M 1430.8,686.2 A 86.0,86.0 0 0 1 1373.6,819.9" opacity="0.3" />
+    <circle class="node" cx="1335.8" cy="701.0" r="5" />
+    <path class="thin" d="M 1665.9,790.0 A 34.0,34.0 0 0 1 1678.6,838.4" opacity="0.1" />
+    <path class="thin" d="M 1704.5,794.8 A 60.0,60.0 0 0 1 1649.4,880.0" opacity="0.2" />
+    <path class="thin" d="M 1734.0,838.5 A 86.0,86.0 0 0 1 1587.5,879.1" opacity="0.3" />
+    <circle class="node" cx="1684.7" cy="788.2" r="5" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 255.6,850.8 A 34.0,34.0 0 0 1 251.6,791.4" opacity="0.1" />
+    <path class="thin" d="M 216.9,847.9 A 60.0,60.0 0 0 1 257.3,761.4" opacity="0.2" />
+    <path class="thin" d="M 185.2,805.8 A 86.0,86.0 0 0 1 278.4,734.4" opacity="0.3" />
+    <circle class="node" cx="238.7" cy="852.6" r="5" />
+    <path class="thin" d="M 527.7,745.5 A 34.0,34.0 0 0 1 558.5,701.0" opacity="0.1" />
+    <path class="thin" d="M 503.3,715.2 A 60.0,60.0 0 0 1 575.9,677.1" opacity="0.2" />
+    <path class="thin" d="M 512.5,663.3 A 86.0,86.0 0 0 1 624.3,677.9" opacity="0.3" />
+    <circle class="node" cx="489.6" cy="746.1" r="5" />
+    <path class="thin" d="M 930.3,845.5 A 34.0,34.0 0 0 1 974.4,831.2" opacity="0.1" />
+    <path class="thin" d="M 935.8,807.1 A 60.0,60.0 0 0 1 1011.0,830.3" opacity="0.2" />
+    <path class="thin" d="M 980.0,778.4 A 86.0,86.0 0 0 1 1040.7,891.6" opacity="0.3" />
+    <circle class="node" cx="895.3" cy="844.6" r="5" />
+    <path class="thin" d="M 1351.7,702.0 A 34.0,34.0 0 0 1 1391.5,722.2" opacity="0.1" />
+    <path class="thin" d="M 1383.6,679.8 A 60.0,60.0 0 0 1 1412.0,764.9" opacity="0.2" />
+    <path class="thin" d="M 1434.8,692.6 A 86.0,86.0 0 0 1 1364.0,820.9" opacity="0.3" />
+    <circle class="node" cx="1342.0" cy="700.1" r="5" />
+    <path class="thin" d="M 1668.5,791.5 A 34.0,34.0 0 0 1 1676.2,841.7" opacity="0.1" />
+    <path class="thin" d="M 1706.4,799.6 A 60.0,60.0 0 0 1 1642.6,879.5" opacity="0.2" />
+    <path class="thin" d="M 1732.1,845.7 A 86.0,86.0 0 0 1 1582.8,873.7" opacity="0.3" />
+    <circle class="node" cx="1690.2" cy="789.8" r="5" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 253.0,849.4 A 34.0,34.0 0 0 1 253.7,790.2" opacity="0.1" />
+    <path class="thin" d="M 214.7,843.2 A 60.0,60.0 0 0 1 260.5,760.8" opacity="0.2" />
+    <path class="thin" d="M 186.7,798.5 A 86.0,86.0 0 0 1 284.2,735.2" opacity="0.3" />
+    <circle class="node" cx="233.0" cy="851.2" r="5" />
+    <path class="thin" d="M 526.9,742.7 A 34.0,34.0 0 0 1 560.4,701.0" opacity="0.1" />
+    <path class="thin" d="M 505.3,710.4 A 60.0,60.0 0 0 1 579.8,678.3" opacity="0.2" />
+    <path class="thin" d="M 518.9,659.4 A 86.0,86.0 0 0 1 629.6,684.5" opacity="0.3" />
+    <circle class="node" cx="487.9" cy="743.1" r="5" />
+    <path class="thin" d="M 931.8,843.0 A 34.0,34.0 0 0 1 976.5,832.3" opacity="0.1" />
+    <path class="thin" d="M 940.7,805.2 A 60.0,60.0 0 0 1 1013.8,835.5" opacity="0.2" />
+    <path class="thin" d="M 987.2,780.4 A 86.0,86.0 0 0 1 1036.6,901.0" opacity="0.3" />
+    <circle class="node" cx="898.6" cy="841.9" r="5" />
+    <path class="thin" d="M 1354.7,701.4 A 34.0,34.0 0 0 1 1392.6,725.3" opacity="0.1" />
+    <path class="thin" d="M 1388.3,682.1 A 60.0,60.0 0 0 1 1408.1,770.9" opacity="0.2" />
+    <path class="thin" d="M 1438.2,699.2 A 86.0,86.0 0 0 1 1354.5,820.8" opacity="0.3" />
+    <circle class="node" cx="1348.4" cy="699.4" r="5" />
+    <path class="thin" d="M 1670.9,793.2 A 34.0,34.0 0 0 1 1673.4,844.7" opacity="0.1" />
+    <path class="thin" d="M 1708.0,804.6 A 60.0,60.0 0 0 1 1636.1,878.4" opacity="0.2" />
+    <path class="thin" d="M 1729.5,852.8 A 86.0,86.0 0 0 1 1578.7,868.1" opacity="0.3" />
+    <circle class="node" cx="1695.5" cy="791.6" r="5" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 250.5,847.9 A 34.0,34.0 0 0 1 255.8,789.1" opacity="0.1" />
+    <path class="thin" d="M 212.9,838.3 A 60.0,60.0 0 0 1 263.7,760.3" opacity="0.2" />
+    <path class="thin" d="M 188.9,791.3 A 86.0,86.0 0 0 1 290.0,736.4" opacity="0.3" />
+    <circle class="node" cx="227.6" cy="849.5" r="5" />
+    <path class="thin" d="M 526.3,739.7 A 34.0,34.0 0 0 1 562.2,701.1" opacity="0.1" />
+    <path class="thin" d="M 507.6,705.7 A 60.0,60.0 0 0 1 583.6,679.9" opacity="0.2" />
+    <path class="thin" d="M 525.7,656.2 A 86.0,86.0 0 0 1 634.3,691.7" opacity="0.3" />
+    <circle class="node" cx="486.7" cy="740.0" r="5" />
+    <path class="thin" d="M 933.6,840.6 A 34.0,34.0 0 0 1 978.5,833.5" opacity="0.1" />
+    <path class="thin" d="M 945.7,803.7 A 60.0,60.0 0 0 1 1016.2,841.0" opacity="0.2" />
+    <path class="thin" d="M 994.2,783.1 A 86.0,86.0 0 0 1 1031.4,909.9" opacity="0.3" />
+    <circle class="node" cx="902.5" cy="839.4" r="5" />
+    <path class="thin" d="M 1357.6,701.1 A 34.0,34.0 0 0 1 1393.4,728.7" opacity="0.1" />
+    <path class="thin" d="M 1392.8,684.8 A 60.0,60.0 0 0 1 1403.4,776.4" opacity="0.2" />
+    <path class="thin" d="M 1441.0,706.2 A 86.0,86.0 0 0 1 1345.2,819.7" opacity="0.3" />
+    <circle class="node" cx="1354.8" cy="699.1" r="5" />
+    <path class="thin" d="M 1673.2,795.1 A 34.0,34.0 0 0 1 1670.3,847.3" opacity="0.1" />
+    <path class="thin" d="M 1709.1,809.8 A 60.0,60.0 0 0 1 1629.8,876.5" opacity="0.2" />
+    <path class="thin" d="M 1726.3,859.6 A 86.0,86.0 0 0 1 1575.2,862.4" opacity="0.3" />
+    <circle class="node" cx="1700.4" cy="793.6" r="5" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 248.1,846.0 A 34.0,34.0 0 0 1 257.9,788.2" opacity="0.1" />
+    <path class="thin" d="M 211.5,833.2 A 60.0,60.0 0 0 1 267.0,760.1" opacity="0.2" />
+    <path class="thin" d="M 191.7,784.4 A 86.0,86.0 0 0 1 296.0,738.0" opacity="0.3" />
+    <circle class="node" cx="222.4" cy="847.6" r="5" />
+    <path class="thin" d="M 526.0,736.8 A 34.0,34.0 0 0 1 564.0,701.2" opacity="0.1" />
+    <path class="thin" d="M 510.4,701.3 A 60.0,60.0 0 0 1 587.5,681.7" opacity="0.2" />
+    <path class="thin" d="M 532.7,653.5 A 86.0,86.0 0 0 1 638.4,699.6" opacity="0.3" />
+    <circle class="node" cx="486.1" cy="736.9" r="5" />
+    <path class="thin" d="M 935.5,838.4 A 34.0,34.0 0 0 1 980.5,834.9" opacity="0.1" />
+    <path class="thin" d="M 950.8,802.7 A 60.0,60.0 0 0 1 1018.1,846.9" opacity="0.2" />
+    <path class="thin" d="M 1001.0,786.4 A 86.0,86.0 0 0 1 1025.2,918.1" opacity="0.3" />
+    <circle class="node" cx="906.7" cy="837.0" r="5" />
+    <path class="thin" d="M 1360.6,701.0 A 34.0,34.0 0 0 1 1393.9,732.2" opacity="0.1" />
+    <path class="thin" d="M 1397.1,687.8 A 60.0,60.0 0 0 1 1398.2,781.3" opacity="0.2" />
+    <path class="thin" d="M 1443.2,713.4 A 86.0,86.0 0 0 1 1336.2,817.7" opacity="0.3" />
+    <circle class="node" cx="1361.2" cy="699.0" r="5" />
+    <path class="thin" d="M 1675.2,797.2 A 34.0,34.0 0 0 1 1666.9,849.5" opacity="0.1" />
+    <path class="thin" d="M 1709.8,815.0 A 60.0,60.0 0 0 1 1623.9,874.0" opacity="0.2" />
+    <path class="thin" d="M 1722.6,866.1 A 86.0,86.0 0 0 1 1572.2,856.6" opacity="0.3" />
+    <circle class="node" cx="1704.9" cy="795.9" r="5" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 246.0,844.0 A 34.0,34.0 0 0 1 260.0,787.5" opacity="0.1" />
+    <path class="thin" d="M 210.5,828.1 A 60.0,60.0 0 0 1 270.3,760.0" opacity="0.2" />
+    <path class="thin" d="M 195.1,777.7 A 86.0,86.0 0 0 1 302.0,740.2" opacity="0.3" />
+    <circle class="node" cx="217.7" cy="845.5" r="5" />
+    <path class="thin" d="M 526.0,733.8 A 34.0,34.0 0 0 1 565.9,701.5" opacity="0.1" />
+    <path class="thin" d="M 513.5,697.1 A 60.0,60.0 0 0 1 591.4,683.9" opacity="0.2" />
+    <path class="thin" d="M 539.9,651.4 A 86.0,86.0 0 0 1 641.7,708.1" opacity="0.3" />
+    <circle class="node" cx="486.0" cy="733.8" r="5" />
+    <path class="thin" d="M 937.7,836.4 A 34.0,34.0 0 0 1 982.4,836.5" opacity="0.1" />
+    <path class="thin" d="M 956.0,802.1 A 60.0,60.0 0 0 1 1019.3,853.2" opacity="0.2" />
+    <path class="thin" d="M 1007.4,790.2 A 86.0,86.0 0 0 1 1018.0,925.5" opacity="0.3" />
+    <circle class="node" cx="911.4" cy="834.8" r="5" />
+    <path class="thin" d="M 1363.5,701.2 A 34.0,34.0 0 0 1 1394.0,735.8" opacity="0.1" />
+    <path class="thin" d="M 1401.1,691.3 A 60.0,60.0 0 0 1 1392.4,785.5" opacity="0.2" />
+    <path class="thin" d="M 1444.8,720.7 A 86.0,86.0 0 0 1 1327.8,814.7" opacity="0.3" />
+    <circle class="node" cx="1367.7" cy="699.2" r="5" />
+    <path class="thin" d="M 1677.1,799.5 A 34.0,34.0 0 0 1 1663.2,851.3" opacity="0.1" />
+    <path class="thin" d="M 1710.0,820.2 A 60.0,60.0 0 0 1 1618.4,871.0" opacity="0.2" />
+    <path class="thin" d="M 1718.3,872.3 A 86.0,86.0 0 0 1 1569.7,850.9" opacity="0.3" />
+    <circle class="node" cx="1709.0" cy="798.3" r="5" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 244.0,841.9 A 34.0,34.0 0 0 1 262.1,786.9" opacity="0.1" />
+    <path class="thin" d="M 210.1,822.9 A 60.0,60.0 0 0 1 273.6,760.1" opacity="0.2" />
+    <path class="thin" d="M 199.1,771.3 A 86.0,86.0 0 0 1 308.1,742.9" opacity="0.3" />
+    <circle class="node" cx="213.3" cy="843.1" r="5" />
+    <path class="thin" d="M 526.3,730.9 A 34.0,34.0 0 0 1 567.7,701.9" opacity="0.1" />
+    <path class="thin" d="M 517.0,693.2 A 60.0,60.0 0 0 1 595.3,686.5" opacity="0.2" />
+    <path class="thin" d="M 547.2,650.0 A 86.0,86.0 0 0 1 644.1,717.1" opacity="0.3" />
+    <circle class="node" cx="486.5" cy="730.6" r="5" />
+    <path class="thin" d="M 940.0,834.5 A 34.0,34.0 0 0 1 984.4,838.3" opacity="0.1" />
+    <path class="thin" d="M 961.3,802.0 A 60.0,60.0 0 0 1 1020.0,859.6" opacity="0.2" />
+    <path class="thin" d="M 1013.5,794.6 A 86.0,86.0 0 0 1 1009.9,932.0" opacity="0.3" />
+    <circle class="node" cx="916.5" cy="832.9" r="5" />
+    <path class="thin" d="M 1366.5,701.6 A 34.0,34.0 0 0 1 1393.7,739.4" opacity="0.1" />
+    <path class="thin" d="M 1404.7,695.0 A 60.0,60.0 0 0 1 1386.1,789.0" opacity="0.2" />
+    <path class="thin" d="M 1445.7,728.2 A 86.0,86.0 0 0 1 1319.8,811.0" opacity="0.3" />
+    <circle class="node" cx="1374.1" cy="699.7" r="5" />
+    <path class="thin" d="M 1678.8,801.9 A 34.0,34.0 0 0 1 1659.4,852.7" opacity="0.1" />
+    <path class="thin" d="M 1709.8,825.4 A 60.0,60.0 0 0 1 1613.4,867.6" opacity="0.2" />
+    <path class="thin" d="M 1713.5,878.0 A 86.0,86.0 0 0 1 1567.8,845.2" opacity="0.3" />
+    <circle class="node" cx="1712.7" cy="800.9" r="5" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 242.1,839.5 A 34.0,34.0 0 0 1 264.1,786.5" opacity="0.1" />
+    <path class="thin" d="M 210.0,817.7 A 60.0,60.0 0 0 1 276.9,760.4" opacity="0.2" />
+    <path class="thin" d="M 203.6,765.3 A 86.0,86.0 0 0 1 314.1,746.2" opacity="0.3" />
+    <circle class="node" cx="209.4" cy="840.6" r="5" />
+    <path class="thin" d="M 526.7,727.9 A 34.0,34.0 0 0 1 569.6,702.4" opacity="0.1" />
+    <path class="thin" d="M 520.8,689.6 A 60.0,60.0 0 0 1 599.0,689.4" opacity="0.2" />
+    <path class="thin" d="M 554.7,649.2 A 86.0,86.0 0 0 1 645.6,726.5" opacity="0.3" />
+    <circle class="node" cx="487.6" cy="727.5" r="5" />
+    <path class="thin" d="M 942.5,832.9 A 34.0,34.0 0 0 1 986.2,840.3" opacity="0.1" />
+    <path class="thin" d="M 966.5,802.4 A 60.0,60.0 0 0 1 1019.9,866.2" opacity="0.2" />
+    <path class="thin" d="M 1019.1,799.6 A 86.0,86.0 0 0 1 1001.2,937.5" opacity="0.3" />
+    <circle class="node" cx="921.8" cy="831.2" r="5" />
+    <path class="thin" d="M 1369.3,702.3 A 34.0,34.0 0 0 1 1393.0,743.1" opacity="0.1" />
+    <path class="thin" d="M 1408.0,699.1 A 60.0,60.0 0 0 1 1379.5,791.8" opacity="0.2" />
+    <path class="thin" d="M 1446.0,735.6 A 86.0,86.0 0 0 1 1312.5,806.7" opacity="0.3" />
+    <circle class="node" cx="1380.3" cy="700.4" r="5" />
+    <path class="thin" d="M 1680.3,804.5 A 34.0,34.0 0 0 1 1655.4,853.6" opacity="0.1" />
+    <path class="thin" d="M 1709.1,830.6 A 60.0,60.0 0 0 1 1608.9,863.7" opacity="0.2" />
+    <path class="thin" d="M 1708.2,883.3 A 86.0,86.0 0 0 1 1566.3,839.6" opacity="0.3" />
+    <circle class="node" cx="1715.9" cy="803.6" r="5" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 240.6,837.0 A 34.0,34.0 0 0 1 266.1,786.2" opacity="0.1" />
+    <path class="thin" d="M 210.5,812.4 A 60.0,60.0 0 0 1 280.4,760.9" opacity="0.2" />
+    <path class="thin" d="M 208.6,759.7 A 86.0,86.0 0 0 1 320.0,750.1" opacity="0.3" />
+    <circle class="node" cx="205.9" cy="838.0" r="5" />
+    <path class="thin" d="M 527.5,725.1 A 34.0,34.0 0 0 1 571.4,703.0" opacity="0.1" />
+    <path class="thin" d="M 524.9,686.3 A 60.0,60.0 0 0 1 602.7,692.8" opacity="0.2" />
+    <path class="thin" d="M 562.2,649.0 A 86.0,86.0 0 0 1 646.0,736.1" opacity="0.3" />
+    <circle class="node" cx="489.2" cy="724.5" r="5" />
+    <path class="thin" d="M 945.1,831.5 A 34.0,34.0 0 0 1 987.9,842.5" opacity="0.1" />
+    <path class="thin" d="M 971.7,803.1 A 60.0,60.0 0 0 1 1019.0,872.9" opacity="0.2" />
+    <path class="thin" d="M 1024.4,805.0 A 86.0,86.0 0 0 1 992.0,941.8" opacity="0.3" />
+    <circle class="node" cx="927.5" cy="829.7" r="5" />
+    <path class="thin" d="M 1372.2,703.2 A 34.0,34.0 0 0 1 1391.9,746.7" opacity="0.1" />
+    <path class="thin" d="M 1411.0,703.4 A 60.0,60.0 0 0 1 1372.6,793.7" opacity="0.2" />
+    <path class="thin" d="M 1445.6,743.1 A 86.0,86.0 0 0 1 1305.8,801.8" opacity="0.3" />
+    <circle class="node" cx="1386.5" cy="701.4" r="5" />
+    <path class="thin" d="M 1681.5,807.2 A 34.0,34.0 0 0 1 1651.4,854.0" opacity="0.1" />
+    <path class="thin" d="M 1707.9,835.7 A 60.0,60.0 0 0 1 1604.9,859.5" opacity="0.2" />
+    <path class="thin" d="M 1702.5,888.2 A 86.0,86.0 0 0 1 1565.2,834.0" opacity="0.3" />
+    <circle class="node" cx="1718.6" cy="806.5" r="5" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 239.2,834.4 A 34.0,34.0 0 0 1 268.1,786.1" opacity="0.1" />
+    <path class="thin" d="M 211.4,807.3 A 60.0,60.0 0 0 1 283.8,761.6" opacity="0.2" />
+    <path class="thin" d="M 214.1,754.6 A 86.0,86.0 0 0 1 325.8,754.6" opacity="0.3" />
+    <circle class="node" cx="202.9" cy="835.2" r="5" />
+    <path class="thin" d="M 528.5,722.3 A 34.0,34.0 0 0 1 573.3,703.7" opacity="0.1" />
+    <path class="thin" d="M 529.3,683.4 A 60.0,60.0 0 0 1 606.1,696.6" opacity="0.2" />
+    <path class="thin" d="M 569.7,649.5 A 86.0,86.0 0 0 1 645.3,745.9" opacity="0.3" />
+    <circle class="node" cx="491.4" cy="721.5" r="5" />
+    <path class="thin" d="M 947.8,830.3 A 34.0,34.0 0 0 1 989.4,845.0" opacity="0.1" />
+    <path class="thin" d="M 976.7,804.4 A 60.0,60.0 0 0 1 1017.4,879.5" opacity="0.2" />
+    <path class="thin" d="M 1029.1,810.8 A 86.0,86.0 0 0 1 982.4,945.0" opacity="0.3" />
+    <circle class="node" cx="933.4" cy="828.4" r="5" />
+    <path class="thin" d="M 1374.9,704.4 A 34.0,34.0 0 0 1 1390.4,750.3" opacity="0.1" />
+    <path class="thin" d="M 1413.6,707.9 A 60.0,60.0 0 0 1 1365.6,794.7" opacity="0.2" />
+    <path class="thin" d="M 1444.6,750.6 A 86.0,86.0 0 0 1 1299.8,796.5" opacity="0.3" />
+    <circle class="node" cx="1392.4" cy="702.6" r="5" />
+    <path class="thin" d="M 1682.5,810.0 A 34.0,34.0 0 0 1 1647.4,853.9" opacity="0.1" />
+    <path class="thin" d="M 1706.3,840.7 A 60.0,60.0 0 0 1 1601.4,855.2" opacity="0.2" />
+    <path class="thin" d="M 1696.3,892.5 A 86.0,86.0 0 0 1 1564.4,828.6" opacity="0.3" />
+    <circle class="node" cx="1720.7" cy="809.4" r="5" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 238.1,831.6 A 34.0,34.0 0 0 1 270.0,786.0" opacity="0.1" />
+    <path class="thin" d="M 212.7,802.2 A 60.0,60.0 0 0 1 287.3,762.5" opacity="0.2" />
+    <path class="thin" d="M 220.0,750.0 A 86.0,86.0 0 0 1 331.4,759.8" opacity="0.3" />
+    <circle class="node" cx="200.5" cy="832.3" r="5" />
+    <path class="thin" d="M 529.7,719.6 A 34.0,34.0 0 0 1 575.2,704.6" opacity="0.1" />
+    <path class="thin" d="M 533.9,681.0 A 60.0,60.0 0 0 1 609.3,700.8" opacity="0.2" />
+    <path class="thin" d="M 577.1,650.7 A 86.0,86.0 0 0 1 643.5,755.6" opacity="0.3" />
+    <circle class="node" cx="494.1" cy="718.7" r="5" />
+    <path class="thin" d="M 950.6,829.3 A 34.0,34.0 0 0 1 990.8,847.6" opacity="0.1" />
+    <path class="thin" d="M 981.7,806.1 A 60.0,60.0 0 0 1 1015.0,886.0" opacity="0.2" />
+    <path class="thin" d="M 1033.3,817.0 A 86.0,86.0 0 0 1 972.6,947.1" opacity="0.3" />
+    <circle class="node" cx="939.6" cy="827.4" r="5" />
+    <path class="thin" d="M 1377.5,705.8 A 34.0,34.0 0 0 1 1388.4,753.7" opacity="0.1" />
+    <path class="thin" d="M 1415.7,712.7 A 60.0,60.0 0 0 1 1358.6,795.0" opacity="0.2" />
+    <path class="thin" d="M 1442.9,757.9 A 86.0,86.0 0 0 1 1294.5,790.7" opacity="0.3" />
+    <circle class="node" cx="1398.1" cy="704.1" r="5" />
+    <path class="thin" d="M 1683.2,812.9 A 34.0,34.0 0 0 1 1643.5,853.4" opacity="0.1" />
+    <path class="thin" d="M 1704.3,845.5 A 60.0,60.0 0 0 1 1598.4,850.6" opacity="0.2" />
+    <path class="thin" d="M 1689.8,896.2 A 86.0,86.0 0 0 1 1564.1,823.3" opacity="0.3" />
+    <circle class="node" cx="1722.4" cy="812.5" r="5" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 237.2,828.8 A 34.0,34.0 0 0 1 271.9,786.1" opacity="0.1" />
+    <path class="thin" d="M 214.5,797.3 A 60.0,60.0 0 0 1 290.8,763.7" opacity="0.2" />
+    <path class="thin" d="M 226.3,745.9 A 86.0,86.0 0 0 1 336.6,765.6" opacity="0.3" />
+    <circle class="node" cx="198.5" cy="829.3" r="5" />
+    <path class="thin" d="M 531.2,717.0 A 34.0,34.0 0 0 1 577.0,705.6" opacity="0.1" />
+    <path class="thin" d="M 538.7,678.9 A 60.0,60.0 0 0 1 612.2,705.5" opacity="0.2" />
+    <path class="thin" d="M 584.4,652.5 A 86.0,86.0 0 0 1 640.5,765.2" opacity="0.3" />
+    <circle class="node" cx="497.2" cy="715.9" r="5" />
+    <path class="thin" d="M 953.5,828.6 A 34.0,34.0 0 0 1 992.0,850.5" opacity="0.1" />
+    <path class="thin" d="M 986.5,808.2 A 60.0,60.0 0 0 1 1011.8,892.3" opacity="0.2" />
+    <path class="thin" d="M 1036.9,823.6 A 86.0,86.0 0 0 1 962.7,948.0" opacity="0.3" />
+    <circle class="node" cx="945.8" cy="826.7" r="5" />
+    <path class="thin" d="M 1380.0,707.5 A 34.0,34.0 0 0 1 1386.0,756.9" opacity="0.1" />
+    <path class="thin" d="M 1417.4,717.6 A 60.0,60.0 0 0 1 1351.7,794.4" opacity="0.2" />
+    <path class="thin" d="M 1440.6,765.0 A 86.0,86.0 0 0 1 1289.9,784.8" opacity="0.3" />
+    <circle class="node" cx="1403.4" cy="705.9" r="5" />
+    <path class="thin" d="M 1683.7,815.8 A 34.0,34.0 0 0 1 1639.7,852.4" opacity="0.1" />
+    <path class="thin" d="M 1701.9,850.2 A 60.0,60.0 0 0 1 1595.9,846.0" opacity="0.2" />
+    <path class="thin" d="M 1683.0,899.4 A 86.0,86.0 0 0 1 1564.0,818.2" opacity="0.3" />
+    <circle class="node" cx="1723.4" cy="815.6" r="5" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 236.5,825.9 A 34.0,34.0 0 0 1 273.8,786.2" opacity="0.1" />
+    <path class="thin" d="M 216.7,792.5 A 60.0,60.0 0 0 1 294.4,765.2" opacity="0.2" />
+    <path class="thin" d="M 233.0,742.4 A 86.0,86.0 0 0 1 341.4,772.1" opacity="0.3" />
+    <circle class="node" cx="197.1" cy="826.3" r="5" />
+    <path class="thin" d="M 532.8,714.5 A 34.0,34.0 0 0 1 578.9,706.7" opacity="0.1" />
+    <path class="thin" d="M 543.7,677.3 A 60.0,60.0 0 0 1 614.8,710.5" opacity="0.2" />
+    <path class="thin" d="M 591.5,655.0 A 86.0,86.0 0 0 1 636.4,774.5" opacity="0.3" />
+    <circle class="node" cx="500.9" cy="713.3" r="5" />
+    <path class="thin" d="M 956.4,828.2 A 34.0,34.0 0 0 1 992.9,853.6" opacity="0.1" />
+    <path class="thin" d="M 991.1,810.7 A 60.0,60.0 0 0 1 1007.9,898.2" opacity="0.2" />
+    <path class="thin" d="M 1040.0,830.4 A 86.0,86.0 0 0 1 953.0,947.7" opacity="0.3" />
+    <circle class="node" cx="952.2" cy="826.2" r="5" />
+    <path class="thin" d="M 1382.3,709.3 A 34.0,34.0 0 0 1 1383.3,759.8" opacity="0.1" />
+    <path class="thin" d="M 1418.7,722.7 A 60.0,60.0 0 0 1 1345.0,793.1" opacity="0.2" />
+    <path class="thin" d="M 1437.7,771.9 A 86.0,86.0 0 0 1 1285.9,778.7" opacity="0.3" />
+    <circle class="node" cx="1408.5" cy="707.8" r="5" />
+    <path class="thin" d="M 1684.0,818.8 A 34.0,34.0 0 0 1 1636.1,851.0" opacity="0.1" />
+    <path class="thin" d="M 1699.0,854.6 A 60.0,60.0 0 0 1 1593.9,841.3" opacity="0.2" />
+    <path class="thin" d="M 1676.0,902.0 A 86.0,86.0 0 0 1 1564.3,813.2" opacity="0.3" />
+    <circle class="node" cx="1724.0" cy="818.7" r="5" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 236.1,823.0 A 34.0,34.0 0 0 1 275.6,786.5" opacity="0.1" />
+    <path class="thin" d="M 219.3,788.0 A 60.0,60.0 0 0 1 297.9,766.9" opacity="0.2" />
+    <path class="thin" d="M 239.9,739.5 A 86.0,86.0 0 0 1 345.7,779.3" opacity="0.3" />
+    <circle class="node" cx="196.3" cy="823.1" r="5" />
+    <path class="thin" d="M 534.7,712.3 A 34.0,34.0 0 0 1 580.7,708.0" opacity="0.1" />
+    <path class="thin" d="M 548.8,676.1 A 60.0,60.0 0 0 1 616.9,715.9" opacity="0.2" />
+    <path class="thin" d="M 598.3,658.0 A 86.0,86.0 0 0 1 631.2,783.3" opacity="0.3" />
+    <circle class="node" cx="505.0" cy="710.9" r="5" />
+    <path class="thin" d="M 959.4,828.0 A 34.0,34.0 0 0 1 993.6,856.8" opacity="0.1" />
+    <path class="thin" d="M 995.4,813.6 A 60.0,60.0 0 0 1 1003.2,903.6" opacity="0.2" />
+    <path class="thin" d="M 1042.4,837.5 A 86.0,86.0 0 0 1 943.4,946.4" opacity="0.3" />
+    <circle class="node" cx="958.7" cy="826.0" r="5" />
+    <path class="thin" d="M 1384.4,711.4 A 34.0,34.0 0 0 1 1380.2,762.4" opacity="0.1" />
+    <path class="thin" d="M 1419.6,727.9 A 60.0,60.0 0 0 1 1338.7,791.1" opacity="0.2" />
+    <path class="thin" d="M 1434.2,778.6 A 86.0,86.0 0 0 1 1282.6,772.4" opacity="0.3" />
+    <circle class="node" cx="1413.2" cy="710.0" r="5" />
+    <path class="thin" d="M 1684.0,821.7 A 34.0,34.0 0 0 1 1632.7,849.3" opacity="0.1" />
+    <path class="thin" d="M 1695.8,858.7 A 60.0,60.0 0 0 1 1592.3,836.6" opacity="0.2" />
+    <path class="thin" d="M 1668.7,903.9 A 86.0,86.0 0 0 1 1564.8,808.3" opacity="0.3" />
+    <circle class="node" cx="1723.9" cy="821.8" r="5" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 236.0,820.0 A 34.0,34.0 0 0 1 277.4,786.8" opacity="0.1" />
+    <path class="thin" d="M 222.2,783.7 A 60.0,60.0 0 0 1 301.5,768.9" opacity="0.2" />
+    <path class="thin" d="M 247.0,737.1 A 86.0,86.0 0 0 1 349.4,787.0" opacity="0.3" />
+    <circle class="node" cx="196.0" cy="820.0" r="5" />
+    <path class="thin" d="M 536.8,710.1 A 34.0,34.0 0 0 1 582.5,709.5" opacity="0.1" />
+    <path class="thin" d="M 554.0,675.3 A 60.0,60.0 0 0 1 618.5,721.7" opacity="0.2" />
+    <path class="thin" d="M 604.9,661.6 A 86.0,86.0 0 0 1 624.9,791.4" opacity="0.3" />
+    <circle class="node" cx="509.5" cy="708.7" r="5" />
+    <path class="thin" d="M 962.4,828.1 A 34.0,34.0 0 0 1 994.0,860.2" opacity="0.1" />
+    <path class="thin" d="M 999.5,816.9 A 60.0,60.0 0 0 1 998.0,908.5" opacity="0.2" />
+    <path class="thin" d="M 1044.3,844.8 A 86.0,86.0 0 0 1 934.3,944.1" opacity="0.3" />
+    <circle class="node" cx="965.1" cy="826.1" r="5" />
+    <path class="thin" d="M 1386.4,713.6 A 34.0,34.0 0 0 1 1376.7,764.6" opacity="0.1" />
+    <path class="thin" d="M 1420.0,733.1 A 60.0,60.0 0 0 1 1332.6,788.4" opacity="0.2" />
+    <path class="thin" d="M 1430.1,784.9 A 86.0,86.0 0 0 1 1279.9,766.2" opacity="0.3" />
+    <circle class="node" cx="1417.5" cy="712.3" r="5" />
+    <path class="thin" d="M 1683.7,824.7 A 34.0,34.0 0 0 1 1629.6,847.2" opacity="0.1" />
+    <path class="thin" d="M 1692.3,862.6 A 60.0,60.0 0 0 1 1591.2,832.0" opacity="0.2" />
+    <path class="thin" d="M 1661.4,905.2 A 86.0,86.0 0 0 1 1565.6,803.5" opacity="0.3" />
+    <circle class="node" cx="1723.3" cy="825.0" r="5" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 236.1,817.0 A 34.0,34.0 0 0 1 279.2,787.3" opacity="0.1" />
+    <path class="thin" d="M 225.6,779.7 A 60.0,60.0 0 0 1 305.0,771.3" opacity="0.2" />
+    <path class="thin" d="M 254.3,735.4 A 86.0,86.0 0 0 1 352.4,795.3" opacity="0.3" />
+    <circle class="node" cx="196.3" cy="816.9" r="5" />
+    <path class="thin" d="M 539.1,708.2 A 34.0,34.0 0 0 1 584.2,711.2" opacity="0.1" />
+    <path class="thin" d="M 559.2,675.0 A 60.0,60.0 0 0 1 619.6,727.7" opacity="0.2" />
+    <path class="thin" d="M 611.1,665.8 A 86.0,86.0 0 0 1 617.7,798.8" opacity="0.3" />
+    <circle class="node" cx="514.4" cy="706.6" r="5" />
+    <path class="thin" d="M 965.3,828.4 A 34.0,34.0 0 0 1 994.0,863.7" opacity="0.1" />
+    <path class="thin" d="M 1003.3,820.5 A 60.0,60.0 0 0 1 992.1,912.7" opacity="0.2" />
+    <path class="thin" d="M 1045.4,852.2 A 86.0,86.0 0 0 1 925.6,940.8" opacity="0.3" />
+    <circle class="node" cx="971.5" cy="826.4" r="5" />
+    <path class="thin" d="M 1388.2,716.0 A 34.0,34.0 0 0 1 1373.1,766.4" opacity="0.1" />
+    <path class="thin" d="M 1419.9,738.3 A 60.0,60.0 0 0 1 1327.1,785.1" opacity="0.2" />
+    <path class="thin" d="M 1425.5,790.8 A 86.0,86.0 0 0 1 1277.7,760.0" opacity="0.3" />
+    <circle class="node" cx="1421.3" cy="714.8" r="5" />
+    <path class="thin" d="M 1683.1,827.6 A 34.0,34.0 0 0 1 1626.8,844.8" opacity="0.1" />
+    <path class="thin" d="M 1688.4,866.1 A 60.0,60.0 0 0 1 1590.5,827.4" opacity="0.2" />
+    <path class="thin" d="M 1653.9,905.9 A 86.0,86.0 0 0 1 1566.6,798.9" opacity="0.3" />
+    <circle class="node" cx="1722.1" cy="828.1" r="5" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 236.5,814.1 A 34.0,34.0 0 0 1 281.0,787.8" opacity="0.1" />
+    <path class="thin" d="M 229.3,775.9 A 60.0,60.0 0 0 1 308.5,774.0" opacity="0.2" />
+    <path class="thin" d="M 261.7,734.4 A 86.0,86.0 0 0 1 354.5,804.0" opacity="0.3" />
+    <circle class="node" cx="197.1" cy="813.7" r="5" />
+    <path class="thin" d="M 541.5,706.5 A 34.0,34.0 0 0 1 585.9,713.0" opacity="0.1" />
+    <path class="thin" d="M 564.4,675.2 A 60.0,60.0 0 0 1 620.0,734.0" opacity="0.2" />
+    <path class="thin" d="M 616.9,670.6 A 86.0,86.0 0 0 1 609.6,805.3" opacity="0.3" />
+    <circle class="node" cx="519.7" cy="704.8" r="5" />
+    <path class="thin" d="M 968.2,829.0 A 34.0,34.0 0 0 1 993.6,867.2" opacity="0.1" />
+    <path class="thin" d="M 1006.8,824.4 A 60.0,60.0 0 0 1 985.8,916.2" opacity="0.2" />
+    <path class="thin" d="M 1046.0,859.7 A 86.0,86.0 0 0 1 917.5,936.8" opacity="0.3" />
+    <circle class="node" cx="977.9" cy="827.1" r="5" />
+    <path class="thin" d="M 1389.7,718.5 A 34.0,34.0 0 0 1 1369.2,767.7" opacity="0.1" />
+    <path class="thin" d="M 1419.4,743.5 A 60.0,60.0 0 0 1 1322.0,781.4" opacity="0.2" />
+    <path class="thin" d="M 1420.4,796.3 A 86.0,86.0 0 0 1 1276.1,753.8" opacity="0.3" />
+    <circle class="node" cx="1424.7" cy="717.5" r="5" />
+    <path class="thin" d="M 1682.3,830.5 A 34.0,34.0 0 0 1 1624.3,842.3" opacity="0.1" />
+    <path class="thin" d="M 1684.3,869.3 A 60.0,60.0 0 0 1 1590.1,823.0" opacity="0.2" />
+    <path class="thin" d="M 1646.4,905.9 A 86.0,86.0 0 0 1 1567.9,794.3" opacity="0.3" />
+    <circle class="node" cx="1720.4" cy="831.1" r="5" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 237.2,811.2 A 34.0,34.0 0 0 1 282.7,788.5" opacity="0.1" />
+    <path class="thin" d="M 233.3,772.6 A 60.0,60.0 0 0 1 311.9,777.0" opacity="0.2" />
+    <path class="thin" d="M 269.2,734.0 A 86.0,86.0 0 0 1 355.7,813.2" opacity="0.3" />
+    <circle class="node" cx="198.5" cy="810.7" r="5" />
+    <path class="thin" d="M 544.0,705.0 A 34.0,34.0 0 0 1 587.5,715.0" opacity="0.1" />
+    <path class="thin" d="M 569.6,675.8 A 60.0,60.0 0 0 1 619.8,740.4" opacity="0.2" />
+    <path class="thin" d="M 622.3,675.8 A 86.0,86.0 0 0 1 600.8,810.7" opacity="0.3" />
+    <circle class="node" cx="525.2" cy="703.2" r="5" />
+    <path class="thin" d="M 971.0,829.8 A 34.0,34.0 0 0 1 992.9,870.8" opacity="0.1" />
+    <path class="thin" d="M 1009.9,828.6 A 60.0,60.0 0 0 1 979.1,918.9" opacity="0.2" />
+    <path class="thin" d="M 1045.8,867.2 A 86.0,86.0 0 0 1 910.1,932.0" opacity="0.3" />
+    <circle class="node" cx="984.0" cy="828.0" r="5" />
+    <path class="thin" d="M 1391.0,721.1 A 34.0,34.0 0 0 1 1365.2,768.6" opacity="0.1" />
+    <path class="thin" d="M 1418.4,748.7 A 60.0,60.0 0 0 1 1317.4,777.3" opacity="0.2" />
+    <path class="thin" d="M 1414.8,801.3 A 86.0,86.0 0 0 1 1275.0,747.8" opacity="0.3" />
+    <circle class="node" cx="1427.6" cy="720.3" r="5" />
+    <path class="thin" d="M 1681.3,833.2 A 34.0,34.0 0 0 1 1622.2,839.5" opacity="0.1" />
+    <path class="thin" d="M 1679.8,872.1 A 60.0,60.0 0 0 1 1590.0,818.8" opacity="0.2" />
+    <path class="thin" d="M 1638.9,905.3 A 86.0,86.0 0 0 1 1569.4,789.9" opacity="0.3" />
+    <circle class="node" cx="1718.2" cy="834.0" r="5" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 238.1,808.4 A 34.0,34.0 0 0 1 284.5,789.2" opacity="0.1" />
+    <path class="thin" d="M 237.5,769.5 A 60.0,60.0 0 0 1 315.1,780.5" opacity="0.2" />
+    <path class="thin" d="M 276.7,734.3 A 86.0,86.0 0 0 1 356.0,822.6" opacity="0.3" />
+    <circle class="node" cx="200.5" cy="807.7" r="5" />
+    <path class="thin" d="M 546.7,703.7 A 34.0,34.0 0 0 1 589.0,717.2" opacity="0.1" />
+    <path class="thin" d="M 574.7,676.8 A 60.0,60.0 0 0 1 618.8,746.9" opacity="0.2" />
+    <path class="thin" d="M 627.3,681.4 A 86.0,86.0 0 0 1 591.5,815.0" opacity="0.3" />
+    <circle class="node" cx="531.1" cy="701.9" r="5" />
+    <path class="thin" d="M 973.8,830.9 A 34.0,34.0 0 0 1 991.7,874.3" opacity="0.1" />
+    <path class="thin" d="M 1012.6,833.1 A 60.0,60.0 0 0 1 972.2,920.7" opacity="0.2" />
+    <path class="thin" d="M 1045.1,874.6 A 86.0,86.0 0 0 1 903.3,926.7" opacity="0.3" />
+    <circle class="node" cx="990.1" cy="829.1" r="5" />
+    <path class="thin" d="M 1392.1,723.9 A 34.0,34.0 0 0 1 1361.2,769.0" opacity="0.1" />
+    <path class="thin" d="M 1417.0,753.7 A 60.0,60.0 0 0 1 1313.4,772.8" opacity="0.2" />
+    <path class="thin" d="M 1408.8,805.8 A 86.0,86.0 0 0 1 1274.3,741.9" opacity="0.3" />
+    <circle class="node" cx="1429.9" cy="723.2" r="5" />
+    <path class="thin" d="M 1680.0,835.9 A 34.0,34.0 0 0 1 1620.3,836.6" opacity="0.1" />
+    <path class="thin" d="M 1675.2,874.5 A 60.0,60.0 0 0 1 1590.2,814.6" opacity="0.2" />
+    <path class="thin" d="M 1631.5,904.0 A 86.0,86.0 0 0 1 1571.2,785.6" opacity="0.3" />
+    <circle class="node" cx="1715.4" cy="836.9" r="5" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 239.2,805.6 A 34.0,34.0 0 0 1 286.2,790.1" opacity="0.1" />
+    <path class="thin" d="M 242.1,766.9 A 60.0,60.0 0 0 1 318.2,784.3" opacity="0.2" />
+    <path class="thin" d="M 284.2,735.2 A 86.0,86.0 0 0 1 355.1,832.1" opacity="0.3" />
+    <circle class="node" cx="202.9" cy="804.8" r="5" />
+    <path class="thin" d="M 549.5,702.7 A 34.0,34.0 0 0 1 590.3,719.7" opacity="0.1" />
+    <path class="thin" d="M 579.8,678.3 A 60.0,60.0 0 0 1 617.1,753.4" opacity="0.2" />
+    <path class="thin" d="M 631.7,687.5 A 86.0,86.0 0 0 1 581.8,818.2" opacity="0.3" />
+    <circle class="node" cx="537.1" cy="700.8" r="5" />
+    <path class="thin" d="M 976.5,832.3 A 34.0,34.0 0 0 1 990.1,877.7" opacity="0.1" />
+    <path class="thin" d="M 1014.9,837.8 A 60.0,60.0 0 0 1 965.1,921.8" opacity="0.2" />
+    <path class="thin" d="M 1043.6,882.0 A 86.0,86.0 0 0 1 897.3,920.8" opacity="0.3" />
+    <circle class="node" cx="995.8" cy="830.5" r="5" />
+    <path class="thin" d="M 1393.0,726.7 A 34.0,34.0 0 0 1 1357.1,768.9" opacity="0.1" />
+    <path class="thin" d="M 1415.2,758.6 A 60.0,60.0 0 0 1 1309.9,768.1" opacity="0.2" />
+    <path class="thin" d="M 1402.4,809.8 A 86.0,86.0 0 0 1 1274.0,736.2" opacity="0.3" />
+    <circle class="node" cx="1431.8" cy="726.3" r="5" />
+    <path class="thin" d="M 1678.5,838.5 A 34.0,34.0 0 0 1 1618.9,833.7" opacity="0.1" />
+    <path class="thin" d="M 1670.4,876.4 A 60.0,60.0 0 0 1 1590.7,810.7" opacity="0.2" />
+    <path class="thin" d="M 1624.3,902.1 A 86.0,86.0 0 0 1 1573.2,781.3" opacity="0.3" />
+    <circle class="node" cx="1712.1" cy="839.6" r="5" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 240.6,803.0 A 34.0,34.0 0 0 1 287.9,791.1" opacity="0.1" />
+    <path class="thin" d="M 246.8,764.7 A 60.0,60.0 0 0 1 321.0,788.4" opacity="0.2" />
+    <path class="thin" d="M 291.5,736.7 A 86.0,86.0 0 0 1 353.2,841.6" opacity="0.3" />
+    <circle class="node" cx="205.9" cy="802.0" r="5" />
+    <path class="thin" d="M 552.3,701.9 A 34.0,34.0 0 0 1 591.5,722.3" opacity="0.1" />
+    <path class="thin" d="M 584.6,680.3 A 60.0,60.0 0 0 1 614.7,759.7" opacity="0.2" />
+    <path class="thin" d="M 635.6,693.9 A 86.0,86.0 0 0 1 571.8,820.2" opacity="0.3" />
+    <circle class="node" cx="543.3" cy="699.9" r="5" />
+    <path class="thin" d="M 979.0,833.8 A 34.0,34.0 0 0 1 988.2,881.0" opacity="0.1" />
+    <path class="thin" d="M 1016.8,842.7 A 60.0,60.0 0 0 1 958.1,922.0" opacity="0.2" />
+    <path class="thin" d="M 1041.6,889.2 A 86.0,86.0 0 0 1 892.0,914.6" opacity="0.3" />
+    <circle class="node" cx="1001.3" cy="832.1" r="5" />
+    <path class="thin" d="M 1393.6,729.7 A 34.0,34.0 0 0 1 1353.2,768.3" opacity="0.1" />
+    <path class="thin" d="M 1412.9,763.3 A 60.0,60.0 0 0 1 1307.0,763.2" opacity="0.2" />
+    <path class="thin" d="M 1395.8,813.2 A 86.0,86.0 0 0 1 1274.1,730.6" opacity="0.3" />
+    <circle class="node" cx="1433.1" cy="729.3" r="5" />
+    <path class="thin" d="M 1676.8,840.9 A 34.0,34.0 0 0 1 1617.7,830.6" opacity="0.1" />
+    <path class="thin" d="M 1665.4,878.0 A 60.0,60.0 0 0 1 1591.5,806.9" opacity="0.2" />
+    <path class="thin" d="M 1617.2,899.5 A 86.0,86.0 0 0 1 1575.4,777.2" opacity="0.3" />
+    <circle class="node" cx="1708.4" cy="842.1" r="5" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 242.1,800.5 A 34.0,34.0 0 0 1 289.6,792.2" opacity="0.1" />
+    <path class="thin" d="M 251.7,762.9 A 60.0,60.0 0 0 1 323.6,793.0" opacity="0.2" />
+    <path class="thin" d="M 298.7,738.9 A 86.0,86.0 0 0 1 350.2,851.0" opacity="0.3" />
+    <circle class="node" cx="209.4" cy="799.4" r="5" />
+    <path class="thin" d="M 555.3,701.3 A 34.0,34.0 0 0 1 592.5,725.1" opacity="0.1" />
+    <path class="thin" d="M 589.3,682.6 A 60.0,60.0 0 0 1 611.5,765.8" opacity="0.2" />
+    <path class="thin" d="M 638.8,700.7 A 86.0,86.0 0 0 1 561.7,821.0" opacity="0.3" />
+    <circle class="node" cx="549.7" cy="699.4" r="5" />
+    <path class="thin" d="M 981.4,835.6 A 34.0,34.0 0 0 1 985.8,884.1" opacity="0.1" />
+    <path class="thin" d="M 1018.3,847.7 A 60.0,60.0 0 0 1 951.1,921.3" opacity="0.2" />
+    <path class="thin" d="M 1038.9,896.2 A 86.0,86.0 0 0 1 887.4,908.2" opacity="0.3" />
+    <circle class="node" cx="1006.5" cy="834.0" r="5" />
+    <path class="thin" d="M 1393.9,732.6 A 34.0,34.0 0 0 1 1349.3,767.3" opacity="0.1" />
+    <path class="thin" d="M 1410.2,767.8 A 60.0,60.0 0 0 1 1304.7,758.2" opacity="0.2" />
+    <path class="thin" d="M 1388.8,816.0 A 86.0,86.0 0 0 1 1274.6,725.3" opacity="0.3" />
+    <circle class="node" cx="1433.8" cy="732.5" r="5" />
+    <path class="thin" d="M 1674.9,843.2 A 34.0,34.0 0 0 1 1616.9,827.6" opacity="0.1" />
+    <path class="thin" d="M 1660.2,879.1 A 60.0,60.0 0 0 1 1592.4,803.2" opacity="0.2" />
+    <path class="thin" d="M 1610.4,896.3 A 86.0,86.0 0 0 1 1577.9,773.1" opacity="0.3" />
+    <circle class="node" cx="1704.2" cy="844.5" r="5" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 244.0,798.1 A 34.0,34.0 0 0 1 291.3,793.5" opacity="0.1" />
+    <path class="thin" d="M 256.8,761.5 A 60.0,60.0 0 0 1 325.8,797.9" opacity="0.2" />
+    <path class="thin" d="M 305.6,741.7 A 86.0,86.0 0 0 1 346.1,860.1" opacity="0.3" />
+    <circle class="node" cx="213.3" cy="796.9" r="5" />
+    <path class="thin" d="M 558.2,701.0 A 34.0,34.0 0 0 1 593.3,728.0" opacity="0.1" />
+    <path class="thin" d="M 593.7,685.4 A 60.0,60.0 0 0 1 607.6,771.6" opacity="0.2" />
+    <path class="thin" d="M 641.5,707.7 A 86.0,86.0 0 0 1 551.8,820.6" opacity="0.3" />
+    <circle class="node" cx="556.1" cy="699.0" r="5" />
+    <path class="thin" d="M 983.6,837.5 A 34.0,34.0 0 0 1 983.1,887.0" opacity="0.1" />
+    <path class="thin" d="M 1019.3,852.8 A 60.0,60.0 0 0 1 944.3,919.9" opacity="0.2" />
+    <path class="thin" d="M 1035.6,903.0 A 86.0,86.0 0 0 1 883.6,901.5" opacity="0.3" />
+    <circle class="node" cx="1011.4" cy="836.1" r="5" />
+    <path class="thin" d="M 1394.0,735.6 A 34.0,34.0 0 0 1 1345.7,765.8" opacity="0.1" />
+    <path class="thin" d="M 1407.2,772.1 A 60.0,60.0 0 0 1 1302.8,753.2" opacity="0.2" />
+    <path class="thin" d="M 1381.6,818.2 A 86.0,86.0 0 0 1 1275.3,720.1" opacity="0.3" />
+    <circle class="node" cx="1434.0" cy="735.6" r="5" />
+    <path class="thin" d="M 1672.8,845.2 A 34.0,34.0 0 0 1 1616.3,824.7" opacity="0.1" />
+    <path class="thin" d="M 1655.0,879.8 A 60.0,60.0 0 0 1 1593.5,799.8" opacity="0.2" />
+    <path class="thin" d="M 1603.9,892.6 A 86.0,86.0 0 0 1 1580.7,769.1" opacity="0.3" />
+    <circle class="node" cx="1699.6" cy="846.7" r="5" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 246.0,796.0 A 34.0,34.0 0 0 1 292.9,794.9" opacity="0.1" />
+    <path class="thin" d="M 261.9,760.5 A 60.0,60.0 0 0 1 327.6,803.2" opacity="0.2" />
+    <path class="thin" d="M 312.3,745.1 A 86.0,86.0 0 0 1 340.8,868.8" opacity="0.3" />
+    <circle class="node" cx="217.7" cy="794.5" r="5" />
+    <path class="thin" d="M 561.2,701.0 A 34.0,34.0 0 0 1 593.8,731.1" opacity="0.1" />
+    <path class="thin" d="M 597.9,688.5 A 60.0,60.0 0 0 1 602.9,776.9" opacity="0.2" />
+    <path class="thin" d="M 643.6,714.9 A 86.0,86.0 0 0 1 542.1,819.1" opacity="0.3" />
+    <circle class="node" cx="562.6" cy="699.0" r="5" />
+    <path class="thin" d="M 985.6,839.7 A 34.0,34.0 0 0 1 980.0,889.5" opacity="0.1" />
+    <path class="thin" d="M 1019.9,858.0 A 60.0,60.0 0 0 1 937.7,917.7" opacity="0.2" />
+    <path class="thin" d="M 1031.8,909.4 A 86.0,86.0 0 0 1 880.5,894.8" opacity="0.3" />
+    <circle class="node" cx="1015.8" cy="838.4" r="5" />
+    <path class="thin" d="M 1393.8,738.5 A 34.0,34.0 0 0 1 1342.2,764.0" opacity="0.1" />
+    <path class="thin" d="M 1403.7,776.1 A 60.0,60.0 0 0 1 1301.5,748.2" opacity="0.2" />
+    <path class="thin" d="M 1374.3,819.8 A 86.0,86.0 0 0 1 1276.3,715.1" opacity="0.3" />
+    <circle class="node" cx="1433.6" cy="738.7" r="5" />
+    <path class="thin" d="M 1670.5,847.1 A 34.0,34.0 0 0 1 1616.0,821.7" opacity="0.1" />
+    <path class="thin" d="M 1649.8,880.0 A 60.0,60.0 0 0 1 1594.8,796.5" opacity="0.2" />
+    <path class="thin" d="M 1597.7,888.3 A 86.0,86.0 0 0 1 1583.8,765.2" opacity="0.3" />
+    <circle class="node" cx="1694.6" cy="848.7" r="5" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 248.1,794.0 A 34.0,34.0 0 0 1 294.5,796.4" opacity="0.1" />
+    <path class="thin" d="M 267.1,760.1 A 60.0,60.0 0 0 1 328.9,808.8" opacity="0.2" />
+    <path class="thin" d="M 318.7,749.1 A 86.0,86.0 0 0 1 334.6,876.8" opacity="0.3" />
+    <circle class="node" cx="222.4" cy="792.4" r="5" />
+    <path class="thin" d="M 564.1,701.3 A 34.0,34.0 0 0 1 594.0,734.4" opacity="0.1" />
+    <path class="thin" d="M 601.8,692.0 A 60.0,60.0 0 0 1 597.7,781.7" opacity="0.2" />
+    <path class="thin" d="M 645.0,722.2 A 86.0,86.0 0 0 1 532.7,816.6" opacity="0.3" />
+    <circle class="node" cx="569.0" cy="699.3" r="5" />
+    <path class="thin" d="M 987.5,842.0 A 34.0,34.0 0 0 1 976.6,891.7" opacity="0.1" />
+    <path class="thin" d="M 1020.0,863.3 A 60.0,60.0 0 0 1 931.6,914.9" opacity="0.2" />
+    <path class="thin" d="M 1027.4,915.5 A 86.0,86.0 0 0 1 878.0,888.0" opacity="0.3" />
+    <circle class="node" cx="1019.8" cy="840.8" r="5" />
+    <path class="thin" d="M 1393.4,741.5 A 34.0,34.0 0 0 1 1339.1,761.8" opacity="0.1" />
+    <path class="thin" d="M 1400.0,779.7 A 60.0,60.0 0 0 1 1300.6,743.2" opacity="0.2" />
+    <path class="thin" d="M 1366.8,820.7 A 86.0,86.0 0 0 1 1277.6,710.4" opacity="0.3" />
+    <circle class="node" cx="1432.7" cy="741.8" r="5" />
+    <path class="thin" d="M 1668.1,848.8 A 34.0,34.0 0 0 1 1616.0,818.9" opacity="0.1" />
+    <path class="thin" d="M 1644.6,879.8 A 60.0,60.0 0 0 1 1596.3,793.3" opacity="0.2" />
+    <path class="thin" d="M 1592.0,883.5 A 86.0,86.0 0 0 1 1587.1,761.3" opacity="0.3" />
+    <circle class="node" cx="1689.3" cy="850.5" r="5" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 250.5,792.1 A 34.0,34.0 0 0 1 296.0,798.1" opacity="0.1" />
+    <path class="thin" d="M 272.3,760.0 A 60.0,60.0 0 0 1 329.8,814.6" opacity="0.2" />
+    <path class="thin" d="M 324.7,753.6 A 86.0,86.0 0 0 1 327.3,884.1" opacity="0.3" />
+    <circle class="node" cx="227.6" cy="790.5" r="5" />
+    <path class="thin" d="M 567.1,701.7 A 34.0,34.0 0 0 1 593.9,737.7" opacity="0.1" />
+    <path class="thin" d="M 605.4,695.8 A 60.0,60.0 0 0 1 591.9,785.8" opacity="0.2" />
+    <path class="thin" d="M 645.8,729.7 A 86.0,86.0 0 0 1 523.9,813.0" opacity="0.3" />
+    <circle class="node" cx="575.4" cy="699.8" r="5" />
+    <path class="thin" d="M 989.1,844.5 A 34.0,34.0 0 0 1 972.9,893.4" opacity="0.1" />
+    <path class="thin" d="M 1019.6,868.5 A 60.0,60.0 0 0 1 926.0,911.4" opacity="0.2" />
+    <path class="thin" d="M 1022.4,921.1 A 86.0,86.0 0 0 1 876.2,881.4" opacity="0.3" />
+    <circle class="node" cx="1023.4" cy="843.4" r="5" />
+    <path class="thin" d="M 1392.7,744.3 A 34.0,34.0 0 0 1 1336.2,759.3" opacity="0.1" />
+    <path class="thin" d="M 1395.9,783.0 A 60.0,60.0 0 0 1 1300.1,738.4" opacity="0.2" />
+    <path class="thin" d="M 1359.4,821.0 A 86.0,86.0 0 0 1 1279.1,705.7" opacity="0.3" />
+    <circle class="node" cx="1431.2" cy="744.9" r="5" />
+    <path class="thin" d="M 1665.5,850.3 A 34.0,34.0 0 0 1 1616.2,816.2" opacity="0.1" />
+    <path class="thin" d="M 1639.4,879.1 A 60.0,60.0 0 0 1 1597.8,790.3" opacity="0.2" />
+    <path class="thin" d="M 1586.7,878.2 A 86.0,86.0 0 0 1 1590.8,757.6" opacity="0.3" />
+    <circle class="node" cx="1683.7" cy="852.1" r="5" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 253.0,790.6 A 34.0,34.0 0 0 1 297.5,800.0" opacity="0.1" />
+    <path class="thin" d="M 277.6,760.5 A 60.0,60.0 0 0 1 330.0,820.7" opacity="0.2" />
+    <path class="thin" d="M 330.3,758.6 A 86.0,86.0 0 0 1 319.3,890.5" opacity="0.3" />
+    <circle class="node" cx="233.0" cy="788.8" r="5" />
+    <path class="thin" d="M 569.9,702.5 A 34.0,34.0 0 0 1 593.4,741.1" opacity="0.1" />
+    <path class="thin" d="M 608.7,699.9 A 60.0,60.0 0 0 1 585.6,789.3" opacity="0.2" />
+    <path class="thin" d="M 646.0,737.2 A 86.0,86.0 0 0 1 515.6,808.7" opacity="0.3" />
+    <circle class="node" cx="581.6" cy="700.6" r="5" />
+    <path class="thin" d="M 990.5,847.1 A 34.0,34.0 0 0 1 969.1,894.8" opacity="0.1" />
+    <path class="thin" d="M 1018.9,873.7 A 60.0,60.0 0 0 1 920.8,907.4" opacity="0.2" />
+    <path class="thin" d="M 1017.0,926.4 A 86.0,86.0 0 0 1 875.0,874.8" opacity="0.3" />
+    <circle class="node" cx="1026.5" cy="846.2" r="5" />
+    <path class="thin" d="M 1391.8,747.2 A 34.0,34.0 0 0 1 1333.7,756.6" opacity="0.1" />
+    <path class="thin" d="M 1391.6,786.0 A 60.0,60.0 0 0 1 1300.0,733.8" opacity="0.2" />
+    <path class="thin" d="M 1351.9,820.6 A 86.0,86.0 0 0 1 1280.9,701.3" opacity="0.3" />
+    <circle class="node" cx="1429.1" cy="747.9" r="5" />
+    <path class="thin" d="M 1662.8,851.5 A 34.0,34.0 0 0 1 1616.6,813.6" opacity="0.1" />
+    <path class="thin" d="M 1634.3,877.9 A 60.0,60.0 0 0 1 1599.6,787.5" opacity="0.2" />
+    <path class="thin" d="M 1581.8,872.5 A 86.0,86.0 0 0 1 1594.8,754.1" opacity="0.3" />
+    <circle class="node" cx="1677.8" cy="853.4" r="5" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 255.6,789.2 A 34.0,34.0 0 0 1 298.8,802.0" opacity="0.1" />
+    <path class="thin" d="M 282.7,761.4 A 60.0,60.0 0 0 1 329.6,826.9" opacity="0.2" />
+    <path class="thin" d="M 335.4,764.1 A 86.0,86.0 0 0 1 310.5,895.9" opacity="0.3" />
+    <circle class="node" cx="238.7" cy="787.4" r="5" />
+    <path class="thin" d="M 572.7,703.5 A 34.0,34.0 0 0 1 592.6,744.6" opacity="0.1" />
+    <path class="thin" d="M 611.6,704.3 A 60.0,60.0 0 0 1 578.9,792.0" opacity="0.2" />
+    <path class="thin" d="M 645.5,744.7 A 86.0,86.0 0 0 1 508.1,803.5" opacity="0.3" />
+    <circle class="node" cx="587.7" cy="701.6" r="5" />
+    <path class="thin" d="M 991.7,849.8 A 34.0,34.0 0 0 1 965.1,895.6" opacity="0.1" />
+    <path class="thin" d="M 1017.6,878.7 A 60.0,60.0 0 0 1 916.2,903.0" opacity="0.2" />
+    <path class="thin" d="M 1011.2,931.1 A 86.0,86.0 0 0 1 874.2,868.4" opacity="0.3" />
+    <circle class="node" cx="1029.1" cy="849.1" r="5" />
+    <path class="thin" d="M 1390.6,749.9 A 34.0,34.0 0 0 1 1331.6,753.7" opacity="0.1" />
+    <path class="thin" d="M 1387.1,788.6 A 60.0,60.0 0 0 1 1300.3,729.3" opacity="0.2" />
+    <path class="thin" d="M 1344.4,819.6 A 86.0,86.0 0 0 1 1282.9,697.0" opacity="0.3" />
+    <circle class="node" cx="1426.5" cy="750.8" r="5" />
+    <path class="thin" d="M 1660.0,852.5 A 34.0,34.0 0 0 1 1617.2,811.1" opacity="0.1" />
+    <path class="thin" d="M 1629.3,876.3 A 60.0,60.0 0 0 1 1601.4,784.8" opacity="0.2" />
+    <path class="thin" d="M 1577.5,866.3 A 86.0,86.0 0 0 1 1599.2,750.6" opacity="0.3" />
+    <circle class="node" cx="1671.7" cy="854.4" r="5" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 258.4,788.1 A 34.0,34.0 0 0 1 300.1,804.2" opacity="0.1" />
+    <path class="thin" d="M 287.8,762.7 A 60.0,60.0 0 0 1 328.5,833.1" opacity="0.2" />
+    <path class="thin" d="M 340.0,770.0 A 86.0,86.0 0 0 1 301.1,900.2" opacity="0.3" />
+    <circle class="node" cx="244.7" cy="786.2" r="5" />
+    <path class="thin" d="M 575.4,704.7 A 34.0,34.0 0 0 1 591.4,748.0" opacity="0.1" />
+    <path class="thin" d="M 614.0,708.9 A 60.0,60.0 0 0 1 571.9,793.8" opacity="0.2" />
+    <path class="thin" d="M 644.3,752.1 A 86.0,86.0 0 0 1 501.2,797.8" opacity="0.3" />
+    <circle class="node" cx="593.6" cy="702.9" r="5" />
+    <path class="thin" d="M 992.7,852.6 A 34.0,34.0 0 0 1 961.0,896.0" opacity="0.1" />
+    <path class="thin" d="M 1015.9,883.7 A 60.0,60.0 0 0 1 912.2,898.2" opacity="0.2" />
+    <path class="thin" d="M 1005.0,935.3 A 86.0,86.0 0 0 1 874.0,862.1" opacity="0.3" />
+    <circle class="node" cx="1031.1" cy="852.1" r="5" />
+    <path class="thin" d="M 1389.2,752.5 A 34.0,34.0 0 0 1 1329.8,750.6" opacity="0.1" />
+    <path class="thin" d="M 1382.3,790.7 A 60.0,60.0 0 0 1 1300.8,724.9" opacity="0.2" />
+    <path class="thin" d="M 1337.1,817.9 A 86.0,86.0 0 0 1 1285.0,692.8" opacity="0.3" />
+    <circle class="node" cx="1423.5" cy="753.5" r="5" />
+    <path class="thin" d="M 1657.1,853.2 A 34.0,34.0 0 0 1 1617.9,808.7" opacity="0.1" />
+    <path class="thin" d="M 1624.5,874.3 A 60.0,60.0 0 0 1 1603.4,782.2" opacity="0.2" />
+    <path class="thin" d="M 1573.8,859.8 A 86.0,86.0 0 0 1 1603.9,747.4" opacity="0.3" />
+    <circle class="node" cx="1665.5" cy="855.2" r="5" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 261.2,787.2 A 34.0,34.0 0 0 1 301.2,806.6" opacity="0.1" />
+    <path class="thin" d="M 292.7,764.5 A 60.0,60.0 0 0 1 326.8,839.4" opacity="0.2" />
+    <path class="thin" d="M 344.1,776.3 A 86.0,86.0 0 0 1 291.3,903.3" opacity="0.3" />
+    <circle class="node" cx="250.8" cy="785.2" r="5" />
+    <path class="thin" d="M 578.0,706.2 A 34.0,34.0 0 0 1 589.8,751.3" opacity="0.1" />
+    <path class="thin" d="M 616.1,713.7 A 60.0,60.0 0 0 1 564.8,794.8" opacity="0.2" />
+    <path class="thin" d="M 642.5,759.4 A 86.0,86.0 0 0 1 495.2,791.5" opacity="0.3" />
+    <circle class="node" cx="599.2" cy="704.5" r="5" />
+    <path class="thin" d="M 993.4,855.5 A 34.0,34.0 0 0 1 956.9,895.9" opacity="0.1" />
+    <path class="thin" d="M 1013.8,888.5 A 60.0,60.0 0 0 1 908.7,893.2" opacity="0.2" />
+    <path class="thin" d="M 998.4,938.9 A 86.0,86.0 0 0 1 874.2,856.1" opacity="0.3" />
+    <circle class="node" cx="1032.6" cy="855.1" r="5" />
+    <path class="thin" d="M 1387.5,755.0 A 34.0,34.0 0 0 1 1328.4,747.5" opacity="0.1" />
+    <path class="thin" d="M 1377.4,792.4 A 60.0,60.0 0 0 1 1301.7,720.8" opacity="0.2" />
+    <path class="thin" d="M 1330.0,815.6 A 86.0,86.0 0 0 1 1287.4,688.8" opacity="0.3" />
+    <circle class="node" cx="1419.9" cy="756.1" r="5" />
+    <path class="thin" d="M 1654.2,853.7 A 34.0,34.0 0 0 1 1618.8,806.5" opacity="0.1" />
+    <path class="thin" d="M 1619.8,871.9 A 60.0,60.0 0 0 1 1605.6,779.7" opacity="0.2" />
+    <path class="thin" d="M 1570.6,853.0 A 86.0,86.0 0 0 1 1609.0,744.4" opacity="0.3" />
+    <circle class="node" cx="1659.1" cy="855.7" r="5" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 264.1,786.5 A 34.0,34.0 0 0 1 302.2,809.1" opacity="0.1" />
+    <path class="thin" d="M 297.5,766.7 A 60.0,60.0 0 0 1 324.3,845.5" opacity="0.2" />
+    <path class="thin" d="M 347.6,783.0 A 86.0,86.0 0 0 1 281.2,905.3" opacity="0.3" />
+    <circle class="node" cx="257.2" cy="784.5" r="5" />
+    <path class="thin" d="M 580.5,707.8 A 34.0,34.0 0 0 1 587.9,754.5" opacity="0.1" />
+    <path class="thin" d="M 617.7,718.7 A 60.0,60.0 0 0 1 557.6,795.0" opacity="0.2" />
+    <path class="thin" d="M 640.0,766.5 A 86.0,86.0 0 0 1 489.9,784.8" opacity="0.3" />
+    <circle class="node" cx="604.5" cy="706.2" r="5" />
+    <path class="thin" d="M 993.8,858.4 A 34.0,34.0 0 0 1 952.9,895.3" opacity="0.1" />
+    <path class="thin" d="M 1011.3,893.1 A 60.0,60.0 0 0 1 905.9,888.0" opacity="0.2" />
+    <path class="thin" d="M 991.6,942.0 A 86.0,86.0 0 0 1 874.8,850.3" opacity="0.3" />
+    <circle class="node" cx="1033.6" cy="858.2" r="5" />
+    <path class="thin" d="M 1385.7,757.3 A 34.0,34.0 0 0 1 1327.3,744.3" opacity="0.1" />
+    <path class="thin" d="M 1372.3,793.7 A 60.0,60.0 0 0 1 1302.8,716.9" opacity="0.2" />
+    <path class="thin" d="M 1323.1,812.7 A 86.0,86.0 0 0 1 1290.1,684.9" opacity="0.3" />
+    <circle class="node" cx="1415.9" cy="758.6" r="5" />
+    <path class="thin" d="M 1651.2,854.0 A 34.0,34.0 0 0 1 1619.8,804.4" opacity="0.1" />
+    <path class="thin" d="M 1615.4,869.0 A 60.0,60.0 0 0 1 1607.8,777.3" opacity="0.2" />
+    <path class="thin" d="M 1568.0,846.0 A 86.0,86.0 0 0 1 1614.5,741.7" opacity="0.3" />
+    <circle class="node" cx="1652.7" cy="856.0" r="5" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 267.0,786.1 A 34.0,34.0 0 0 1 303.0,811.8" opacity="0.1" />
+    <path class="thin" d="M 302.0,769.3 A 60.0,60.0 0 0 1 321.1,851.5" opacity="0.2" />
+    <path class="thin" d="M 350.5,789.9 A 86.0,86.0 0 0 1 271.0,906.0" opacity="0.3" />
+    <circle class="node" cx="263.6" cy="784.1" r="5" />
+    <path class="thin" d="M 582.7,709.7 A 34.0,34.0 0 0 1 585.5,757.5" opacity="0.1" />
+    <path class="thin" d="M 618.9,723.8 A 60.0,60.0 0 0 1 550.5,794.3" opacity="0.2" />
+    <path class="thin" d="M 637.0,773.3 A 86.0,86.0 0 0 1 485.4,777.9" opacity="0.3" />
+    <circle class="node" cx="609.5" cy="708.2" r="5" />
+    <path class="thin" d="M 994.0,861.4 A 34.0,34.0 0 0 1 949.0,894.2" opacity="0.1" />
+    <path class="thin" d="M 1008.4,897.4 A 60.0,60.0 0 0 1 903.7,882.7" opacity="0.2" />
+    <path class="thin" d="M 984.5,944.4 A 86.0,86.0 0 0 1 875.7,844.8" opacity="0.3" />
+    <circle class="node" cx="1034.0" cy="861.3" r="5" />
+    <path class="thin" d="M 1383.6,759.4 A 34.0,34.0 0 0 1 1326.6,741.1" opacity="0.1" />
+    <path class="thin" d="M 1367.1,794.6 A 60.0,60.0 0 0 1 1304.1,713.2" opacity="0.2" />
+    <path class="thin" d="M 1316.4,809.2 A 86.0,86.0 0 0 1 1292.9,681.2" opacity="0.3" />
+    <circle class="node" cx="1411.5" cy="760.9" r="5" />
+    <path class="thin" d="M 1648.3,854.0 A 34.0,34.0 0 0 1 1620.9,802.5" opacity="0.1" />
+    <path class="thin" d="M 1611.3,865.8 A 60.0,60.0 0 0 1 1610.2,775.1" opacity="0.2" />
+    <path class="thin" d="M 1566.1,838.7 A 86.0,86.0 0 0 1 1620.4,739.2" opacity="0.3" />
+    <circle class="node" cx="1646.2" cy="856.0" r="5" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 270.0,786.0 A 34.0,34.0 0 0 1 303.6,814.7" opacity="0.1" />
+    <path class="thin" d="M 306.3,772.2 A 60.0,60.0 0 0 1 317.2,857.1" opacity="0.2" />
+    <path class="thin" d="M 352.9,797.0 A 86.0,86.0 0 0 1 260.9,905.5" opacity="0.3" />
+    <circle class="node" cx="270.0" cy="784.0" r="5" />
+    <path class="thin" d="M 584.9,711.8 A 34.0,34.0 0 0 1 582.8,760.2" opacity="0.1" />
+    <path class="thin" d="M 619.7,729.0 A 60.0,60.0 0 0 1 543.6,792.7" opacity="0.2" />
+    <path class="thin" d="M 633.4,779.9 A 86.0,86.0 0 0 1 481.8,770.7" opacity="0.3" />
+    <circle class="node" cx="614.1" cy="710.4" r="5" />
+    <path class="thin" d="M 993.9,864.4 A 34.0,34.0 0 0 1 945.3,892.7" opacity="0.1" />
+    <path class="thin" d="M 1005.1,901.5 A 60.0,60.0 0 0 1 902.0,877.3" opacity="0.2" />
+    <path class="thin" d="M 977.2,946.3 A 86.0,86.0 0 0 1 877.0,839.5" opacity="0.3" />
+    <circle class="node" cx="1033.8" cy="864.5" r="5" />
+    <path class="thin" d="M 1381.4,761.4 A 34.0,34.0 0 0 1 1326.1,738.0" opacity="0.1" />
+    <path class="thin" d="M 1361.9,795.0 A 60.0,60.0 0 0 1 1305.6,709.7" opacity="0.2" />
+    <path class="thin" d="M 1310.1,805.1 A 86.0,86.0 0 0 1 1296.0,677.6" opacity="0.3" />
+    <circle class="node" cx="1406.6" cy="763.0" r="5" />
+    <path class="thin" d="M 1645.3,853.7 A 34.0,34.0 0 0 1 1622.0,800.7" opacity="0.1" />
+    <path class="thin" d="M 1607.4,862.3 A 60.0,60.0 0 0 1 1612.8,772.9" opacity="0.2" />
+    <path class="thin" d="M 1564.8,831.4 A 86.0,86.0 0 0 1 1626.7,737.2" opacity="0.3" />
+    <circle class="node" cx="1639.8" cy="855.7" r="5" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 273.0,786.1 A 34.0,34.0 0 0 1 303.9,817.7" opacity="0.1" />
+    <path class="thin" d="M 310.3,775.6 A 60.0,60.0 0 0 1 312.6,862.3" opacity="0.2" />
+    <path class="thin" d="M 354.6,804.3 A 86.0,86.0 0 0 1 251.0,903.9" opacity="0.3" />
+    <circle class="node" cx="276.4" cy="784.1" r="5" />
+    <path class="thin" d="M 586.8,714.1 A 34.0,34.0 0 0 1 579.7,762.7" opacity="0.1" />
+    <path class="thin" d="M 620.0,734.2 A 60.0,60.0 0 0 1 537.0,790.4" opacity="0.2" />
+    <path class="thin" d="M 629.2,786.1 A 86.0,86.0 0 0 1 478.9,763.5" opacity="0.3" />
+    <circle class="node" cx="618.3" cy="712.8" r="5" />
+    <path class="thin" d="M 993.6,867.3 A 34.0,34.0 0 0 1 941.9,890.8" opacity="0.1" />
+    <path class="thin" d="M 1001.5,905.3 A 60.0,60.0 0 0 1 900.8,872.0" opacity="0.2" />
+    <path class="thin" d="M 969.8,947.4 A 86.0,86.0 0 0 1 878.5,834.4" opacity="0.3" />
+    <circle class="node" cx="1033.1" cy="867.6" r="5" />
+    <path class="thin" d="M 1379.0,763.2 A 34.0,34.0 0 0 1 1326.0,734.9" opacity="0.1" />
+    <path class="thin" d="M 1356.7,794.9 A 60.0,60.0 0 0 1 1307.2,706.4" opacity="0.2" />
+    <path class="thin" d="M 1304.2,800.5 A 86.0,86.0 0 0 1 1299.3,674.1" opacity="0.3" />
+    <circle class="node" cx="1401.4" cy="764.8" r="5" />
+    <path class="thin" d="M 1642.4,853.1 A 34.0,34.0 0 0 1 1623.3,799.0" opacity="0.1" />
+    <path class="thin" d="M 1603.9,858.4 A 60.0,60.0 0 0 1 1615.5,770.9" opacity="0.2" />
+    <path class="thin" d="M 1564.1,823.9 A 86.0,86.0 0 0 1 1633.3,735.6" opacity="0.3" />
+    <circle class="node" cx="1633.4" cy="855.1" r="5" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 275.9,786.5 A 34.0,34.0 0 0 1 304.0,820.8" opacity="0.1" />
+    <path class="thin" d="M 314.1,779.3 A 60.0,60.0 0 0 1 307.3,867.0" opacity="0.2" />
+    <path class="thin" d="M 355.6,811.7 A 86.0,86.0 0 0 1 241.5,901.1" opacity="0.3" />
+    <circle class="node" cx="282.8" cy="784.5" r="5" />
+    <path class="thin" d="M 588.5,716.5 A 34.0,34.0 0 0 1 576.4,764.8" opacity="0.1" />
+    <path class="thin" d="M 619.8,739.4 A 60.0,60.0 0 0 1 530.8,787.4" opacity="0.2" />
+    <path class="thin" d="M 624.4,791.9 A 86.0,86.0 0 0 1 476.7,756.3" opacity="0.3" />
+    <circle class="node" cx="622.0" cy="715.4" r="5" />
+    <path class="thin" d="M 993.0,870.2 A 34.0,34.0 0 0 1 938.7,888.5" opacity="0.1" />
+    <path class="thin" d="M 997.6,908.8 A 60.0,60.0 0 0 1 900.2,866.8" opacity="0.2" />
+    <path class="thin" d="M 962.3,948.0 A 86.0,86.0 0 0 1 880.3,829.6" opacity="0.3" />
+    <circle class="node" cx="1031.8" cy="870.7" r="5" />
+    <path class="thin" d="M 1376.5,764.7 A 34.0,34.0 0 0 1 1326.1,732.0" opacity="0.1" />
+    <path class="thin" d="M 1351.5,794.4 A 60.0,60.0 0 0 1 1309.0,703.3" opacity="0.2" />
+    <path class="thin" d="M 1298.7,795.4 A 86.0,86.0 0 0 1 1302.9,670.7" opacity="0.3" />
+    <circle class="node" cx="1395.9" cy="766.5" r="5" />
+    <path class="thin" d="M 1639.5,852.3 A 34.0,34.0 0 0 1 1624.6,797.4" opacity="0.1" />
+    <path class="thin" d="M 1600.7,854.3 A 60.0,60.0 0 0 1 1618.3,769.0" opacity="0.2" />
+    <path class="thin" d="M 1564.1,816.4 A 86.0,86.0 0 0 1 1640.3,734.5" opacity="0.3" />
+    <circle class="node" cx="1627.2" cy="854.3" r="5" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 278.8,787.2 A 34.0,34.0 0 0 1 303.8,824.0" opacity="0.1" />
+    <path class="thin" d="M 317.4,783.3 A 60.0,60.0 0 0 1 301.6,871.0" opacity="0.2" />
+    <path class="thin" d="M 356.0,819.2 A 86.0,86.0 0 0 1 232.5,897.4" opacity="0.3" />
+    <circle class="node" cx="289.2" cy="785.2" r="5" />
+    <path class="thin" d="M 590.0,719.0 A 34.0,34.0 0 0 1 572.7,766.5" opacity="0.1" />
+    <path class="thin" d="M 619.2,744.6 A 60.0,60.0 0 0 1 525.1,783.8" opacity="0.2" />
+    <path class="thin" d="M 619.2,797.3 A 86.0,86.0 0 0 1 475.2,749.2" opacity="0.3" />
+    <circle class="node" cx="625.3" cy="718.1" r="5" />
+    <path class="thin" d="M 992.2,873.0 A 34.0,34.0 0 0 1 935.8,885.9" opacity="0.1" />
+    <path class="thin" d="M 993.4,911.9 A 60.0,60.0 0 0 1 900.0,861.7" opacity="0.2" />
+    <path class="thin" d="M 954.8,947.8 A 86.0,86.0 0 0 1 882.3,825.0" opacity="0.3" />
+    <circle class="node" cx="1030.0" cy="873.7" r="5" />
+    <path class="thin" d="M 1373.9,766.0 A 34.0,34.0 0 0 1 1326.5,729.1" opacity="0.1" />
+    <path class="thin" d="M 1346.3,793.4 A 60.0,60.0 0 0 1 1311.0,700.4" opacity="0.2" />
+    <path class="thin" d="M 1293.7,789.8 A 86.0,86.0 0 0 1 1306.8,667.5" opacity="0.3" />
+    <circle class="node" cx="1390.2" cy="767.9" r="5" />
+    <path class="thin" d="M 1636.8,851.3 A 34.0,34.0 0 0 1 1625.9,796.0" opacity="0.1" />
+    <path class="thin" d="M 1597.9,849.8 A 60.0,60.0 0 0 1 1621.4,767.3" opacity="0.2" />
+    <path class="thin" d="M 1564.7,808.9 A 86.0,86.0 0 0 1 1647.6,734.0" opacity="0.3" />
+    <circle class="node" cx="1621.2" cy="853.2" r="5" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 281.6,788.1 A 34.0,34.0 0 0 1 303.2,827.2" opacity="0.1" />
+    <path class="thin" d="M 320.5,787.5 A 60.0,60.0 0 0 1 295.3,874.4" opacity="0.2" />
+    <path class="thin" d="M 355.7,826.7 A 86.0,86.0 0 0 1 224.1,892.7" opacity="0.3" />
+    <circle class="node" cx="295.3" cy="786.2" r="5" />
+    <path class="thin" d="M 591.3,721.7 A 34.0,34.0 0 0 1 568.9,767.8" opacity="0.1" />
+    <path class="thin" d="M 618.2,749.7 A 60.0,60.0 0 0 1 519.9,779.6" opacity="0.2" />
+    <path class="thin" d="M 613.6,802.3 A 86.0,86.0 0 0 1 474.3,742.2" opacity="0.3" />
+    <circle class="node" cx="628.1" cy="720.9" r="5" />
+    <path class="thin" d="M 991.1,875.8 A 34.0,34.0 0 0 1 933.3,883.1" opacity="0.1" />
+    <path class="thin" d="M 988.9,914.6 A 60.0,60.0 0 0 1 900.2,856.8" opacity="0.2" />
+    <path class="thin" d="M 947.4,947.1 A 86.0,86.0 0 0 1 884.6,820.7" opacity="0.3" />
+    <circle class="node" cx="1027.6" cy="876.6" r="5" />
+    <path class="thin" d="M 1371.1,767.1 A 34.0,34.0 0 0 1 1327.1,726.4" opacity="0.1" />
+    <path class="thin" d="M 1341.3,792.0 A 60.0,60.0 0 0 1 1313.0,697.7" opacity="0.2" />
+    <path class="thin" d="M 1289.2,783.8 A 86.0,86.0 0 0 1 1310.9,664.4" opacity="0.3" />
+    <circle class="node" cx="1384.2" cy="769.0" r="5" />
+    <path class="thin" d="M 1634.1,850.0 A 34.0,34.0 0 0 1 1627.3,794.7" opacity="0.1" />
+    <path class="thin" d="M 1595.5,845.2 A 60.0,60.0 0 0 1 1624.6,765.7" opacity="0.2" />
+    <path class="thin" d="M 1566.0,801.5 A 86.0,86.0 0 0 1 1655.2,734.2" opacity="0.3" />
+    <circle class="node" cx="1615.3" cy="851.8" r="5" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 284.4,789.2 A 34.0,34.0 0 0 1 302.3,830.5" opacity="0.1" />
+    <path class="thin" d="M 323.1,792.1 A 60.0,60.0 0 0 1 288.6,877.0" opacity="0.2" />
+    <path class="thin" d="M 354.8,834.2 A 86.0,86.0 0 0 1 216.4,887.3" opacity="0.3" />
+    <circle class="node" cx="301.3" cy="787.4" r="5" />
+    <path class="thin" d="M 592.3,724.5 A 34.0,34.0 0 0 1 564.9,768.6" opacity="0.1" />
+    <path class="thin" d="M 616.7,754.8 A 60.0,60.0 0 0 1 515.2,774.9" opacity="0.2" />
+    <path class="thin" d="M 607.5,806.7 A 86.0,86.0 0 0 1 474.0,735.4" opacity="0.3" />
+    <circle class="node" cx="630.4" cy="723.9" r="5" />
+    <path class="thin" d="M 989.7,878.5 A 34.0,34.0 0 0 1 931.2,880.0" opacity="0.1" />
+    <path class="thin" d="M 984.2,916.9 A 60.0,60.0 0 0 1 900.8,852.1" opacity="0.2" />
+    <path class="thin" d="M 940.0,945.6 A 86.0,86.0 0 0 1 887.0,816.5" opacity="0.3" />
+    <circle class="node" cx="1024.7" cy="879.4" r="5" />
+    <path class="thin" d="M 1368.3,768.0 A 34.0,34.0 0 0 1 1327.9,723.8" opacity="0.1" />
+    <path class="thin" d="M 1336.4,790.2 A 60.0,60.0 0 0 1 1315.2,695.1" opacity="0.2" />
+    <path class="thin" d="M 1285.2,777.4 A 86.0,86.0 0 0 1 1315.4,661.5" opacity="0.3" />
+    <circle class="node" cx="1378.0" cy="769.9" r="5" />
+    <path class="thin" d="M 1631.5,848.5 A 34.0,34.0 0 0 1 1628.8,793.4" opacity="0.1" />
+    <path class="thin" d="M 1593.6,840.4 A 60.0,60.0 0 0 1 1628.0,764.2" opacity="0.2" />
+    <path class="thin" d="M 1567.9,794.3 A 86.0,86.0 0 0 1 1663.0,735.0" opacity="0.3" />
+    <circle class="node" cx="1609.8" cy="850.2" r="5" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 287.0,790.6 A 34.0,34.0 0 0 1 301.1,833.8" opacity="0.1" />
+    <path class="thin" d="M 325.3,796.8 A 60.0,60.0 0 0 1 281.6,878.9" opacity="0.2" />
+    <path class="thin" d="M 353.3,841.5 A 86.0,86.0 0 0 1 209.5,881.1" opacity="0.3" />
+    <circle class="node" cx="307.0" cy="788.8" r="5" />
+    <path class="thin" d="M 593.1,727.3 A 34.0,34.0 0 0 1 560.9,769.0" opacity="0.1" />
+    <path class="thin" d="M 614.7,759.6 A 60.0,60.0 0 0 1 511.2,769.9" opacity="0.2" />
+    <path class="thin" d="M 601.1,810.6 A 86.0,86.0 0 0 1 474.2,728.8" opacity="0.3" />
+    <circle class="node" cx="632.1" cy="726.9" r="5" />
+    <path class="thin" d="M 988.2,881.0 A 34.0,34.0 0 0 1 929.4,876.8" opacity="0.1" />
+    <path class="thin" d="M 979.3,918.8 A 60.0,60.0 0 0 1 901.7,847.6" opacity="0.2" />
+    <path class="thin" d="M 932.8,943.6 A 86.0,86.0 0 0 1 889.6,812.5" opacity="0.3" />
+    <circle class="node" cx="1021.4" cy="882.1" r="5" />
+    <path class="thin" d="M 1365.3,768.6 A 34.0,34.0 0 0 1 1328.8,721.4" opacity="0.1" />
+    <path class="thin" d="M 1331.7,787.9 A 60.0,60.0 0 0 1 1317.5,692.7" opacity="0.2" />
+    <path class="thin" d="M 1281.8,770.8 A 86.0,86.0 0 0 1 1320.1,658.8" opacity="0.3" />
+    <circle class="node" cx="1371.6" cy="770.6" r="5" />
+    <path class="thin" d="M 1629.1,846.8 A 34.0,34.0 0 0 1 1630.3,792.3" opacity="0.1" />
+    <path class="thin" d="M 1592.0,835.4 A 60.0,60.0 0 0 1 1631.6,762.9" opacity="0.2" />
+    <path class="thin" d="M 1570.5,787.2 A 86.0,86.0 0 0 1 1670.9,736.6" opacity="0.3" />
+    <circle class="node" cx="1604.5" cy="848.4" r="5" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 289.5,792.1 A 34.0,34.0 0 0 1 299.5,837.0" opacity="0.1" />
+    <path class="thin" d="M 327.1,801.7 A 60.0,60.0 0 0 1 274.5,879.8" opacity="0.2" />
+    <path class="thin" d="M 351.1,848.7 A 86.0,86.0 0 0 1 203.4,874.5" opacity="0.3" />
+    <circle class="node" cx="312.4" cy="790.5" r="5" />
+    <path class="thin" d="M 593.7,730.3 A 34.0,34.0 0 0 1 556.8,768.8" opacity="0.1" />
+    <path class="thin" d="M 612.4,764.3 A 60.0,60.0 0 0 1 507.8,764.6" opacity="0.2" />
+    <path class="thin" d="M 594.3,813.8 A 86.0,86.0 0 0 1 474.9,722.5" opacity="0.3" />
+    <circle class="node" cx="633.3" cy="730.0" r="5" />
+    <path class="thin" d="M 986.4,883.4 A 34.0,34.0 0 0 1 928.0,873.5" opacity="0.1" />
+    <path class="thin" d="M 974.3,920.3 A 60.0,60.0 0 0 1 903.0,843.4" opacity="0.2" />
+    <path class="thin" d="M 925.8,940.9 A 86.0,86.0 0 0 1 892.5,808.8" opacity="0.3" />
+    <circle class="node" cx="1017.5" cy="884.6" r="5" />
+    <path class="thin" d="M 1362.4,768.9 A 34.0,34.0 0 0 1 1329.9,719.1" opacity="0.1" />
+    <path class="thin" d="M 1327.2,785.2 A 60.0,60.0 0 0 1 1319.8,690.4" opacity="0.2" />
+    <path class="thin" d="M 1279.0,763.8 A 86.0,86.0 0 0 1 1325.2,656.4" opacity="0.3" />
+    <circle class="node" cx="1365.2" cy="770.9" r="5" />
+    <path class="thin" d="M 1626.8,844.9 A 34.0,34.0 0 0 1 1631.8,791.3" opacity="0.1" />
+    <path class="thin" d="M 1590.9,830.2 A 60.0,60.0 0 0 1 1635.4,761.8" opacity="0.2" />
+    <path class="thin" d="M 1573.7,780.4 A 86.0,86.0 0 0 1 1678.8,739.0" opacity="0.3" />
+    <circle class="node" cx="1599.6" cy="846.4" r="5" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 291.9,794.0 A 34.0,34.0 0 0 1 297.5,840.0" opacity="0.1" />
+    <path class="thin" d="M 328.5,806.8 A 60.0,60.0 0 0 1 267.3,879.9" opacity="0.2" />
+    <path class="thin" d="M 348.3,855.6 A 86.0,86.0 0 0 1 198.2,867.3" opacity="0.3" />
+    <circle class="node" cx="317.6" cy="792.4" r="5" />
+    <path class="thin" d="M 594.0,733.2 A 34.0,34.0 0 0 1 552.7,768.2" opacity="0.1" />
+    <path class="thin" d="M 609.6,768.7 A 60.0,60.0 0 0 1 505.0,759.1" opacity="0.2" />
+    <path class="thin" d="M 587.3,816.5 A 86.0,86.0 0 0 1 476.0,716.5" opacity="0.3" />
+    <circle class="node" cx="633.9" cy="733.1" r="5" />
+    <path class="thin" d="M 984.5,885.6 A 34.0,34.0 0 0 1 927.0,870.2" opacity="0.1" />
+    <path class="thin" d="M 969.2,921.3 A 60.0,60.0 0 0 1 904.4,839.4" opacity="0.2" />
+    <path class="thin" d="M 919.0,937.6 A 86.0,86.0 0 0 1 895.4,805.2" opacity="0.3" />
+    <circle class="node" cx="1013.3" cy="887.0" r="5" />
+    <path class="thin" d="M 1359.4,769.0 A 34.0,34.0 0 0 1 1331.1,717.0" opacity="0.1" />
+    <path class="thin" d="M 1322.9,782.2 A 60.0,60.0 0 0 1 1322.3,688.3" opacity="0.2" />
+    <path class="thin" d="M 1276.8,756.6 A 86.0,86.0 0 0 1 1330.6,654.2" opacity="0.3" />
+    <circle class="node" cx="1358.8" cy="771.0" r="5" />
+    <path class="thin" d="M 1624.8,842.8 A 34.0,34.0 0 0 1 1633.4,790.3" opacity="0.1" />
+    <path class="thin" d="M 1590.2,825.0 A 60.0,60.0 0 0 1 1639.3,761.0" opacity="0.2" />
+    <path class="thin" d="M 1577.4,773.9 A 86.0,86.0 0 0 1 1686.7,742.2" opacity="0.3" />
+    <circle class="node" cx="1595.1" cy="844.1" r="5" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 294.0,796.0 A 34.0,34.0 0 0 1 295.1,842.9" opacity="0.1" />
+    <path class="thin" d="M 329.5,811.9 A 60.0,60.0 0 0 1 260.2,879.2" opacity="0.2" />
+    <path class="thin" d="M 344.9,862.3 A 86.0,86.0 0 0 1 193.8,859.9" opacity="0.3" />
+    <circle class="node" cx="322.3" cy="794.5" r="5" />
+    <path class="thin" d="M 594.0,736.2 A 34.0,34.0 0 0 1 548.8,767.1" opacity="0.1" />
+    <path class="thin" d="M 606.5,772.9 A 60.0,60.0 0 0 1 502.9,753.5" opacity="0.2" />
+    <path class="thin" d="M 580.1,818.6 A 86.0,86.0 0 0 1 477.5,710.8" opacity="0.3" />
+    <circle class="node" cx="634.0" cy="736.2" r="5" />
+    <path class="thin" d="M 982.3,887.6 A 34.0,34.0 0 0 1 926.3,866.8" opacity="0.1" />
+    <path class="thin" d="M 964.0,921.9 A 60.0,60.0 0 0 1 906.1,835.6" opacity="0.2" />
+    <path class="thin" d="M 912.6,933.8 A 86.0,86.0 0 0 1 898.6,801.7" opacity="0.3" />
+    <circle class="node" cx="1008.6" cy="889.2" r="5" />
+    <path class="thin" d="M 1356.5,768.8 A 34.0,34.0 0 0 1 1332.4,715.1" opacity="0.1" />
+    <path class="thin" d="M 1318.9,778.7 A 60.0,60.0 0 0 1 1324.9,686.3" opacity="0.2" />
+    <path class="thin" d="M 1275.2,749.3 A 86.0,86.0 0 0 1 1336.4,652.3" opacity="0.3" />
+    <circle class="node" cx="1352.3" cy="770.8" r="5" />
+    <path class="thin" d="M 1622.9,840.5 A 34.0,34.0 0 0 1 1635.1,789.5" opacity="0.1" />
+    <path class="thin" d="M 1590.0,819.8 A 60.0,60.0 0 0 1 1643.5,760.4" opacity="0.2" />
+    <path class="thin" d="M 1581.7,767.7 A 86.0,86.0 0 0 1 1694.4,746.3" opacity="0.3" />
+    <circle class="node" cx="1591.0" cy="841.7" r="5" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 296.0,798.1 A 34.0,34.0 0 0 1 292.4,845.5" opacity="0.1" />
+    <path class="thin" d="M 329.9,817.1 A 60.0,60.0 0 0 1 253.2,877.6" opacity="0.2" />
+    <path class="thin" d="M 340.9,868.7 A 86.0,86.0 0 0 1 190.3,852.3" opacity="0.3" />
+    <circle class="node" cx="326.7" cy="796.9" r="5" />
+    <path class="thin" d="M 593.7,739.1 A 34.0,34.0 0 0 1 545.1,765.6" opacity="0.1" />
+    <path class="thin" d="M 603.0,776.8 A 60.0,60.0 0 0 1 501.4,747.8" opacity="0.2" />
+    <path class="thin" d="M 572.8,820.0 A 86.0,86.0 0 0 1 479.3,705.4" opacity="0.3" />
+    <circle class="node" cx="633.5" cy="739.4" r="5" />
+    <path class="thin" d="M 980.0,889.5 A 34.0,34.0 0 0 1 926.0,863.5" opacity="0.1" />
+    <path class="thin" d="M 958.7,922.0 A 60.0,60.0 0 0 1 908.0,832.1" opacity="0.2" />
+    <path class="thin" d="M 906.5,929.4 A 86.0,86.0 0 0 1 902.0,798.5" opacity="0.3" />
+    <circle class="node" cx="1003.5" cy="891.1" r="5" />
+    <path class="thin" d="M 1353.5,768.4 A 34.0,34.0 0 0 1 1333.8,713.3" opacity="0.1" />
+    <path class="thin" d="M 1315.3,775.0 A 60.0,60.0 0 0 1 1327.6,684.5" opacity="0.2" />
+    <path class="thin" d="M 1274.3,741.8 A 86.0,86.0 0 0 1 1342.5,650.8" opacity="0.3" />
+    <circle class="node" cx="1345.9" cy="770.3" r="5" />
+    <path class="thin" d="M 1621.2,838.1 A 34.0,34.0 0 0 1 1636.8,788.7" opacity="0.1" />
+    <path class="thin" d="M 1590.2,814.6 A 60.0,60.0 0 0 1 1647.9,760.0" opacity="0.2" />
+    <path class="thin" d="M 1586.5,762.0 A 86.0,86.0 0 0 1 1701.8,751.4" opacity="0.3" />
+    <circle class="node" cx="1587.3" cy="839.1" r="5" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 297.9,800.5 A 34.0,34.0 0 0 1 289.4,847.9" opacity="0.1" />
+    <path class="thin" d="M 330.0,822.3 A 60.0,60.0 0 0 1 246.5,875.2" opacity="0.2" />
+    <path class="thin" d="M 336.4,874.7 A 86.0,86.0 0 0 1 187.6,844.7" opacity="0.3" />
+    <circle class="node" cx="330.6" cy="799.4" r="5" />
+    <path class="thin" d="M 593.3,742.1 A 34.0,34.0 0 0 1 541.6,763.6" opacity="0.1" />
+    <path class="thin" d="M 599.2,780.4 A 60.0,60.0 0 0 1 500.4,742.2" opacity="0.2" />
+    <path class="thin" d="M 565.3,820.8 A 86.0,86.0 0 0 1 481.3,700.3" opacity="0.3" />
+    <circle class="node" cx="632.4" cy="742.5" r="5" />
+    <path class="thin" d="M 977.5,891.1 A 34.0,34.0 0 0 1 926.0,860.3" opacity="0.1" />
+    <path class="thin" d="M 953.5,921.6 A 60.0,60.0 0 0 1 910.0,828.8" opacity="0.2" />
+    <path class="thin" d="M 900.9,924.4 A 86.0,86.0 0 0 1 905.6,795.4" opacity="0.3" />
+    <circle class="node" cx="998.2" cy="892.8" r="5" />
+    <path class="thin" d="M 1350.7,767.7 A 34.0,34.0 0 0 1 1335.3,711.7" opacity="0.1" />
+    <path class="thin" d="M 1312.0,770.9 A 60.0,60.0 0 0 1 1330.5,682.8" opacity="0.2" />
+    <path class="thin" d="M 1274.0,734.4 A 86.0,86.0 0 0 1 1348.9,649.7" opacity="0.3" />
+    <circle class="node" cx="1339.7" cy="769.6" r="5" />
+    <path class="thin" d="M 1619.7,835.5 A 34.0,34.0 0 0 1 1638.5,788.0" opacity="0.1" />
+    <path class="thin" d="M 1590.9,809.4 A 60.0,60.0 0 0 1 1652.4,760.0" opacity="0.2" />
+    <path class="thin" d="M 1591.8,756.7 A 86.0,86.0 0 0 1 1708.8,757.3" opacity="0.3" />
+    <circle class="node" cx="1584.1" cy="836.4" r="5" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 299.4,803.0 A 34.0,34.0 0 0 1 286.1,850.0" opacity="0.1" />
+    <path class="thin" d="M 329.5,827.6 A 60.0,60.0 0 0 1 240.2,872.1" opacity="0.2" />
+    <path class="thin" d="M 331.4,880.3 A 86.0,86.0 0 0 1 185.7,837.0" opacity="0.3" />
+    <circle class="node" cx="334.1" cy="802.0" r="5" />
+    <path class="thin" d="M 592.5,744.9 A 34.0,34.0 0 0 1 538.4,761.2" opacity="0.1" />
+    <path class="thin" d="M 595.1,783.7 A 60.0,60.0 0 0 1 500.0,736.8" opacity="0.2" />
+    <path class="thin" d="M 557.8,821.0 A 86.0,86.0 0 0 1 483.6,695.4" opacity="0.3" />
+    <circle class="node" cx="630.8" cy="745.5" r="5" />
+    <path class="thin" d="M 974.9,892.5 A 34.0,34.0 0 0 1 926.3,857.2" opacity="0.1" />
+    <path class="thin" d="M 948.3,920.9 A 60.0,60.0 0 0 1 912.2,825.8" opacity="0.2" />
+    <path class="thin" d="M 895.6,919.0 A 86.0,86.0 0 0 1 909.4,792.5" opacity="0.3" />
+    <circle class="node" cx="992.5" cy="894.3" r="5" />
+    <path class="thin" d="M 1347.8,766.8 A 34.0,34.0 0 0 1 1336.8,710.2" opacity="0.1" />
+    <path class="thin" d="M 1309.0,766.6 A 60.0,60.0 0 0 1 1333.4,681.2" opacity="0.2" />
+    <path class="thin" d="M 1274.4,726.9 A 86.0,86.0 0 0 1 1355.5,649.1" opacity="0.3" />
+    <circle class="node" cx="1333.5" cy="768.6" r="5" />
+    <path class="thin" d="M 1618.5,832.8 A 34.0,34.0 0 0 1 1640.3,787.4" opacity="0.1" />
+    <path class="thin" d="M 1592.1,804.3 A 60.0,60.0 0 0 1 1657.1,760.4" opacity="0.2" />
+    <path class="thin" d="M 1597.5,751.8 A 86.0,86.0 0 0 1 1715.3,764.1" opacity="0.3" />
+    <circle class="node" cx="1581.4" cy="833.5" r="5" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 300.8,805.6 A 34.0,34.0 0 0 1 282.5,851.6" opacity="0.1" />
+    <path class="thin" d="M 328.6,832.7 A 60.0,60.0 0 0 1 234.4,868.3" opacity="0.2" />
+    <path class="thin" d="M 325.9,885.4 A 86.0,86.0 0 0 1 184.5,829.5" opacity="0.3" />
+    <circle class="node" cx="337.1" cy="804.8" r="5" />
+    <path class="thin" d="M 591.5,747.7 A 34.0,34.0 0 0 1 535.5,758.6" opacity="0.1" />
+    <path class="thin" d="M 590.7,786.6 A 60.0,60.0 0 0 1 500.1,731.4" opacity="0.2" />
+    <path class="thin" d="M 550.3,820.5 A 86.0,86.0 0 0 1 486.2,690.9" opacity="0.3" />
+    <circle class="node" cx="628.6" cy="748.5" r="5" />
+    <path class="thin" d="M 972.2,893.7 A 34.0,34.0 0 0 1 926.9,854.3" opacity="0.1" />
+    <path class="thin" d="M 943.3,919.6 A 60.0,60.0 0 0 1 914.4,822.9" opacity="0.2" />
+    <path class="thin" d="M 890.9,913.2 A 86.0,86.0 0 0 1 913.4,789.7" opacity="0.3" />
+    <circle class="node" cx="986.6" cy="895.6" r="5" />
+    <path class="thin" d="M 1345.1,765.6 A 34.0,34.0 0 0 1 1338.3,708.8" opacity="0.1" />
+    <path class="thin" d="M 1306.4,762.1 A 60.0,60.0 0 0 1 1336.5,679.8" opacity="0.2" />
+    <path class="thin" d="M 1275.4,719.4 A 86.0,86.0 0 0 1 1362.5,649.0" opacity="0.3" />
+    <circle class="node" cx="1327.6" cy="767.4" r="5" />
+    <path class="thin" d="M 1617.5,830.0 A 34.0,34.0 0 0 1 1642.2,786.9" opacity="0.1" />
+    <path class="thin" d="M 1593.7,799.3 A 60.0,60.0 0 0 1 1661.9,761.2" opacity="0.2" />
+    <path class="thin" d="M 1603.7,747.5 A 86.0,86.0 0 0 1 1721.1,771.6" opacity="0.3" />
+    <circle class="node" cx="1579.3" cy="830.6" r="5" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 301.9,808.4 A 34.0,34.0 0 0 1 278.7,852.9" opacity="0.1" />
+    <path class="thin" d="M 327.3,837.8 A 60.0,60.0 0 0 1 229.1,863.9" opacity="0.2" />
+    <path class="thin" d="M 320.0,890.0 A 86.0,86.0 0 0 1 184.0,822.1" opacity="0.3" />
+    <circle class="node" cx="339.5" cy="807.7" r="5" />
+    <path class="thin" d="M 590.3,750.4 A 34.0,34.0 0 0 1 533.0,755.6" opacity="0.1" />
+    <path class="thin" d="M 586.1,789.0 A 60.0,60.0 0 0 1 500.6,726.3" opacity="0.2" />
+    <path class="thin" d="M 542.9,819.3 A 86.0,86.0 0 0 1 488.9,686.6" opacity="0.3" />
+    <circle class="node" cx="625.9" cy="751.3" r="5" />
+    <path class="thin" d="M 969.4,894.7 A 34.0,34.0 0 0 1 927.7,851.4" opacity="0.1" />
+    <path class="thin" d="M 938.3,917.9 A 60.0,60.0 0 0 1 916.8,820.3" opacity="0.2" />
+    <path class="thin" d="M 886.7,907.0 A 86.0,86.0 0 0 1 917.7,787.1" opacity="0.3" />
+    <circle class="node" cx="980.4" cy="896.6" r="5" />
+    <path class="thin" d="M 1342.5,764.2 A 34.0,34.0 0 0 1 1339.9,707.6" opacity="0.1" />
+    <path class="thin" d="M 1304.3,757.3 A 60.0,60.0 0 0 1 1339.7,678.5" opacity="0.2" />
+    <path class="thin" d="M 1277.1,712.1 A 86.0,86.0 0 0 1 1369.7,649.5" opacity="0.3" />
+    <circle class="node" cx="1321.9" cy="765.9" r="5" />
+    <path class="thin" d="M 1616.8,827.1 A 34.0,34.0 0 0 1 1644.1,786.5" opacity="0.1" />
+    <path class="thin" d="M 1595.7,794.5 A 60.0,60.0 0 0 1 1666.8,762.4" opacity="0.2" />
+    <path class="thin" d="M 1610.2,743.8 A 86.0,86.0 0 0 1 1726.1,780.0" opacity="0.3" />
+    <circle class="node" cx="1577.6" cy="827.5" r="5" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 302.8,811.2 A 34.0,34.0 0 0 1 274.7,853.7" opacity="0.1" />
+    <path class="thin" d="M 325.5,842.7 A 60.0,60.0 0 0 1 224.5,859.1" opacity="0.2" />
+    <path class="thin" d="M 313.7,894.1 A 86.0,86.0 0 0 1 184.1,814.9" opacity="0.3" />
+    <circle class="node" cx="341.5" cy="810.7" r="5" />
+    <path class="thin" d="M 588.8,753.0 A 34.0,34.0 0 0 1 530.8,752.5" opacity="0.1" />
+    <path class="thin" d="M 581.3,791.1 A 60.0,60.0 0 0 1 501.6,721.4" opacity="0.2" />
+    <path class="thin" d="M 535.6,817.5 A 86.0,86.0 0 0 1 491.8,682.6" opacity="0.3" />
+    <circle class="node" cx="622.8" cy="754.1" r="5" />
+    <path class="thin" d="M 966.5,895.4 A 34.0,34.0 0 0 1 928.7,848.8" opacity="0.1" />
+    <path class="thin" d="M 933.5,915.8 A 60.0,60.0 0 0 1 919.3,817.9" opacity="0.2" />
+    <path class="thin" d="M 883.1,900.4 A 86.0,86.0 0 0 1 922.2,784.8" opacity="0.3" />
+    <circle class="node" cx="974.2" cy="897.3" r="5" />
+    <path class="thin" d="M 1340.0,762.5 A 34.0,34.0 0 0 1 1341.5,706.5" opacity="0.1" />
+    <path class="thin" d="M 1302.6,752.4 A 60.0,60.0 0 0 1 1343.1,677.4" opacity="0.2" />
+    <path class="thin" d="M 1279.4,705.0 A 86.0,86.0 0 0 1 1377.1,650.7" opacity="0.3" />
+    <circle class="node" cx="1316.6" cy="764.1" r="5" />
+    <path class="thin" d="M 1616.3,824.2 A 34.0,34.0 0 0 1 1646.1,786.2" opacity="0.1" />
+    <path class="thin" d="M 1598.1,789.8 A 60.0,60.0 0 0 1 1671.7,764.1" opacity="0.2" />
+    <path class="thin" d="M 1617.0,740.6 A 86.0,86.0 0 0 1 1730.2,788.9" opacity="0.3" />
+    <circle class="node" cx="1576.6" cy="824.4" r="5" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 303.5,814.1 A 34.0,34.0 0 0 1 270.7,854.0" opacity="0.1" />
+    <path class="thin" d="M 323.3,847.5 A 60.0,60.0 0 0 1 220.4,853.8" opacity="0.2" />
+    <path class="thin" d="M 307.0,897.6 A 86.0,86.0 0 0 1 184.8,808.0" opacity="0.3" />
+    <circle class="node" cx="342.9" cy="813.7" r="5" />
+    <path class="thin" d="M 587.2,755.5 A 34.0,34.0 0 0 1 529.1,749.1" opacity="0.1" />
+    <path class="thin" d="M 576.3,792.7 A 60.0,60.0 0 0 1 502.8,716.7" opacity="0.2" />
+    <path class="thin" d="M 528.5,815.0 A 86.0,86.0 0 0 1 494.9,678.8" opacity="0.3" />
+    <circle class="node" cx="619.1" cy="756.7" r="5" />
+    <path class="thin" d="M 963.6,895.8 A 34.0,34.0 0 0 1 929.8,846.3" opacity="0.1" />
+    <path class="thin" d="M 928.9,913.3 A 60.0,60.0 0 0 1 921.9,815.7" opacity="0.2" />
+    <path class="thin" d="M 880.0,893.6 A 86.0,86.0 0 0 1 927.0,782.6" opacity="0.3" />
+    <circle class="node" cx="967.8" cy="897.8" r="5" />
+    <path class="thin" d="M 1337.7,760.7 A 34.0,34.0 0 0 1 1343.1,705.5" opacity="0.1" />
+    <path class="thin" d="M 1301.3,747.3 A 60.0,60.0 0 0 1 1346.6,676.5" opacity="0.2" />
+    <path class="thin" d="M 1282.3,698.1 A 86.0,86.0 0 0 1 1384.5,652.6" opacity="0.3" />
+    <circle class="node" cx="1311.5" cy="762.2" r="5" />
+    <path class="thin" d="M 1616.0,821.2 A 34.0,34.0 0 0 1 1648.2,786.1" opacity="0.1" />
+    <path class="thin" d="M 1601.0,785.4 A 60.0,60.0 0 0 1 1676.6,766.2" opacity="0.2" />
+    <path class="thin" d="M 1624.0,738.0 A 86.0,86.0 0 0 1 1733.2,798.4" opacity="0.3" />
+    <circle class="node" cx="1576.0" cy="821.3" r="5" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <path class="thin" d="M 303.9,817.0 A 34.0,34.0 0 0 1 266.6,853.8" opacity="0.1" />
+    <path class="thin" d="M 320.7,852.0 A 60.0,60.0 0 0 1 217.1,848.2" opacity="0.2" />
+    <path class="thin" d="M 300.1,900.5 A 86.0,86.0 0 0 1 186.0,801.5" opacity="0.3" />
+    <circle class="node" cx="343.7" cy="816.9" r="5" />
+    <path class="thin" d="M 585.3,757.7 A 34.0,34.0 0 0 1 527.7,745.7" opacity="0.1" />
+    <path class="thin" d="M 571.2,793.9 A 60.0,60.0 0 0 1 504.4,712.4" opacity="0.2" />
+    <path class="thin" d="M 521.7,812.0 A 86.0,86.0 0 0 1 498.1,675.3" opacity="0.3" />
+    <circle class="node" cx="615.0" cy="759.1" r="5" />
+    <path class="thin" d="M 960.6,896.0 A 34.0,34.0 0 0 1 931.1,844.0" opacity="0.1" />
+    <path class="thin" d="M 924.6,910.4 A 60.0,60.0 0 0 1 924.5,813.6" opacity="0.2" />
+    <path class="thin" d="M 877.6,886.5 A 86.0,86.0 0 0 1 932.0,780.7" opacity="0.3" />
+    <circle class="node" cx="961.3" cy="898.0" r="5" />
+    <path class="thin" d="M 1335.6,758.6 A 34.0,34.0 0 0 1 1344.8,704.6" opacity="0.1" />
+    <path class="thin" d="M 1300.4,742.1 A 60.0,60.0 0 0 1 1350.3,675.8" opacity="0.2" />
+    <path class="thin" d="M 1285.8,691.4 A 86.0,86.0 0 0 1 1392.0,655.2" opacity="0.3" />
+    <circle class="node" cx="1306.8" cy="760.0" r="5" />
+    <path class="thin" d="M 1616.0,818.3 A 34.0,34.0 0 0 1 1650.3,786.0" opacity="0.1" />
+    <path class="thin" d="M 1604.2,781.3 A 60.0,60.0 0 0 1 1681.4,768.9" opacity="0.2" />
+    <path class="thin" d="M 1631.3,736.1 A 86.0,86.0 0 0 1 1735.2,808.3" opacity="0.3" />
+    <circle class="node" cx="1576.1" cy="818.2" r="5" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 836,286 C 760,426 354,534 260,660" opacity="0.62" />
+    <circle class="node" cx="260" cy="660" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 908,286 C 832,434 1754,534 1660,660" opacity="0.62" />
+    <circle class="node" cx="1660" cy="660" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 986,286 C 910,442 1054,718 960,844" opacity="0.62" />
+    <circle class="node" cx="960" cy="844" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 1042,286 C 966,450 524,734 430,860" opacity="0.62" />
+    <circle class="node" cx="430" cy="860" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 1094,286 C 1018,458 1584,734 1490,860" opacity="0.62" />
+    <circle class="node" cx="1490" cy="860" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <line class="cyan" x1="806" y1="288" x2="1114" y2="288" opacity="0.28" />
+  </g>
+  <g id="verify">
+    <circle class="thin" cx="960" cy="326" r="32" opacity="0.44" />
+    <polygon class="fine" points="960,286 1000,326 960,366 920,326" opacity="0.36" />
+    <line class="cyan" x1="900" y1="326" x2="1020" y2="326" opacity="0.22" />
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+  </g>
+  <g id="fail">
+    <line class="line" x1="850" y1="318" x2="1070" y2="318" opacity="0.74" />
+    <line class="thin" x1="880" y1="342" x2="1040" y2="342" opacity="0.52" />
+    <line class="fine" x1="916" y1="294" x2="1004" y2="366" opacity="0.42" />
+  </g>
+</svg>

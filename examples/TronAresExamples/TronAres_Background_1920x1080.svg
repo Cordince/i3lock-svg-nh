@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="tron-ares-background"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ares-base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081014" />
+      <stop offset="0.42" stop-color="#020506" />
+      <stop offset="1" stop-color="#090101" />
+    </linearGradient>
+    <linearGradient id="red-floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff2600" stop-opacity="0" />
+      <stop offset="0.48" stop-color="#ff2600" stop-opacity="0.12" />
+      <stop offset="1" stop-color="#ff2600" stop-opacity="0.04" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#ares-base)" />
+  <g fill="none" stroke="#a8f2ff" stroke-width="1" stroke-opacity="0.035">
+    <path d="M 0,180 H 1920" />
+    <path d="M 0,360 H 1920" />
+    <path d="M 0,540 H 1920" />
+    <path d="M 0,720 H 1920" />
+    <path d="M 0,900 H 1920" />
+    <path d="M 240,0 V 1080" />
+    <path d="M 480,0 V 1080" />
+    <path d="M 720,0 V 1080" />
+    <path d="M 960,0 V 1080" />
+    <path d="M 1200,0 V 1080" />
+    <path d="M 1440,0 V 1080" />
+    <path d="M 1680,0 V 1080" />
+  </g>
+  <path
+     d="M 0,730 C 230,690 420,710 640,775 C 875,846 1090,836 1345,785 C 1595,735 1775,770 1920,835 L 1920,1080 L 0,1080 Z"
+     fill="#000000"
+     opacity="0.48" />
+  <path
+     d="M 0,958 C 315,886 620,890 915,928 C 1195,964 1490,940 1920,884 L 1920,1080 L 0,1080 Z"
+     fill="url(#red-floor)" />
+  <g fill="none" stroke="#ff2600" stroke-linecap="square">
+    <path d="M 96,314 H 388" stroke-width="2" stroke-opacity="0.12" />
+    <path d="M 1532,312 H 1824" stroke-width="2" stroke-opacity="0.12" />
+    <path d="M 136,862 H 448" stroke-width="3" stroke-opacity="0.15" />
+    <path d="M 1472,862 H 1784" stroke-width="3" stroke-opacity="0.15" />
+  </g>
+  <rect width="1920" height="1080" fill="#000000" opacity="0.24" />
+</svg>

@@ -1,0 +1,1972 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="tron-ares2-GlassPlanes" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face { font-family: 'IBM Plex Mono'; src: url('assets/fonts/IBMPlexMono-Regular.otf') format('opentype'); font-weight: 400; }
+      @font-face { font-family: 'IBM Plex Mono'; src: url('assets/fonts/IBMPlexMono-Bold.otf') format('opentype'); font-weight: 700; }
+      .login-dim { font-family: 'IBM Plex Mono', monospace; font-size: 92px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #746466; opacity: 0.43; }
+      .letter { font-family: 'IBM Plex Mono', monospace; font-size: 92px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #ff2200; stroke: #1d2020; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; }
+      .fine { fill: none; stroke: #ff2600; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #ff2600; stroke-width: 4px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.74; }
+      .thin { fill: none; stroke: #ff5a2c; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.58; }
+      .cyan { fill: none; stroke: #9df4ff; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.30; }
+      .panel { fill: #ff2600; opacity: 0.12; }
+      .hot { fill: #ff4a20; opacity: 0.30; }
+      .dark { fill: #050808; opacity: 0.62; }
+      .node { fill: #ff3218; opacity: 0.72; }
+      .node-cyan { fill: #9df4ff; opacity: 0.42; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,550.0 1510.0,608.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,550.0 1510.0,608.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,625.6 1510.0,683.6 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,625.6 1510.0,683.6 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,697.5 1510.0,755.5 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,697.5 1510.0,755.5 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,762.6 1510.0,820.6 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,762.6 1510.0,820.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,819.2 1510.0,877.2 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,819.2 1510.0,877.2 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="842.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="852.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="852.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="843.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="832.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="838.6" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,554.0 1510.0,612.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,554.0 1510.0,612.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,629.1 1510.0,687.1 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,629.1 1510.0,687.1 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,699.9 1510.0,757.9 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,699.9 1510.0,757.9 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,763.4 1510.0,821.4 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,763.4 1510.0,821.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,818.3 1510.0,876.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,818.3 1510.0,876.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="843.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="852.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="852.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="842.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="832.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="839.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,558.0 1510.0,616.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,558.0 1510.0,616.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,632.5 1510.0,690.5 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,632.5 1510.0,690.5 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,702.0 1510.0,760.0 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,702.0 1510.0,760.0 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,763.9 1510.0,821.9 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,763.9 1510.0,821.9 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,817.0 1510.0,875.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,817.0 1510.0,875.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="844.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="851.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="841.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="831.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="831.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="840.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,561.9 1510.0,619.9 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,561.9 1510.0,619.9 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,635.7 1510.0,693.7 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,635.7 1510.0,693.7 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,703.8 1510.0,761.8 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,703.8 1510.0,761.8 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,764.0 1510.0,822.0 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,764.0 1510.0,822.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,815.4 1510.0,873.4 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,815.4 1510.0,873.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="845.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="851.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="840.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="831.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="831.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="841.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,565.7 1510.0,623.7 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,565.7 1510.0,623.7 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,638.6 1510.0,696.6 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,638.6 1510.0,696.6 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,705.3 1510.0,763.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,705.3 1510.0,763.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,763.8 1510.0,821.8 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,763.8 1510.0,821.8 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,813.5 1510.0,871.5 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,813.5 1510.0,871.5 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="846.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="850.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="839.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="832.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="842.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,569.4 1510.0,627.4 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,569.4 1510.0,627.4 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,641.3 1510.0,699.3 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,641.3 1510.0,699.3 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,706.5 1510.0,764.5 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,706.5 1510.0,764.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,763.2 1510.0,821.2 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,763.2 1510.0,821.2 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,811.3 1510.0,869.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,811.3 1510.0,869.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="847.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="849.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="838.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="833.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="843.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,573.0 1510.0,631.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,573.0 1510.0,631.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,643.8 1510.0,701.8 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,643.8 1510.0,701.8 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,707.4 1510.0,765.4 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,707.4 1510.0,765.4 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,762.3 1510.0,820.3 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,762.3 1510.0,820.3 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,808.8 1510.0,866.8 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,808.8 1510.0,866.8 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="848.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="849.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="837.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="833.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="844.9" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,576.4 1510.0,634.4 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,576.4 1510.0,634.4 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,645.9 1510.0,703.9 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,645.9 1510.0,703.9 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,707.9 1510.0,765.9 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,707.9 1510.0,765.9 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,761.1 1510.0,819.1 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,761.1 1510.0,819.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,806.0 1510.0,864.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,806.0 1510.0,864.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="848.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="848.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="836.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="834.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="845.9" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,579.6 1510.0,637.6 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,579.6 1510.0,637.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,647.8 1510.0,705.8 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,647.8 1510.0,705.8 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,708.0 1510.0,766.0 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,708.0 1510.0,766.0 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,759.5 1510.0,817.5 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,759.5 1510.0,817.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,803.0 1510.0,861.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,803.0 1510.0,861.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="849.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="847.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="835.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="835.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="846.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,582.5 1510.0,640.5 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,582.5 1510.0,640.5 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,649.3 1510.0,707.3 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,649.3 1510.0,707.3 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,707.8 1510.0,765.8 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,707.8 1510.0,765.8 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,757.6 1510.0,815.6 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,757.6 1510.0,815.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,799.8 1510.0,857.8 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,799.8 1510.0,857.8 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="850.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="846.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="834.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="836.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="847.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,585.2 1510.0,643.2 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,585.2 1510.0,643.2 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,650.5 1510.0,708.5 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,650.5 1510.0,708.5 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,707.2 1510.0,765.2 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,707.2 1510.0,765.2 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,755.4 1510.0,813.4 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,755.4 1510.0,813.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,796.4 1510.0,854.4 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,796.4 1510.0,854.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="851.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="845.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="834.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="837.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="848.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,587.7 1510.0,645.7 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,587.7 1510.0,645.7 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,651.3 1510.0,709.3 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,651.3 1510.0,709.3 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,706.3 1510.0,764.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,706.3 1510.0,764.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,752.9 1510.0,810.9 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,752.9 1510.0,810.9 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,792.8 1510.0,850.8 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,792.8 1510.0,850.8 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="851.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="853.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="844.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="833.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="838.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="849.5" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,589.8 1510.0,647.8 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,589.8 1510.0,647.8 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,651.8 1510.0,709.8 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,651.8 1510.0,709.8 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,705.1 1510.0,763.1 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,705.1 1510.0,763.1 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,750.2 1510.0,808.2 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,750.2 1510.0,808.2 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,789.1 1510.0,847.1 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,789.1 1510.0,847.1 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="852.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="852.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="843.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="832.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="830.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="839.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="850.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,591.7 1510.0,649.7 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,591.7 1510.0,649.7 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,652.0 1510.0,710.0 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,652.0 1510.0,710.0 465.0,704.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,702.0 1450.0,703.5 1510.0,761.5 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,703.5 1510.0,761.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,747.2 1510.0,805.2 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,747.2 1510.0,805.2 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,785.3 1510.0,843.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,785.3 1510.0,843.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="852.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="852.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="842.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="831.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="831.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="840.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="851.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,593.2 1510.0,651.2 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,593.2 1510.0,651.2 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,651.8 1510.0,709.8 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,651.8 1510.0,709.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,701.7 1510.0,759.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,701.7 1510.0,759.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,744.0 1510.0,802.0 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,744.0 1510.0,802.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,781.3 1510.0,839.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,781.3 1510.0,839.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="853.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="851.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="841.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="831.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="831.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="841.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="851.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,594.4 1510.0,652.4 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,594.4 1510.0,652.4 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,651.3 1510.0,709.3 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,651.3 1510.0,709.3 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,699.5 1510.0,757.5 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,699.5 1510.0,757.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,740.6 1510.0,798.6 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,740.6 1510.0,798.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,777.3 1510.0,835.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,777.3 1510.0,835.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="853.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="850.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="840.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="831.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="832.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="842.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="852.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,595.3 1510.0,653.3 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,595.3 1510.0,653.3 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,650.4 1510.0,708.4 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,650.4 1510.0,708.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,697.0 1510.0,755.0 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,697.0 1510.0,755.0 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,737.0 1510.0,795.0 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,737.0 1510.0,795.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,773.3 1510.0,831.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,773.3 1510.0,831.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="850.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="839.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="832.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="843.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="852.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,595.8 1510.0,653.8 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,595.8 1510.0,653.8 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,649.2 1510.0,707.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,649.2 1510.0,707.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,694.3 1510.0,752.3 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,694.3 1510.0,752.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,733.3 1510.0,791.3 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,733.3 1510.0,791.3 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,769.3 1510.0,827.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,769.3 1510.0,827.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="849.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="838.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="833.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="844.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,596.0 1510.0,654.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,596.0 1510.0,654.0 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,647.6 1510.0,705.6 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,647.6 1510.0,705.6 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,691.3 1510.0,749.3 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,691.3 1510.0,749.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,729.4 1510.0,787.4 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,729.4 1510.0,787.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,765.3 1510.0,823.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,765.3 1510.0,823.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="848.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="837.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="834.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="845.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.5" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,595.8 1510.0,653.8 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,595.8 1510.0,653.8 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,645.8 1510.0,703.8 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,645.8 1510.0,703.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,688.1 1510.0,746.1 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,688.1 1510.0,746.1 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,725.5 1510.0,783.5 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,725.5 1510.0,783.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,761.4 1510.0,819.4 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,761.4 1510.0,819.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="847.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="836.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="835.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="846.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,595.3 1510.0,653.3 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,595.3 1510.0,653.3 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,643.6 1510.0,701.6 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,643.6 1510.0,701.6 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,684.7 1510.0,742.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,684.7 1510.0,742.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,721.5 1510.0,779.5 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,721.5 1510.0,779.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,757.6 1510.0,815.6 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,757.6 1510.0,815.6 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="846.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="835.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="835.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="847.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.9" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,594.4 1510.0,652.4 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,594.4 1510.0,652.4 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,641.1 1510.0,699.1 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,641.1 1510.0,699.1 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,681.1 1510.0,739.1 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,681.1 1510.0,739.1 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,717.5 1510.0,775.5 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,717.5 1510.0,775.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,754.0 1510.0,812.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,754.0 1510.0,812.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="853.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="845.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="834.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="836.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="848.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="854.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,593.2 1510.0,651.2 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,593.2 1510.0,651.2 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,638.4 1510.0,696.4 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,638.4 1510.0,696.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,677.4 1510.0,735.4 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,677.4 1510.0,735.4 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,713.5 1510.0,771.5 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,713.5 1510.0,771.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,750.4 1510.0,808.4 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,750.4 1510.0,808.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="853.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="844.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="833.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="837.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="849.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="854.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,591.7 1510.0,649.7 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,591.7 1510.0,649.7 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,635.4 1510.0,693.4 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,635.4 1510.0,693.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,673.6 1510.0,731.6 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,673.6 1510.0,731.6 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,709.5 1510.0,767.5 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,709.5 1510.0,767.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,747.1 1510.0,805.1 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,747.1 1510.0,805.1 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="852.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="843.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="832.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="838.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="849.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.9" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,589.8 1510.0,647.8 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,589.8 1510.0,647.8 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,632.2 1510.0,690.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,632.2 1510.0,690.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,669.7 1510.0,727.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,669.7 1510.0,727.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,705.6 1510.0,763.6 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,705.6 1510.0,763.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,743.9 1510.0,801.9 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,743.9 1510.0,801.9 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="852.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="842.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="832.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="830.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="839.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="850.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,587.7 1510.0,645.7 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,587.7 1510.0,645.7 465.0,648.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,646.0 1450.0,628.9 1510.0,686.9 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,628.9 1510.0,686.9 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,665.7 1510.0,723.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,665.7 1510.0,723.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,701.8 1510.0,759.8 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,701.8 1510.0,759.8 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,741.0 1510.0,799.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,741.0 1510.0,799.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="851.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="841.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="831.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="831.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="840.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="851.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.4" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,585.2 1510.0,643.2 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,585.2 1510.0,643.2 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,625.3 1510.0,683.3 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,625.3 1510.0,683.3 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,661.7 1510.0,719.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,661.7 1510.0,719.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,698.1 1510.0,756.1 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,698.1 1510.0,756.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,738.3 1510.0,796.3 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,738.3 1510.0,796.3 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="851.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="840.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="831.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="831.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="841.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="852.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="853.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,582.5 1510.0,640.5 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,582.5 1510.0,640.5 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,621.6 1510.0,679.6 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,621.6 1510.0,679.6 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,657.7 1510.0,715.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,657.7 1510.0,715.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,694.6 1510.0,752.6 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,694.6 1510.0,752.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,735.9 1510.0,793.9 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,735.9 1510.0,793.9 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="850.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="839.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="832.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="842.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="852.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="852.5" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,579.6 1510.0,637.6 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,579.6 1510.0,637.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,617.7 1510.0,675.7 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,617.7 1510.0,675.7 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,653.7 1510.0,711.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,653.7 1510.0,711.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,691.2 1510.0,749.2 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,691.2 1510.0,749.2 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,733.8 1510.0,791.8 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,733.8 1510.0,791.8 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="849.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="838.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="833.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="843.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="852.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,576.4 1510.0,634.4 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,576.4 1510.0,634.4 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,613.8 1510.0,671.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,613.8 1510.0,671.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,649.8 1510.0,707.8 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,649.8 1510.0,707.8 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,688.0 1510.0,746.0 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,688.0 1510.0,746.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,732.0 1510.0,790.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,732.0 1510.0,790.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="848.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="837.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="833.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="844.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="851.4" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,573.0 1510.0,631.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,573.0 1510.0,631.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,609.8 1510.0,667.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,609.8 1510.0,667.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,646.0 1510.0,704.0 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,646.0 1510.0,704.0 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,685.1 1510.0,743.1 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,685.1 1510.0,743.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,730.5 1510.0,788.5 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,730.5 1510.0,788.5 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="848.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="836.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="834.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="845.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="850.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,569.4 1510.0,627.4 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,569.4 1510.0,627.4 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,605.8 1510.0,663.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,605.8 1510.0,663.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,642.3 1510.0,700.3 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,642.3 1510.0,700.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,682.4 1510.0,740.4 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,682.4 1510.0,740.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,729.4 1510.0,787.4 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,729.4 1510.0,787.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="847.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="835.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="835.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="846.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="849.9" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,565.7 1510.0,623.7 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,565.7 1510.0,623.7 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,601.8 1510.0,659.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,601.8 1510.0,659.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,638.7 1510.0,696.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,638.7 1510.0,696.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,680.0 1510.0,738.0 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,680.0 1510.0,738.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,728.6 1510.0,786.6 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,728.6 1510.0,786.6 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="846.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="834.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="836.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="847.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="849.1" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,561.9 1510.0,619.9 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,561.9 1510.0,619.9 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,597.8 1510.0,655.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,597.8 1510.0,655.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,635.3 1510.0,693.3 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,635.3 1510.0,693.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,677.9 1510.0,735.9 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,677.9 1510.0,735.9 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,728.1 1510.0,786.1 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,728.1 1510.0,786.1 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="845.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="833.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="837.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="848.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="848.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,558.0 1510.0,616.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,558.0 1510.0,616.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,593.9 1510.0,651.9 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,593.9 1510.0,651.9 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,632.2 1510.0,690.2 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,632.2 1510.0,690.2 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,676.1 1510.0,734.1 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,676.1 1510.0,734.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,728.0 1510.0,786.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,728.0 1510.0,786.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="844.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="833.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="838.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="849.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="847.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,554.0 1510.0,612.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,554.0 1510.0,612.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,590.1 1510.0,648.1 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,590.1 1510.0,648.1 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,629.2 1510.0,687.2 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,629.2 1510.0,687.2 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,674.6 1510.0,732.6 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,674.6 1510.0,732.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,728.2 1510.0,786.2 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,728.2 1510.0,786.2 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="843.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="832.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="830.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="839.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="850.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="846.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,550.0 1510.0,608.0 465.0,648.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,590.0 1450.0,550.0 1510.0,608.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,586.4 1510.0,644.4 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,586.4 1510.0,644.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,626.5 1510.0,684.5 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,626.5 1510.0,684.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,673.4 1510.0,731.4 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,673.4 1510.0,731.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,728.8 1510.0,786.8 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,728.8 1510.0,786.8 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="842.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="831.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="831.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="840.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="851.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="845.4" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,546.0 1510.0,604.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,546.0 1510.0,604.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,582.9 1510.0,640.9 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,582.9 1510.0,640.9 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,624.1 1510.0,682.1 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,624.1 1510.0,682.1 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,672.6 1510.0,730.6 465.0,816.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,758.0 1450.0,672.6 1510.0,730.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,729.7 1510.0,787.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,729.7 1510.0,787.7 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="841.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="831.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="831.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="841.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="851.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="853.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="844.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,542.0 1510.0,600.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,542.0 1510.0,600.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,579.5 1510.0,637.5 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,579.5 1510.0,637.5 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,622.0 1510.0,680.0 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,622.0 1510.0,680.0 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,672.1 1510.0,730.1 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,672.1 1510.0,730.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,731.0 1510.0,789.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,731.0 1510.0,789.0 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="839.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="832.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="842.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="852.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="852.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="843.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,538.1 1510.0,596.1 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,538.1 1510.0,596.1 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,576.3 1510.0,634.3 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,576.3 1510.0,634.3 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,620.2 1510.0,678.2 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,620.2 1510.0,678.2 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,672.0 1510.0,730.0 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,672.0 1510.0,730.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,732.6 1510.0,790.6 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,732.6 1510.0,790.6 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="838.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="832.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="843.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="852.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="852.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="842.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,534.3 1510.0,592.3 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,534.3 1510.0,592.3 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,573.4 1510.0,631.4 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,573.4 1510.0,631.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,618.7 1510.0,676.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,618.7 1510.0,676.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,672.2 1510.0,730.2 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,672.2 1510.0,730.2 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,734.5 1510.0,792.5 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,734.5 1510.0,792.5 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="837.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="833.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="844.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="851.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="841.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,530.6 1510.0,588.6 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,530.6 1510.0,588.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,570.7 1510.0,628.7 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,570.7 1510.0,628.7 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,617.5 1510.0,675.5 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,617.5 1510.0,675.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,672.8 1510.0,730.8 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,672.8 1510.0,730.8 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,736.7 1510.0,794.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,736.7 1510.0,794.7 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="836.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="834.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="845.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="851.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="840.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,527.0 1510.0,585.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,527.0 1510.0,585.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,568.2 1510.0,626.2 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,568.2 1510.0,626.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,616.6 1510.0,674.6 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,616.6 1510.0,674.6 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,673.7 1510.0,731.7 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,673.7 1510.0,731.7 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,739.2 1510.0,797.2 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,739.2 1510.0,797.2 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="836.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="835.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="846.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="850.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="839.1" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,523.6 1510.0,581.6 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,523.6 1510.0,581.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,566.1 1510.0,624.1 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,566.1 1510.0,624.1 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,616.1 1510.0,674.1 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,616.1 1510.0,674.1 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,674.9 1510.0,732.9 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,674.9 1510.0,732.9 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,742.0 1510.0,800.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,742.0 1510.0,800.0 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="835.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="835.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="847.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="849.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="838.1" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,520.4 1510.0,578.4 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,520.4 1510.0,578.4 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,564.2 1510.0,622.2 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,564.2 1510.0,622.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,616.0 1510.0,674.0 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,616.0 1510.0,674.0 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,676.5 1510.0,734.5 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,676.5 1510.0,734.5 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,745.0 1510.0,803.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,745.0 1510.0,803.0 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="834.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="836.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="848.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="848.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="837.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,517.5 1510.0,575.5 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,517.5 1510.0,575.5 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,562.7 1510.0,620.7 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,562.7 1510.0,620.7 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,616.2 1510.0,674.2 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,616.2 1510.0,674.2 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,678.4 1510.0,736.4 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,678.4 1510.0,736.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,748.2 1510.0,806.2 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,748.2 1510.0,806.2 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="833.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="837.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="849.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="847.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="836.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,514.8 1510.0,572.8 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,514.8 1510.0,572.8 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,561.5 1510.0,619.5 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,561.5 1510.0,619.5 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,616.8 1510.0,674.8 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,616.8 1510.0,674.8 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,680.6 1510.0,738.6 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,680.6 1510.0,738.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,751.6 1510.0,809.6 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,751.6 1510.0,809.6 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="832.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="838.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="850.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="846.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="835.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,512.3 1510.0,570.3 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,512.3 1510.0,570.3 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,560.7 1510.0,618.7 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,560.7 1510.0,618.7 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,617.7 1510.0,675.7 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,617.7 1510.0,675.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,683.1 1510.0,741.1 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,683.1 1510.0,741.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,755.2 1510.0,813.2 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,755.2 1510.0,813.2 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="832.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="830.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="839.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="850.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="845.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="834.5" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,510.2 1510.0,568.2 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,510.2 1510.0,568.2 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,560.2 1510.0,618.2 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,560.2 1510.0,618.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,618.9 1510.0,676.9 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,618.9 1510.0,676.9 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,685.8 1510.0,743.8 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,685.8 1510.0,743.8 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,758.9 1510.0,816.9 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,758.9 1510.0,816.9 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="831.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="831.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="840.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="851.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="853.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="844.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="833.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,508.3 1510.0,566.3 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,508.3 1510.0,566.3 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,560.0 1510.0,618.0 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,560.0 1510.0,618.0 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,620.5 1510.0,678.5 465.0,760.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,702.0 1450.0,620.5 1510.0,678.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,688.8 1510.0,746.8 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,688.8 1510.0,746.8 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,762.7 1510.0,820.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,762.7 1510.0,820.7 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="831.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="831.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="841.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="852.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="852.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="843.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="833.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,506.8 1510.0,564.8 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,506.8 1510.0,564.8 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,560.2 1510.0,618.2 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,560.2 1510.0,618.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,622.3 1510.0,680.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,622.3 1510.0,680.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,692.0 1510.0,750.0 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,692.0 1510.0,750.0 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,766.7 1510.0,824.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,766.7 1510.0,824.7 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="830.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="832.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="843.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="852.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="852.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="842.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="832.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,505.6 1510.0,563.6 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,505.6 1510.0,563.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,560.7 1510.0,618.7 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,560.7 1510.0,618.7 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,624.5 1510.0,682.5 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,624.5 1510.0,682.5 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,695.4 1510.0,753.4 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,695.4 1510.0,753.4 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,770.7 1510.0,828.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,770.7 1510.0,828.7 465.0,872.0" opacity="0.4" />
+    <rect class="hot" x="525.0" y="830.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="833.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="844.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="851.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="841.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="831.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,504.7 1510.0,562.7 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,504.7 1510.0,562.7 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,561.6 1510.0,619.6 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,561.6 1510.0,619.6 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,627.0 1510.0,685.0 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,627.0 1510.0,685.0 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,699.0 1510.0,757.0 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,699.0 1510.0,757.0 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,774.7 1510.0,832.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,774.7 1510.0,832.7 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="833.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="845.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="851.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="840.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="831.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,504.2 1510.0,562.2 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,504.2 1510.0,562.2 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,562.8 1510.0,620.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,562.8 1510.0,620.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,629.7 1510.0,687.7 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,629.7 1510.0,687.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,702.7 1510.0,760.7 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,702.7 1510.0,760.7 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,778.7 1510.0,836.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,778.7 1510.0,836.7 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="834.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="846.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="850.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="839.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,504.0 1510.0,562.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,504.0 1510.0,562.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,564.4 1510.0,622.4 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,564.4 1510.0,622.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,632.7 1510.0,690.7 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,632.7 1510.0,690.7 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,706.6 1510.0,764.6 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,706.6 1510.0,764.6 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,782.7 1510.0,840.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,782.7 1510.0,840.7 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="835.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="847.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="849.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="838.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.5" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,504.2 1510.0,562.2 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,504.2 1510.0,562.2 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,566.2 1510.0,624.2 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,566.2 1510.0,624.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,635.9 1510.0,693.9 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,635.9 1510.0,693.9 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,710.5 1510.0,768.5 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,710.5 1510.0,768.5 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,786.6 1510.0,844.6 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,786.6 1510.0,844.6 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="836.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="847.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="849.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="837.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.2" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,504.7 1510.0,562.7 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,504.7 1510.0,562.7 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,568.4 1510.0,626.4 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,568.4 1510.0,626.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,639.3 1510.0,697.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,639.3 1510.0,697.3 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,714.5 1510.0,772.5 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,714.5 1510.0,772.5 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,790.4 1510.0,848.4 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,790.4 1510.0,848.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="837.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="848.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="848.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="836.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.1" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,505.6 1510.0,563.6 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,505.6 1510.0,563.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,570.9 1510.0,628.9 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,570.9 1510.0,628.9 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,642.9 1510.0,700.9 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,642.9 1510.0,700.9 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,718.5 1510.0,776.5 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,718.5 1510.0,776.5 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,794.0 1510.0,852.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,794.0 1510.0,852.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="838.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="849.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="847.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="835.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,506.8 1510.0,564.8 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,506.8 1510.0,564.8 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,573.6 1510.0,631.6 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,573.6 1510.0,631.6 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,646.6 1510.0,704.6 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,646.6 1510.0,704.6 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,722.5 1510.0,780.5 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,722.5 1510.0,780.5 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,797.6 1510.0,855.6 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,797.6 1510.0,855.6 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="830.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="839.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="850.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="846.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="834.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,508.3 1510.0,566.3 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,508.3 1510.0,566.3 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,576.6 1510.0,634.6 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,576.6 1510.0,634.6 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,650.4 1510.0,708.4 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,650.4 1510.0,708.4 465.0,760.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,758.0 1450.0,726.5 1510.0,784.5 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,726.5 1510.0,784.5 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,800.9 1510.0,858.9 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,800.9 1510.0,858.9 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="831.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="840.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="851.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="845.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="834.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.1" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,510.2 1510.0,568.2 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,510.2 1510.0,568.2 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,579.8 1510.0,637.8 465.0,704.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,646.0 1450.0,579.8 1510.0,637.8 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,654.3 1510.0,712.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,654.3 1510.0,712.3 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,730.4 1510.0,788.4 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,730.4 1510.0,788.4 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,804.1 1510.0,862.1 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,804.1 1510.0,862.1 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="831.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="841.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="851.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="853.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="844.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="833.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,512.3 1510.0,570.3 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,512.3 1510.0,570.3 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,583.1 1510.0,641.1 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,583.1 1510.0,641.1 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,658.3 1510.0,716.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,658.3 1510.0,716.3 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,734.2 1510.0,792.2 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,734.2 1510.0,792.2 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,807.0 1510.0,865.0 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,807.0 1510.0,865.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="832.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="842.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="852.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="852.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="843.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="832.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="830.6" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,514.8 1510.0,572.8 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,514.8 1510.0,572.8 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,586.7 1510.0,644.7 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,586.7 1510.0,644.7 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,662.3 1510.0,720.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,662.3 1510.0,720.3 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,737.9 1510.0,795.9 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,737.9 1510.0,795.9 465.0,816.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,814.0 1450.0,809.7 1510.0,867.7 465.0,872.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,814.0 1450.0,809.7 1510.0,867.7 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="832.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="843.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="852.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="852.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="842.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="832.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="831.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,517.5 1510.0,575.5 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,517.5 1510.0,575.5 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,590.4 1510.0,648.4 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,590.4 1510.0,648.4 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,666.3 1510.0,724.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,666.3 1510.0,724.3 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,741.4 1510.0,799.4 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,741.4 1510.0,799.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,812.1 1510.0,870.1 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,812.1 1510.0,870.1 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="833.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="844.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="851.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="841.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="831.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="831.5" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,520.4 1510.0,578.4 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,520.4 1510.0,578.4 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,594.3 1510.0,652.3 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,594.3 1510.0,652.3 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,670.3 1510.0,728.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,670.3 1510.0,728.3 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,744.8 1510.0,802.8 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,744.8 1510.0,802.8 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,814.2 1510.0,872.2 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,814.2 1510.0,872.2 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="834.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="845.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="850.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="840.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="831.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="832.0" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,523.6 1510.0,581.6 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,523.6 1510.0,581.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,598.2 1510.0,656.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,598.2 1510.0,656.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,674.2 1510.0,732.2 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,674.2 1510.0,732.2 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,748.0 1510.0,806.0 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,748.0 1510.0,806.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,816.0 1510.0,874.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,816.0 1510.0,874.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="835.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="846.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="850.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="839.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="832.6" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,527.0 1510.0,585.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,527.0 1510.0,585.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,602.2 1510.0,660.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,602.2 1510.0,660.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,678.0 1510.0,736.0 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,678.0 1510.0,736.0 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,750.9 1510.0,808.9 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,750.9 1510.0,808.9 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,817.5 1510.0,875.5 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,817.5 1510.0,875.5 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="836.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="847.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="849.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="838.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="833.3" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,530.6 1510.0,588.6 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,530.6 1510.0,588.6 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,606.2 1510.0,664.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,606.2 1510.0,664.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,681.7 1510.0,739.7 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,681.7 1510.0,739.7 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,753.6 1510.0,811.6 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,753.6 1510.0,811.6 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,818.6 1510.0,876.6 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,818.6 1510.0,876.6 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="836.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="848.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="848.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="837.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="834.1" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,534.3 1510.0,592.3 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,534.3 1510.0,592.3 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,610.2 1510.0,668.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,610.2 1510.0,668.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,685.3 1510.0,743.3 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,685.3 1510.0,743.3 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,756.0 1510.0,814.0 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,756.0 1510.0,814.0 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,819.4 1510.0,877.4 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,819.4 1510.0,877.4 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="837.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="849.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="854.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="847.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="836.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="834.9" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,538.1 1510.0,596.1 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,538.1 1510.0,596.1 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,614.2 1510.0,672.2 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,614.2 1510.0,672.2 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,688.7 1510.0,746.7 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,688.7 1510.0,746.7 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,758.1 1510.0,816.1 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,758.1 1510.0,816.1 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,819.9 1510.0,877.9 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,819.9 1510.0,877.9 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="838.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="850.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="846.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="835.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="835.8" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,542.0 1510.0,600.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,542.0 1510.0,600.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,618.1 1510.0,676.1 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,618.1 1510.0,676.1 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,691.8 1510.0,749.8 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,691.8 1510.0,749.8 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,759.9 1510.0,817.9 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,759.9 1510.0,817.9 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,820.0 1510.0,878.0 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,820.0 1510.0,878.0 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="839.9" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="850.8" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="845.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="834.4" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.1" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="836.7" width="58.0" height="9.0" rx="2" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="panel" points="410.0,590.0 1450.0,546.0 1510.0,604.0 465.0,648.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,590.0 1450.0,546.0 1510.0,604.0 465.0,648.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,646.0 1450.0,621.9 1510.0,679.9 465.0,704.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,646.0 1450.0,621.9 1510.0,679.9 465.0,704.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,702.0 1450.0,694.8 1510.0,752.8 465.0,760.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,702.0 1450.0,694.8 1510.0,752.8 465.0,760.0" opacity="0.4" />
+    <polygon class="panel" points="410.0,758.0 1450.0,761.4 1510.0,819.4 465.0,816.0" opacity="0.2" />
+    <polygon class="thin" points="410.0,758.0 1450.0,761.4 1510.0,819.4 465.0,816.0" opacity="0.3" />
+    <polygon class="panel" points="410.0,814.0 1450.0,819.8 1510.0,877.8 465.0,872.0" opacity="0.1" />
+    <polygon class="thin" points="410.0,814.0 1450.0,819.8 1510.0,877.8 465.0,872.0" opacity="0.3" />
+    <rect class="hot" x="525.0" y="841.0" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="651.0" y="851.5" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="777.0" y="853.3" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="903.0" y="844.7" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1029.0" y="833.6" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1155.0" y="830.2" width="58.0" height="9.0" rx="2" />
+    <rect class="hot" x="1281.0" y="837.7" width="58.0" height="9.0" rx="2" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 836,286 C 760,426 354,534 260,660" opacity="0.62" />
+    <circle class="node" cx="260" cy="660" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 908,286 C 832,434 1754,534 1660,660" opacity="0.62" />
+    <circle class="node" cx="1660" cy="660" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 986,286 C 910,442 1054,718 960,844" opacity="0.62" />
+    <circle class="node" cx="960" cy="844" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 1042,286 C 966,450 524,734 430,860" opacity="0.62" />
+    <circle class="node" cx="430" cy="860" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 1094,286 C 1018,458 1584,734 1490,860" opacity="0.62" />
+    <circle class="node" cx="1490" cy="860" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <line class="cyan" x1="806" y1="288" x2="1114" y2="288" opacity="0.28" />
+  </g>
+  <g id="verify">
+    <circle class="thin" cx="960" cy="326" r="32" opacity="0.44" />
+    <polygon class="fine" points="960,286 1000,326 960,366 920,326" opacity="0.36" />
+    <line class="cyan" x1="900" y1="326" x2="1020" y2="326" opacity="0.22" />
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+  </g>
+  <g id="fail">
+    <line class="line" x1="850" y1="318" x2="1070" y2="318" opacity="0.74" />
+    <line class="thin" x1="880" y1="342" x2="1040" y2="342" opacity="0.52" />
+    <line class="fine" x1="916" y1="294" x2="1004" y2="366" opacity="0.42" />
+  </g>
+</svg>

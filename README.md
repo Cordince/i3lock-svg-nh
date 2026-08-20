@@ -183,6 +183,72 @@ live idle animations with typing overlays:
 - Ambient_TidePools_i3lock.svg
 - Ambient_SignalArcs_i3lock.svg
 
+TRON Ares examples:
+
+examples/TronAresExamples/PreviewTronAresExamples.sh
+
+Run one TRON Ares-style example directly:
+
+examples/TronAresExamples/PreviewTronAresExamples.sh ProgressCore
+
+List available TRON Ares examples:
+
+examples/TronAresExamples/PreviewTronAresExamples.sh --list
+
+These examples use the local tron_ares_examples stills as visual reference for
+red-on-black cinematic HUD motifs, but the lockscreen assets are generated SVG
+interpretations rather than embedded movie frames:
+
+- TronAres_ProgressCore_i3lock.svg
+- TronAres_DigitizationComplete_i3lock.svg
+- TronAres_TransferInitiated_i3lock.svg
+- TronAres_LaserCalibration_i3lock.svg
+- TronAres_CommandStack_i3lock.svg
+- TronAres_TargetArray_i3lock.svg
+- TronAres_VehicleWireframe_i3lock.svg
+- TronAres_RedHorizonMap_i3lock.svg
+- TronAres_TouchRipple_i3lock.svg
+- TronAres_IdentityDisc_i3lock.svg
+- TronAres_WarningBands_i3lock.svg
+- TronAres_LabDeck_i3lock.svg
+- TronAres_DataSpine_i3lock.svg
+- TronAres_SystemBloom_i3lock.svg
+- TronAres_CalibrationMatrix_i3lock.svg
+
+TRON Ares 2 visual-style examples:
+
+examples/TronAres2/PreviewTronAres2.sh
+
+Run one TRON Ares 2 example directly:
+
+examples/TronAres2/PreviewTronAres2.sh RailCascade
+
+List available TRON Ares 2 examples:
+
+examples/TronAres2/PreviewTronAres2.sh --list
+
+These examples avoid the copied text language from the reference stills and
+focus on the visual style instead: red aperture geometry, dim glass panels,
+thin rails, nested reticles, horizontal scan bands, disc rings, and negative
+space. The only visible word in the SVG lock layer is LOGIN, and all text uses
+the bundled IBM Plex Mono font.
+
+- TronAres2_RailCascade_i3lock.svg
+- TronAres2_GlassPlanes_i3lock.svg
+- TronAres2_ReticleField_i3lock.svg
+- TronAres2_DiscArray_i3lock.svg
+- TronAres2_WireContour_i3lock.svg
+- TronAres2_HorizonTrace_i3lock.svg
+- TronAres2_SideSpines_i3lock.svg
+- TronAres2_ShutterGrid_i3lock.svg
+- TronAres2_PerspectiveTunnel_i3lock.svg
+- TronAres2_PulseQueue_i3lock.svg
+- TronAres2_CalibrationWheels_i3lock.svg
+- TronAres2_PrismLattice_i3lock.svg
+- TronAres2_GlassConsole_i3lock.svg
+- TronAres2_SignalBloom_i3lock.svg
+- TronAres2_ScanHalo_i3lock.svg
+
 Ideas for animations:
 --------------------
 The planets - displays solar system orbits with the various planets

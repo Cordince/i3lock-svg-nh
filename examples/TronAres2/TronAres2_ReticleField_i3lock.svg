@@ -1,0 +1,2116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" id="tron-ares2-ReticleField" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face { font-family: 'IBM Plex Mono'; src: url('assets/fonts/IBMPlexMono-Regular.otf') format('opentype'); font-weight: 400; }
+      @font-face { font-family: 'IBM Plex Mono'; src: url('assets/fonts/IBMPlexMono-Bold.otf') format('opentype'); font-weight: 700; }
+      .login-dim { font-family: 'IBM Plex Mono', monospace; font-size: 92px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #746466; opacity: 0.43; }
+      .letter { font-family: 'IBM Plex Mono', monospace; font-size: 92px; font-weight: 700; letter-spacing: 0; text-anchor: middle; dominant-baseline: middle; fill: #ff2200; stroke: #1d2020; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke fill; }
+      .fine { fill: none; stroke: #ff2600; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.38; }
+      .line { fill: none; stroke: #ff2600; stroke-width: 4px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.74; }
+      .thin { fill: none; stroke: #ff5a2c; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.58; }
+      .cyan { fill: none; stroke: #9df4ff; stroke-width: 2px; stroke-linecap: square; stroke-linejoin: round; opacity: 0.30; }
+      .panel { fill: #ff2600; opacity: 0.12; }
+      .hot { fill: #ff4a20; opacity: 0.30; }
+      .dark { fill: #050808; opacity: 0.62; }
+      .node { fill: #ff3218; opacity: 0.72; }
+      .node-cyan { fill: #9df4ff; opacity: 0.42; }
+    </style>
+  </defs>
+
+  <g id="bg" />
+  <g id="sequential_animation" />
+  <g id="remove_background" />
+
+  <g id="idle_anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,639.0 456.0,675.0 420.0,711.0 384.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="22.3" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="5.0" />
+    <polygon class="thin" points="690.0,761.1 733.9,805.0 690.0,848.9 646.1,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="27.2" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.3" />
+    <polygon class="thin" points="960.0,650.1 1007.9,698.0 960.0,745.9 912.1,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.7" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="7.0" />
+    <polygon class="thin" points="1230.0,769.0 1276.0,815.0 1230.0,861.0 1184.0,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="28.5" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.7" />
+    <polygon class="thin" points="1500.0,635.9 1539.1,675.0 1500.0,714.1 1460.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="24.2" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,638.0 457.0,675.0 420.0,712.0 383.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="23.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.2" />
+    <polygon class="thin" points="690.0,760.3 734.7,805.0 690.0,849.7 645.3,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="27.7" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.4" />
+    <polygon class="thin" points="960.0,650.0 1008.0,698.0 960.0,746.0 912.0,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.8" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="7.0" />
+    <polygon class="thin" points="1230.0,769.6 1275.4,815.0 1230.0,860.4 1184.6,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="28.1" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.6" />
+    <polygon class="thin" points="1500.0,636.9 1538.1,675.0 1500.0,713.1 1461.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="23.6" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,636.9 458.1,675.0 420.0,713.1 381.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="23.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.3" />
+    <polygon class="thin" points="690.0,759.6 735.4,805.0 690.0,850.4 644.6,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="28.1" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.6" />
+    <polygon class="thin" points="960.0,650.0 1008.0,698.0 960.0,746.0 912.0,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.8" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="7.0" />
+    <polygon class="thin" points="1230.0,770.3 1274.7,815.0 1230.0,859.7 1185.3,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="27.7" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.4" />
+    <polygon class="thin" points="1500.0,638.0 1537.0,675.0 1500.0,712.0 1463.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="23.0" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.2" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,635.9 459.1,675.0 420.0,714.1 380.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="24.2" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.5" />
+    <polygon class="thin" points="690.0,759.0 736.0,805.0 690.0,851.0 644.0,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="28.5" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.7" />
+    <polygon class="thin" points="960.0,650.1 1007.9,698.0 960.0,745.9 912.1,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.7" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="7.0" />
+    <polygon class="thin" points="1230.0,771.1 1273.9,815.0 1230.0,858.9 1186.1,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="27.2" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.3" />
+    <polygon class="thin" points="1500.0,639.0 1536.0,675.0 1500.0,711.0 1464.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="22.3" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="5.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,634.9 460.1,675.0 420.0,715.1 379.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="24.9" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.7" />
+    <polygon class="thin" points="690.0,758.5 736.5,805.0 690.0,851.5 643.5,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="28.8" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.8" />
+    <polygon class="thin" points="960.0,650.3 1007.7,698.0 960.0,745.7 912.3,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.6" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="7.0" />
+    <polygon class="thin" points="1230.0,771.9 1273.1,815.0 1230.0,858.1 1186.9,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="26.7" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.2" />
+    <polygon class="thin" points="1500.0,640.0 1535.0,675.0 1500.0,710.0 1465.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="21.7" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.8" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim05">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,633.9 461.1,675.0 420.0,716.1 378.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="25.5" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.8" />
+    <polygon class="thin" points="690.0,758.0 737.0,805.0 690.0,852.0 643.0,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.1" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.8" />
+    <polygon class="thin" points="960.0,650.6 1007.4,698.0 960.0,745.4 912.6,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.4" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="6.9" />
+    <polygon class="thin" points="1230.0,772.8 1272.2,815.0 1230.0,857.2 1187.8,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="26.2" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.0" />
+    <polygon class="thin" points="1500.0,641.1 1533.9,675.0 1500.0,708.9 1466.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="21.0" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim06">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,633.0 462.0,675.0 420.0,717.0 378.0,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="26.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.0" />
+    <polygon class="thin" points="690.0,757.6 737.4,805.0 690.0,852.4 642.6,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.4" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="6.9" />
+    <polygon class="thin" points="960.0,650.9 1007.1,698.0 960.0,745.1 912.9,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.2" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="6.8" />
+    <polygon class="thin" points="1230.0,773.7 1271.3,815.0 1230.0,856.3 1188.7,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="25.6" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.9" />
+    <polygon class="thin" points="1500.0,642.1 1532.9,675.0 1500.0,707.9 1467.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="20.4" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim07">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,632.1 462.9,675.0 420.0,717.9 377.1,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="26.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.1" />
+    <polygon class="thin" points="690.0,757.3 737.7,805.0 690.0,852.7 642.3,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.5" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="6.9" />
+    <polygon class="thin" points="960.0,651.4 1006.6,698.0 960.0,744.6 913.4,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="28.9" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.8" />
+    <polygon class="thin" points="1230.0,774.7 1270.3,815.0 1230.0,855.3 1189.7,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="25.0" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.7" />
+    <polygon class="thin" points="1500.0,643.1 1531.9,675.0 1500.0,706.9 1468.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="19.8" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim08">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,631.3 463.7,675.0 420.0,718.7 376.3,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="27.1" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.3" />
+    <polygon class="thin" points="690.0,757.1 737.9,805.0 690.0,852.9 642.1,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.7" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="7.0" />
+    <polygon class="thin" points="960.0,651.9 1006.1,698.0 960.0,744.1 913.9,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="28.6" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.7" />
+    <polygon class="thin" points="1230.0,775.6 1269.4,815.0 1230.0,854.4 1190.6,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="24.4" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.6" />
+    <polygon class="thin" points="1500.0,644.1 1530.9,675.0 1500.0,705.9 1469.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="19.2" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.2" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim09">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,630.5 464.5,675.0 420.0,719.5 375.5,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="27.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.4" />
+    <polygon class="thin" points="690.0,757.0 738.0,805.0 690.0,853.0 642.0,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.7" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="7.0" />
+    <polygon class="thin" points="960.0,652.5 1005.5,698.0 960.0,743.5 914.5,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="28.2" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.6" />
+    <polygon class="thin" points="1230.0,776.7 1268.3,815.0 1230.0,853.3 1191.7,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="23.8" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.4" />
+    <polygon class="thin" points="1500.0,645.0 1530.0,675.0 1500.0,705.0 1470.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="18.6" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim10">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,629.8 465.2,675.0 420.0,720.2 374.8,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="28.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.5" />
+    <polygon class="thin" points="690.0,757.0 738.0,805.0 690.0,853.0 642.0,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.8" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="7.0" />
+    <polygon class="thin" points="960.0,653.2 1004.8,698.0 960.0,742.8 915.2,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="27.8" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.5" />
+    <polygon class="thin" points="1230.0,777.7 1267.3,815.0 1230.0,852.3 1192.7,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="23.1" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.2" />
+    <polygon class="thin" points="1500.0,645.9 1529.1,675.0 1500.0,704.1 1470.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="18.1" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="3.9" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim11">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,629.2 465.8,675.0 420.0,720.8 374.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="28.4" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.6" />
+    <polygon class="thin" points="690.0,757.1 737.9,805.0 690.0,852.9 642.1,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.7" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="7.0" />
+    <polygon class="thin" points="960.0,653.9 1004.1,698.0 960.0,742.1 915.9,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="27.3" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.4" />
+    <polygon class="thin" points="1230.0,778.7 1266.3,815.0 1230.0,851.3 1193.7,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="22.5" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="5.0" />
+    <polygon class="thin" points="1500.0,646.7 1528.3,675.0 1500.0,703.3 1471.7,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="17.5" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="3.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim12">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,628.6 466.4,675.0 420.0,721.4 373.6,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="28.8" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.7" />
+    <polygon class="thin" points="690.0,757.2 737.8,805.0 690.0,852.8 642.2,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.6" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="7.0" />
+    <polygon class="thin" points="960.0,654.7 1003.3,698.0 960.0,741.3 916.7,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="26.8" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.2" />
+    <polygon class="thin" points="1230.0,779.8 1265.2,815.0 1230.0,850.2 1194.8,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="21.8" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.9" />
+    <polygon class="thin" points="1500.0,647.5 1527.5,675.0 1500.0,702.5 1472.5,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="17.1" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="3.6" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim13">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,628.1 466.9,675.0 420.0,721.9 373.1,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.1" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.8" />
+    <polygon class="thin" points="690.0,757.5 737.5,805.0 690.0,852.5 642.5,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.5" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="6.9" />
+    <polygon class="thin" points="960.0,655.6 1002.4,698.0 960.0,740.4 917.6,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="26.3" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.1" />
+    <polygon class="thin" points="1230.0,780.8 1264.2,815.0 1230.0,849.2 1195.8,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="21.2" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.7" />
+    <polygon class="thin" points="1500.0,648.2 1526.8,675.0 1500.0,701.8 1473.2,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="16.6" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim14">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.7 467.3,675.0 420.0,722.3 372.7,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.3" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="6.9" />
+    <polygon class="thin" points="690.0,757.8 737.2,805.0 690.0,852.2 642.8,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.3" opacity="0.4" />
+    <circle class="node" cx="690" cy="805" r="6.9" />
+    <polygon class="thin" points="960.0,656.5 1001.5,698.0 960.0,739.5 918.5,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="25.8" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.9" />
+    <polygon class="thin" points="1230.0,781.9 1263.1,815.0 1230.0,848.1 1196.9,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="20.6" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.5" />
+    <polygon class="thin" points="1500.0,648.8 1526.2,675.0 1500.0,701.2 1473.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="16.2" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.4" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim15">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.4 467.6,675.0 420.0,722.6 372.4,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.5" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="6.9" />
+    <polygon class="thin" points="690.0,758.2 736.8,805.0 690.0,851.8 643.2,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="29.0" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.8" />
+    <polygon class="thin" points="960.0,657.4 1000.6,698.0 960.0,738.6 919.4,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="25.2" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.8" />
+    <polygon class="thin" points="1230.0,782.9 1262.1,815.0 1230.0,847.1 1197.9,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="19.9" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.4" />
+    <polygon class="thin" points="1500.0,649.4 1525.6,675.0 1500.0,700.6 1474.4,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.9" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim16">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.2 467.8,675.0 420.0,722.8 372.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.6" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="7.0" />
+    <polygon class="thin" points="690.0,758.7 736.3,805.0 690.0,851.3 643.7,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="28.7" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.7" />
+    <polygon class="thin" points="960.0,658.4 999.6,698.0 960.0,737.6 920.4,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="24.6" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.6" />
+    <polygon class="thin" points="1230.0,783.8 1261.2,815.0 1230.0,846.2 1198.8,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="19.3" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.2" />
+    <polygon class="thin" points="1500.0,649.9 1525.1,675.0 1500.0,700.1 1474.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.6" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.2" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim17">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.0 468.0,675.0 420.0,723.0 372.0,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.7" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="7.0" />
+    <polygon class="thin" points="690.0,759.3 735.7,805.0 690.0,850.7 644.3,805.0" opacity="0.5" />
+    <circle class="fine" cx="690" cy="805" r="28.3" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.6" />
+    <polygon class="thin" points="960.0,659.4 998.6,698.0 960.0,736.6 921.4,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="23.9" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.4" />
+    <polygon class="thin" points="1230.0,784.8 1260.2,815.0 1230.0,845.2 1199.8,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="18.7" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.0" />
+    <polygon class="thin" points="1500.0,650.3 1524.7,675.0 1500.0,699.7 1475.3,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.3" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.1" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim18">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.0 468.0,675.0 420.0,723.0 372.0,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.8" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="7.0" />
+    <polygon class="thin" points="690.0,760.0 735.0,805.0 690.0,850.0 645.0,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="27.9" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.5" />
+    <polygon class="thin" points="960.0,660.4 997.6,698.0 960.0,735.6 922.4,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="23.3" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.3" />
+    <polygon class="thin" points="1230.0,785.7 1259.3,815.0 1230.0,844.3 1200.7,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="18.2" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="3.9" />
+    <polygon class="thin" points="1500.0,650.6 1524.4,675.0 1500.0,699.4 1475.6,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.1" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.1" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim19">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.0 468.0,675.0 420.0,723.0 372.0,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.7" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="7.0" />
+    <polygon class="thin" points="690.0,760.7 734.3,805.0 690.0,849.3 645.7,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="27.5" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.4" />
+    <polygon class="thin" points="960.0,661.5 996.5,698.0 960.0,734.5 923.5,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="22.6" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="5.1" />
+    <polygon class="thin" points="1230.0,786.5 1258.5,815.0 1230.0,843.5 1201.5,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="17.7" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="3.7" />
+    <polygon class="thin" points="1500.0,650.8 1524.2,675.0 1500.0,699.2 1475.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.0" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim20">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.2 467.8,675.0 420.0,722.8 372.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.6" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="7.0" />
+    <polygon class="thin" points="690.0,761.5 733.5,805.0 690.0,848.5 646.5,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="27.0" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.3" />
+    <polygon class="thin" points="960.0,662.5 995.5,698.0 960.0,733.5 924.5,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="22.0" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.9" />
+    <polygon class="thin" points="1230.0,787.3 1257.7,815.0 1230.0,842.7 1202.3,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="17.2" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="3.6" />
+    <polygon class="thin" points="1500.0,651.0 1524.0,675.0 1500.0,699.0 1476.0,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="14.9" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim21">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.4 467.6,675.0 420.0,722.6 372.4,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.5" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="6.9" />
+    <polygon class="thin" points="690.0,762.3 732.7,805.0 690.0,847.7 647.3,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="26.5" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.1" />
+    <polygon class="thin" points="960.0,663.6 994.4,698.0 960.0,732.4 925.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="21.3" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.7" />
+    <polygon class="thin" points="1230.0,788.0 1257.0,815.0 1230.0,842.0 1203.0,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="16.7" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.5" />
+    <polygon class="thin" points="1500.0,651.0 1524.0,675.0 1500.0,699.0 1476.0,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="14.9" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim22">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,627.7 467.3,675.0 420.0,722.3 372.7,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.3" opacity="0.4" />
+    <circle class="node" cx="420" cy="675" r="6.9" />
+    <polygon class="thin" points="690.0,763.2 731.8,805.0 690.0,846.8 648.2,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="25.9" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.0" />
+    <polygon class="thin" points="960.0,664.6 993.4,698.0 960.0,731.4 926.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="20.7" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.6" />
+    <polygon class="thin" points="1230.0,788.7 1256.3,815.0 1230.0,841.3 1203.7,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="16.3" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.4" />
+    <polygon class="thin" points="1500.0,651.0 1524.0,675.0 1500.0,699.0 1476.0,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="14.9" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim23">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,628.1 466.9,675.0 420.0,721.9 373.1,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="29.1" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.8" />
+    <polygon class="thin" points="690.0,764.2 730.8,805.0 690.0,845.8 649.2,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="25.3" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.8" />
+    <polygon class="thin" points="960.0,665.6 992.4,698.0 960.0,730.4 927.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="20.1" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.4" />
+    <polygon class="thin" points="1230.0,789.3 1255.7,815.0 1230.0,840.7 1204.3,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="16.0" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.3" />
+    <polygon class="thin" points="1500.0,650.8 1524.2,675.0 1500.0,699.2 1475.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.0" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim24">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,628.6 466.4,675.0 420.0,721.4 373.6,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="28.8" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.7" />
+    <polygon class="thin" points="690.0,765.1 729.9,805.0 690.0,844.9 650.1,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="24.7" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.6" />
+    <polygon class="thin" points="960.0,666.6 991.4,698.0 960.0,729.4 928.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="19.5" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.2" />
+    <polygon class="thin" points="1230.0,789.8 1255.2,815.0 1230.0,840.2 1204.8,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.6" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.2" />
+    <polygon class="thin" points="1500.0,650.6 1524.4,675.0 1500.0,699.4 1475.6,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.1" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.1" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim25">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,629.2 465.8,675.0 420.0,720.8 374.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="420" cy="675" r="28.4" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.6" />
+    <polygon class="thin" points="690.0,766.1 728.9,805.0 690.0,843.9 651.1,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="24.1" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.5" />
+    <polygon class="thin" points="960.0,667.5 990.5,698.0 960.0,728.5 929.5,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="18.9" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.1" />
+    <polygon class="thin" points="1230.0,790.2 1254.8,815.0 1230.0,839.8 1205.2,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.4" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.1" />
+    <polygon class="thin" points="1500.0,650.3 1524.7,675.0 1500.0,699.7 1475.3,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.3" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.1" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim26">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,629.8 465.2,675.0 420.0,720.2 374.8,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="28.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.5" />
+    <polygon class="thin" points="690.0,767.2 727.8,805.0 690.0,842.8 652.2,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="23.5" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.3" />
+    <polygon class="thin" points="960.0,668.4 989.6,698.0 960.0,727.6 930.4,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="18.3" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.9" />
+    <polygon class="thin" points="1230.0,790.5 1254.5,815.0 1230.0,839.5 1205.5,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.2" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.1" />
+    <polygon class="thin" points="1500.0,649.9 1525.1,675.0 1500.0,700.1 1474.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.6" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.2" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim27">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,630.5 464.5,675.0 420.0,719.5 375.5,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="27.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.4" />
+    <polygon class="thin" points="690.0,768.2 726.8,805.0 690.0,841.8 653.2,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="22.8" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="5.1" />
+    <polygon class="thin" points="960.0,669.3 988.7,698.0 960.0,726.7 931.3,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="17.8" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.8" />
+    <polygon class="thin" points="1230.0,790.8 1254.2,815.0 1230.0,839.2 1205.8,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.0" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.0" />
+    <polygon class="thin" points="1500.0,649.4 1525.6,675.0 1500.0,700.6 1474.4,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="15.9" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim28">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,631.3 463.7,675.0 420.0,718.7 376.3,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="27.1" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.3" />
+    <polygon class="thin" points="690.0,769.3 725.7,805.0 690.0,840.7 654.3,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="22.2" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="5.0" />
+    <polygon class="thin" points="960.0,670.1 987.9,698.0 960.0,725.9 932.1,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="17.3" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.6" />
+    <polygon class="thin" points="1230.0,790.9 1254.1,815.0 1230.0,839.1 1205.9,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="14.9" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.0" />
+    <polygon class="thin" points="1500.0,648.8 1526.2,675.0 1500.0,701.2 1473.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="16.2" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.4" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim29">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,632.1 462.9,675.0 420.0,717.9 377.1,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="26.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.1" />
+    <polygon class="thin" points="690.0,770.3 724.7,805.0 690.0,839.7 655.3,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="21.5" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.8" />
+    <polygon class="thin" points="960.0,670.8 987.2,698.0 960.0,725.2 932.8,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="16.8" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.5" />
+    <polygon class="thin" points="1230.0,791.0 1254.0,815.0 1230.0,839.0 1206.0,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="14.9" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.0" />
+    <polygon class="thin" points="1500.0,648.2 1526.8,675.0 1500.0,701.8 1473.2,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="16.6" opacity="0.1" />
+    <circle class="node" cx="1500" cy="675" r="3.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim30">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,633.0 462.0,675.0 420.0,717.0 378.0,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="26.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="6.0" />
+    <polygon class="thin" points="690.0,771.3 723.7,805.0 690.0,838.7 656.3,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="20.9" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.6" />
+    <polygon class="thin" points="960.0,671.5 986.5,698.0 960.0,724.5 933.5,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="16.4" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.4" />
+    <polygon class="thin" points="1230.0,791.0 1254.0,815.0 1230.0,839.0 1206.0,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="14.9" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.0" />
+    <polygon class="thin" points="1500.0,647.5 1527.5,675.0 1500.0,702.5 1472.5,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="17.1" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="3.6" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim31">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,633.9 461.1,675.0 420.0,716.1 378.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="25.5" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.8" />
+    <polygon class="thin" points="690.0,772.4 722.6,805.0 690.0,837.6 657.4,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="20.2" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.4" />
+    <polygon class="thin" points="960.0,672.1 985.9,698.0 960.0,723.9 934.1,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="16.0" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.3" />
+    <polygon class="thin" points="1230.0,790.9 1254.1,815.0 1230.0,839.1 1205.9,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.0" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.0" />
+    <polygon class="thin" points="1500.0,646.7 1528.3,675.0 1500.0,703.3 1471.7,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="17.5" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="3.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim32">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,634.9 460.1,675.0 420.0,715.1 379.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="24.9" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.7" />
+    <polygon class="thin" points="690.0,773.3 721.7,805.0 690.0,836.7 658.3,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="19.6" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.3" />
+    <polygon class="thin" points="960.0,672.6 985.4,698.0 960.0,723.4 934.6,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.7" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.2" />
+    <polygon class="thin" points="1230.0,790.7 1254.3,815.0 1230.0,839.3 1205.7,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.1" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.1" />
+    <polygon class="thin" points="1500.0,645.9 1529.1,675.0 1500.0,704.1 1470.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="1500" cy="675" r="18.1" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="3.9" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim33">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,635.9 459.1,675.0 420.0,714.1 380.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="24.2" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.5" />
+    <polygon class="thin" points="690.0,774.3 720.7,805.0 690.0,835.7 659.3,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="19.0" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.1" />
+    <polygon class="thin" points="960.0,673.1 984.9,698.0 960.0,722.9 935.1,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.4" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.2" />
+    <polygon class="thin" points="1230.0,790.4 1254.6,815.0 1230.0,839.6 1205.4,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.3" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.1" />
+    <polygon class="thin" points="1500.0,645.0 1530.0,675.0 1500.0,705.0 1470.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="18.6" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim34">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,636.9 458.1,675.0 420.0,713.1 381.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="420" cy="675" r="23.6" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.3" />
+    <polygon class="thin" points="690.0,775.2 719.8,805.0 690.0,834.8 660.2,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="18.5" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.0" />
+    <polygon class="thin" points="960.0,673.4 984.6,698.0 960.0,722.6 935.4,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.2" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.1" />
+    <polygon class="thin" points="1230.0,790.0 1255.0,815.0 1230.0,840.0 1205.0,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.5" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.2" />
+    <polygon class="thin" points="1500.0,644.1 1530.9,675.0 1500.0,705.9 1469.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="19.2" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.2" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim35">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,638.0 457.0,675.0 420.0,712.0 383.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="23.0" opacity="0.3" />
+    <circle class="node" cx="420" cy="675" r="5.2" />
+    <polygon class="thin" points="690.0,776.1 718.9,805.0 690.0,833.9 661.1,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="17.9" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="3.8" />
+    <polygon class="thin" points="960.0,673.7 984.3,698.0 960.0,722.3 935.7,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.1" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.0" />
+    <polygon class="thin" points="1230.0,789.5 1255.5,815.0 1230.0,840.5 1204.5,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="15.8" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.2" />
+    <polygon class="thin" points="1500.0,643.1 1531.9,675.0 1500.0,706.9 1468.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="19.8" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim36">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,639.0 456.0,675.0 420.0,711.0 384.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="22.3" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="5.0" />
+    <polygon class="thin" points="690.0,776.9 718.1,805.0 690.0,833.1 661.9,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="17.4" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="3.7" />
+    <polygon class="thin" points="960.0,673.9 984.1,698.0 960.0,722.1 935.9,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="14.9" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.0" />
+    <polygon class="thin" points="1230.0,789.0 1256.0,815.0 1230.0,841.0 1204.0,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="16.1" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.3" />
+    <polygon class="thin" points="1500.0,642.1 1532.9,675.0 1500.0,707.9 1467.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="20.4" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim37">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,640.0 455.0,675.0 420.0,710.0 385.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="21.7" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.8" />
+    <polygon class="thin" points="690.0,777.7 717.3,805.0 690.0,832.3 662.7,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="16.9" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="3.6" />
+    <polygon class="thin" points="960.0,674.0 984.0,698.0 960.0,722.0 936.0,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="14.9" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.0" />
+    <polygon class="thin" points="1230.0,788.4 1256.6,815.0 1230.0,841.6 1203.4,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="16.5" opacity="0.1" />
+    <circle class="node" cx="1230" cy="815" r="3.4" />
+    <polygon class="thin" points="1500.0,641.1 1533.9,675.0 1500.0,708.9 1466.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="21.0" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim38">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,641.1 453.9,675.0 420.0,708.9 386.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="21.0" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.7" />
+    <polygon class="thin" points="690.0,778.4 716.6,805.0 690.0,831.6 663.4,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="16.5" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.4" />
+    <polygon class="thin" points="960.0,674.0 984.0,698.0 960.0,722.0 936.0,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="14.9" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.0" />
+    <polygon class="thin" points="1230.0,787.7 1257.3,815.0 1230.0,842.3 1202.7,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="16.9" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="3.6" />
+    <polygon class="thin" points="1500.0,640.0 1535.0,675.0 1500.0,710.0 1465.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="21.7" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="4.8" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim39">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,642.1 452.9,675.0 420.0,707.9 387.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="20.4" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.5" />
+    <polygon class="thin" points="690.0,779.0 716.0,805.0 690.0,831.0 664.0,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="16.1" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.3" />
+    <polygon class="thin" points="960.0,673.9 984.1,698.0 960.0,722.1 935.9,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="14.9" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.0" />
+    <polygon class="thin" points="1230.0,786.9 1258.1,815.0 1230.0,843.1 1201.9,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="17.4" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="3.7" />
+    <polygon class="thin" points="1500.0,639.0 1536.0,675.0 1500.0,711.0 1464.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="22.3" opacity="0.2" />
+    <circle class="node" cx="1500" cy="675" r="5.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim40">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,643.1 451.9,675.0 420.0,706.9 388.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="19.8" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.3" />
+    <polygon class="thin" points="690.0,779.5 715.5,805.0 690.0,830.5 664.5,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.8" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.2" />
+    <polygon class="thin" points="960.0,673.7 984.3,698.0 960.0,722.3 935.7,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.1" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.0" />
+    <polygon class="thin" points="1230.0,786.1 1258.9,815.0 1230.0,843.9 1201.1,815.0" opacity="0.2" />
+    <circle class="fine" cx="1230" cy="815" r="17.9" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="3.8" />
+    <polygon class="thin" points="1500.0,638.0 1537.0,675.0 1500.0,712.0 1463.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="1500" cy="675" r="23.0" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.2" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim41">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,644.1 450.9,675.0 420.0,705.9 389.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="19.2" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.2" />
+    <polygon class="thin" points="690.0,780.0 715.0,805.0 690.0,830.0 665.0,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.5" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.2" />
+    <polygon class="thin" points="960.0,673.4 984.6,698.0 960.0,722.6 935.4,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.2" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.1" />
+    <polygon class="thin" points="1230.0,785.2 1259.8,815.0 1230.0,844.8 1200.2,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="18.5" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.0" />
+    <polygon class="thin" points="1500.0,636.9 1538.1,675.0 1500.0,713.1 1461.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="23.6" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim42">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,645.0 450.0,675.0 420.0,705.0 390.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="18.6" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.0" />
+    <polygon class="thin" points="690.0,780.4 714.6,805.0 690.0,829.6 665.4,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.3" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.1" />
+    <polygon class="thin" points="960.0,673.1 984.9,698.0 960.0,722.9 935.1,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.4" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.2" />
+    <polygon class="thin" points="1230.0,784.3 1260.7,815.0 1230.0,845.7 1199.3,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="19.0" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.1" />
+    <polygon class="thin" points="1500.0,635.9 1539.1,675.0 1500.0,714.1 1460.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="24.2" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim43">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,645.9 449.1,675.0 420.0,704.1 390.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="18.1" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="3.9" />
+    <polygon class="thin" points="690.0,780.7 714.3,805.0 690.0,829.3 665.7,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.1" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.1" />
+    <polygon class="thin" points="960.0,672.6 985.4,698.0 960.0,723.4 934.6,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="15.7" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.2" />
+    <polygon class="thin" points="1230.0,783.3 1261.7,815.0 1230.0,846.7 1198.3,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="19.6" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.3" />
+    <polygon class="thin" points="1500.0,634.9 1540.1,675.0 1500.0,715.1 1459.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="24.9" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim44">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,646.7 448.3,675.0 420.0,703.3 391.7,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="17.5" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="3.7" />
+    <polygon class="thin" points="690.0,780.9 714.1,805.0 690.0,829.1 665.9,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.0" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.0" />
+    <polygon class="thin" points="960.0,672.1 985.9,698.0 960.0,723.9 934.1,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="16.0" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.3" />
+    <polygon class="thin" points="1230.0,782.4 1262.6,815.0 1230.0,847.6 1197.4,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="20.2" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.4" />
+    <polygon class="thin" points="1500.0,633.9 1541.1,675.0 1500.0,716.1 1458.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="25.5" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.8" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim45">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,647.5 447.5,675.0 420.0,702.5 392.5,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="17.1" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="3.6" />
+    <polygon class="thin" points="690.0,781.0 714.0,805.0 690.0,829.0 666.0,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="14.9" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.0" />
+    <polygon class="thin" points="960.0,671.5 986.5,698.0 960.0,724.5 933.5,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="16.4" opacity="0.1" />
+    <circle class="node" cx="960" cy="698" r="3.4" />
+    <polygon class="thin" points="1230.0,781.3 1263.7,815.0 1230.0,848.7 1196.3,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="20.9" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.6" />
+    <polygon class="thin" points="1500.0,633.0 1542.0,675.0 1500.0,717.0 1458.0,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="26.0" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim46">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,648.2 446.8,675.0 420.0,701.8 393.2,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="16.6" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.5" />
+    <polygon class="thin" points="690.0,781.0 714.0,805.0 690.0,829.0 666.0,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="14.9" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.0" />
+    <polygon class="thin" points="960.0,670.8 987.2,698.0 960.0,725.2 932.8,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="16.8" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.5" />
+    <polygon class="thin" points="1230.0,780.3 1264.7,815.0 1230.0,849.7 1195.3,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="21.5" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="4.8" />
+    <polygon class="thin" points="1500.0,632.1 1542.9,675.0 1500.0,717.9 1457.1,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="26.6" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.1" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim47">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,648.8 446.2,675.0 420.0,701.2 393.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="16.2" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.4" />
+    <polygon class="thin" points="690.0,780.9 714.1,805.0 690.0,829.1 665.9,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="14.9" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.0" />
+    <polygon class="thin" points="960.0,670.1 987.9,698.0 960.0,725.9 932.1,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="17.3" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.6" />
+    <polygon class="thin" points="1230.0,779.3 1265.7,815.0 1230.0,850.7 1194.3,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="22.2" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="5.0" />
+    <polygon class="thin" points="1500.0,631.3 1543.7,675.0 1500.0,718.7 1456.3,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="27.1" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim48">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,649.4 445.6,675.0 420.0,700.6 394.4,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.9" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.3" />
+    <polygon class="thin" points="690.0,780.8 714.2,805.0 690.0,829.2 665.8,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.0" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.0" />
+    <polygon class="thin" points="960.0,669.3 988.7,698.0 960.0,726.7 931.3,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="17.8" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.8" />
+    <polygon class="thin" points="1230.0,778.2 1266.8,815.0 1230.0,851.8 1193.2,815.0" opacity="0.3" />
+    <circle class="fine" cx="1230" cy="815" r="22.8" opacity="0.2" />
+    <circle class="node" cx="1230" cy="815" r="5.1" />
+    <polygon class="thin" points="1500.0,630.5 1544.5,675.0 1500.0,719.5 1455.5,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="27.6" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.4" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim49">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,649.9 445.1,675.0 420.0,700.1 394.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.6" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.2" />
+    <polygon class="thin" points="690.0,780.5 714.5,805.0 690.0,829.5 665.5,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.2" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.1" />
+    <polygon class="thin" points="960.0,668.4 989.6,698.0 960.0,727.6 930.4,698.0" opacity="0.2" />
+    <circle class="fine" cx="960" cy="698" r="18.3" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="3.9" />
+    <polygon class="thin" points="1230.0,777.2 1267.8,815.0 1230.0,852.8 1192.2,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="23.5" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.3" />
+    <polygon class="thin" points="1500.0,629.8 1545.2,675.0 1500.0,720.2 1454.8,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="28.0" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim50">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,650.3 444.7,675.0 420.0,699.7 395.3,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.3" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.1" />
+    <polygon class="thin" points="690.0,780.2 714.8,805.0 690.0,829.8 665.2,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.4" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.1" />
+    <polygon class="thin" points="960.0,667.5 990.5,698.0 960.0,728.5 929.5,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="18.9" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.1" />
+    <polygon class="thin" points="1230.0,776.1 1268.9,815.0 1230.0,853.9 1191.1,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="24.1" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.5" />
+    <polygon class="thin" points="1500.0,629.2 1545.8,675.0 1500.0,720.8 1454.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="28.4" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.6" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim51">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,650.6 444.4,675.0 420.0,699.4 395.6,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.1" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.1" />
+    <polygon class="thin" points="690.0,779.8 715.2,805.0 690.0,830.2 664.8,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="15.6" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.2" />
+    <polygon class="thin" points="960.0,666.6 991.4,698.0 960.0,729.4 928.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="19.5" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.2" />
+    <polygon class="thin" points="1230.0,775.1 1269.9,815.0 1230.0,854.9 1190.1,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="24.7" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.6" />
+    <polygon class="thin" points="1500.0,628.6 1546.4,675.0 1500.0,721.4 1453.6,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="28.8" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim52">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,650.8 444.2,675.0 420.0,699.2 395.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.0" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.0" />
+    <polygon class="thin" points="690.0,779.3 715.7,805.0 690.0,830.7 664.3,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="16.0" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.3" />
+    <polygon class="thin" points="960.0,665.6 992.4,698.0 960.0,730.4 927.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="20.1" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.4" />
+    <polygon class="thin" points="1230.0,774.2 1270.8,815.0 1230.0,855.8 1189.2,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="25.3" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="5.8" />
+    <polygon class="thin" points="1500.0,628.1 1546.9,675.0 1500.0,721.9 1453.1,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.1" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.8" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim53">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,651.0 444.0,675.0 420.0,699.0 396.0,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="14.9" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.0" />
+    <polygon class="thin" points="690.0,778.7 716.3,805.0 690.0,831.3 663.7,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="16.3" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.4" />
+    <polygon class="thin" points="960.0,664.6 993.4,698.0 960.0,731.4 926.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="20.7" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.6" />
+    <polygon class="thin" points="1230.0,773.2 1271.8,815.0 1230.0,856.8 1188.2,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="25.9" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.0" />
+    <polygon class="thin" points="1500.0,627.7 1547.3,675.0 1500.0,722.3 1452.7,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.3" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="6.9" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim54">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,651.0 444.0,675.0 420.0,699.0 396.0,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="14.9" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.0" />
+    <polygon class="thin" points="690.0,778.0 717.0,805.0 690.0,832.0 663.0,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="16.7" opacity="0.1" />
+    <circle class="node" cx="690" cy="805" r="3.5" />
+    <polygon class="thin" points="960.0,663.6 994.4,698.0 960.0,732.4 925.6,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="21.3" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.7" />
+    <polygon class="thin" points="1230.0,772.3 1272.7,815.0 1230.0,857.7 1187.3,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="26.5" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.1" />
+    <polygon class="thin" points="1500.0,627.4 1547.6,675.0 1500.0,722.6 1452.4,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.5" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="6.9" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim55">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,651.0 444.0,675.0 420.0,699.0 396.0,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="14.9" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.0" />
+    <polygon class="thin" points="690.0,777.3 717.7,805.0 690.0,832.7 662.3,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="17.2" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="3.6" />
+    <polygon class="thin" points="960.0,662.5 995.5,698.0 960.0,733.5 924.5,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="22.0" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="4.9" />
+    <polygon class="thin" points="1230.0,771.5 1273.5,815.0 1230.0,858.5 1186.5,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="27.0" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.3" />
+    <polygon class="thin" points="1500.0,627.2 1547.8,675.0 1500.0,722.8 1452.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.6" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="7.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim56">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,650.8 444.2,675.0 420.0,699.2 395.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.0" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.0" />
+    <polygon class="thin" points="690.0,776.5 718.5,805.0 690.0,833.5 661.5,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="17.7" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="3.7" />
+    <polygon class="thin" points="960.0,661.5 996.5,698.0 960.0,734.5 923.5,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="22.6" opacity="0.2" />
+    <circle class="node" cx="960" cy="698" r="5.1" />
+    <polygon class="thin" points="1230.0,770.7 1274.3,815.0 1230.0,859.3 1185.7,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="27.5" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.4" />
+    <polygon class="thin" points="1500.0,627.0 1548.0,675.0 1500.0,723.0 1452.0,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.7" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="7.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim57">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,650.6 444.4,675.0 420.0,699.4 395.6,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.1" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.1" />
+    <polygon class="thin" points="690.0,775.7 719.3,805.0 690.0,834.3 660.7,805.0" opacity="0.2" />
+    <circle class="fine" cx="690" cy="805" r="18.2" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="3.9" />
+    <polygon class="thin" points="960.0,660.4 997.6,698.0 960.0,735.6 922.4,698.0" opacity="0.3" />
+    <circle class="fine" cx="960" cy="698" r="23.3" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.3" />
+    <polygon class="thin" points="1230.0,770.0 1275.0,815.0 1230.0,860.0 1185.0,815.0" opacity="0.4" />
+    <circle class="fine" cx="1230" cy="815" r="27.9" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.5" />
+    <polygon class="thin" points="1500.0,627.0 1548.0,675.0 1500.0,723.0 1452.0,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.8" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="7.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim58">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,650.3 444.7,675.0 420.0,699.7 395.3,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.3" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.1" />
+    <polygon class="thin" points="690.0,774.8 720.2,805.0 690.0,835.2 659.8,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="18.7" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.0" />
+    <polygon class="thin" points="960.0,659.4 998.6,698.0 960.0,736.6 921.4,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="23.9" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.4" />
+    <polygon class="thin" points="1230.0,769.3 1275.7,815.0 1230.0,860.7 1184.3,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="28.3" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.6" />
+    <polygon class="thin" points="1500.0,627.0 1548.0,675.0 1500.0,723.0 1452.0,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.7" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="7.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim59">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,649.9 445.1,675.0 420.0,700.1 394.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.6" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.2" />
+    <polygon class="thin" points="690.0,773.8 721.2,805.0 690.0,836.2 658.8,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="19.3" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.2" />
+    <polygon class="thin" points="960.0,658.4 999.6,698.0 960.0,737.6 920.4,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="24.6" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.6" />
+    <polygon class="thin" points="1230.0,768.7 1276.3,815.0 1230.0,861.3 1183.7,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="28.7" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.7" />
+    <polygon class="thin" points="1500.0,627.2 1547.8,675.0 1500.0,722.8 1452.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.6" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="7.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim60">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,649.4 445.6,675.0 420.0,700.6 394.4,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="15.9" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.3" />
+    <polygon class="thin" points="690.0,772.9 722.1,805.0 690.0,837.1 657.9,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="19.9" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.4" />
+    <polygon class="thin" points="960.0,657.4 1000.6,698.0 960.0,738.6 919.4,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="25.2" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.8" />
+    <polygon class="thin" points="1230.0,768.2 1276.8,815.0 1230.0,861.8 1183.2,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.0" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.8" />
+    <polygon class="thin" points="1500.0,627.4 1547.6,675.0 1500.0,722.6 1452.4,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.5" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="6.9" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim61">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,648.8 446.2,675.0 420.0,701.2 393.8,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="16.2" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.4" />
+    <polygon class="thin" points="690.0,771.9 723.1,805.0 690.0,838.1 656.9,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="20.6" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.5" />
+    <polygon class="thin" points="960.0,656.5 1001.5,698.0 960.0,739.5 918.5,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="25.8" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="5.9" />
+    <polygon class="thin" points="1230.0,767.8 1277.2,815.0 1230.0,862.2 1182.8,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.3" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="6.9" />
+    <polygon class="thin" points="1500.0,627.7 1547.3,675.0 1500.0,722.3 1452.7,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.3" opacity="0.4" />
+    <circle class="node" cx="1500" cy="675" r="6.9" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim62">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,648.2 446.8,675.0 420.0,701.8 393.2,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="16.6" opacity="0.1" />
+    <circle class="node" cx="420" cy="675" r="3.5" />
+    <polygon class="thin" points="690.0,770.8 724.2,805.0 690.0,839.2 655.8,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="21.2" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.7" />
+    <polygon class="thin" points="960.0,655.6 1002.4,698.0 960.0,740.4 917.6,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="26.3" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.1" />
+    <polygon class="thin" points="1230.0,767.5 1277.5,815.0 1230.0,862.5 1182.5,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.5" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="6.9" />
+    <polygon class="thin" points="1500.0,628.1 1546.9,675.0 1500.0,721.9 1453.1,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="29.1" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.8" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim63">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,647.5 447.5,675.0 420.0,702.5 392.5,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="17.1" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="3.6" />
+    <polygon class="thin" points="690.0,769.8 725.2,805.0 690.0,840.2 654.8,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="21.8" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="4.9" />
+    <polygon class="thin" points="960.0,654.7 1003.3,698.0 960.0,741.3 916.7,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="26.8" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.2" />
+    <polygon class="thin" points="1230.0,767.2 1277.8,815.0 1230.0,862.8 1182.2,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.6" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="7.0" />
+    <polygon class="thin" points="1500.0,628.6 1546.4,675.0 1500.0,721.4 1453.6,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="28.8" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim64">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,646.7 448.3,675.0 420.0,703.3 391.7,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="17.5" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="3.7" />
+    <polygon class="thin" points="690.0,768.7 726.3,805.0 690.0,841.3 653.7,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="22.5" opacity="0.2" />
+    <circle class="node" cx="690" cy="805" r="5.0" />
+    <polygon class="thin" points="960.0,653.9 1004.1,698.0 960.0,742.1 915.9,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="27.3" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.4" />
+    <polygon class="thin" points="1230.0,767.1 1277.9,815.0 1230.0,862.9 1182.1,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.7" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="7.0" />
+    <polygon class="thin" points="1500.0,629.2 1545.8,675.0 1500.0,720.8 1454.2,675.0" opacity="0.5" />
+    <circle class="fine" cx="1500" cy="675" r="28.4" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.6" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim65">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,645.9 449.1,675.0 420.0,704.1 390.9,675.0" opacity="0.2" />
+    <circle class="fine" cx="420" cy="675" r="18.1" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="3.9" />
+    <polygon class="thin" points="690.0,767.7 727.3,805.0 690.0,842.3 652.7,805.0" opacity="0.3" />
+    <circle class="fine" cx="690" cy="805" r="23.1" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.2" />
+    <polygon class="thin" points="960.0,653.2 1004.8,698.0 960.0,742.8 915.2,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="27.8" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.5" />
+    <polygon class="thin" points="1230.0,767.0 1278.0,815.0 1230.0,863.0 1182.0,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.8" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="7.0" />
+    <polygon class="thin" points="1500.0,629.8 1545.2,675.0 1500.0,720.2 1454.8,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="28.0" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.5" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim66">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,645.0 450.0,675.0 420.0,705.0 390.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="18.6" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.0" />
+    <polygon class="thin" points="690.0,766.7 728.3,805.0 690.0,843.3 651.7,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="23.8" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.4" />
+    <polygon class="thin" points="960.0,652.5 1005.5,698.0 960.0,743.5 914.5,698.0" opacity="0.4" />
+    <circle class="fine" cx="960" cy="698" r="28.2" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.6" />
+    <polygon class="thin" points="1230.0,767.0 1278.0,815.0 1230.0,863.0 1182.0,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.7" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="7.0" />
+    <polygon class="thin" points="1500.0,630.5 1544.5,675.0 1500.0,719.5 1455.5,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="27.6" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.4" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim67">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,644.1 450.9,675.0 420.0,705.9 389.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="19.2" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.2" />
+    <polygon class="thin" points="690.0,765.6 729.4,805.0 690.0,844.4 650.6,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="24.4" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.6" />
+    <polygon class="thin" points="960.0,651.9 1006.1,698.0 960.0,744.1 913.9,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="28.6" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.7" />
+    <polygon class="thin" points="1230.0,767.1 1277.9,815.0 1230.0,862.9 1182.1,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.7" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="7.0" />
+    <polygon class="thin" points="1500.0,631.3 1543.7,675.0 1500.0,718.7 1456.3,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="27.1" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.3" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim68">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,643.1 451.9,675.0 420.0,706.9 388.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="19.8" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.3" />
+    <polygon class="thin" points="690.0,764.7 730.3,805.0 690.0,845.3 649.7,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="25.0" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.7" />
+    <polygon class="thin" points="960.0,651.4 1006.6,698.0 960.0,744.6 913.4,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="28.9" opacity="0.3" />
+    <circle class="node" cx="960" cy="698" r="6.8" />
+    <polygon class="thin" points="1230.0,767.3 1277.7,815.0 1230.0,862.7 1182.3,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.5" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="6.9" />
+    <polygon class="thin" points="1500.0,632.1 1542.9,675.0 1500.0,717.9 1457.1,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="26.6" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.1" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim69">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,642.1 452.9,675.0 420.0,707.9 387.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="20.4" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.5" />
+    <polygon class="thin" points="690.0,763.7 731.3,805.0 690.0,846.3 648.7,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="25.6" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="5.9" />
+    <polygon class="thin" points="960.0,650.9 1007.1,698.0 960.0,745.1 912.9,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.2" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="6.8" />
+    <polygon class="thin" points="1230.0,767.6 1277.4,815.0 1230.0,862.4 1182.6,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.4" opacity="0.4" />
+    <circle class="node" cx="1230" cy="815" r="6.9" />
+    <polygon class="thin" points="1500.0,633.0 1542.0,675.0 1500.0,717.0 1458.0,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="26.0" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="6.0" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim70">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,641.1 453.9,675.0 420.0,708.9 386.1,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="21.0" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.7" />
+    <polygon class="thin" points="690.0,762.8 732.2,805.0 690.0,847.2 647.8,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="26.2" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.0" />
+    <polygon class="thin" points="960.0,650.6 1007.4,698.0 960.0,745.4 912.6,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.4" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="6.9" />
+    <polygon class="thin" points="1230.0,768.0 1277.0,815.0 1230.0,862.0 1183.0,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="29.1" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.8" />
+    <polygon class="thin" points="1500.0,633.9 1541.1,675.0 1500.0,716.1 1458.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="25.5" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.8" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+  <g id="idle_anim71">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <line class="fine" x1="806" y1="270" x2="1114" y2="270" opacity="0.42" />
+    <line class="cyan" x1="858" y1="286" x2="1062" y2="286" opacity="0.14" />
+    <polygon class="thin" points="420.0,640.0 455.0,675.0 420.0,710.0 385.0,675.0" opacity="0.3" />
+    <circle class="fine" cx="420" cy="675" r="21.7" opacity="0.2" />
+    <circle class="node" cx="420" cy="675" r="4.8" />
+    <polygon class="thin" points="690.0,761.9 733.1,805.0 690.0,848.1 646.9,805.0" opacity="0.4" />
+    <circle class="fine" cx="690" cy="805" r="26.7" opacity="0.3" />
+    <circle class="node" cx="690" cy="805" r="6.2" />
+    <polygon class="thin" points="960.0,650.3 1007.7,698.0 960.0,745.7 912.3,698.0" opacity="0.5" />
+    <circle class="fine" cx="960" cy="698" r="29.6" opacity="0.4" />
+    <circle class="node" cx="960" cy="698" r="7.0" />
+    <polygon class="thin" points="1230.0,768.5 1276.5,815.0 1230.0,861.5 1183.5,815.0" opacity="0.5" />
+    <circle class="fine" cx="1230" cy="815" r="28.8" opacity="0.3" />
+    <circle class="node" cx="1230" cy="815" r="6.8" />
+    <polygon class="thin" points="1500.0,634.9 1540.1,675.0 1500.0,715.1 1459.9,675.0" opacity="0.4" />
+    <circle class="fine" cx="1500" cy="675" r="24.9" opacity="0.3" />
+    <circle class="node" cx="1500" cy="675" r="5.7" />
+    <polyline class="cyan" points="420.0,675.0 690.0,805.0" opacity="0.16" />
+    <polyline class="cyan" points="690.0,805.0 960.0,698.0" opacity="0.16" />
+    <polyline class="cyan" points="960.0,698.0 1230.0,815.0" opacity="0.16" />
+    <polyline class="cyan" points="1230.0,815.0 1500.0,675.0" opacity="0.16" />
+  </g>
+
+  <g id="anim00">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="836" y="198.0">L</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 836,286 C 760,426 354,534 260,660" opacity="0.62" />
+    <circle class="node" cx="260" cy="660" r="18" />
+  </g>
+  <g id="anim01">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="908" y="198.0">O</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 908,286 C 832,434 1754,534 1660,660" opacity="0.62" />
+    <circle class="node" cx="1660" cy="660" r="18" />
+  </g>
+  <g id="anim02">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="986" y="198.0">G</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 986,286 C 910,442 1054,718 960,844" opacity="0.62" />
+    <circle class="node" cx="960" cy="844" r="18" />
+  </g>
+  <g id="anim03">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1042" y="198.0">I</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 1042,286 C 966,450 524,734 430,860" opacity="0.62" />
+    <circle class="node" cx="430" cy="860" r="18" />
+  </g>
+  <g id="anim04">
+    <text class="login-dim" x="836" y="198.0">L</text>
+        <text class="login-dim" x="908" y="198.0">O</text>
+        <text class="login-dim" x="986" y="198.0">G</text>
+        <text class="login-dim" x="1042" y="198.0">I</text>
+        <text class="login-dim" x="1094" y="198.0">N</text>
+    <text class="letter" x="1094" y="198.0">N</text>
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <path class="thin" d="M 1094,286 C 1018,458 1584,734 1490,860" opacity="0.62" />
+    <circle class="node" cx="1490" cy="860" r="18" />
+  </g>
+
+  <g id="backspace">
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+    <line class="cyan" x1="806" y1="288" x2="1114" y2="288" opacity="0.28" />
+  </g>
+  <g id="verify">
+    <circle class="thin" cx="960" cy="326" r="32" opacity="0.44" />
+    <polygon class="fine" points="960,286 1000,326 960,366 920,326" opacity="0.36" />
+    <line class="cyan" x1="900" y1="326" x2="1020" y2="326" opacity="0.22" />
+  </g>
+  <g id="fg" />
+  <g id="idle">
+    <line class="line" x1="806" y1="270" x2="1114" y2="270" />
+  </g>
+  <g id="fail">
+    <line class="line" x1="850" y1="318" x2="1070" y2="318" opacity="0.74" />
+    <line class="thin" x1="880" y1="342" x2="1040" y2="342" opacity="0.52" />
+    <line class="fine" x1="916" y1="294" x2="1004" y2="366" opacity="0.42" />
+  </g>
+</svg>
