@@ -139,6 +139,14 @@ legacy \-i/\-\-image, \-t/\-\-tiling, or \-s/\-\-indicator-svg options.
 Parse and validate a scene-v1 SVG, build the retained cache layout, print a
 concise memory summary, and exit without locking the screen.
 
+.SH SCENE AUTHORING
+.B scene-preview
+is a non-locking utility for rendering, inspecting, benchmarking, and live
+previewing scene-v1 SVGs. It does not invoke PAM or grab input.
+.B scene-pack
+is an authoring utility that embeds linked local PNG files and validates the
+resulting self-contained scene.
+
 .SH SEE ALSO
 .IR xautolock(1)
 \- use i3lock as your screen saver

@@ -113,6 +113,11 @@ without locking the screen:
                 --inspect --inspect-json /tmp/showcase.inspect.json
 ./scene-pack --input examples/showcase/source.svg \
              --output /tmp/showcase.scene.svg --print-assets
+./scene-preview --source examples/Cordince/Cordince.scene-source.svg \
+                --size 1920x1080 --window --watch
+./scene-pack --force --input examples/Cordince/Cordince.scene-source.svg \
+             --output examples/Cordince/Cordince.scene.svg --print-assets
+DISPLAY= ./i3lock --validate-scene examples/Cordince/Cordince.scene.svg
 
 Scene layer visibility is controlled by scene metadata at runtime. Referenced
 groups may be hidden in the editor with `display:none`; validation, preview, and
@@ -124,6 +129,12 @@ librsvg provides reliable ink geometry, falling back to full-target caches only
 with an inspection-visible reason. The editable showcase scene lives at
 `examples/showcase/source.svg`; the packed runtime-safe version is
 `examples/showcase/showcase.scene.svg`.
+
+The Cordince production scene lives at
+`examples/Cordince/Cordince.scene-source.svg`; the packed runtime-safe version is
+`examples/Cordince/Cordince.scene.svg`. `scene-preview --window` is a normal
+non-locking preview window. It does not invoke PAM, grab input, or create the
+lock window.
 
 Ideas for animations:
 --------------------

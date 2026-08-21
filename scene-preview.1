@@ -1,0 +1,40 @@
+.TH scene-preview 1 "AUGUST 2026" Linux "User Manuals"
+.SH NAME
+scene-preview \- non-locking SVG scene-v1 preview and inspection utility
+.SH SYNOPSIS
+.B scene-preview
+.BI --scene " scene.svg"
+.BI --size " WIDTHxHEIGHT"
+[\fB--output\fR \fIframe.png\fR]
+[\fB--inspect\fR]
+[\fB--window\fR [\fB--watch\fR]]
+.SH DESCRIPTION
+.B scene-preview
+renders, inspects, benchmarks, and live-previews i3lock-svg-nh scene-v1 SVGs
+without invoking PAM, grabbing input, or creating a lock window.
+.SH OPTIONS
+.TP
+.BI --scene " PATH"
+Load an already packed, runtime-safe scene SVG.
+.TP
+.BI --source " PATH"
+Load an editable authoring SVG by packing linked local PNGs in memory first.
+The runtime loader remains strict; this option is for preview only.
+.TP
+.BI --window
+Open a normal decorated X11 preview window. This is not a locker.
+.TP
+.BI --watch
+Watch the source SVG and linked PNG dependencies and reload transactionally.
+.TP
+.BI --inspect
+Print the retained cache layout and memory accounting.
+.TP
+.BI --benchmark
+Benchmark bounded and full-target reference cache modes.
+.TP
+.BI --version
+Print the build version.
+.SH SEE ALSO
+.BR i3lock (1),
+.BR scene-pack (1)

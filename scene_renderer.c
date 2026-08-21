@@ -786,26 +786,23 @@ bool scene_renderer_validate_file(const char *path, char error[SCENE_ERROR_LEN])
     return true;
 }
 
-static bool create_common(const char *path,
-                          scene_renderer_t **out,
-                          char error[SCENE_ERROR_LEN]) {
+static bool create_common_from_document(const char *display_path,
+                                        scene_document_t *doc,
+                                        uint64_t parse_ns,
+                                        uint64_t total_start,
+                                        scene_renderer_t **out,
+                                        char error[SCENE_ERROR_LEN]) {
     *out = NULL;
-    uint64_t total_start = now_ns();
-    scene_document_t *doc = NULL;
-    uint64_t start = now_ns();
-    if (!scene_document_load(path, &doc, error))
-        return false;
-    uint64_t parse_ns = now_ns() - start;
 
     GError *gerr = NULL;
-    start = now_ns();
+    uint64_t start = now_ns();
     RsvgHandle *handle = rsvg_handle_new_from_data((const guint8 *)doc->normalized_svg,
                                                    doc->normalized_svg_len,
                                                    &gerr);
     uint64_t handle_ns = now_ns() - start;
     if (!handle) {
         bool ret = set_error(error, "librsvg could not load scene '%s': %s",
-                             path,
+                             display_path ? display_path : "(memory)",
                              gerr ? gerr->message : "unknown error");
         if (gerr)
             g_error_free(gerr);
@@ -840,12 +837,56 @@ static bool create_common(const char *path,
     return true;
 }
 
+static bool create_common(const char *path,
+                          scene_renderer_t **out,
+                          char error[SCENE_ERROR_LEN]) {
+    uint64_t total_start = now_ns();
+    scene_document_t *doc = NULL;
+    uint64_t start = now_ns();
+    if (!scene_document_load(path, &doc, error))
+        return false;
+    uint64_t parse_ns = now_ns() - start;
+    return create_common_from_document(path, doc, parse_ns, total_start, out, error);
+}
+
+static bool create_common_from_data(const char *display_path,
+                                    const char *contents,
+                                    size_t len,
+                                    scene_renderer_t **out,
+                                    char error[SCENE_ERROR_LEN]) {
+    uint64_t total_start = now_ns();
+    scene_document_t *doc = NULL;
+    uint64_t start = now_ns();
+    if (!scene_document_load_from_data(display_path, contents, len, &doc, error))
+        return false;
+    uint64_t parse_ns = now_ns() - start;
+    return create_common_from_document(display_path, doc, parse_ns, total_start, out, error);
+}
+
 bool scene_renderer_create_headless(const char *path,
                                     uint32_t width,
                                     uint32_t height,
                                     scene_renderer_t **out,
                                     char error[SCENE_ERROR_LEN]) {
     return scene_renderer_create_headless_with_options(path, width, height, false, out, error);
+}
+
+bool scene_renderer_create_headless_from_data(const char *display_path,
+                                              const char *contents,
+                                              size_t len,
+                                              uint32_t width,
+                                              uint32_t height,
+                                              scene_renderer_t **out,
+                                              char error[SCENE_ERROR_LEN]) {
+    return scene_renderer_create_headless_from_data_with_cache_mode(display_path,
+                                                                    contents,
+                                                                    len,
+                                                                    width,
+                                                                    height,
+                                                                    false,
+                                                                    SCENE_RENDERER_CACHE_BOUNDED,
+                                                                    out,
+                                                                    error);
 }
 
 bool scene_renderer_create_headless_with_options(const char *path,
@@ -872,6 +913,29 @@ bool scene_renderer_create_headless_with_cache_mode(const char *path,
                                                     char error[SCENE_ERROR_LEN]) {
     uint64_t start = now_ns();
     if (!create_common(path, out, error))
+        return false;
+    (*out)->disable_static_precompose = disable_static_precompose;
+    (*out)->cache_mode = cache_mode;
+    if (!rebuild(*out, width, height, error)) {
+        scene_renderer_destroy(*out);
+        *out = NULL;
+        return false;
+    }
+    (*out)->stats.total_load_time_ns = now_ns() - start;
+    return true;
+}
+
+bool scene_renderer_create_headless_from_data_with_cache_mode(const char *display_path,
+                                                              const char *contents,
+                                                              size_t len,
+                                                              uint32_t width,
+                                                              uint32_t height,
+                                                              bool disable_static_precompose,
+                                                              scene_renderer_cache_mode_t cache_mode,
+                                                              scene_renderer_t **out,
+                                                              char error[SCENE_ERROR_LEN]) {
+    uint64_t start = now_ns();
+    if (!create_common_from_data(display_path, contents, len, out, error))
         return false;
     (*out)->disable_static_precompose = disable_static_precompose;
     (*out)->cache_mode = cache_mode;

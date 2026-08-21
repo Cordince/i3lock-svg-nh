@@ -192,6 +192,11 @@ const char *scene_fit_name(scene_fit_t fit);
 const char *scene_blend_name(scene_blend_t blend);
 
 bool scene_document_load(const char *path, scene_document_t **out, char error[SCENE_ERROR_LEN]);
+bool scene_document_load_from_data(const char *display_path,
+                                   const char *contents,
+                                   size_t len,
+                                   scene_document_t **out,
+                                   char error[SCENE_ERROR_LEN]);
 void scene_document_free(scene_document_t *doc);
 void scene_document_print_summary(const scene_document_t *doc, const char *path);
 

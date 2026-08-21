@@ -1092,27 +1092,19 @@ static bool validate_document(scene_parse_ctx_t *ctx) {
     return true;
 }
 
-bool scene_document_load(const char *path, scene_document_t **out, char error[SCENE_ERROR_LEN]) {
+bool scene_document_load_from_data(const char *display_path,
+                                   const char *contents,
+                                   size_t len,
+                                   scene_document_t **out,
+                                   char error[SCENE_ERROR_LEN]) {
     *out = NULL;
     if (error)
         error[0] = '\0';
 
-    gchar *contents = NULL;
-    gsize len = 0;
-    GError *gerr = NULL;
-    if (!g_file_get_contents(path, &contents, &len, &gerr)) {
-        bool ret = set_error(error, "could not read scene '%s': %s", path, gerr ? gerr->message : "unknown error");
-        if (gerr)
-            g_error_free(gerr);
-        return ret;
-    }
-
     if (!reject_unsafe_xml_preamble(contents, len, error)) {
-        g_free(contents);
         return false;
     }
     if (len > INT_MAX) {
-        g_free(contents);
         return set_error(error, "scene SVG is too large to parse safely");
     }
 
@@ -1122,27 +1114,23 @@ bool scene_document_load(const char *path, scene_document_t **out, char error[SC
                                   NULL,
                                   XML_PARSE_NONET);
     if (!xml) {
-        g_free(contents);
         return set_error(error, "invalid SVG XML");
     }
     if (xml->intSubset || xml->extSubset) {
         xmlFreeDoc(xml);
-        g_free(contents);
         return set_error(error, "DOCTYPE declarations are not allowed");
     }
     if (!validate_xml_resources(xml->children, error)) {
         xmlFreeDoc(xml);
-        g_free(contents);
         return false;
     }
 
     scene_document_t *doc = calloc(1, sizeof(*doc));
     if (!doc) {
         xmlFreeDoc(xml);
-        g_free(contents);
         return set_error(error, "out of memory");
     }
-    doc->path = strdup(path);
+    doc->path = strdup(display_path ? display_path : "(memory)");
     doc->fit = SCENE_FIT_PIXEL;
     doc->background_a = 1.0;
 
@@ -1150,6 +1138,7 @@ bool scene_document_load(const char *path, scene_document_t **out, char error[SC
     memset(&ctx, 0, sizeof(ctx));
     ctx.doc = doc;
     ctx.current_layer = -1;
+    GError *gerr = NULL;
 
     GMarkupParser parser = {
         .start_element = start_element_cb,
@@ -1165,7 +1154,6 @@ bool scene_document_load(const char *path, scene_document_t **out, char error[SC
     if (ok)
         ok = g_markup_parse_context_end_parse(markup, &gerr);
     g_markup_parse_context_free(markup);
-    g_free(contents);
 
     if (!ok) {
         set_error(error, "invalid SVG XML: %s", gerr ? gerr->message : "unknown parse error");
@@ -1208,6 +1196,21 @@ bool scene_document_load(const char *path, scene_document_t **out, char error[SC
     xmlFreeDoc(xml);
     *out = doc;
     return true;
+}
+
+bool scene_document_load(const char *path, scene_document_t **out, char error[SCENE_ERROR_LEN]) {
+    gchar *contents = NULL;
+    gsize len = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(path, &contents, &len, &gerr)) {
+        bool ret = set_error(error, "could not read scene '%s': %s", path, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        return ret;
+    }
+    bool ok = scene_document_load_from_data(path, contents, len, out, error);
+    g_free(contents);
+    return ok;
 }
 
 void scene_document_free(scene_document_t *doc) {

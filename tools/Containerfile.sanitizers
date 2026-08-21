@@ -1,0 +1,27 @@
+FROM registry.fedoraproject.org/fedora:41
+
+RUN dnf -y install \
+        cairo-devel \
+        diffutils \
+        findutils \
+        gcc \
+        glib2-devel \
+        libev-devel \
+        librsvg2-devel \
+        libxcb-devel \
+        libxml2-devel \
+        libxkbcommon-devel \
+        make \
+        pam-devel \
+        pkgconf-pkg-config \
+        procps-ng \
+        xcb-util-devel \
+        xcb-util-image-devel \
+        xcb-util-wm-devel \
+        xorg-x11-server-Xvfb \
+    && dnf clean all
+
+WORKDIR /work
+COPY . /work
+
+CMD ["sh", "tools/run-sanitizers-in-container.sh"]

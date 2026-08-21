@@ -104,13 +104,17 @@ Benchmark the retained compositor without writing PNGs:
     --size 3840x2160 \
     --benchmark \
     --benchmark-frames 600 \
-    --benchmark-fps 60
+    --benchmark-fps 60 \
+    --benchmark-warmup-frames 30 \
+    --benchmark-json /tmp/showcase-benchmark.json
 ```
 
 The benchmark runs both the normal bounded-cache renderer and the diagnostic
 full-target reference cache mode. It reports load-stage timings, frame
-composition percentiles, exact retained userspace cache bytes, fallback counts,
-and renderer counters.
+composition mean, median, p90, p95, p99, maximum, standard deviation, exact
+retained userspace cache bytes, fallback counts, and renderer counters. Frame
+percentiles use the nearest-rank definition over a sorted copy of measured
+samples after warmup frames have been excluded.
 
 Pack an editable SVG with linked PNGs into a runtime-safe self-contained scene:
 
@@ -125,6 +129,38 @@ Use `--check` to validate what would be embedded without writing output, and
 `--asset-root PATH` when referenced PNGs should be constrained to a directory
 other than the source SVG's directory. Existing outputs are not overwritten
 unless `--force` is supplied.
+
+Open a live non-locking authoring preview next to Inkscape:
+
+```sh
+./scene-preview \
+    --source examples/Cordince/Cordince.scene-source.svg \
+    --size 1920x1080 \
+    --window \
+    --watch
+```
+
+`--window` creates a normal decorated X11 preview window. It never invokes PAM,
+never grabs the keyboard or pointer, never creates an override-redirect lock
+window, and never starts the i3lock raise-loop child. `--source` packs linked
+local PNGs in memory using the same implementation as `scene-pack`, then passes
+the resulting bytes through the strict scene parser and retained renderer.
+`--watch` tracks the source SVG and linked PNG dependencies with inotify when
+available, debounces editor save bursts, and rebuilds transactionally. A bad
+save keeps the last valid frame visible; the next valid save replaces the scene
+without restarting the preview. Use `--reload-error-to-stderr`,
+`--screenshot-dir PATH`, or `--no-overlay` to tune the live workflow.
+
+Live preview keyboard controls:
+
+- printable key: fire the `key` trigger without storing the character.
+- Backspace: fire the `backspace` trigger.
+- `1`, `2`, `3`, `4`: switch to `locked`, `input`, `verify`, or `fail`.
+- Space: toggle `locked`/`input`.
+- `R`: force reload.
+- `H`: toggle the preview-only diagnostics overlay.
+- `S`: write a screenshot.
+- Escape: leave fullscreen if active, otherwise close the preview.
 
 Use the retained scene renderer for the lock:
 
@@ -312,6 +348,12 @@ scene loader used by i3lock.
 `examples/showcase/source.svg` is an editable linked-PNG source. Its packed
 counterpart, `examples/showcase/showcase.scene.svg`, is the runtime-safe file.
 
+`examples/Cordince/Cordince.scene-source.svg` migrates the repository's
+Cordince artwork into a production editable scene. It links the existing
+Cordince PNG for editing and keeps runtime-controlled layers hidden in the SVG
+editor. `examples/Cordince/Cordince.scene.svg` is the deterministic packed
+runtime scene with that PNG embedded.
+
 ## Tight-Bounds Caching
 
 Phase 2 uses tight layer-bounds caches by default. At load or resize, the
@@ -404,6 +446,40 @@ close-on-exec pipe. Password buffers are cleared with `explicit_bzero` when
 available, with a volatile fallback otherwise. Input is ignored while the verify
 worker is active, which keeps the verify animation running without changing the
 password.
+
+## Executables
+
+`i3lock` is the security-sensitive locker. It performs PAM authentication,
+grabs input, owns the lock window, and accepts only strict packed scene files
+through `--scene-svg`.
+
+`scene-preview` is a non-locking authoring and diagnostics utility. It may open
+a normal preview window, but it must not invoke PAM or grab input.
+
+`scene-pack` is a headless authoring utility. It packages editable source SVGs
+into self-contained runtime SVGs and has no locking or authentication behavior.
+
+## Release Checks
+
+`make check` runs the normal unit tests and Xvfb integration tests without
+starting a real screen lock. `make container-sanitizer-test` uses Docker or
+Podman, when available, to build a Fedora-based test image and run the normal
+build, unit tests, Xvfb tests, ASan build/tests, and UBSan build/tests inside
+the container. Logs are written under `/tmp`.
+
+## Manual Lock Acceptance
+
+Do not run a real lock against your active desktop unless you have a recovery
+path.
+
+1. Save work first.
+2. Keep another TTY or already-tested SSH/Tailscale session available.
+3. Verify the account password independently.
+4. Run with `--nofork` first.
+5. Test locked, input, ordinary key, backspace, verify, failure, and success.
+6. Test screen resize or display reconfiguration only when recovery is ready.
+7. Confirm the process exits after successful PAM authentication.
+8. Confirm no preview utility ever grabs input.
 
 ## Remaining Limitations
 

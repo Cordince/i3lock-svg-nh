@@ -14,6 +14,7 @@
 #include <unistd.h>
 
 #include "scene.h"
+#include "scene_pack_lib.h"
 #include "scene_renderer.h"
 
 static void expect_true(bool value, const char *message) {
@@ -107,6 +108,48 @@ static void expect_files_equal(const char *a, const char *b, const char *message
     }
     g_free(ac);
     g_free(bc);
+}
+
+static char *sha256_file(const char *path) {
+    gchar *contents = NULL;
+    gsize len = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(path, &contents, &len, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", path, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        exit(EXIT_FAILURE);
+    }
+    char *sum = g_compute_checksum_for_data(G_CHECKSUM_SHA256, (const guchar *)contents, len);
+    g_free(contents);
+    return sum;
+}
+
+static char *sha256_first_embedded_png(const char *path) {
+    gchar *contents = NULL;
+    gsize len = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(path, &contents, &len, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", path, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        exit(EXIT_FAILURE);
+    }
+    const char *prefix = "data:image/png;base64,";
+    char *start = strstr(contents, prefix);
+    expect_true(start != NULL, "packed SVG contains embedded PNG data URI");
+    start += strlen(prefix);
+    char *end = strpbrk(start, "\"'");
+    expect_true(end != NULL, "embedded PNG data URI has closing quote");
+    char *encoded = g_strndup(start, (gsize)(end - start));
+    gsize decoded_len = 0;
+    guchar *decoded = g_base64_decode(encoded, &decoded_len);
+    expect_true(decoded != NULL && decoded_len > 0, "embedded PNG data URI decodes");
+    char *sum = g_compute_checksum_for_data(G_CHECKSUM_SHA256, decoded, decoded_len);
+    g_free(decoded);
+    g_free(encoded);
+    g_free(contents);
+    return sum;
 }
 
 static void expect_system_ok(const char *cmd, const char *message) {
@@ -908,9 +951,13 @@ static void test_preview_trigger_and_transition_pixels(void) {
 static void test_inspect_json_and_benchmark_cli(void) {
     char path_a[128];
     char path_b[128];
+    char benchmark_json[128];
+    char benchmark_txt[128];
     char cmd[512];
     snprintf(path_a, sizeof(path_a), "/tmp/i3lock-scene-inspect-a-%ld.json", (long)getpid());
     snprintf(path_b, sizeof(path_b), "/tmp/i3lock-scene-inspect-b-%ld.json", (long)getpid());
+    snprintf(benchmark_json, sizeof(benchmark_json), "/tmp/i3lock-scene-benchmark-%ld.json", (long)getpid());
+    snprintf(benchmark_txt, sizeof(benchmark_txt), "/tmp/i3lock-scene-benchmark-%ld.txt", (long)getpid());
 
     char error[SCENE_ERROR_LEN];
     scene_renderer_t *renderer = NULL;
@@ -933,9 +980,18 @@ static void test_inspect_json_and_benchmark_cli(void) {
 
     snprintf(cmd,
              sizeof(cmd),
-             "./scene-preview --scene tests/fixtures/bounded-equivalence.svg --size 40x30 --benchmark --benchmark-frames 6 --benchmark-fps 60 >/tmp/i3lock-scene-benchmark-%ld.txt",
-             (long)getpid());
+             "./scene-preview --scene tests/fixtures/bounded-equivalence.svg --size 40x30 "
+             "--benchmark --benchmark-frames 6 --benchmark-fps 60 --benchmark-warmup-frames 2 "
+             "--benchmark-json %s >%s",
+             benchmark_json,
+             benchmark_txt);
     expect_system_ok(cmd, "scene-preview benchmark CLI");
+    expect_file_contains(benchmark_txt, "p90=", "benchmark text reports p90");
+    expect_file_contains(benchmark_txt, "stddev=", "benchmark text reports stddev");
+    expect_file_contains(benchmark_txt, "warmup=2", "benchmark text reports warmup exclusion");
+    expect_file_contains(benchmark_json, "\"schema\": \"i3lock-svg-nh-scene-benchmark-v1\"", "benchmark JSON schema");
+    expect_file_contains(benchmark_json, "\"p90\"", "benchmark JSON reports p90");
+    expect_file_contains(benchmark_json, "\"warmup_frames\": 2", "benchmark JSON reports warmup frames");
 }
 
 static void test_preview_sequence_and_contact_sheet(void) {
@@ -1131,6 +1187,79 @@ static void test_showcase_runtime_files(void) {
                 "showcase bounded cache memory is lower than reference");
     scene_renderer_destroy(bounded);
     scene_renderer_destroy(reference);
+}
+
+static void test_cordince_production_scene(void) {
+    const char *source = "examples/Cordince/Cordince.scene-source.svg";
+    const char *packed_path = "examples/Cordince/Cordince.scene.svg";
+    const char *png_path = "examples/Cordince/Cordince_Organ_Engineering_Background_1920x1080_dark_letters.png";
+    char error[SCENE_ERROR_LEN];
+
+    scene_document_t *doc = NULL;
+    expect_true(!scene_document_load(source, &doc, error),
+                "runtime rejects Cordince linked-image source");
+    expect_true(scene_document_load(packed_path, &doc, error),
+                "runtime accepts packed Cordince scene");
+    scene_document_free(doc);
+
+    scene_pack_result_t first;
+    scene_pack_result_t second;
+    scene_pack_result_init(&first);
+    scene_pack_result_init(&second);
+    expect_true(scene_pack_source_to_memory(source, NULL, &first, error), error);
+    expect_true(scene_pack_source_to_memory(source, NULL, &second, error), error);
+    expect_true(first.len == second.len && memcmp(first.data, second.data, first.len) == 0,
+                "Cordince source packs deterministically in memory");
+    expect_true(first.assets.count == 1, "Cordince source enumerates one linked PNG asset");
+
+    scene_renderer_t *bounded = NULL;
+    scene_renderer_t *reference = NULL;
+    expect_true(scene_renderer_create_headless_from_data(source,
+                                                         first.data,
+                                                         first.len,
+                                                         1920,
+                                                         1080,
+                                                         &bounded,
+                                                         error),
+                error);
+    expect_true(scene_renderer_create_headless_from_data_with_cache_mode(source,
+                                                                         first.data,
+                                                                         first.len,
+                                                                         1920,
+                                                                         1080,
+                                                                         false,
+                                                                         SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE,
+                                                                         &reference,
+                                                                         error),
+                error);
+    scene_renderer_memory_t memory;
+    scene_renderer_get_memory(bounded, &memory);
+    expect_true(memory.full_target_layer_count == 0, "Cordince has no full-target fallback");
+    expect_true(memory.bounded_layer_count >= 5, "Cordince dynamic layers use bounded caches");
+    expect_true(memory.total_retained_userspace_image_bytes < 60000000,
+                "Cordince retained cache memory is below full-target-style allocation");
+
+    scene_renderer_set_state(bounded, SCENE_STATE_VERIFY, 0);
+    scene_renderer_set_state(reference, SCENE_STATE_VERIFY, 0);
+    expect_true(scene_renderer_render(bounded, 300, error), error);
+    expect_true(scene_renderer_render(reference, 300, error), error);
+    expect_surfaces_equivalent(scene_renderer_image_surface(bounded),
+                               scene_renderer_image_surface(reference),
+                               2,
+                               64,
+                               "Cordince bounded/reference verify frame");
+
+    scene_renderer_destroy(bounded);
+    scene_renderer_destroy(reference);
+    scene_pack_result_clear(&first);
+    scene_pack_result_clear(&second);
+
+    char *original_hash = sha256_file(png_path);
+    char *embedded_hash = sha256_first_embedded_png(packed_path);
+    expect_true(strcmp(original_hash, embedded_hash) == 0,
+                "Cordince embedded PNG bytes match original");
+    g_free(original_hash);
+    g_free(embedded_hash);
 }
 
 typedef struct {
@@ -1333,6 +1462,7 @@ int main(void) {
     test_preview_sequence_and_contact_sheet();
     test_scene_packer_cli();
     test_showcase_runtime_files();
+    test_cordince_production_scene();
     test_fake_auth_keeps_verify_animation_running();
     printf("scene-tests: ok\n");
     return EXIT_SUCCESS;

@@ -17,7 +17,7 @@ static void expect_true(bool value, const char *message) {
 int main(void) {
     int screen_nr = 0;
     xcb_connection_t *conn = NULL;
-    for (int attempt = 0; attempt < 20; attempt++) {
+    for (int attempt = 0; attempt < 100; attempt++) {
         conn = xcb_connect(NULL, &screen_nr);
         if (conn && !xcb_connection_has_error(conn))
             break;

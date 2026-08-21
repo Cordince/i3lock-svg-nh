@@ -64,6 +64,14 @@ bool scene_renderer_create_headless(const char *path,
                                     scene_renderer_t **out,
                                     char error[SCENE_ERROR_LEN]);
 
+bool scene_renderer_create_headless_from_data(const char *display_path,
+                                              const char *contents,
+                                              size_t len,
+                                              uint32_t width,
+                                              uint32_t height,
+                                              scene_renderer_t **out,
+                                              char error[SCENE_ERROR_LEN]);
+
 bool scene_renderer_create_x11(const char *path,
                                xcb_connection_t *conn,
                                xcb_screen_t *screen,
@@ -86,6 +94,16 @@ bool scene_renderer_create_headless_with_cache_mode(const char *path,
                                                     scene_renderer_cache_mode_t cache_mode,
                                                     scene_renderer_t **out,
                                                     char error[SCENE_ERROR_LEN]);
+
+bool scene_renderer_create_headless_from_data_with_cache_mode(const char *display_path,
+                                                              const char *contents,
+                                                              size_t len,
+                                                              uint32_t width,
+                                                              uint32_t height,
+                                                              bool disable_static_precompose,
+                                                              scene_renderer_cache_mode_t cache_mode,
+                                                              scene_renderer_t **out,
+                                                              char error[SCENE_ERROR_LEN]);
 
 bool scene_renderer_create_headless_reference(const char *path,
                                               uint32_t width,

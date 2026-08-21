@@ -1,0 +1,39 @@
+.TH scene-pack 1 "AUGUST 2026" Linux "User Manuals"
+.SH NAME
+scene-pack \- package editable SVG scene sources into runtime-safe scene-v1 SVGs
+.SH SYNOPSIS
+.B scene-pack
+.BI --input " source.svg"
+.BI --output " packed.scene.svg"
+[\fB--asset-root\fR \fIPATH\fR]
+[\fB--force\fR]
+[\fB--check\fR]
+[\fB--print-assets\fR]
+.SH DESCRIPTION
+.B scene-pack
+embeds linked local PNG images as data URIs, rejects external resources, writes
+the packed SVG atomically, and validates the result with the same strict
+scene-v1 loader used by i3lock.
+.SH OPTIONS
+.TP
+.BI --input " PATH"
+Editable source SVG.
+.TP
+.BI --output " PATH"
+Packed runtime scene output. Existing files require
+.BR --force .
+.TP
+.BI --asset-root " PATH"
+Constrain relative image assets to this root.
+.TP
+.BI --check
+Validate and report what would be embedded without writing output.
+.TP
+.BI --print-assets
+Print each source asset, canonical path, byte size, and MIME type.
+.TP
+.BI --version
+Print the build version.
+.SH SEE ALSO
+.BR i3lock (1),
+.BR scene-preview (1)
