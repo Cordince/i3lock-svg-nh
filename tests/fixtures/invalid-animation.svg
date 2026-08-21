@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="64"
+     height="64"
+     viewBox="0 0 64 64">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1"
+           version="1"
+           fit="pixel"
+           background="#000000">
+      <layer ref="pulse" trigger="key">
+        <timeline duration-ms="0" restart="true">
+          <keyframe at="0" opacity="0"/>
+          <keyframe at="1" opacity="1"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <g id="pulse">
+    <rect width="64" height="64" fill="#ffffff"/>
+  </g>
+</svg>

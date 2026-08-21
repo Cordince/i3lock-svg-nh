@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="64"
+     height="64"
+     viewBox="0 0 64 64">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1"
+           version="1"
+           fit="pixel"
+           background="#000000">
+      <layer ref="missing" states="*"/>
+    </scene>
+  </metadata>
+  <g id="base">
+    <rect width="64" height="64" fill="#000000"/>
+  </g>
+</svg>

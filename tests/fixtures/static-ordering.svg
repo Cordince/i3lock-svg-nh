@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="5" height="1" viewBox="0 0 5 1">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="pixel" background="#000000">
+      <layer ref="base" states="*" static="true" z="0"/>
+      <layer ref="dynamic-red" states="input" z="1"/>
+      <layer ref="static-green-overlay" states="*" static="true" z="2"/>
+      <layer ref="dynamic-white" states="input" z="3"/>
+      <layer ref="static-blue-multiply" states="*" static="true" blend="multiply" z="4"/>
+      <layer ref="z-high-first" states="*" static="true" z="8"/>
+      <layer ref="z-low-later" states="*" static="true" z="7"/>
+      <layer ref="tie-red" states="*" static="true" z="9"/>
+      <layer ref="tie-green" states="*" static="true" z="9"/>
+    </scene>
+  </metadata>
+  <g id="base"><rect width="5" height="1" fill="#000000"/></g>
+  <g id="dynamic-red"><rect x="0" y="0" width="1" height="1" fill="#ff0000"/></g>
+  <g id="static-green-overlay"><rect x="0" y="0" width="1" height="1" fill="#00ff00"/></g>
+  <g id="dynamic-white"><rect x="1" y="0" width="1" height="1" fill="#ffffff"/></g>
+  <g id="static-blue-multiply"><rect x="1" y="0" width="1" height="1" fill="#0000ff"/></g>
+  <g id="z-high-first"><rect x="2" y="0" width="1" height="1" fill="#00ff00"/></g>
+  <g id="z-low-later"><rect x="2" y="0" width="1" height="1" fill="#ff0000"/></g>
+  <g id="tie-red"><rect x="3" y="0" width="1" height="1" fill="#ff0000"/></g>
+  <g id="tie-green"><rect x="3" y="0" width="1" height="1" fill="#00ff00"/></g>
+  <g id="unused"><rect x="4" y="0" width="1" height="1" fill="#202020"/></g>
+</svg>

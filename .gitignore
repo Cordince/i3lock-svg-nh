@@ -1,4 +1,10 @@
 i3lock
+scene-preview
+scene-tests
+scene-x11-tests
 *.o
 tags
 *.swp
+nohup.out
+scripts/
+tmp/

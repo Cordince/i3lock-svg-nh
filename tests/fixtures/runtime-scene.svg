@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100"
+     height="100"
+     viewBox="0 0 100 100">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1"
+           version="1"
+           fit="pixel"
+           background="#000000">
+      <layer ref="base" states="*" static="true"/>
+      <layer ref="input-layer" states="input">
+        <enter duration-ms="100" easing="linear" from-opacity="0" from-translate-x="-10"/>
+        <exit duration-ms="100" easing="linear" to-opacity="0" to-translate-x="10"/>
+      </layer>
+      <layer ref="key-layer" trigger="key">
+        <timeline duration-ms="100" restart="true" easing="linear">
+          <keyframe at="0" opacity="0" scale="0.5"/>
+          <keyframe at="0.5" opacity="1" scale="1"/>
+          <keyframe at="1" opacity="0" scale="1.5"/>
+        </timeline>
+      </layer>
+      <layer ref="back-layer" trigger="backspace">
+        <timeline duration-ms="100" restart="true" easing="linear">
+          <keyframe at="0" opacity="0" translate-x="10"/>
+          <keyframe at="0.5" opacity="1" translate-x="0"/>
+          <keyframe at="1" opacity="0" translate-x="-10"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <g id="base">
+    <rect width="100" height="100" fill="#000000"/>
+  </g>
+  <g id="input-layer">
+    <rect x="20" y="20" width="60" height="60" fill="#ffffff"/>
+  </g>
+  <g id="key-layer">
+    <circle cx="50" cy="50" r="20" fill="#ffffff"/>
+  </g>
+  <g id="back-layer">
+    <rect x="30" y="30" width="40" height="40" fill="#ffffff"/>
+  </g>
+</svg>

@@ -24,6 +24,9 @@
 #include <string.h>
 #include <ev.h>
 #include <sys/mman.h>
+#include <pthread.h>
+#include <fcntl.h>
+#include <errno.h>
 #include <xkbcommon/xkbcommon.h>
 #include <xkbcommon/xkbcommon-compose.h>
 #include <xkbcommon/xkbcommon-x11.h>
@@ -36,6 +39,7 @@
 #include "cursors.h"
 #include "unlock_indicator.h"
 #include "xinerama.h"
+#include "scene_renderer.h"
 
 #include "button.h"
 
@@ -55,6 +59,7 @@ uint32_t last_resolution[2];
 xcb_window_t win;
 static xcb_cursor_t cursor;
 static pam_handle_t *pam_handle;
+static char *auth_username = NULL;
 int input_position = 0;
 /* Holds the password you enter (in UTF-8). */
 static char password[512];
@@ -71,6 +76,21 @@ static struct ev_timer *dpms_timeout;
 static struct ev_timer *discard_passwd_timeout;
 extern unlock_state_t unlock_state;
 extern pam_state_t pam_state;
+static bool scene_mode = false;
+static char *scene_svg_path = NULL;
+static scene_renderer_t *scene_renderer = NULL;
+static struct ev_timer scene_frame_timer;
+static bool scene_frame_timer_initialized = false;
+static bool scene_frame_timer_running = false;
+static int auth_result_pipe[2] = {-1, -1};
+static struct ev_io auth_result_watcher;
+static pthread_t auth_thread;
+static bool auth_thread_running = false;
+typedef struct {
+    int result;
+} auth_result_msg_t;
+static unsigned char auth_result_buffer[sizeof(auth_result_msg_t)];
+static size_t auth_result_buffer_len = 0;
 
 static struct xkb_state *xkb_state;
 static struct xkb_context *xkb_context;
@@ -79,6 +99,13 @@ static struct xkb_compose_table *xkb_compose_table;
 static struct xkb_compose_state *xkb_compose_state;
 static uint8_t xkb_base_event;
 static uint8_t xkb_base_error;
+
+static int conv_callback(int num_msg, const struct pam_message **msg,
+                         struct pam_response **resp, void *appdata_ptr);
+static void clear_memory(void *ptr, size_t len);
+static void auth_success(void);
+static void auth_failure(void);
+static void start_async_authentication(void);
 
 cairo_surface_t *img = NULL;
 RsvgHandle *svg = NULL;
@@ -176,15 +203,59 @@ static bool load_compose_table(const char *locale) {
  *
  */
 static void clear_password_memory(void) {
-    /* A volatile pointer to the password buffer to prevent the compiler from
-     * optimizing this out. */
-    volatile char *vpassword = password;
-    for (int c = 0; c < sizeof(password); c++)
-        /* We store a non-random pattern which consists of the (irrelevant)
-         * index plus (!) the value of the beep variable. This prevents the
-         * compiler from optimizing the calls away, since the value of 'beep'
-         * is not known at compile-time. */
-        vpassword[c] = c + (int)beep;
+    clear_memory(password, sizeof(password));
+}
+
+static void clear_memory(void *ptr, size_t len) {
+#if defined(__GLIBC__) || defined(__linux__)
+    explicit_bzero(ptr, len);
+#else
+    volatile unsigned char *p = ptr;
+    while (len--)
+        *p++ = 0;
+#endif
+}
+
+typedef struct {
+    char *password_copy;
+    size_t password_len;
+    char *username_copy;
+} auth_request_t;
+
+static void *auth_worker_main(void *arg) {
+    auth_request_t *request = arg;
+    struct pam_conv worker_conv = {conv_callback, request->password_copy};
+    pam_handle_t *worker_pam = NULL;
+    int result = pam_start("i3lock", request->username_copy, &worker_conv, &worker_pam);
+
+    if (result == PAM_SUCCESS)
+        result = pam_authenticate(worker_pam, 0);
+    if (result == PAM_SUCCESS)
+        pam_setcred(worker_pam, PAM_REFRESH_CRED);
+    if (worker_pam)
+        pam_end(worker_pam, result);
+
+    auth_result_msg_t msg = {.result = result};
+    if (auth_result_pipe[1] >= 0) {
+        const unsigned char *p = (const unsigned char *)&msg;
+        size_t remaining = sizeof(msg);
+        while (remaining > 0) {
+            ssize_t written = write(auth_result_pipe[1], p, remaining);
+            if (written < 0) {
+                if (errno == EINTR)
+                    continue;
+                break;
+            }
+            p += written;
+            remaining -= (size_t)written;
+        }
+    }
+
+    clear_memory(request->password_copy, request->password_len + 1);
+    free(request->password_copy);
+    free(request->username_copy);
+    free(request);
+    return NULL;
 }
 
 ev_timer *start_timer(ev_timer *timer_obj, ev_tstamp timeout, ev_callback_t callback) {
@@ -212,6 +283,91 @@ ev_timer *stop_timer(ev_timer *timer_obj) {
     return NULL;
 }
 
+static int64_t monotonic_ms(void) {
+    if (main_loop) {
+        ev_now_update(main_loop);
+        return (int64_t)(ev_now(main_loop) * 1000.0);
+    }
+    return 0;
+}
+
+static scene_state_t current_scene_state(void) {
+    if (pam_state == STATE_PAM_VERIFY)
+        return SCENE_STATE_VERIFY;
+    if (pam_state == STATE_PAM_WRONG)
+        return SCENE_STATE_FAIL;
+    if (input_position > 0)
+        return SCENE_STATE_INPUT;
+    return SCENE_STATE_LOCKED;
+}
+
+static void scene_frame_cb(EV_P_ ev_timer *w, int revents);
+
+static void scene_stop_frame_timer(void) {
+    if (scene_frame_timer_running) {
+        ev_timer_stop(main_loop, &scene_frame_timer);
+        scene_frame_timer_running = false;
+        scene_renderer_note_frame_timer_stop(scene_renderer);
+    }
+}
+
+static void scene_start_frame_timer(void) {
+    if (!scene_mode || !scene_renderer || !main_loop)
+        return;
+    if (!scene_frame_timer_initialized) {
+        ev_timer_init(&scene_frame_timer, scene_frame_cb, 1.0 / 60.0, 0.0);
+        scene_frame_timer_initialized = true;
+    }
+    if (!scene_frame_timer_running) {
+        ev_timer_set(&scene_frame_timer, 1.0 / 60.0, 0.0);
+        ev_timer_start(main_loop, &scene_frame_timer);
+        scene_frame_timer_running = true;
+        scene_renderer_note_frame_timer_start(scene_renderer);
+    }
+}
+
+static void scene_render_now(void) {
+    if (!scene_mode || !scene_renderer)
+        return;
+    char error[SCENE_ERROR_LEN];
+    if (!scene_renderer_render(scene_renderer, monotonic_ms(), error)) {
+        fprintf(stderr, "[i3lock] scene render failed; keeping last valid frame: %s\n", error);
+        return;
+    }
+    if (scene_renderer_is_animating(scene_renderer))
+        scene_start_frame_timer();
+    else
+        scene_stop_frame_timer();
+}
+
+static void scene_set_state_now(void) {
+    if (!scene_mode || !scene_renderer)
+        return;
+    scene_renderer_set_state(scene_renderer, current_scene_state(), monotonic_ms());
+    scene_render_now();
+}
+
+static void scene_trigger_now(scene_trigger_t trigger) {
+    if (!scene_mode || !scene_renderer)
+        return;
+    scene_renderer_trigger(scene_renderer, trigger, monotonic_ms());
+    scene_render_now();
+}
+
+static void scene_frame_cb(EV_P_ ev_timer *w, int revents) {
+    (void)w;
+    (void)revents;
+    scene_frame_timer_running = false;
+    scene_render_now();
+}
+
+static void redraw_or_scene_state(void) {
+    if (scene_mode)
+        scene_set_state_now();
+    else
+        redraw_screen();
+}
+
 /*
  * Resets pam_state to STATE_PAM_IDLE 2 seconds after an unsuccessful
  * authentication event.
@@ -221,7 +377,7 @@ static void clear_pam_wrong(EV_P_ ev_timer *w, int revents) {
     DEBUG("clearing pam wrong\n");
     pam_state = STATE_PAM_IDLE;
     unlock_state = STATE_STARTED;
-    redraw_screen();
+    redraw_or_scene_state();
 
     /* Clear modifier string. */
     if (modifier_string != NULL) {
@@ -234,7 +390,15 @@ static void clear_pam_wrong(EV_P_ ev_timer *w, int revents) {
 }
 
 static void clear_indicator_cb(EV_P_ ev_timer *w, int revents) {
-    clear_indicator();
+    if (scene_mode) {
+        if (input_position == 0)
+            unlock_state = STATE_STARTED;
+        else
+            unlock_state = STATE_KEY_PRESSED;
+        scene_set_state_now();
+    } else {
+        clear_indicator();
+    }
     STOP_TIMER(clear_indicator_timeout);
 }
 
@@ -245,7 +409,9 @@ static void clear_input(void) {
 
     /* Hide the unlock indicator after a bit if the password buffer is
      * empty. */
-    if (unlock_indicator) {
+    if (scene_mode) {
+        scene_set_state_now();
+    } else if (unlock_indicator) {
         START_TIMER(clear_indicator_timeout, 1.0, clear_indicator_cb);
         unlock_state = STATE_BACKSPACE_ACTIVE;
         redraw_screen();
@@ -266,28 +432,14 @@ static void discard_passwd_cb(EV_P_ ev_timer *w, int revents) {
     STOP_TIMER(discard_passwd_timeout);
 }
 
-static void input_done(void) {
-    STOP_TIMER(clear_pam_wrong_timeout);
-    pam_state = STATE_PAM_VERIFY;
-    redraw_screen();
+static void auth_success(void) {
+    DEBUG("successfully authenticated\n");
+    clear_password_memory();
+    turn_monitors_on();
+    exit(0);
+}
 
-    if (pam_authenticate(pam_handle, 0) == PAM_SUCCESS) {
-        DEBUG("successfully authenticated\n");
-        clear_password_memory();
-        /* Turn the screen on, as it may have been turned off
-         * on release of the 'enter' key. */
-        turn_monitors_on();
-
-        /* PAM credentials should be refreshed, this will for example update any kerberos tickets.
-         * Related to credentials pam_end() needs to be called to cleanup any temporary
-         * credentials like kerberos /tmp/krb5cc_pam_* files which may of been left behind if the
-         * refresh of the credentials failed. */
-        pam_setcred(pam_handle, PAM_REFRESH_CRED);
-        pam_end(pam_handle, PAM_SUCCESS);
-
-        exit(0);
-    }
-
+static void auth_failure(void) {
     if (debug_mode)
         fprintf(stderr, "Authentication failure\n");
 
@@ -328,7 +480,9 @@ static void input_done(void) {
 
     pam_state = STATE_PAM_WRONG;
     clear_input();
-    if (unlock_indicator)
+    if (scene_mode)
+        scene_set_state_now();
+    else if (unlock_indicator)
         redraw_screen();
 
     /* Clear this state after 2 seconds (unless the user enters another
@@ -345,6 +499,74 @@ static void input_done(void) {
         xcb_bell(conn, 100);
         xcb_flush(conn);
     }
+}
+
+static void start_async_authentication(void) {
+    if (auth_thread_running)
+        return;
+
+    auth_request_t *request = calloc(1, sizeof(*request));
+    if (!request) {
+        fprintf(stderr, "[i3lock] could not allocate authentication request\n");
+        pam_state = STATE_PAM_WRONG;
+        auth_failure();
+        return;
+    }
+    request->password_len = strnlen(password, sizeof(password) - 1);
+    request->password_copy = calloc(request->password_len + 1, 1);
+    if (!request->password_copy) {
+        fprintf(stderr, "[i3lock] could not allocate authentication password copy\n");
+        free(request);
+        pam_state = STATE_PAM_WRONG;
+        auth_failure();
+        return;
+    }
+    request->username_copy = strdup(auth_username);
+    if (!request->username_copy) {
+        fprintf(stderr, "[i3lock] could not allocate authentication username copy\n");
+        clear_memory(request->password_copy, request->password_len + 1);
+        free(request->password_copy);
+        free(request);
+        pam_state = STATE_PAM_WRONG;
+        auth_failure();
+        return;
+    }
+    memcpy(request->password_copy, password, request->password_len);
+    input_position = 0;
+    clear_password_memory();
+    password[0] = '\0';
+
+    if (pthread_create(&auth_thread, NULL, auth_worker_main, request) != 0) {
+        fprintf(stderr, "[i3lock] could not start authentication worker\n");
+        clear_memory(request->password_copy, request->password_len + 1);
+        free(request->password_copy);
+        free(request->username_copy);
+        free(request);
+        pam_state = STATE_PAM_WRONG;
+        auth_failure();
+        return;
+    }
+    auth_thread_running = true;
+    scene_renderer_note_auth_worker_start(scene_renderer);
+}
+
+static void input_done(void) {
+    STOP_TIMER(clear_pam_wrong_timeout);
+    pam_state = STATE_PAM_VERIFY;
+    redraw_or_scene_state();
+
+    if (scene_mode) {
+        start_async_authentication();
+        return;
+    }
+
+    if (pam_authenticate(pam_handle, 0) == PAM_SUCCESS) {
+        pam_setcred(pam_handle, PAM_REFRESH_CRED);
+        pam_end(pam_handle, PAM_SUCCESS);
+        auth_success();
+    }
+
+    auth_failure();
 }
 
 static void redraw_timeout(EV_P_ ev_timer *w, int revents) {
@@ -374,6 +596,9 @@ static void handle_key_press(xcb_key_press_event_t *event) {
     int n;
     bool ctrl;
     bool composed = false;
+
+    if (scene_mode && pam_state == STATE_PAM_VERIFY)
+        return;
 
     ksym = xkb_state_key_get_one_sym(xkb_state, event->detail);
     ctrl = xkb_state_mod_name_is_active(xkb_state, XKB_MOD_NAME_CTRL, XKB_STATE_MODS_DEPRESSED);
@@ -417,7 +642,7 @@ static void handle_key_press(xcb_key_press_event_t *event) {
             }
             password[input_position] = '\0';
             unlock_state = STATE_KEY_PRESSED;
-            redraw_screen();
+            redraw_or_scene_state();
             input_done();
             skip_repeated_empty_password = true;
             return;
@@ -462,7 +687,12 @@ static void handle_key_press(xcb_key_press_event_t *event) {
          * empty. */
             START_TIMER(clear_indicator_timeout, 1.0, clear_indicator_cb);
             unlock_state = STATE_BACKSPACE_ACTIVE;
-            redraw_screen();
+            if (scene_mode) {
+                scene_set_state_now();
+                scene_trigger_now(SCENE_TRIGGER_BACKSPACE);
+            } else {
+                redraw_screen();
+            }
             unlock_state = STATE_KEY_PRESSED;
             return;
     }
@@ -489,7 +719,13 @@ static void handle_key_press(xcb_key_press_event_t *event) {
     input_position += n - 1;
     DEBUG("current password = %.*s\n", input_position, password);
 
-    if (unlock_indicator) {
+    if (scene_mode) {
+        unlock_state = STATE_KEY_ACTIVE;
+        scene_set_state_now();
+        scene_trigger_now(SCENE_TRIGGER_KEY);
+        unlock_state = STATE_KEY_PRESSED;
+        STOP_TIMER(clear_indicator_timeout);
+    } else if (unlock_indicator) {
         unlock_state = STATE_KEY_ACTIVE;
         redraw_screen();
         unlock_state = STATE_KEY_PRESSED;
@@ -597,14 +833,21 @@ void handle_screen_resize(void) {
 
     free(geom);
 
-    redraw_screen();
-
     uint32_t mask = XCB_CONFIG_WINDOW_WIDTH | XCB_CONFIG_WINDOW_HEIGHT;
     xcb_configure_window(conn, win, mask, last_resolution);
     xcb_flush(conn);
 
     xinerama_query_screens();
-    redraw_screen();
+    if (scene_mode) {
+        char error[SCENE_ERROR_LEN];
+        if (!scene_renderer_resize(scene_renderer, last_resolution[0], last_resolution[1], error)) {
+            fprintf(stderr, "[i3lock] scene resize failed; keeping last valid frame: %s\n", error);
+        } else {
+            scene_set_state_now();
+        }
+    } else {
+        redraw_screen();
+    }
 }
 
 /*
@@ -615,6 +858,7 @@ static int conv_callback(int num_msg, const struct pam_message **msg,
                          struct pam_response **resp, void *appdata_ptr) {
     if (num_msg == 0)
         return 1;
+    const char *pam_password = appdata_ptr ? (const char *)appdata_ptr : password;
 
     /* PAM expects an array of responses, one for each message */
     if ((*resp = calloc(num_msg, sizeof(struct pam_response))) == NULL) {
@@ -629,13 +873,50 @@ static int conv_callback(int num_msg, const struct pam_message **msg,
 
         /* return code is currently not used but should be set to zero */
         resp[c]->resp_retcode = 0;
-        if ((resp[c]->resp = strdup(password)) == NULL) {
+        if ((resp[c]->resp = strdup(pam_password)) == NULL) {
             perror("strdup");
             return 1;
         }
     }
 
     return 0;
+}
+
+static void auth_result_cb(EV_P_ struct ev_io *w, int revents) {
+    (void)w;
+    (void)revents;
+
+    while (auth_result_buffer_len < sizeof(auth_result_msg_t)) {
+        ssize_t n = read(auth_result_pipe[0],
+                         auth_result_buffer + auth_result_buffer_len,
+                         sizeof(auth_result_msg_t) - auth_result_buffer_len);
+        if (n > 0) {
+            auth_result_buffer_len += (size_t)n;
+            continue;
+        }
+        if (n == 0)
+            return;
+        if (errno == EINTR)
+            continue;
+        if (errno == EAGAIN || errno == EWOULDBLOCK)
+            return;
+        fprintf(stderr, "[i3lock] authentication result pipe read failed: %s\n", strerror(errno));
+        return;
+    }
+
+    auth_result_msg_t msg;
+    memcpy(&msg, auth_result_buffer, sizeof(msg));
+    auth_result_buffer_len = 0;
+
+    if (auth_thread_running) {
+        pthread_join(auth_thread, NULL);
+        auth_thread_running = false;
+        scene_renderer_note_auth_worker_completion(scene_renderer);
+    }
+    if (msg.result == PAM_SUCCESS)
+        auth_success();
+    else
+        auth_failure();
 }
 
 /*
@@ -695,6 +976,13 @@ static void xcb_check_cb(EV_P_ ev_check *w, int revents) {
 
             case XCB_VISIBILITY_NOTIFY:
                 handle_visibility_notify(conn, (xcb_visibility_notify_event_t *)event);
+                break;
+
+            case XCB_EXPOSE:
+                if (scene_mode) {
+                    xcb_expose_event_t *expose = (xcb_expose_event_t *)event;
+                    scene_renderer_expose(scene_renderer, expose->x, expose->y, expose->width, expose->height);
+                }
                 break;
 
             case XCB_MAP_NOTIFY:
@@ -785,11 +1073,17 @@ int main(int argc, char *argv[]) {
     char *username;
     char *image_path = NULL;
     char *svg_path = NULL;
+    char *validate_scene_path = NULL;
     int ret;
     struct pam_conv conv = {conv_callback, NULL};
     int curs_choice = CURS_NONE;
     int o;
     int optind = 0;
+    enum {
+        OPT_DEBUG = 256,
+        OPT_SCENE_SVG,
+        OPT_VALIDATE_SCENE
+    };
     struct option longopts[] = {
         {"version", no_argument, NULL, 'v'},
         {"nofork", no_argument, NULL, 'n'},
@@ -797,7 +1091,7 @@ int main(int argc, char *argv[]) {
         {"dpms", no_argument, NULL, 'd'},
         {"color", required_argument, NULL, 'c'},
         {"pointer", required_argument, NULL, 'p'},
-        {"debug", no_argument, NULL, 0},
+        {"debug", no_argument, NULL, OPT_DEBUG},
         {"help", no_argument, NULL, 'h'},
         {"no-unlock-indicator", no_argument, NULL, 'u'},
         {"image", required_argument, NULL, 'i'},
@@ -805,6 +1099,8 @@ int main(int argc, char *argv[]) {
         {"ignore-empty-password", no_argument, NULL, 'e'},
         {"inactivity-timeout", required_argument, NULL, 'I'},
         {"indicator-svg", required_argument, NULL, 's'},
+        {"scene-svg", required_argument, NULL, OPT_SCENE_SVG},
+        {"validate-scene", required_argument, NULL, OPT_VALIDATE_SCENE},
         {"show-failed-attempts", no_argument, NULL, 'f'},
         {NULL, no_argument, NULL, 0}
     };
@@ -813,6 +1109,7 @@ int main(int argc, char *argv[]) {
         err(EXIT_FAILURE, "getpwuid() failed");
     if ((username = pw->pw_name) == NULL)
         errx(EXIT_FAILURE, "pw->pw_name is NULL.\n");
+    auth_username = username;
 
     char *optstring = "hvnbdc:p:ui:teI:s:";
     while ((o = getopt_long(argc, argv, optstring, longopts, &optind)) != -1) {
@@ -850,6 +1147,13 @@ int main(int argc, char *argv[]) {
             case 's':
                 svg_path = strdup(optarg);
                 break;
+            case OPT_SCENE_SVG:
+                scene_svg_path = strdup(optarg);
+                scene_mode = true;
+                break;
+            case OPT_VALIDATE_SCENE:
+                validate_scene_path = strdup(optarg);
+                break;
             case 'u':
                 unlock_indicator = false;
                 break;
@@ -871,27 +1175,47 @@ int main(int argc, char *argv[]) {
             case 'e':
                 ignore_empty_password = true;
                 break;
-            case 0:
-                if (strcmp(longopts[optind].name, "debug") == 0)
-                    debug_mode = true;
+            case OPT_DEBUG:
+                debug_mode = true;
                 break;
 /*            case 'f':
                 show_failed_attempts = true;
                 break;*/
             default:
                 errx(EXIT_FAILURE, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
-                                   " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]");
+                                   " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
+                                   " [--scene-svg scene.svg] [--validate-scene scene.svg]");
         }
+    }
+
+    if (validate_scene_path) {
+        char error[SCENE_ERROR_LEN];
+        if (!scene_renderer_validate_file(validate_scene_path, error))
+            errx(EXIT_FAILURE, "invalid scene: %s", error);
+        return EXIT_SUCCESS;
+    }
+
+    if (scene_mode && (image_path || svg_path || tile)) {
+        errx(EXIT_FAILURE,
+             "--scene-svg cannot be combined with legacy -i/--image, -t/--tiling, or -s/--indicator-svg options");
     }
 
     /* We need (relatively) random numbers for highlighting a random part of
      * the unlock indicator upon keypresses. */
     srand(time(NULL));
 
-    /* Initialize PAM */
-    ret = pam_start("i3lock", username, &conv, &pam_handle);
-    if (ret != PAM_SUCCESS)
-        errx(EXIT_FAILURE, "PAM: %s", pam_strerror(pam_handle, ret));
+    if (scene_mode) {
+        pam_handle_t *preflight_pam = NULL;
+        ret = pam_start("i3lock", username, &conv, &preflight_pam);
+        if (ret != PAM_SUCCESS)
+            errx(EXIT_FAILURE, "PAM: %s", pam_strerror(preflight_pam, ret));
+        pam_end(preflight_pam, PAM_SUCCESS);
+    } else {
+        /* Initialize PAM */
+        ret = pam_start("i3lock", username, &conv, &pam_handle);
+        if (ret != PAM_SUCCESS)
+            errx(EXIT_FAILURE, "PAM: %s", pam_strerror(pam_handle, ret));
+    }
 
 /* Using mlock() as non-super-user seems only possible in Linux. Users of other
  * operating systems should use encrypted swap/no swap (or remove the ifdef and
@@ -986,7 +1310,7 @@ int main(int argc, char *argv[]) {
     xcb_change_window_attributes(conn, screen->root, XCB_CW_EVENT_MASK,
                                  (uint32_t[]){XCB_EVENT_MASK_STRUCTURE_NOTIFY});
 
-    if (image_path) {
+    if (!scene_mode && image_path) {
         /* Create a pixmap to render on, fill it with the background color */
         img = cairo_image_surface_create_from_png(image_path);
         /* In case loading failed, we just pretend no -i was specified. */
@@ -997,41 +1321,62 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    /* Load SVG */
-    GError* e = NULL;
-    if (svg_path == NULL) {
-        svg = rsvg_handle_new_from_data(button_svg, sizeof(button_svg), &e);
-    } else {
-       svg = rsvg_handle_new_from_file(svg_path, &e);
-    }
-
-    if(e != NULL) {
-        errx(EXIT_FAILURE, "Could not load indicator SVG: %s", e->message);
-    }
-
-    for(;anim_layer_count < 100; anim_layer_count++) {
-        char anim_id[9];
-        snprintf(anim_id, sizeof(anim_id), "#anim%02d", anim_layer_count);
-
-        if(rsvg_handle_has_sub(svg, anim_id) != TRUE) {
-            break;
+    xcb_pixmap_t bg_pixmap;
+    if (scene_mode) {
+        char error[SCENE_ERROR_LEN];
+        if (!scene_renderer_create_x11(scene_svg_path,
+                                       conn,
+                                       screen,
+                                       last_resolution[0],
+                                       last_resolution[1],
+                                       &scene_renderer,
+                                       error)) {
+            errx(EXIT_FAILURE, "Could not load scene SVG: %s", error);
         }
-    }
+        scene_renderer_set_state(scene_renderer, SCENE_STATE_LOCKED, 0);
+        if (!scene_renderer_render(scene_renderer, 0, error))
+            errx(EXIT_FAILURE, "Could not render initial scene frame: %s", error);
+        bg_pixmap = scene_renderer_current_pixmap(scene_renderer);
+    } else {
+        /* Load SVG */
+        GError* e = NULL;
+        if (svg_path == NULL) {
+            svg = rsvg_handle_new_from_data(button_svg, sizeof(button_svg), &e);
+        } else {
+           svg = rsvg_handle_new_from_file(svg_path, &e);
+        }
 
-    if(rsvg_handle_has_sub(svg, "#remove_background") == TRUE) {
-        remove_background = true;
-    }
+        if(e != NULL) {
+            errx(EXIT_FAILURE, "Could not load indicator SVG: %s", e->message);
+        }
 
-    if(rsvg_handle_has_sub(svg, "#sequential_animation") == TRUE) {
-        sequential_animation = true;
-    }
+        for(;anim_layer_count < 100; anim_layer_count++) {
+            char anim_id[9];
+            snprintf(anim_id, sizeof(anim_id), "#anim%02d", anim_layer_count);
 
-    /* Pixmap on which the image is rendered to (if any) */
-    xcb_pixmap_t bg_pixmap = draw_image(last_resolution);
+            if(rsvg_handle_has_sub(svg, anim_id) != TRUE) {
+                break;
+            }
+        }
+
+        if(rsvg_handle_has_sub(svg, "#remove_background") == TRUE) {
+            remove_background = true;
+        }
+
+        if(rsvg_handle_has_sub(svg, "#sequential_animation") == TRUE) {
+            sequential_animation = true;
+        }
+
+        /* Pixmap on which the image is rendered to (if any) */
+        bg_pixmap = draw_image(last_resolution);
+    }
 
     /* open the fullscreen window, already with the correct pixmap in place */
     win = open_fullscreen_window(conn, screen, color, bg_pixmap);
-    xcb_free_pixmap(conn, bg_pixmap);
+    if (scene_mode)
+        scene_renderer_set_window(scene_renderer, win);
+    else
+        xcb_free_pixmap(conn, bg_pixmap);
 
     pid_t pid = fork();
     /* The pid == -1 case is intentionally ignored here:
@@ -1072,6 +1417,18 @@ int main(int argc, char *argv[]) {
 
     ev_prepare_init(xcb_prepare, xcb_prepare_cb);
     ev_prepare_start(main_loop, xcb_prepare);
+
+    if (scene_mode) {
+        if (pipe2(auth_result_pipe, O_CLOEXEC) != 0)
+            err(EXIT_FAILURE, "Could not create authentication result pipe");
+        int flags = fcntl(auth_result_pipe[0], F_GETFL, 0);
+        if (flags >= 0)
+            fcntl(auth_result_pipe[0], F_SETFL, flags | O_NONBLOCK);
+        ev_io_init(&auth_result_watcher, auth_result_cb, auth_result_pipe[0], EV_READ);
+        ev_io_start(main_loop, &auth_result_watcher);
+        if (scene_renderer_is_animating(scene_renderer))
+            scene_start_frame_timer();
+    }
 
     /* Invoke the event callback once to catch all the events which were
      * received up until now. ev will only pick up new events (when the X11

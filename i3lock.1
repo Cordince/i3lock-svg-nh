@@ -30,6 +30,10 @@ i3lock \- improved screen locker
 .RB [\|\-e\|]
 .RB [\|\-I\|]
 .RB [\|\-f\|]
+.RB [\|\-\-scene-svg
+.IR scene.svg \|]
+.RB [\|\-\-validate-scene
+.IR scene.svg \|]
 
 .SH DESCRIPTION
 .B i3lock
@@ -124,6 +128,16 @@ Show the number of failed attempts, if any.
 .B \-\-debug
 Enables debug logging.
 Note, that this will log the password used for authentication to stdout.
+
+.TP
+.BI \-\-scene-svg= path
+Use the retained-mode scene-v1 SVG renderer. This option cannot be combined with
+legacy \-i/\-\-image, \-t/\-\-tiling, or \-s/\-\-indicator-svg options.
+
+.TP
+.BI \-\-validate-scene= path
+Parse and validate a scene-v1 SVG, print a concise summary, and exit without
+locking the screen.
 
 .SH SEE ALSO
 .IR xautolock(1)

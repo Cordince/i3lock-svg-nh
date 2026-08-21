@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920"
+     height="1080"
+     viewBox="0 0 1920 1080">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1"
+           version="1"
+           fit="pixel"
+           background="#05070a">
+      <layer ref="base" states="*" static="true"/>
+
+      <layer ref="idle-overlay" states="locked input">
+        <enter duration-ms="220"
+               easing="ease-out"
+               from-opacity="0"
+               from-scale="0.97"/>
+        <exit duration-ms="160"
+              easing="ease-in"
+              to-opacity="0"
+              to-scale="1.02"/>
+      </layer>
+
+      <layer ref="verify-spinner"
+             states="verify"
+             blend="screen"
+             origin-x="960"
+             origin-y="540">
+        <timeline when="visible"
+                  duration-ms="1000"
+                  loop="true"
+                  easing="linear">
+          <keyframe at="0" opacity="1" rotation-deg="0"/>
+          <keyframe at="1" opacity="1" rotation-deg="360"/>
+        </timeline>
+      </layer>
+
+      <layer ref="failure-band" states="fail" blend="multiply">
+        <enter duration-ms="180"
+               easing="ease-out"
+               from-opacity="0"
+               from-translate-y="-20"/>
+        <exit duration-ms="180"
+              easing="ease-in"
+              to-opacity="0"
+              to-translate-y="20"/>
+      </layer>
+
+      <layer ref="key-flash"
+             trigger="key"
+             blend="screen"
+             origin-x="960"
+             origin-y="540">
+        <timeline duration-ms="250" restart="true">
+          <keyframe at="0" opacity="0" scale="0.85"/>
+          <keyframe at="0.25" opacity="1" scale="1"/>
+          <keyframe at="1" opacity="0" scale="1.18"/>
+        </timeline>
+      </layer>
+
+      <layer ref="backspace-flash" trigger="backspace" origin-x="960" origin-y="540">
+        <timeline duration-ms="220" restart="true">
+          <keyframe at="0" opacity="0" translate-x="20"/>
+          <keyframe at="0.20" opacity="1" translate-x="0"/>
+          <keyframe at="1" opacity="0" translate-x="-20"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+
+  <defs>
+    <linearGradient id="panel-gradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#122033"/>
+      <stop offset="1" stop-color="#0b1018"/>
+    </linearGradient>
+    <radialGradient id="pulse-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#88f7ff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#88f7ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="panel-clip">
+      <rect x="560" y="328" width="800" height="424" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g id="base">
+    <rect width="1920" height="1080" fill="#05070a"/>
+    <image x="0"
+           y="0"
+           width="2"
+           height="2"
+           image-rendering="pixelated"
+           href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVR4nGP4z8DwHwwZGP6DAQBJyAn3FGMynQAAAABJRU5ErkJggg=="/>
+    <rect x="560" y="328" width="800" height="424" fill="url(#panel-gradient)" clip-path="url(#panel-clip)"/>
+    <path d="M560 410 H1360 M560 494 H1360 M560 578 H1360 M560 662 H1360"
+          stroke="#1b3148"
+          stroke-width="2"
+          opacity="0.8"/>
+    <path d="M640 328 V752 M760 328 V752 M880 328 V752 M1000 328 V752 M1120 328 V752 M1240 328 V752"
+          stroke="#16263a"
+          stroke-width="2"
+          opacity="0.65"/>
+  </g>
+
+  <g id="idle-overlay" style="display:none">
+    <rect x="620" y="388" width="680" height="304" fill="none" stroke="#9cc9ff" stroke-width="3" opacity="0.8"/>
+    <circle cx="960" cy="540" r="96" fill="none" stroke="#55d4ff" stroke-width="8" opacity="0.72"/>
+    <path d="M910 540 H1010 M960 490 V590" stroke="#d8f6ff" stroke-width="6" stroke-linecap="round"/>
+    <text x="960" y="704"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="28"
+          fill="#c9e6ff">LOCKED</text>
+  </g>
+
+  <g id="verify-spinner" filter="url(#soft-glow)">
+    <circle cx="960" cy="540" r="116" fill="none" stroke="#24445d" stroke-width="14"/>
+    <path d="M960 424 A116 116 0 0 1 1076 540"
+          fill="none"
+          stroke="#80f7ff"
+          stroke-width="16"
+          stroke-linecap="round"/>
+    <circle cx="1076" cy="540" r="12" fill="#ffffff"/>
+  </g>
+
+  <g id="failure-band">
+    <rect x="560" y="496" width="800" height="88" fill="#8b1424" opacity="0.86"/>
+    <path d="M610 540 H1310" stroke="#f3a5ad" stroke-width="3" stroke-dasharray="18 12"/>
+    <text x="960" y="550"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="30"
+          fill="#ffe3e6">AUTHENTICATION FAILED</text>
+  </g>
+
+  <g id="key-flash" filter="url(#soft-glow)">
+    <circle cx="960" cy="540" r="150" fill="url(#pulse-gradient)"/>
+    <circle cx="960" cy="540" r="72" fill="none" stroke="#bdfdff" stroke-width="5"/>
+  </g>
+
+  <g id="backspace-flash">
+    <path d="M800 540 L870 480 H1130 V600 H870 Z"
+          fill="#ff7b8d"
+          opacity="0.82"/>
+    <path d="M930 504 L1010 584 M1010 504 L930 584"
+          stroke="#2b050b"
+          stroke-width="14"
+          stroke-linecap="round"/>
+  </g>
+</svg>

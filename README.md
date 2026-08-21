@@ -97,6 +97,24 @@ example:
 ./i3lock -i examples/Cordince/*dark_letters.png \
          -s examples/Cordince/*i3lock.svg 
 
+Retained scene SVG renderer
+---------------------------
+The new retained-mode scene renderer is selected with `--scene-svg` and is
+documented in `docs/scene-v1.md`. Validate and preview a self-contained scene
+without locking the screen:
+
+./i3lock --validate-scene examples/scene-v1.svg
+./scene-preview --scene examples/scene-v1.svg --size 1920x1080 \
+                --state verify --time-ms 500 --output /tmp/scene-preview.png
+./scene-preview --scene examples/scene-v1.svg --size 1920x1080 \
+                --state input --trigger key --trigger-at-ms 100 \
+                --time-ms 225 --output /tmp/key-midpoint.png
+
+Scene layer visibility is controlled by scene metadata at runtime. Referenced
+groups may be hidden in the editor with `display:none`; validation, preview, and
+locking normalize those layer containers in memory while preserving hidden
+descendant artwork.
+
 Ideas for animations:
 --------------------
 The planets - displays solar system orbits with the various planets
