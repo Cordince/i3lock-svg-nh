@@ -60,6 +60,72 @@ and `--state-at-ms` schedule the trigger or state change on that same timeline.
 When neither transition nor trigger timing is supplied, the requested `--state`
 is active at time zero for compatibility with the original preview command.
 
+Inspect the retained cache layout without rendering a PNG:
+
+```sh
+./scene-preview \
+    --scene examples/showcase/showcase.scene.svg \
+    --size 1280x720 \
+    --inspect \
+    --inspect-json /tmp/showcase.inspect.json
+```
+
+Render a deterministic animation sequence and contact sheet:
+
+```sh
+./scene-preview \
+    --scene examples/showcase/showcase.scene.svg \
+    --size 1280x720 \
+    --initial-state locked \
+    --state-change 500:input \
+    --trigger-event 800:key \
+    --trigger-event 1200:backspace \
+    --state-change 1600:verify \
+    --state-change 3000:fail \
+    --duration-ms 4000 \
+    --fps 60 \
+    --output-dir /tmp/showcase-frames \
+    --contact-sheet /tmp/showcase-contact.png \
+    --contact-columns 6 \
+    --contact-every 15
+```
+
+Multiple scheduled actions are sorted by simulated time and then by command-line
+order. If a state change and trigger share the same timestamp, the command-line
+order decides which is applied first. Sequence mode renders frame zero, uses no
+wall-clock sleeps, and writes `manifest.json` next to zero-padded
+`frame_000000.png` frame files.
+
+Benchmark the retained compositor without writing PNGs:
+
+```sh
+./scene-preview \
+    --scene examples/showcase/showcase.scene.svg \
+    --size 3840x2160 \
+    --benchmark \
+    --benchmark-frames 600 \
+    --benchmark-fps 60
+```
+
+The benchmark runs both the normal bounded-cache renderer and the diagnostic
+full-target reference cache mode. It reports load-stage timings, frame
+composition percentiles, exact retained userspace cache bytes, fallback counts,
+and renderer counters.
+
+Pack an editable SVG with linked PNGs into a runtime-safe self-contained scene:
+
+```sh
+./scene-pack \
+    --input examples/showcase/source.svg \
+    --output /tmp/showcase.scene.svg \
+    --print-assets
+```
+
+Use `--check` to validate what would be embedded without writing output, and
+`--asset-root PATH` when referenced PNGs should be constrained to a directory
+other than the source SVG's directory. Existing outputs are not overwritten
+unless `--force` is supplied.
+
 Use the retained scene renderer for the lock:
 
 ```sh
@@ -216,9 +282,89 @@ The XML parser is configured not to fetch network resources. The normalized SVG
 is loaded into librsvg from memory without a filesystem base URL.
 
 Validation prints a concise summary including the scene dimensions, layer
-count, fit mode, and estimated retained-cache memory. The estimate is based on
-Phase 1 target-sized ARGB layer caches plus the precomposed/output surfaces; it
-is intended for authoring sanity checks, not exact allocator accounting.
+count, fit mode, and exact retained-cache memory for the selected target size.
+Use `scene-preview --inspect` for the full per-layer table.
+
+## Authoring Workflow
+
+1. Create or edit `source.svg` in Inkscape or another SVG editor.
+2. Keep raster artwork linked during editing, usually with relative PNG paths.
+3. Add or edit the `scene-v1` metadata in `<metadata>`.
+4. Run `scene-pack` to embed linked PNG bytes and produce a self-contained
+   runtime scene SVG.
+5. Run `scene-preview --inspect` and optionally `--inspect-json` to review
+   bounds, cache bytes, static-prefix membership, and fallbacks.
+6. Render a single preview frame, a trigger midpoint, or a full frame sequence
+   with a contact sheet.
+7. Validate with `DISPLAY= ./i3lock --validate-scene packed.scene.svg`.
+8. Lock with `./i3lock --scene-svg packed.scene.svg`.
+
+The runtime rejects linked resources because the locker must not discover a
+missing file, changed file, blocked network access, or unsafe external resource
+after it has grabbed input. `scene-pack` is the development-time tool that turns
+an editable source SVG into the strict self-contained format the runtime
+accepts. It embeds PNG bytes exactly as `data:image/png;base64,...`, rejects
+network and `file:` URLs, rejects paths outside the asset root, rejects non-PNG
+linked images for scene-v1, removes editor-only absolute path hints such as
+`absref`, writes atomically, and validates the completed output through the same
+scene loader used by i3lock.
+
+`examples/showcase/source.svg` is an editable linked-PNG source. Its packed
+counterpart, `examples/showcase/showcase.scene.svg`, is the runtime-safe file.
+
+## Tight-Bounds Caching
+
+Phase 2 uses tight layer-bounds caches by default. At load or resize, the
+renderer queries librsvg for each referenced layer's ink geometry from the
+normalized in-memory SVG, maps it through the selected fit transform, expands it
+to a conservative integer device-pixel rectangle with antialiasing padding, and
+rasterizes only that rectangle. The cached surface stores its device-space
+origin so composition is equivalent to painting a target-sized transparent
+surface.
+
+The safe leading static-prefix optimization remains in place. The normal cache
+layout is:
+
+- one target-sized precomposed static base containing the background and safe
+  leading static layers,
+- one bounded ARGB surface for each remaining layer where geometry is reliable,
+- empty cache records for offscreen or zero-ink layers,
+- full-target fallback caches only when correctness requires them,
+- persistent front/back X pixmaps for the X11 renderer.
+
+Full-target fallback is recorded, not silent. Typical reasons include failed or
+nonfinite librsvg geometry, integer or byte-size overflow, unreasonable bounds,
+or a compatibility path where reliable ink extents are unavailable. Layers that
+are fully outside the target and have no runtime transform use empty caches
+instead of full-screen transparent surfaces.
+
+Pixel mode keeps scene mapping on integer device pixels whenever possible, so a
+matching-size embedded PNG preserves exact pixel values. Fit modes with
+fractional scaling may have renderer-library antialias differences at one-pixel
+boundaries; tests cap those differences tightly and report diff counts, maximum
+channel deltas, and bounds.
+
+Filter output depends on librsvg's reported ink geometry. The cache adds
+padding and preserves visible filter output in tested cases. If geometry is not
+trustworthy, use the inspection fallback reason to identify the layer and either
+simplify the authored bounds or accept the full-target fallback.
+
+## Inspection JSON
+
+`scene-preview --inspect-json PATH` writes deterministic JSON with schema
+`i3lock-svg-nh-scene-inspect-v1`. It contains:
+
+- `scene`: source path, scene dimensions, and fit mode.
+- `target`: target width, height, and fit transform.
+- `memory`: normalized SVG bytes, `RsvgHandle` count, bounded layer bytes,
+  full-target fallback bytes, static-base bytes, headless output-buffer bytes,
+  measurable Cairo/XCB output bytes, estimated X pixmap bytes, total retained
+  userspace image bytes, total estimated renderer bytes, and cache class
+  counts.
+- `layers`: ordered records with the layer reference, source ink rectangle,
+  device cache rectangle, cache origin, byte count, bounded/full-target/empty
+  classification, fallback reason, static-prefix membership, blend mode, z
+  position, and activation source.
 
 ## Runtime Model
 
@@ -259,16 +405,16 @@ available, with a volatile fallback otherwise. Input is ignored while the verify
 worker is active, which keeps the verify animation running without changing the
 password.
 
-## Phase 1 Limitations
+## Remaining Limitations
 
 The renderer treats the SVG as one root-screen scene. It does not implement path
 morphing, DOM mutation, animated filters, animated text layout, SMIL, CSS
 animation, or JavaScript.
 
-Layer surfaces are target-sized ARGB buffers in Phase 1. This is memory-heavier
-than tight layer-bounds surfaces, but gives predictable alignment across fit
-modes and makes frame rendering independent of librsvg. Librsvg is called only
-when the scene loads or the root size changes.
+The compositor is CPU/Cairo-based; there is no GPU or OpenGL renderer, Wayland
+backend, audio, video, browser engine, CSS animation executor, JavaScript
+runtime, path morphing, runtime SVG DOM mutation, or scene-v2 schema.
 
-Phase 1 does not expose production command-line diagnostics beyond
-`--validate-scene`; retained-renderer counters are currently test-facing.
+The scene is one root-sized surface. Multi-monitor roots are handled as one
+combined root layout. Very large SVGs, enormous filter bounds, or geometry that
+librsvg cannot describe safely may use full-target fallback caches.

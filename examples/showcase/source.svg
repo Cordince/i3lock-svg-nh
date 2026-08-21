@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     width="1280"
+     height="720"
+     viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="panel-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f8ff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#5dd4ff" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="warn-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3040" stop-opacity="0.1"/>
+      <stop offset="0.5" stop-color="#ff3040" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ff3040" stop-opacity="0.1"/>
+    </linearGradient>
+    <clipPath id="panel-clip">
+      <rect x="420" y="210" width="440" height="260" rx="18"/>
+    </clipPath>
+    <mask id="ring-mask">
+      <rect width="1280" height="720" fill="#000000"/>
+      <circle cx="640" cy="360" r="104" fill="#ffffff"/>
+      <circle cx="640" cy="360" r="66" fill="#000000"/>
+    </mask>
+    <filter id="small-glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1"
+           version="1"
+           fit="pixel"
+           background="#05070b">
+      <layer ref="raster-base" states="*" static="true" z="0"/>
+      <layer ref="grid-overlay" states="*" static="true" z="1"/>
+      <layer ref="idle-panel" states="locked input" blend="screen" z="2">
+        <enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.96"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="key-pulse" trigger="key" blend="screen" z="3" origin-x="640" origin-y="360">
+        <timeline duration-ms="260" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" scale="0.74"/>
+          <keyframe at="0.28" opacity="1" scale="1"/>
+          <keyframe at="1" opacity="0" scale="1.22"/>
+        </timeline>
+      </layer>
+      <layer ref="backspace-sweep" trigger="backspace" blend="overlay" z="4">
+        <timeline duration-ms="240" restart="true" easing="ease-in-out">
+          <keyframe at="0" opacity="0" translate-x="34"/>
+          <keyframe at="0.3" opacity="0.88" translate-x="0"/>
+          <keyframe at="1" opacity="0" translate-x="-52"/>
+        </timeline>
+      </layer>
+      <layer ref="verify-spinner" states="verify" blend="screen" z="5" origin-x="640" origin-y="360">
+        <timeline when="visible" duration-ms="1200" loop="true" easing="linear">
+          <keyframe at="0" opacity="0.75" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.75" rotation-deg="360"/>
+        </timeline>
+      </layer>
+      <layer ref="fail-band" states="fail" blend="multiply" z="6">
+        <enter duration-ms="180" easing="ease-out" from-opacity="0" from-translate-y="-18"/>
+        <exit duration-ms="260" easing="ease-in" to-opacity="0" to-translate-y="22"/>
+      </layer>
+      <layer ref="corner-badge" states="*" static="true" z="7"/>
+    </scene>
+  </metadata>
+  <g id="raster-base" inkscape:groupmode="layer" inkscape:label="Raster base">
+    <image x="0"
+           y="0"
+           width="1280"
+           height="720"
+           href="background.png"
+           sodipodi:absref="/private/editor/path/background.png"/>
+  </g>
+  <g id="grid-overlay" inkscape:groupmode="layer" inkscape:label="Static grid">
+    <rect x="0" y="0" width="1280" height="720" fill="#000000" opacity="0.18"/>
+    <g stroke="#78e6ff" stroke-width="1" opacity="0.16">
+      <path d="M 160 0 V 720 M 320 0 V 720 M 480 0 V 720 M 640 0 V 720 M 800 0 V 720 M 960 0 V 720 M 1120 0 V 720"/>
+      <path d="M 0 120 H 1280 M 0 240 H 1280 M 0 360 H 1280 M 0 480 H 1280 M 0 600 H 1280"/>
+    </g>
+  </g>
+  <g id="idle-panel"
+     inkscape:groupmode="layer"
+     inkscape:label="Runtime idle panel"
+     style="display:none">
+    <rect x="420" y="210" width="440" height="260" rx="18" fill="url(#panel-grad)" stroke="#c9f6ff" stroke-width="2" opacity="0.82"/>
+    <g clip-path="url(#panel-clip)">
+      <path d="M 430 430 C 520 320 600 410 690 300 C 755 220 820 260 870 230"
+            fill="none"
+            stroke="#7cf2ff"
+            stroke-width="4"
+            opacity="0.48"/>
+      <path d="M 410 475 L 890 205" stroke="#ffffff" stroke-width="30" opacity="0.05"/>
+    </g>
+    <circle cx="640" cy="360" r="94" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.38"/>
+    <circle cx="640" cy="360" r="66" fill="none" stroke="#5dd4ff" stroke-width="8" opacity="0.18"/>
+    <text x="640" y="368" font-family="sans-serif" font-size="28" text-anchor="middle" fill="#eafcff" opacity="0.78">LOCKED</text>
+    <rect x="455" y="438" width="80" height="8" fill="#ffffff" opacity="0.1" visibility="hidden"/>
+  </g>
+  <g id="key-pulse" inkscape:groupmode="layer" inkscape:label="Key pulse">
+    <circle cx="640" cy="360" r="86" fill="#7cf2ff" opacity="0.16" filter="url(#small-glow)"/>
+    <circle cx="640" cy="360" r="46" fill="none" stroke="#ffffff" stroke-width="9" opacity="0.8"/>
+  </g>
+  <g id="backspace-sweep" inkscape:groupmode="layer" inkscape:label="Backspace sweep">
+    <path d="M 508 334 H 716 C 731 334 743 346 743 361 C 743 376 731 388 716 388 H 508 L 456 361 Z"
+          fill="#ff9a5a"
+          opacity="0.76"/>
+    <path d="M 548 349 L 576 376 M 576 349 L 548 376"
+          stroke="#111318"
+          stroke-width="9"
+          stroke-linecap="round"
+          opacity="0.72"/>
+  </g>
+  <g id="verify-spinner" inkscape:groupmode="layer" inkscape:label="Verify spinner">
+    <circle cx="640" cy="360" r="106" fill="#70f7ff" opacity="0.16" filter="url(#small-glow)"/>
+    <g mask="url(#ring-mask)">
+      <path d="M 640 244 A 116 116 0 0 1 756 360 L 684 360 A 44 44 0 0 0 640 316 Z" fill="#ffffff" opacity="0.9"/>
+      <path d="M 640 476 A 116 116 0 0 1 524 360 L 596 360 A 44 44 0 0 0 640 404 Z" fill="#5dd4ff" opacity="0.55"/>
+    </g>
+  </g>
+  <g id="fail-band" inkscape:groupmode="layer" inkscape:label="Failure band">
+    <rect x="360" y="312" width="560" height="96" rx="12" fill="url(#warn-grad)"/>
+    <text x="640" y="374" font-family="sans-serif" font-size="32" text-anchor="middle" fill="#fff4f4">AUTHENTICATION FAILED</text>
+  </g>
+  <g id="corner-badge" inkscape:groupmode="layer" inkscape:label="Static late badge">
+    <rect x="1038" y="622" width="170" height="38" rx="7" fill="#05070b" opacity="0.55"/>
+    <path d="M 1060 642 H 1108 M 1084 626 V 658" stroke="#78e6ff" stroke-width="3" opacity="0.72"/>
+    <text x="1130" y="649" font-family="monospace" font-size="16" fill="#c9f6ff" opacity="0.82">scene-v1</text>
+  </g>
+</svg>

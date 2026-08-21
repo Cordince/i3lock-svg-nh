@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2040ff"/>
+      <stop offset="1" stop-color="#ffcc40"/>
+    </linearGradient>
+    <clipPath id="clip"><circle cx="30" cy="10" r="6"/></clipPath>
+    <mask id="soft-mask">
+      <rect x="0" y="0" width="40" height="30" fill="#000000"/>
+      <circle cx="30" cy="10" r="5" fill="#ffffff"/>
+    </mask>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="pixel" background="#000000">
+      <layer ref="base" states="*" static="true" z="0"/>
+      <layer ref="hidden-overlay" states="locked input" z="1">
+        <enter duration-ms="200" easing="linear" from-opacity="0.5"/>
+        <exit duration-ms="200" easing="linear" to-opacity="0"/>
+      </layer>
+      <layer ref="translated" states="input" z="2" origin-x="12" origin-y="16">
+        <enter duration-ms="200" easing="linear" from-opacity="0.25" from-translate-x="-3" from-scale="0.75"/>
+        <exit duration-ms="200" easing="linear" to-opacity="0" to-translate-y="3"/>
+      </layer>
+      <layer ref="masked-gradient" states="fail" blend="screen" z="3"/>
+      <layer ref="verify-glow" states="verify" blend="screen" z="4">
+        <timeline when="visible" duration-ms="1000" loop="true" easing="linear">
+          <keyframe at="0" opacity="0.4" rotation-deg="0"/>
+          <keyframe at="0.5" opacity="1" rotation-deg="180"/>
+          <keyframe at="1" opacity="0.4" rotation-deg="360"/>
+        </timeline>
+      </layer>
+      <layer ref="key-flash" trigger="key" blend="add" z="5">
+        <timeline duration-ms="200" restart="true" easing="linear">
+          <keyframe at="0" opacity="0" scale="0.6"/>
+          <keyframe at="0.5" opacity="1" scale="1"/>
+          <keyframe at="1" opacity="0" scale="1.4"/>
+        </timeline>
+      </layer>
+      <layer ref="backspace-flash" trigger="backspace" blend="difference" z="6">
+        <timeline duration-ms="200" restart="true" easing="linear">
+          <keyframe at="0" opacity="0" translate-x="2"/>
+          <keyframe at="0.5" opacity="1" translate-x="0"/>
+          <keyframe at="1" opacity="0" translate-x="-2"/>
+        </timeline>
+      </layer>
+      <layer ref="offscreen" states="*" z="7"/>
+    </scene>
+  </metadata>
+  <g id="base">
+    <rect width="40" height="30" fill="#101820"/>
+    <image x="0" y="0" width="2" height="2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVR4nGP4z8DwHwwZGP6DAQBJyAn3FGMynQAAAABJRU5ErkJggg=="/>
+  </g>
+  <g id="hidden-overlay" display="none">
+    <rect x="5" y="5" width="30" height="20" rx="2" fill="url(#grad)" opacity="0.55"/>
+    <rect x="8" y="8" width="10" height="4" fill="#000000" visibility="hidden"/>
+  </g>
+  <g id="translated">
+    <rect x="7" y="12" width="10" height="8" fill="#00d080"/>
+    <path d="M 9 20 L 17 20 L 14 24 Z" fill="#ff4050"/>
+  </g>
+  <g id="masked-gradient" clip-path="url(#clip)" mask="url(#soft-mask)">
+    <rect x="22" y="2" width="16" height="16" fill="url(#grad)" opacity="0.8"/>
+  </g>
+  <g id="verify-glow">
+    <circle cx="20" cy="15" r="4" fill="#80ffff" filter="url(#glow)"/>
+    <rect x="19" y="7" width="2" height="8" fill="#ffffff"/>
+  </g>
+  <g id="key-flash">
+    <circle cx="12" cy="16" r="5" fill="#ffe060"/>
+  </g>
+  <g id="backspace-flash">
+    <rect x="23" y="19" width="11" height="4" fill="#60a0ff"/>
+  </g>
+  <g id="offscreen">
+    <rect x="1000" y="1000" width="4" height="4" fill="#ffffff"/>
+  </g>
+</svg>

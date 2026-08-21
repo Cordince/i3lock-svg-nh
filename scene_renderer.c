@@ -2,12 +2,15 @@
 
 #include <errno.h>
 #include <glib-object.h>
+#include <inttypes.h>
+#include <limits.h>
 #include <librsvg/rsvg.h>
 #include <math.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #ifndef SCENE_RENDERER_NO_X11
 #include <cairo/cairo-xcb.h>
@@ -18,6 +21,18 @@ typedef struct {
     cairo_surface_t *surface;
     double origin_x;
     double origin_y;
+    double source_ink_x;
+    double source_ink_y;
+    double source_ink_width;
+    double source_ink_height;
+    int cache_x;
+    int cache_y;
+    uint32_t cache_width;
+    uint32_t cache_height;
+    uint64_t cache_bytes;
+    scene_layer_cache_class_t cache_class;
+    char fallback_reason[192];
+    bool precomposed;
 } cached_layer_t;
 
 struct scene_renderer {
@@ -34,8 +49,10 @@ struct scene_renderer {
     cairo_surface_t *image_surface;
     bool *precomposed_layers;
     bool disable_static_precompose;
+    scene_renderer_cache_mode_t cache_mode;
     bool fail_next_render;
     scene_renderer_stats_t stats;
+    scene_renderer_memory_t memory;
 
     bool x11;
 #ifndef SCENE_RENDERER_NO_X11
@@ -50,12 +67,44 @@ struct scene_renderer {
     int front;
 };
 
+bool scene_renderer_print_summary(const scene_renderer_t *renderer, const char *path, FILE *out);
+
 static bool set_error(char error[SCENE_ERROR_LEN], const char *fmt, ...) {
     va_list args;
     va_start(args, fmt);
     vsnprintf(error, SCENE_ERROR_LEN, fmt, args);
     va_end(args);
     return false;
+}
+
+static uint64_t now_ns(void) {
+    struct timespec ts;
+    clock_gettime(CLOCK_MONOTONIC, &ts);
+    return (uint64_t)ts.tv_sec * 1000000000ull + (uint64_t)ts.tv_nsec;
+}
+
+static bool checked_mul_u64(uint64_t a, uint64_t b, uint64_t *out) {
+    if (a != 0 && b > UINT64_MAX / a)
+        return false;
+    *out = a * b;
+    return true;
+}
+
+static uint64_t image_surface_bytes(cairo_surface_t *surface) {
+    if (!surface)
+        return 0;
+    int stride = cairo_image_surface_get_stride(surface);
+    int height = cairo_image_surface_get_height(surface);
+    if (stride <= 0 || height <= 0)
+        return 0;
+    return (uint64_t)stride * (uint64_t)height;
+}
+
+static bool checked_argb_bytes(uint32_t width, uint32_t height, uint64_t *out) {
+    uint64_t pixels;
+    if (!checked_mul_u64(width, height, &pixels))
+        return false;
+    return checked_mul_u64(pixels, 4u, out);
 }
 
 static cairo_operator_t blend_to_operator(scene_blend_t blend) {
@@ -224,16 +273,223 @@ static void apply_scene_fit(cairo_t *cr, const scene_fit_transform_t *fit) {
     cairo_scale(cr, fit->scale_x, fit->scale_y);
 }
 
+static bool values_can_transform(const scene_value_set_t *values) {
+    return values->has_translate_x ||
+           values->has_translate_y ||
+           values->has_scale_x ||
+           values->has_scale_y ||
+           values->has_rotation_deg;
+}
+
+static bool layer_can_move_runtime(const scene_layer_t *layer) {
+    if (layer->trigger != SCENE_TRIGGER_NONE)
+        return true;
+    if (values_can_transform(&layer->enter.values) ||
+        values_can_transform(&layer->exit.values))
+        return true;
+    for (size_t i = 0; i < layer->timeline.keyframe_count; i++) {
+        if (values_can_transform(&layer->timeline.keyframes[i].values))
+            return true;
+    }
+    return false;
+}
+
+static void set_layer_fallback(cached_layer_t *cache, const char *fmt, ...) {
+    va_list args;
+    va_start(args, fmt);
+    vsnprintf(cache->fallback_reason, sizeof(cache->fallback_reason), fmt, args);
+    va_end(args);
+    cache->cache_class = SCENE_LAYER_CACHE_FULL_TARGET;
+    cache->cache_x = 0;
+    cache->cache_y = 0;
+    cache->cache_width = 0;
+    cache->cache_height = 0;
+}
+
+static bool query_layer_geometry(scene_renderer_t *renderer,
+                                 const scene_layer_t *layer,
+                                 cached_layer_t *cache,
+                                 char error[SCENE_ERROR_LEN]) {
+    char *id = fragment_id(layer->ref);
+    if (!id)
+        return set_error(error, "out of memory");
+
+    RsvgRectangle viewport = {0.0, 0.0, renderer->doc->width, renderer->doc->height};
+    RsvgRectangle ink;
+    RsvgRectangle logical;
+    GError *gerr = NULL;
+    uint64_t start = now_ns();
+    renderer->stats.layer_geometry_query_count++;
+    gboolean ok = rsvg_handle_get_geometry_for_layer(renderer->handle, id, &viewport, &ink, &logical, &gerr);
+    renderer->stats.layer_geometry_query_time_ns += now_ns() - start;
+    free(id);
+
+    if (!ok) {
+        if (gerr) {
+            set_layer_fallback(cache, "geometry query failed: %s", gerr->message);
+            g_error_free(gerr);
+        } else {
+            set_layer_fallback(cache, "geometry query failed");
+        }
+        return true;
+    }
+
+    if (!isfinite(ink.x) || !isfinite(ink.y) || !isfinite(ink.width) || !isfinite(ink.height)) {
+        set_layer_fallback(cache, "nonfinite layer geometry");
+        return true;
+    }
+
+    if ((ink.width <= 0.0 || ink.height <= 0.0) &&
+        isfinite(logical.x) && isfinite(logical.y) &&
+        isfinite(logical.width) && isfinite(logical.height) &&
+        logical.width > 0.0 && logical.height > 0.0) {
+        ink = logical;
+        snprintf(cache->fallback_reason,
+                 sizeof(cache->fallback_reason),
+                 "empty ink geometry; using logical bounds");
+    }
+
+    cache->source_ink_x = ink.x;
+    cache->source_ink_y = ink.y;
+    cache->source_ink_width = ink.width;
+    cache->source_ink_height = ink.height;
+    return true;
+}
+
+static bool plan_full_target_cache(scene_renderer_t *renderer,
+                                   cached_layer_t *cache,
+                                   const char *reason,
+                                   char error[SCENE_ERROR_LEN]) {
+    uint64_t bytes;
+    if (!checked_argb_bytes(renderer->width, renderer->height, &bytes))
+        return set_error(error, "target surface size overflows");
+    cache->cache_class = SCENE_LAYER_CACHE_FULL_TARGET;
+    if (reason && !cache->fallback_reason[0])
+        snprintf(cache->fallback_reason, sizeof(cache->fallback_reason), "%s", reason);
+    cache->cache_x = 0;
+    cache->cache_y = 0;
+    cache->cache_width = renderer->width;
+    cache->cache_height = renderer->height;
+    cache->cache_bytes = bytes;
+    return true;
+}
+
+static bool plan_bounded_cache(scene_renderer_t *renderer,
+                               const scene_layer_t *layer,
+                               cached_layer_t *cache,
+                               char error[SCENE_ERROR_LEN]) {
+    if (renderer->cache_mode == SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE)
+        return plan_full_target_cache(renderer, cache, "reference full-target cache mode", error);
+
+    if (!query_layer_geometry(renderer, layer, cache, error))
+        return false;
+    if (cache->cache_class == SCENE_LAYER_CACHE_FULL_TARGET)
+        return plan_full_target_cache(renderer, cache, NULL, error);
+
+    if (cache->source_ink_width <= 0.0 || cache->source_ink_height <= 0.0) {
+        cache->cache_class = SCENE_LAYER_CACHE_EMPTY;
+        snprintf(cache->fallback_reason, sizeof(cache->fallback_reason), "zero visible ink");
+        return true;
+    }
+
+    double min_x = renderer->fit.translate_x + cache->source_ink_x * renderer->fit.scale_x;
+    double min_y = renderer->fit.translate_y + cache->source_ink_y * renderer->fit.scale_y;
+    double max_x = renderer->fit.translate_x + (cache->source_ink_x + cache->source_ink_width) * renderer->fit.scale_x;
+    double max_y = renderer->fit.translate_y + (cache->source_ink_y + cache->source_ink_height) * renderer->fit.scale_y;
+    if (max_x < min_x) {
+        double t = min_x;
+        min_x = max_x;
+        max_x = t;
+    }
+    if (max_y < min_y) {
+        double t = min_y;
+        min_y = max_y;
+        max_y = t;
+    }
+
+    if (!isfinite(min_x) || !isfinite(min_y) || !isfinite(max_x) || !isfinite(max_y)) {
+        set_layer_fallback(cache, "nonfinite transformed geometry");
+        return plan_full_target_cache(renderer, cache, NULL, error);
+    }
+
+    const double padding = 32.0;
+    double rect_min_x = floor(min_x - padding);
+    double rect_min_y = floor(min_y - padding);
+    double rect_max_x = ceil(max_x + padding);
+    double rect_max_y = ceil(max_y + padding);
+
+    bool can_move = layer_can_move_runtime(layer);
+    if (!can_move) {
+        double target_min_x = 0.0;
+        double target_min_y = 0.0;
+        double target_max_x = (double)renderer->width;
+        double target_max_y = (double)renderer->height;
+        if (rect_max_x <= target_min_x || rect_max_y <= target_min_y ||
+            rect_min_x >= target_max_x || rect_min_y >= target_max_y) {
+            cache->cache_class = SCENE_LAYER_CACHE_EMPTY;
+            snprintf(cache->fallback_reason, sizeof(cache->fallback_reason), "outside target and no runtime transform");
+            return true;
+        }
+        rect_min_x = fmax(rect_min_x, target_min_x);
+        rect_min_y = fmax(rect_min_y, target_min_y);
+        rect_max_x = fmin(rect_max_x, target_max_x);
+        rect_max_y = fmin(rect_max_y, target_max_y);
+    }
+
+    if (rect_min_x < (double)INT_MIN || rect_min_y < (double)INT_MIN ||
+        rect_max_x > (double)INT_MAX || rect_max_y > (double)INT_MAX) {
+        set_layer_fallback(cache, "transformed geometry overflows integer cache bounds");
+        return plan_full_target_cache(renderer, cache, NULL, error);
+    }
+
+    int cache_x = (int)rect_min_x;
+    int cache_y = (int)rect_min_y;
+    double rect_w = rect_max_x - rect_min_x;
+    double rect_h = rect_max_y - rect_min_y;
+    if (rect_w <= 0.0 || rect_h <= 0.0) {
+        cache->cache_class = SCENE_LAYER_CACHE_EMPTY;
+        snprintf(cache->fallback_reason, sizeof(cache->fallback_reason), "empty target bounds");
+        return true;
+    }
+    if (rect_w > 32768.0 || rect_h > 32768.0) {
+        set_layer_fallback(cache, "unreasonably large transformed geometry");
+        return plan_full_target_cache(renderer, cache, NULL, error);
+    }
+
+    uint32_t cache_width = (uint32_t)rect_w;
+    uint32_t cache_height = (uint32_t)rect_h;
+    uint64_t bytes;
+    if (!checked_argb_bytes(cache_width, cache_height, &bytes)) {
+        set_layer_fallback(cache, "cache byte size overflows");
+        return plan_full_target_cache(renderer, cache, NULL, error);
+    }
+
+    cache->cache_class = SCENE_LAYER_CACHE_BOUNDED;
+    cache->cache_x = cache_x;
+    cache->cache_y = cache_y;
+    cache->cache_width = cache_width;
+    cache->cache_height = cache_height;
+    cache->cache_bytes = bytes;
+    return true;
+}
+
 static bool rasterize_layer(scene_renderer_t *renderer,
                             const scene_layer_t *layer,
-                            cairo_surface_t **out,
+                            cached_layer_t *cache,
                             char error[SCENE_ERROR_LEN]) {
+    if (!plan_bounded_cache(renderer, layer, cache, error))
+        return false;
+    if (cache->cache_class == SCENE_LAYER_CACHE_EMPTY)
+        return true;
+
     cairo_surface_t *surface =
-        cairo_image_surface_create(CAIRO_FORMAT_ARGB32, renderer->width, renderer->height);
+        cairo_image_surface_create(CAIRO_FORMAT_ARGB32, (int)cache->cache_width, (int)cache->cache_height);
     if (cairo_surface_status(surface) != CAIRO_STATUS_SUCCESS)
         return set_error(error, "could not allocate layer surface for '%s': %s",
                          layer->ref,
                          cairo_status_to_string(cairo_surface_status(surface)));
+    renderer->stats.cached_surface_alloc_count++;
+    cache->cache_bytes = image_surface_bytes(surface);
     clear_surface(surface);
 
     cairo_t *cr = cairo_create(surface);
@@ -245,10 +501,13 @@ static bool rasterize_layer(scene_renderer_t *renderer,
     }
 
     cairo_save(cr);
+    cairo_translate(cr, -cache->cache_x, -cache->cache_y);
     apply_scene_fit(cr, &renderer->fit);
     RsvgRectangle viewport = {0.0, 0.0, renderer->doc->width, renderer->doc->height};
     GError *gerr = NULL;
+    uint64_t start = now_ns();
     gboolean ok = rsvg_handle_render_layer(renderer->handle, cr, id, &viewport, &gerr);
+    renderer->stats.layer_rasterization_time_ns += now_ns() - start;
     cairo_restore(cr);
     cairo_destroy(cr);
 
@@ -266,17 +525,27 @@ static bool rasterize_layer(scene_renderer_t *renderer,
     }
     free(id);
     renderer->stats.svg_layer_rasterize_count++;
-    *out = surface;
+    cache->surface = surface;
     return true;
 }
 
 static void layer_origin(scene_renderer_t *renderer,
                          const scene_layer_t *layer,
+                         const cached_layer_t *cache,
                          double *origin_x,
                          double *origin_y) {
     if (layer->has_origin) {
         *origin_x = renderer->fit.translate_x + layer->origin_x * renderer->fit.scale_x;
         *origin_y = renderer->fit.translate_y + layer->origin_y * renderer->fit.scale_y;
+        return;
+    }
+
+    if (cache && isfinite(cache->source_ink_width) && isfinite(cache->source_ink_height) &&
+        cache->source_ink_width > 0.0 && cache->source_ink_height > 0.0) {
+        double cx = cache->source_ink_x + cache->source_ink_width / 2.0;
+        double cy = cache->source_ink_y + cache->source_ink_height / 2.0;
+        *origin_x = renderer->fit.translate_x + cx * renderer->fit.scale_x;
+        *origin_y = renderer->fit.translate_y + cy * renderer->fit.scale_y;
         return;
     }
 
@@ -340,15 +609,14 @@ static bool build_layer_cache(scene_renderer_t *renderer,
     bool prefix_open = !renderer->disable_static_precompose;
     for (size_t i = 0; i < renderer->doc->layer_count; i++) {
         const scene_layer_t *layer = &renderer->doc->layers[i];
-        if (!rasterize_layer(renderer, layer, &layers[i].surface, error)) {
+        if (!rasterize_layer(renderer, layer, &layers[i], error)) {
             cairo_destroy(static_cr);
             cairo_surface_destroy(static_surface);
             free(precomposed);
             destroy_layer_cache(layers, renderer->doc->layer_count);
             return false;
         }
-        renderer->stats.cached_surface_alloc_count++;
-        layer_origin(renderer, layer, &layers[i].origin_x, &layers[i].origin_y);
+        layer_origin(renderer, layer, &layers[i], &layers[i].origin_x, &layers[i].origin_y);
         bool safe_prefix_static = prefix_open &&
                                   layer->static_layer &&
                                   layer->states == SCENE_STATE_MASK_ALL &&
@@ -359,9 +627,17 @@ static bool build_layer_cache(scene_renderer_t *renderer,
                                   layer->blend == SCENE_BLEND_NORMAL;
         if (safe_prefix_static) {
             precomposed[i] = true;
-            cairo_set_operator(static_cr, CAIRO_OPERATOR_OVER);
-            cairo_set_source_surface(static_cr, layers[i].surface, 0, 0);
-            cairo_paint(static_cr);
+            layers[i].precomposed = true;
+            if (layers[i].surface) {
+                uint64_t start = now_ns();
+                cairo_set_operator(static_cr, CAIRO_OPERATOR_OVER);
+                cairo_set_source_surface(static_cr, layers[i].surface, layers[i].cache_x, layers[i].cache_y);
+                cairo_paint(static_cr);
+                renderer->stats.static_base_composition_time_ns += now_ns() - start;
+                cairo_surface_destroy(layers[i].surface);
+                layers[i].surface = NULL;
+                layers[i].cache_bytes = 0;
+            }
         } else {
             prefix_open = false;
         }
@@ -372,6 +648,49 @@ static bool build_layer_cache(scene_renderer_t *renderer,
     *out_static = static_surface;
     *out_precomposed = precomposed;
     return true;
+}
+
+static void recompute_memory(scene_renderer_t *renderer) {
+    if (!renderer || !renderer->doc)
+        return;
+    memset(&renderer->memory, 0, sizeof(renderer->memory));
+    renderer->memory.normalized_svg_bytes = renderer->doc->normalized_svg_len;
+    renderer->memory.rsvg_handle_count = renderer->handle ? 1 : 0;
+    renderer->memory.static_base_bytes = image_surface_bytes(renderer->static_surface);
+    renderer->memory.headless_output_buffer_bytes = renderer->x11 ? 0 : image_surface_bytes(renderer->image_surface);
+#ifndef SCENE_RENDERER_NO_X11
+    if (renderer->x11) {
+        uint64_t one = 0;
+        if (checked_argb_bytes(renderer->width, renderer->height, &one))
+            renderer->memory.x_pixmap_estimated_bytes = one * 2u;
+    }
+#endif
+
+    for (size_t i = 0; i < renderer->doc->layer_count; i++) {
+        cached_layer_t *cache = &renderer->layers[i];
+        if (cache->precomposed)
+            continue;
+        if (cache->cache_class == SCENE_LAYER_CACHE_BOUNDED) {
+            renderer->memory.bounded_layer_surface_bytes += cache->cache_bytes;
+            renderer->memory.bounded_layer_count++;
+        } else if (cache->cache_class == SCENE_LAYER_CACHE_FULL_TARGET) {
+            renderer->memory.full_target_fallback_layer_bytes += cache->cache_bytes;
+            renderer->memory.full_target_layer_count++;
+        } else {
+            renderer->memory.empty_layer_count++;
+        }
+    }
+
+    renderer->memory.total_retained_userspace_image_bytes =
+        renderer->memory.normalized_svg_bytes +
+        renderer->memory.bounded_layer_surface_bytes +
+        renderer->memory.full_target_fallback_layer_bytes +
+        renderer->memory.static_base_bytes +
+        renderer->memory.headless_output_buffer_bytes +
+        renderer->memory.cairo_xcb_output_surface_bytes;
+    renderer->memory.total_estimated_renderer_bytes =
+        renderer->memory.total_retained_userspace_image_bytes +
+        renderer->memory.x_pixmap_estimated_bytes;
 }
 
 static bool rebuild(scene_renderer_t *renderer, uint32_t width, uint32_t height, char error[SCENE_ERROR_LEN]) {
@@ -447,6 +766,7 @@ static bool rebuild(scene_renderer_t *renderer, uint32_t width, uint32_t height,
     for (size_t i = 0; i < renderer->doc->layer_count; i++)
         scene_runtime_set_layer_origin(renderer->runtime, i, renderer->layers[i].origin_x, renderer->layers[i].origin_y);
 
+    recompute_memory(renderer);
     return true;
 }
 
@@ -454,41 +774,15 @@ bool scene_renderer_validate_file(const char *path, char error[SCENE_ERROR_LEN])
     scene_document_t *doc = NULL;
     if (!scene_document_load(path, &doc, error))
         return false;
-
-    GError *gerr = NULL;
-    RsvgHandle *handle = rsvg_handle_new_from_data((const guint8 *)doc->normalized_svg,
-                                                   doc->normalized_svg_len,
-                                                   &gerr);
-    if (!handle) {
-        bool ret = set_error(error, "librsvg could not load scene '%s': %s",
-                             path,
-                             gerr ? gerr->message : "unknown error");
-        if (gerr)
-            g_error_free(gerr);
-        scene_document_free(doc);
-        return ret;
-    }
-
-    for (size_t i = 0; i < doc->layer_count; i++) {
-        char *id = fragment_id(doc->layers[i].ref);
-        if (!id) {
-            g_object_unref(handle);
-            scene_document_free(doc);
-            return set_error(error, "out of memory");
-        }
-        if (rsvg_handle_has_sub(handle, id) != TRUE) {
-            bool ret = set_error(error, "librsvg cannot find layer '%s'", doc->layers[i].ref);
-            free(id);
-            g_object_unref(handle);
-            scene_document_free(doc);
-            return ret;
-        }
-        free(id);
-    }
-
-    g_object_unref(handle);
-    scene_document_print_summary(doc, path);
+    uint32_t width = (uint32_t)ceil(doc->width);
+    uint32_t height = (uint32_t)ceil(doc->height);
     scene_document_free(doc);
+
+    scene_renderer_t *renderer = NULL;
+    if (!scene_renderer_create_headless(path, width, height, &renderer, error))
+        return false;
+    scene_renderer_print_summary(renderer, path, stdout);
+    scene_renderer_destroy(renderer);
     return true;
 }
 
@@ -496,14 +790,19 @@ static bool create_common(const char *path,
                           scene_renderer_t **out,
                           char error[SCENE_ERROR_LEN]) {
     *out = NULL;
+    uint64_t total_start = now_ns();
     scene_document_t *doc = NULL;
+    uint64_t start = now_ns();
     if (!scene_document_load(path, &doc, error))
         return false;
+    uint64_t parse_ns = now_ns() - start;
 
     GError *gerr = NULL;
+    start = now_ns();
     RsvgHandle *handle = rsvg_handle_new_from_data((const guint8 *)doc->normalized_svg,
                                                    doc->normalized_svg_len,
                                                    &gerr);
+    uint64_t handle_ns = now_ns() - start;
     if (!handle) {
         bool ret = set_error(error, "librsvg could not load scene '%s': %s",
                              path,
@@ -525,6 +824,9 @@ static bool create_common(const char *path,
     renderer->handle = handle;
     renderer->stats.xml_parse_count = 1;
     renderer->stats.rsvg_handle_create_count = 1;
+    renderer->stats.parse_time_ns = parse_ns;
+    renderer->stats.rsvg_handle_create_time_ns = handle_ns;
+    renderer->stats.total_load_time_ns = now_ns() - total_start;
 #ifndef SCENE_RENDERER_NO_X11
     renderer->pixmaps[0] = XCB_NONE;
     renderer->pixmaps[1] = XCB_NONE;
@@ -552,15 +854,48 @@ bool scene_renderer_create_headless_with_options(const char *path,
                                                  bool disable_static_precompose,
                                                  scene_renderer_t **out,
                                                  char error[SCENE_ERROR_LEN]) {
+    return scene_renderer_create_headless_with_cache_mode(path,
+                                                          width,
+                                                          height,
+                                                          disable_static_precompose,
+                                                          SCENE_RENDERER_CACHE_BOUNDED,
+                                                          out,
+                                                          error);
+}
+
+bool scene_renderer_create_headless_with_cache_mode(const char *path,
+                                                    uint32_t width,
+                                                    uint32_t height,
+                                                    bool disable_static_precompose,
+                                                    scene_renderer_cache_mode_t cache_mode,
+                                                    scene_renderer_t **out,
+                                                    char error[SCENE_ERROR_LEN]) {
+    uint64_t start = now_ns();
     if (!create_common(path, out, error))
         return false;
     (*out)->disable_static_precompose = disable_static_precompose;
+    (*out)->cache_mode = cache_mode;
     if (!rebuild(*out, width, height, error)) {
         scene_renderer_destroy(*out);
         *out = NULL;
         return false;
     }
+    (*out)->stats.total_load_time_ns = now_ns() - start;
     return true;
+}
+
+bool scene_renderer_create_headless_reference(const char *path,
+                                              uint32_t width,
+                                              uint32_t height,
+                                              scene_renderer_t **out,
+                                              char error[SCENE_ERROR_LEN]) {
+    return scene_renderer_create_headless_with_cache_mode(path,
+                                                          width,
+                                                          height,
+                                                          false,
+                                                          SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE,
+                                                          out,
+                                                          error);
 }
 
 bool scene_renderer_create_x11(const char *path,
@@ -579,16 +914,19 @@ bool scene_renderer_create_x11(const char *path,
     *out = NULL;
     return set_error(error, "X11 scene rendering is not available in this build");
 #else
+    uint64_t start = now_ns();
     if (!create_common(path, out, error))
         return false;
     (*out)->x11 = true;
     (*out)->conn = conn;
     (*out)->screen = screen;
+    (*out)->cache_mode = SCENE_RENDERER_CACHE_BOUNDED;
     if (!rebuild(*out, width, height, error)) {
         scene_renderer_destroy(*out);
         *out = NULL;
         return false;
     }
+    (*out)->stats.total_load_time_ns = now_ns() - start;
     return true;
 #endif
 }
@@ -673,8 +1011,8 @@ static cairo_t *render_target(scene_renderer_t *renderer, int *x11_index) {
 static void composite_layer(scene_renderer_t *renderer,
                             cairo_t *cr,
                             const scene_layer_style_t *style,
-                            cairo_surface_t *surface) {
-    if (!style->visible || style->opacity <= 0.0)
+                            const cached_layer_t *cache) {
+    if (!style->visible || style->opacity <= 0.0 || !cache || !cache->surface)
         return;
 
     cairo_save(cr);
@@ -685,7 +1023,7 @@ static void composite_layer(scene_renderer_t *renderer,
     cairo_rotate(cr, style->rotation_deg * M_PI / 180.0);
     cairo_scale(cr, style->scale_x, style->scale_y);
     cairo_translate(cr, -style->origin_x, -style->origin_y);
-    cairo_set_source_surface(cr, surface, 0, 0);
+    cairo_set_source_surface(cr, cache->surface, cache->cache_x, cache->cache_y);
     cairo_paint_with_alpha(cr, style->opacity);
     cairo_restore(cr);
 }
@@ -721,7 +1059,7 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
         if (renderer->precomposed_layers && renderer->precomposed_layers[i])
             continue;
         const scene_layer_style_t *style = scene_runtime_layer_style(renderer->runtime, i);
-        composite_layer(renderer, cr, style, renderer->layers[i].surface);
+        composite_layer(renderer, cr, style, &renderer->layers[i]);
     }
 
     cairo_status_t status = cairo_status(cr);
@@ -764,6 +1102,288 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
 
 bool scene_renderer_is_animating(const scene_renderer_t *renderer) {
     return renderer && scene_runtime_is_animating(renderer->runtime);
+}
+
+static const char *cache_class_name(scene_layer_cache_class_t klass) {
+    switch (klass) {
+        case SCENE_LAYER_CACHE_BOUNDED:
+            return "bounded";
+        case SCENE_LAYER_CACHE_FULL_TARGET:
+            return "full-target";
+        case SCENE_LAYER_CACHE_EMPTY:
+            return "empty";
+        default:
+            return "unknown";
+    }
+}
+
+void scene_renderer_get_memory(const scene_renderer_t *renderer, scene_renderer_memory_t *out) {
+    if (!out)
+        return;
+    memset(out, 0, sizeof(*out));
+    if (renderer)
+        *out = renderer->memory;
+}
+
+size_t scene_renderer_layer_cache_count(const scene_renderer_t *renderer) {
+    return renderer && renderer->doc ? renderer->doc->layer_count : 0;
+}
+
+bool scene_renderer_get_layer_cache_info(const scene_renderer_t *renderer,
+                                         size_t index,
+                                         scene_layer_cache_info_t *out) {
+    if (!renderer || !renderer->doc || index >= renderer->doc->layer_count || !out)
+        return false;
+    memset(out, 0, sizeof(*out));
+    const scene_layer_t *layer = &renderer->doc->layers[index];
+    const cached_layer_t *cache = &renderer->layers[index];
+    snprintf(out->ref, sizeof(out->ref), "%s", layer->ref);
+    out->source_ink = (scene_rect_t){
+        cache->source_ink_x,
+        cache->source_ink_y,
+        cache->source_ink_width,
+        cache->source_ink_height
+    };
+    out->target_rect = (scene_rect_t){
+        (double)cache->cache_x,
+        (double)cache->cache_y,
+        (double)cache->cache_width,
+        (double)cache->cache_height
+    };
+    out->cache_x = cache->cache_x;
+    out->cache_y = cache->cache_y;
+    out->cache_width = cache->cache_width;
+    out->cache_height = cache->cache_height;
+    out->cache_bytes = cache->cache_bytes;
+    out->cache_class = cache->cache_class;
+    snprintf(out->fallback_reason, sizeof(out->fallback_reason), "%s", cache->fallback_reason);
+    out->precomposed = cache->precomposed;
+    out->blend = layer->blend;
+    out->z = layer->has_z ? layer->z : (double)layer->svg_order;
+    out->states = layer->states;
+    out->trigger = layer->trigger;
+    return true;
+}
+
+static void print_activation(FILE *out, const scene_layer_t *layer) {
+    if (layer->trigger != SCENE_TRIGGER_NONE) {
+        fprintf(out, "trigger=%s", scene_trigger_name(layer->trigger));
+        return;
+    }
+    if (layer->states == SCENE_STATE_MASK_ALL) {
+        fprintf(out, "states=*");
+        return;
+    }
+    fprintf(out, "states=");
+    bool first = true;
+    for (int i = 0; i < SCENE_STATE_COUNT; i++) {
+        if (!(layer->states & (1u << i)))
+            continue;
+        fprintf(out, "%s%s", first ? "" : ",", scene_state_name((scene_state_t)i));
+        first = false;
+    }
+}
+
+bool scene_renderer_print_summary(const scene_renderer_t *renderer, const char *path, FILE *out) {
+    if (!renderer || !renderer->doc || !out)
+        return false;
+    const scene_document_t *doc = renderer->doc;
+    size_t static_layers = 0;
+    size_t triggers = 0;
+    size_t timelines = 0;
+    for (size_t i = 0; i < doc->layer_count; i++) {
+        if (doc->layers[i].static_layer)
+            static_layers++;
+        if (doc->layers[i].trigger != SCENE_TRIGGER_NONE)
+            triggers++;
+        if (doc->layers[i].timeline.present)
+            timelines++;
+    }
+    fprintf(out, "Scene OK: %s\n", path);
+    fprintf(out,
+            "version=%d fit=%s size=%.0fx%.0f target=%ux%u layers=%zu static=%zu dynamic=%zu timelines=%zu triggers=%zu\n",
+            doc->version,
+            scene_fit_name(doc->fit),
+            doc->width,
+            doc->height,
+            renderer->width,
+            renderer->height,
+            doc->layer_count,
+            static_layers,
+            doc->layer_count - static_layers,
+            timelines,
+            triggers);
+    fprintf(out,
+            "memory normalized-svg=%" PRIu64 " bounded-layers=%" PRIu64
+            " full-target-layers=%" PRIu64 " static-base=%" PRIu64
+            " headless-output=%" PRIu64 " x-pixmaps-est=%" PRIu64
+            " userspace=%" PRIu64 " estimated-total=%" PRIu64
+            " bounded-count=%zu empty-count=%zu full-target-count=%zu\n",
+            renderer->memory.normalized_svg_bytes,
+            renderer->memory.bounded_layer_surface_bytes,
+            renderer->memory.full_target_fallback_layer_bytes,
+            renderer->memory.static_base_bytes,
+            renderer->memory.headless_output_buffer_bytes,
+            renderer->memory.x_pixmap_estimated_bytes,
+            renderer->memory.total_retained_userspace_image_bytes,
+            renderer->memory.total_estimated_renderer_bytes,
+            renderer->memory.bounded_layer_count,
+            renderer->memory.empty_layer_count,
+            renderer->memory.full_target_layer_count);
+    return true;
+}
+
+bool scene_renderer_print_inspection(const scene_renderer_t *renderer, FILE *out) {
+    if (!scene_renderer_print_summary(renderer, renderer && renderer->doc ? renderer->doc->path : "(unknown)", out))
+        return false;
+    fprintf(out,
+            "fit-transform scale-x=%.9g scale-y=%.9g translate-x=%.9g translate-y=%.9g\n",
+            renderer->fit.scale_x,
+            renderer->fit.scale_y,
+            renderer->fit.translate_x,
+            renderer->fit.translate_y);
+    fprintf(out, "layers:\n");
+    for (size_t i = 0; i < renderer->doc->layer_count; i++) {
+        const scene_layer_t *layer = &renderer->doc->layers[i];
+        const cached_layer_t *cache = &renderer->layers[i];
+        fprintf(out,
+                "  %zu ref=%s class=%s precomposed=%s source-ink=%.3f,%.3f,%.3f,%.3f"
+                " target=%d,%d,%u,%u origin=%.3f,%.3f bytes=%" PRIu64
+                " blend=%s z=%.3f ",
+                i,
+                layer->ref,
+                cache_class_name(cache->cache_class),
+                cache->precomposed ? "true" : "false",
+                cache->source_ink_x,
+                cache->source_ink_y,
+                cache->source_ink_width,
+                cache->source_ink_height,
+                cache->cache_x,
+                cache->cache_y,
+                cache->cache_width,
+                cache->cache_height,
+                cache->origin_x,
+                cache->origin_y,
+                cache->cache_bytes,
+                scene_blend_name(layer->blend),
+                layer->has_z ? layer->z : (double)layer->svg_order);
+        print_activation(out, layer);
+        if (cache->fallback_reason[0])
+            fprintf(out, " reason=\"%s\"", cache->fallback_reason);
+        fputc('\n', out);
+    }
+    return true;
+}
+
+static void json_escape(FILE *out, const char *value) {
+    for (const unsigned char *p = (const unsigned char *)value; p && *p; p++) {
+        if (*p == '"' || *p == '\\')
+            fprintf(out, "\\%c", *p);
+        else if (*p == '\n')
+            fputs("\\n", out);
+        else if (*p == '\r')
+            fputs("\\r", out);
+        else if (*p == '\t')
+            fputs("\\t", out);
+        else if (*p < 0x20)
+            fprintf(out, "\\u%04x", *p);
+        else
+            fputc(*p, out);
+    }
+}
+
+bool scene_renderer_write_inspection_json(const scene_renderer_t *renderer,
+                                          const char *path,
+                                          char error[SCENE_ERROR_LEN]) {
+    if (!renderer || !path)
+        return set_error(error, "renderer and path are required for inspection JSON");
+    FILE *out = fopen(path, "w");
+    if (!out)
+        return set_error(error, "could not write inspection JSON '%s': %s", path, strerror(errno));
+    fprintf(out, "{\n  \"schema\": \"i3lock-svg-nh-scene-inspect-v1\",\n");
+    fprintf(out, "  \"scene\": {\"path\": \"");
+    json_escape(out, renderer->doc->path ? renderer->doc->path : "");
+    fprintf(out, "\", \"width\": %.0f, \"height\": %.0f, \"fit\": \"%s\"},\n",
+            renderer->doc->width,
+            renderer->doc->height,
+            scene_fit_name(renderer->doc->fit));
+    fprintf(out,
+            "  \"target\": {\"width\": %u, \"height\": %u, \"fit_transform\": {\"scale_x\": %.17g, \"scale_y\": %.17g, \"translate_x\": %.17g, \"translate_y\": %.17g}},\n",
+            renderer->width,
+            renderer->height,
+            renderer->fit.scale_x,
+            renderer->fit.scale_y,
+            renderer->fit.translate_x,
+            renderer->fit.translate_y);
+    fprintf(out,
+            "  \"memory\": {\"normalized_svg_bytes\": %" PRIu64 ", \"rsvg_handle_count\": %" PRIu64
+            ", \"bounded_layer_surface_bytes\": %" PRIu64 ", \"full_target_fallback_layer_bytes\": %" PRIu64
+            ", \"static_base_bytes\": %" PRIu64 ", \"headless_output_buffer_bytes\": %" PRIu64
+            ", \"cairo_xcb_output_surface_bytes\": %" PRIu64 ", \"x_pixmap_estimated_bytes\": %" PRIu64
+            ", \"total_retained_userspace_image_bytes\": %" PRIu64 ", \"total_estimated_renderer_bytes\": %" PRIu64
+            ", \"bounded_layer_count\": %zu, \"empty_layer_count\": %zu, \"full_target_layer_count\": %zu},\n",
+            renderer->memory.normalized_svg_bytes,
+            renderer->memory.rsvg_handle_count,
+            renderer->memory.bounded_layer_surface_bytes,
+            renderer->memory.full_target_fallback_layer_bytes,
+            renderer->memory.static_base_bytes,
+            renderer->memory.headless_output_buffer_bytes,
+            renderer->memory.cairo_xcb_output_surface_bytes,
+            renderer->memory.x_pixmap_estimated_bytes,
+            renderer->memory.total_retained_userspace_image_bytes,
+            renderer->memory.total_estimated_renderer_bytes,
+            renderer->memory.bounded_layer_count,
+            renderer->memory.empty_layer_count,
+            renderer->memory.full_target_layer_count);
+    fprintf(out, "  \"layers\": [\n");
+    for (size_t i = 0; i < renderer->doc->layer_count; i++) {
+        const scene_layer_t *layer = &renderer->doc->layers[i];
+        const cached_layer_t *cache = &renderer->layers[i];
+        fprintf(out, "    {\"index\": %zu, \"ref\": \"", i);
+        json_escape(out, layer->ref);
+        fprintf(out,
+                "\", \"cache_class\": \"%s\", \"precomposed\": %s,"
+                " \"source_ink\": {\"x\": %.17g, \"y\": %.17g, \"width\": %.17g, \"height\": %.17g},"
+                " \"target_rect\": {\"x\": %d, \"y\": %d, \"width\": %u, \"height\": %u},"
+                " \"cache_origin\": {\"x\": %d, \"y\": %d}, \"cache_bytes\": %" PRIu64
+                ", \"blend\": \"%s\", \"z\": %.17g, \"activation\": \"",
+                cache_class_name(cache->cache_class),
+                cache->precomposed ? "true" : "false",
+                cache->source_ink_x,
+                cache->source_ink_y,
+                cache->source_ink_width,
+                cache->source_ink_height,
+                cache->cache_x,
+                cache->cache_y,
+                cache->cache_width,
+                cache->cache_height,
+                cache->cache_x,
+                cache->cache_y,
+                cache->cache_bytes,
+                scene_blend_name(layer->blend),
+                layer->has_z ? layer->z : (double)layer->svg_order);
+        if (layer->trigger != SCENE_TRIGGER_NONE) {
+            fprintf(out, "trigger:%s", scene_trigger_name(layer->trigger));
+        } else if (layer->states == SCENE_STATE_MASK_ALL) {
+            fputs("states:*", out);
+        } else {
+            fputs("states:", out);
+            bool first = true;
+            for (int s = 0; s < SCENE_STATE_COUNT; s++) {
+                if (!(layer->states & (1u << s)))
+                    continue;
+                fprintf(out, "%s%s", first ? "" : ",", scene_state_name((scene_state_t)s));
+                first = false;
+            }
+        }
+        fprintf(out, "\", \"fallback_reason\": \"");
+        json_escape(out, cache->fallback_reason);
+        fprintf(out, "\"}%s\n", i + 1 == renderer->doc->layer_count ? "" : ",");
+    }
+    fprintf(out, "  ]\n}\n");
+    if (fclose(out) != 0)
+        return set_error(error, "could not close inspection JSON '%s': %s", path, strerror(errno));
+    return true;
 }
 
 void scene_renderer_get_stats(const scene_renderer_t *renderer, scene_renderer_stats_t *out) {

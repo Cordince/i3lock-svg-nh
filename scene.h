@@ -66,6 +66,13 @@ typedef struct {
 } scene_fit_transform_t;
 
 typedef struct {
+    double x;
+    double y;
+    double width;
+    double height;
+} scene_rect_t;
+
+typedef struct {
     bool has_opacity;
     bool has_translate_x;
     bool has_translate_y;
@@ -168,6 +175,13 @@ typedef struct {
     uint64_t frame_timer_stop_count;
     uint64_t auth_worker_start_count;
     uint64_t auth_worker_completion_count;
+    uint64_t layer_geometry_query_count;
+    uint64_t parse_time_ns;
+    uint64_t rsvg_handle_create_time_ns;
+    uint64_t layer_geometry_query_time_ns;
+    uint64_t layer_rasterization_time_ns;
+    uint64_t static_base_composition_time_ns;
+    uint64_t total_load_time_ns;
 } scene_renderer_stats_t;
 
 typedef struct scene_runtime scene_runtime_t;

@@ -81,6 +81,8 @@ int main(void) {
                 "no per-frame X pixmap allocation");
     expect_true(after.svg_layer_rasterize_count == before.svg_layer_rasterize_count,
                 "no per-frame X11 rasterization");
+    expect_true(after.layer_geometry_query_count == before.layer_geometry_query_count,
+                "no per-frame X11 geometry query");
     expect_true(after.cached_surface_alloc_count == before.cached_surface_alloc_count,
                 "no per-frame X11 cache allocation");
 
@@ -102,15 +104,18 @@ int main(void) {
                 "no post-resize per-frame pixmap allocation");
     expect_true(after.svg_layer_rasterize_count == before.svg_layer_rasterize_count,
                 "no post-resize per-frame rasterization");
+    expect_true(after.layer_geometry_query_count == before.layer_geometry_query_count,
+                "no post-resize per-frame geometry query");
     expect_true(after.cached_surface_alloc_count == before.cached_surface_alloc_count,
                 "no post-resize per-frame cache allocation");
     if (getenv("SCENE_TEST_STATS")) {
         printf("x11 counters: parse=%" PRIu64 " handles=%" PRIu64 " raster=%" PRIu64
-               " cache=%" PRIu64 " xpixmap=%" PRIu64 " frames=%" PRIu64
+               " geometry=%" PRIu64 " cache=%" PRIu64 " xpixmap=%" PRIu64 " frames=%" PRIu64
                " resize=%" PRIu64 " expose=%" PRIu64 "\n",
                after.xml_parse_count,
                after.rsvg_handle_create_count,
                after.svg_layer_rasterize_count,
+               after.layer_geometry_query_count,
                after.cached_surface_alloc_count,
                after.x_pixmap_alloc_count,
                after.frame_composition_count,

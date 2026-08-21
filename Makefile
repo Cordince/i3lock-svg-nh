@@ -24,6 +24,7 @@ SCENE_OBJS:=scene.o scene_renderer.o
 I3LOCK_OBJS:=i3lock.o xcb.o unlock_indicator.o xinerama.o $(SCENE_OBJS)
 SCENE_HEADLESS_OBJS:=scene.o scene_renderer_headless.o
 SCENE_PREVIEW_OBJS:=scene_preview.o $(SCENE_HEADLESS_OBJS)
+SCENE_PACK_OBJS:=scene_pack.o $(SCENE_HEADLESS_OBJS)
 SCENE_TEST_OBJS:=scene_tests.o $(SCENE_HEADLESS_OBJS)
 SCENE_X11_TEST_OBJS:=scene_x11_tests.o xcb.o $(SCENE_OBJS)
 
@@ -33,12 +34,15 @@ CPPFLAGS += -DVERSION=\"${GIT_VERSION}\"
 
 .PHONY: install clean uninstall test xvfb-test
 
-all: i3lock scene-preview
+all: i3lock scene-preview scene-pack
 
 i3lock: ${I3LOCK_OBJS}
 	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)
 
 scene-preview: ${SCENE_PREVIEW_OBJS}
+	$(CC) $(LDFLAGS) -o $@ $^ $(SCENE_LIBS)
+
+scene-pack: ${SCENE_PACK_OBJS}
 	$(CC) $(LDFLAGS) -o $@ $^ $(SCENE_LIBS)
 
 scene-tests: ${SCENE_TEST_OBJS}
@@ -47,7 +51,7 @@ scene-tests: ${SCENE_TEST_OBJS}
 scene_renderer_headless.o: scene_renderer.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) -DSCENE_RENDERER_NO_X11 -c -o $@ $<
 
-test: scene-tests scene-preview
+test: scene-tests scene-preview scene-pack
 	./scene-tests
 
 scene-x11-tests: ${SCENE_X11_TEST_OBJS}
@@ -57,18 +61,20 @@ xvfb-test: scene-x11-tests
 	xvfb-run -a ./scene-x11-tests
 
 clean:
-	rm -f i3lock scene-preview scene-tests scene-x11-tests *.o i3lock-${VERSION}.tar.gz
+	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests *.o i3lock-${VERSION}.tar.gz
 
 install: all
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin
 	$(INSTALL) -d $(DESTDIR)$(SYSCONFDIR)/pam.d
 	$(INSTALL) -m 755 i3lock $(DESTDIR)$(PREFIX)/bin/i3lock
 	$(INSTALL) -m 755 scene-preview $(DESTDIR)$(PREFIX)/bin/scene-preview
+	$(INSTALL) -m 755 scene-pack $(DESTDIR)$(PREFIX)/bin/scene-pack
 	$(INSTALL) -m 644 i3lock.pam $(DESTDIR)$(SYSCONFDIR)/pam.d/i3lock
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/i3lock
 	rm -f $(DESTDIR)$(PREFIX)/bin/scene-preview
+	rm -f $(DESTDIR)$(PREFIX)/bin/scene-pack
 
 dist: clean
 	[ ! -d i3lock-${VERSION} ] || rm -rf i3lock-${VERSION}

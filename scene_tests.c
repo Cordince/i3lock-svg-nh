@@ -2,6 +2,7 @@
 #include <cairo.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <glib.h>
 #include <inttypes.h>
 #include <math.h>
 #include <pthread.h>
@@ -9,6 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 #include <unistd.h>
 
 #include "scene.h"
@@ -33,6 +35,127 @@ static void expect_u64_eq(uint64_t actual, uint64_t expected, const char *messag
         fprintf(stderr, "FAIL: %s: got %" PRIu64 " expected %" PRIu64 "\n", message, actual, expected);
         exit(EXIT_FAILURE);
     }
+}
+
+static void expect_i32_eq(int actual, int expected, const char *message) {
+    if (actual != expected) {
+        fprintf(stderr, "FAIL: %s: got %d expected %d\n", message, actual, expected);
+        exit(EXIT_FAILURE);
+    }
+}
+
+static void expect_file_contains(const char *path, const char *needle, const char *message) {
+    gchar *contents = NULL;
+    gsize len = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(path, &contents, &len, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", path, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        exit(EXIT_FAILURE);
+    }
+    if (!strstr(contents, needle)) {
+        fprintf(stderr, "FAIL: %s: missing '%s' in %s\n", message, needle, path);
+        g_free(contents);
+        exit(EXIT_FAILURE);
+    }
+    g_free(contents);
+}
+
+static void expect_file_not_contains(const char *path, const char *needle, const char *message) {
+    gchar *contents = NULL;
+    gsize len = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(path, &contents, &len, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", path, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        exit(EXIT_FAILURE);
+    }
+    if (strstr(contents, needle)) {
+        fprintf(stderr, "FAIL: %s: found '%s' in %s\n", message, needle, path);
+        g_free(contents);
+        exit(EXIT_FAILURE);
+    }
+    g_free(contents);
+}
+
+static void expect_files_equal(const char *a, const char *b, const char *message) {
+    gchar *ac = NULL;
+    gchar *bc = NULL;
+    gsize alen = 0;
+    gsize blen = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(a, &ac, &alen, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", a, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        exit(EXIT_FAILURE);
+    }
+    if (!g_file_get_contents(b, &bc, &blen, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", b, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        g_free(ac);
+        exit(EXIT_FAILURE);
+    }
+    if (alen != blen || memcmp(ac, bc, alen) != 0) {
+        fprintf(stderr, "FAIL: %s: %s and %s differ\n", message, a, b);
+        g_free(ac);
+        g_free(bc);
+        exit(EXIT_FAILURE);
+    }
+    g_free(ac);
+    g_free(bc);
+}
+
+static void expect_system_ok(const char *cmd, const char *message) {
+    int rc = system(cmd);
+    if (rc != 0) {
+        fprintf(stderr, "FAIL: %s: command failed rc=%d: %s\n", message, rc, cmd);
+        exit(EXIT_FAILURE);
+    }
+}
+
+static void expect_system_fail(const char *cmd, const char *message) {
+    int rc = system(cmd);
+    if (rc == 0) {
+        fprintf(stderr, "FAIL: %s: command unexpectedly succeeded: %s\n", message, cmd);
+        exit(EXIT_FAILURE);
+    }
+}
+
+static void write_text_file(const char *path, const char *contents) {
+    FILE *out = fopen(path, "w");
+    if (!out) {
+        fprintf(stderr, "FAIL: could not write %s: %s\n", path, strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+    fputs(contents, out);
+    if (fclose(out) != 0) {
+        fprintf(stderr, "FAIL: could not close %s: %s\n", path, strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+}
+
+static void copy_file_bytes(const char *src, const char *dst) {
+    gchar *contents = NULL;
+    gsize len = 0;
+    GError *gerr = NULL;
+    if (!g_file_get_contents(src, &contents, &len, &gerr)) {
+        fprintf(stderr, "FAIL: could not read %s: %s\n", src, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        exit(EXIT_FAILURE);
+    }
+    if (!g_file_set_contents(dst, contents, len, &gerr)) {
+        fprintf(stderr, "FAIL: could not write %s: %s\n", dst, gerr ? gerr->message : "unknown error");
+        if (gerr)
+            g_error_free(gerr);
+        g_free(contents);
+        exit(EXIT_FAILURE);
+    }
+    g_free(contents);
 }
 
 static void test_metadata_parsing(void) {
@@ -261,6 +384,156 @@ static void expect_surfaces_equal(cairo_surface_t *a, cairo_surface_t *b, const 
     }
 }
 
+static void expect_surfaces_equivalent(cairo_surface_t *a,
+                                       cairo_surface_t *b,
+                                       int channel_tolerance,
+                                       uint64_t max_differing_pixels,
+                                       const char *message) {
+    cairo_surface_flush(a);
+    cairo_surface_flush(b);
+    int width = cairo_image_surface_get_width(a);
+    int height = cairo_image_surface_get_height(a);
+    expect_true(width == cairo_image_surface_get_width(b), "surface width match");
+    expect_true(height == cairo_image_surface_get_height(b), "surface height match");
+
+    uint64_t diff_count = 0;
+    int max_channel_diff = 0;
+    int min_x = width;
+    int min_y = height;
+    int max_x = -1;
+    int max_y = -1;
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            uint32_t pa = pixel_at(a, x, y);
+            uint32_t pb = pixel_at(b, x, y);
+            if (pa == pb)
+                continue;
+            int local_max = 0;
+            for (int shift = 0; shift <= 24; shift += 8) {
+                int da = (pa >> shift) & 0xff;
+                int db = (pb >> shift) & 0xff;
+                int d = abs(da - db);
+                if (d > local_max)
+                    local_max = d;
+            }
+            if (local_max > max_channel_diff)
+                max_channel_diff = local_max;
+            if (local_max > channel_tolerance) {
+                diff_count++;
+                if (x < min_x)
+                    min_x = x;
+                if (y < min_y)
+                    min_y = y;
+                if (x > max_x)
+                    max_x = x;
+                if (y > max_y)
+                    max_y = y;
+            }
+        }
+    }
+    if (diff_count > max_differing_pixels) {
+        fprintf(stderr,
+                "FAIL: %s: differing-pixels=%" PRIu64 " max-channel-diff=%d bounds=%d,%d..%d,%d tolerance=%d allowed=%" PRIu64 "\n",
+                message,
+                diff_count,
+                max_channel_diff,
+                min_x,
+                min_y,
+                max_x,
+                max_y,
+                channel_tolerance,
+                max_differing_pixels);
+        exit(EXIT_FAILURE);
+    }
+}
+
+static void renderers_set_state(scene_renderer_t *bounded,
+                                scene_renderer_t *reference,
+                                scene_state_t state,
+                                int64_t now_ms) {
+    scene_renderer_set_state(bounded, state, now_ms);
+    scene_renderer_set_state(reference, state, now_ms);
+}
+
+static void renderers_trigger(scene_renderer_t *bounded,
+                              scene_renderer_t *reference,
+                              scene_trigger_t trigger,
+                              int64_t now_ms) {
+    scene_renderer_trigger(bounded, trigger, now_ms);
+    scene_renderer_trigger(reference, trigger, now_ms);
+}
+
+static void compare_bounded_reference_with_tolerance(const char *path,
+                                                     uint32_t width,
+                                                     uint32_t height,
+                                                     scene_state_t initial_state,
+                                                     scene_state_t state,
+                                                     int64_t state_at_ms,
+                                                     scene_trigger_t trigger,
+                                                     int64_t trigger_at_ms,
+                                                     int64_t render_ms,
+                                                     int channel_tolerance,
+                                                     uint64_t max_differing_pixels,
+                                                     const char *message) {
+    char error[SCENE_ERROR_LEN];
+    scene_renderer_t *bounded = NULL;
+    scene_renderer_t *reference = NULL;
+    expect_true(scene_renderer_create_headless_with_cache_mode(path,
+                                                               width,
+                                                               height,
+                                                               false,
+                                                               SCENE_RENDERER_CACHE_BOUNDED,
+                                                               &bounded,
+                                                               error),
+                error);
+    expect_true(scene_renderer_create_headless_with_cache_mode(path,
+                                                               width,
+                                                               height,
+                                                               false,
+                                                               SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE,
+                                                               &reference,
+                                                               error),
+                error);
+    renderers_set_state(bounded, reference, initial_state, 0);
+    if (state_at_ms >= 0)
+        renderers_set_state(bounded, reference, state, state_at_ms);
+    if (trigger != SCENE_TRIGGER_NONE)
+        renderers_trigger(bounded, reference, trigger, trigger_at_ms);
+    expect_true(scene_renderer_render(bounded, render_ms, error), error);
+    expect_true(scene_renderer_render(reference, render_ms, error), error);
+    expect_surfaces_equivalent(scene_renderer_image_surface(bounded),
+                               scene_renderer_image_surface(reference),
+                               channel_tolerance,
+                               max_differing_pixels,
+                               message);
+    scene_renderer_destroy(bounded);
+    scene_renderer_destroy(reference);
+}
+
+static void compare_bounded_reference(const char *path,
+                                      uint32_t width,
+                                      uint32_t height,
+                                      scene_state_t initial_state,
+                                      scene_state_t state,
+                                      int64_t state_at_ms,
+                                      scene_trigger_t trigger,
+                                      int64_t trigger_at_ms,
+                                      int64_t render_ms,
+                                      const char *message) {
+    compare_bounded_reference_with_tolerance(path,
+                                             width,
+                                             height,
+                                             initial_state,
+                                             state,
+                                             state_at_ms,
+                                             trigger,
+                                             trigger_at_ms,
+                                             render_ms,
+                                             0,
+                                             0,
+                                             message);
+}
+
 static void test_clear_memory(void *ptr, size_t len) {
 #if defined(__GLIBC__) || defined(__linux__)
     explicit_bzero(ptr, len);
@@ -304,7 +577,14 @@ static void test_static_precompose_equivalence(void) {
     scene_renderer_t *optimized = NULL;
     scene_renderer_t *reference = NULL;
     expect_true(scene_renderer_create_headless("tests/fixtures/static-ordering.svg", 5, 1, &optimized, error), error);
-    expect_true(scene_renderer_create_headless_with_options("tests/fixtures/static-ordering.svg", 5, 1, true, &reference, error), error);
+    expect_true(scene_renderer_create_headless_with_cache_mode("tests/fixtures/static-ordering.svg",
+                                                               5,
+                                                               1,
+                                                               true,
+                                                               SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE,
+                                                               &reference,
+                                                               error),
+                error);
     scene_renderer_set_state(optimized, SCENE_STATE_INPUT, 0);
     scene_renderer_set_state(reference, SCENE_STATE_INPUT, 0);
     expect_true(scene_renderer_render(optimized, 0, error), error);
@@ -319,6 +599,169 @@ static void test_static_precompose_equivalence(void) {
     expect_argb(pixel_at(surface, 3, 0), 0, 255, 0, "equal z document-order tie");
     scene_renderer_destroy(optimized);
     scene_renderer_destroy(reference);
+}
+
+static void test_bounded_reference_equivalence(void) {
+    compare_bounded_reference("tests/fixtures/tiny-pixel-scene.svg",
+                              2,
+                              2,
+                              SCENE_STATE_LOCKED,
+                              SCENE_STATE_LOCKED,
+                              -1,
+                              SCENE_TRIGGER_NONE,
+                              0,
+                              0,
+                              "pixel-fit embedded PNG matches reference");
+    compare_bounded_reference("tests/fixtures/bounded-equivalence.svg",
+                              40,
+                              30,
+                              SCENE_STATE_LOCKED,
+                              SCENE_STATE_INPUT,
+                              100,
+                              SCENE_TRIGGER_NONE,
+                              0,
+                              150,
+                              "input transition matches full-target reference");
+    compare_bounded_reference("tests/fixtures/bounded-equivalence.svg",
+                              40,
+                              30,
+                              SCENE_STATE_VERIFY,
+                              SCENE_STATE_VERIFY,
+                              -1,
+                              SCENE_TRIGGER_NONE,
+                              0,
+                              500,
+                              "verify loop with filter matches full-target reference");
+    compare_bounded_reference("tests/fixtures/bounded-equivalence.svg",
+                              40,
+                              30,
+                              SCENE_STATE_INPUT,
+                              SCENE_STATE_INPUT,
+                              -1,
+                              SCENE_TRIGGER_KEY,
+                              100,
+                              200,
+                              "key trigger scale matches full-target reference");
+    compare_bounded_reference("tests/fixtures/bounded-equivalence.svg",
+                              40,
+                              30,
+                              SCENE_STATE_INPUT,
+                              SCENE_STATE_INPUT,
+                              -1,
+                              SCENE_TRIGGER_BACKSPACE,
+                              100,
+                              200,
+                              "backspace trigger translation matches full-target reference");
+    compare_bounded_reference("tests/fixtures/bounded-equivalence.svg",
+                              40,
+                              30,
+                              SCENE_STATE_LOCKED,
+                              SCENE_STATE_FAIL,
+                              100,
+                              SCENE_TRIGGER_NONE,
+                              0,
+                              150,
+                              "fail mask/clip/blend matches full-target reference");
+    compare_bounded_reference("tests/fixtures/bounded-fit-contain.svg",
+                              30,
+                              30,
+                              SCENE_STATE_LOCKED,
+                              SCENE_STATE_INPUT,
+                              50,
+                              SCENE_TRIGGER_NONE,
+                              0,
+                              75,
+                              "contain fit matches full-target reference");
+    compare_bounded_reference_with_tolerance("tests/fixtures/bounded-fit-cover.svg",
+                                             30,
+                                             30,
+                                             SCENE_STATE_LOCKED,
+                                             SCENE_STATE_INPUT,
+                                             50,
+                                             SCENE_TRIGGER_NONE,
+                                             0,
+                                             75,
+                                             1,
+                                             1,
+                                             "cover fit matches full-target reference");
+    compare_bounded_reference_with_tolerance("tests/fixtures/bounded-fit-stretch.svg",
+                                             30,
+                                             30,
+                                             SCENE_STATE_LOCKED,
+                                             SCENE_STATE_INPUT,
+                                             50,
+                                             SCENE_TRIGGER_NONE,
+                                             0,
+                                             75,
+                                             1,
+                                             2,
+                                             "stretch fit matches full-target reference");
+    compare_bounded_reference("tests/fixtures/blend-modes.svg",
+                              9,
+                              1,
+                              SCENE_STATE_INPUT,
+                              SCENE_STATE_INPUT,
+                              -1,
+                              SCENE_TRIGGER_NONE,
+                              0,
+                              0,
+                              "all blend modes match full-target reference");
+}
+
+static void test_cache_memory_accounting(void) {
+    char error[SCENE_ERROR_LEN];
+    scene_renderer_t *renderer = NULL;
+    expect_true(scene_renderer_create_headless("tests/fixtures/bounded-equivalence.svg", 40, 30, &renderer, error), error);
+    scene_renderer_memory_t memory;
+    scene_renderer_get_memory(renderer, &memory);
+
+    uint64_t bounded_bytes = 0;
+    uint64_t full_target_bytes = 0;
+    size_t bounded_count = 0;
+    size_t empty_count = 0;
+    size_t full_target_count = 0;
+    bool saw_offscreen_empty = false;
+    bool saw_precomposed_base = false;
+    for (size_t i = 0; i < scene_renderer_layer_cache_count(renderer); i++) {
+        scene_layer_cache_info_t info;
+        expect_true(scene_renderer_get_layer_cache_info(renderer, i, &info), "layer cache info available");
+        if (strcmp(info.ref, "base") == 0)
+            saw_precomposed_base = info.precomposed;
+        if (strcmp(info.ref, "offscreen") == 0)
+            saw_offscreen_empty = info.cache_class == SCENE_LAYER_CACHE_EMPTY;
+        if (info.precomposed)
+            continue;
+        if (info.cache_class == SCENE_LAYER_CACHE_BOUNDED) {
+            bounded_bytes += info.cache_bytes;
+            bounded_count++;
+            expect_true(info.cache_width > 0 && info.cache_height > 0, "bounded cache has dimensions");
+        } else if (info.cache_class == SCENE_LAYER_CACHE_FULL_TARGET) {
+            full_target_bytes += info.cache_bytes;
+            full_target_count++;
+        } else {
+            empty_count++;
+            expect_u64_eq(info.cache_bytes, 0, "empty cache has no bytes");
+        }
+    }
+
+    expect_true(saw_precomposed_base, "base joined static prefix");
+    expect_true(saw_offscreen_empty, "offscreen static layer is represented as empty cache");
+    expect_u64_eq(memory.bounded_layer_surface_bytes, bounded_bytes, "bounded layer bytes exact");
+    expect_u64_eq(memory.full_target_fallback_layer_bytes, full_target_bytes, "full target layer bytes exact");
+    expect_true(memory.bounded_layer_count == bounded_count, "bounded layer count exact");
+    expect_true(memory.empty_layer_count == empty_count, "empty layer count exact");
+    expect_true(memory.full_target_layer_count == full_target_count, "full target layer count exact");
+    expect_u64_eq(memory.total_retained_userspace_image_bytes,
+                  memory.normalized_svg_bytes +
+                      memory.bounded_layer_surface_bytes +
+                      memory.full_target_fallback_layer_bytes +
+                      memory.static_base_bytes +
+                      memory.headless_output_buffer_bytes +
+                      memory.cairo_xcb_output_surface_bytes,
+                  "userspace memory total exact");
+    expect_true(memory.bounded_layer_count > 0, "bounded layer caches are used");
+    expect_true(memory.full_target_layer_count == 0, "fixture has no full-target fallbacks");
+    scene_renderer_destroy(renderer);
 }
 
 static void expect_invalid_scene(const char *path) {
@@ -364,6 +807,7 @@ static void test_retained_renderer_counters(void) {
     scene_renderer_get_stats(renderer, &after);
     expect_u64_eq(after.xml_parse_count, before.xml_parse_count, "no per-frame XML parse");
     expect_u64_eq(after.rsvg_handle_create_count, before.rsvg_handle_create_count, "no per-frame RsvgHandle creation");
+    expect_u64_eq(after.layer_geometry_query_count, before.layer_geometry_query_count, "no per-frame geometry query");
     expect_u64_eq(after.svg_layer_rasterize_count, before.svg_layer_rasterize_count, "no per-frame layer rasterization");
     expect_u64_eq(after.cached_surface_alloc_count, before.cached_surface_alloc_count, "no per-frame cached surface allocation");
     expect_u64_eq(after.x_pixmap_alloc_count, before.x_pixmap_alloc_count, "no per-frame X pixmap allocation in headless renderer");
@@ -381,6 +825,7 @@ static void test_retained_renderer_counters(void) {
         expect_true(scene_renderer_render(renderer, i * 16, error), error);
     scene_renderer_get_stats(renderer, &after);
     expect_u64_eq(after.svg_layer_rasterize_count, before.svg_layer_rasterize_count, "no rasterization after resize frames");
+    expect_u64_eq(after.layer_geometry_query_count, before.layer_geometry_query_count, "no geometry query after resize frames");
     expect_u64_eq(after.cached_surface_alloc_count, before.cached_surface_alloc_count, "no cache allocation after resize frames");
 
     scene_renderer_expose(renderer, 0, 0, 1, 1);
@@ -396,11 +841,12 @@ static void test_retained_renderer_counters(void) {
     if (getenv("SCENE_TEST_STATS")) {
         scene_renderer_get_stats(renderer, &after);
         printf("headless counters: parse=%" PRIu64 " handles=%" PRIu64 " raster=%" PRIu64
-               " cache=%" PRIu64 " xpixmap=%" PRIu64 " frames=%" PRIu64
+               " geometry=%" PRIu64 " cache=%" PRIu64 " xpixmap=%" PRIu64 " frames=%" PRIu64
                " resize=%" PRIu64 " expose=%" PRIu64 "\n",
                after.xml_parse_count,
                after.rsvg_handle_create_count,
                after.svg_layer_rasterize_count,
+               after.layer_geometry_query_count,
                after.cached_surface_alloc_count,
                after.x_pixmap_alloc_count,
                after.frame_composition_count,
@@ -428,7 +874,6 @@ static cairo_surface_t *render_preview_png(const char *args, const char *path) {
 
 static void test_preview_trigger_and_transition_pixels(void) {
     cairo_surface_t *surface;
-    const char *base = "--scene tests/fixtures/preview-scene.svg --size 5x1";
 
     surface = render_preview_png("--scene tests/fixtures/preview-scene.svg --size 5x1 --state input --trigger key --trigger-at-ms 100 --time-ms 100", "/tmp/preview-key-start.png");
     expect_argb(pixel_at(surface, 3, 0), 0, 0, 0, "key trigger start is resting");
@@ -458,8 +903,234 @@ static void test_preview_trigger_and_transition_pixels(void) {
     surface = render_preview_png("--scene tests/fixtures/preview-scene.svg --size 5x1 --state verify --time-ms 500", "/tmp/preview-verify-500.png");
     expect_argb(pixel_at(surface, 1, 0), 255, 0, 0, "verify loop phase 500");
     cairo_surface_destroy(surface);
+}
 
-    (void)base;
+static void test_inspect_json_and_benchmark_cli(void) {
+    char path_a[128];
+    char path_b[128];
+    char cmd[512];
+    snprintf(path_a, sizeof(path_a), "/tmp/i3lock-scene-inspect-a-%ld.json", (long)getpid());
+    snprintf(path_b, sizeof(path_b), "/tmp/i3lock-scene-inspect-b-%ld.json", (long)getpid());
+
+    char error[SCENE_ERROR_LEN];
+    scene_renderer_t *renderer = NULL;
+    expect_true(scene_renderer_create_headless("tests/fixtures/bounded-equivalence.svg", 40, 30, &renderer, error), error);
+    expect_true(scene_renderer_write_inspection_json(renderer, path_a, error), error);
+    expect_true(scene_renderer_write_inspection_json(renderer, path_b, error), error);
+    scene_renderer_destroy(renderer);
+    expect_files_equal(path_a, path_b, "inspection JSON is deterministic");
+    expect_file_contains(path_a, "\"schema\": \"i3lock-svg-nh-scene-inspect-v1\"", "inspection JSON schema");
+    expect_file_contains(path_a, "\"cache_class\": \"bounded\"", "inspection JSON reports bounded layer");
+    expect_file_contains(path_a, "\"cache_class\": \"empty\"", "inspection JSON reports empty layer");
+
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-preview --scene tests/fixtures/bounded-equivalence.svg --size 40x30 --inspect --inspect-json %s >/tmp/i3lock-scene-inspect-cli-%ld.txt",
+             path_b,
+             (long)getpid());
+    expect_system_ok(cmd, "scene-preview inspect CLI");
+    expect_file_contains(path_b, "\"schema\": \"i3lock-svg-nh-scene-inspect-v1\"", "inspect CLI writes JSON");
+
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-preview --scene tests/fixtures/bounded-equivalence.svg --size 40x30 --benchmark --benchmark-frames 6 --benchmark-fps 60 >/tmp/i3lock-scene-benchmark-%ld.txt",
+             (long)getpid());
+    expect_system_ok(cmd, "scene-preview benchmark CLI");
+}
+
+static void test_preview_sequence_and_contact_sheet(void) {
+    char dir[128];
+    char contact[128];
+    char cmd[1024];
+    snprintf(dir, sizeof(dir), "/tmp/i3lock-scene-seq-%ld", (long)getpid());
+    snprintf(contact, sizeof(contact), "/tmp/i3lock-scene-contact-%ld.png", (long)getpid());
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-preview --scene tests/fixtures/preview-scene.svg --size 5x1 "
+             "--initial-state locked --state-change 100:input "
+             "--trigger-event 100:key --trigger-event 100:backspace "
+             "--duration-ms 200 --fps 20 --output-dir %s "
+             "--contact-sheet %s --contact-columns 3 --contact-every 1 >/tmp/i3lock-scene-seq-%ld.log",
+             dir,
+             contact,
+             (long)getpid());
+    expect_system_ok(cmd, "scene-preview sequence CLI");
+
+    char manifest[256];
+    snprintf(manifest, sizeof(manifest), "%s/manifest.json", dir);
+    expect_file_contains(manifest, "\"schema\": \"i3lock-svg-nh-scene-sequence-v1\"", "sequence manifest schema");
+    expect_file_contains(manifest, "\"frame\": 4", "sequence renders final frame");
+    expect_file_contains(manifest, "state:input,trigger:key,trigger:backspace", "identical timestamp events preserve order");
+
+    char frame_path[256];
+    snprintf(frame_path, sizeof(frame_path), "%s/frame_000003.png", dir);
+    cairo_surface_t *frame = cairo_image_surface_create_from_png(frame_path);
+    expect_true(cairo_surface_status(frame) == CAIRO_STATUS_SUCCESS, "sequence midpoint frame readable");
+    expect_argb(pixel_at(frame, 3, 0), 255, 0, 0, "sequence key midpoint pixel");
+    expect_argb(pixel_at(frame, 4, 0), 0, 0, 255, "sequence backspace midpoint pixel");
+    cairo_surface_destroy(frame);
+
+    cairo_surface_t *sheet = cairo_image_surface_create_from_png(contact);
+    expect_true(cairo_surface_status(sheet) == CAIRO_STATUS_SUCCESS, "contact sheet readable");
+    expect_i32_eq(cairo_image_surface_get_width(sheet), 15, "contact sheet width");
+    expect_i32_eq(cairo_image_surface_get_height(sheet), 2, "contact sheet height");
+    expect_argb(pixel_at(sheet, 3, 1), 255, 0, 0, "contact sheet includes key midpoint");
+    cairo_surface_destroy(sheet);
+}
+
+static void test_scene_packer_cli(void) {
+    char dir[256];
+    char bg[320];
+    char source[320];
+    char packed_a[320];
+    char packed_b[320];
+    char log_path[320];
+    char cmd[1024];
+    snprintf(dir, sizeof(dir), "/tmp/i3lock-pack-%ld", (long)getpid());
+    if (mkdir(dir, 0777) != 0 && errno != EEXIST) {
+        fprintf(stderr, "FAIL: could not create %s: %s\n", dir, strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+    snprintf(bg, sizeof(bg), "%s/bg.png", dir);
+    snprintf(source, sizeof(source), "%s/source.svg", dir);
+    snprintf(packed_a, sizeof(packed_a), "%s/packed-a.svg", dir);
+    snprintf(packed_b, sizeof(packed_b), "%s/packed-b.svg", dir);
+    snprintf(log_path, sizeof(log_path), "%s/pack.log", dir);
+    copy_file_bytes("/tmp/i3lock-scene-test-pixels.png", bg);
+    write_text_file(source,
+                    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                    "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\" width=\"2\" height=\"2\" viewBox=\"0 0 2 2\">\n"
+                    "  <metadata><scene xmlns=\"urn:i3lock-svg-nh:scene:1\" version=\"1\" fit=\"pixel\" background=\"#000000\"><layer ref=\"base\" states=\"*\" static=\"true\"/></scene></metadata>\n"
+                    "  <g id=\"base\"><image x=\"0\" y=\"0\" width=\"2\" height=\"2\" href=\"bg.png\" sodipodi:absref=\"/home/user/private/bg.png\"/></g>\n"
+                    "</svg>\n");
+
+    char error[SCENE_ERROR_LEN];
+    scene_document_t *doc = NULL;
+    expect_true(!scene_document_load(source, &doc, error), "runtime rejects linked-image source");
+
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-pack --force --input %s --output %s --print-assets >%s",
+             source,
+             packed_a,
+             log_path);
+    expect_system_ok(cmd, "scene-pack embeds relative PNG");
+    expect_file_contains(log_path, "bg.png ->", "scene-pack reports source asset");
+    expect_true(scene_document_load(packed_a, &doc, error), error);
+    scene_document_free(doc);
+    expect_file_not_contains(packed_a, "absref", "packer strips editor absolute path hints");
+    expect_file_not_contains(packed_a, "/home/user/private", "packer strips machine-specific paths");
+
+    gchar *png_bytes = NULL;
+    gsize png_len = 0;
+    GError *gerr = NULL;
+    expect_true(g_file_get_contents(bg, &png_bytes, &png_len, &gerr), "read packed PNG source");
+    gchar *encoded = g_base64_encode((const guchar *)png_bytes, png_len);
+    expect_file_contains(packed_a, encoded, "packed SVG preserves exact PNG bytes");
+    g_free(encoded);
+    g_free(png_bytes);
+
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-pack --force --input %s --output %s >/tmp/i3lock-pack-repeat-%ld.log",
+             source,
+             packed_b,
+             (long)getpid());
+    expect_system_ok(cmd, "scene-pack deterministic second run");
+    expect_files_equal(packed_a, packed_b, "scene-pack deterministic output");
+
+    char root_dir[320];
+    char outside_dir[320];
+    char bad_source[384];
+    snprintf(root_dir, sizeof(root_dir), "%s/root", dir);
+    snprintf(outside_dir, sizeof(outside_dir), "%s/outside", dir);
+    expect_true(mkdir(root_dir, 0777) == 0 || errno == EEXIST, "create pack asset root");
+    expect_true(mkdir(outside_dir, 0777) == 0 || errno == EEXIST, "create pack outside dir");
+    char outside_bg[384];
+    snprintf(outside_bg, sizeof(outside_bg), "%s/bg.png", outside_dir);
+    copy_file_bytes(bg, outside_bg);
+    snprintf(bad_source, sizeof(bad_source), "%s/bad-source.svg", root_dir);
+    write_text_file(bad_source,
+                    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2\" height=\"2\" viewBox=\"0 0 2 2\">\n"
+                    "  <metadata><scene xmlns=\"urn:i3lock-svg-nh:scene:1\" version=\"1\" fit=\"pixel\" background=\"#000000\"><layer ref=\"base\" states=\"*\" static=\"true\"/></scene></metadata>\n"
+                    "  <g id=\"base\"><image x=\"0\" y=\"0\" width=\"2\" height=\"2\" href=\"../outside/bg.png\"/></g>\n"
+                    "</svg>\n");
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-pack --check --input %s --asset-root %s >/tmp/i3lock-pack-traversal-%ld.out 2>/tmp/i3lock-pack-traversal-%ld.err",
+             bad_source,
+             root_dir,
+             (long)getpid(),
+             (long)getpid());
+    expect_system_fail(cmd, "scene-pack rejects asset-root traversal");
+
+    write_text_file(bad_source,
+                    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2\" height=\"2\" viewBox=\"0 0 2 2\">\n"
+                    "  <metadata><scene xmlns=\"urn:i3lock-svg-nh:scene:1\" version=\"1\" fit=\"pixel\" background=\"#000000\"><layer ref=\"base\" states=\"*\" static=\"true\"/></scene></metadata>\n"
+                    "  <g id=\"base\"><image x=\"0\" y=\"0\" width=\"2\" height=\"2\" href=\"https://example.invalid/bg.png\"/></g>\n"
+                    "</svg>\n");
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-pack --check --input %s --asset-root %s >/tmp/i3lock-pack-network-%ld.out 2>/tmp/i3lock-pack-network-%ld.err",
+             bad_source,
+             root_dir,
+             (long)getpid(),
+             (long)getpid());
+    expect_system_fail(cmd, "scene-pack rejects network image URL");
+
+    char invalid_source[320];
+    char invalid_out[320];
+    snprintf(invalid_source, sizeof(invalid_source), "%s/invalid-source.svg", dir);
+    snprintf(invalid_out, sizeof(invalid_out), "%s/invalid-output.svg", dir);
+    write_text_file(invalid_source,
+                    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+                    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2\" height=\"2\" viewBox=\"0 0 2 2\">\n"
+                    "  <g id=\"base\"><image x=\"0\" y=\"0\" width=\"2\" height=\"2\" href=\"bg.png\"/></g>\n"
+                    "</svg>\n");
+    snprintf(cmd,
+             sizeof(cmd),
+             "./scene-pack --force --input %s --output %s >/tmp/i3lock-pack-invalid-%ld.out 2>/tmp/i3lock-pack-invalid-%ld.err",
+             invalid_source,
+             invalid_out,
+             (long)getpid(),
+             (long)getpid());
+    expect_system_fail(cmd, "scene-pack deletes invalid temporary output");
+    expect_true(access(invalid_out, F_OK) != 0, "invalid pack output was not installed");
+}
+
+static void test_showcase_runtime_files(void) {
+    char error[SCENE_ERROR_LEN];
+    scene_document_t *doc = NULL;
+    expect_true(!scene_document_load("examples/showcase/source.svg", &doc, error),
+                "runtime rejects showcase source with linked PNG");
+    expect_true(scene_document_load("examples/showcase/showcase.scene.svg", &doc, error),
+                error);
+    scene_document_free(doc);
+
+    scene_renderer_t *bounded = NULL;
+    scene_renderer_t *reference = NULL;
+    expect_true(scene_renderer_create_headless("examples/showcase/showcase.scene.svg", 1280, 720, &bounded, error),
+                error);
+    expect_true(scene_renderer_create_headless_with_cache_mode("examples/showcase/showcase.scene.svg",
+                                                               1280,
+                                                               720,
+                                                               false,
+                                                               SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE,
+                                                               &reference,
+                                                               error),
+                error);
+    scene_renderer_memory_t bounded_memory;
+    scene_renderer_memory_t reference_memory;
+    scene_renderer_get_memory(bounded, &bounded_memory);
+    scene_renderer_get_memory(reference, &reference_memory);
+    expect_true(bounded_memory.full_target_layer_count == 0, "showcase has no full-target fallbacks");
+    expect_true(bounded_memory.bounded_layer_count > 0, "showcase dynamic layers use bounded caches");
+    expect_true(bounded_memory.total_retained_userspace_image_bytes < reference_memory.total_retained_userspace_image_bytes,
+                "showcase bounded cache memory is lower than reference");
+    scene_renderer_destroy(bounded);
+    scene_renderer_destroy(reference);
 }
 
 typedef struct {
@@ -653,9 +1324,15 @@ int main(void) {
     test_embedded_png_pixel_preservation();
     test_visibility_normalization_pixels();
     test_static_precompose_equivalence();
+    test_bounded_reference_equivalence();
+    test_cache_memory_accounting();
     test_resource_validation();
     test_retained_renderer_counters();
     test_preview_trigger_and_transition_pixels();
+    test_inspect_json_and_benchmark_cli();
+    test_preview_sequence_and_contact_sheet();
+    test_scene_packer_cli();
+    test_showcase_runtime_files();
     test_fake_auth_keeps_verify_animation_running();
     printf("scene-tests: ok\n");
     return EXIT_SUCCESS;

@@ -1,5 +1,6 @@
 i3lock
 scene-preview
+scene-pack
 scene-tests
 scene-x11-tests
 *.o

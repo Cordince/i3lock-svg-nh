@@ -109,11 +109,21 @@ without locking the screen:
 ./scene-preview --scene examples/scene-v1.svg --size 1920x1080 \
                 --state input --trigger key --trigger-at-ms 100 \
                 --time-ms 225 --output /tmp/key-midpoint.png
+./scene-preview --scene examples/showcase/showcase.scene.svg --size 1280x720 \
+                --inspect --inspect-json /tmp/showcase.inspect.json
+./scene-pack --input examples/showcase/source.svg \
+             --output /tmp/showcase.scene.svg --print-assets
 
 Scene layer visibility is controlled by scene metadata at runtime. Referenced
 groups may be hidden in the editor with `display:none`; validation, preview, and
 locking normalize those layer containers in memory while preserving hidden
 descendant artwork.
+
+The Phase 2 renderer caches dynamic layers in tight device-space bounds where
+librsvg provides reliable ink geometry, falling back to full-target caches only
+with an inspection-visible reason. The editable showcase scene lives at
+`examples/showcase/source.svg`; the packed runtime-safe version is
+`examples/showcase/showcase.scene.svg`.
 
 Ideas for animations:
 --------------------
