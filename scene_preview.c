@@ -1,6 +1,7 @@
 #include <cairo.h>
 #include <err.h>
 #include <errno.h>
+#include <dirent.h>
 #include <getopt.h>
 #include <inttypes.h>
 #include <limits.h>
@@ -380,6 +381,36 @@ static uint64_t percentile_nearest_rank(const uint64_t *sorted, int count, doubl
     return sorted[rank - 1];
 }
 
+static void write_json_string(FILE *out, const char *value) {
+    fputc('"', out);
+    for (const unsigned char *p = (const unsigned char *)value; *p; p++) {
+        switch (*p) {
+            case '\\':
+                fputs("\\\\", out);
+                break;
+            case '"':
+                fputs("\\\"", out);
+                break;
+            case '\n':
+                fputs("\\n", out);
+                break;
+            case '\r':
+                fputs("\\r", out);
+                break;
+            case '\t':
+                fputs("\\t", out);
+                break;
+            default:
+                if (*p < 0x20)
+                    fprintf(out, "\\u%04x", *p);
+                else
+                    fputc(*p, out);
+                break;
+        }
+    }
+    fputc('"', out);
+}
+
 static void run_one_benchmark(const char *label,
                               const char *scene_path,
                               const char *scene_data,
@@ -424,6 +455,7 @@ static void run_one_benchmark(const char *label,
             errx(EXIT_FAILURE, "%s", error);
         samples[i] = hrtime_ns() - start;
     }
+    uint64_t diagnostics_start = hrtime_ns();
     qsort(samples, (size_t)frames, sizeof(*samples), compare_u64);
     long double sum = 0.0;
     for (int i = 0; i < frames; i++)
@@ -444,6 +476,8 @@ static void run_one_benchmark(const char *label,
     scene_renderer_memory_t memory;
     scene_renderer_get_stats(renderer, &stats);
     scene_renderer_get_memory(renderer, &memory);
+    uint64_t diagnostics_ns = hrtime_ns() - diagnostics_start;
+    double composed_frames = stats.frame_composition_count ? (double)stats.frame_composition_count : 1.0;
     printf("benchmark %s\n", label);
     printf("  parse-ms=%.3f handle-ms=%.3f geometry-ms=%.3f raster-ms=%.3f static-ms=%.3f load-ms=%.3f\n",
            stats.parse_time_ns / 1000000.0,
@@ -463,6 +497,13 @@ static void run_one_benchmark(const char *label,
            1000000000.0L / mean,
            frames,
            warmup_frames);
+    printf("  stage-ms/frame static-restore=%.3f dynamic-layers=%.3f cairo-flush=%.3f output-copy=%.3f x11-present=%.3f diagnostics-total=%.3f\n",
+           (stats.static_base_restore_time_ns / 1000000.0) / composed_frames,
+           (stats.dynamic_layer_composition_time_ns / 1000000.0) / composed_frames,
+           (stats.cairo_flush_time_ns / 1000000.0) / composed_frames,
+           (stats.output_buffer_copy_time_ns / 1000000.0) / composed_frames,
+           (stats.x11_presentation_time_ns / 1000000.0) / composed_frames,
+           diagnostics_ns / 1000000.0);
     printf("  memory userspace=%" PRIu64 " estimated-total=%" PRIu64
            " bounded=%zu empty=%zu full-target=%zu\n",
            memory.total_retained_userspace_image_bytes,
@@ -478,6 +519,16 @@ static void run_one_benchmark(const char *label,
            stats.svg_layer_rasterize_count,
            stats.cached_surface_alloc_count,
            stats.frame_composition_count);
+    for (size_t i = 0; i < scene_renderer_layer_cache_count(renderer); i++) {
+        scene_layer_cache_info_t info;
+        if (!scene_renderer_get_layer_cache_info(renderer, i, &info) || info.composition_count == 0)
+            continue;
+        printf("  layer-ms ref=%s count=%" PRIu64 " mean=%.3f total=%.3f\n",
+               info.ref,
+               info.composition_count,
+               (info.composition_time_ns / 1000000.0) / (double)info.composition_count,
+               info.composition_time_ns / 1000000.0);
+    }
     if (json) {
         if (!*json_first)
             fprintf(json, ",\n");
@@ -487,9 +538,10 @@ static void run_one_benchmark(const char *label,
                 "      \"cache_mode\": \"%s\",\n"
                 "      \"load_timing_ms\": {\"parse\": %.6f, \"handle\": %.6f, \"geometry\": %.6f, \"raster\": %.6f, \"static_base\": %.6f, \"total\": %.6f},\n"
                 "      \"frame_stats_ms\": {\"mean\": %.6Lf, \"median\": %.6f, \"p90\": %.6f, \"p95\": %.6f, \"p99\": %.6f, \"max\": %.6f, \"stddev\": %.6f, \"fps\": %.6Lf, \"measured_frames\": %d, \"warmup_frames\": %d},\n"
+                "      \"stage_ms_per_frame\": {\"static_restore\": %.6f, \"dynamic_layers\": %.6f, \"cairo_flush\": %.6f, \"output_copy\": %.6f, \"x11_present\": %.6f, \"diagnostics_total_ms\": %.6f},\n"
                 "      \"memory\": {\"retained_userspace_bytes\": %" PRIu64 ", \"estimated_total_bytes\": %" PRIu64 ", \"bounded_layers\": %zu, \"empty_layers\": %zu, \"full_target_layers\": %zu},\n"
-                "      \"counters\": {\"xml_parse\": %" PRIu64 ", \"rsvg_handle\": %" PRIu64 ", \"geometry_query\": %" PRIu64 ", \"rasterize\": %" PRIu64 ", \"cache_alloc\": %" PRIu64 ", \"frames\": %" PRIu64 "}\n"
-                "    }",
+                "      \"counters\": {\"xml_parse\": %" PRIu64 ", \"rsvg_handle\": %" PRIu64 ", \"geometry_query\": %" PRIu64 ", \"rasterize\": %" PRIu64 ", \"cache_alloc\": %" PRIu64 ", \"frames\": %" PRIu64 "},\n"
+                "      \"layer_composition\": [\n",
                 label,
                 stats.parse_time_ns / 1000000.0,
                 stats.rsvg_handle_create_time_ns / 1000000.0,
@@ -507,6 +559,12 @@ static void run_one_benchmark(const char *label,
                 1000000000.0L / mean,
                 frames,
                 warmup_frames,
+                (stats.static_base_restore_time_ns / 1000000.0) / composed_frames,
+                (stats.dynamic_layer_composition_time_ns / 1000000.0) / composed_frames,
+                (stats.cairo_flush_time_ns / 1000000.0) / composed_frames,
+                (stats.output_buffer_copy_time_ns / 1000000.0) / composed_frames,
+                (stats.x11_presentation_time_ns / 1000000.0) / composed_frames,
+                diagnostics_ns / 1000000.0,
                 memory.total_retained_userspace_image_bytes,
                 memory.total_estimated_renderer_bytes,
                 memory.bounded_layer_count,
@@ -518,6 +576,24 @@ static void run_one_benchmark(const char *label,
                 stats.svg_layer_rasterize_count,
                 stats.cached_surface_alloc_count,
                 stats.frame_composition_count);
+        bool first_layer = true;
+        for (size_t i = 0; i < scene_renderer_layer_cache_count(renderer); i++) {
+            scene_layer_cache_info_t info;
+            if (!scene_renderer_get_layer_cache_info(renderer, i, &info) || info.composition_count == 0)
+                continue;
+            if (!first_layer)
+                fprintf(json, ",\n");
+            first_layer = false;
+            fprintf(json,
+                    "        {\"ref\": ");
+            write_json_string(json, info.ref);
+            fprintf(json,
+                    ", \"count\": %" PRIu64 ", \"total_ms\": %.6f, \"mean_ms\": %.6f}",
+                    info.composition_count,
+                    info.composition_time_ns / 1000000.0,
+                    (info.composition_time_ns / 1000000.0) / (double)info.composition_count);
+        }
+        fprintf(json, "\n      ]\n    }");
     }
     free(samples);
     scene_renderer_destroy(renderer);
@@ -545,6 +621,7 @@ typedef struct {
     bool fullscreen;
     bool overlay;
     bool reload_error_to_stderr;
+    const char *test_stats_path;
     scene_state_t state;
     scene_trigger_t last_trigger;
     scene_renderer_t *renderer;
@@ -558,6 +635,20 @@ typedef struct {
     bool need_redraw;
     int64_t reload_due_ms;
     uint64_t start_ns;
+    uint64_t reload_success_count;
+    uint64_t reload_failure_count;
+    uint64_t renderer_create_count;
+    uint64_t renderer_destroy_count;
+    uint64_t cumulative_xml_parse_count;
+    uint64_t cumulative_rsvg_handle_count;
+    uint64_t cumulative_x_pixmap_alloc_count;
+    uint64_t max_open_fd_count;
+    uint64_t current_open_fd_count;
+    uint64_t max_dependency_count;
+    uint64_t current_watch_count;
+    uint64_t max_watch_count;
+    uint64_t current_retained_bytes;
+    uint64_t max_retained_bytes;
     char last_reload[SCENE_ERROR_LEN];
     int screenshot_counter;
     bool frame_clock_active;
@@ -629,6 +720,42 @@ static uint64_t monotonic_now_ns(void) {
 
 static int64_t live_elapsed_ms(const live_preview_t *preview) {
     return (int64_t)((monotonic_now_ns() - preview->start_ns) / 1000000ull);
+}
+
+static uint64_t count_open_fds(void) {
+    DIR *dir = opendir("/proc/self/fd");
+    if (!dir)
+        return 0;
+    uint64_t count = 0;
+    while (readdir(dir))
+        count++;
+    closedir(dir);
+    return count >= 2 ? count - 2 : count;
+}
+
+static void live_update_resource_snapshot(live_preview_t *preview) {
+    preview->current_open_fd_count = count_open_fds();
+    if (preview->current_open_fd_count > preview->max_open_fd_count)
+        preview->max_open_fd_count = preview->current_open_fd_count;
+    if (preview->dependencies.count > preview->max_dependency_count)
+        preview->max_dependency_count = preview->dependencies.count;
+    if (preview->current_watch_count > preview->max_watch_count)
+        preview->max_watch_count = preview->current_watch_count;
+    if (preview->renderer) {
+        scene_renderer_memory_t memory;
+        scene_renderer_get_memory(preview->renderer, &memory);
+        preview->current_retained_bytes = memory.total_retained_userspace_image_bytes;
+        if (preview->current_retained_bytes > preview->max_retained_bytes)
+            preview->max_retained_bytes = preview->current_retained_bytes;
+    }
+}
+
+static void live_accumulate_renderer_stats(live_preview_t *preview, scene_renderer_t *renderer) {
+    scene_renderer_stats_t stats;
+    scene_renderer_get_stats(renderer, &stats);
+    preview->cumulative_xml_parse_count += stats.xml_parse_count;
+    preview->cumulative_rsvg_handle_count += stats.rsvg_handle_create_count;
+    preview->cumulative_x_pixmap_alloc_count += stats.x_pixmap_alloc_count;
 }
 
 static xcb_atom_t intern_atom(xcb_connection_t *conn, const char *name) {
@@ -722,6 +849,7 @@ static void live_clear_watches(live_preview_t *preview) {
     free(preview->poll_watches);
     preview->poll_watches = NULL;
     preview->poll_watch_count = 0;
+    preview->current_watch_count = 0;
     if (preview->inotify_fd >= 0) {
         close(preview->inotify_fd);
         preview->inotify_fd = -1;
@@ -734,6 +862,7 @@ static void live_build_poll_watches(live_preview_t *preview) {
     if (!preview->poll_watches)
         return;
     preview->poll_watch_count = preview->dependencies.count;
+    preview->current_watch_count = preview->poll_watch_count;
     for (size_t i = 0; i < preview->dependencies.count; i++) {
         preview->poll_watches[i].path = preview->dependencies.items[i];
         preview->poll_watches[i].valid = stat(preview->dependencies.items[i], &preview->poll_watches[i].st) == 0;
@@ -749,18 +878,25 @@ static void live_rebuild_watches(live_preview_t *preview) {
         uint32_t mask = IN_CLOSE_WRITE | IN_MODIFY | IN_ATTRIB | IN_MOVED_TO |
                         IN_CREATE | IN_DELETE_SELF | IN_MOVE_SELF;
         bool complete = true;
+        size_t installed = 0;
         for (size_t i = 0; i < preview->dependencies.count; i++) {
-            if (inotify_add_watch(preview->inotify_fd, preview->dependencies.items[i], mask) < 0)
+            if (inotify_add_watch(preview->inotify_fd, preview->dependencies.items[i], mask) < 0) {
                 complete = false;
+            } else {
+                installed++;
+            }
         }
         if (complete) {
             preview->using_inotify = true;
+            preview->current_watch_count = installed;
+            live_update_resource_snapshot(preview);
             return;
         }
         close(preview->inotify_fd);
         preview->inotify_fd = -1;
     }
     live_build_poll_watches(preview);
+    live_update_resource_snapshot(preview);
 }
 
 static void live_schedule_reload(live_preview_t *preview) {
@@ -783,6 +919,7 @@ static bool live_reload(live_preview_t *preview, bool forced) {
     scene_pack_result_t new_packed;
     path_list_t new_deps = {0};
     if (!live_build_renderer(preview, &new_renderer, &new_packed, &new_deps, error)) {
+        preview->reload_failure_count++;
         live_set_status(preview, "reload failed: ", error);
         if (preview->reload_error_to_stderr)
             fprintf(stderr, "%s\n", preview->last_reload);
@@ -791,21 +928,29 @@ static bool live_reload(live_preview_t *preview, bool forced) {
         path_list_clear(&new_deps);
         preview->need_reload = false;
         preview->need_redraw = true;
+        live_update_resource_snapshot(preview);
         return false;
     }
 
-    scene_renderer_destroy(preview->renderer);
+    if (preview->renderer) {
+        scene_renderer_destroy(preview->renderer);
+        preview->renderer_destroy_count++;
+    }
     scene_pack_result_clear(&preview->packed);
     path_list_clear(&preview->dependencies);
     preview->renderer = new_renderer;
+    preview->renderer_create_count++;
+    live_accumulate_renderer_stats(preview, new_renderer);
     preview->packed = new_packed;
     preview->dependencies = new_deps;
     preview->start_ns = monotonic_now_ns();
     preview->last_trigger = SCENE_TRIGGER_NONE;
+    preview->reload_success_count++;
     snprintf(preview->last_reload, sizeof(preview->last_reload), "reload ok");
     live_rebuild_watches(preview);
     preview->need_reload = false;
     preview->need_redraw = true;
+    live_update_resource_snapshot(preview);
     return true;
 }
 
@@ -1043,6 +1188,15 @@ static bool live_poll_files_changed(live_preview_t *preview) {
 }
 
 static bool live_init_xkb(live_preview_t *preview) {
+    if (!xkb_x11_setup_xkb_extension(preview->conn,
+                                     XKB_X11_MIN_MAJOR_XKB_VERSION,
+                                     XKB_X11_MIN_MINOR_XKB_VERSION,
+                                     XKB_X11_SETUP_XKB_EXTENSION_NO_FLAGS,
+                                     NULL,
+                                     NULL,
+                                     NULL,
+                                     NULL))
+        return false;
     preview->xkb_context = xkb_context_new(XKB_CONTEXT_NO_FLAGS);
     if (!preview->xkb_context)
         return false;
@@ -1061,6 +1215,54 @@ static bool live_init_xkb(live_preview_t *preview) {
     return preview->xkb_state != NULL;
 }
 
+static void live_write_test_stats(live_preview_t *preview) {
+    if (!preview->test_stats_path)
+        return;
+    live_update_resource_snapshot(preview);
+    FILE *out = fopen(preview->test_stats_path, "w");
+    if (!out)
+        return;
+    fprintf(out,
+            "{\n"
+            "  \"schema\": \"i3lock-svg-nh-live-preview-test-stats-v1\",\n"
+            "  \"reload_success\": %" PRIu64 ",\n"
+            "  \"reload_failure\": %" PRIu64 ",\n"
+            "  \"renderer_create\": %" PRIu64 ",\n"
+            "  \"renderer_destroy\": %" PRIu64 ",\n"
+            "  \"xml_parse_total\": %" PRIu64 ",\n"
+            "  \"rsvg_handle_total\": %" PRIu64 ",\n"
+            "  \"x_pixmap_alloc_total\": %" PRIu64 ",\n"
+            "  \"current_open_fds\": %" PRIu64 ",\n"
+            "  \"max_open_fds\": %" PRIu64 ",\n"
+            "  \"current_dependencies\": %zu,\n"
+            "  \"max_dependencies\": %" PRIu64 ",\n"
+            "  \"current_watches\": %" PRIu64 ",\n"
+            "  \"max_watches\": %" PRIu64 ",\n"
+            "  \"current_retained_bytes\": %" PRIu64 ",\n"
+            "  \"max_retained_bytes\": %" PRIu64 ",\n"
+            "  \"using_inotify\": %s,\n"
+            "  \"need_reload\": %s\n"
+            "}\n",
+            preview->reload_success_count,
+            preview->reload_failure_count,
+            preview->renderer_create_count,
+            preview->renderer_destroy_count,
+            preview->cumulative_xml_parse_count,
+            preview->cumulative_rsvg_handle_count,
+            preview->cumulative_x_pixmap_alloc_count,
+            preview->current_open_fd_count,
+            preview->max_open_fd_count,
+            preview->dependencies.count,
+            preview->max_dependency_count,
+            preview->current_watch_count,
+            preview->max_watch_count,
+            preview->current_retained_bytes,
+            preview->max_retained_bytes,
+            preview->using_inotify ? "true" : "false",
+            preview->need_reload ? "true" : "false");
+    fclose(out);
+}
+
 static void live_destroy(live_preview_t *preview) {
     if (preview->window_surface)
         cairo_surface_destroy(preview->window_surface);
@@ -1077,7 +1279,12 @@ static void live_destroy(live_preview_t *preview) {
     live_clear_watches(preview);
     path_list_clear(&preview->dependencies);
     scene_pack_result_clear(&preview->packed);
-    scene_renderer_destroy(preview->renderer);
+    if (preview->renderer) {
+        scene_renderer_destroy(preview->renderer);
+        preview->renderer_destroy_count++;
+        preview->renderer = NULL;
+    }
+    live_write_test_stats(preview);
 }
 
 static int run_live_preview(const char *scene_path,
@@ -1101,6 +1308,7 @@ static int run_live_preview(const char *scene_path,
     preview.fullscreen = fullscreen;
     preview.overlay = overlay;
     preview.reload_error_to_stderr = reload_error_to_stderr;
+    preview.test_stats_path = getenv("SCENE_PREVIEW_TEST_STATS");
     preview.state = initial_state;
     preview.inotify_fd = -1;
     preview.win = XCB_NONE;
@@ -1210,6 +1418,8 @@ static int run_live_preview(const char *scene_path,
                 xcb_client_message_event_t *client = (xcb_client_message_event_t *)event;
                 if (client->data.data32[0] == preview.wm_delete_window)
                     running = false;
+            } else if (type == XCB_DESTROY_NOTIFY) {
+                running = false;
             }
             free(event);
         }

@@ -54,6 +54,8 @@ typedef struct {
     double z;
     uint32_t states;
     scene_trigger_t trigger;
+    uint64_t composition_time_ns;
+    uint64_t composition_count;
 } scene_layer_cache_info_t;
 
 bool scene_renderer_validate_file(const char *path, char error[SCENE_ERROR_LEN]);

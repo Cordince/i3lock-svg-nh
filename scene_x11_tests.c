@@ -65,6 +65,7 @@ int main(void) {
                                           &renderer,
                                           error),
                 error);
+    expect_true(renderer != NULL, "renderer non-null after X11 create");
     scene_renderer_set_window(renderer, win);
     scene_renderer_set_state(renderer, SCENE_STATE_VERIFY, 0);
     expect_true(scene_renderer_render(renderer, 0, error), error);

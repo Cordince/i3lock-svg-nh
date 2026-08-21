@@ -494,3 +494,12 @@ runtime, path morphing, runtime SVG DOM mutation, or scene-v2 schema.
 The scene is one root-sized surface. Multi-monitor roots are handled as one
 combined root layout. Very large SVGs, enormous filter bounds, or geometry that
 librsvg cannot describe safely may use full-target fallback caches.
+## Phase 3.1 Static Prefix And Diagnostics
+
+The retained renderer precomposes only the leading contiguous immutable root prefix. A layer can join that prefix when it is always active, has no state-specific activation, has no trigger, has no enter or exit transition, has no timeline, and therefore has no runtime opacity or transform change. The layer does not need to declare `static="true"`; that attribute remains an authoring hint, while the optimizer uses the stricter semantic rule above.
+
+Prefix layers are composited into the static base in exact scene order using the same Cairo operator selected by their `blend` value. Non-normal operators such as `multiply`, `screen`, `overlay`, and `difference` are safe in the prefix because no later dynamic layer is crossed or reordered. At frame time the completed static base is restored with source-copy semantics, then non-prefix layers are composited in normal order.
+
+The renderer will not flatten a layer across a dynamic layer, a state layer, a trigger layer, or any animated layer. Static layers after the prefix remain individually cached at their authored z position.
+
+Benchmark output reports aggregate per-frame stage timings for static-base restore, dynamic-layer composition, Cairo flush, output copying, X11 presentation when applicable, diagnostics overhead, and per-layer composition totals for layers that were actually composited.

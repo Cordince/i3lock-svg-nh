@@ -181,6 +181,11 @@ typedef struct {
     uint64_t layer_geometry_query_time_ns;
     uint64_t layer_rasterization_time_ns;
     uint64_t static_base_composition_time_ns;
+    uint64_t static_base_restore_time_ns;
+    uint64_t dynamic_layer_composition_time_ns;
+    uint64_t cairo_flush_time_ns;
+    uint64_t output_buffer_copy_time_ns;
+    uint64_t x11_presentation_time_ns;
     uint64_t total_load_time_ns;
 } scene_renderer_stats_t;
 

@@ -48,6 +48,8 @@ struct scene_renderer {
     cairo_surface_t *static_surface;
     cairo_surface_t *image_surface;
     bool *precomposed_layers;
+    uint64_t *layer_composition_time_ns;
+    uint64_t *layer_composition_count;
     bool disable_static_precompose;
     scene_renderer_cache_mode_t cache_mode;
     bool fail_next_render;
@@ -158,6 +160,13 @@ static void destroy_layer_cache(cached_layer_t *layers, size_t count) {
 static void destroy_precompose_flags(bool **flags) {
     free(*flags);
     *flags = NULL;
+}
+
+static void destroy_layer_stage_stats(scene_renderer_t *renderer) {
+    free(renderer->layer_composition_time_ns);
+    free(renderer->layer_composition_count);
+    renderer->layer_composition_time_ns = NULL;
+    renderer->layer_composition_count = NULL;
 }
 
 static void destroy_x11_buffers(scene_renderer_t *renderer) {
@@ -572,6 +581,14 @@ static void layer_origin(scene_renderer_t *renderer,
     *origin_y = renderer->fit.translate_y + renderer->doc->height * renderer->fit.scale_y / 2.0;
 }
 
+static bool layer_can_join_static_prefix(const scene_layer_t *layer) {
+    return layer->states == SCENE_STATE_MASK_ALL &&
+           layer->trigger == SCENE_TRIGGER_NONE &&
+           !layer->enter.present &&
+           !layer->exit.present &&
+           !layer->timeline.present;
+}
+
 static bool build_layer_cache(scene_renderer_t *renderer,
                               cached_layer_t **out_layers,
                               cairo_surface_t **out_static,
@@ -617,20 +634,13 @@ static bool build_layer_cache(scene_renderer_t *renderer,
             return false;
         }
         layer_origin(renderer, layer, &layers[i], &layers[i].origin_x, &layers[i].origin_y);
-        bool safe_prefix_static = prefix_open &&
-                                  layer->static_layer &&
-                                  layer->states == SCENE_STATE_MASK_ALL &&
-                                  layer->trigger == SCENE_TRIGGER_NONE &&
-                                  !layer->enter.present &&
-                                  !layer->exit.present &&
-                                  !layer->timeline.present &&
-                                  layer->blend == SCENE_BLEND_NORMAL;
+        bool safe_prefix_static = prefix_open && layer_can_join_static_prefix(layer);
         if (safe_prefix_static) {
             precomposed[i] = true;
             layers[i].precomposed = true;
             if (layers[i].surface) {
                 uint64_t start = now_ns();
-                cairo_set_operator(static_cr, CAIRO_OPERATOR_OVER);
+                cairo_set_operator(static_cr, blend_to_operator(layer->blend));
                 cairo_set_source_surface(static_cr, layers[i].surface, layers[i].cache_x, layers[i].cache_y);
                 cairo_paint(static_cr);
                 renderer->stats.static_base_composition_time_ns += now_ns() - start;
@@ -698,6 +708,8 @@ static bool rebuild(scene_renderer_t *renderer, uint32_t width, uint32_t height,
     cairo_surface_t *new_static = NULL;
     cairo_surface_t *new_image = NULL;
     bool *new_precomposed = NULL;
+    uint64_t *new_layer_times = NULL;
+    uint64_t *new_layer_counts = NULL;
     uint32_t old_width = renderer->width;
     uint32_t old_height = renderer->height;
     scene_fit_transform_t old_fit = renderer->fit;
@@ -752,10 +764,29 @@ static bool rebuild(scene_renderer_t *renderer, uint32_t width, uint32_t height,
 #endif
     }
 
+    new_layer_times = calloc(renderer->doc->layer_count, sizeof(*new_layer_times));
+    new_layer_counts = calloc(renderer->doc->layer_count, sizeof(*new_layer_counts));
+    if (!new_layer_times || !new_layer_counts) {
+        free(new_layer_times);
+        free(new_layer_counts);
+        cairo_surface_destroy(new_static);
+        free(new_precomposed);
+        destroy_layer_cache(new_layers, renderer->doc->layer_count);
+        if (new_image)
+            cairo_surface_destroy(new_image);
+        renderer->width = old_width;
+        renderer->height = old_height;
+        renderer->fit = old_fit;
+        return set_error(error, "out of memory");
+    }
+
     destroy_layer_cache(renderer->layers, renderer->doc->layer_count);
     renderer->layers = new_layers;
     destroy_precompose_flags(&renderer->precomposed_layers);
     renderer->precomposed_layers = new_precomposed;
+    destroy_layer_stage_stats(renderer);
+    renderer->layer_composition_time_ns = new_layer_times;
+    renderer->layer_composition_count = new_layer_counts;
     destroy_surface(&renderer->static_surface);
     renderer->static_surface = new_static;
     if (!renderer->x11) {
@@ -1000,6 +1031,7 @@ void scene_renderer_destroy(scene_renderer_t *renderer) {
         return;
     destroy_layer_cache(renderer->layers, renderer->doc ? renderer->doc->layer_count : 0);
     destroy_precompose_flags(&renderer->precomposed_layers);
+    destroy_layer_stage_stats(renderer);
     destroy_surface(&renderer->static_surface);
     destroy_surface(&renderer->image_surface);
     destroy_x11_buffers(renderer);
@@ -1074,11 +1106,13 @@ static cairo_t *render_target(scene_renderer_t *renderer, int *x11_index) {
 
 static void composite_layer(scene_renderer_t *renderer,
                             cairo_t *cr,
+                            size_t layer_index,
                             const scene_layer_style_t *style,
                             const cached_layer_t *cache) {
     if (!style->visible || style->opacity <= 0.0 || !cache || !cache->surface)
         return;
 
+    uint64_t start = now_ns();
     cairo_save(cr);
     cairo_set_operator(cr, blend_to_operator(style->blend));
     cairo_translate(cr,
@@ -1090,6 +1124,12 @@ static void composite_layer(scene_renderer_t *renderer,
     cairo_set_source_surface(cr, cache->surface, cache->cache_x, cache->cache_y);
     cairo_paint_with_alpha(cr, style->opacity);
     cairo_restore(cr);
+    uint64_t elapsed = now_ns() - start;
+    renderer->stats.dynamic_layer_composition_time_ns += elapsed;
+    if (renderer->layer_composition_time_ns && layer_index < renderer->doc->layer_count) {
+        renderer->layer_composition_time_ns[layer_index] += elapsed;
+        renderer->layer_composition_count[layer_index]++;
+    }
 }
 
 bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char error[SCENE_ERROR_LEN]) {
@@ -1112,18 +1152,20 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
                          cairo_status_to_string(status));
     }
 
+    uint64_t restore_start = now_ns();
     cairo_save(cr);
     cairo_set_operator(cr, CAIRO_OPERATOR_SOURCE);
     cairo_set_source_surface(cr, renderer->static_surface, 0, 0);
     cairo_paint(cr);
     cairo_restore(cr);
+    renderer->stats.static_base_restore_time_ns += now_ns() - restore_start;
 
     scene_runtime_evaluate(renderer->runtime, now_ms);
     for (size_t i = 0; i < renderer->doc->layer_count; i++) {
         if (renderer->precomposed_layers && renderer->precomposed_layers[i])
             continue;
         const scene_layer_style_t *style = scene_runtime_layer_style(renderer->runtime, i);
-        composite_layer(renderer, cr, style, &renderer->layers[i]);
+        composite_layer(renderer, cr, i, style, &renderer->layers[i]);
     }
 
     cairo_status_t status = cairo_status(cr);
@@ -1134,8 +1176,11 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
 
     if (renderer->x11) {
 #ifndef SCENE_RENDERER_NO_X11
+        uint64_t flush_start = now_ns();
         cairo_surface_flush(renderer->xcb_surfaces[x11_index]);
+        renderer->stats.cairo_flush_time_ns += now_ns() - flush_start;
         if (renderer->win != XCB_NONE) {
+            uint64_t present_start = now_ns();
             xcb_void_cookie_t cookie =
                 xcb_change_window_attributes_checked(renderer->conn,
                                                      renderer->win,
@@ -1150,6 +1195,7 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
             renderer->front = x11_index;
             xcb_clear_area(renderer->conn, 0, renderer->win, 0, 0, renderer->width, renderer->height);
             xcb_flush(renderer->conn);
+            renderer->stats.x11_presentation_time_ns += now_ns() - present_start;
         } else {
             renderer->front = x11_index;
         }
@@ -1157,7 +1203,9 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
         return set_error(error, "X11 scene rendering is not available in this build");
 #endif
     } else {
+        uint64_t flush_start = now_ns();
         cairo_surface_flush(renderer->image_surface);
+        renderer->stats.cairo_flush_time_ns += now_ns() - flush_start;
     }
 
     renderer->stats.frame_composition_count++;
@@ -1226,6 +1274,8 @@ bool scene_renderer_get_layer_cache_info(const scene_renderer_t *renderer,
     out->z = layer->has_z ? layer->z : (double)layer->svg_order;
     out->states = layer->states;
     out->trigger = layer->trigger;
+    out->composition_time_ns = renderer->layer_composition_time_ns ? renderer->layer_composition_time_ns[index] : 0;
+    out->composition_count = renderer->layer_composition_count ? renderer->layer_composition_count[index] : 0;
     return true;
 }
 
@@ -1442,7 +1492,11 @@ bool scene_renderer_write_inspection_json(const scene_renderer_t *renderer,
         }
         fprintf(out, "\", \"fallback_reason\": \"");
         json_escape(out, cache->fallback_reason);
-        fprintf(out, "\"}%s\n", i + 1 == renderer->doc->layer_count ? "" : ",");
+        fprintf(out,
+                "\", \"composition_count\": %" PRIu64 ", \"composition_time_ns\": %" PRIu64 "}%s\n",
+                renderer->layer_composition_count ? renderer->layer_composition_count[i] : 0,
+                renderer->layer_composition_time_ns ? renderer->layer_composition_time_ns[i] : 0,
+                i + 1 == renderer->doc->layer_count ? "" : ",");
     }
     fprintf(out, "  ]\n}\n");
     if (fclose(out) != 0)
@@ -1459,8 +1513,13 @@ void scene_renderer_get_stats(const scene_renderer_t *renderer, scene_renderer_s
 }
 
 void scene_renderer_reset_stats(scene_renderer_t *renderer) {
-    if (renderer)
+    if (renderer) {
         memset(&renderer->stats, 0, sizeof(renderer->stats));
+        if (renderer->layer_composition_time_ns && renderer->doc)
+            memset(renderer->layer_composition_time_ns, 0, renderer->doc->layer_count * sizeof(*renderer->layer_composition_time_ns));
+        if (renderer->layer_composition_count && renderer->doc)
+            memset(renderer->layer_composition_count, 0, renderer->doc->layer_count * sizeof(*renderer->layer_composition_count));
+    }
 }
 
 void scene_renderer_note_frame_timer_start(scene_renderer_t *renderer) {

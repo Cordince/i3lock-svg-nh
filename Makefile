@@ -31,11 +31,11 @@ SCENE_PACK_OBJS:=scene_pack.o $(SCENE_PACK_LIB_OBJS) $(SCENE_HEADLESS_OBJS)
 SCENE_TEST_OBJS:=scene_tests.o $(SCENE_PACK_LIB_OBJS) $(SCENE_HEADLESS_OBJS)
 SCENE_X11_TEST_OBJS:=scene_x11_tests.o xcb.o $(SCENE_OBJS)
 
-VERSION:=$(shell git describe --tags --abbrev=0)
-GIT_VERSION:="$(shell git describe --tags --always) ($(shell git log --pretty=format:%cd --date=short -n1))"
+VERSION:=$(shell git describe --tags --abbrev=0 2>/dev/null || printf '0.0.0-dev')
+GIT_VERSION:="$(shell git describe --tags --always 2>/dev/null || printf 'unknown') ($(shell git log --pretty=format:%cd --date=short -n1 2>/dev/null || printf 'unknown-date'))"
 CPPFLAGS += -DVERSION=\"${GIT_VERSION}\"
 
-.PHONY: install clean uninstall test check xvfb-test container-sanitizer-test
+.PHONY: install clean uninstall test check xvfb-test container-sanitizer-test local-sanitizer-test
 
 all: i3lock scene-preview scene-pack
 
@@ -66,6 +66,7 @@ scene-x11-tests: ${SCENE_X11_TEST_OBJS}
 xvfb-test: scene-x11-tests scene-preview
 	xvfb-run --server-num=200 -a sh -c 'sleep 1; ./scene-x11-tests'
 	sh tools/run-preview-window-smoke.sh
+	xvfb-run --server-num=201 -a bash tools/run-live-reload-integration.sh
 
 clean:
 	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests *.o i3lock-${VERSION}.tar.gz
@@ -86,6 +87,9 @@ install: all
 
 container-sanitizer-test:
 	sh tools/run-sanitizers-container.sh
+
+local-sanitizer-test:
+	bash tools/run-sanitizers-local.sh
 
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/i3lock

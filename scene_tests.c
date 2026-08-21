@@ -644,6 +644,93 @@ static void test_static_precompose_equivalence(void) {
     scene_renderer_destroy(reference);
 }
 
+static void write_static_prefix_blend_fixture(const char *path, const char *background) {
+    char svg[8192];
+    snprintf(svg,
+             sizeof(svg),
+             "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"8\" height=\"2\" viewBox=\"0 0 8 2\">\n"
+             "  <defs>\n"
+             "    <mask id=\"half-mask\" maskUnits=\"userSpaceOnUse\"><rect x=\"0\" y=\"0\" width=\"8\" height=\"2\" fill=\"white\"/><rect x=\"7\" y=\"0\" width=\"1\" height=\"2\" fill=\"black\"/></mask>\n"
+             "    <clipPath id=\"edge-clip\"><rect x=\"0\" y=\"0\" width=\"7\" height=\"2\"/></clipPath>\n"
+             "    <filter id=\"soften\" x=\"-1\" y=\"-1\" width=\"10\" height=\"4\" filterUnits=\"userSpaceOnUse\"><feGaussianBlur stdDeviation=\"0.15\"/></filter>\n"
+             "  </defs>\n"
+             "  <metadata><scene xmlns=\"urn:i3lock-svg-nh:scene:1\" version=\"1\" fit=\"pixel\" background=\"%s\">\n"
+             "    <layer ref=\"base\" states=\"*\" static=\"true\"/>\n"
+             "    <layer ref=\"mul\" states=\"*\" static=\"true\" blend=\"multiply\"/>\n"
+             "    <layer ref=\"screen\" states=\"*\" static=\"true\" blend=\"screen\"/>\n"
+             "    <layer ref=\"overlay\" states=\"*\" static=\"true\" blend=\"overlay\"/>\n"
+             "    <layer ref=\"diff\" states=\"*\" static=\"true\" blend=\"difference\"/>\n"
+             "    <layer ref=\"shaped\" states=\"*\" static=\"true\" blend=\"screen\"/>\n"
+             "    <layer ref=\"dynamic\" states=\"input\"/>\n"
+             "  </scene></metadata>\n"
+             "  <g id=\"base\"><rect x=\"0\" y=\"0\" width=\"8\" height=\"2\" fill=\"#204060\" fill-opacity=\"0.8\"/></g>\n"
+             "  <g id=\"mul\"><rect x=\"0\" y=\"0\" width=\"5\" height=\"2\" fill=\"#ff8080\"/></g>\n"
+             "  <g id=\"screen\"><rect x=\"2\" y=\"0\" width=\"5\" height=\"2\" fill=\"#0040ff\"/></g>\n"
+             "  <g id=\"overlay\"><rect x=\"1\" y=\"0\" width=\"6\" height=\"2\" fill=\"#80ff80\"/></g>\n"
+             "  <g id=\"diff\" opacity=\"0.7\"><rect x=\"4\" y=\"0\" width=\"4\" height=\"2\" fill=\"#ffffff\"/></g>\n"
+             "  <g id=\"shaped\" opacity=\"0.5\" mask=\"url(#half-mask)\" clip-path=\"url(#edge-clip)\" filter=\"url(#soften)\"><rect x=\"0\" y=\"0\" width=\"8\" height=\"2\" fill=\"#00ffff\"/></g>\n"
+             "  <g id=\"dynamic\"><rect x=\"2\" y=\"0\" width=\"4\" height=\"2\" fill=\"#ff00ff\" fill-opacity=\"0.6\"/></g>\n"
+             "</svg>\n",
+             background);
+    write_text_file(path, svg);
+}
+
+static void expect_static_prefix_blend_equivalence(const char *path, const char *message) {
+    char error[SCENE_ERROR_LEN];
+    scene_renderer_t *optimized = NULL;
+    scene_renderer_t *reference = NULL;
+    expect_true(scene_renderer_create_headless_with_cache_mode(path,
+                                                               8,
+                                                               2,
+                                                               false,
+                                                               SCENE_RENDERER_CACHE_BOUNDED,
+                                                               &optimized,
+                                                               error),
+                error);
+    expect_true(scene_renderer_create_headless_with_cache_mode(path,
+                                                               8,
+                                                               2,
+                                                               true,
+                                                               SCENE_RENDERER_CACHE_FULL_TARGET_REFERENCE,
+                                                               &reference,
+                                                               error),
+                error);
+    size_t precomposed = 0;
+    for (size_t i = 0; i < scene_renderer_layer_cache_count(optimized); i++) {
+        scene_layer_cache_info_t info;
+        expect_true(scene_renderer_get_layer_cache_info(optimized, i, &info), "cache info available");
+        if (i < 6)
+            expect_true(info.precomposed, "immutable blended prefix layer is precomposed");
+        if (i == 6)
+            expect_true(!info.precomposed, "dynamic layer is not precomposed");
+        if (info.precomposed)
+            precomposed++;
+    }
+    expect_true(precomposed == 6, "exact static prefix length");
+    scene_renderer_set_state(optimized, SCENE_STATE_INPUT, 0);
+    scene_renderer_set_state(reference, SCENE_STATE_INPUT, 0);
+    expect_true(scene_renderer_render(optimized, 100, error), error);
+    expect_true(scene_renderer_render(reference, 100, error), error);
+    expect_surfaces_equivalent(scene_renderer_image_surface(optimized),
+                               scene_renderer_image_surface(reference),
+                               1,
+                               4,
+                               message);
+    scene_renderer_destroy(optimized);
+    scene_renderer_destroy(reference);
+}
+
+static void test_static_prefix_blended_precompose_equivalence(void) {
+    char opaque_path[128];
+    char transparent_path[128];
+    snprintf(opaque_path, sizeof(opaque_path), "/tmp/i3lock-static-prefix-opaque-%ld.svg", (long)getpid());
+    snprintf(transparent_path, sizeof(transparent_path), "/tmp/i3lock-static-prefix-transparent-%ld.svg", (long)getpid());
+    write_static_prefix_blend_fixture(opaque_path, "#102030");
+    write_static_prefix_blend_fixture(transparent_path, "#00000000");
+    expect_static_prefix_blend_equivalence(opaque_path, "opaque blended static prefix matches reference");
+    expect_static_prefix_blend_equivalence(transparent_path, "transparent blended static prefix matches reference");
+}
+
 static void test_bounded_reference_equivalence(void) {
     compare_bounded_reference("tests/fixtures/tiny-pixel-scene.svg",
                               2,
@@ -1238,6 +1325,14 @@ static void test_cordince_production_scene(void) {
     expect_true(memory.bounded_layer_count >= 5, "Cordince dynamic layers use bounded caches");
     expect_true(memory.total_retained_userspace_image_bytes < 60000000,
                 "Cordince retained cache memory is below full-target-style allocation");
+    bool saw_vignette_precomposed = false;
+    for (size_t i = 0; i < scene_renderer_layer_cache_count(bounded); i++) {
+        scene_layer_cache_info_t info;
+        expect_true(scene_renderer_get_layer_cache_info(bounded, i, &info), "Cordince layer cache info available");
+        if (strcmp(info.ref, "cordince-vignette") == 0)
+            saw_vignette_precomposed = info.precomposed;
+    }
+    expect_true(saw_vignette_precomposed, "Cordince vignette joins static prefix");
 
     scene_renderer_set_state(bounded, SCENE_STATE_VERIFY, 0);
     scene_renderer_set_state(reference, SCENE_STATE_VERIFY, 0);
@@ -1453,6 +1548,7 @@ int main(void) {
     test_embedded_png_pixel_preservation();
     test_visibility_normalization_pixels();
     test_static_precompose_equivalence();
+    test_static_prefix_blended_precompose_equivalence();
     test_bounded_reference_equivalence();
     test_cache_memory_accounting();
     test_resource_validation();
