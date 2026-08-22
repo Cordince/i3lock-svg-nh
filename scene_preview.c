@@ -131,7 +131,10 @@ static void usage(void) {
             "       [--duration-ms N --fps N --output-dir PATH]\n"
             "       [--contact-sheet PATH --contact-columns N --contact-every N]\n"
             "       [--benchmark --benchmark-frames N --benchmark-fps N]\n"
-            "       [--window [--watch] [--fullscreen] [--no-overlay]] [--version]\n");
+            "       [--benchmark-warmup-frames N --benchmark-json PATH]\n"
+            "       [--window [--watch] [--fullscreen] [--no-overlay]\n"
+            "        [--reload-error-to-stderr] [--screenshot-dir PATH]]\n"
+            "       [--version] [--help]\n");
 }
 
 static bool parse_timed_state(const char *value, int order, action_list_t *actions) {

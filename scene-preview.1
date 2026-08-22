@@ -21,20 +21,109 @@ Load an already packed, runtime-safe scene SVG.
 Load an editable authoring SVG by packing linked local PNGs in memory first.
 The runtime loader remains strict; this option is for preview only.
 .TP
+.BI --size " WIDTHxHEIGHT"
+Set the target render size.
+.TP
+.BI --state " locked|input|verify|fail"
+Set the active state for a still frame, sequence, benchmark, or live preview.
+.TP
+.BI --initial-state " locked|input|verify|fail"
+Set the simulated startup state before a scheduled state transition.
+.TP
+.BI --state-at-ms " N"
+Apply
+.B --state
+at absolute simulated time
+.IR N .
+.TP
+.BI --trigger " key|backspace"
+Fire a one-shot trigger for a still-frame preview.
+.TP
+.BI --trigger-at-ms " N"
+Apply
+.B --trigger
+at absolute simulated time
+.IR N .
+.TP
+.BI --time-ms " N"
+Render a still frame at absolute simulated time
+.IR N .
+.TP
+.BI --output " PATH"
+Write a still-frame PNG.
+.TP
 .BI --window
 Open a normal decorated X11 preview window. This is not a locker.
 .TP
 .BI --watch
 Watch the source SVG and linked PNG dependencies and reload transactionally.
 .TP
+.BI --fullscreen
+Request fullscreen preview-window state without grabbing input.
+.TP
+.BI --no-overlay
+Disable the preview-only diagnostics overlay.
+.TP
+.BI --reload-error-to-stderr
+Print live-reload failures to standard error while retaining the last valid frame.
+.TP
+.BI --screenshot-dir " PATH"
+Directory for live-preview screenshots written with the
+.B S
+key.
+.TP
 .BI --inspect
 Print the retained cache layout and memory accounting.
+.TP
+.BI --inspect-json " PATH"
+Write deterministic inspection JSON.
+.TP
+.BI --duration-ms " N"
+Render a deterministic sequence for
+.I N
+simulated milliseconds.
+.TP
+.BI --fps " N"
+Set sequence frame rate.
+.TP
+.BI --output-dir " PATH"
+Write sequence PNG frames and a JSON manifest to this directory.
+.TP
+.BI --state-change " TIME:STATE"
+Schedule a state change in sequence mode. May be supplied multiple times.
+.TP
+.BI --trigger-event " TIME:TRIGGER"
+Schedule a one-shot trigger in sequence mode. May be supplied multiple times.
+.TP
+.BI --contact-sheet " PATH"
+Write a PNG contact sheet for rendered sequence frames.
+.TP
+.BI --contact-columns " N"
+Set contact-sheet columns.
+.TP
+.BI --contact-every " N"
+Use every Nth rendered frame in the contact sheet.
 .TP
 .BI --benchmark
 Benchmark bounded and full-target reference cache modes.
 .TP
+.BI --benchmark-frames " N"
+Set measured benchmark frame count.
+.TP
+.BI --benchmark-fps " N"
+Set simulated benchmark frame rate.
+.TP
+.BI --benchmark-warmup-frames " N"
+Set warmup frames excluded from benchmark percentiles.
+.TP
+.BI --benchmark-json " PATH"
+Write deterministic benchmark JSON, excluding timing values from reproducibility guarantees.
+.TP
 .BI --version
 Print the build version.
+.TP
+.BI --help
+Print usage.
 .SH SEE ALSO
 .BR i3lock (1),
 .BR scene-pack (1)

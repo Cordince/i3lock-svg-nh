@@ -253,6 +253,7 @@ static void *auth_worker_main(void *arg) {
 
     clear_memory(request->password_copy, request->password_len + 1);
     free(request->password_copy);
+    clear_memory(request->username_copy, strlen(request->username_copy) + 1);
     free(request->username_copy);
     free(request);
     return NULL;
@@ -540,6 +541,7 @@ static void start_async_authentication(void) {
         fprintf(stderr, "[i3lock] could not start authentication worker\n");
         clear_memory(request->password_copy, request->password_len + 1);
         free(request->password_copy);
+        clear_memory(request->username_copy, strlen(request->username_copy) + 1);
         free(request->username_copy);
         free(request);
         pam_state = STATE_PAM_WRONG;
@@ -717,7 +719,7 @@ static void handle_key_press(xcb_key_press_event_t *event) {
     /* store it in the password array as UTF-8 */
     memcpy(password + input_position, buffer, n - 1);
     input_position += n - 1;
-    DEBUG("current password = %.*s\n", input_position, password);
+    DEBUG("password input updated\n");
 
     if (scene_mode) {
         unlock_state = STATE_KEY_ACTIVE;
@@ -856,14 +858,14 @@ void handle_screen_resize(void) {
  */
 static int conv_callback(int num_msg, const struct pam_message **msg,
                          struct pam_response **resp, void *appdata_ptr) {
-    if (num_msg == 0)
-        return 1;
+    if (num_msg <= 0)
+        return PAM_CONV_ERR;
     const char *pam_password = appdata_ptr ? (const char *)appdata_ptr : password;
 
     /* PAM expects an array of responses, one for each message */
-    if ((*resp = calloc(num_msg, sizeof(struct pam_response))) == NULL) {
+    if ((*resp = calloc((size_t)num_msg, sizeof(struct pam_response))) == NULL) {
         perror("calloc");
-        return 1;
+        return PAM_CONV_ERR;
     }
 
     for (int c = 0; c < num_msg; c++) {
@@ -872,10 +874,18 @@ static int conv_callback(int num_msg, const struct pam_message **msg,
             continue;
 
         /* return code is currently not used but should be set to zero */
-        resp[c]->resp_retcode = 0;
-        if ((resp[c]->resp = strdup(pam_password)) == NULL) {
+        (*resp)[c].resp_retcode = 0;
+        if (((*resp)[c].resp = strdup(pam_password)) == NULL) {
             perror("strdup");
-            return 1;
+            for (int i = 0; i < c; i++) {
+                if ((*resp)[i].resp) {
+                    clear_memory((*resp)[i].resp, strlen((*resp)[i].resp) + 1);
+                    free((*resp)[i].resp);
+                }
+            }
+            free(*resp);
+            *resp = NULL;
+            return PAM_CONV_ERR;
         }
     }
 
@@ -1178,6 +1188,11 @@ int main(int argc, char *argv[]) {
             case OPT_DEBUG:
                 debug_mode = true;
                 break;
+            case 'h':
+                fprintf(stdout, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
+                                " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
+                                " [--scene-svg scene.svg] [--validate-scene scene.svg]\n");
+                return EXIT_SUCCESS;
 /*            case 'f':
                 show_failed_attempts = true;
                 break;*/

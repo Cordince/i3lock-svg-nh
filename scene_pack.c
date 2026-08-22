@@ -9,7 +9,7 @@
 static void usage(void) {
     fprintf(stderr,
             "Usage: scene-pack --input source.svg --output packed.svg [--asset-root PATH] [--force]\n"
-            "                  [--check] [--print-assets] [--version]\n");
+            "                  [--check] [--print-assets] [--version] [--help]\n");
 }
 
 int main(int argc, char **argv) {
