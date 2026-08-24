@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Cellular Division</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#01050a">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="cell-current" states="locked input" blend="screen" z="4"><timeline when="visible" duration-ms="6800" loop="true" easing="ease-in-out"><keyframe at="0" opacity="0.24" translate-y="-8"/><keyframe at="0.5" opacity="0.5" translate-y="10"/><keyframe at="1" opacity="0.24" translate-y="-8"/></timeline></layer>
+      <layer ref="cell-locked" states="locked" z="10"><enter duration-ms="420" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="200" easing="ease-in" to-opacity="0" to-scale="1.04"/></layer>
+      <layer ref="cell-input" states="input" blend="screen" z="10"><enter duration-ms="280" easing="ease-out" from-opacity="0" from-scale="0.88"/><exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="mitosis" trigger="key" blend="screen" z="20"><timeline duration-ms="540" restart="true" easing="ease-out"><keyframe at="0" opacity="0" scale="0.35"/><keyframe at="0.22" opacity="1" scale="1"/><keyframe at="1" opacity="0" scale="1.52"/></timeline></layer>
+      <layer ref="phagocyte" trigger="backspace" blend="overlay" z="21"><timeline duration-ms="480" restart="true" easing="ease-in-out"><keyframe at="0" opacity="0" translate-x="360" scale="0.9"/><keyframe at="0.24" opacity="0.92" translate-x="80" scale="1"/><keyframe at="1" opacity="0" translate-x="-500" scale="1.08"/></timeline></layer>
+      <layer ref="cell-verify" states="verify" z="10"><enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.92"/><exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="dna-rotation" states="verify" blend="screen" z="22"><timeline when="visible" duration-ms="1500" loop="true" easing="linear"><keyframe at="0" opacity="0.72" rotation-deg="0"/><keyframe at="1" opacity="0.88" rotation-deg="360"/></timeline></layer>
+      <layer ref="cell-fail" states="fail" z="10"><enter duration-ms="220" easing="ease-out" from-opacity="0" from-scale="0.82"/><exit duration-ms="360" easing="ease-in" to-opacity="0" to-scale="1.08"/></layer>
+      <layer ref="contamination" states="fail" blend="screen" z="23"><timeline when="visible" duration-ms="820" loop="false" easing="ease-out"><keyframe at="0" opacity="0" scale="0.3"/><keyframe at="0.25" opacity="0.95" scale="1"/><keyframe at="1" opacity="0" scale="1.8"/></timeline></layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="tinyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur"/>
+      <feOffset dy="12" result="off"/>
+      <feColorMatrix in="off" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="shade"/>
+      <feMerge><feMergeNode in="shade"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+
+    <radialGradient id="labBg"><stop offset="0" stop-color="#10304a"/><stop offset=".56" stop-color="#061522"/><stop offset="1" stop-color="#01050a"/></radialGradient>
+    <radialGradient id="cellMem"><stop offset="0" stop-color="#95fff3" stop-opacity=".14"/><stop offset=".64" stop-color="#1ca6a3" stop-opacity=".32"/><stop offset="1" stop-color="#0c4f64" stop-opacity=".72"/></radialGradient>
+    <radialGradient id="nucleus"><stop offset="0" stop-color="#ffd6df"/><stop offset=".45" stop-color="#ff8dab"/><stop offset="1" stop-color="#922a64"/></radialGradient>
+    <linearGradient id="bioLine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#75fff3"/><stop offset=".5" stop-color="#35d8ff"/><stop offset="1" stop-color="#ff8ead"/></linearGradient>
+    <linearGradient id="toxin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffcb7a"/><stop offset=".45" stop-color="#ff536f"/><stop offset="1" stop-color="#8b103b"/></linearGradient>
+    <pattern id="hex" width="56" height="48" patternUnits="userSpaceOnUse"><path d="M14 0 H42 L56 24 L42 48 H14 L0 24Z" fill="none" stroke="#66d6ed" stroke-width="1" opacity=".10"/></pattern>
+
+  </defs>
+  <g id="background" >
+
+    <rect width="1920" height="1080" fill="url(#labBg)"/><rect width="1920" height="1080" fill="url(#hex)"/>
+    <g opacity=".35" stroke="#58c9d4" stroke-width="2" fill="none"><path d="M80 180 C300 80 480 280 700 170 S1120 80 1340 230 S1700 300 1870 120"/><path d="M20 870 C220 680 440 940 690 780 S1110 670 1360 830 S1700 820 1900 710"/></g>
+    <g transform="translate(1280 540)" filter="url(#shadow)"><circle r="365" fill="#0a2430" opacity=".75" stroke="#7df5e4" stroke-width="4"/><circle r="324" fill="url(#cellMem)" stroke="#55c6d2" stroke-width="6" opacity=".95"/><circle r="188" fill="#0a1b2a" opacity=".75"/><circle r="116" fill="url(#nucleus)" opacity=".80"/><g fill="#72f5e7" opacity=".34"><circle cx="-166" cy="-80" r="38"/><circle cx="172" cy="-108" r="24"/><circle cx="160" cy="152" r="32"/><circle cx="-110" cy="186" r="26"/></g><path d="M-285 -30 C-180 -180 30 -210 258 -80" fill="none" stroke="#7affec" stroke-width="5" opacity=".32"/><path d="M-240 150 C-80 35 120 55 280 190" fill="none" stroke="#ff9eb4" stroke-width="4" opacity=".25"/></g>
+    <g stroke="url(#bioLine)" stroke-width="3" fill="none" opacity=".45"><path d="M170 250 H380 L470 340 H670"/><path d="M90 700 H300 L390 610 H610"/><path d="M260 480 H510"/></g>
+    <g fill="#8ffbe9" opacity=".72"><circle cx="170" cy="250" r="8"/><circle cx="470" cy="340" r="8"/><circle cx="90" cy="700" r="8"/><circle cx="390" cy="610" r="8"/><circle cx="260" cy="480" r="8"/></g>
+
+  </g>
+  <g id="cell-current" style="display:none" >
+
+    <g fill="#72ffe9" filter="url(#tinyGlow)"><circle cx="320" cy="340" r="12"/><circle cx="520" cy="520" r="9"/><circle cx="710" cy="740" r="11"/><circle cx="920" cy="220" r="8"/></g>
+
+  </g>
+  <g id="cell-locked" style="display:none" >
+
+    <g transform="translate(1280 540)"><circle r="330" fill="none" stroke="#85fff0" stroke-width="3" stroke-dasharray="6 18" opacity=".42"/><circle r="116" fill="none" stroke="#ffc0cd" stroke-width="4" opacity=".35"/></g>
+
+  </g>
+  <g id="cell-input" style="display:none" >
+
+    <g transform="translate(1280 540)"><circle r="330" fill="none" stroke="url(#bioLine)" stroke-width="12" stroke-dasharray="30 18" opacity=".45"/><circle r="150" fill="none" stroke="#81fff1" stroke-width="5" stroke-dasharray="4 14" opacity=".65"/><g fill="#bafff6"><circle cx="0" cy="-330" r="10"/><circle cx="330" cy="0" r="10"/><circle cx="0" cy="330" r="10"/><circle cx="-330" cy="0" r="10"/></g></g>
+
+  </g>
+  <g id="mitosis" style="display:none" >
+
+    <g transform="translate(1280 540)"><circle cx="-85" cy="0" r="104" fill="url(#cellMem)" stroke="#7affeb" stroke-width="6"/><circle cx="85" cy="0" r="104" fill="url(#cellMem)" stroke="#7affeb" stroke-width="6"/><circle cx="-85" cy="0" r="42" fill="url(#nucleus)"/><circle cx="85" cy="0" r="42" fill="url(#nucleus)"/><path d="M0 -145 V145" stroke="#fff0f5" stroke-width="5" stroke-dasharray="8 14" opacity=".75"/><circle r="220" fill="none" stroke="#75fff0" stroke-width="10" opacity=".28" filter="url(#glow)"/></g>
+
+  </g>
+  <g id="phagocyte" style="display:none" >
+
+    <g transform="translate(960 620)"><path d="M260 -92 C340 -30 340 80 250 130 C160 190 10 150 -60 80 C-120 20 -80 -80 20 -120 C110 -160 190 -145 260 -92Z" fill="#3ef2d4" opacity=".32" stroke="#a4fff3" stroke-width="5"/><path d="M-260 0 H120" stroke="#ff9bb2" stroke-width="28" stroke-linecap="round" opacity=".32" filter="url(#glow)"/><g fill="#0b3550" opacity=".7"><circle cx="80" cy="-30" r="18"/><circle cx="150" cy="40" r="14"/><circle cx="10" cy="70" r="12"/></g></g>
+
+  </g>
+  <g id="cell-verify" style="display:none" >
+
+    <g transform="translate(510 530)"><circle r="220" fill="#06131f" opacity=".72"/><circle r="220" fill="none" stroke="#7affed" stroke-width="3" opacity=".42"/><circle r="168" fill="none" stroke="#ff9db5" stroke-width="2" stroke-dasharray="6 14" opacity=".45"/></g>
+
+  </g>
+  <g id="dna-rotation" style="display:none" >
+
+    <g transform="translate(510 530)"><circle r="210" fill="none" stroke="#6effef" stroke-width="4" stroke-dasharray="24 18" opacity=".45"/><path d="M-90 -150 C90 -100 -90 -40 90 10 C-90 60 90 120 -90 160" fill="none" stroke="#76fff0" stroke-width="9"/><path d="M90 -150 C-90 -100 90 -40 -90 10 C90 60 -90 120 90 160" fill="none" stroke="#ff91ae" stroke-width="9"/><g stroke="#dafef8" stroke-width="4" opacity=".6"><path d="M-64 -125 L64 -125"/><path d="M-76 -75 L76 -75"/><path d="M-48 -25 L48 -25"/><path d="M-52 25 L52 25"/><path d="M-78 75 L78 75"/><path d="M-60 125 L60 125"/></g></g>
+
+  </g>
+  <g id="cell-fail" style="display:none" >
+
+    <g transform="translate(1280 540)"><circle r="330" fill="none" stroke="url(#toxin)" stroke-width="14" stroke-dasharray="60 24" opacity=".65"/><circle r="128" fill="#4a0c22" opacity=".74"/><path d="M-64 -64 L64 64 M64 -64 L-64 64" stroke="#ff506f" stroke-width="18" stroke-linecap="round"/></g>
+
+  </g>
+  <g id="contamination" style="display:none" >
+
+    <g transform="translate(1280 540)" fill="url(#toxin)"><circle r="74" opacity=".55" filter="url(#glow)"/><circle cx="145" cy="-90" r="44"/><circle cx="-155" cy="80" r="38"/><circle cx="80" cy="160" r="32"/><circle cx="-70" cy="-170" r="30"/><circle cx="220" cy="100" r="24"/></g>
+
+  </g>
+</svg>

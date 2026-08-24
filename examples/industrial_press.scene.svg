@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="stretch" background="#020304">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="machine" states="*" static="true" z="1"/>
+      <layer ref="locked" states="locked" z="10">
+        <enter duration-ms="300" easing="ease-out" from-opacity="0" from-scale="0.95"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="input" states="input" z="10">
+        <enter duration-ms="220" easing="ease-out" from-opacity="0" from-scale="0.92"/>
+        <exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="press-head" trigger="key" z="20">
+        <timeline duration-ms="420" restart="true" easing="ease-in-out">
+          <keyframe at="0" opacity="1" translate-y="-150"/>
+          <keyframe at="0.24" opacity="1" translate-y="80"/>
+          <keyframe at="0.42" opacity="1" translate-y="60"/>
+          <keyframe at="1" opacity="0" translate-y="-170"/>
+        </timeline>
+      </layer>
+      <layer ref="sparks" trigger="key" blend="screen" z="21">
+        <timeline duration-ms="360" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" scale="0.4"/>
+          <keyframe at="0.26" opacity="1" scale="1"/>
+          <keyframe at="1" opacity="0" scale="1.7"/>
+        </timeline>
+      </layer>
+      <layer ref="retract" trigger="backspace" blend="screen" z="22">
+        <timeline duration-ms="380" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-y="80"/>
+          <keyframe at="0.18" opacity="1" translate-y="60"/>
+          <keyframe at="1" opacity="0" translate-y="-210"/>
+        </timeline>
+      </layer>
+      <layer ref="verify" states="verify" z="10">
+        <enter duration-ms="220" easing="ease-out" from-opacity="0" from-scale="0.93"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.04"/>
+      </layer>
+      <layer ref="gear-left" states="verify" blend="screen" z="14">
+        <timeline duration-ms="900" loop="true" when="visible" easing="linear">
+          <keyframe at="0" opacity="0.85" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.85" rotation-deg="360"/>
+        </timeline>
+      </layer>
+      <layer ref="gear-right" states="verify" blend="screen" z="14">
+        <timeline duration-ms="1150" loop="true" when="visible" easing="linear">
+          <keyframe at="0" opacity="0.75" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.75" rotation-deg="-360"/>
+        </timeline>
+      </layer>
+      <layer ref="fail" states="fail" z="10">
+        <enter duration-ms="160" easing="ease-out" from-opacity="0" from-scale="0.9"/>
+        <exit duration-ms="360" easing="ease-in" to-opacity="0" to-scale="1.06"/>
+      </layer>
+      <layer ref="steam" states="fail" blend="screen" z="18">
+        <timeline duration-ms="900" when="visible" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-y="80" scale="0.5"/>
+          <keyframe at="0.2" opacity="0.85" translate-y="20" scale="1"/>
+          <keyframe at="1" opacity="0" translate-y="-240" scale="1.5"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <title>Industrial Press</title>
+  <defs>
+
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="glow10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow20" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur35" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="35"/></filter>
+    <linearGradient id="failRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffca72"/><stop offset="0.35" stop-color="#ff615c"/><stop offset="1" stop-color="#ff1748"/>
+    </linearGradient>
+    <radialGradient id="failGlow"><stop offset="0" stop-color="#ff6a55" stop-opacity="0.55"/><stop offset="1" stop-color="#ff1748" stop-opacity="0"/></radialGradient>
+
+
+    <linearGradient id="iBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111820"/><stop offset="0.55" stop-color="#070b0f"/><stop offset="1" stop-color="#020304"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#242c32"/><stop offset="0.45" stop-color="#a2aeb7"/><stop offset="0.55" stop-color="#353e45"/><stop offset="1" stop-color="#11171b"/></linearGradient>
+    <linearGradient id="hazard" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffb000"/><stop offset="1" stop-color="#ff5b17"/></linearGradient>
+    <radialGradient id="spark"><stop offset="0" stop-color="#fffbd0"/><stop offset="0.35" stop-color="#ffb02e"/><stop offset="1" stop-color="#ff4d16" stop-opacity="0"/></radialGradient>
+    
+  </defs>
+  <g id="background" >
+<rect width="1920" height="1080" fill="url(#iBg)"/><g stroke="#9ca6ad" stroke-opacity="0.08" stroke-width="2"><path d="M0 0 V1080"/><path d="M120 0 V1080"/><path d="M240 0 V1080"/><path d="M360 0 V1080"/><path d="M480 0 V1080"/><path d="M600 0 V1080"/><path d="M720 0 V1080"/><path d="M840 0 V1080"/><path d="M960 0 V1080"/><path d="M1080 0 V1080"/><path d="M1200 0 V1080"/><path d="M1320 0 V1080"/><path d="M1440 0 V1080"/><path d="M1560 0 V1080"/><path d="M1680 0 V1080"/><path d="M1800 0 V1080"/><path d="M1920 0 V1080"/><path d="M0 0 H1920"/><path d="M0 120 H1920"/><path d="M0 240 H1920"/><path d="M0 360 H1920"/><path d="M0 480 H1920"/><path d="M0 600 H1920"/><path d="M0 720 H1920"/><path d="M0 840 H1920"/><path d="M0 960 H1920"/><path d="M0 1080 H1920"/></g><rect y="860" width="1920" height="220" fill="#050709"/>
+  </g>
+  <g id="machine" >
+
+    <g transform="translate(960 530)">
+      <rect x="-520" y="-390" width="1040" height="740" rx="36" fill="#090d10" stroke="#313b42" stroke-width="14"/>
+      <rect x="-420" y="-300" width="840" height="520" fill="#050709" stroke="#1f272c" stroke-width="8"/>
+      <rect x="-510" y="250" width="1020" height="100" fill="url(#steel)"/>
+      <rect x="-170" y="-270" width="340" height="160" rx="20" fill="url(#steel)" stroke="#11171b" stroke-width="10"/>
+      <rect x="-72" y="-115" width="144" height="275" fill="#454f55" stroke="#161b1f" stroke-width="10"/>
+      <rect x="-190" y="150" width="380" height="70" rx="12" fill="#252c31" stroke="#0d1114" stroke-width="8"/>
+      <rect x="-170" y="218" width="340" height="30" fill="url(#hazard)" opacity="0.85"/>
+      <path d="M-170 218 L-140 248 M-110 218 L-80 248 M-50 218 L-20 248 M10 218 L40 248 M70 218 L100 248 M130 218 L160 248" stroke="#16120a" stroke-width="16"/>
+      <circle cx="-350" cy="-30" r="58" fill="#11171a" stroke="#58636b" stroke-width="8"/><circle cx="350" cy="-30" r="58" fill="#11171a" stroke="#58636b" stroke-width="8"/>
+      <circle cx="-350" cy="-30" r="16" fill="#ff9e20" opacity="0.45"/><circle cx="350" cy="-30" r="16" fill="#ff9e20" opacity="0.45"/>
+    </g>
+    
+  </g>
+  <g id="locked" style="display:none" >
+<g transform="translate(960 680)"><rect x="-150" y="-54" width="300" height="108" rx="22" fill="#10161a" stroke="#68747d" stroke-width="6"/><circle cx="-92" cy="0" r="18" fill="#db8e1b" opacity="0.35"/><circle cx="0" cy="0" r="18" fill="#db8e1b" opacity="0.22"/><circle cx="92" cy="0" r="18" fill="#db8e1b" opacity="0.22"/></g>
+  </g>
+  <g id="input" style="display:none" >
+<g transform="translate(960 680)"><rect x="-160" y="-58" width="320" height="116" rx="22" fill="#10161a" stroke="url(#hazard)" stroke-width="8"/><circle cx="-92" cy="0" r="20" fill="#ffb431"/><circle cx="0" cy="0" r="20" fill="#ffb431"/><circle cx="92" cy="0" r="20" fill="#ffb431"/></g>
+  </g>
+  <g id="press-head" style="display:none" >
+<g transform="translate(960 250)"><rect x="-190" y="-90" width="380" height="160" rx="20" fill="url(#steel)" stroke="#151b1f" stroke-width="12"/><rect x="-72" y="60" width="144" height="260" fill="#6d7880" stroke="#1c2328" stroke-width="10"/><rect x="-210" y="300" width="420" height="82" rx="12" fill="#30383d" stroke="#101416" stroke-width="10"/></g>
+  </g>
+  <g id="sparks" style="display:none" >
+<g transform="translate(960 760)" fill="none" stroke="#ffc65c" stroke-width="8" stroke-linecap="round"><path d="M0 0 L-170 -90 M0 0 L-120 20 M0 0 L-80 120 M0 0 L85 115 M0 0 L140 22 M0 0 L180 -80"/><circle r="84" fill="url(#spark)" stroke="none"/></g>
+  </g>
+  <g id="retract" style="display:none" >
+<g transform="translate(960 250)"><rect x="-190" y="-90" width="380" height="160" rx="20" fill="url(#steel)"/><path d="M-120 95 H120" stroke="#7fdcff" stroke-width="14" stroke-linecap="round" filter="url(#glow4)"/></g>
+  </g>
+  <g id="verify" style="display:none" >
+<g transform="translate(960 680)"><rect x="-170" y="-60" width="340" height="120" rx="24" fill="#10161a" stroke="#72dfff" stroke-width="7"/><path d="M-105 0 H105" stroke="#72dfff" stroke-width="12" stroke-dasharray="18 12"/></g>
+  </g>
+  <g id="gear-left" style="display:none" >
+<g transform="translate(610 500)"><circle r="96" fill="none" stroke="#ffb22d" stroke-width="24" stroke-dasharray="30 16"/><circle r="42" fill="#181e22" stroke="#ffb22d" stroke-width="8"/></g>
+  </g>
+  <g id="gear-right" style="display:none" >
+<g transform="translate(1310 500)"><circle r="96" fill="none" stroke="#73deff" stroke-width="24" stroke-dasharray="30 16"/><circle r="42" fill="#181e22" stroke="#73deff" stroke-width="8"/></g>
+  </g>
+  <g id="fail" style="display:none" >
+<g transform="translate(960 680)"><rect x="-176" y="-64" width="352" height="128" rx="24" fill="#2d080d" stroke="url(#failRed)" stroke-width="9"/><path d="M-60 -28 L60 28 M60 -28 L-60 28" stroke="#ff4d52" stroke-width="18" stroke-linecap="round"/></g>
+  </g>
+  <g id="steam" style="display:none" >
+<g transform="translate(960 620)" fill="url(#failGlow)"><circle cx="-100" cy="0" r="80"/><circle cx="0" cy="-40" r="120"/><circle cx="110" cy="10" r="86"/></g>
+  </g>
+</svg>

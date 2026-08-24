@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "scenes": [
+    {
+      "slug": "taiko-pulse",
+      "title": "Taiko Pulse",
+      "file": "taiko-pulse.scene.svg",
+      "bytes": 12609
+    },
+    {
+      "slug": "lighthouse-sweep",
+      "title": "Lighthouse Sweep",
+      "file": "lighthouse-sweep.scene.svg",
+      "bytes": 9593
+    },
+    {
+      "slug": "switchyard-signals",
+      "title": "Switchyard Signals",
+      "file": "switchyard-signals.scene.svg",
+      "bytes": 9873
+    },
+    {
+      "slug": "origami-aviary",
+      "title": "Origami Aviary",
+      "file": "origami-aviary.scene.svg",
+      "bytes": 9524
+    },
+    {
+      "slug": "abyssal-medusa",
+      "title": "Abyssal Medusa",
+      "file": "abyssal-medusa.scene.svg",
+      "bytes": 9982
+    },
+    {
+      "slug": "cellular-gate",
+      "title": "Cellular Gate",
+      "file": "cellular-gate.scene.svg",
+      "bytes": 10145
+    },
+    {
+      "slug": "cryptid-field-station",
+      "title": "Cryptid Field Station",
+      "file": "cryptid-field-station.scene.svg",
+      "bytes": 9984
+    },
+    {
+      "slug": "aether-orrery",
+      "title": "Aether Orrery",
+      "file": "aether-orrery.scene.svg",
+      "bytes": 9439
+    },
+    {
+      "slug": "data-loom",
+      "title": "Data Loom",
+      "file": "data-loom.scene.svg",
+      "bytes": 11354
+    },
+    {
+      "slug": "crystal-echo",
+      "title": "Crystal Echo",
+      "file": "crystal-echo.scene.svg",
+      "bytes": 9254
+    },
+    {
+      "slug": "neural-mycelium",
+      "title": "Neural Mycelium",
+      "file": "neural-mycelium.scene.svg",
+      "bytes": 9434
+    },
+    {
+      "slug": "suspended-hourglass",
+      "title": "Suspended Hourglass",
+      "file": "suspended-hourglass.scene.svg",
+      "bytes": 9699
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="stretch" background="#020818">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="network" states="*" static="true" blend="screen" z="1"/>
+      <layer ref="locked" states="locked" z="10">
+        <enter duration-ms="360" easing="ease-out" from-opacity="0" from-scale="0.94"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.04"/>
+      </layer>
+      <layer ref="input" states="input" blend="screen" z="10">
+        <enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.9"/>
+        <exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="packet" trigger="key" blend="screen" z="20">
+        <timeline duration-ms="520" restart="true" easing="ease-in-out">
+          <keyframe at="0" opacity="0" translate-x="-520" scale="0.5"/>
+          <keyframe at="0.15" opacity="1" translate-x="-360" scale="1"/>
+          <keyframe at="0.8" opacity="1" translate-x="360" scale="1"/>
+          <keyframe at="1" opacity="0" translate-x="520" scale="0.5"/>
+        </timeline>
+      </layer>
+      <layer ref="packet-burst" trigger="key" blend="screen" z="21">
+        <timeline duration-ms="420" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" scale="0.25"/>
+          <keyframe at="0.2" opacity="0.9" scale="0.7"/>
+          <keyframe at="1" opacity="0" scale="1.8"/>
+        </timeline>
+      </layer>
+      <layer ref="reverse-packet" trigger="backspace" blend="difference" z="22">
+        <timeline duration-ms="500" restart="true" easing="ease-in-out">
+          <keyframe at="0" opacity="0" translate-x="520" scale="0.8"/>
+          <keyframe at="0.18" opacity="1" translate-x="360" scale="1"/>
+          <keyframe at="0.82" opacity="1" translate-x="-360" scale="1"/>
+          <keyframe at="1" opacity="0" translate-x="-520" scale="0.7"/>
+        </timeline>
+      </layer>
+      <layer ref="verify" states="verify" blend="screen" z="10">
+        <enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.92"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.05"/>
+      </layer>
+      <layer ref="scan" states="verify" blend="screen" z="14">
+        <timeline duration-ms="1300" loop="true" when="visible" easing="linear">
+          <keyframe at="0" opacity="0.7" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.7" rotation-deg="360"/>
+        </timeline>
+      </layer>
+      <layer ref="breath" states="verify" blend="screen" z="13">
+        <timeline duration-ms="980" loop="true" when="visible" easing="ease-in-out">
+          <keyframe at="0" opacity="0.2" scale="0.85"/>
+          <keyframe at="0.5" opacity="0.72" scale="1.12"/>
+          <keyframe at="1" opacity="0.2" scale="0.85"/>
+        </timeline>
+      </layer>
+      <layer ref="fail-left" states="fail" blend="screen" z="20">
+        <timeline duration-ms="680" when="visible" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-x="0"/>
+          <keyframe at="0.18" opacity="1" translate-x="-18"/>
+          <keyframe at="1" opacity="0.45" translate-x="-170"/>
+        </timeline>
+      </layer>
+      <layer ref="fail-right" states="fail" blend="screen" z="20">
+        <timeline duration-ms="680" when="visible" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-x="0"/>
+          <keyframe at="0.18" opacity="1" translate-x="18"/>
+          <keyframe at="1" opacity="0.45" translate-x="170"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <title>Neural Constellation</title>
+  <defs>
+
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="glow10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow20" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur35" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="35"/></filter>
+    <linearGradient id="failRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffca72"/><stop offset="0.35" stop-color="#ff615c"/><stop offset="1" stop-color="#ff1748"/>
+    </linearGradient>
+    <radialGradient id="failGlow"><stop offset="0" stop-color="#ff6a55" stop-opacity="0.55"/><stop offset="1" stop-color="#ff1748" stop-opacity="0"/></radialGradient>
+
+
+    <linearGradient id="nBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020818"/><stop offset="0.5" stop-color="#071126"/><stop offset="1" stop-color="#11051e"/></linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3be5ff"/><stop offset="0.48" stop-color="#7b8cff"/><stop offset="1" stop-color="#e35dff"/></linearGradient>
+    <radialGradient id="nodeGlow"><stop offset="0" stop-color="#79f7ff" stop-opacity="0.8"/><stop offset="1" stop-color="#7a5cff" stop-opacity="0"/></radialGradient>
+    
+  </defs>
+  <g id="background" >
+<rect width="1920" height="1080" fill="url(#nBg)"/><ellipse cx="960" cy="520" rx="780" ry="430" fill="#2547a0" opacity="0.06" filter="url(#blur35)"/>
+  </g>
+  <g id="network" >
+<g fill="none" stroke="url(#neon)" stroke-width="2" opacity="0.28"><path d="M230 270 Q310 190 390 190"/><path d="M230 270 Q455 207 680 225"/><path d="M390 190 Q455 212 520 315"/><path d="M390 190 Q605 235 820 360"/><path d="M520 315 Q600 230 680 225"/><path d="M520 315 Q740 240 960 245"/><path d="M680 225 Q750 252 820 360"/><path d="M680 225 Q880 262 1080 380"/><path d="M820 360 Q890 262 960 245"/><path d="M820 360 Q1030 265 1240 250"/><path d="M960 245 Q1020 272 1080 380"/><path d="M960 245 Q1180 247 1400 330"/><path d="M1080 380 Q1160 275 1240 250"/><path d="M1080 380 Q1345 260 1610 220"/><path d="M1240 250 Q1320 250 1400 330"/><path d="M1240 250 Q770 380 300 590"/><path d="M1400 330 Q1505 235 1610 220"/><path d="M1400 330 Q935 375 470 500"/><path d="M1610 220 Q955 365 300 590"/><path d="M1610 220 Q1120 395 630 650"/><path d="M300 590 Q385 505 470 500"/><path d="M300 590 Q550 522 800 535"/><path d="M470 500 Q550 535 630 650"/><path d="M470 500 Q715 550 960 680"/><path d="M630 650 Q715 552 800 535"/><path d="M630 650 Q870 550 1110 530"/><path d="M800 535 Q880 567 960 680"/><path d="M800 535 Q1040 552 1280 650"/><path d="M960 680 Q1035 565 1110 530"/><path d="M960 680 Q1220 562 1480 525"/><path d="M1110 530 Q1195 550 1280 650"/><path d="M1110 530 Q1395 540 1680 630"/><path d="M1280 650 Q1380 547 1480 525"/><path d="M1480 525 Q1580 537 1680 630"/></g><g><circle cx="230" cy="270" r="6" fill="#75eaff" opacity="0.38"/><circle cx="390" cy="190" r="8" fill="#75eaff" opacity="0.46"/><circle cx="520" cy="315" r="10" fill="#75eaff" opacity="0.54"/><circle cx="680" cy="225" r="6" fill="#75eaff" opacity="0.62"/><circle cx="820" cy="360" r="8" fill="#75eaff" opacity="0.38"/><circle cx="960" cy="245" r="10" fill="#75eaff" opacity="0.46"/><circle cx="1080" cy="380" r="6" fill="#75eaff" opacity="0.54"/><circle cx="1240" cy="250" r="8" fill="#75eaff" opacity="0.62"/><circle cx="1400" cy="330" r="10" fill="#75eaff" opacity="0.38"/><circle cx="1610" cy="220" r="6" fill="#75eaff" opacity="0.46"/><circle cx="300" cy="590" r="8" fill="#75eaff" opacity="0.54"/><circle cx="470" cy="500" r="10" fill="#75eaff" opacity="0.62"/><circle cx="630" cy="650" r="6" fill="#75eaff" opacity="0.38"/><circle cx="800" cy="535" r="8" fill="#75eaff" opacity="0.46"/><circle cx="960" cy="680" r="10" fill="#75eaff" opacity="0.54"/><circle cx="1110" cy="530" r="6" fill="#75eaff" opacity="0.62"/><circle cx="1280" cy="650" r="8" fill="#75eaff" opacity="0.38"/><circle cx="1480" cy="525" r="10" fill="#75eaff" opacity="0.46"/><circle cx="1680" cy="630" r="6" fill="#75eaff" opacity="0.54"/></g>
+  </g>
+  <g id="locked" style="display:none" >
+<g transform="translate(960 520)"><circle r="136" fill="#081326" stroke="url(#neon)" stroke-width="3" opacity="0.9"/><g fill="#5de8ff" opacity="0.65"><circle cx="0" cy="-68" r="10"/><circle cx="64" cy="-18" r="10"/><circle cx="38" cy="60" r="10"/><circle cx="-42" cy="56" r="10"/><circle cx="-66" cy="-20" r="10"/></g><path d="M0 -68 L64 -18 L38 60 L-42 56 L-66 -20 Z M0 -68 L38 60 M64 -18 L-42 56" fill="none" stroke="#79eaff" stroke-width="4" opacity="0.55"/></g>
+  </g>
+  <g id="input" style="display:none" >
+<g transform="translate(960 520)"><circle r="152" fill="url(#nodeGlow)" opacity="0.24"/><circle r="144" fill="none" stroke="url(#neon)" stroke-width="11" stroke-dasharray="6 20" opacity="0.58"/><g fill="#c7fbff"><circle cx="0" cy="-76" r="12"/><circle cx="72" cy="-22" r="12"/><circle cx="42" cy="68" r="12"/><circle cx="-48" cy="64" r="12"/><circle cx="-76" cy="-22" r="12"/></g><path d="M0 -76 L72 -22 L42 68 L-48 64 L-76 -22 Z M0 -76 L42 68 M72 -22 L-48 64" fill="none" stroke="#92faff" stroke-width="5"/></g>
+  </g>
+  <g id="packet" style="display:none" >
+<g transform="translate(960 520)"><path d="M-170 0 H170" stroke="url(#neon)" stroke-width="12" stroke-linecap="round" filter="url(#glow4)"/><circle r="24" fill="#d8ffff"/><circle r="50" fill="url(#nodeGlow)" opacity="0.6"/></g>
+  </g>
+  <g id="packet-burst" style="display:none" >
+<g transform="translate(960 520)"><circle r="82" fill="none" stroke="#8ff7ff" stroke-width="10"/><circle r="124" fill="none" stroke="#d06cff" stroke-width="4" stroke-dasharray="12 14"/></g>
+  </g>
+  <g id="reverse-packet" style="display:none" >
+<g transform="translate(960 520)"><path d="M170 0 H-170" stroke="#ff7cf4" stroke-width="12" stroke-linecap="round" filter="url(#glow4)"/><circle r="22" fill="#fff"/></g>
+  </g>
+  <g id="verify" style="display:none" >
+<g transform="translate(960 520)"><circle r="150" fill="#081326" opacity="0.95"/><circle r="146" fill="none" stroke="url(#neon)" stroke-width="3"/><g fill="#a8ffff"><circle cx="0" cy="-68" r="10"/><circle cx="64" cy="-18" r="10"/><circle cx="38" cy="60" r="10"/><circle cx="-42" cy="56" r="10"/><circle cx="-66" cy="-20" r="10"/></g></g>
+  </g>
+  <g id="scan" style="display:none" >
+<g transform="translate(960 520)"><circle r="184" fill="none" stroke="url(#neon)" stroke-width="12" stroke-dasharray="82 26 18 38" stroke-linecap="round"/><path d="M0 0 L0 -206 A206 206 0 0 1 178 -103 Z" fill="#4fe6ff" opacity="0.08"/></g>
+  </g>
+  <g id="breath" style="display:none" >
+<g transform="translate(960 520)"><circle r="190" fill="url(#nodeGlow)" filter="url(#glow10)"/></g>
+  </g>
+  <g id="fail-left" style="display:none" >
+<g transform="translate(740 520)" fill="none" stroke="url(#failRed)" stroke-width="6"><path d="M-160 -120 L0 0 L-140 130 M-100 -160 L30 -20 L-70 160"/><g fill="#ff5a62" stroke="none"><circle cx="-160" cy="-120" r="14"/><circle cx="0" cy="0" r="14"/><circle cx="-140" cy="130" r="14"/></g></g>
+  </g>
+  <g id="fail-right" style="display:none" >
+<g transform="translate(1180 520)" fill="none" stroke="url(#failRed)" stroke-width="6"><path d="M160 -120 L0 0 L140 130 M100 -160 L-30 -20 L70 160"/><g fill="#ff5a62" stroke="none"><circle cx="160" cy="-120" r="14"/><circle cx="0" cy="0" r="14"/><circle cx="140" cy="130" r="14"/></g></g>
+  </g>
+</svg>

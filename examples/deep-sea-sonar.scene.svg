@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Deep Sea Sonar</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#01070d">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="deep-current" states="locked input" blend="screen" z="4"><timeline when="visible" duration-ms="8200" loop="true" easing="ease-in-out"><keyframe at="0" opacity="0.16" translate-x="-25"/><keyframe at="0.5" opacity="0.38" translate-x="35"/><keyframe at="1" opacity="0.16" translate-x="-25"/></timeline></layer>
+      <layer ref="sonar-locked" states="locked" z="10"><enter duration-ms="440" easing="ease-out" from-opacity="0" from-scale="0.94"/><exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.04"/></layer>
+      <layer ref="sonar-input" states="input" blend="screen" z="10"><enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="sonar-ping" trigger="key" blend="screen" z="20"><timeline duration-ms="780" restart="true" easing="ease-out"><keyframe at="0" opacity="0" scale="0.24"/><keyframe at="0.12" opacity="0.9" scale="0.5"/><keyframe at="1" opacity="0" scale="2.25"/></timeline></layer>
+      <layer ref="bubble-reverse" trigger="backspace" blend="screen" z="21"><timeline duration-ms="620" restart="true" easing="ease-in-out"><keyframe at="0" opacity="0" translate-y="120" translate-x="140"/><keyframe at="0.22" opacity="0.82" translate-y="0" translate-x="0"/><keyframe at="1" opacity="0" translate-y="-230" translate-x="-160"/></timeline></layer>
+      <layer ref="sonar-verify" states="verify" z="10"><enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="sonar-sweep" states="verify" blend="screen" z="22"><timeline when="visible" duration-ms="1600" loop="true" easing="linear"><keyframe at="0" opacity="0.64" rotation-deg="0"/><keyframe at="1" opacity="0.88" rotation-deg="360"/></timeline></layer>
+      <layer ref="sonar-fail" states="fail" z="10"><enter duration-ms="180" easing="ease-out" from-opacity="0" from-scale="0.84"/><exit duration-ms="360" easing="ease-in" to-opacity="0" to-scale="1.08"/></layer>
+      <layer ref="hull-alarm" states="fail" blend="overlay" z="23"><timeline when="visible" duration-ms="720" loop="false" easing="ease-out"><keyframe at="0" opacity="0" scale="0.7"/><keyframe at="0.18" opacity="0.95" scale="1"/><keyframe at="1" opacity="0" scale="1.35"/></timeline></layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="tinyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur"/>
+      <feOffset dy="12" result="off"/>
+      <feColorMatrix in="off" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="shade"/>
+      <feMerge><feMergeNode in="shade"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#020d1b"/><stop offset=".52" stop-color="#04283b"/><stop offset="1" stop-color="#01070d"/></linearGradient>
+    <radialGradient id="sonarFace"><stop offset="0" stop-color="#0b4b5d"/><stop offset=".6" stop-color="#06232f"/><stop offset="1" stop-color="#021018"/></radialGradient>
+    <linearGradient id="sonarGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c8fff7"/><stop offset=".48" stop-color="#4bf0dc"/><stop offset="1" stop-color="#37a8ff"/></linearGradient>
+    <linearGradient id="alarmSea" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb26a"/><stop offset=".5" stop-color="#ff4056"/><stop offset="1" stop-color="#790d2a"/></linearGradient>
+
+  </defs>
+  <g id="background" >
+
+    <rect width="1920" height="1080" fill="url(#ocean)"/>
+    <g opacity=".18" fill="#66d9e8" filter="url(#softGlow)"><ellipse cx="1160" cy="360" rx="500" ry="180"/><ellipse cx="1420" cy="780" rx="420" ry="160"/></g>
+    <path d="M0 920 C260 760 520 840 780 750 C1050 660 1310 820 1560 710 C1740 630 1840 650 1920 600 V1080 H0Z" fill="#01070c"/>
+    <path d="M0 930 C280 800 540 870 820 790 C1080 720 1350 830 1600 750 C1780 690 1880 700 1920 680" fill="none" stroke="#2d6d7c" stroke-width="4" opacity=".38"/>
+    <g transform="translate(540 540)" filter="url(#shadow)"><circle r="330" fill="#0b1419" stroke="#506169" stroke-width="26"/><circle r="275" fill="url(#sonarFace)" stroke="#263a42" stroke-width="8"/><circle r="220" fill="none" stroke="#4ad6cd" stroke-width="2" opacity=".30"/><circle r="150" fill="none" stroke="#4ad6cd" stroke-width="2" opacity=".24"/><circle r="75" fill="none" stroke="#4ad6cd" stroke-width="2" opacity=".20"/><path d="M-275 0 H275 M0 -275 V275" stroke="#4ad6cd" stroke-width="2" opacity=".24"/></g>
+    <g transform="translate(1370 540)" fill="#031017" opacity=".8"><path d="M-220 80 C-120 -40 0 -90 160 -70 C250 -58 320 10 360 90 C250 65 170 85 90 130 C-20 190 -140 170 -220 80Z"/><path d="M-50 -70 C20 -150 100 -180 170 -155 C130 -100 65 -65 -50 -70Z"/><circle cx="210" cy="-10" r="8" fill="#72fff0" filter="url(#tinyGlow)"/></g>
+    <g fill="#5cd9e3" opacity=".44"><circle cx="1080" cy="200" r="7"/><circle cx="1220" cy="260" r="5"/><circle cx="1530" cy="330" r="6"/><circle cx="1760" cy="230" r="5"/></g>
+
+  </g>
+  <g id="deep-current" style="display:none" >
+
+    <g fill="#6cf6ec" opacity=".22" filter="url(#tinyGlow)"><circle cx="970" cy="320" r="11"/><circle cx="1180" cy="430" r="9"/><circle cx="1450" cy="240" r="10"/><circle cx="1680" cy="530" r="8"/></g>
+
+  </g>
+  <g id="sonar-locked" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="250" fill="none" stroke="#5ae9df" stroke-width="3" stroke-dasharray="5 18" opacity=".38"/><circle cx="165" cy="-105" r="12" fill="#7affed" opacity=".45"/></g>
+
+  </g>
+  <g id="sonar-input" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="250" fill="none" stroke="url(#sonarGlow)" stroke-width="10" stroke-dasharray="35 20" opacity=".48"/><g fill="#b4fff5"><circle cx="165" cy="-105" r="18"/><circle cx="-130" cy="145" r="12"/><circle cx="65" cy="180" r="10"/></g></g>
+
+  </g>
+  <g id="sonar-ping" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="120" fill="none" stroke="#9ffff4" stroke-width="18" opacity=".52" filter="url(#glow)"/><circle r="170" fill="none" stroke="#4df1df" stroke-width="7" opacity=".58"/><circle r="220" fill="none" stroke="#48afff" stroke-width="4" opacity=".48"/></g>
+
+  </g>
+  <g id="bubble-reverse" style="display:none" >
+
+    <g transform="translate(1260 700)" fill="#a9fff5" opacity=".52"><circle cx="0" cy="0" r="18"/><circle cx="48" cy="-58" r="14"/><circle cx="12" cy="-118" r="10"/><circle cx="70" cy="-175" r="12"/><circle cx="34" cy="-235" r="8"/></g>
+
+  </g>
+  <g id="sonar-verify" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="250" fill="none" stroke="#62efe3" stroke-width="4" opacity=".42"/><circle r="205" fill="none" stroke="#83cfff" stroke-width="3" stroke-dasharray="5 14" opacity=".45"/><circle cx="165" cy="-105" r="20" fill="#aafff5" filter="url(#tinyGlow)"/></g>
+
+  </g>
+  <g id="sonar-sweep" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="250" fill="none" stroke="#54eddf" stroke-width="5" stroke-dasharray="46 22" opacity=".54"/><path d="M0 0 L240 -22 A250 250 0 0 0 178 -176Z" fill="#56ffe2" opacity=".20" filter="url(#glow)"/><path d="M0 0 L240 -22" stroke="#cafff8" stroke-width="5" opacity=".8"/></g>
+
+  </g>
+  <g id="sonar-fail" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="260" fill="none" stroke="#ff3e52" stroke-width="14" stroke-dasharray="50 24" opacity=".58"/><path d="M-80 -220 L-20 -105 L-75 -20 L5 80 L-30 205" fill="none" stroke="#ff4d5c" stroke-width="14" stroke-linecap="round"/></g><rect width="1920" height="1080" fill="#a80b25" opacity=".08"/>
+
+  </g>
+  <g id="hull-alarm" style="display:none" >
+
+    <g transform="translate(540 540)"><circle r="230" fill="none" stroke="url(#alarmSea)" stroke-width="24" opacity=".3" filter="url(#glow)"/><circle r="290" fill="none" stroke="#ff4358" stroke-width="8" stroke-dasharray="30 30" opacity=".55"/></g>
+
+  </g>
+</svg>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Lighthouse Sweep</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#02050a">
+      <layer ref="light-background" states="*" static="true" z="0"/>
+      <layer ref="light-coast" states="*" static="true" blend="multiply" z="1"/>
+      <layer ref="light-locked" states="locked" blend="screen" z="10">
+  <timeline duration-ms="5200" loop="true" easing="ease-in-out" when="visible">
+    <keyframe at="0" opacity="0.34" scale="0.94"/>
+    <keyframe at="0.5" opacity="0.72" scale="1.06"/>
+    <keyframe at="1" opacity="0.34" scale="0.94"/>
+  </timeline>
+</layer>
+      <layer ref="light-input" states="input" blend="screen" z="20">
+  <enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.9"/>
+  <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.04"/>
+</layer>
+      <layer ref="light-key-flash" trigger="key" blend="screen" z="30">
+  <timeline duration-ms="360" loop="false" easing="ease-out" restart="true">
+    <keyframe at="0" opacity="0" scale="0.62"/>
+    <keyframe at="0.18" opacity="0.94" scale="1"/>
+    <keyframe at="1" opacity="0" scale="1.38"/>
+  </timeline>
+</layer>
+      <layer ref="light-backspace-wave" trigger="backspace" blend="overlay" z="31">
+  <timeline duration-ms="420" loop="false" easing="ease-out" restart="true">
+    <keyframe at="0" opacity="0" translate-x="120"/>
+    <keyframe at="0.18" opacity="0.9" translate-x="0"/>
+    <keyframe at="1" opacity="0" translate-x="-260"/>
+  </timeline>
+</layer>
+      <layer ref="light-verify-beam" states="verify" blend="screen" z="27">
+  <enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.94"/>
+  <timeline duration-ms="3600" loop="true" easing="linear" when="visible">
+    <keyframe at="0" opacity="0.78" rotation-deg="0"/>
+    <keyframe at="1" opacity="0.88" rotation-deg="360"/>
+  </timeline>
+</layer>
+      <layer ref="light-verify-window" states="verify" blend="screen" z="28">
+  <timeline duration-ms="900" loop="true" easing="ease-in-out" when="visible">
+    <keyframe at="0" opacity="0.3" scale="0.9"/>
+    <keyframe at="0.5" opacity="1" scale="1.12"/>
+    <keyframe at="1" opacity="0.3" scale="0.9"/>
+  </timeline>
+</layer>
+      <layer ref="light-fail-storm" states="fail" blend="screen" z="40">
+  <timeline duration-ms="780" loop="false" easing="ease-out" when="visible">
+    <keyframe at="0" opacity="0" scale="0.82"/>
+    <keyframe at="0.12" opacity="1" scale="1"/>
+    <keyframe at="0.36" opacity="0.25" scale="1.02"/>
+    <keyframe at="0.52" opacity="0.85" scale="1.04"/>
+    <keyframe at="1" opacity="0" scale="1.08"/>
+  </timeline>
+</layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#02050b"/>
+      <stop offset="0.58" stop-color="#071322"/>
+      <stop offset="1" stop-color="#020407"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9fbff"/>
+      <stop offset="0.52" stop-color="#65d8ff"/>
+      <stop offset="1" stop-color="#ffd38b"/>
+    </linearGradient>
+    <linearGradient id="accentReverse" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9fbff"/>
+      <stop offset="0.48" stop-color="#ffd38b"/>
+      <stop offset="1" stop-color="#65d8ff"/>
+    </linearGradient>
+    <linearGradient id="failGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb15b"/>
+      <stop offset="0.45" stop-color="#ff415b"/>
+      <stop offset="1" stop-color="#b8003b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#d9fbff" stop-opacity="0.72"/>
+      <stop offset="0.45" stop-color="#65d8ff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#65d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="failGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff9b83" stop-opacity="0.72"/>
+      <stop offset="0.48" stop-color="#ff415b" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ff415b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur4" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur10" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="blur24" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="b"/>
+      <feOffset in="b" dx="0" dy="12" result="o"/>
+      <feColorMatrix in="o" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="1" fill="#fff" opacity="0.025"/>
+      <circle cx="19" cy="13" r="1" fill="#fff" opacity="0.018"/>
+      <circle cx="29" cy="26" r="1" fill="#fff" opacity="0.022"/>
+      <path d="M0 31 L31 0" stroke="#fff" stroke-width="0.5" opacity="0.012"/>
+    </pattern>
+
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b2635"/><stop offset="1" stop-color="#01080e"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1=".5" x2="1" y2=".5"><stop offset="0" stop-color="#fff7c7" stop-opacity=".9"/><stop offset=".18" stop-color="#bdeeff" stop-opacity=".55"/><stop offset="1" stop-color="#82dfff" stop-opacity="0"/></linearGradient>
+
+  </defs>
+  <g id="light-background">
+    <rect width="1920" height="1080" fill="url(#sky)"/>
+    <circle cx="1530" cy="210" r="88" fill="#d8efff" opacity=".6"/>
+    <circle cx="1530" cy="210" r="120" fill="#9edcff" opacity=".12" filter="url(#blur24)"/>
+    <path d="M0 560 C220 520 400 570 620 545 C900 510 1180 600 1920 530 V1080 H0 Z" fill="url(#sea)"/>
+    <g fill="none" stroke="#8bdcff" stroke-width="3" opacity=".14">
+      <path d="M0 670 C180 630 340 700 520 660 S860 620 1040 660 S1400 700 1920 640"/>
+      <path d="M0 760 C250 710 390 790 620 748 S1040 720 1290 760 S1630 790 1920 730"/>
+      <path d="M0 865 C230 820 480 900 700 850 S1130 820 1380 860 S1660 900 1920 840"/>
+    </g>
+    <path d="M0 590 L250 420 L540 545 L730 410 L940 555 L940 1080 H0 Z" fill="#02070b"/>
+    <rect width="1920" height="1080" fill="url(#grain)"/>
+  </g>
+  <g id="light-coast">
+    <g filter="url(#shadow)">
+      <path d="M300 760 L390 250 L480 760 Z" fill="#d7d7cf"/>
+      <path d="M332 610 H448 L466 720 H314 Z" fill="#7c7f81"/>
+      <rect x="350" y="222" width="80" height="90" rx="8" fill="#1b242c" stroke="#d6e6ed" stroke-width="6"/>
+      <path d="M338 225 L390 170 L442 225 Z" fill="#15171a"/>
+      <circle cx="390" cy="266" r="24" fill="#fff5c7" opacity=".72"/>
+      <rect x="290" y="748" width="200" height="42" rx="12" fill="#11161a"/>
+    </g>
+    <g fill="#05090d"><path d="M0 850 L180 700 L360 790 L510 730 L690 850 V1080 H0 Z"/><path d="M1480 780 L1650 610 L1920 720 V1080 H1390 Z"/></g>
+  </g>
+  <g id="light-locked" style="display:none">
+    <circle cx="390" cy="266" r="44" fill="url(#glow)" filter="url(#blur10)"/>
+    <path d="M390 266 L720 176 L720 356 Z" fill="url(#beam)" opacity=".24"/>
+  </g>
+  <g id="light-input" style="display:none">
+    <circle cx="390" cy="266" r="66" fill="url(#glow)" opacity=".9" filter="url(#blur10)"/>
+    <path d="M390 266 L950 90 L950 442 Z" fill="url(#beam)" opacity=".52"/>
+    <path d="M390 266 L960 180 L960 352 Z" fill="#e9fbff" opacity=".10"/>
+  </g>
+  <g id="light-key-flash" style="display:none">
+    <g transform="translate(390 266)">
+      <circle r="88" fill="url(#glow)" filter="url(#blur10)"/>
+      <path d="M0 0 L720 -210 L720 210 Z" fill="url(#beam)" opacity=".82"/>
+      <circle r="48" fill="none" stroke="url(#accent)" stroke-width="7" opacity=".75"/>
+    </g>
+  </g>
+  <g id="light-backspace-wave" style="display:none">
+    <g fill="none" stroke="url(#accentReverse)" stroke-linecap="round" opacity=".76">
+      <path d="M1210 760 C1030 700 860 825 680 760 S350 710 120 780" stroke-width="16" filter="url(#blur4)"/>
+      <path d="M1210 760 C1030 700 860 825 680 760 S350 710 120 780" stroke-width="4"/>
+    </g>
+  </g>
+  <g id="light-verify-beam" style="display:none">
+    <g transform="translate(390 266)">
+      <path d="M0 0 L990 -180 L990 180 Z" fill="url(#beam)" opacity=".75"/>
+      <path d="M0 0 L-260 -75 L-260 75 Z" fill="url(#beam)" opacity=".13"/>
+      <circle r="60" fill="url(#glow)" filter="url(#blur10)"/>
+    </g>
+  </g>
+  <g id="light-verify-window" style="display:none">
+    <circle cx="390" cy="266" r="62" fill="url(#glow)" opacity=".88" filter="url(#blur10)"/>
+    <circle cx="390" cy="266" r="34" fill="#fffbe2" opacity=".95"/>
+  </g>
+  <g id="light-fail-storm" style="display:none">
+    <rect width="1920" height="1080" fill="url(#failGlow)" opacity=".22"/>
+    <path d="M1480 60 L1320 360 L1450 360 L1260 720 L1600 330 L1450 330 Z" fill="url(#failGrad)" filter="url(#blur4)"/>
+    <path d="M0 830 C210 680 430 930 690 760 C920 610 1110 920 1370 730 C1570 580 1760 720 1920 660 V1080 H0 Z" fill="#7d1533" opacity=".42"/>
+    <circle cx="390" cy="266" r="78" fill="url(#failGlow)" filter="url(#blur10)"/>
+  </g>
+</svg>

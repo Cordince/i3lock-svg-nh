@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="stretch" background="#03050a">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="stage" states="*" static="true" z="1"/>
+      <layer ref="locked" states="locked" z="10">
+        <enter duration-ms="420" easing="ease-out" from-opacity="0" from-scale="0.94"/>
+        <exit duration-ms="220" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="input" states="input" z="10">
+        <enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.92"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="mallets" trigger="key" blend="screen" z="20">
+        <timeline duration-ms="360" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-y="-120" rotation-deg="-14" scale="0.92"/>
+          <keyframe at="0.22" opacity="1" translate-y="0" rotation-deg="0" scale="1"/>
+          <keyframe at="1" opacity="0" translate-y="-150" rotation-deg="14" scale="1.05"/>
+        </timeline>
+      </layer>
+      <layer ref="beat" trigger="key" blend="screen" z="21">
+        <timeline duration-ms="420" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" scale="0.35"/>
+          <keyframe at="0.12" opacity="1" scale="0.65"/>
+          <keyframe at="1" opacity="0" scale="1.9"/>
+        </timeline>
+      </layer>
+      <layer ref="backbeat" trigger="backspace" blend="difference" z="22">
+        <timeline duration-ms="340" restart="true" easing="ease-in">
+          <keyframe at="0" opacity="0" scale="1.75" rotation-deg="12"/>
+          <keyframe at="0.2" opacity="0.8" scale="1.25" rotation-deg="0"/>
+          <keyframe at="1" opacity="0" scale="0.45" rotation-deg="-18"/>
+        </timeline>
+      </layer>
+      <layer ref="verify" states="verify" z="10">
+        <enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.9"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.04"/>
+      </layer>
+      <layer ref="verify-ring" states="verify" blend="screen" z="14">
+        <timeline duration-ms="980" loop="true" when="visible" easing="linear">
+          <keyframe at="0" opacity="0.75" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.75" rotation-deg="360"/>
+        </timeline>
+      </layer>
+      <layer ref="verify-pulse" states="verify" blend="screen" z="13">
+        <timeline duration-ms="700" loop="true" when="visible" easing="ease-in-out">
+          <keyframe at="0" opacity="0.15" scale="0.82"/>
+          <keyframe at="0.5" opacity="0.7" scale="1.12"/>
+          <keyframe at="1" opacity="0.15" scale="0.82"/>
+        </timeline>
+      </layer>
+      <layer ref="fail" states="fail" z="10">
+        <enter duration-ms="180" easing="ease-out" from-opacity="0" from-scale="0.82"/>
+        <exit duration-ms="340" easing="ease-in" to-opacity="0" to-scale="1.08"/>
+      </layer>
+      <layer ref="crack" states="fail" blend="screen" z="16">
+        <timeline duration-ms="680" when="visible" easing="ease-out">
+          <keyframe at="0" opacity="0" scale="0.7" rotation-deg="-8"/>
+          <keyframe at="0.16" opacity="1" scale="1" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.35" scale="1.08" rotation-deg="4"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <title>Taiko Pulse</title>
+  <defs>
+
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="glow10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow20" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur35" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="35"/></filter>
+    <linearGradient id="failRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffca72"/><stop offset="0.35" stop-color="#ff615c"/><stop offset="1" stop-color="#ff1748"/>
+    </linearGradient>
+    <radialGradient id="failGlow"><stop offset="0" stop-color="#ff6a55" stop-opacity="0.55"/><stop offset="1" stop-color="#ff1748" stop-opacity="0"/></radialGradient>
+
+
+    <radialGradient id="taikoBg" cx="50%" cy="38%" r="72%"><stop offset="0" stop-color="#2a1732"/><stop offset="0.52" stop-color="#0c1020"/><stop offset="1" stop-color="#03050a"/></radialGradient>
+    <radialGradient id="drumSkin"><stop offset="0" stop-color="#f3d6a1"/><stop offset="0.55" stop-color="#c08b54"/><stop offset="1" stop-color="#6d3c22"/></radialGradient>
+    <linearGradient id="drumWood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#571520"/><stop offset="0.45" stop-color="#9b2730"/><stop offset="1" stop-color="#2c0b15"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0a8"/><stop offset="0.45" stop-color="#f7b640"/><stop offset="1" stop-color="#b95316"/></linearGradient>
+    <radialGradient id="beatGlow"><stop offset="0" stop-color="#ffd579" stop-opacity="0.7"/><stop offset="1" stop-color="#ff6c3a" stop-opacity="0"/></radialGradient>
+    
+  </defs>
+  <g id="background" >
+
+    <rect width="1920" height="1080" fill="url(#taikoBg)"/>
+    <circle cx="340" cy="210" r="84" fill="#ff9a45" opacity="0.12" filter="url(#blur35)"/>
+    <circle cx="1580" cy="210" r="84" fill="#ff9a45" opacity="0.12" filter="url(#blur35)"/>
+    <path d="M0 820 L1920 820 L1920 1080 L0 1080 Z" fill="#05070b"/>
+    <path d="M0 820 L960 665 L1920 820" fill="none" stroke="#f1b458" stroke-opacity="0.12" stroke-width="3"/>
+    
+  </g>
+  <g id="stage" >
+
+    <g opacity="0.75">
+      <circle cx="340" cy="210" r="58" fill="#fe7d2b" opacity="0.22"/><circle cx="1580" cy="210" r="58" fill="#fe7d2b" opacity="0.22"/>
+      <path d="M280 0 V210 M400 0 V210 M1520 0 V210 M1640 0 V210" stroke="#d1964f" stroke-opacity="0.18" stroke-width="4"/>
+    </g>
+    <g transform="translate(960 560)">
+      <ellipse cx="0" cy="250" rx="410" ry="64" fill="#000" opacity="0.42" filter="url(#blur35)"/>
+      <rect x="-238" y="-196" width="476" height="392" rx="122" fill="url(#drumWood)" stroke="#22050d" stroke-width="12"/>
+      <ellipse cx="0" cy="0" rx="212" ry="212" fill="url(#drumSkin)" stroke="#3f1b12" stroke-width="16"/>
+      <ellipse cx="0" cy="0" rx="180" ry="180" fill="none" stroke="#5e2e1e" stroke-width="3" opacity="0.6"/>
+      <g fill="url(#gold)"><circle cx="190.00" cy="0.00" r="8"/><circle cx="175.54" cy="72.71" r="8"/><circle cx="134.35" cy="134.35" r="8"/><circle cx="72.71" cy="175.54" r="8"/><circle cx="0.00" cy="190.00" r="8"/><circle cx="-72.71" cy="175.54" r="8"/><circle cx="-134.35" cy="134.35" r="8"/><circle cx="-175.54" cy="72.71" r="8"/><circle cx="-190.00" cy="0.00" r="8"/><circle cx="-175.54" cy="-72.71" r="8"/><circle cx="-134.35" cy="-134.35" r="8"/><circle cx="-72.71" cy="-175.54" r="8"/><circle cx="-0.00" cy="-190.00" r="8"/><circle cx="72.71" cy="-175.54" r="8"/><circle cx="134.35" cy="-134.35" r="8"/><circle cx="175.54" cy="-72.71" r="8"/></g>
+      <path d="M-160 190 L-224 330 M160 190 L224 330" stroke="#6f3b20" stroke-width="24" stroke-linecap="round"/>
+    </g>
+    
+  </g>
+  <g id="locked" style="display:none" >
+
+    <g transform="translate(960 560)">
+      <ellipse rx="152" ry="152" fill="#2c0d14" opacity="0.16"/>
+      <circle r="136" fill="none" stroke="#f4c36b" stroke-width="2" stroke-dasharray="6 18" opacity="0.26"/>
+      <path d="M-78 -12 Q0 -70 78 -12 Q0 46 -78 -12" fill="none" stroke="#f8d991" stroke-width="8" opacity="0.50"/>
+    </g>
+    
+  </g>
+  <g id="input" style="display:none" >
+
+    <g transform="translate(960 560)">
+      <circle r="155" fill="none" stroke="url(#gold)" stroke-width="10" stroke-dasharray="34 16" opacity="0.40"/>
+      <circle r="118" fill="url(#beatGlow)" opacity="0.26"/>
+      <path d="M-92 0 Q0 -78 92 0 Q0 78 -92 0" fill="none" stroke="#fff0b0" stroke-width="10" opacity="0.78"/>
+    </g>
+    
+  </g>
+  <g id="mallets" style="display:none" >
+
+    <g transform="translate(960 292)">
+      <g transform="rotate(-18)"><rect x="-112" y="-20" width="210" height="24" rx="12" fill="#dca65e"/><circle cx="108" cy="-8" r="30" fill="#f4d09d"/></g>
+      <g transform="rotate(18)"><rect x="-98" y="-4" width="210" height="24" rx="12" fill="#dca65e"/><circle cx="-108" cy="8" r="30" fill="#f4d09d"/></g>
+    </g>
+    
+  </g>
+  <g id="beat" style="display:none" >
+<g transform="translate(960 560)"><circle r="150" fill="url(#beatGlow)"/><circle r="170" fill="none" stroke="#ffe099" stroke-width="14" opacity="0.7"/></g>
+  </g>
+  <g id="backbeat" style="display:none" >
+<g transform="translate(960 560)"><circle r="178" fill="none" stroke="#70dfff" stroke-width="16" stroke-dasharray="24 18"/><path d="M120 -72 L40 0 L120 72" fill="none" stroke="#70dfff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
+  <g id="verify" style="display:none" >
+<g transform="translate(960 560)"><circle r="150" fill="#2d1320" opacity="0.18"/><path d="M-96 0 Q0 -92 96 0 Q0 92 -96 0" fill="none" stroke="#ffe6a6" stroke-width="10" opacity="0.9"/></g>
+  </g>
+  <g id="verify-ring" style="display:none" >
+<g transform="translate(960 560)"><circle r="186" fill="none" stroke="url(#gold)" stroke-width="13" stroke-dasharray="54 26 10 22" stroke-linecap="round"/><circle r="210" fill="none" stroke="#ff6d3e" stroke-width="5" stroke-dasharray="12 24"/></g>
+  </g>
+  <g id="verify-pulse" style="display:none" >
+<g transform="translate(960 560)"><circle r="180" fill="url(#beatGlow)" filter="url(#glow10)"/></g>
+  </g>
+  <g id="fail" style="display:none" >
+<g transform="translate(960 560)"><circle r="162" fill="#4d0714" opacity="0.52"/><circle r="170" fill="none" stroke="url(#failRed)" stroke-width="12" stroke-dasharray="14 12"/></g>
+  </g>
+  <g id="crack" style="display:none" >
+<g transform="translate(960 560)" fill="none" stroke="url(#failRed)" stroke-width="14" stroke-linecap="round"><path d="M-18 -150 L-4 -62 L-52 -20 L-8 22 L-32 142"/><path d="M12 -132 L28 -54 L72 -10 L20 30 L52 128"/></g>
+  </g>
+</svg>

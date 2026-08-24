@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Switchyard Signals</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#03060b">
+      <layer ref="rail-background" states="*" static="true" z="0"/>
+      <layer ref="rail-static" states="*" static="true" blend="multiply" z="1"/>
+      <layer ref="rail-locked" states="locked" blend="screen" z="10">
+  <timeline duration-ms="2200" loop="true" easing="ease-in-out" when="visible">
+    <keyframe at="0" opacity="0.42" scale="0.96"/>
+    <keyframe at="0.5" opacity="0.8" scale="1.04"/>
+    <keyframe at="1" opacity="0.42" scale="0.96"/>
+  </timeline>
+</layer>
+      <layer ref="rail-input" states="input" blend="screen" z="20">
+  <enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.92"/>
+  <exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.04"/>
+</layer>
+      <layer ref="rail-key-train" trigger="key" blend="screen" z="30">
+  <timeline duration-ms="520" loop="false" easing="ease-out" restart="true">
+    <keyframe at="0" opacity="0" translate-y="280" scale="0.6"/>
+    <keyframe at="0.14" opacity="1" translate-y="180" scale="0.82"/>
+    <keyframe at="1" opacity="0" translate-y="-520" scale="1.34"/>
+  </timeline>
+</layer>
+      <layer ref="rail-back-train" trigger="backspace" blend="overlay" z="31">
+  <timeline duration-ms="520" loop="false" easing="ease-out" restart="true">
+    <keyframe at="0" opacity="0" translate-y="-460" scale="1.2"/>
+    <keyframe at="0.16" opacity="0.9" translate-y="-280" scale="1.05"/>
+    <keyframe at="1" opacity="0" translate-y="360" scale="0.62"/>
+  </timeline>
+</layer>
+      <layer ref="rail-verify-route" states="verify" blend="screen" z="28">
+  <enter duration-ms="220" easing="ease-out" from-opacity="0"/>
+  <timeline duration-ms="1400" loop="true" easing="linear" when="visible">
+    <keyframe at="0" opacity="0.15" translate-y="360" scale="0.72"/>
+    <keyframe at="0.2" opacity="1" translate-y="220" scale="0.82"/>
+    <keyframe at="1" opacity="0.18" translate-y="-480" scale="1.32"/>
+  </timeline>
+</layer>
+      <layer ref="rail-verify-signal" states="verify" blend="screen" z="29">
+  <timeline duration-ms="900" loop="true" easing="ease-in-out" when="visible">
+    <keyframe at="0" opacity="0.32" scale="0.9"/>
+    <keyframe at="0.5" opacity="1" scale="1.12"/>
+    <keyframe at="1" opacity="0.32" scale="0.9"/>
+  </timeline>
+</layer>
+      <layer ref="rail-fail" states="fail" blend="screen" z="40">
+  <timeline duration-ms="700" loop="false" easing="ease-out" when="visible">
+    <keyframe at="0" opacity="0" scale="0.86"/>
+    <keyframe at="0.15" opacity="1" scale="1"/>
+    <keyframe at="0.5" opacity="0.5" scale="1.04"/>
+    <keyframe at="1" opacity="0" scale="1.12"/>
+  </timeline>
+</layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#02050b"/>
+      <stop offset="0.58" stop-color="#071322"/>
+      <stop offset="1" stop-color="#020407"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e4fbff"/>
+      <stop offset="0.52" stop-color="#49dbff"/>
+      <stop offset="1" stop-color="#62ff9a"/>
+    </linearGradient>
+    <linearGradient id="accentReverse" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e4fbff"/>
+      <stop offset="0.48" stop-color="#62ff9a"/>
+      <stop offset="1" stop-color="#49dbff"/>
+    </linearGradient>
+    <linearGradient id="failGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb15b"/>
+      <stop offset="0.45" stop-color="#ff3854"/>
+      <stop offset="1" stop-color="#b8003b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e4fbff" stop-opacity="0.72"/>
+      <stop offset="0.45" stop-color="#49dbff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#49dbff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="failGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff9b83" stop-opacity="0.72"/>
+      <stop offset="0.48" stop-color="#ff3854" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ff3854" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur4" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur10" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="blur24" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="b"/>
+      <feOffset in="b" dx="0" dy="12" result="o"/>
+      <feColorMatrix in="o" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="1" fill="#fff" opacity="0.025"/>
+      <circle cx="19" cy="13" r="1" fill="#fff" opacity="0.018"/>
+      <circle cx="29" cy="26" r="1" fill="#fff" opacity="0.022"/>
+      <path d="M0 31 L31 0" stroke="#fff" stroke-width="0.5" opacity="0.012"/>
+    </pattern>
+<linearGradient id="railSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#03060c"/><stop offset="1" stop-color="#101217"/></linearGradient>
+  </defs>
+  <g id="rail-background">
+    <rect width="1920" height="1080" fill="url(#railSky)"/>
+    <path d="M0 470 C260 430 490 520 760 470 C1080 410 1420 520 1920 450 V1080 H0 Z" fill="#06080b"/>
+    <g fill="#12151a" opacity=".9"><rect x="60" y="300" width="250" height="260"/><rect x="350" y="360" width="180" height="190"/><rect x="1610" y="310" width="250" height="260"/></g>
+    <g fill="#8fd7ff" opacity=".14"><rect x="90" y="330" width="32" height="26"/><rect x="150" y="330" width="32" height="26"/><rect x="210" y="330" width="32" height="26"/><rect x="1650" y="350" width="36" height="30"/><rect x="1710" y="350" width="36" height="30"/></g>
+    <rect width="1920" height="1080" fill="url(#grain)"/>
+  </g>
+  <g id="rail-static">
+    <g fill="none" stroke-linecap="round">
+     <path d="M550 1080 L905 500" stroke="#70757d" stroke-width="18"/><path d="M1370 1080 L1015 500" stroke="#70757d" stroke-width="18"/>
+     <path d="M770 1080 L940 500" stroke="#343840" stroke-width="14"/><path d="M1150 1080 L980 500" stroke="#343840" stroke-width="14"/>
+     <path d="M260 1080 L860 500" stroke="#22262d" stroke-width="8"/><path d="M1660 1080 L1060 500" stroke="#22262d" stroke-width="8"/>
+    </g>
+    <g stroke="#4b3d2f" stroke-width="15" opacity=".9">
+     <line x1="510" y1="1030" x2="1410" y2="1030"/><line x1="590" y1="930" x2="1330" y2="930"/><line x1="670" y1="830" x2="1250" y2="830"/><line x1="742" y1="740" x2="1178" y2="740"/><line x1="806" y1="660" x2="1114" y2="660"/><line x1="858" y1="595" x2="1062" y2="595"/>
+    </g>
+    <g transform="translate(1490 370)" filter="url(#shadow)">
+     <rect x="-28" y="0" width="56" height="470" rx="18" fill="#242930"/>
+     <rect x="-92" y="-40" width="184" height="280" rx="36" fill="#11151a" stroke="#59616b" stroke-width="8"/>
+     <circle cy="25" r="42" fill="#2b1114"/><circle cy="105" r="42" fill="#2e2612"/><circle cy="185" r="42" fill="#10271c"/>
+     <path d="M-90 245 L-155 315 H-20 Z" fill="#23272d"/>
+    </g>
+  </g>
+  <g id="rail-locked" style="display:none">
+    <circle cx="1490" cy="395" r="50" fill="#ff3452" filter="url(#blur10)"/><circle cx="1490" cy="395" r="33" fill="#ff2947"/>
+  </g>
+  <g id="rail-input" style="display:none">
+    <circle cx="1490" cy="475" r="52" fill="#ffc550" opacity=".8" filter="url(#blur10)"/><circle cx="1490" cy="475" r="34" fill="#ffd67c"/>
+    <g stroke="url(#accent)" stroke-width="5" opacity=".5"><path d="M550 1080 L905 500"/><path d="M1370 1080 L1015 500"/></g>
+  </g>
+  <g id="rail-key-train" style="display:none">
+    <g transform="translate(960 760)">
+     <path d="M-70 210 L-26 -140 H26 L70 210 Z" fill="url(#glow)" opacity=".72" filter="url(#blur10)"/>
+     <ellipse cy="-130" rx="42" ry="30" fill="#e8fbff"/>
+     <ellipse cy="-132" rx="90" ry="62" fill="url(#glow)" filter="url(#blur10)"/>
+    </g>
+  </g>
+  <g id="rail-back-train" style="display:none">
+    <g transform="translate(960 760)">
+     <path d="M-80 240 L-28 -120 H28 L80 240 Z" fill="url(#accentReverse)" opacity=".36" filter="url(#blur10)"/>
+     <ellipse cy="-120" rx="40" ry="28" fill="#b9f6ff"/>
+    </g>
+  </g>
+  <g id="rail-verify-route" style="display:none">
+    <g transform="translate(960 720)">
+     <path d="M-145 260 L-40 -190 H40 L145 260 Z" fill="url(#glow)" opacity=".52" filter="url(#blur10)"/>
+     <path d="M-28 220 L-10 -175 H10 L28 220 Z" fill="#87ffb3" opacity=".75"/>
+     <circle cy="-178" r="30" fill="#caffdd"/>
+    </g>
+  </g>
+  <g id="rail-verify-signal" style="display:none">
+    <circle cx="1490" cy="555" r="54" fill="#4dff91" filter="url(#blur10)"/><circle cx="1490" cy="555" r="34" fill="#83ffaf"/>
+  </g>
+  <g id="rail-fail" style="display:none">
+    <circle cx="1490" cy="395" r="74" fill="url(#failGlow)" filter="url(#blur10)"/>
+    <g transform="translate(1490 500)" stroke="url(#failGrad)" stroke-width="34" stroke-linecap="round"><line x1="-150" y1="-150" x2="150" y2="150"/><line x1="150" y1="-150" x2="-150" y2="150"/></g>
+    <g fill="#ff714e" filter="url(#blur4)"><circle cx="1350" cy="690" r="10"/><circle cx="1600" cy="650" r="8"/><circle cx="1560" cy="745" r="12"/><circle cx="1400" cy="770" r="7"/></g>
+  </g>
+</svg>

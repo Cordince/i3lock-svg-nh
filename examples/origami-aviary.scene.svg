@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Origami Aviary</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#080a12">
+      <layer ref="origami-background" states="*" static="true" z="0"/>
+      <layer ref="origami-static" states="*" static="true" blend="multiply" z="1"/>
+      <layer ref="origami-locked" states="locked" z="10">
+  <enter duration-ms="420" easing="ease-out" from-opacity="0" from-scale="0.88"/>
+  <timeline duration-ms="5200" loop="true" easing="ease-in-out" when="visible">
+    <keyframe at="0" opacity="0.78" translate-y="-8" rotation-deg="-2"/>
+    <keyframe at="0.5" opacity="1" translate-y="8" rotation-deg="2"/>
+    <keyframe at="1" opacity="0.78" translate-y="-8" rotation-deg="-2"/>
+  </timeline>
+</layer>
+      <layer ref="origami-input" states="input" blend="screen" z="20">
+  <enter duration-ms="280" easing="ease-out" from-opacity="0" from-scale="0.82"/>
+  <exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.08"/>
+</layer>
+      <layer ref="origami-key-wing" trigger="key" blend="screen" z="30">
+  <timeline duration-ms="340" loop="false" easing="ease-out" restart="true">
+    <keyframe at="0" opacity="0" scale="0.68" rotation-deg="-12"/>
+    <keyframe at="0.18" opacity="1" scale="1.06" rotation-deg="6"/>
+    <keyframe at="1" opacity="0" scale="1.24" rotation-deg="-4"/>
+  </timeline>
+</layer>
+      <layer ref="origami-back-ribbon" trigger="backspace" blend="overlay" z="31">
+  <timeline duration-ms="420" loop="false" easing="ease-out" restart="true">
+    <keyframe at="0" opacity="0" translate-x="160" rotation-deg="4"/>
+    <keyframe at="0.18" opacity="0.86" translate-x="0" rotation-deg="0"/>
+    <keyframe at="1" opacity="0" translate-x="-280" rotation-deg="-8"/>
+  </timeline>
+</layer>
+      <layer ref="origami-verify-flock" states="verify" blend="screen" z="28">
+  <enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.78"/>
+  <timeline duration-ms="5000" loop="true" easing="linear" when="visible">
+    <keyframe at="0" opacity="0.72" rotation-deg="0" scale="0.94"/>
+    <keyframe at="0.5" opacity="1" rotation-deg="180" scale="1.04"/>
+    <keyframe at="1" opacity="0.72" rotation-deg="360" scale="0.94"/>
+  </timeline>
+</layer>
+      <layer ref="origami-fail" states="fail" blend="screen" z="40">
+  <timeline duration-ms="820" loop="false" easing="ease-out" when="visible">
+    <keyframe at="0" opacity="0" scale="0.7" rotation-deg="-5"/>
+    <keyframe at="0.15" opacity="1" scale="1" rotation-deg="0"/>
+    <keyframe at="1" opacity="0" scale="1.28" rotation-deg="12"/>
+  </timeline>
+</layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#02050b"/>
+      <stop offset="0.58" stop-color="#071322"/>
+      <stop offset="1" stop-color="#020407"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff6db"/>
+      <stop offset="0.52" stop-color="#8feaff"/>
+      <stop offset="1" stop-color="#d49cff"/>
+    </linearGradient>
+    <linearGradient id="accentReverse" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6db"/>
+      <stop offset="0.48" stop-color="#d49cff"/>
+      <stop offset="1" stop-color="#8feaff"/>
+    </linearGradient>
+    <linearGradient id="failGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb15b"/>
+      <stop offset="0.45" stop-color="#ff4162"/>
+      <stop offset="1" stop-color="#b8003b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff6db" stop-opacity="0.72"/>
+      <stop offset="0.45" stop-color="#8feaff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8feaff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="failGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff9b83" stop-opacity="0.72"/>
+      <stop offset="0.48" stop-color="#ff4162" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ff4162" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur4" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur10" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="blur24" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="b"/>
+      <feOffset in="b" dx="0" dy="12" result="o"/>
+      <feColorMatrix in="o" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="5" r="1" fill="#fff" opacity="0.025"/>
+      <circle cx="19" cy="13" r="1" fill="#fff" opacity="0.018"/>
+      <circle cx="29" cy="26" r="1" fill="#fff" opacity="0.022"/>
+      <path d="M0 31 L31 0" stroke="#fff" stroke-width="0.5" opacity="0.012"/>
+    </pattern>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ebe7da"/><stop offset="1" stop-color="#9ea9bb"/></linearGradient><linearGradient id="paper2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8f2ff"/><stop offset="1" stop-color="#7b78a9"/></linearGradient>
+  </defs>
+  <g id="origami-background">
+    <rect width="1920" height="1080" fill="#080a12"/>
+    <path d="M0 0 L620 0 L300 430 Z" fill="#131625"/><path d="M1920 0 L1250 0 L1590 420 Z" fill="#0e1220"/>
+    <path d="M0 1080 L0 640 L560 1080 Z" fill="#111421"/><path d="M1920 1080 L1920 610 L1310 1080 Z" fill="#11131d"/>
+    <g stroke="#8ea0b8" stroke-width="1.5" opacity=".15"><path d="M0 180 L1920 920"/><path d="M0 880 L1920 170"/><path d="M330 0 L1080 1080"/><path d="M1420 0 L720 1080"/></g>
+    <circle cx="350" cy="250" r="140" fill="#b9d8ef" opacity=".10"/><circle cx="350" cy="250" r="100" fill="#cde5f7" opacity=".20"/>
+    <rect width="1920" height="1080" fill="url(#grain)"/>
+  </g>
+  <g id="origami-static">
+    <g transform="translate(1390 570)" filter="url(#shadow)">
+     <path d="M-250 20 L-60 -45 L40 -200 L75 -10 L270 40 L72 86 L-18 230 L-65 78 Z" fill="url(#paper)" stroke="#f8f1dc" stroke-opacity=".25" stroke-width="3"/>
+     <path d="M-250 20 L-60 -45 L-65 78 Z" fill="#b7c1cf"/><path d="M40 -200 L75 -10 L-60 -45 Z" fill="#f0ecd9"/>
+     <path d="M75 -10 L270 40 L72 86 Z" fill="#aeb9ca"/><path d="M-65 78 L72 86 L-18 230 Z" fill="#929bae"/>
+     <path d="M-60 -45 L75 -10 L72 86 L-65 78 Z" fill="#d8d7ce"/>
+     <path d="M28 -175 L60 -235 L88 -176" fill="none" stroke="#eef7ff" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="origami-locked" style="display:none">
+    <g transform="translate(1390 570)"><path d="M-290 0 L-80 -70 L-60 70 Z" fill="url(#paper2)" opacity=".58"/><path d="M280 20 L70 -45 L72 80 Z" fill="url(#paper2)" opacity=".58"/></g>
+  </g>
+  <g id="origami-input" style="display:none">
+    <g transform="translate(1390 570)" filter="url(#blur4)"><path d="M-330 -24 L-70 -110 L-58 68 Z" fill="url(#accent)" opacity=".42"/><path d="M330 -4 L72 -95 L70 82 Z" fill="url(#accentReverse)" opacity=".42"/></g>
+    <circle cx="1390" cy="570" r="300" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="5 18" opacity=".25"/>
+  </g>
+  <g id="origami-key-wing" style="display:none">
+    <g transform="translate(1390 570)"><path d="M-380 -10 L-70 -145 L-55 72 Z" fill="url(#accent)" opacity=".65" filter="url(#blur4)"/><path d="M380 10 L70 -145 L55 72 Z" fill="url(#accentReverse)" opacity=".65" filter="url(#blur4)"/></g>
+  </g>
+  <g id="origami-back-ribbon" style="display:none">
+    <path d="M1640 750 C1340 650 1180 850 880 720 C670 630 480 760 250 670" fill="none" stroke="url(#accentReverse)" stroke-width="34" stroke-linecap="round" opacity=".42" filter="url(#blur10)"/><path d="M1640 750 C1340 650 1180 850 880 720 C670 630 480 760 250 670" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" opacity=".75"/>
+  </g>
+  <g id="origami-verify-flock" style="display:none">
+    <g transform="translate(990 520)" fill="url(#paper2)" stroke="url(#accent)" stroke-width="2" opacity=".9">
+     <path d="M0 -300 l-40 35 26 5 14 42 14-42 26-5z"/><path d="M260 -150 l-40 35 26 5 14 42 14-42 26-5z"/>
+     <path d="M260 150 l-40 35 26 5 14 42 14-42 26-5z"/><path d="M0 300 l-40 35 26 5 14 42 14-42 26-5z"/>
+     <path d="M-260 150 l-40 35 26 5 14 42 14-42 26-5z"/><path d="M-260 -150 l-40 35 26 5 14 42 14-42 26-5z"/>
+     <circle r="360" fill="none" stroke-dasharray="3 18" opacity=".28"/>
+    </g>
+  </g>
+  <g id="origami-fail" style="display:none">
+    <g stroke="url(#failGrad)" stroke-width="10" stroke-linecap="round" fill="none" filter="url(#blur4)"><path d="M1120 250 L1310 420 L1200 590 L1500 780"/><path d="M1540 280 L1430 450 L1590 610 L1460 820"/><path d="M1260 430 L1090 470 M1430 450 L1670 420 M1200 590 L1050 720 M1590 610 L1780 720"/></g>
+    <g fill="#ff6b77" opacity=".65"><path d="M1180 720 l60 35 -50 60z"/><path d="M1510 690 l90 30 -70 80z"/><path d="M1380 820 l65 22 -40 70z"/></g>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Sumi Ink Gate</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#d8ccb1">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="ink-breathe" states="locked input" blend="multiply" z="4"><timeline when="visible" duration-ms="7600" loop="true" easing="ease-in-out"><keyframe at="0" opacity="0.16" scale="0.98"/><keyframe at="0.5" opacity="0.38" scale="1.02"/><keyframe at="1" opacity="0.16" scale="0.98"/></timeline></layer>
+      <layer ref="ink-locked" states="locked" z="10"><enter duration-ms="520" easing="ease-out" from-opacity="0" from-scale="0.94"/><exit duration-ms="200" easing="ease-in" to-opacity="0" to-scale="1.04"/></layer>
+      <layer ref="ink-input" states="input" blend="multiply" z="10"><enter duration-ms="280" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="brush-strike" trigger="key" blend="multiply" z="20"><timeline duration-ms="500" restart="true" easing="ease-out"><keyframe at="0" opacity="0" translate-x="-180" rotation-deg="-16" scale="0.75"/><keyframe at="0.2" opacity="0.95" translate-x="0" rotation-deg="0" scale="1"/><keyframe at="1" opacity="0" translate-x="150" rotation-deg="8" scale="1.18"/></timeline></layer>
+      <layer ref="water-wash" trigger="backspace" blend="screen" z="21"><timeline duration-ms="620" restart="true" easing="ease-in-out"><keyframe at="0" opacity="0" translate-x="420"/><keyframe at="0.22" opacity="0.82" translate-x="120"/><keyframe at="1" opacity="0" translate-x="-620"/></timeline></layer>
+      <layer ref="ink-verify" states="verify" z="10"><enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="160" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="enso-spin" states="verify" blend="multiply" z="22"><timeline when="visible" duration-ms="2100" loop="true" easing="linear"><keyframe at="0" opacity="0.68" rotation-deg="0"/><keyframe at="1" opacity="0.86" rotation-deg="360"/></timeline></layer>
+      <layer ref="ink-fail" states="fail" z="10"><enter duration-ms="180" easing="ease-out" from-opacity="0" from-scale="0.82"/><exit duration-ms="380" easing="ease-in" to-opacity="0" to-scale="1.08"/></layer>
+      <layer ref="red-splash" states="fail" blend="multiply" z="23"><timeline when="visible" duration-ms="820" loop="false" easing="ease-out"><keyframe at="0" opacity="0" scale="0.25" rotation-deg="-18"/><keyframe at="0.22" opacity="0.95" scale="1" rotation-deg="0"/><keyframe at="1" opacity="0" scale="1.75" rotation-deg="24"/></timeline></layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="tinyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur"/>
+      <feOffset dy="12" result="off"/>
+      <feColorMatrix in="off" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="shade"/>
+      <feMerge><feMergeNode in="shade"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eee6d2"/><stop offset=".52" stop-color="#d8ccb1"/><stop offset="1" stop-color="#b8a98c"/></linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0a09"/><stop offset=".55" stop-color="#24211e"/><stop offset="1" stop-color="#050505"/></linearGradient>
+    <linearGradient id="wash" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#ddf5ff" stop-opacity="0"/><stop offset=".45" stop-color="#bcebf5" stop-opacity=".65"/><stop offset="1" stop-color="#8ccbdc" stop-opacity="0"/></linearGradient>
+    <radialGradient id="seal"><stop offset="0" stop-color="#ef5348"/><stop offset="1" stop-color="#8f121c"/></radialGradient>
+    <pattern id="paperFibers" width="34" height="28" patternUnits="userSpaceOnUse"><path d="M2 8 C12 4 20 12 32 6 M0 20 C10 16 22 25 34 18" fill="none" stroke="#7e715b" stroke-width="1" opacity=".08"/></pattern>
+
+  </defs>
+  <g id="background" >
+
+    <rect width="1920" height="1080" fill="url(#paper)"/><rect width="1920" height="1080" fill="url(#paperFibers)"/>
+    <g opacity=".72" fill="url(#ink)"><path d="M0 790 C180 570 360 680 500 490 C650 290 820 480 960 330 C1120 160 1300 370 1450 250 C1600 130 1770 250 1920 120 V1080 H0Z" opacity=".18"/><path d="M0 840 C260 720 420 820 610 700 C810 570 980 760 1170 620 C1390 460 1590 650 1920 430 V1080 H0Z" opacity=".30"/></g>
+    <g transform="translate(370 500)" stroke="#18211b" fill="none" stroke-linecap="round"><path d="M0 420 C20 180 80 -40 160 -360" stroke-width="18"/><path d="M45 220 C-50 130 -90 30 -70 -80" stroke-width="10"/><path d="M80 120 C180 70 235 -20 255 -120" stroke-width="10"/><path d="M120 -30 C30 -110 10 -210 40 -300" stroke-width="9"/><path d="M150 -150 C240 -190 300 -260 320 -340" stroke-width="8"/></g>
+    <g transform="translate(1230 520)"><path d="M220 -30 C230 -180 125 -290 -30 -305 C-190 -320 -325 -205 -336 -42 C-347 120 -220 270 -45 282 C96 291 205 214 245 100" fill="none" stroke="#171512" stroke-width="48" stroke-linecap="round" opacity=".82"/><path d="M226 -25 C210 -162 120 -250 -20 -265" fill="none" stroke="#5f5549" stroke-width="10" opacity=".22"/></g>
+    <g transform="translate(1570 780) rotate(-8)"><rect x="-90" y="-90" width="180" height="180" rx="12" fill="url(#seal)" opacity=".72"/><path d="M-48 -18 H48 M0 -52 V52 M-36 36 L36 -36" stroke="#f6d4b4" stroke-width="11" opacity=".55"/></g>
+    <g opacity=".26" fill="#20201d"><circle cx="820" cy="280" r="12"/><circle cx="890" cy="230" r="7"/><circle cx="960" cy="300" r="10"/><circle cx="1030" cy="250" r="6"/></g>
+
+  </g>
+  <g id="ink-breathe" style="display:none" >
+
+    <g transform="translate(1230 520)"><circle r="300" fill="#171512" opacity=".08" filter="url(#softGlow)"/></g>
+
+  </g>
+  <g id="ink-locked" style="display:none" >
+
+    <g transform="translate(1230 520)"><circle r="292" fill="none" stroke="#171512" stroke-width="4" stroke-dasharray="5 18" opacity=".34"/><circle cx="-12" cy="-8" r="15" fill="#221e1a" opacity=".55"/></g>
+
+  </g>
+  <g id="ink-input" style="display:none" >
+
+    <g transform="translate(1230 520)"><circle r="295" fill="none" stroke="#231f1b" stroke-width="14" stroke-dasharray="36 22" opacity=".44"/><g fill="#211d19"><circle cx="0" cy="-295" r="14"/><circle cx="295" cy="0" r="14"/><circle cx="0" cy="295" r="14"/><circle cx="-295" cy="0" r="14"/></g></g><g transform="translate(760 760) rotate(-28)"><rect x="-18" y="-210" width="36" height="360" rx="16" fill="#6f3a22"/><path d="M-30 150 Q0 250 30 150Z" fill="#151311"/></g>
+
+  </g>
+  <g id="brush-strike" style="display:none" >
+
+    <g transform="translate(1230 520) rotate(-12)"><path d="M-310 70 C-170 -45 30 -140 320 -80 C120 -10 -60 65 -250 170Z" fill="#11100e" opacity=".84"/><path d="M-270 95 C-80 -10 110 -70 290 -55" fill="none" stroke="#51483c" stroke-width="12" opacity=".42"/><g fill="#151310"><circle cx="-285" cy="130" r="18"/><circle cx="-250" cy="175" r="10"/><circle cx="-210" cy="195" r="7"/></g></g>
+
+  </g>
+  <g id="water-wash" style="display:none" >
+
+    <g transform="translate(1030 520)"><path d="M520 -120 C250 -210 -70 -160 -520 120" fill="none" stroke="url(#wash)" stroke-width="150" stroke-linecap="round" filter="url(#softGlow)"/><path d="M480 -80 C190 -150 -80 -110 -470 100" fill="none" stroke="#dff7ff" stroke-width="10" opacity=".5"/></g>
+
+  </g>
+  <g id="ink-verify" style="display:none" >
+
+    <g transform="translate(1230 520)"><circle r="300" fill="none" stroke="#221e1a" stroke-width="4" opacity=".42"/><circle r="245" fill="none" stroke="#7c6d5a" stroke-width="3" stroke-dasharray="5 15" opacity=".38"/></g>
+
+  </g>
+  <g id="enso-spin" style="display:none" >
+
+    <g transform="translate(1230 520)"><path d="M215 -25 C220 -170 120 -265 -20 -280 C-165 -295 -290 -190 -300 -45 C-310 100 -200 225 -45 240 C80 250 185 180 220 80" fill="none" stroke="#151310" stroke-width="34" stroke-linecap="round" opacity=".78"/><path d="M0 -300 V-250 M300 0 H250 M0 300 V250 M-300 0 H-250" stroke="#8e7e67" stroke-width="6" stroke-linecap="round" opacity=".45"/></g>
+
+  </g>
+  <g id="ink-fail" style="display:none" >
+
+    <g transform="translate(1230 520)"><circle r="300" fill="none" stroke="#9e1d28" stroke-width="12" stroke-dasharray="50 24" opacity=".55"/><path d="M-120 -180 L-35 -60 L-110 10 L-10 130 M95 -160 L42 -45 L135 42 L66 170" fill="none" stroke="#bb2630" stroke-width="16" stroke-linecap="round"/></g>
+
+  </g>
+  <g id="red-splash" style="display:none" >
+
+    <g transform="translate(1230 520)" fill="url(#seal)"><circle r="92" opacity=".58"/><circle cx="135" cy="-90" r="34"/><circle cx="-150" cy="70" r="28"/><circle cx="80" cy="160" r="24"/><circle cx="-70" cy="-165" r="22"/><path d="M-220 -18 C-120 -70 30 -72 220 -10 C90 30 -60 45 -220 -18Z" opacity=".62"/></g>
+
+  </g>
+</svg>

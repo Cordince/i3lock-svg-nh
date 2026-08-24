@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1920" height="1080" viewBox="0 0 1920 1080">
+  <title>Neural Canopy</title>
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="cover" background="#010207">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="neural-ambient" states="locked input" blend="screen" z="4"><timeline when="visible" duration-ms="7200" loop="true" easing="ease-in-out"><keyframe at="0" opacity="0.18" scale="0.98"/><keyframe at="0.5" opacity="0.52" scale="1.02"/><keyframe at="1" opacity="0.18" scale="0.98"/></timeline></layer>
+      <layer ref="neural-locked" states="locked" z="10"><enter duration-ms="430" easing="ease-out" from-opacity="0" from-scale="0.95"/><exit duration-ms="200" easing="ease-in" to-opacity="0" to-scale="1.04"/></layer>
+      <layer ref="neural-input" states="input" blend="screen" z="10"><enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="170" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="synapse-wave" trigger="key" blend="screen" z="20"><timeline duration-ms="620" restart="true" easing="ease-in-out"><keyframe at="0" opacity="0" translate-x="-640"/><keyframe at="0.2" opacity="1" translate-x="-360"/><keyframe at="0.8" opacity="1" translate-x="360"/><keyframe at="1" opacity="0" translate-x="650"/></timeline></layer>
+      <layer ref="prune-wave" trigger="backspace" blend="difference" z="21"><timeline duration-ms="520" restart="true" easing="ease-in-out"><keyframe at="0" opacity="0" translate-x="560"/><keyframe at="0.22" opacity="0.82" translate-x="250"/><keyframe at="1" opacity="0" translate-x="-700"/></timeline></layer>
+      <layer ref="neural-verify" states="verify" z="10"><enter duration-ms="250" easing="ease-out" from-opacity="0" from-scale="0.9"/><exit duration-ms="170" easing="ease-in" to-opacity="0" to-scale="1.05"/></layer>
+      <layer ref="inference-loop" states="verify" blend="screen" z="22"><timeline when="visible" duration-ms="1300" loop="true" easing="linear"><keyframe at="0" opacity="0.68" rotation-deg="0"/><keyframe at="1" opacity="0.9" rotation-deg="360"/></timeline></layer>
+      <layer ref="neural-fail" states="fail" z="10"><enter duration-ms="190" easing="ease-out" from-opacity="0" from-scale="0.84"/><exit duration-ms="340" easing="ease-in" to-opacity="0" to-scale="1.08"/></layer>
+      <layer ref="node-collapse" states="fail" blend="screen" z="23"><timeline when="visible" duration-ms="780" loop="false" easing="ease-out"><keyframe at="0" opacity="0" scale="1.35"/><keyframe at="0.2" opacity="1" scale="1"/><keyframe at="1" opacity="0" scale="0.45" rotation-deg="24"/></timeline></layer>
+    </scene>
+  </metadata>
+  <defs>
+
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="tinyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="14" result="blur"/>
+      <feOffset dy="12" result="off"/>
+      <feColorMatrix in="off" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .65 0" result="shade"/>
+      <feMerge><feMergeNode in="shade"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+
+    <radialGradient id="neuralBg"><stop offset="0" stop-color="#102543"/><stop offset=".56" stop-color="#060b1c"/><stop offset="1" stop-color="#010207"/></radialGradient>
+    <linearGradient id="synapse" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2ad7ff" stop-opacity="0"/><stop offset=".35" stop-color="#7cf6ff"/><stop offset=".7" stop-color="#a869ff"/><stop offset="1" stop-color="#ff76d8" stop-opacity="0"/></linearGradient>
+    <linearGradient id="neuralFail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb16c"/><stop offset=".5" stop-color="#ff4770"/><stop offset="1" stop-color="#7c1a69"/></linearGradient>
+
+  </defs>
+  <g id="background" >
+
+    <rect width="1920" height="1080" fill="url(#neuralBg)"/>
+    <g stroke="#3585d1" stroke-width="2" fill="none" opacity=".26"><path d="M120 570 C250 310 430 430 560 260 C690 90 850 300 970 220 C1120 120 1260 360 1420 250 C1570 150 1700 260 1840 110"/><path d="M100 730 C270 520 420 700 610 510 C820 300 980 600 1170 430 C1370 250 1530 530 1840 330"/><path d="M170 880 C390 640 590 890 760 690 C950 460 1150 800 1360 600 C1540 430 1700 650 1870 560"/></g>
+    <g stroke="#7b5ee8" stroke-width="2" fill="none" opacity=".20"><path d="M210 220 L420 360 L610 260 L790 420 L970 220 L1180 390 L1420 250 L1640 390 L1800 240"/><path d="M160 810 L390 680 L620 820 L840 620 L1080 790 L1300 610 L1570 760 L1810 630"/></g>
+    <g fill="#67dbff" opacity=".72"><circle cx="120" cy="570" r="9"/><circle cx="560" cy="260" r="12"/><circle cx="970" cy="220" r="10"/><circle cx="1420" cy="250" r="12"/><circle cx="1840" cy="110" r="8"/><circle cx="610" cy="510" r="11"/><circle cx="1170" cy="430" r="13"/><circle cx="1840" cy="330" r="9"/><circle cx="760" cy="690" r="12"/><circle cx="1360" cy="600" r="12"/></g>
+    <g transform="translate(1040 540)" opacity=".48"><path d="M-280 -160 C-180 -300 20 -320 120 -210 C260 -250 390 -120 330 20 C420 150 300 300 150 285 C60 370 -120 340 -190 230 C-340 210 -380 30 -300 -70Z" fill="#173358" stroke="#6bd9ff" stroke-width="4"/><path d="M-210 -130 C-60 -220 50 -100 180 -170 M-260 30 C-90 -30 20 100 210 20 M-190 180 C-10 100 100 230 250 120" fill="none" stroke="#9a73ff" stroke-width="5" opacity=".45"/></g>
+
+  </g>
+  <g id="neural-ambient" style="display:none" >
+
+    <g fill="#89ecff" filter="url(#tinyGlow)"><circle cx="300" cy="360" r="10"/><circle cx="720" cy="290" r="8"/><circle cx="980" cy="580" r="10"/><circle cx="1280" cy="420" r="9"/><circle cx="1650" cy="560" r="11"/></g>
+
+  </g>
+  <g id="neural-locked" style="display:none" >
+
+    <g transform="translate(1040 540)"><ellipse rx="360" ry="250" fill="none" stroke="#74deff" stroke-width="3" stroke-dasharray="4 18" opacity=".42"/><g fill="#72dfff"><circle cx="-260" cy="-60" r="9"/><circle cx="-80" cy="-180" r="9"/><circle cx="160" cy="-120" r="9"/><circle cx="250" cy="70" r="9"/><circle cx="20" cy="200" r="9"/><circle cx="-210" cy="150" r="9"/></g></g>
+
+  </g>
+  <g id="neural-input" style="display:none" >
+
+    <g transform="translate(1040 540)"><ellipse rx="370" ry="260" fill="none" stroke="url(#synapse)" stroke-width="10" stroke-dasharray="36 20" opacity=".52"/><g fill="#d7fbff" filter="url(#tinyGlow)"><circle cx="-260" cy="-60" r="15"/><circle cx="-80" cy="-180" r="15"/><circle cx="160" cy="-120" r="15"/><circle cx="250" cy="70" r="15"/><circle cx="20" cy="200" r="15"/><circle cx="-210" cy="150" r="15"/></g></g>
+
+  </g>
+  <g id="synapse-wave" style="display:none" >
+
+    <g transform="translate(960 540)"><ellipse rx="130" ry="410" fill="url(#synapse)" opacity=".28" filter="url(#softGlow)"/><path d="M-70 -400 C80 -260 -80 -140 70 0 C-80 140 80 260 -70 400" fill="none" stroke="#a7faff" stroke-width="8" opacity=".82"/><g fill="#fff"><circle cx="0" cy="-300" r="9"/><circle cx="0" cy="-120" r="9"/><circle cx="0" cy="70" r="9"/><circle cx="0" cy="270" r="9"/></g></g>
+
+  </g>
+  <g id="prune-wave" style="display:none" >
+
+    <g transform="translate(960 540)"><path d="M-220 -220 L220 220 M220 -220 L-220 220" stroke="#ff77d3" stroke-width="12" stroke-linecap="round" opacity=".55" filter="url(#glow)"/><circle r="190" fill="none" stroke="#7ff4ff" stroke-width="8" stroke-dasharray="20 24" opacity=".45"/></g>
+
+  </g>
+  <g id="neural-verify" style="display:none" >
+
+    <g transform="translate(1040 540)"><ellipse rx="340" ry="235" fill="none" stroke="#70e9ff" stroke-width="4" opacity=".38"/><ellipse rx="260" ry="170" fill="none" stroke="#b777ff" stroke-width="3" stroke-dasharray="5 14" opacity=".48"/></g>
+
+  </g>
+  <g id="inference-loop" style="display:none" >
+
+    <g transform="translate(1040 540)"><ellipse rx="330" ry="225" fill="none" stroke="url(#synapse)" stroke-width="12" stroke-dasharray="72 38 18 30" stroke-linecap="round" opacity=".75"/><g fill="#e5ffff"><circle cx="330" cy="0" r="13"/><circle cx="0" cy="-225" r="13"/><circle cx="-330" cy="0" r="13"/><circle cx="0" cy="225" r="13"/></g></g>
+
+  </g>
+  <g id="neural-fail" style="display:none" >
+
+    <g transform="translate(1040 540)"><ellipse rx="360" ry="250" fill="none" stroke="url(#neuralFail)" stroke-width="12" stroke-dasharray="50 20" opacity=".64"/><path d="M-180 -170 L-70 -50 L-130 20 L-15 135 M120 -150 L60 -30 L150 50 L80 180" fill="none" stroke="#ff4c75" stroke-width="13" stroke-linecap="round"/></g>
+
+  </g>
+  <g id="node-collapse" style="display:none" >
+
+    <g transform="translate(1040 540)" fill="url(#neuralFail)"><circle cx="-220" cy="-120" r="38"/><circle cx="-60" cy="-200" r="28"/><circle cx="150" cy="-130" r="34"/><circle cx="260" cy="50" r="30"/><circle cx="40" cy="210" r="36"/><circle cx="-210" cy="150" r="30"/><circle r="115" opacity=".24" filter="url(#softGlow)"/></g>
+
+  </g>
+</svg>

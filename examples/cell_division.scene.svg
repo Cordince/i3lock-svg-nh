@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="stretch" background="#01050b">
+      <layer ref="background" states="*" static="true" z="0"/>
+      <layer ref="field" states="*" static="true" blend="screen" z="1"/>
+      <layer ref="locked" states="locked" z="10">
+        <enter duration-ms="400" easing="ease-out" from-opacity="0" from-scale="0.95"/>
+        <exit duration-ms="220" easing="ease-in" to-opacity="0" to-scale="1.03"/>
+      </layer>
+      <layer ref="input" states="input" blend="screen" z="10">
+        <enter duration-ms="260" easing="ease-out" from-opacity="0" from-scale="0.92"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.04"/>
+      </layer>
+      <layer ref="vesicle-in" trigger="key" blend="screen" z="20">
+        <timeline duration-ms="620" restart="true" easing="ease-in-out">
+          <keyframe at="0" opacity="0" translate-x="-360" scale="0.55"/>
+          <keyframe at="0.68" opacity="1" translate-x="-80" scale="1"/>
+          <keyframe at="0.82" opacity="1" translate-x="0" scale="0.7"/>
+          <keyframe at="1" opacity="0" translate-x="20" scale="1.5"/>
+        </timeline>
+      </layer>
+      <layer ref="fusion" trigger="key" blend="screen" z="21">
+        <timeline duration-ms="520" restart="true" easing="ease-out">
+          <keyframe at="0" opacity="0" scale="0.3"/>
+          <keyframe at="0.75" opacity="0" scale="0.5"/>
+          <keyframe at="0.84" opacity="1" scale="0.9"/>
+          <keyframe at="1" opacity="0" scale="1.7"/>
+        </timeline>
+      </layer>
+      <layer ref="vesicle-out" trigger="backspace" blend="difference" z="22">
+        <timeline duration-ms="560" restart="true" easing="ease-in">
+          <keyframe at="0" opacity="0" translate-x="0" scale="0.7"/>
+          <keyframe at="0.18" opacity="1" translate-x="-50" scale="1"/>
+          <keyframe at="1" opacity="0" translate-x="-420" scale="0.55"/>
+        </timeline>
+      </layer>
+      <layer ref="verify" states="verify" z="10">
+        <enter duration-ms="240" easing="ease-out" from-opacity="0" from-scale="0.92"/>
+        <exit duration-ms="180" easing="ease-in" to-opacity="0" to-scale="1.05"/>
+      </layer>
+      <layer ref="spindle" states="verify" blend="screen" z="14">
+        <timeline duration-ms="1200" loop="true" when="visible" easing="linear">
+          <keyframe at="0" opacity="0.82" rotation-deg="0"/>
+          <keyframe at="1" opacity="0.82" rotation-deg="360"/>
+        </timeline>
+      </layer>
+      <layer ref="chromosomes" states="verify" blend="screen" z="15">
+        <timeline duration-ms="900" loop="true" when="visible" easing="ease-in-out">
+          <keyframe at="0" opacity="0.45" scale-y="0.72"/>
+          <keyframe at="0.5" opacity="1" scale-y="1.24"/>
+          <keyframe at="1" opacity="0.45" scale-y="0.72"/>
+        </timeline>
+      </layer>
+      <layer ref="fail" states="fail" z="10">
+        <enter duration-ms="160" easing="ease-out" from-opacity="0" from-scale="0.82"/>
+        <exit duration-ms="420" easing="ease-in" to-opacity="0" to-scale="1.12"/>
+      </layer>
+      <layer ref="rupture-left" states="fail" blend="screen" z="18">
+        <timeline duration-ms="820" when="visible" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-x="0"/>
+          <keyframe at="0.18" opacity="1" translate-x="-12"/>
+          <keyframe at="1" opacity="0.25" translate-x="-190"/>
+        </timeline>
+      </layer>
+      <layer ref="rupture-right" states="fail" blend="screen" z="18">
+        <timeline duration-ms="820" when="visible" easing="ease-out">
+          <keyframe at="0" opacity="0" translate-x="0"/>
+          <keyframe at="0.18" opacity="1" translate-x="12"/>
+          <keyframe at="1" opacity="0.25" translate-x="190"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <title>Cell Division</title>
+  <defs>
+
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="glow10" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="glow20" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur35" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="35"/></filter>
+    <linearGradient id="failRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffca72"/><stop offset="0.35" stop-color="#ff615c"/><stop offset="1" stop-color="#ff1748"/>
+    </linearGradient>
+    <radialGradient id="failGlow"><stop offset="0" stop-color="#ff6a55" stop-opacity="0.55"/><stop offset="1" stop-color="#ff1748" stop-opacity="0"/></radialGradient>
+
+
+    <radialGradient id="bioBg"><stop offset="0" stop-color="#073045"/><stop offset="0.48" stop-color="#041827"/><stop offset="1" stop-color="#01050b"/></radialGradient>
+    <radialGradient id="cell"><stop offset="0" stop-color="#33d4d9" stop-opacity="0.20"/><stop offset="0.65" stop-color="#0a778f" stop-opacity="0.30"/><stop offset="1" stop-color="#b7ffff" stop-opacity="0.10"/></radialGradient>
+    <linearGradient id="bioAccent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8efff5"/><stop offset="0.5" stop-color="#38dff1"/><stop offset="1" stop-color="#ff7da4"/></linearGradient>
+    <radialGradient id="vesicle"><stop offset="0" stop-color="#fff4b0"/><stop offset="0.25" stop-color="#54f5e5"/><stop offset="1" stop-color="#1b9fc4" stop-opacity="0"/></radialGradient>
+    
+  </defs>
+  <g id="background" >
+<rect width="1920" height="1080" fill="url(#bioBg)"/><g opacity="0.22" fill="none" stroke="#52d7e2" stroke-width="2"><circle cx="0" cy="0" r="24"/><circle cx="223" cy="137" r="36"/><circle cx="446" cy="274" r="48"/><circle cx="669" cy="411" r="60"/><circle cx="892" cy="548" r="72"/><circle cx="1115" cy="685" r="24"/><circle cx="1338" cy="822" r="36"/><circle cx="1561" cy="959" r="48"/><circle cx="1784" cy="96" r="60"/><circle cx="107" cy="233" r="72"/><circle cx="330" cy="370" r="24"/><circle cx="553" cy="507" r="36"/><circle cx="776" cy="644" r="48"/><circle cx="999" cy="781" r="60"/><circle cx="1222" cy="918" r="72"/><circle cx="1445" cy="55" r="24"/><circle cx="1668" cy="192" r="36"/><circle cx="1891" cy="329" r="48"/><circle cx="214" cy="466" r="60"/><circle cx="437" cy="603" r="72"/><circle cx="660" cy="740" r="24"/><circle cx="883" cy="877" r="36"/></g>
+  </g>
+  <g id="field" >
+<g opacity="0.35"><path d="M100 160 q40 -30 80 0 t80 0" fill="none" stroke="#4dd9e1" stroke-width="2"/><path d="M420 830 q40 -30 80 0 t80 0" fill="none" stroke="#4dd9e1" stroke-width="2"/><path d="M1260 180 q40 -30 80 0 t80 0" fill="none" stroke="#4dd9e1" stroke-width="2"/><path d="M1460 760 q40 -30 80 0 t80 0" fill="none" stroke="#4dd9e1" stroke-width="2"/><path d="M200 520 q40 -30 80 0 t80 0" fill="none" stroke="#4dd9e1" stroke-width="2"/></g><ellipse cx="960" cy="540" rx="430" ry="390" fill="#2cd9e5" opacity="0.05" filter="url(#blur35)"/>
+  </g>
+  <g id="locked" style="display:none" >
+<g transform="translate(960 540)"><circle r="270" fill="url(#cell)" stroke="#8affff" stroke-width="5" opacity="0.78"/><circle r="100" fill="#092d45" stroke="#6be7ef" stroke-width="4" opacity="0.9"/><g fill="#71dbe4" opacity="0.45"><ellipse cx="-110" cy="-60" rx="36" ry="20"/><ellipse cx="125" cy="-100" rx="28" ry="18"/><ellipse cx="100" cy="120" rx="40" ry="22"/><ellipse cx="-130" cy="130" rx="30" ry="18"/></g></g>
+  </g>
+  <g id="input" style="display:none" >
+<g transform="translate(960 540)"><circle r="278" fill="url(#cell)" stroke="url(#bioAccent)" stroke-width="12" opacity="0.9"/><circle r="108" fill="#092d45" stroke="#aaffff" stroke-width="6"/><g fill="#8cfff0"><ellipse cx="-110" cy="-60" rx="38" ry="22"/><ellipse cx="125" cy="-100" rx="30" ry="20"/><ellipse cx="100" cy="120" rx="42" ry="24"/><ellipse cx="-130" cy="130" rx="32" ry="20"/></g></g>
+  </g>
+  <g id="vesicle-in" style="display:none" >
+<g transform="translate(690 540)"><circle r="52" fill="url(#vesicle)"/><circle r="32" fill="#8ffff0" opacity="0.8"/></g>
+  </g>
+  <g id="fusion" style="display:none" >
+<g transform="translate(960 540)"><circle r="286" fill="none" stroke="#ffffc0" stroke-width="14"/><circle r="320" fill="none" stroke="#ff84a8" stroke-width="4" stroke-dasharray="12 20"/></g>
+  </g>
+  <g id="vesicle-out" style="display:none" >
+<g transform="translate(900 540)"><circle r="48" fill="#ff8fb3" opacity="0.85"/><circle r="78" fill="url(#vesicle)" opacity="0.45"/></g>
+  </g>
+  <g id="verify" style="display:none" >
+<g transform="translate(960 540)"><circle r="272" fill="url(#cell)" stroke="#7ff9f2" stroke-width="5" opacity="0.88"/><circle r="112" fill="#071f34" stroke="#7ff9f2" stroke-width="5"/></g>
+  </g>
+  <g id="spindle" style="display:none" >
+<g transform="translate(960 540)" fill="none" stroke="url(#bioAccent)" stroke-width="7" opacity="0.85"><ellipse rx="210" ry="86"/><ellipse rx="86" ry="210"/><path d="M-210 0 H210 M0 -210 V210" stroke-width="3" stroke-dasharray="10 14"/></g>
+  </g>
+  <g id="chromosomes" style="display:none" >
+<g transform="translate(960 540)" stroke="#f9c4dc" stroke-width="12" stroke-linecap="round"><path d="M-52 -76 L-14 0 L-52 76 M52 -76 L14 0 L52 76"/><path d="M-14 0 H14" stroke="#8ffff0" stroke-width="8"/></g>
+  </g>
+  <g id="fail" style="display:none" >
+<g transform="translate(960 540)"><circle r="278" fill="#46101b" opacity="0.5"/><circle r="278" fill="none" stroke="url(#failRed)" stroke-width="14" stroke-dasharray="28 18"/><circle r="110" fill="#260711" stroke="#ff5c74" stroke-width="6"/></g>
+  </g>
+  <g id="rupture-left" style="display:none" >
+<g transform="translate(960 540)" fill="none" stroke="#ff5e6e" stroke-width="14" stroke-linecap="round"><path d="M-20 -260 L-110 -170 L-70 -80 L-150 10 L-100 100 L-220 190"/></g>
+  </g>
+  <g id="rupture-right" style="display:none" >
+<g transform="translate(960 540)" fill="none" stroke="#ff5e6e" stroke-width="14" stroke-linecap="round"><path d="M20 -260 L110 -170 L70 -80 L150 10 L100 100 L220 190"/></g>
+  </g>
+</svg>
