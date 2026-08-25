@@ -34,6 +34,8 @@ i3lock \- improved screen locker
 .IR scene.svg \|]
 .RB [\|\-\-validate-scene
 .IR scene.svg \|]
+.RB [\|\-\-low-cpu\|]
+.RB [\|\-\-extreme-low-cpu\|]
 
 .SH DESCRIPTION
 .B i3lock
@@ -142,6 +144,19 @@ legacy \-i/\-\-image, \-t/\-\-tiling, or \-s/\-\-indicator-svg options.
 .BI \-\-validate-scene= path
 Parse and validate a scene-v1 SVG, build the retained cache layout, print a
 concise memory summary, and exit without locking the screen.
+
+.TP
+.B \-\-low-cpu
+Reduce retained scene redraw CPU by capping continuous animation to a lower
+frame rate. Interactive state changes and key/backspace flashes briefly use the
+normal scene frame rate. This option has no effect unless \-\-scene-svg is used.
+
+.TP
+.B \-\-extreme-low-cpu
+Render the initial retained scene frame, then suppress continuous locked-state
+animation redraws until the user starts typing. This keeps idle CPU near zero at
+the cost of freezing ambient locked-state animation. After input starts, this
+mode behaves like \-\-low-cpu, including the normal-frame-rate interactive burst.
 
 .SH SCENE AUTHORING
 .B scene-preview

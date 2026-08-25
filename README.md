@@ -104,6 +104,8 @@ documented in `docs/scene-v1.md`. Validate and preview a self-contained scene
 without locking the screen:
 
 ./i3lock --validate-scene examples/scene-v1.svg
+./i3lock --low-cpu --scene-svg examples/nature.scene.svg
+./i3lock --extreme-low-cpu --scene-svg examples/nature.scene.svg
 ./scene-preview --scene examples/scene-v1.svg --size 1920x1080 \
                 --state verify --time-ms 500 --output /tmp/scene-preview.png
 ./scene-preview --scene examples/scene-v1.svg --size 1920x1080 \
@@ -135,6 +137,15 @@ The Cordince production scene lives at
 `examples/Cordince/Cordince.scene.svg`. `scene-preview --window` is a normal
 non-locking preview window. It does not invoke PAM, grab input, or create the
 lock window.
+
+Use `--low-cpu` with `--scene-svg` to reduce continuous scene animation redraws
+while keeping the same retained renderer, scene states, and SVG timeline
+evaluation. Keypress, backspace, and state-transition animations briefly use the
+normal frame rate so interactive feedback remains responsive.
+
+Use `--extreme-low-cpu` when idle CPU matters more than ambient locked-state
+motion. It renders the initial scene frame and suppresses continuous locked-state
+animation redraws until the user starts typing, then behaves like `--low-cpu`.
 
 Ideas for animations:
 --------------------

@@ -45,6 +45,9 @@
 
 #define TSTAMP_N_SECS(n) (n * 1.0)
 #define TSTAMP_N_MINS(n) (60 * TSTAMP_N_SECS(n))
+#define SCENE_FRAME_INTERVAL_NORMAL (1.0 / 60.0)
+#define SCENE_FRAME_INTERVAL_LOW_CPU (1.0 / 5.0)
+#define SCENE_LOW_CPU_INTERACTIVE_MS 700
 #define START_TIMER(timer_obj, timeout, callback) \
     timer_obj = start_timer(timer_obj, timeout, callback)
 #define STOP_TIMER(timer_obj) \
@@ -78,10 +81,14 @@ extern unlock_state_t unlock_state;
 extern pam_state_t pam_state;
 static bool scene_mode = false;
 static char *scene_svg_path = NULL;
+static bool scene_low_cpu = false;
+static bool scene_extreme_low_cpu = false;
+static bool scene_user_interacted = false;
 static scene_renderer_t *scene_renderer = NULL;
 static struct ev_timer scene_frame_timer;
 static bool scene_frame_timer_initialized = false;
 static bool scene_frame_timer_running = false;
+static int64_t scene_normal_rate_until_ms = 0;
 static int auth_result_pipe[2] = {-1, -1};
 static struct ev_io auth_result_watcher;
 static pthread_t auth_thread;
@@ -304,6 +311,29 @@ static scene_state_t current_scene_state(void) {
 
 static void scene_frame_cb(EV_P_ ev_timer *w, int revents);
 
+static void scene_mark_user_interaction(void) {
+    scene_user_interacted = true;
+    if (!scene_low_cpu)
+        return;
+    int64_t until = monotonic_ms() + SCENE_LOW_CPU_INTERACTIVE_MS;
+    if (until > scene_normal_rate_until_ms)
+        scene_normal_rate_until_ms = until;
+}
+
+static bool scene_should_suppress_idle_timer(void) {
+    return scene_extreme_low_cpu &&
+           !scene_user_interacted &&
+           current_scene_state() == SCENE_STATE_LOCKED;
+}
+
+static ev_tstamp scene_frame_interval(void) {
+    if (!scene_low_cpu)
+        return SCENE_FRAME_INTERVAL_NORMAL;
+    return monotonic_ms() < scene_normal_rate_until_ms ?
+        SCENE_FRAME_INTERVAL_NORMAL :
+        SCENE_FRAME_INTERVAL_LOW_CPU;
+}
+
 static void scene_stop_frame_timer(void) {
     if (scene_frame_timer_running) {
         ev_timer_stop(main_loop, &scene_frame_timer);
@@ -315,12 +345,14 @@ static void scene_stop_frame_timer(void) {
 static void scene_start_frame_timer(void) {
     if (!scene_mode || !scene_renderer || !main_loop)
         return;
+    if (scene_should_suppress_idle_timer())
+        return;
     if (!scene_frame_timer_initialized) {
-        ev_timer_init(&scene_frame_timer, scene_frame_cb, 1.0 / 60.0, 0.0);
+        ev_timer_init(&scene_frame_timer, scene_frame_cb, SCENE_FRAME_INTERVAL_NORMAL, 0.0);
         scene_frame_timer_initialized = true;
     }
     if (!scene_frame_timer_running) {
-        ev_timer_set(&scene_frame_timer, 1.0 / 60.0, 0.0);
+        ev_timer_set(&scene_frame_timer, scene_frame_interval(), 0.0);
         ev_timer_start(main_loop, &scene_frame_timer);
         scene_frame_timer_running = true;
         scene_renderer_note_frame_timer_start(scene_renderer);
@@ -335,7 +367,7 @@ static void scene_render_now(void) {
         fprintf(stderr, "[i3lock] scene render failed; keeping last valid frame: %s\n", error);
         return;
     }
-    if (scene_renderer_is_animating(scene_renderer))
+    if (scene_renderer_is_animating(scene_renderer) && !scene_should_suppress_idle_timer())
         scene_start_frame_timer();
     else
         scene_stop_frame_timer();
@@ -344,6 +376,8 @@ static void scene_render_now(void) {
 static void scene_set_state_now(void) {
     if (!scene_mode || !scene_renderer)
         return;
+    if (current_scene_state() != SCENE_STATE_LOCKED)
+        scene_mark_user_interaction();
     scene_renderer_set_state(scene_renderer, current_scene_state(), monotonic_ms());
     scene_render_now();
 }
@@ -351,6 +385,7 @@ static void scene_set_state_now(void) {
 static void scene_trigger_now(scene_trigger_t trigger) {
     if (!scene_mode || !scene_renderer)
         return;
+    scene_mark_user_interaction();
     scene_renderer_trigger(scene_renderer, trigger, monotonic_ms());
     scene_render_now();
 }
@@ -1092,7 +1127,9 @@ int main(int argc, char *argv[]) {
     enum {
         OPT_DEBUG = 256,
         OPT_SCENE_SVG,
-        OPT_VALIDATE_SCENE
+        OPT_VALIDATE_SCENE,
+        OPT_LOW_CPU,
+        OPT_EXTREME_LOW_CPU
     };
     struct option longopts[] = {
         {"version", no_argument, NULL, 'v'},
@@ -1111,6 +1148,8 @@ int main(int argc, char *argv[]) {
         {"indicator-svg", required_argument, NULL, 's'},
         {"scene-svg", required_argument, NULL, OPT_SCENE_SVG},
         {"validate-scene", required_argument, NULL, OPT_VALIDATE_SCENE},
+        {"low-cpu", no_argument, NULL, OPT_LOW_CPU},
+        {"extreme-low-cpu", no_argument, NULL, OPT_EXTREME_LOW_CPU},
         {"show-failed-attempts", no_argument, NULL, 'f'},
         {NULL, no_argument, NULL, 0}
     };
@@ -1164,6 +1203,13 @@ int main(int argc, char *argv[]) {
             case OPT_VALIDATE_SCENE:
                 validate_scene_path = strdup(optarg);
                 break;
+            case OPT_LOW_CPU:
+                scene_low_cpu = true;
+                break;
+            case OPT_EXTREME_LOW_CPU:
+                scene_low_cpu = true;
+                scene_extreme_low_cpu = true;
+                break;
             case 'u':
                 unlock_indicator = false;
                 break;
@@ -1191,7 +1237,8 @@ int main(int argc, char *argv[]) {
             case 'h':
                 fprintf(stdout, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
                                 " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
-                                " [--scene-svg scene.svg] [--validate-scene scene.svg]\n");
+                                " [--scene-svg scene.svg] [--validate-scene scene.svg]"
+                                " [--low-cpu] [--extreme-low-cpu]\n");
                 return EXIT_SUCCESS;
 /*            case 'f':
                 show_failed_attempts = true;
@@ -1199,7 +1246,8 @@ int main(int argc, char *argv[]) {
             default:
                 errx(EXIT_FAILURE, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
                                    " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
-                                   " [--scene-svg scene.svg] [--validate-scene scene.svg]");
+                                   " [--scene-svg scene.svg] [--validate-scene scene.svg]"
+                                   " [--low-cpu] [--extreme-low-cpu]");
         }
     }
 

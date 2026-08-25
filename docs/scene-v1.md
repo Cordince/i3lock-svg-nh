@@ -168,6 +168,20 @@ Use the retained scene renderer for the lock:
 ./i3lock --scene-svg examples/scene-v1.svg
 ```
 
+For lower idle CPU on animated scenes, cap continuous animation redraws while
+using the same renderer and scene timeline evaluation:
+
+```sh
+./i3lock --low-cpu --scene-svg examples/nature.scene.svg
+```
+
+For near-zero CPU before the user types, suppress continuous locked-state
+animation redraws after the first rendered frame:
+
+```sh
+./i3lock --extreme-low-cpu --scene-svg examples/nature.scene.svg
+```
+
 `--scene-svg` cannot be combined with legacy `-i/--image`, `-t/--tiling`, or
 `-s/--indicator-svg`. The legacy renderer remains available when `--scene-svg`
 is absent.
@@ -425,10 +439,13 @@ Resize rebuilds layer caches and persistent output buffers for the new root
 size, then renders a fresh frame.
 
 The libev frame clock targets roughly 60 FPS only while a transition, event
-timeline, or visible looping timeline is active. It renders immediately when a
-state change or trigger occurs, stops when the scene is static, and restarts on
-the next active animation. All scene timing uses monotonic time, not frame
-counts.
+timeline, or visible looping timeline is active. With `--low-cpu`, continuous
+animation redraws are capped lower after a short normal-rate interactive burst.
+With `--extreme-low-cpu`, the initial locked frame is rendered and continuous
+locked-state animation redraws stay suppressed until input begins. It renders
+immediately when a state change or trigger occurs, stops when the scene is
+static, and restarts on the next active animation. All scene timing uses
+monotonic time, not frame counts.
 
 Internal renderer counters are exposed to tests through `scene_renderer_get_stats`.
 They track XML parses, `RsvgHandle` creations, layer rasterizations, cached
