@@ -81,6 +81,7 @@ extern unlock_state_t unlock_state;
 extern pam_state_t pam_state;
 static bool scene_mode = false;
 static char *scene_svg_path = NULL;
+static char *cinema_path = NULL;
 static bool scene_gpu_mode = false;
 static ev_tstamp scene_clock_origin;
 static bool auth_accepted = false;
@@ -491,7 +492,7 @@ static void auth_success(void) {
         scene_renderer_success(scene_renderer, monotonic_ms());
         scene_mark_user_interaction();
         scene_render_now();
-        ev_timer_init(&success_timer, success_exit_cb, .34, 0);
+        ev_timer_init(&success_timer, success_exit_cb, cinema_path ? 1.1 : .34, 0);
         ev_timer_start(main_loop, &success_timer);
         return;
     }
@@ -1151,6 +1152,7 @@ int main(int argc, char *argv[]) {
         OPT_DEBUG = 256,
         OPT_SCENE_SVG,
         OPT_GPU,
+        OPT_CINEMA,
         OPT_VALIDATE_SCENE,
         OPT_LOW_CPU,
         OPT_EXTREME_LOW_CPU
@@ -1171,6 +1173,7 @@ int main(int argc, char *argv[]) {
         {"inactivity-timeout", required_argument, NULL, 'I'},
         {"indicator-svg", required_argument, NULL, 's'},
         {"gpu", no_argument, NULL, OPT_GPU},
+        {"cinema", required_argument, NULL, OPT_CINEMA},
         {"scene-svg", required_argument, NULL, OPT_SCENE_SVG},
         {"validate-scene", required_argument, NULL, OPT_VALIDATE_SCENE},
         {"low-cpu", no_argument, NULL, OPT_LOW_CPU},
@@ -1226,6 +1229,12 @@ int main(int argc, char *argv[]) {
                 /* EGL contexts must never cross the daemonizing fork. */
                 dont_fork = true;
                 break;
+            case OPT_CINEMA:
+                cinema_path = strdup(optarg);
+                scene_mode = true;
+                scene_gpu_mode = true;
+                dont_fork = true;
+                break;
             case OPT_SCENE_SVG:
                 scene_svg_path = strdup(optarg);
                 scene_mode = true;
@@ -1267,7 +1276,7 @@ int main(int argc, char *argv[]) {
             case 'h':
                 fprintf(stdout, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
                                 " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
-                                " [--scene-svg scene.svg] [--gpu] [--validate-scene scene.svg]"
+                                " [--scene-svg scene.svg] [--gpu] [--cinema scene.ini] [--validate-scene scene.svg]"
                                 " [--low-cpu] [--extreme-low-cpu]\n");
                 return EXIT_SUCCESS;
 /*            case 'f':
@@ -1276,13 +1285,15 @@ int main(int argc, char *argv[]) {
             default:
                 errx(EXIT_FAILURE, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
                                    " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
-                                   " [--scene-svg scene.svg] [--gpu] [--validate-scene scene.svg]"
+                                   " [--scene-svg scene.svg] [--gpu] [--cinema scene.ini] [--validate-scene scene.svg]"
                                    " [--low-cpu] [--extreme-low-cpu]");
         }
     }
 
     if (scene_gpu_mode && !scene_mode)
         errx(EXIT_FAILURE, "--gpu requires --scene-svg");
+    if (cinema_path && scene_svg_path)
+        errx(EXIT_FAILURE, "select either --cinema or --scene-svg");
 
     if (validate_scene_path) {
         char error[SCENE_ERROR_LEN];
@@ -1293,7 +1304,7 @@ int main(int argc, char *argv[]) {
 
     if (scene_mode && (image_path || svg_path || tile)) {
         errx(EXIT_FAILURE,
-             "--scene-svg cannot be combined with legacy -i/--image, -t/--tiling, or -s/--indicator-svg options");
+             "animated renderers cannot be combined with legacy -i/--image, -t/--tiling, or -s/--indicator-svg options");
     }
 
     /* We need (relatively) random numbers for highlighting a random part of
@@ -1420,14 +1431,18 @@ int main(int argc, char *argv[]) {
     xcb_pixmap_t bg_pixmap;
     if (scene_mode) {
         char error[SCENE_ERROR_LEN];
-        if (!scene_renderer_create_x11(scene_svg_path,
+        bool created = cinema_path ?
+            scene_renderer_create_cinema(cinema_path, conn, screen, last_resolution[0], last_resolution[1],
+                                          &scene_renderer, error) :
+            scene_renderer_create_x11(scene_svg_path,
                                        conn,
                                        screen,
                                        last_resolution[0],
                                        last_resolution[1],
                                        &scene_renderer,
-                                       error)) {
-            errx(EXIT_FAILURE, "Could not load scene SVG: %s", error);
+                                       error);
+        if (!created) {
+            errx(EXIT_FAILURE, "Could not load visual renderer: %s", error);
         }
         if (scene_gpu_mode && !scene_renderer_enable_gpu(scene_renderer, error))
             errx(EXIT_FAILURE, "%s", error);

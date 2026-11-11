@@ -12,6 +12,9 @@ struct scene_gpu {
     EGLContext context;
     EGLSurface surface;
 };
+bool scene_gpu_make_current(scene_gpu_t *gpu) {
+    return gpu && eglMakeCurrent(gpu->display, gpu->surface, gpu->surface, gpu->context);
+}
 void scene_gpu_destroy(scene_gpu_t *g) {
     if (!g)
         return;

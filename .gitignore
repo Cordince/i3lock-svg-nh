@@ -10,4 +10,6 @@ nohup.out
 scripts/
 tmp/
 scene-gpu-preview
+cinema-preview
+cinema-tests
 /i3worker.py

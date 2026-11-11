@@ -1,0 +1,16 @@
+{
+  "source": "https://www.youtube.com/watch?v=G6uZp-33qcY",
+  "title": "Arrival (2016) - The Heptapods Speak Scene (2/10) | Movieclips",
+  "rights": "Film imagery copyright Paramount Pictures (2016). Reference-derived local-study artwork.",
+  "start_seconds": 90.5,
+  "duration_seconds": 7,
+  "frames": 56,
+  "frames_per_second": 8,
+  "atlas_columns": 8,
+  "atlas_rows": 7,
+  "frame_size": [
+    900,
+    534
+  ],
+  "processing": "Crop, scale, luminance matte, sprite atlas. Original clips remain in ignored tmp/cinema-reference."
+}

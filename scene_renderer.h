@@ -82,6 +82,10 @@ bool scene_renderer_create_x11(const char *path,
                                scene_renderer_t **out,
                                char error[SCENE_ERROR_LEN]);
 
+bool scene_renderer_create_cinema(const char *manifest, xcb_connection_t *connection,
+                                   xcb_screen_t *screen, uint32_t width, uint32_t height,
+                                   scene_renderer_t **out, char error[SCENE_ERROR_LEN]);
+
 bool scene_renderer_create_headless_with_options(const char *path,
                                                  uint32_t width,
                                                  uint32_t height,

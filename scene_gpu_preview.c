@@ -14,21 +14,32 @@ static int64_t millis(void) {
     return timestamp.tv_sec * 1000LL + timestamp.tv_nsec / 1000000;
 }
 int main(int argc, char **argv) {
+#ifdef CINEMA_PREVIEW_DEFAULT
+    const bool native_cinema = true;
+#else
+    const bool native_cinema = false;
+#endif
     if (argc < 2) {
-        fprintf(stderr, "Usage: %s scene.svg [--smoke|--cairo|--idle] [--seconds N] [--snapshot file.png]\n"
+        fprintf(stderr, "Usage: %s scene-file [--smoke|--cairo|--idle] [--seconds N] [--snapshot file.png]\n"
                         "Typing: react; Enter: verify; F: fail; S: success; Escape: quit\n", argv[0]);
         return 2;
     }
     bool smoke=false, gpu=true, idle=false;
     int seconds=0;
     const char *snapshot_path = NULL;
+    int snapshot_at_ms = 5000;
     for(int i=2;i<argc;++i) {
         if (!strcmp(argv[i],"--smoke")) {smoke=true;seconds=3;}
         else if (!strcmp(argv[i],"--cairo")) gpu=false;
         else if (!strcmp(argv[i],"--idle")) idle=true;
         else if (!strcmp(argv[i],"--seconds") && i+1<argc) seconds=atoi(argv[++i]);
         else if (!strcmp(argv[i],"--snapshot") && i+1<argc) snapshot_path=argv[++i];
+        else if (!strcmp(argv[i],"--snapshot-at-ms") && i+1<argc) snapshot_at_ms=atoi(argv[++i]);
         else return 2;
+    }
+    if (native_cinema && !gpu) {
+        fprintf(stderr, "Native cinema requires the GPU renderer\n");
+        return 2;
     }
     int screen_number;
     xcb_connection_t *c=xcb_connect(NULL,&screen_number);
@@ -40,14 +51,18 @@ int main(int argc, char **argv) {
     xcb_window_t win=xcb_generate_id(c);
     uint32_t values[]={screen->black_pixel,XCB_EVENT_MASK_EXPOSURE|XCB_EVENT_MASK_KEY_PRESS|XCB_EVENT_MASK_STRUCTURE_NOTIFY};
     xcb_create_window(c,screen->root_depth,win,screen->root,0,0,w,h,0,XCB_WINDOW_CLASS_INPUT_OUTPUT,screen->root_visual,XCB_CW_BACK_PIXEL|XCB_CW_EVENT_MASK,values);
-    const char title[]="Arrival GPU preview - Enter verify / F fail / S success / Esc quit";
-    xcb_change_property(c,XCB_PROP_MODE_REPLACE,win,XCB_ATOM_WM_NAME,XCB_ATOM_STRING,8,sizeof(title)-1,title);
+    const char *title = native_cinema ? "Native cinema - Enter verify / F fail / S success / Esc quit" :
+        "Arrival GPU preview - Enter verify / F fail / S success / Esc quit";
+    xcb_change_property(c,XCB_PROP_MODE_REPLACE,win,XCB_ATOM_WM_NAME,XCB_ATOM_STRING,8,strlen(title),title);
     xcb_intern_atom_reply_t *protocols=xcb_intern_atom_reply(c,xcb_intern_atom(c,0,12,"WM_PROTOCOLS"),NULL);
     xcb_intern_atom_reply_t *delete=xcb_intern_atom_reply(c,xcb_intern_atom(c,0,16,"WM_DELETE_WINDOW"),NULL);
     if(protocols && delete) xcb_change_property(c,XCB_PROP_MODE_REPLACE,win,protocols->atom,XCB_ATOM_ATOM,32,1,&delete->atom);
     xcb_map_window(c,win);xcb_flush(c);
     char error[SCENE_ERROR_LEN];scene_renderer_t *r=NULL;
-    if(!scene_renderer_create_x11(argv[1],c,screen,w,h,&r,error) || (gpu && !scene_renderer_enable_gpu(r,error))) {fprintf(stderr,"%s\n",error);return 2;}
+    bool created = native_cinema ?
+        scene_renderer_create_cinema(argv[1], c, screen, w, h, &r, error) :
+        scene_renderer_create_x11(argv[1], c, screen, w, h, &r, error);
+    if (!created || (gpu && !scene_renderer_enable_gpu(r,error))) {fprintf(stderr,"%s\n",error);return 2;}
     scene_renderer_set_window(r,win);
     struct xkb_context *ctx=xkb_context_new(0);
     uint16_t major,minor;uint8_t base,err;
@@ -87,8 +102,10 @@ int main(int argc, char **argv) {
                     scene_renderer_set_state(r, SCENE_STATE_FAIL, t);
                     reset = t + 1200;
                 } else if (sym == XKB_KEY_s || sym == XKB_KEY_S) {
+                    if (native_cinema)
+                        scene_renderer_set_state(r, SCENE_STATE_LOCKED, t);
                     scene_renderer_success(r, t);
-                    reset = t + 650;
+                    reset = t + (native_cinema ? 1600 : 650);
                 } else {
                     scene_renderer_set_state(r, SCENE_STATE_INPUT, t);
                     scene_renderer_trigger(r, sym == XKB_KEY_BackSpace ? SCENE_TRIGGER_BACKSPACE : SCENE_TRIGGER_KEY, t);
@@ -110,7 +127,7 @@ int main(int argc, char **argv) {
             reset = 0;
         }
         if(!scene_renderer_render(r,t,error)) {fprintf(stderr,"%s\n",error);result=2;break;}
-        if (snapshot_path && t >= 5000) {
+        if (snapshot_path && t >= snapshot_at_ms) {
             if (!scene_renderer_gpu_snapshot(r, snapshot_path, t, error)) {
                 fprintf(stderr, "%s\n", error);
                 result = 2;

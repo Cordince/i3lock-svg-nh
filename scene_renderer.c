@@ -1,6 +1,7 @@
 #include "scene_renderer.h"
 #if defined(HAVE_SCENE_GPU) && !defined(SCENE_RENDERER_NO_X11)
 #include "scene_gpu.h"
+#include "cinema_renderer.h"
 #define USE_SCENE_GPU
 #endif
 
@@ -73,6 +74,8 @@ struct scene_renderer {
     int front;
 #ifdef USE_SCENE_GPU
     scene_gpu_t *gpu;
+    cinema_renderer_t *cinema;
+    int64_t cinema_last_ms;
     unsigned *gpu_textures;
     unsigned gpu_base;
     bool gpu_requested;
@@ -1041,6 +1044,42 @@ bool scene_renderer_create_x11(const char *path,
 #endif
 }
 
+bool scene_renderer_create_cinema(const char *manifest, xcb_connection_t *connection,
+                                   xcb_screen_t *screen, uint32_t width, uint32_t height,
+                                   scene_renderer_t **out, char error[SCENE_ERROR_LEN]) {
+    *out = NULL;
+#ifdef USE_SCENE_GPU
+    scene_renderer_t *renderer = calloc(1, sizeof(*renderer));
+    if (!renderer)
+        return set_error(error, "could not allocate native cinema wrapper");
+    renderer->x11 = true;
+    renderer->conn = connection;
+    renderer->screen = screen;
+    renderer->width = width;
+    renderer->height = height;
+    renderer->doc = calloc(1, sizeof(*renderer->doc));
+    if (!renderer->doc) {
+        free(renderer);
+        return set_error(error, "could not allocate cinema timing description");
+    }
+    renderer->doc->version = 1;
+    renderer->doc->idle_fps = 60;
+    renderer->doc->width = 1920;
+    renderer->doc->height = 1080;
+    renderer->doc->path = strdup(manifest);
+    if (!cinema_renderer_create(manifest, connection, screen, width, height, &renderer->cinema, error) ||
+        !allocate_x11_buffers(renderer, error)) {
+        scene_renderer_destroy(renderer);
+        return false;
+    }
+    *out = renderer;
+    return true;
+#else
+    (void)manifest; (void)connection; (void)screen; (void)width; (void)height;
+    return set_error(error, "native cinema requires the EGL/OpenGL build");
+#endif
+}
+
 #ifdef USE_SCENE_GPU
 static void destroy_gpu(scene_renderer_t *r) {
     scene_gpu_destroy(r->gpu);
@@ -1053,6 +1092,8 @@ static void destroy_gpu(scene_renderer_t *r) {
 bool scene_renderer_enable_gpu(scene_renderer_t *r, char error[SCENE_ERROR_LEN]) {
 #ifdef USE_SCENE_GPU
     if (!r || !r->x11) return set_error(error, "GPU requires an X11 renderer");
+    if (r->cinema)
+        return true;
     for (size_t i = 0; i < r->doc->layer_count; ++i)
         if (r->doc->layers[i].blend != SCENE_BLEND_NORMAL && r->doc->layers[i].blend != SCENE_BLEND_ADD)
             return set_error(error, "GPU prototype supports normal/add blends only");
@@ -1067,6 +1108,8 @@ bool scene_renderer_enable_gpu(scene_renderer_t *r, char error[SCENE_ERROR_LEN])
 }
 bool scene_renderer_gpu_active(const scene_renderer_t *r) {
 #ifdef USE_SCENE_GPU
+    if (r && r->cinema)
+        return cinema_renderer_active(r->cinema);
     return r && r->gpu;
 #else
     (void)r; return false;
@@ -1074,6 +1117,10 @@ bool scene_renderer_gpu_active(const scene_renderer_t *r) {
 }
 void scene_renderer_success(scene_renderer_t *r, int64_t ms) {
 #ifdef USE_SCENE_GPU
+    if (r && r->cinema) {
+        cinema_renderer_success(r->cinema, ms);
+        return;
+    }
     if (r && r->gpu) r->gpu_success_ms = ms;
 #else
     (void)r; (void)ms;
@@ -1084,6 +1131,7 @@ void scene_renderer_destroy(scene_renderer_t *renderer) {
     if (!renderer)
         return;
 #ifdef USE_SCENE_GPU
+    cinema_renderer_destroy(renderer->cinema);
     destroy_gpu(renderer);
 #endif
     destroy_layer_cache(renderer->layers, renderer->doc ? renderer->doc->layer_count : 0);
@@ -1118,6 +1166,10 @@ void scene_renderer_set_window(scene_renderer_t *renderer, xcb_window_t win) {
 #ifndef SCENE_RENDERER_NO_X11
     if (renderer)
         renderer->win = win;
+#ifdef USE_SCENE_GPU
+    if (renderer && renderer->cinema)
+        cinema_renderer_set_window(renderer->cinema, win);
+#endif
 #else
     (void)renderer;
     (void)win;
@@ -1130,6 +1182,21 @@ bool scene_renderer_resize(scene_renderer_t *renderer,
                            char error[SCENE_ERROR_LEN]) {
     if (!renderer)
         return set_error(error, "scene renderer is not initialized");
+#ifdef USE_SCENE_GPU
+    if (renderer->cinema) {
+        uint32_t old_width = renderer->width, old_height = renderer->height;
+        renderer->width = width;
+        renderer->height = height;
+        if (!allocate_x11_buffers(renderer, error)) {
+            renderer->width = old_width;
+            renderer->height = old_height;
+            return false;
+        }
+        cinema_renderer_resize(renderer->cinema, width, height);
+        renderer->stats.resize_count++;
+        return true;
+    }
+#endif
     if (!rebuild(renderer, width, height, error))
         return false;
 #ifdef USE_SCENE_GPU
@@ -1140,11 +1207,23 @@ bool scene_renderer_resize(scene_renderer_t *renderer,
 }
 
 void scene_renderer_set_state(scene_renderer_t *renderer, scene_state_t state, int64_t now_ms) {
+#ifdef USE_SCENE_GPU
+    if (renderer && renderer->cinema) {
+        cinema_renderer_set_state(renderer->cinema, state, now_ms);
+        return;
+    }
+#endif
     if (renderer)
         scene_runtime_set_state(renderer->runtime, state, now_ms);
 }
 
 void scene_renderer_trigger(scene_renderer_t *renderer, scene_trigger_t trigger, int64_t now_ms) {
+#ifdef USE_SCENE_GPU
+    if (renderer && renderer->cinema) {
+        cinema_renderer_trigger(renderer->cinema, trigger, now_ms);
+        return;
+    }
+#endif
     if (renderer)
         scene_runtime_trigger(renderer->runtime, trigger, now_ms);
 #ifdef USE_SCENE_GPU
@@ -1254,6 +1333,8 @@ static bool render_gpu(scene_renderer_t *r, int64_t ms, char error[SCENE_ERROR_L
 bool scene_renderer_gpu_snapshot(scene_renderer_t *renderer, const char *path,
                                   int64_t now_ms, char error[SCENE_ERROR_LEN]) {
 #ifdef USE_SCENE_GPU
+    if (renderer && renderer->cinema)
+        return cinema_renderer_render(renderer->cinema, now_ms, path, error);
     if (!renderer || !renderer->gpu)
         return set_error(error, "GPU snapshot requires active hardware or software OpenGL");
     renderer->gpu_snapshot_path = path;
@@ -1275,6 +1356,17 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
     }
 
 #ifdef USE_SCENE_GPU
+    if (renderer->cinema) {
+        renderer->cinema_last_ms = now_ms;
+        renderer->stats.frame_composition_count++;
+        if (renderer->win != XCB_NONE)
+            return cinema_renderer_render(renderer->cinema, now_ms, NULL, error);
+        cairo_set_source_rgb(renderer->xcb_crs[0], 0.025, 0.032, 0.037);
+        cairo_paint(renderer->xcb_crs[0]);
+        cairo_surface_flush(renderer->xcb_surfaces[0]);
+        renderer->front = 0;
+        return true;
+    }
     if (renderer->gpu_requested && renderer->win != XCB_NONE) {
         if (render_gpu(renderer, now_ms, error)) return true;
         fprintf(stderr, "[scene-gpu] %s; falling back to Cairo\n", error);
@@ -1357,6 +1449,8 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
 
 bool scene_renderer_is_animating(const scene_renderer_t *renderer) {
 #ifdef USE_SCENE_GPU
+    if (renderer && renderer->cinema)
+        return true;
     if (renderer && renderer->gpu && renderer->gpu_success_ms >= 0 &&
         renderer->gpu_last_ms - renderer->gpu_success_ms < 320)
         return true;
@@ -1722,6 +1816,11 @@ void scene_renderer_expose(scene_renderer_t *renderer,
     if (!renderer || !renderer->x11 || renderer->win == XCB_NONE)
         return;
 #ifdef USE_SCENE_GPU
+    if (renderer->cinema) {
+        char error[SCENE_ERROR_LEN];
+        scene_renderer_render(renderer, renderer->cinema_last_ms, error);
+        return;
+    }
     if (renderer->gpu) {
         char error[SCENE_ERROR_LEN];
         scene_renderer_render(renderer, renderer->gpu_last_ms, error);

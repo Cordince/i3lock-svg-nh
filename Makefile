@@ -28,7 +28,7 @@ ifeq ($(GPU_AVAILABLE),yes)
 CPPFLAGS += -DHAVE_SCENE_GPU
 CFLAGS += $(shell $(PKG_CONFIG) --cflags egl gl)
 I3LOCK_LIBS += $(shell $(PKG_CONFIG) --libs egl gl)
-GPU_OBJS := scene_gpu.o
+GPU_OBJS := scene_gpu.o cinema_renderer.o cinema_models.o
 endif
 
 SCENE_OBJS:=scene.o scene_renderer.o $(GPU_OBJS)
@@ -42,6 +42,10 @@ SCENE_X11_TEST_OBJS:=scene_x11_tests.o xcb.o $(SCENE_OBJS)
 
 $(sort $(I3LOCK_OBJS) $(SCENE_HEADLESS_OBJS) $(SCENE_PREVIEW_OBJS) $(SCENE_TEST_OBJS) $(SCENE_X11_TEST_OBJS) scene_gpu_preview.o): scene.h scene_renderer.h
 scene_gpu.o scene_renderer.o: scene_gpu.h
+cinema_renderer.o scene_renderer.o: cinema_renderer.h
+cinema_models.o cinema_renderer.o: cinema_models.h
+cinema_renderer.o cinema_preview.o: scene.h scene_renderer.h
+cinema_tests.o: scene.h scene_renderer.h
 
 VERSION:=$(shell git describe --tags --abbrev=0 2>/dev/null || printf '0.0.0-dev')
 GIT_VERSION:="$(shell git describe --tags --always 2>/dev/null || printf 'unknown') ($(shell git log --pretty=format:%cd --date=short -n1 2>/dev/null || printf 'unknown-date'))"
@@ -49,7 +53,7 @@ CPPFLAGS += -DVERSION=\"${GIT_VERSION}\"
 
 .PHONY: install clean uninstall test check xvfb-test container-sanitizer-test local-sanitizer-test
 
-all: i3lock scene-preview scene-pack scene-gpu-preview
+all: i3lock scene-preview scene-pack scene-gpu-preview cinema-preview
 
 i3lock: ${I3LOCK_OBJS}
 	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)
@@ -85,7 +89,7 @@ gpu-test: scene-x11-tests
 	xvfb-run -a env SCENE_TEST_GPU=1 I3LOCK_GPU_ALLOW_SOFTWARE=1 ./scene-x11-tests
 
 clean:
-	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests scene-gpu-preview *.o i3lock-${VERSION}.tar.gz
+	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests scene-gpu-preview cinema-preview cinema-tests *.o i3lock-${VERSION}.tar.gz
 
 install: all
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin
@@ -95,6 +99,7 @@ install: all
 	$(INSTALL) -m 755 i3lock $(DESTDIR)$(PREFIX)/bin/i3lock
 	$(INSTALL) -m 755 scene-preview $(DESTDIR)$(PREFIX)/bin/scene-preview
 	$(INSTALL) -m 755 scene-pack $(DESTDIR)$(PREFIX)/bin/scene-pack
+	$(INSTALL) -m 755 cinema-preview $(DESTDIR)$(PREFIX)/bin/cinema-preview
 	$(INSTALL) -m 644 i3lock.pam $(DESTDIR)$(SYSCONFDIR)/pam.d/i3lock
 	$(INSTALL) -m 644 i3lock.1 $(DESTDIR)$(PREFIX)/share/man/man1/i3lock.1
 	$(INSTALL) -m 644 scene-preview.1 $(DESTDIR)$(PREFIX)/share/man/man1/scene-preview.1
@@ -111,6 +116,7 @@ uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/i3lock
 	rm -f $(DESTDIR)$(PREFIX)/bin/scene-preview
 	rm -f $(DESTDIR)$(PREFIX)/bin/scene-pack
+	rm -f $(DESTDIR)$(PREFIX)/bin/cinema-preview
 	rm -f $(DESTDIR)$(PREFIX)/share/man/man1/i3lock.1
 	rm -f $(DESTDIR)$(PREFIX)/share/man/man1/scene-preview.1
 	rm -f $(DESTDIR)$(PREFIX)/share/man/man1/scene-pack.1
@@ -129,3 +135,16 @@ dist: clean
 
 scene-gpu-preview: scene_gpu_preview.o xcb.o $(SCENE_OBJS)
 	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)
+
+cinema_preview.o: scene_gpu_preview.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -DCINEMA_PREVIEW_DEFAULT -c -o $@ $<
+
+cinema-preview: cinema_preview.o xcb.o $(SCENE_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)
+
+cinema-tests: cinema_tests.o xcb.o $(SCENE_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)
+
+.PHONY: cinema-test
+cinema-test: cinema-tests
+	xvfb-run -a env I3LOCK_GPU_ALLOW_SOFTWARE=1 ./cinema-tests

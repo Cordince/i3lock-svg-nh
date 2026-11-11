@@ -141,6 +141,13 @@ Use the retained-mode scene-v1 SVG renderer. This option cannot be combined with
 legacy \-i/\-\-image, \-t/\-\-tiling, or \-s/\-\-indicator-svg options.
 
 .TP
+.BI \-\-cinema= path
+Use the native cinematic renderer with the given INI manifest. Image assets and
+GLSL shaders are loaded relative to the manifest. This mode uses a GPU ink
+simulation and articulated 3D creatures, runs in the foreground, and cannot be
+combined with \-\-scene-svg or legacy image and indicator options.
+
+.TP
 .BI \-\-validate-scene= path
 Parse and validate a scene-v1 SVG, build the retained cache layout, print a
 concise memory summary, and exit without locking the screen.

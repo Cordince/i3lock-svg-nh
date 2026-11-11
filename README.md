@@ -99,6 +99,17 @@ example:
 
 Retained scene SVG renderer
 ---------------------------
+The `cinematic-native-renderer` branch also provides a native cinematic pipeline:
+
+```sh
+./cinema-preview examples/Cinema/cinema.ini
+./i3lock --cinema examples/Cinema/cinema.ini
+```
+
+It uses direct image assets, a GPU ink simulation, articulated 3D creatures, and
+shader compositing. See [the native cinematic renderer](examples/Cinema/README.md)
+for its reference clips, asset preparation, configuration, and tests.
+
 The new retained-mode scene renderer is selected with `--scene-svg` and is
 documented in `docs/scene-v1.md`. Validate and preview a self-contained scene
 without locking the screen:
