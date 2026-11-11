@@ -2,6 +2,7 @@
 #define GL_GLEXT_PROTOTYPES
 #include "cinema_renderer.h"
 #include "cinema_models.h"
+#include "cinema_volume.h"
 #include "scene_gpu.h"
 #include <GL/gl.h>
 #include <GL/glext.h>
@@ -29,6 +30,7 @@ struct cinema_renderer {
     scene_gpu_t *gpu;
     cinema_models_t *models;
     GLuint model_texture;
+    GLuint volume_noise;
     bool ready;
     unsigned width, height;
     int simulation_size, pressure_iterations;
@@ -255,10 +257,14 @@ static bool load_program(cinema_renderer_t *renderer, const char *filename,
     for (size_t index = 0; index < UNIFORM_COUNT; ++index)
         program->uniforms[index] = glGetUniformLocation(program->id, uniform_names[index]);
     const char *samplers[] = {"velocity_tex", "density_tex", "pressure_tex", "divergence_tex",
-                              "target_tex", "background_tex", "actor_tex"};
+                              "target_tex", "background_tex", "actor_tex", "model_depth_tex",
+                              "foreground_tex", "foreground_depth_tex"};
     glUseProgram(program->id);
-    for (int index = 0; index < 7; ++index)
+    for (int index = 0; index < 10; ++index)
         glUniform1i(glGetUniformLocation(program->id, samplers[index]), index);
+    // The composite program does not sample velocity_tex, so its 3D noise
+    // sampler can use unit 0. Simulation programs use the 2D binding there.
+    glUniform1i(glGetUniformLocation(program->id, "volume_noise_tex"), 0);
     glUseProgram(0);
     return true;
 }
@@ -286,6 +292,10 @@ static bool initialize_gpu(cinema_renderer_t *renderer, char error[SCENE_ERROR_L
     renderer->gpu = scene_gpu_create(renderer->connection, renderer->screen, renderer->window, error);
     if (!renderer->gpu)
         return false;
+    GLint texture_units=0;
+    glGetIntegerv(GL_MAX_TEXTURE_IMAGE_UNITS,&texture_units);
+    if(texture_units<10)
+        return fail(error,"native cinematic layers require ten fragment texture units");
     const char *files[] = {"velocity.frag", "divergence.frag", "pressure.frag", "project.frag",
                            "density.frag", "composite.frag"};
     for (size_t index = 0; index < PROGRAM_COUNT; ++index) {
@@ -294,6 +304,10 @@ static bool initialize_gpu(cinema_renderer_t *renderer, char error[SCENE_ERROR_L
     }
     renderer->models = cinema_models_create(renderer->shader_directory, error);
     if (!renderer->models)
+        return false;
+    glActiveTexture(GL_TEXTURE0);
+    renderer->volume_noise = cinema_volume_create_noise(error);
+    if (!renderer->volume_noise)
         return false;
     renderer->background = upload_image(renderer->background_image, false);
     for (size_t index = 0; index < renderer->glyph_count; ++index)
@@ -334,8 +348,11 @@ static void draw_pass(cinema_renderer_t *renderer, int index, GLuint output,
                        output ? renderer->simulation_size : renderer->height);
     GLuint textures[] = {renderer->velocity[renderer->velocity_index], renderer->density[renderer->density_index],
         renderer->pressure[renderer->pressure_index], renderer->divergence, renderer->glyphs[glyph],
-        renderer->background, renderer->model_texture};
-    for (int unit = 0; unit < 7; ++unit) {
+        renderer->background, renderer->model_texture, cinema_models_depth_texture(renderer->models),
+        cinema_models_foreground_texture(renderer->models),cinema_models_foreground_depth(renderer->models)};
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_3D, renderer->volume_noise);
+    for (int unit = 0; unit < 10; ++unit) {
         glActiveTexture(GL_TEXTURE0 + unit);
         glBindTexture(GL_TEXTURE_2D, textures[unit]);
     }
@@ -465,6 +482,7 @@ void cinema_renderer_destroy(cinema_renderer_t *renderer) {
         glDeleteTextures(2, renderer->pressure);
         glDeleteTextures(1, &renderer->divergence);
         glDeleteTextures(1, &renderer->background);
+        glDeleteTextures(1, &renderer->volume_noise);
         if (renderer->glyphs)
             glDeleteTextures(renderer->glyph_count, renderer->glyphs);
         glDeleteFramebuffers(1, &renderer->framebuffer);

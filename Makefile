@@ -28,7 +28,7 @@ ifeq ($(GPU_AVAILABLE),yes)
 CPPFLAGS += -DHAVE_SCENE_GPU
 CFLAGS += $(shell $(PKG_CONFIG) --cflags egl gl)
 I3LOCK_LIBS += $(shell $(PKG_CONFIG) --libs egl gl)
-GPU_OBJS := scene_gpu.o cinema_renderer.o cinema_models.o
+GPU_OBJS := scene_gpu.o cinema_renderer.o cinema_models.o cinema_volume.o cinema_foreground.o
 endif
 
 SCENE_OBJS:=scene.o scene_renderer.o $(GPU_OBJS)
@@ -44,6 +44,9 @@ $(sort $(I3LOCK_OBJS) $(SCENE_HEADLESS_OBJS) $(SCENE_PREVIEW_OBJS) $(SCENE_TEST_
 scene_gpu.o scene_renderer.o: scene_gpu.h
 cinema_renderer.o scene_renderer.o: cinema_renderer.h
 cinema_models.o cinema_renderer.o: cinema_models.h
+cinema_volume.o cinema_renderer.o: cinema_volume.h
+cinema_foreground.o cinema_models.o: cinema_foreground.h
+cinema_foreground.o: cinema_volume.h
 cinema_renderer.o cinema_preview.o: scene.h scene_renderer.h
 cinema_tests.o: scene.h scene_renderer.h
 

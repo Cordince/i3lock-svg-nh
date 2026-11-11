@@ -2,6 +2,7 @@
  * the camera looks along +Z and the glass is in front of the near hand. */
 #define GL_GLEXT_PROTOTYPES
 #include "cinema_models.h"
+#include "cinema_foreground.h"
 #include <GL/gl.h>
 #include <GL/glext.h>
 #include <math.h>
@@ -17,16 +18,17 @@ enum { RINGS=36, SIDES=24, CAPACITY=600000, SOURCE_CAPACITY=20000 };
 typedef struct { vertex *vertices; size_t count; } sculpt;
 struct cinema_models {
     GLuint program, buffer, framebuffer, color, depth;
+    GLuint foreground_framebuffer,foreground_color,foreground_depth;
     unsigned width, height;
     vertex *vertices;
     size_t count;
-    sculpt torso, hand;
+    sculpt torso;
+    cinema_foreground_t *foreground;
 };
 static vec3 add(vec3 a,vec3 b) { return (vec3){a.x+b.x,a.y+b.y,a.z+b.z}; }
 static vec3 mul(vec3 a,float b) { return (vec3){a.x*b,a.y*b,a.z*b}; }
 static vec3 cross(vec3 a,vec3 b) { return (vec3){a.y*b.z-a.z*b.y,a.z*b.x-a.x*b.z,a.x*b.y-a.y*b.x}; }
 static vec3 unit(vec3 a) { return mul(a,1.0f/fmaxf(.00001f,sqrtf(a.x*a.x+a.y*a.y+a.z*a.z))); }
-static float smooth(float a,float b,float x) { float t=fmaxf(0,fminf(1,(x-a)/(b-a)));return t*t*(3-2*t); }
 static vec3 curve(vec3 a,vec3 b,vec3 c,vec3 d,float t) {
     float u=1-t;
     return add(add(mul(a,u*u*u),mul(b,3*u*u*t)),add(mul(c,3*u*t*t),mul(d,t*t*t)));
@@ -110,6 +112,14 @@ static void tube(cinema_models_t *m,vec3 a,vec3 b,vec3 c,vec3 d,float radius,flo
             rings[i][j]=(vertex){add(p,mul(normal,r*tendon)),normal};
         }
     }
+    // Derive normals from the deformed surface, including taper, flexor
+    // bulges and skin folds. Pure radial normals made every bend look tubular.
+    for(int i=0;i<=RINGS;i++) for(int j=0;j<=SIDES;j++) {
+        int before=(j+SIDES-1)%SIDES,after=(j+1)%SIDES;
+        vec3 along=add(rings[i<RINGS?i+1:i][j].position,mul(rings[i?i-1:i][j].position,-1));
+        vec3 around=add(rings[i][after].position,mul(rings[i][before].position,-1));
+        rings[i][j].normal=unit(cross(along,around));
+    }
     for(int i=0;i<RINGS;i++) for(int j=0;j<SIDES;j++) {
         triangle(m,rings[i][j],rings[i+1][j],rings[i][j+1]);
         triangle(m,rings[i][j+1],rings[i+1][j],rings[i+1][j+1]);
@@ -125,46 +135,29 @@ static void heptapod(cinema_models_t *m,float x,float z,float t,float seed) {
     vec3 body={x+sway,.12f+sinf(t*.22f+seed)*.07f,z};
     float yaw=.16f*sinf(t*.09f+seed)+(seed>1 ? -.30f : .22f);
     pose_sculpt(m,&m->torso,body,yaw,breath,sway);
+    // Root/elbow/distal landmarks from the clear writing-room silhouette in
+    // Paramount's contact clip (148 s). The seven limbs occupy different depth
+    // planes; outside elbows are flexed while the middle limbs hang longer.
+    static const vec3 rest[7][3]={
+        {{-.37f,.14f,-.22f},{-1.08f,-.35f,-.42f},{-1.62f,-2.45f,-.58f}},
+        {{-.22f,.04f,-.39f},{-.63f,-.72f,-.92f},{-.76f,-3.15f,-1.0f}},
+        {{.08f,.01f,-.41f},{.17f,-.93f,-1.05f},{.30f,-3.36f,-1.16f}},
+        {{.34f,.08f,-.25f},{1.12f,-.63f,-.48f},{1.43f,-2.81f,-.32f}},
+        {{.34f,.08f,.24f},{.83f,-.54f,.73f},{.94f,-2.75f,1.03f}},
+        {{.02f,.02f,.39f},{.12f,-.88f,1.0f},{-.08f,-3.12f,1.20f}},
+        {{-.32f,.10f,.25f},{-.81f,-.50f,.67f},{-.97f,-2.84f,.98f}}
+    };
     for(int leg=0;leg<7;leg++) {
-        float angle=leg*2*M_PI/7+yaw;
-        float dx=cosf(angle),dz=sinf(angle),move=sinf(t*.23f+leg+seed)*.13f;
-        float length=3.0f+.22f*sinf(leg*1.7f+seed);
-        vec3 a=add(body,(vec3){dx*.32f,.15f,dz*.32f});
-        vec3 b=add(body,(vec3){dx*.76f,-.45f,dz*.72f});
-        vec3 c=add(body,(vec3){dx*1.35f+move,-1.55f,dz*1.10f});
-        vec3 d=add(body,(vec3){dx*1.20f+move,-length,dz*1.24f});
-        tube(m,a,b,c,d,.25f,.018f,t*.2f+leg);
+        float move=sinf(t*.18f+leg*1.7f+seed)*.075f;
+        vec3 a=add(body,rotate_y(rest[leg][0],yaw));
+        vec3 elbow=add(body,rotate_y(add(rest[leg][1],(vec3){move,.025f*sinf(t*.2f+leg),0}),yaw));
+        vec3 tip=add(body,rotate_y(add(rest[leg][2],(vec3){move*1.7f,0,.045f*sinf(t*.21f+leg)}),yaw));
+        vec3 upper=add(elbow,mul(a,-1)),lower=add(tip,mul(elbow,-1));
+        tube(m,a,add(a,mul(upper,.40f)),add(elbow,mul(upper,-.22f)),elbow,.27f,.165f,t*.15f+leg);
+        tube(m,elbow,add(elbow,mul(lower,.22f)),add(tip,add(mul(lower,-.26f),(vec3){move,0,-.12f})),tip,.17f,.012f,t*.15f+leg);
     }
 }
-static void hand(cinema_models_t *m,float t,float age,float success_age) {
-    /* Wind-up, fast forward strike, contact, then a damped recoil. */
-    float hit=0,wind=0;
-    if(age>=0) {
-        wind=smooth(0,.18f,age)*(1-smooth(.18f,.29f,age));
-        hit=smooth(.18f,.32f,age)*(1-smooth(.43f,1.35f,age));
-    }
-    float sway=.075f*sinf(t*.31f);
-    vec3 palm={-.72f+sway,.33f+.06f*sinf(t*.27f),3.2f+.38f*wind-1.28f*hit};
-    float retreat=success_age < 0 ? 0 : smooth(0,.95f,success_age);
-    palm.y += retreat*2.5f;
-    palm.z += retreat*2.0f;
-    pose_sculpt(m,&m->hand,palm,-.12f+.06f*sinf(t*.21f),1,0);
-    float opening=.27f+.13f*sinf(t*.22f)+hit*.60f;
-    for(int finger=0;finger<7;finger++) {
-        float angle=2*M_PI*finger/7+.16f;
-        vec3 radial={cosf(angle),sinf(angle),0};
-        float bend=.065f*sinf(t*.37f+finger*1.2f);
-        float length=1.05f+.16f*sinf(finger*2.7f);
-        float spread=radial.x*opening;
-        vec3 a=add(palm,mul(radial,.27f));
-        vec3 b=add(palm,(vec3){spread*.55f,-.40f*(1-opening)+radial.y*.48f*opening,-.07f});
-        vec3 joint=add(palm,(vec3){spread*.94f+bend,(-.95f*(1-opening)+radial.y*.94f*opening)*length,-.16f+.10f*(1-hit)});
-        tube(m,a,b,add(joint,(vec3){-spread*.1f,.13f,-.03f}),joint,.095f,.045f,t*.2f+finger);
-        vec3 end=add(palm,(vec3){spread*1.05f+bend,(-1.47f*(1-opening)+radial.y*1.12f*opening)*length,.05f+.31f*(1-hit)});
-        tube(m,joint,add(joint,(vec3){spread*.10f,-.12f,-.05f}),
-             add(end,(vec3){spread*.05f,.12f,-.10f}),end,.046f,.006f,t*.2f+finger);
-    }
-}
+
 static GLuint shader(GLenum kind,const char *source,char error[SCENE_ERROR_LEN]) {
     GLuint s=glCreateShader(kind);glShaderSource(s,1,&source,NULL);glCompileShader(s);
     GLint ok=0;glGetShaderiv(s,GL_COMPILE_STATUS,&ok);
@@ -176,8 +169,9 @@ cinema_models_t *cinema_models_create(const char *shader_directory,char error[SC
     if(!m) {snprintf(error,SCENE_ERROR_LEN,"cannot allocate 3D models");return NULL;}
     m->vertices=calloc(CAPACITY,sizeof(vertex));
     if(!m->vertices) {cinema_models_destroy(m);snprintf(error,SCENE_ERROR_LEN,"cannot allocate 3D mesh");return NULL;}
-    if(!load_sculpt(shader_directory,"heptapod-torso",&m->torso,error)||
-       !load_sculpt(shader_directory,"heptapod-hand",&m->hand,error)) {cinema_models_destroy(m);return NULL;}
+    if(!load_sculpt(shader_directory,"heptapod-torso",&m->torso,error)) {cinema_models_destroy(m);return NULL;}
+    m->foreground=cinema_foreground_create(shader_directory,error);
+    if(!m->foreground) {cinema_models_destroy(m);return NULL;}
     char *vp=g_build_filename(shader_directory,"model.vert",NULL),*fp=g_build_filename(shader_directory,"model.frag",NULL);
     char *vs=NULL,*fs=NULL;
     bool loaded=g_file_get_contents(vp,&vs,NULL,NULL)&&g_file_get_contents(fp,&fs,NULL,NULL);
@@ -192,7 +186,9 @@ cinema_models_t *cinema_models_create(const char *shader_directory,char error[SC
     GLint ok=0;glGetProgramiv(m->program,GL_LINK_STATUS,&ok);
     if(!ok) {glGetProgramInfoLog(m->program,SCENE_ERROR_LEN,NULL,error);cinema_models_destroy(m);return NULL;}
     glGenBuffers(1,&m->buffer);glGenFramebuffers(1,&m->framebuffer);
-    glGenTextures(1,&m->color);glGenRenderbuffers(1,&m->depth);
+    glGenTextures(1,&m->color);glGenTextures(1,&m->depth);
+    glGenFramebuffers(1,&m->foreground_framebuffer);
+    glGenTextures(1,&m->foreground_color);glGenTextures(1,&m->foreground_depth);
     return m;
 }
 unsigned cinema_models_render(cinema_models_t *m,unsigned width,unsigned height,double seconds,double age,double success_age,char error[SCENE_ERROR_LEN]) {
@@ -203,20 +199,46 @@ unsigned cinema_models_render(cinema_models_t *m,unsigned width,unsigned height,
         glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA8,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,NULL);
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_CLAMP_TO_EDGE);
-        glBindRenderbuffer(GL_RENDERBUFFER,m->depth);glRenderbufferStorage(GL_RENDERBUFFER,GL_DEPTH_COMPONENT24,width,height);
         glFramebufferTexture2D(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,GL_TEXTURE_2D,m->color,0);
-        glFramebufferRenderbuffer(GL_FRAMEBUFFER,GL_DEPTH_ATTACHMENT,GL_RENDERBUFFER,m->depth);
+        glBindTexture(GL_TEXTURE_2D,m->depth);
+        glTexImage2D(GL_TEXTURE_2D,0,GL_DEPTH_COMPONENT24,width,height,0,GL_DEPTH_COMPONENT,GL_UNSIGNED_INT,NULL);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_CLAMP_TO_EDGE);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_COMPARE_MODE,GL_NONE);
+        glFramebufferTexture2D(GL_FRAMEBUFFER,GL_DEPTH_ATTACHMENT,GL_TEXTURE_2D,m->depth,0);
+        glBindFramebuffer(GL_FRAMEBUFFER,m->foreground_framebuffer);
+        glBindTexture(GL_TEXTURE_2D,m->foreground_color);
+        glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA8,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,NULL);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_CLAMP_TO_EDGE);
+        glFramebufferTexture2D(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,GL_TEXTURE_2D,m->foreground_color,0);
+        glBindTexture(GL_TEXTURE_2D,m->foreground_depth);
+        glTexImage2D(GL_TEXTURE_2D,0,GL_DEPTH_COMPONENT24,width,height,0,GL_DEPTH_COMPONENT,GL_UNSIGNED_INT,NULL);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_COMPARE_MODE,GL_NONE);
+        glFramebufferTexture2D(GL_FRAMEBUFFER,GL_DEPTH_ATTACHMENT,GL_TEXTURE_2D,m->foreground_depth,0);
+        if(glCheckFramebufferStatus(GL_FRAMEBUFFER)!=GL_FRAMEBUFFER_COMPLETE) {snprintf(error,SCENE_ERROR_LEN,"foreground framebuffer incomplete");return 0;}
+        glBindFramebuffer(GL_FRAMEBUFFER,m->framebuffer);
     }
     if(glCheckFramebufferStatus(GL_FRAMEBUFFER)!=GL_FRAMEBUFFER_COMPLETE) {snprintf(error,SCENE_ERROR_LEN,"3D model framebuffer incomplete");return 0;}
     glViewport(0,0,width,height);glClearColor(0,0,0,0);glClearDepth(1);glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);glDepthFunc(GL_LESS);glDisable(GL_BLEND);glDisable(GL_CULL_FACE);
-    m->count=0;heptapod(m,-3.0f,7.8f,seconds,.4f);heptapod(m,3.5f,9.5f,seconds,2.1f);hand(m,seconds,age,success_age);
+    m->count=0;heptapod(m,-3.0f,7.8f,seconds,.4f);heptapod(m,3.5f,9.5f,seconds,2.1f);
     glUseProgram(m->program);glUniform1f(glGetUniformLocation(m->program,"aspect"),(float)width/height);
+    glUniform1f(glGetUniformLocation(m->program,"time_s"),seconds);
     glBindBuffer(GL_ARRAY_BUFFER,m->buffer);glBufferData(GL_ARRAY_BUFFER,m->count*sizeof(vertex),m->vertices,GL_STREAM_DRAW);
     glEnableVertexAttribArray(0);glEnableVertexAttribArray(1);
     glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,sizeof(vertex),(void*)offsetof(vertex,position));
     glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,sizeof(vertex),(void*)offsetof(vertex,normal));
     glDrawArrays(GL_TRIANGLES,0,m->count);
+    glBindFramebuffer(GL_FRAMEBUFFER,m->foreground_framebuffer);
+    glClearColor(0,0,0,0);glClearDepth(1);glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    // Keep fractional coverage premultiplied in its own layer. Background
+    // geometry remains available behind the foreground's optical footprint.
+    glEnable(GL_BLEND);
+    glBlendFuncSeparate(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA,GL_ONE,GL_ONE_MINUS_SRC_ALPHA);
+    if(!cinema_foreground_render(m->foreground,width,height,seconds,age,success_age,error))return 0;
+    glDisable(GL_BLEND);
     glDisableVertexAttribArray(0);glDisableVertexAttribArray(1);glDisable(GL_DEPTH_TEST);
     glBindFramebuffer(GL_FRAMEBUFFER,0);glUseProgram(0);
     return m->color;
@@ -224,6 +246,13 @@ unsigned cinema_models_render(cinema_models_t *m,unsigned width,unsigned height,
 void cinema_models_destroy(cinema_models_t *m) {
     if(!m)return;
     glDeleteProgram(m->program);glDeleteBuffers(1,&m->buffer);glDeleteTextures(1,&m->color);
-    glDeleteRenderbuffers(1,&m->depth);glDeleteFramebuffers(1,&m->framebuffer);
-    free(m->torso.vertices);free(m->hand.vertices);free(m->vertices);free(m);
+    glDeleteTextures(1,&m->depth);glDeleteFramebuffers(1,&m->framebuffer);
+    glDeleteTextures(1,&m->foreground_color);glDeleteTextures(1,&m->foreground_depth);glDeleteFramebuffers(1,&m->foreground_framebuffer);
+    cinema_foreground_destroy(m->foreground);
+    free(m->torso.vertices);free(m->vertices);free(m);
 }
+unsigned cinema_models_depth_texture(const cinema_models_t *m) {
+    return m ? m->depth : 0;
+}
+unsigned cinema_models_foreground_texture(const cinema_models_t *m) {return m ? m->foreground_color : 0;}
+unsigned cinema_models_foreground_depth(const cinema_models_t *m) {return m ? m->foreground_depth : 0;}

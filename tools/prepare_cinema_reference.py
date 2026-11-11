@@ -10,6 +10,15 @@ ASSETS = ROOT / "examples/Cinema/assets"
 SOURCES = {
     "heptapods": "https://www.youtube.com/watch?v=G6uZp-33qcY",
     "introduction": "https://www.youtube.com/watch?v=mBdWBpsA5eQ",
+    "first-contact": "https://www.youtube.com/watch?v=dQlExOgF5eU",
+    "paramount-contact": "https://www.youtube.com/watch?v=12BIfTgmSm4",
+    "weapon": "https://www.youtube.com/watch?v=fOFGL7-qmqs",
+}
+STUDY_FRAMES = {
+    "first-contact": (100, 116, 124, 132),
+    "paramount-contact": (64, 100, 148),
+    "weapon": (4, 36, 44, 52, 68),
+    "heptapods": (91, 93, 95, 97),
 }
 
 
@@ -46,6 +55,17 @@ def prepare():
         "processing": "Crop, scale, luminance matte, sprite atlas. Original clips remain in ignored tmp/cinema-reference.",
     }
     (ASSETS / "reference-provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    # Anatomy references stay in the ignored cache and never enter the runtime.
+    # Extraction writes files only; this tool never launches a desktop viewer.
+    studies = CACHE / "anatomy"
+    studies.mkdir(exist_ok=True)
+    for name, timestamps in STUDY_FRAMES.items():
+        for seconds in timestamps:
+            subprocess.run([
+                "ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-ss", str(seconds),
+                "-i", str(CACHE / f"{name}.mp4"), "-frames:v", "1",
+                str(studies / f"{name}-{seconds}.png"),
+            ], check=True)
 
 
 if __name__ == "__main__":

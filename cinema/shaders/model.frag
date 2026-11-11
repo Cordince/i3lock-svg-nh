@@ -1,6 +1,7 @@
 #version 120
 varying vec3 world;
 varying vec3 norm;
+uniform float time_s;
 
 float hash3(vec3 p) { return fract(sin(dot(p,vec3(127.1,311.7,74.7)))*43758.5453); }
 float noise3(vec3 p) {
@@ -34,9 +35,7 @@ void main() {
     vec3 skin=albedo*(.30+diffuse*1.55+fill*.22);
     skin+=pow(max(dot(reflect(-light,n),eye),0.0),22.0)*.075;
     skin+=rim*vec3(.085,.10,.11);
-    // Fog is applied once by alpha compositing. The former double attenuation
-    // erased nearly all the sculpted surface detail on the distant creatures.
-    float transmission=exp(-max(0.0,world.z-2.7)*.145);
-    transmission*=1.0-smoothstep(2.8,6.0,world.y)*0.60;
-    gl_FragColor=vec4(skin,clamp(transmission*1.12,0.0,1.0));
+    // Opaque geometry with a real depth attachment. The compositor integrates
+    // the fog along the camera ray in front of and behind this surface.
+    gl_FragColor=vec4(skin,1.0);
 }

@@ -32,10 +32,13 @@ programmable stages:
 2. Measure divergence, solve pressure with Jacobi iterations, and project the
    velocity field.
 3. Advect ink density and guide its formation toward the current film glyph.
-4. Tessellate and render the articulated 3D arm, seven-fingered hand, and two
-   seven-legged heptapods into an RGBA framebuffer with a depth attachment.
-5. Composite the model framebuffer with layered chamber fog, animated ink, soft
-   edge scattering, film grain, glass reflections, and color grading.
+4. Render the background meshes and trace the continuous foreground sculpt
+   into independent color/depth layers.
+5. March 64 intervals through a three-dimensional mist volume, inserting model
+   surfaces at their depth. Rear, middle, and front cloud banks have independent
+   world-space currents, rolling deformation, density, and light attenuation.
+6. Composite the volume with animated ink, film grain, glass reflections, and
+   color grading.
 
 The ink field keeps evolving while a glyph is held. Each 16-second pass forms,
 holds, and disperses one of the five documented glyphs. Keypresses inject local
@@ -49,9 +52,13 @@ preview holds acceptance for 1.6 seconds before returning to idle.
 `cinema_models.c` loads authored triangle meshes from `cinema/models`. The torso
 has a narrow neck, sloping shoulder girdle, paired chest masses, a recessed
 sternum, abdominal folds, and a sevenfold tendon fan that joins the seven limbs.
-The foreground hand and forearm share one continuous mesh, including a carpal
-constriction, flexor cords, knuckles, and an ink-emission depression. Its seven
-segmented fingers hang folded at rest and spread for the glass strike.
+The foreground uses three smoothly blended signed-distance sculpts, with the
+forearm, palm and digits merged into one surface. Its normals come from the
+continuous field. Four subpixel rays provide silhouette coverage, and a small
+foreground-only optical filter focuses the scene on the glass. Skin folds,
+pores, broad diffuse lighting and soft highlights are shaded independently of
+the background. This removes the separately capped fingers and sheet webbing.
+
 
 The model cross sections were shaped against Carlos Huante's
 [Arrival design sheets](https://www.carlos-huante-monstruo.com/arrival), especially
@@ -63,16 +70,51 @@ reference-based study meshes, not the original film production assets or an
 exact reconstruction.
 
 The meshes use perspective, depth testing, geometric surface normals, skin bump
-mapping, and directional lighting. Fog attenuates the surface once, rather than
-applying both color fog and alpha fog and erasing the model detail. The two
+mapping, and directional lighting. A 3D volume pass accumulates scattering and transmittance along the viewing
+ray and uses the sampled mesh depth to place fog in front of and behind each
+surface. A premultiplied 49-tap filter crosses distant silhouette edges,
+including pixels outside the mesh. The close hand stays focused. The two
 background creatures sway, breathe, and turn slightly, with independent limb
-motion. Ink remains a 2D fluid field and the fog is procedural compositing.
+motion. Ink remains a 2D fluid field. The mist is a procedural participating medium
+with approximate lighting, rather than a simulated fluid or full light-transport solver.
+
+The background heptapods remain faint silhouettes inside drifting mist. Their
+upper bodies fade into a pale bank and their lower limbs disappear into darker
+mist. Independently advected noise layers move the banks and continually vary
+how much of each silhouette is visible; the close hand stays clearer.
+
+Additional finished-film footage and the corresponding model changes are
+recorded in [the anatomy study notes](model-reference-notes.md).
+
+The mist field uses a periodic 64-cubed RGBA texture built by
+`cinema_volume.c`: three coherent noise channels and a cellular billow field.
+The shader warps this field into rolling lobes, erodes their edges into wisps,
+and moves the depth-local banks at different speeds and directions. Two
+additional density samples along the light direction shade each ray interval,
+producing bright edges and darker cloud interiors. The diffuse baseline is
+small so the bank shapes survive integration instead of averaging into a
+vertical fade. This is procedural advection and approximate volume lighting,
+not a fluid-dynamics solver.
+
+The native regression checks measure lateral cloud contrast after subtracting
+each sampled row's mean, then measure five-second motion in a patch clear of
+the models and glyph. A static vertical gradient cannot satisfy these checks.
 
 Rebuild the inspectable OBJ assets with:
 
 ```sh
 python3 tools/build_heptapod_models.py
 ```
+
+Rebuild the continuous foreground sculpts (NumPy is required only for baking):
+
+```sh
+python3 tools/build_foreground_volume.py
+```
+
+`cinema_foreground.c` loads the folded, writing and contact volumes and traces
+their blended surface into the real depth buffer. The older hand OBJ remains
+an inspectable loft study; it is no longer used for foreground rendering.
 
 Fidelity currently takes precedence over resource use. The production manifest
 uses a 512×512 floating-point simulation, 20 pressure iterations, full-resolution
