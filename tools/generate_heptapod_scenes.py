@@ -112,6 +112,50 @@ def cinema_layers(metadata, artwork):
     })
 
 
+def fog_cinema_layers(metadata, artwork, definitions):
+    # The reference shots hide the limb's attachment in upper/middle-distance fog.
+    veil = node(definitions, "radialGradient", id="limb-depth")
+    node(veil, "stop", offset="0", stop_color="white")
+    node(veil, "stop", offset="0.5", stop_color="white", stop_opacity="0.85")
+    node(veil, "stop", offset="1", stop_color="black")
+    mask = node(definitions, "mask", id="limb-fog", maskUnits="userSpaceOnUse",
+                x=260, y=-130, width=1050, height=1050)
+    node(mask, "rect", x=260, y=-130, width=1050, height=1050, fill="url(#limb-depth)")
+    hand = node(artwork, "g", id="tentacle", mask="url(#limb-fog)")
+    downward = node(hand, "g", transform="translate(1300 1040) rotate(180)")
+    image(downward, ASSETS / "cinema-tentacle.png", 240, 330, 710, 710)
+    declaration = layer(metadata, "tentacle", origin_x=760, origin_y=80)
+    timeline(declaration, PASS_MS, {
+        0: dict(opacity=0, translate_y=-100, rotation_deg=1.5, scale=0.96),
+        1400: dict(opacity=0.46, translate_y=0, rotation_deg=-0.5, scale=1),
+        4800: dict(opacity=0.5, translate_y=9, rotation_deg=0, scale=1.01),
+        7500: dict(opacity=0.16, translate_y=-40, rotation_deg=1, scale=0.98),
+        11200: dict(opacity=0, translate_y=-100, rotation_deg=1.5, scale=0.96),
+        PASS_MS: dict(opacity=0, translate_y=-100, rotation_deg=1.5, scale=0.96),
+    })
+    emission = node(artwork, "g", id="fluid-emission")
+    image(emission, ASSETS / "cinema-fluid.png", 680, 210, 340, 230, preserveAspectRatio="none")
+    declaration = layer(metadata, "fluid-emission", origin_x=700, origin_y=400)
+    timeline(declaration, PASS_MS, {
+        0: dict(opacity=0, scale=0.3, translate_y=-8),
+        650: dict(opacity=0.16, scale=0.55, translate_y=-3),
+        2100: dict(opacity=0.46, scale=0.92, translate_y=0),
+        4500: dict(opacity=0.18, scale=1.08, translate_y=-3),
+        6900: dict(opacity=0, scale=1.16, translate_y=-9),
+        PASS_MS: dict(opacity=0, scale=0.3, translate_y=-8),
+    })
+    head = node(artwork, "g", id="fluid-writing-tip")
+    image(head, ASSETS / "cinema-fluid.png", 888, 196, 144, 144)
+    declaration = layer(metadata, "fluid-writing-tip", origin_x=960, origin_y=510)
+    timeline(declaration, PASS_MS, {
+        0: dict(opacity=0, rotation_deg=0, scale=1),
+        250: dict(opacity=0.22, rotation_deg=0, scale=1),
+        5600: dict(opacity=0.22, rotation_deg=360, scale=1),
+        6100: dict(opacity=0, rotation_deg=365, scale=1.04),
+        PASS_MS: dict(opacity=0, rotation_deg=0, scale=1),
+    })
+
+
 def foreground_haze(metadata, artwork, definitions):
     blur = node(definitions, "filter", id="mist-soften", x="-0.3", y="-0.6", width="1.6", height="2.2")
     node(blur, "feGaussianBlur", stdDeviation=18)
@@ -126,7 +170,7 @@ def foreground_haze(metadata, artwork, definitions):
     })
 
 
-def build(cinema):
+def build(cinema, *, fog=False):
     glyphs = json.loads((THEME / "glyphs.json").read_text())
     document = ET.Element(f"{{{SVG}}}svg", width="1920", height="1080", viewBox="0 0 1920 1080")
     metadata = node(document, "metadata")
@@ -137,8 +181,12 @@ def build(cinema):
     background = node(artwork, "g", id="paper")
     layer(metadata, "paper", static="true")
     if cinema:
-        image(background, ASSETS / "cinema-chamber.png", 0, 0, 1920, 1080, preserveAspectRatio="none")
-        cinema_layers(metadata, artwork)
+        chamber = ASSETS / ("cinema-fog-chamber.png" if fog else "cinema-chamber.png")
+        image(background, chamber, 0, 0, 1920, 1080, preserveAspectRatio="none")
+        if fog:
+            fog_cinema_layers(metadata, artwork, definitions)
+        else:
+            cinema_layers(metadata, artwork)
     else:
         gradient = node(definitions, "radialGradient", id="haze")
         node(gradient, "stop", stop_color="#303b39")
@@ -168,12 +216,19 @@ def build(cinema):
         timeline(declaration, total, frames)
     if cinema:
         foreground_haze(metadata, artwork, definitions)
+        if fog:
+            artwork.find(f"{{{SVG}}}g[@id='glass-mist']").set("fill", "#c5ccd0")
         floor = node(artwork, "g", id="glass-sill")
-        image(floor, ASSETS / "cinema-chamber.png", 0, 965, 1920, 115,
+        image(floor, chamber, 0, 965, 1920, 115,
               crop=(0, 965 / 1080, 1, 1), preserveAspectRatio="none")
         layer(metadata, "glass-sill", static="true")
+        if fog:
+            lintel = node(artwork, "g", id="glass-lintel")
+            image(lintel, chamber, 0, 0, 1920, 28, crop=(0, 0, 1, 28 / 1080), preserveAspectRatio="none")
+            layer(metadata, "glass-lintel", static="true")
     feedback(metadata, artwork, cinema)
-    target = THEME / ("cinema-real.scene.svg" if cinema else "arrival.scene.svg")
+    name = "cinema-fog.scene.svg" if fog else ("cinema-real.scene.svg" if cinema else "arrival.scene.svg")
+    target = THEME / name
     ET.indent(document, space="  ")
     ET.ElementTree(document).write(target, encoding="utf-8", xml_declaration=True)
     print(target.relative_to(ROOT))
@@ -182,3 +237,4 @@ def build(cinema):
 if __name__ == "__main__":
     build(False)
     build(True)
+    build(True, fog=True)

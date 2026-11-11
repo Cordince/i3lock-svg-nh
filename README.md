@@ -162,6 +162,7 @@ Try the Arrival ink ring in a regular window before using it as a lock theme:
 make
 ./scene-gpu-preview examples/Arrival/arrival.scene.svg
 ./scene-gpu-preview examples/Arrival/cinema-real.scene.svg
+./scene-gpu-preview examples/Arrival/cinema-fog.scene.svg
 ```
 
 Type to scatter ink, use Backspace to contract it, and press Enter, F, or S

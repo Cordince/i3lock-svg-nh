@@ -1,0 +1,10 @@
+{
+  "tool": "Built-in image_gen",
+  "file": "cinema-fog-chamber.png",
+  "prompt": "Use case: stylized-concept, photorealistic cinematic environment plate. Asset type: landscape 1920x1080 background for an animated screen locker. Reference images 1 and 2 are actual Arrival (2016) film stills for the cool-grey near-white fog, huge depth, and restrained alien visibility. Reference image 3 guides the old leathery whale/elephant skin, enormous scale, and hand/glass relationship. Create a new empty composition inspired by these references, without any humans, words, symbols, circles, ink, or foreground hands. Camera looks toward the translucent glass barrier in the contact chamber. Very pale diffuse COOL neutral grey light fills the middle, almost white, with heavy deep mist. Two extremely indistinct heptapod forms emerge from the fog toward the far left and far right, only tall trunks and downward-hanging slender appendages vaguely visible, upper bodies lost above the top of frame or dissolved in haze. ALL appendages descend from above or emerge out of middle-distance mist. Absolutely nothing grows upward from the bottom. Leave the central 55 percent open empty pale fog so authentic black ink glyphs can be composited. Barely visible dark charcoal stone frame at very top and a narrow black sill along bottom, clear glass with restrained reflections rather than heavy dirty scratches. Low contrast, diffuse volumetric backlight, subtle film grain, cool desaturated grey and slate with absolutely no golden yellow, amber, orange, warm beige or sepia. This should feel like a quiet actual film VFX plate with believable atmospheric depth, not fantasy concept art, not a spaceship control panel.",
+  "references": [
+    "https://vfxblog.com/wp-content/uploads/2016/11/039_100_comp_v011_1123_eng.jpg",
+    "https://vfxblog.com/wp-content/uploads/2016/11/058_360_comp_v044_1124_eng.jpg",
+    "https://cdn.mos.cms.futurecdn.net/SQRazW3nbRsscuf6M7od2D.jpg"
+  ]
+}
