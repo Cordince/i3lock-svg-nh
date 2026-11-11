@@ -81,6 +81,9 @@ extern unlock_state_t unlock_state;
 extern pam_state_t pam_state;
 static bool scene_mode = false;
 static char *scene_svg_path = NULL;
+static bool scene_gpu_mode = false;
+static bool auth_accepted = false;
+static ev_timer success_timer;
 static bool scene_low_cpu = false;
 static bool scene_extreme_low_cpu = false;
 static bool scene_user_interacted = false;
@@ -313,7 +316,7 @@ static void scene_frame_cb(EV_P_ ev_timer *w, int revents);
 
 static void scene_mark_user_interaction(void) {
     scene_user_interacted = true;
-    if (!scene_low_cpu)
+    if (!scene_low_cpu && !scene_gpu_mode)
         return;
     int64_t until = monotonic_ms() + SCENE_LOW_CPU_INTERACTIVE_MS;
     if (until > scene_normal_rate_until_ms)
@@ -327,6 +330,8 @@ static bool scene_should_suppress_idle_timer(void) {
 }
 
 static ev_tstamp scene_frame_interval(void) {
+    if (scene_gpu_mode)
+        return monotonic_ms() < scene_normal_rate_until_ms ? SCENE_FRAME_INTERVAL_NORMAL : 1.0 / 30.0;
     if (!scene_low_cpu)
         return SCENE_FRAME_INTERVAL_NORMAL;
     return monotonic_ms() < scene_normal_rate_until_ms ?
@@ -468,10 +473,24 @@ static void discard_passwd_cb(EV_P_ ev_timer *w, int revents) {
     STOP_TIMER(discard_passwd_timeout);
 }
 
+static void success_exit_cb(EV_P_ ev_timer *w, int revents) {
+    (void)w; (void)revents;
+    exit(0);
+}
+
 static void auth_success(void) {
     DEBUG("successfully authenticated\n");
     clear_password_memory();
     turn_monitors_on();
+    if (scene_gpu_mode && scene_renderer_gpu_active(scene_renderer) && main_loop) {
+        auth_accepted = true;
+        scene_renderer_success(scene_renderer, monotonic_ms());
+        scene_mark_user_interaction();
+        scene_render_now();
+        ev_timer_init(&success_timer, success_exit_cb, .34, 0);
+        ev_timer_start(main_loop, &success_timer);
+        return;
+    }
     exit(0);
 }
 
@@ -634,7 +653,7 @@ static void handle_key_press(xcb_key_press_event_t *event) {
     bool ctrl;
     bool composed = false;
 
-    if (scene_mode && pam_state == STATE_PAM_VERIFY)
+    if (auth_accepted || (scene_mode && pam_state == STATE_PAM_VERIFY))
         return;
 
     ksym = xkb_state_key_get_one_sym(xkb_state, event->detail);
@@ -1127,6 +1146,7 @@ int main(int argc, char *argv[]) {
     enum {
         OPT_DEBUG = 256,
         OPT_SCENE_SVG,
+        OPT_GPU,
         OPT_VALIDATE_SCENE,
         OPT_LOW_CPU,
         OPT_EXTREME_LOW_CPU
@@ -1146,6 +1166,7 @@ int main(int argc, char *argv[]) {
         {"ignore-empty-password", no_argument, NULL, 'e'},
         {"inactivity-timeout", required_argument, NULL, 'I'},
         {"indicator-svg", required_argument, NULL, 's'},
+        {"gpu", no_argument, NULL, OPT_GPU},
         {"scene-svg", required_argument, NULL, OPT_SCENE_SVG},
         {"validate-scene", required_argument, NULL, OPT_VALIDATE_SCENE},
         {"low-cpu", no_argument, NULL, OPT_LOW_CPU},
@@ -1196,6 +1217,11 @@ int main(int argc, char *argv[]) {
             case 's':
                 svg_path = strdup(optarg);
                 break;
+            case OPT_GPU:
+                scene_gpu_mode = true;
+                /* EGL contexts must never cross the daemonizing fork. */
+                dont_fork = true;
+                break;
             case OPT_SCENE_SVG:
                 scene_svg_path = strdup(optarg);
                 scene_mode = true;
@@ -1237,7 +1263,7 @@ int main(int argc, char *argv[]) {
             case 'h':
                 fprintf(stdout, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
                                 " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
-                                " [--scene-svg scene.svg] [--validate-scene scene.svg]"
+                                " [--scene-svg scene.svg] [--gpu] [--validate-scene scene.svg]"
                                 " [--low-cpu] [--extreme-low-cpu]\n");
                 return EXIT_SUCCESS;
 /*            case 'f':
@@ -1246,10 +1272,13 @@ int main(int argc, char *argv[]) {
             default:
                 errx(EXIT_FAILURE, "Syntax: i3lock [-v] [-n] [-b] [-d] [-c color] [-u] [-p win|default]"
                                    " [-i image.png] [-t] [-e] [-I] [-f] [-s indicator.svg]"
-                                   " [--scene-svg scene.svg] [--validate-scene scene.svg]"
+                                   " [--scene-svg scene.svg] [--gpu] [--validate-scene scene.svg]"
                                    " [--low-cpu] [--extreme-low-cpu]");
         }
     }
+
+    if (scene_gpu_mode && !scene_mode)
+        errx(EXIT_FAILURE, "--gpu requires --scene-svg");
 
     if (validate_scene_path) {
         char error[SCENE_ERROR_LEN];
@@ -1396,6 +1425,8 @@ int main(int argc, char *argv[]) {
                                        error)) {
             errx(EXIT_FAILURE, "Could not load scene SVG: %s", error);
         }
+        if (scene_gpu_mode && !scene_renderer_enable_gpu(scene_renderer, error))
+            errx(EXIT_FAILURE, "%s", error);
         scene_renderer_set_state(scene_renderer, SCENE_STATE_LOCKED, 0);
         if (!scene_renderer_render(scene_renderer, 0, error))
             errx(EXIT_FAILURE, "Could not render initial scene frame: %s", error);

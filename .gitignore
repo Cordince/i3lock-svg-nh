@@ -9,3 +9,5 @@ tags
 nohup.out
 scripts/
 tmp/
+scene-gpu-preview
+/i3worker.py

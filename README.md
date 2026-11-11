@@ -147,6 +147,34 @@ Use `--extreme-low-cpu` when idle CPU matters more than ambient locked-state
 motion. It renders the initial scene frame and suppresses continuous locked-state
 animation redraws until the user starts typing, then behaves like `--low-cpu`.
 
+The experimental `--gpu` renderer uploads cached scene layers to OpenGL textures
+and animates their transforms and opacity. It uses 30 fps for ambient motion
+and briefly targets 60 fps after input. It supports normal and additive blends,
+requires EGL/OpenGL development libraries at build time, and keeps i3lock in
+the foreground. If hardware rendering is unavailable, it falls back to Cairo.
+GPU trigger layers receive a randomized rotation on each input event. Successful
+authentication expands and fades the dynamic layers over 320 ms before closing
+the lock window.
+
+Try the Arrival ink ring in a regular window before using it as a lock theme:
+
+```sh
+make
+./scene-gpu-preview examples/Arrival/arrival.scene.svg
+```
+
+Type to scatter ink, use Backspace to contract it, and press Enter, F, or S
+to preview checking, failure, or acceptance. Escape closes the window.
+To lock the screen with the same scene:
+
+```sh
+./i3lock --gpu --scene-svg examples/Arrival/arrival.scene.svg
+```
+
+For a timed comparison on the same X display, run the preview with
+`--idle --seconds 30` and repeat with `--cairo` added. Compare both preview and
+X server CPU use. The preview reports whether OpenGL was active.
+
 Ideas for animations:
 --------------------
 The planets - displays solar system orbits with the various planets

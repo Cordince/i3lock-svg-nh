@@ -22,7 +22,15 @@ SCENE_LIBS += -lm
 SCENE_PREVIEW_LIBS += $(shell $(PKG_CONFIG) --libs cairo cairo-xcb xcb xkbcommon xkbcommon-x11 librsvg-2.0 glib-2.0 libxml-2.0)
 SCENE_PREVIEW_LIBS += -lm
 
-SCENE_OBJS:=scene.o scene_renderer.o
+GPU_AVAILABLE := $(shell $(PKG_CONFIG) --exists egl gl && echo yes)
+ifeq ($(GPU_AVAILABLE),yes)
+CPPFLAGS += -DHAVE_SCENE_GPU
+CFLAGS += $(shell $(PKG_CONFIG) --cflags egl gl)
+I3LOCK_LIBS += $(shell $(PKG_CONFIG) --libs egl gl)
+GPU_OBJS := scene_gpu.o
+endif
+
+SCENE_OBJS:=scene.o scene_renderer.o $(GPU_OBJS)
 I3LOCK_OBJS:=i3lock.o xcb.o unlock_indicator.o xinerama.o $(SCENE_OBJS)
 SCENE_HEADLESS_OBJS:=scene.o scene_renderer_headless.o
 SCENE_PACK_LIB_OBJS:=scene_pack_lib.o
@@ -37,7 +45,7 @@ CPPFLAGS += -DVERSION=\"${GIT_VERSION}\"
 
 .PHONY: install clean uninstall test check xvfb-test container-sanitizer-test local-sanitizer-test
 
-all: i3lock scene-preview scene-pack
+all: i3lock scene-preview scene-pack scene-gpu-preview
 
 i3lock: ${I3LOCK_OBJS}
 	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)
@@ -69,7 +77,7 @@ xvfb-test: scene-x11-tests scene-preview
 	xvfb-run --server-num=201 -a bash tools/run-live-reload-integration.sh
 
 clean:
-	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests *.o i3lock-${VERSION}.tar.gz
+	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests scene-gpu-preview *.o i3lock-${VERSION}.tar.gz
 
 install: all
 	$(INSTALL) -d $(DESTDIR)$(PREFIX)/bin
@@ -110,3 +118,6 @@ dist: clean
 	sed -e 's/^GIT_VERSION:=\(.*\)/GIT_VERSION:=$(shell /bin/echo '${GIT_VERSION}' | sed 's/\\/\\\\/g')/g;s/^VERSION:=\(.*\)/VERSION:=${VERSION}/g' Makefile > i3lock-${VERSION}/Makefile
 	tar cfj i3lock-${VERSION}.tar.bz2 i3lock-${VERSION}
 	rm -rf i3lock-${VERSION}
+
+scene-gpu-preview: scene_gpu_preview.o xcb.o $(SCENE_OBJS)
+	$(CC) $(LDFLAGS) -o $@ $^ $(I3LOCK_LIBS)

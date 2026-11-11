@@ -1,4 +1,8 @@
 #include "scene_renderer.h"
+#if defined(HAVE_SCENE_GPU) && !defined(SCENE_RENDERER_NO_X11)
+#include "scene_gpu.h"
+#define USE_SCENE_GPU
+#endif
 
 #include <errno.h>
 #include <glib-object.h>
@@ -67,6 +71,16 @@ struct scene_renderer {
     cairo_t *xcb_crs[2];
 #endif
     int front;
+#ifdef USE_SCENE_GPU
+    scene_gpu_t *gpu;
+    unsigned *gpu_textures;
+    unsigned gpu_base;
+    bool gpu_requested;
+    double *gpu_angles;
+    uint32_t gpu_random;
+    int64_t gpu_success_ms;
+    int64_t gpu_last_ms;
+#endif
 };
 
 bool scene_renderer_print_summary(const scene_renderer_t *renderer, const char *path, FILE *out);
@@ -1026,9 +1040,51 @@ bool scene_renderer_create_x11(const char *path,
 #endif
 }
 
+#ifdef USE_SCENE_GPU
+static void destroy_gpu(scene_renderer_t *r) {
+    scene_gpu_destroy(r->gpu);
+    r->gpu = NULL;
+    free(r->gpu_textures); r->gpu_textures = NULL;
+    free(r->gpu_angles); r->gpu_angles = NULL;
+}
+#endif
+
+bool scene_renderer_enable_gpu(scene_renderer_t *r, char error[SCENE_ERROR_LEN]) {
+#ifdef USE_SCENE_GPU
+    if (!r || !r->x11) return set_error(error, "GPU requires an X11 renderer");
+    for (size_t i = 0; i < r->doc->layer_count; ++i)
+        if (r->doc->layers[i].blend != SCENE_BLEND_NORMAL && r->doc->layers[i].blend != SCENE_BLEND_ADD)
+            return set_error(error, "GPU prototype supports normal/add blends only");
+    r->gpu_requested = true;
+    r->gpu_random = (uint32_t)now_ns() | 1u;
+    r->gpu_success_ms = -1;
+    return true;
+#else
+    (void)r;
+    return set_error(error, "GPU backend not built; install EGL/OpenGL development packages");
+#endif
+}
+bool scene_renderer_gpu_active(const scene_renderer_t *r) {
+#ifdef USE_SCENE_GPU
+    return r && r->gpu;
+#else
+    (void)r; return false;
+#endif
+}
+void scene_renderer_success(scene_renderer_t *r, int64_t ms) {
+#ifdef USE_SCENE_GPU
+    if (r && r->gpu) r->gpu_success_ms = ms;
+#else
+    (void)r; (void)ms;
+#endif
+}
+
 void scene_renderer_destroy(scene_renderer_t *renderer) {
     if (!renderer)
         return;
+#ifdef USE_SCENE_GPU
+    destroy_gpu(renderer);
+#endif
     destroy_layer_cache(renderer->layers, renderer->doc ? renderer->doc->layer_count : 0);
     destroy_precompose_flags(&renderer->precomposed_layers);
     destroy_layer_stage_stats(renderer);
@@ -1075,6 +1131,9 @@ bool scene_renderer_resize(scene_renderer_t *renderer,
         return set_error(error, "scene renderer is not initialized");
     if (!rebuild(renderer, width, height, error))
         return false;
+#ifdef USE_SCENE_GPU
+    destroy_gpu(renderer); /* Re-upload caches at the new device size. */
+#endif
     renderer->stats.resize_count++;
     return true;
 }
@@ -1087,6 +1146,17 @@ void scene_renderer_set_state(scene_renderer_t *renderer, scene_state_t state, i
 void scene_renderer_trigger(scene_renderer_t *renderer, scene_trigger_t trigger, int64_t now_ms) {
     if (renderer)
         scene_runtime_trigger(renderer->runtime, trigger, now_ms);
+#ifdef USE_SCENE_GPU
+    if (renderer && renderer->gpu_angles) {
+        for (size_t i = 0; i < renderer->doc->layer_count; ++i) {
+            if (renderer->doc->layers[i].trigger != trigger) continue;
+            uint32_t x = renderer->gpu_random;
+            x ^= x << 13; x ^= x >> 17; x ^= x << 5;
+            renderer->gpu_random = x;
+            renderer->gpu_angles[i] = x % 360;
+        }
+    }
+#endif
 }
 
 static cairo_t *render_target(scene_renderer_t *renderer, int *x11_index) {
@@ -1132,6 +1202,42 @@ static void composite_layer(scene_renderer_t *renderer,
     }
 }
 
+#ifdef USE_SCENE_GPU
+static bool render_gpu(scene_renderer_t *r, int64_t ms, char error[SCENE_ERROR_LEN]) {
+    if (!r->gpu) {
+        r->gpu = scene_gpu_create(r->conn, r->screen, r->win, error);
+        if (!r->gpu) return false;
+        r->gpu_textures = calloc(r->doc->layer_count, sizeof(unsigned));
+        r->gpu_angles = calloc(r->doc->layer_count, sizeof(double));
+        if (!r->gpu_textures || !r->gpu_angles) return set_error(error, "GPU allocation failed");
+        r->gpu_base = scene_gpu_upload(r->gpu, r->static_surface);
+        if (!r->gpu_base) return set_error(error, "GPU background upload failed");
+        for (size_t i = 0; i < r->doc->layer_count; ++i) {
+            if (r->layers[i].precomposed || !r->layers[i].surface) continue;
+            r->gpu_textures[i] = scene_gpu_upload(r->gpu, r->layers[i].surface);
+            if (!r->gpu_textures[i]) return set_error(error, "GPU layer upload failed");
+        }
+    }
+    r->gpu_last_ms = ms;
+    scene_runtime_evaluate(r->runtime, ms);
+    scene_gpu_begin(r->gpu, r->width, r->height);
+    scene_layer_style_t base = {.visible=true, .opacity=1, .scale_x=1, .scale_y=1};
+    scene_gpu_draw(r->gpu, r->gpu_base, 0, 0, r->width, r->height, &base, 1, 1, 1);
+    double progress = r->gpu_success_ms < 0 ? 0 : fmin(1, fmax(0, (ms-r->gpu_success_ms)/320.0));
+    for (size_t i = 0; i < r->doc->layer_count; ++i) {
+        cached_layer_t *c = &r->layers[i];
+        scene_layer_style_t style = *scene_runtime_layer_style(r->runtime, i);
+        style.rotation_deg += r->gpu_angles[i];
+        style.scale_x *= 1 + progress * .18;
+        style.scale_y *= 1 + progress * .18;
+        scene_gpu_draw(r->gpu, r->gpu_textures[i], c->cache_x, c->cache_y, c->cache_width, c->cache_height,
+                       &style, r->fit.scale_x, r->fit.scale_y, 1-progress);
+    }
+    r->stats.frame_composition_count++;
+    return scene_gpu_present(r->gpu) || set_error(error, "GPU presentation failed");
+}
+#endif
+
 bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char error[SCENE_ERROR_LEN]) {
     if (!renderer)
         return set_error(error, "scene renderer is not initialized");
@@ -1139,6 +1245,15 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
         renderer->fail_next_render = false;
         return set_error(error, "injected scene render failure");
     }
+
+#ifdef USE_SCENE_GPU
+    if (renderer->gpu_requested && renderer->win != XCB_NONE) {
+        if (render_gpu(renderer, now_ms, error)) return true;
+        fprintf(stderr, "[scene-gpu] %s; falling back to Cairo\n", error);
+        destroy_gpu(renderer);
+        renderer->gpu_requested = false;
+    }
+#endif
 
     int x11_index = -1;
     cairo_t *cr = render_target(renderer, &x11_index);
@@ -1213,6 +1328,11 @@ bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char erro
 }
 
 bool scene_renderer_is_animating(const scene_renderer_t *renderer) {
+#ifdef USE_SCENE_GPU
+    if (renderer && renderer->gpu && renderer->gpu_success_ms >= 0 &&
+        renderer->gpu_last_ms - renderer->gpu_success_ms < 320)
+        return true;
+#endif
     return renderer && scene_runtime_is_animating(renderer->runtime);
 }
 
@@ -1573,6 +1693,13 @@ void scene_renderer_expose(scene_renderer_t *renderer,
 #ifndef SCENE_RENDERER_NO_X11
     if (!renderer || !renderer->x11 || renderer->win == XCB_NONE)
         return;
+#ifdef USE_SCENE_GPU
+    if (renderer->gpu) {
+        char error[SCENE_ERROR_LEN];
+        scene_renderer_render(renderer, renderer->gpu_last_ms, error);
+        return;
+    }
+#endif
     xcb_clear_area(renderer->conn, 0, renderer->win, x, y, width, height);
     xcb_flush(renderer->conn);
 #else
