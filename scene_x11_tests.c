@@ -125,6 +125,33 @@ int main(void) {
     }
 
     scene_renderer_destroy(renderer);
+    if (getenv("SCENE_TEST_GPU")) {
+        uint32_t size[] = {64, 64};
+        xcb_configure_window(conn, win, XCB_CONFIG_WINDOW_WIDTH | XCB_CONFIG_WINDOW_HEIGHT, size);
+        expect_true(scene_renderer_create_x11("tests/fixtures/radial-reveal.svg", conn, screen,
+                                              64, 64, &renderer, error), error);
+        expect_true(scene_renderer_enable_gpu(renderer, error), error);
+        scene_renderer_set_window(renderer, win);
+        for (int phase = 0; phase <= 4; ++phase) {
+            expect_true(scene_renderer_render(renderer, phase * 250, error), error);
+            expect_true(scene_renderer_gpu_active(renderer), "GPU reveal uses OpenGL");
+            xcb_get_image_reply_t *reply = xcb_get_image_reply(conn,
+                xcb_get_image(conn, XCB_IMAGE_FORMAT_Z_PIXMAP, win, 0, 0, 64, 64, UINT32_MAX), NULL);
+            expect_true(reply != NULL, "read GPU frame from X window");
+            expect_true(xcb_get_image_data_length(reply) >= 64 * 64 * 4, "32-bit GPU screenshot");
+            const uint32_t *pixels = (const uint32_t *)xcb_get_image_data(reply);
+            expect_true((pixels[16 * 64 + 48] & 0xffffff) == (phase >= 1 ? 0xffffff : 0),
+                        "GPU reveal upper right quadrant");
+            expect_true((pixels[48 * 64 + 48] & 0xffffff) == (phase >= 2 ? 0xffffff : 0),
+                        "GPU reveal lower right quadrant");
+            expect_true((pixels[48 * 64 + 16] & 0xffffff) == (phase >= 3 ? 0xffffff : 0),
+                        "GPU reveal lower left quadrant");
+            expect_true((pixels[16 * 64 + 16] & 0xffffff) == (phase >= 4 ? 0xffffff : 0),
+                        "GPU reveal upper left quadrant");
+            free(reply);
+        }
+        scene_renderer_destroy(renderer);
+    }
     xcb_destroy_window(conn, win);
     xcb_disconnect(conn);
     printf("scene-x11-tests: ok\n");

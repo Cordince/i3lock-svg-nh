@@ -79,12 +79,14 @@ typedef struct {
     bool has_scale_x;
     bool has_scale_y;
     bool has_rotation_deg;
+    bool has_reveal;
     double opacity;
     double translate_x;
     double translate_y;
     double scale_x;
     double scale_y;
     double rotation_deg;
+    double reveal;
 } scene_value_set_t;
 
 typedef struct {
@@ -94,6 +96,7 @@ typedef struct {
     double scale_x;
     double scale_y;
     double rotation_deg;
+    double reveal;
     double origin_x;
     double origin_y;
     scene_blend_t blend;
@@ -142,6 +145,7 @@ typedef struct {
 
 typedef struct {
     int version;
+    int idle_fps;
     scene_fit_t fit;
     double width;
     double height;

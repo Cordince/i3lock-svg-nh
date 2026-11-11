@@ -15,17 +15,19 @@ static int64_t millis(void) {
 }
 int main(int argc, char **argv) {
     if (argc < 2) {
-        fprintf(stderr, "Usage: %s scene.svg [--smoke|--cairo|--idle] [--seconds N]\n"
+        fprintf(stderr, "Usage: %s scene.svg [--smoke|--cairo|--idle] [--seconds N] [--snapshot file.png]\n"
                         "Typing: react; Enter: verify; F: fail; S: success; Escape: quit\n", argv[0]);
         return 2;
     }
     bool smoke=false, gpu=true, idle=false;
     int seconds=0;
+    const char *snapshot_path = NULL;
     for(int i=2;i<argc;++i) {
         if (!strcmp(argv[i],"--smoke")) {smoke=true;seconds=3;}
         else if (!strcmp(argv[i],"--cairo")) gpu=false;
         else if (!strcmp(argv[i],"--idle")) idle=true;
         else if (!strcmp(argv[i],"--seconds") && i+1<argc) seconds=atoi(argv[++i]);
+        else if (!strcmp(argv[i],"--snapshot") && i+1<argc) snapshot_path=argv[++i];
         else return 2;
     }
     int screen_number;
@@ -108,10 +110,19 @@ int main(int argc, char **argv) {
             reset = 0;
         }
         if(!scene_renderer_render(r,t,error)) {fprintf(stderr,"%s\n",error);result=2;break;}
+        if (snapshot_path && t >= 5000) {
+            if (!scene_renderer_gpu_snapshot(r, snapshot_path, t, error)) {
+                fprintf(stderr, "%s\n", error);
+                result = 2;
+                break;
+            }
+            snapshot_path = NULL;
+        }
         ++frames;
         if(seconds && t>=seconds*1000) break;
         if(xcb_connection_has_error(c)) {result=2;break;}
-        int interval=t<busy&&!idle?17:33;
+        int idle_fps = scene_renderer_document(r)->idle_fps;
+        int interval = t < busy && !idle ? 17 : (1000 + idle_fps / 2) / idle_fps;
         int spent=(int)(millis()-start-t);
         if(interval>spent) poll(NULL,0,interval-spent);
     }

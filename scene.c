@@ -659,7 +659,7 @@ static bool parse_value_attrs(const char **names,
                               char error[SCENE_ERROR_LEN]) {
     memset(out, 0, sizeof(*out));
     const char *attrs[] = {
-        "opacity", "translate-x", "translate-y", "scale", "scale-x", "scale-y", "rotation-deg"
+        "opacity", "translate-x", "translate-y", "scale", "scale-x", "scale-y", "rotation-deg", "reveal"
     };
 
     for (size_t i = 0; i < sizeof(attrs) / sizeof(attrs[0]); i++) {
@@ -707,6 +707,11 @@ static bool parse_value_attrs(const char **names,
         } else if (strcmp(attrs[i], "rotation-deg") == 0) {
             out->has_rotation_deg = true;
             out->rotation_deg = parsed;
+        } else if (strcmp(attrs[i], "reveal") == 0) {
+            if (parsed < 0.0 || parsed > 1.0)
+                return set_error(error, "reveal for %s is outside 0..1", key);
+            out->has_reveal = true;
+            out->reveal = parsed;
         }
     }
     return true;
@@ -945,6 +950,10 @@ static void start_element_cb(GMarkupParseContext *context,
                 parse_fail(ctx, "invalid scene background color");
             } else {
                 ctx->doc->version = 1;
+                ctx->doc->idle_fps = 30;
+                const char *idle_fps = attr_value(attribute_names, attribute_values, "idle-fps");
+                if (idle_fps && (!parse_int_positive(idle_fps, &ctx->doc->idle_fps) || ctx->doc->idle_fps > 60))
+                    parse_fail(ctx, "scene idle-fps must be an integer from 1 to 60");
             }
         }
     } else if (ctx->in_scene) {
@@ -1399,6 +1408,8 @@ static bool value_has_property(const scene_value_set_t *set, int prop) {
             return set->has_scale_y;
         case 5:
             return set->has_rotation_deg;
+        case 6:
+            return set->has_reveal;
         default:
             return false;
     }
@@ -1418,6 +1429,8 @@ static double value_get_property(const scene_value_set_t *set, int prop) {
             return set->scale_y;
         case 5:
             return set->rotation_deg;
+        case 6:
+            return set->reveal;
         default:
             return 0.0;
     }
@@ -1448,6 +1461,10 @@ static void value_set_property(scene_value_set_t *set, int prop, double value) {
         case 5:
             set->has_rotation_deg = true;
             set->rotation_deg = value;
+            break;
+        case 6:
+            set->has_reveal = true;
+            set->reveal = value;
             break;
     }
 }
@@ -1507,7 +1524,7 @@ bool scene_evaluate_keyframes(const scene_timeline_t *timeline,
         return true;
     }
     if (progress >= last->at) {
-        for (int prop = 0; prop < 6; prop++) {
+        for (int prop = 0; prop < 7; prop++) {
             double value;
             if (keyframe_effective_property(timeline, timeline->keyframe_count - 1, prop, &value))
                 value_set_property(out, prop, value);
@@ -1527,7 +1544,7 @@ bool scene_evaluate_keyframes(const scene_timeline_t *timeline,
 
     double span = right->at - left->at;
     double local_t = span <= 0.0 ? 1.0 : (progress - left->at) / span;
-    for (int prop = 0; prop < 6; prop++) {
+    for (int prop = 0; prop < 7; prop++) {
         double left_value = 0.0;
         bool has_left = keyframe_effective_property(timeline, left_index, prop, &left_value);
         bool has_right = value_has_property(&right->values, prop);
@@ -1549,6 +1566,7 @@ static scene_layer_style_t base_style_for_layer(const scene_layer_t *layer) {
     style.opacity = 1.0;
     style.scale_x = 1.0;
     style.scale_y = 1.0;
+    style.reveal = 1.0;
     style.blend = layer->blend;
     style.visible = true;
     return style;
@@ -1567,6 +1585,8 @@ static void apply_values(scene_layer_style_t *style, const scene_value_set_t *va
         style->scale_y = values->scale_y;
     if (values->has_rotation_deg)
         style->rotation_deg = values->rotation_deg;
+    if (values->has_reveal)
+        style->reveal = values->reveal;
 }
 
 static scene_layer_style_t style_with_values(const scene_layer_t *layer, const scene_value_set_t *values) {
@@ -1587,6 +1607,7 @@ static scene_layer_style_t interpolate_style(scene_layer_style_t a,
     out.scale_x = lerp(a.scale_x, b.scale_x, t);
     out.scale_y = lerp(a.scale_y, b.scale_y, t);
     out.rotation_deg = lerp(a.rotation_deg, b.rotation_deg, t);
+    out.reveal = lerp(a.reveal, b.reveal, t);
     out.origin_x = a.origin_x;
     out.origin_y = a.origin_y;
     out.blend = a.blend;

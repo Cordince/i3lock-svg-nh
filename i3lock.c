@@ -82,6 +82,7 @@ extern pam_state_t pam_state;
 static bool scene_mode = false;
 static char *scene_svg_path = NULL;
 static bool scene_gpu_mode = false;
+static ev_tstamp scene_clock_origin;
 static bool auth_accepted = false;
 static ev_timer success_timer;
 static bool scene_low_cpu = false;
@@ -297,7 +298,7 @@ ev_timer *stop_timer(ev_timer *timer_obj) {
 static int64_t monotonic_ms(void) {
     if (main_loop) {
         ev_now_update(main_loop);
-        return (int64_t)(ev_now(main_loop) * 1000.0);
+        return (int64_t)((ev_now(main_loop) - scene_clock_origin) * 1000.0);
     }
     return 0;
 }
@@ -330,8 +331,11 @@ static bool scene_should_suppress_idle_timer(void) {
 }
 
 static ev_tstamp scene_frame_interval(void) {
-    if (scene_gpu_mode)
-        return monotonic_ms() < scene_normal_rate_until_ms ? SCENE_FRAME_INTERVAL_NORMAL : 1.0 / 30.0;
+    if (scene_gpu_mode) {
+        const scene_document_t *document = scene_renderer_document(scene_renderer);
+        int idle_fps = document ? document->idle_fps : 30;
+        return monotonic_ms() < scene_normal_rate_until_ms ? SCENE_FRAME_INTERVAL_NORMAL : 1.0 / idle_fps;
+    }
     if (!scene_low_cpu)
         return SCENE_FRAME_INTERVAL_NORMAL;
     return monotonic_ms() < scene_normal_rate_until_ms ?
@@ -1498,6 +1502,7 @@ int main(int argc, char *argv[]) {
     main_loop = EV_DEFAULT;
     if (main_loop == NULL)
         errx(EXIT_FAILURE, "Could not initialize libev. Bad LIBEV_FLAGS?\n");
+    scene_clock_origin = ev_now(main_loop);
 
     struct ev_io *xcb_watcher = calloc(sizeof(struct ev_io), 1);
     struct ev_check *xcb_check = calloc(sizeof(struct ev_check), 1);

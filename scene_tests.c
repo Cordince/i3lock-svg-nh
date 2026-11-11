@@ -1538,7 +1538,93 @@ static void test_fake_auth_keeps_verify_animation_running(void) {
     scene_renderer_destroy(renderer);
 }
 
+static void test_radial_reveal(void) {
+    char error[SCENE_ERROR_LEN];
+    scene_renderer_t *renderer = NULL;
+    expect_true(scene_renderer_create_headless("tests/fixtures/radial-reveal.svg", 64, 64,
+                                               &renderer, error), error);
+    expect_i32_eq(scene_renderer_document(renderer)->idle_fps, 24, "parse scene idle frame rate");
+    expect_true(scene_renderer_render(renderer, 0, error), error);
+    expect_rgb_near(pixel_at(scene_renderer_image_surface(renderer), 48, 16), 0, 0, 0, 0,
+                    "zero reveal hides artwork");
+    expect_true(scene_renderer_render(renderer, 250, error), error);
+    expect_rgb_near(pixel_at(scene_renderer_image_surface(renderer), 48, 16), 255, 255, 255, 0,
+                    "quarter reveal shows upper right quadrant");
+    expect_rgb_near(pixel_at(scene_renderer_image_surface(renderer), 48, 48), 0, 0, 0, 0,
+                    "quarter reveal hides lower right quadrant");
+    expect_true(scene_renderer_render(renderer, 500, error), error);
+    expect_rgb_near(pixel_at(scene_renderer_image_surface(renderer), 48, 48), 255, 255, 255, 0,
+                    "half reveal shows lower right quadrant");
+    expect_rgb_near(pixel_at(scene_renderer_image_surface(renderer), 16, 16), 0, 0, 0, 0,
+                    "half reveal hides left half");
+    expect_true(scene_renderer_render(renderer, 1000, error), error);
+    expect_rgb_near(pixel_at(scene_renderer_image_surface(renderer), 16, 16), 255, 255, 255, 0,
+                    "full reveal restores complete artwork");
+    scene_renderer_destroy(renderer);
+
+    gchar *contents = NULL;
+    gsize length = 0;
+    expect_true(g_file_get_contents("tests/fixtures/radial-reveal.svg", &contents, &length, NULL),
+                "load reveal validation fixture");
+    char *value = strstr(contents, "reveal=\"1\"");
+    expect_true(value != NULL, "fixture includes complete reveal");
+    value[strlen("reveal=\"")] = '2';
+    scene_document_t *document = NULL;
+    expect_true(!scene_document_load_from_data("invalid-reveal.svg", contents, length, &document, error),
+                "reject reveal outside zero to one");
+    value[strlen("reveal=\"")] = '1';
+    value = strstr(contents, "idle-fps=\"24\"");
+    expect_true(value != NULL, "fixture includes idle frame rate");
+    value[strlen("idle-fps=\"")] = '0';
+    value[strlen("idle-fps=\"") + 1] = '0';
+    expect_true(!scene_document_load_from_data("invalid-fps.svg", contents, length, &document, error),
+                "reject zero idle frame rate");
+    g_free(contents);
+}
+
+static void test_heptapod_sequence(void) {
+    const char *names[] = {"offer-weapon", "human", "louise-has-question",
+                           "weapon-tool-duality", "there-is-no-linear-time"};
+    size_t indices[5];
+    char error[SCENE_ERROR_LEN];
+    scene_document_t *document = NULL;
+    expect_true(scene_document_load("examples/Arrival/arrival.scene.svg", &document, error), error);
+    expect_i32_eq(document->idle_fps, 30, "glyph scene idle rate");
+    for (size_t message = 0; message < 5; ++message) {
+        indices[message] = document->layer_count;
+        for (size_t index = 0; index < document->layer_count; ++index) {
+            if (strcmp(document->layers[index].ref, names[message]) == 0)
+                indices[message] = index;
+        }
+        expect_true(indices[message] < document->layer_count, "document includes known film glyph");
+    }
+    scene_runtime_t *runtime = scene_runtime_create(document);
+    expect_true(runtime != NULL, "create glyph sequence runtime");
+    scene_runtime_evaluate(runtime, 2000);
+    double before_input = scene_runtime_layer_style(runtime, indices[0])->reveal;
+    scene_runtime_set_state(runtime, SCENE_STATE_INPUT, 2000);
+    scene_runtime_evaluate(runtime, 2000);
+    expect_close(scene_runtime_layer_style(runtime, indices[0])->reveal, before_input, 1e-9,
+                 "typing preserves current glyph writing position");
+    for (int pass = 0; pass < 6; ++pass) {
+        scene_runtime_evaluate(runtime, pass * 14000 + 6000);
+        for (int message = 0; message < 5; ++message) {
+            const scene_layer_style_t *style = scene_runtime_layer_style(runtime, indices[message]);
+            if (message == pass % 5) {
+                expect_true(style->opacity > 0.8, "current message is visible");
+                expect_close(style->reveal, 1, 1e-6, "current message finishes drawing");
+            } else {
+                expect_close(style->opacity, 0, 1e-6, "other messages stay hidden");
+            }
+        }
+    }
+    scene_runtime_free(runtime);
+    scene_document_free(document);
+}
+
 int main(void) {
+    test_heptapod_sequence();
+    test_radial_reveal();
     test_metadata_parsing();
     test_invalid_scenes();
     test_fit_transforms();

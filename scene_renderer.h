@@ -117,6 +117,7 @@ bool scene_renderer_create_headless_reference(const char *path,
 bool scene_renderer_enable_gpu(scene_renderer_t *, char error[SCENE_ERROR_LEN]);
 bool scene_renderer_gpu_active(const scene_renderer_t *);
 void scene_renderer_success(scene_renderer_t *, int64_t now_ms);
+bool scene_renderer_gpu_snapshot(scene_renderer_t *, const char *path, int64_t now_ms, char error[SCENE_ERROR_LEN]);
 void scene_renderer_destroy(scene_renderer_t *renderer);
 
 const scene_document_t *scene_renderer_document(const scene_renderer_t *renderer);

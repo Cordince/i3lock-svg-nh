@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <metadata>
+    <scene xmlns="urn:i3lock-svg-nh:scene:1" version="1" fit="pixel" background="#000000" idle-fps="24">
+      <layer ref="square" states="*" origin-x="32" origin-y="32">
+        <timeline when="visible" duration-ms="1000">
+          <keyframe at="0" reveal="0"/>
+          <keyframe at="1" reveal="1"/>
+        </timeline>
+      </layer>
+    </scene>
+  </metadata>
+  <g id="square"><rect x="8" y="8" width="48" height="48" fill="#ffffff"/></g>
+</svg>

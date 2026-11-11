@@ -1,4 +1,5 @@
 INSTALL=install
+.DEFAULT_GOAL := all
 PREFIX=/usr
 SYSCONFDIR=/etc
 PKG_CONFIG=pkg-config
@@ -39,6 +40,9 @@ SCENE_PACK_OBJS:=scene_pack.o $(SCENE_PACK_LIB_OBJS) $(SCENE_HEADLESS_OBJS)
 SCENE_TEST_OBJS:=scene_tests.o $(SCENE_PACK_LIB_OBJS) $(SCENE_HEADLESS_OBJS)
 SCENE_X11_TEST_OBJS:=scene_x11_tests.o xcb.o $(SCENE_OBJS)
 
+$(sort $(I3LOCK_OBJS) $(SCENE_HEADLESS_OBJS) $(SCENE_PREVIEW_OBJS) $(SCENE_TEST_OBJS) $(SCENE_X11_TEST_OBJS) scene_gpu_preview.o): scene.h scene_renderer.h
+scene_gpu.o scene_renderer.o: scene_gpu.h
+
 VERSION:=$(shell git describe --tags --abbrev=0 2>/dev/null || printf '0.0.0-dev')
 GIT_VERSION:="$(shell git describe --tags --always 2>/dev/null || printf 'unknown') ($(shell git log --pretty=format:%cd --date=short -n1 2>/dev/null || printf 'unknown-date'))"
 CPPFLAGS += -DVERSION=\"${GIT_VERSION}\"
@@ -75,6 +79,10 @@ xvfb-test: scene-x11-tests scene-preview
 	xvfb-run --server-num=200 -a sh -c 'sleep 1; ./scene-x11-tests'
 	sh tools/run-preview-window-smoke.sh
 	xvfb-run --server-num=201 -a bash tools/run-live-reload-integration.sh
+
+.PHONY: gpu-test
+gpu-test: scene-x11-tests
+	xvfb-run -a env SCENE_TEST_GPU=1 I3LOCK_GPU_ALLOW_SOFTWARE=1 ./scene-x11-tests
 
 clean:
 	rm -f i3lock scene-preview scene-pack scene-tests scene-x11-tests scene-gpu-preview *.o i3lock-${VERSION}.tar.gz

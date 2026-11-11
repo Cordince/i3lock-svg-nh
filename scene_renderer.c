@@ -80,6 +80,7 @@ struct scene_renderer {
     uint32_t gpu_random;
     int64_t gpu_success_ms;
     int64_t gpu_last_ms;
+    const char *gpu_snapshot_path;
 #endif
 };
 
@@ -1179,7 +1180,7 @@ static void composite_layer(scene_renderer_t *renderer,
                             size_t layer_index,
                             const scene_layer_style_t *style,
                             const cached_layer_t *cache) {
-    if (!style->visible || style->opacity <= 0.0 || !cache || !cache->surface)
+    if (!style->visible || style->opacity <= 0.0 || style->reveal <= 0.0 || !cache || !cache->surface)
         return;
 
     uint64_t start = now_ns();
@@ -1191,6 +1192,15 @@ static void composite_layer(scene_renderer_t *renderer,
     cairo_rotate(cr, style->rotation_deg * M_PI / 180.0);
     cairo_scale(cr, style->scale_x, style->scale_y);
     cairo_translate(cr, -style->origin_x, -style->origin_y);
+    if (style->reveal < 1.0) {
+        double center_x = cache->cache_x + cache->cache_width * 0.5;
+        double center_y = cache->cache_y + cache->cache_height * 0.5;
+        cairo_move_to(cr, center_x, center_y);
+        cairo_arc(cr, center_x, center_y, hypot(cache->cache_width, cache->cache_height),
+                  -M_PI * 0.5, -M_PI * 0.5 + style->reveal * M_PI * 2.0);
+        cairo_close_path(cr);
+        cairo_clip(cr);
+    }
     cairo_set_source_surface(cr, cache->surface, cache->cache_x, cache->cache_y);
     cairo_paint_with_alpha(cr, style->opacity);
     cairo_restore(cr);
@@ -1221,22 +1231,40 @@ static bool render_gpu(scene_renderer_t *r, int64_t ms, char error[SCENE_ERROR_L
     r->gpu_last_ms = ms;
     scene_runtime_evaluate(r->runtime, ms);
     scene_gpu_begin(r->gpu, r->width, r->height);
-    scene_layer_style_t base = {.visible=true, .opacity=1, .scale_x=1, .scale_y=1};
+    scene_layer_style_t base = {.visible=true, .opacity=1, .scale_x=1, .scale_y=1, .reveal=1};
     scene_gpu_draw(r->gpu, r->gpu_base, 0, 0, r->width, r->height, &base, 1, 1, 1);
     double progress = r->gpu_success_ms < 0 ? 0 : fmin(1, fmax(0, (ms-r->gpu_success_ms)/320.0));
     for (size_t i = 0; i < r->doc->layer_count; ++i) {
         cached_layer_t *c = &r->layers[i];
         scene_layer_style_t style = *scene_runtime_layer_style(r->runtime, i);
         style.rotation_deg += r->gpu_angles[i];
-        style.scale_x *= 1 + progress * .18;
-        style.scale_y *= 1 + progress * .18;
+        double layer_progress = r->doc->layers[i].static_layer ? 0 : progress;
+        style.scale_x *= 1 + layer_progress * .18;
+        style.scale_y *= 1 + layer_progress * .18;
         scene_gpu_draw(r->gpu, r->gpu_textures[i], c->cache_x, c->cache_y, c->cache_width, c->cache_height,
-                       &style, r->fit.scale_x, r->fit.scale_y, 1-progress);
+                       &style, r->fit.scale_x, r->fit.scale_y, 1-layer_progress);
     }
     r->stats.frame_composition_count++;
+    if (r->gpu_snapshot_path && !scene_gpu_write_png(r->gpu, r->width, r->height, r->gpu_snapshot_path))
+        return set_error(error, "could not save GPU snapshot");
     return scene_gpu_present(r->gpu) || set_error(error, "GPU presentation failed");
 }
 #endif
+
+bool scene_renderer_gpu_snapshot(scene_renderer_t *renderer, const char *path,
+                                  int64_t now_ms, char error[SCENE_ERROR_LEN]) {
+#ifdef USE_SCENE_GPU
+    if (!renderer || !renderer->gpu)
+        return set_error(error, "GPU snapshot requires active hardware or software OpenGL");
+    renderer->gpu_snapshot_path = path;
+    bool ok = render_gpu(renderer, now_ms, error);
+    renderer->gpu_snapshot_path = NULL;
+    return ok;
+#else
+    (void)renderer; (void)path; (void)now_ms;
+    return set_error(error, "GPU snapshots are unavailable in this build");
+#endif
+}
 
 bool scene_renderer_render(scene_renderer_t *renderer, int64_t now_ms, char error[SCENE_ERROR_LEN]) {
     if (!renderer)

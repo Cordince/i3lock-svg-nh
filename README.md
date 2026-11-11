@@ -148,7 +148,7 @@ motion. It renders the initial scene frame and suppresses continuous locked-stat
 animation redraws until the user starts typing, then behaves like `--low-cpu`.
 
 The experimental `--gpu` renderer uploads cached scene layers to OpenGL textures
-and animates their transforms and opacity. It uses 30 fps for ambient motion
+and animates their transforms and opacity. It defaults to 30 fps for ambient motion
 and briefly targets 60 fps after input. It supports normal and additive blends,
 requires EGL/OpenGL development libraries at build time, and keeps i3lock in
 the foreground. If hardware rendering is unavailable, it falls back to Cairo.
@@ -161,10 +161,14 @@ Try the Arrival ink ring in a regular window before using it as a lock theme:
 ```sh
 make
 ./scene-gpu-preview examples/Arrival/arrival.scene.svg
+./scene-gpu-preview examples/Arrival/cinema-real.scene.svg
 ```
 
 Type to scatter ink, use Backspace to contract it, and press Enter, F, or S
 to preview checking, failure, or acceptance. Escape closes the window.
+Both versions cycle through five documented film logograms. Cinema real uses
+24 fps for idle motion and adds animated tentacle, fluid, glass, and haze layers.
+See [the theme documentation](examples/Arrival/README.md) for sources and measurements.
 To lock the screen with the same scene:
 
 ```sh

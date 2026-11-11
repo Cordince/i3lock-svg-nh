@@ -151,6 +151,14 @@ save keeps the last valid frame visible; the next valid save replaces the scene
 without restarting the preview. Use `--reload-error-to-stderr`,
 `--screenshot-dir PATH`, or `--no-overlay` to tune the live workflow.
 
+Keyframes and transitions also accept `reveal="0..1"`. This value exposes a
+clockwise sector of the cached layer, starting at twelve o'clock around the
+center of its cached bounds. It defaults to `1` for existing scenes. Both Cairo
+and the experimental GPU backend implement the same clipping. The GPU path
+clips the texture geometry without per-frame rasterization or pixel shaders.
+The scene element accepts `idle-fps="1..60"` for GPU idle scheduling. It defaults
+to 30. Input feedback briefly uses the normal interactive frame rate.
+
 Live preview keyboard controls:
 
 - printable key: fire the `key` trigger without storing the character.

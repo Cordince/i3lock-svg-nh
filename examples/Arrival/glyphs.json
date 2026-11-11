@@ -1,0 +1,32 @@
+[
+  {
+    "id": "offer-weapon",
+    "meaning": "Offer weapon",
+    "file": "OfferWeapon1.jpg",
+    "source": "https://github.com/WolframResearch/Arrival-Movie-Live-Coding/blob/master/ScriptLogoJpegs/OfferWeapon1.jpg"
+  },
+  {
+    "id": "human",
+    "meaning": "Human",
+    "file": "Human1.jpg",
+    "source": "https://github.com/WolframResearch/Arrival-Movie-Live-Coding/blob/master/ScriptLogoJpegs/Human1.jpg"
+  },
+  {
+    "id": "louise-has-question",
+    "meaning": "Louise has question",
+    "file": "LouiseHasQuestion1.jpg",
+    "source": "https://github.com/WolframResearch/Arrival-Movie-Live-Coding/blob/master/ScriptLogoJpegs/LouiseHasQuestion1.jpg"
+  },
+  {
+    "id": "weapon-tool-duality",
+    "meaning": "Weapon/tool duality",
+    "file": "WeaponToolDuality1.jpg",
+    "source": "https://github.com/WolframResearch/Arrival-Movie-Live-Coding/blob/master/ScriptLogoJpegs/WeaponToolDuality1.jpg"
+  },
+  {
+    "id": "there-is-no-linear-time",
+    "meaning": "There is no linear time",
+    "file": "ThereIsNoLinearTime1.jpg",
+    "source": "https://github.com/WolframResearch/Arrival-Movie-Live-Coding/blob/master/ScriptLogoJpegs/ThereIsNoLinearTime1.jpg"
+  }
+]

@@ -10,4 +10,5 @@ unsigned scene_gpu_upload(scene_gpu_t *, cairo_surface_t *);
 void scene_gpu_begin(scene_gpu_t *, unsigned width, unsigned height);
 void scene_gpu_draw(scene_gpu_t *, unsigned texture, double x, double y, double width, double height, const scene_layer_style_t *, double sx, double sy, double fade);
 bool scene_gpu_present(scene_gpu_t *);
+bool scene_gpu_write_png(scene_gpu_t *, unsigned width, unsigned height, const char *path);
 #endif
