@@ -56,3 +56,15 @@ vec2 curl_flow(vec2 p, float clock) {
     float y = fbm(p + vec2(0,e) + shift) - fbm(p - vec2(0,e) + shift);
     return vec2(y, -x) / (2.0 * e);
 }
+
+// A padded simulation leaves room beyond the logogram for loose fluid.
+float ink_target(vec2 coordinate) {
+    vec2 glyph=(coordinate-.5)*1.5+.5;
+    if(any(lessThan(glyph,vec2(0)))||any(greaterThan(glyph,vec2(1))))return 0.0;
+    return texture2D(target_tex,glyph).r;
+}
+float ink_envelope(vec2 coordinate) {
+    vec2 p=coordinate-vec2(.5);
+    float irregular=(fbm(coordinate*17.0+vec2(time_s*.06,-time_s*.04))-.5)*.035;
+    return 1.0-smoothstep(.39,.49,length(p)+irregular);
+}

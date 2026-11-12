@@ -14,7 +14,7 @@ void main() {
     // Curl and radial gathering pull the free plume into the ring before the
     // target-image guidance settles its finer strokes.
     float radius=length(radial);
-    force += radial/max(.01,radius)*(.335-radius)*150.0*formation;
+    force += radial/max(.01,radius)*(.2233-radius)*150.0*formation;
     if (state_value > 1.5 && state_value < 2.5)
         force += tangent * 14.0;
     if (state_value > 2.5)

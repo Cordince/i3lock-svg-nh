@@ -97,7 +97,7 @@ bool cinema_foreground_render(cinema_foreground_t *f,unsigned width,unsigned hei
                 float world[]={p.origin[0]+cosf(angle)*x+sinf(angle)*z,p.origin[1]+y,p.origin[2]-sinf(angle)*x+cosf(angle)*z};
                 for(int a=0;a<3;a++) {low[a]=fminf(low[a],world[a]-.09f);high[a]=fmaxf(high[a],world[a]+.09f);}
                 float zz=fmaxf(.15f,world[2]-.09f);
-                float sx=width*(.5f+world[0]*1.65f/(width/(float)height)/zz*.5f),sy=height*(.5f+world[1]*1.65f/zz*.5f);
+                float sx=width*(.5f+world[0]*1.35f/(width/(float)height)/zz*.5f),sy=height*(.5f+world[1]*1.35f/zz*.5f);
                 float padding=height*.16f/zz+4;
                 px0=fminf(px0,sx-padding);px1=fmaxf(px1,sx+padding);py0=fminf(py0,sy-padding);py1=fmaxf(py1,sy+padding);
             }

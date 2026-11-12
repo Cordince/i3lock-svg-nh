@@ -25,6 +25,17 @@ Capture a GPU frame at a specific point in the sequence:
 
 ## Rendering passes
 
+The wider perspective camera reveals the human chamber's ceiling and floor.
+These surfaces are intersected in perspective in front of the glass, with
+rough concrete shading and recessed joints. Camera rays, mesh projection,
+foreground trace bounds, mist cache and the hand's ink emitter share this view.
+
+The ink simulation covers a padded 960-pixel field around the original
+640-pixel logogram. Escaped ink dissipates through a broad, irregular radial
+margin; both the pigment and its optical halo fade there, avoiding a visible
+rectangular simulation boundary. The foreground sculpt uses several scales
+of ambient occlusion and soft self-shadowing between its fingers and folds.
+
 `cinema_renderer.c` owns the native pipeline. `cinema/shaders` contains its
 programmable stages:
 

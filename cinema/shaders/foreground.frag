@@ -45,7 +45,7 @@ bool trace(vec3 ray,out vec3 p,out float depth) {
     return false;
 }
 vec3 surface_normal(vec3 p) {
-    float e=.026;
+    float e=.038;
     return normalize(vec3(surface(p+vec3(e,0,0))-surface(p-vec3(e,0,0)),
                           surface(p+vec3(0,e,0))-surface(p-vec3(0,e,0)),
                           surface(p+vec3(0,0,e))-surface(p-vec3(0,0,e))));
@@ -76,12 +76,24 @@ vec3 shade(vec3 p,vec3 n) {
     float sky=.5+.5*n.y;
     vec3 albedo=mix(vec3(.085,.102,.108),vec3(.205,.227,.235),mottle);
     albedo*=.86+.23*grain;
-    float occlusion=clamp(surface(p+n*.11)/.11,.45,1.0);
-    vec3 color=albedo*(.32+.82*wrapped+.22*sky)*occlusion;
+    // Nearby fingers and deep flexor folds occlude different scales of light.
+    // A single normal-offset sample was almost always 1, flattening the hand.
+    float blocked=0.0;
+    blocked+=max(0.0,.07-surface(p+n*.07))/.07*.45;
+    blocked+=max(0.0,.19-surface(p+n*.19))/.19*.35;
+    blocked+=max(0.0,.43-surface(p+n*.43))/.43*.20;
+    float occlusion=clamp(1.0-blocked*.85,.25,1.0);
+    float shadow=1.0;
+    for(int i=0;i<4;i++) {
+        float distance=.08+float(i)*.16;
+        float clearance=surface(p+n*.025+light*distance);
+        shadow=min(shadow,clamp(clearance/(distance*.32),.18,1.0));
+    }
+    vec3 color=albedo*((.16+.20*sky)*occlusion+.90*wrapped*shadow);
     float spec=max(dot(n,normalize(light+eye)),0.0);
-    color+=pow(spec,18.0)*.028;
+    color+=pow(spec,12.0)*.022*shadow;
     float grazing=pow(1.0-max(dot(n,eye),0.0),3.0);
-    color+=grazing*vec3(.025,.036,.042)*sky;
+    color+=grazing*vec3(.014,.018,.020)*sky*occlusion;
     return color;
 }
 void main() {
@@ -91,7 +103,7 @@ void main() {
     for(int i=0;i<4;i++) {
         vec2 offset=vec2(mod(float(i),2.0),floor(float(i)/2.0))*.5-.25;
         vec2 ndc=(gl_FragCoord.xy+offset)/screen_size*2.0-1.0;
-        vec3 ray=vec3(ndc.x*(screen_size.x/screen_size.y)/1.65,ndc.y/1.65,1.0),p;
+        vec3 ray=vec3(ndc.x*(screen_size.x/screen_size.y)/1.35,ndc.y/1.35,1.0),p;
         float t;
         if(trace(ray,p,t)) {positions+=p;normals+=surface_normal(p);coverage+=1.0;depth=min(depth,t);}
     }

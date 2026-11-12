@@ -417,12 +417,12 @@ bool cinema_renderer_render(cinema_renderer_t *renderer, int64_t now_ms,
     float mouth[3];
     cinema_models_emitter(seconds,failure_age,success_age,mouth,&renderer->release);
     double scale=fmin(renderer->width/1920.0,renderer->height/1080.0);
-    double px=renderer->width*(.5+mouth[0]*1.65/(renderer->width/(double)renderer->height)/mouth[2]*.5);
-    double py=renderer->height*(.5-mouth[1]*1.65/mouth[2]*.5);
+    double px=renderer->width*(.5+mouth[0]*1.35/(renderer->width/(double)renderer->height)/mouth[2]*.5);
+    double py=renderer->height*(.5-mouth[1]*1.35/mouth[2]*.5);
     px=(px-(renderer->width-1920*scale)*.5)/scale;
     py=(py-(renderer->height-1080*scale)*.5)/scale;
-    renderer->emitter[0]=fmax(.02,fmin(.98,(px-640)/640));
-    renderer->emitter[1]=fmax(.02,fmin(.98,1-(py-190)/640));
+    renderer->emitter[0]=fmax(.02,fmin(.98,(px-480)/960));
+    renderer->emitter[1]=fmax(.02,fmin(.98,1-(py-30)/960));
     double dx=.50-renderer->emitter[0],dy=.55-renderer->emitter[1],length=hypot(dx,dy);
     renderer->emitter[2]=dx/fmax(.001,length);renderer->emitter[3]=dy/fmax(.001,length);
     if (pass != renderer->glyph_pass) {

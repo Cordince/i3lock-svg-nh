@@ -56,7 +56,7 @@ vec4 foreground_model(vec2 coordinate,out float depth) {
 void mist_segment(vec3 ray,float begin,float end,inout vec3 radiance,inout float transmission) {
     if(end<=begin || transmission<.003) return;
     vec3 position=ray*((begin+end)*.5);
-    vec2 ndc=vec2(position.x*1.65/(screen_size.x/screen_size.y),position.y*1.65)/max(.0001,position.z);
+    vec2 ndc=vec2(position.x*1.35/(screen_size.x/screen_size.y),position.y*1.35)/max(.0001,position.z);
     vec4 mist=texture3D(mist_cache_tex,vec3(ndc*.5+.5,position.z/14.0));
     float density=mist.a;
     if(density<.001)return;
@@ -78,7 +78,7 @@ vec3 chamber_volume(vec2 coordinate,vec2 view_uv) {
         first_depth=background_depth;second_depth=foreground_depth;
     }
     vec2 ndc=coordinate*2.0-1.0;
-    vec3 ray=vec3(ndc.x*(screen_size.x/screen_size.y)/1.65,ndc.y/1.65,1.0);
+    vec3 ray=vec3(ndc.x*(screen_size.x/screen_size.y)/1.35,ndc.y/1.35,1.0);
     vec3 radiance=vec3(0.0);float transmission=1.0;
     for(int sample_index=0;sample_index<64;sample_index++) {
         float begin=float(sample_index)*14.0/64.0;
@@ -97,7 +97,24 @@ vec3 chamber_volume(vec2 coordinate,vec2 view_uv) {
         mist_segment(ray,cursor,end,radiance,transmission);
     }
     vec3 rear_light=mix(vec3(.16,.22,.27),vec3(.81,.84,.85),smoothstep(.10,.95,view_uv.y));
-    return radiance+transmission*rear_light;
+    vec3 chamber=radiance+transmission*rear_light;
+    // The camera stands inside the human chamber, behind the glass at z=3.2.
+    // Ray/plane intersections reveal actual perspective ceiling and floor.
+    float plane_y=ray.y>0.0 ? 1.68 : -1.52;
+    float plane_z=plane_y/(abs(ray.y)<.0001 ? .0001 : ray.y);
+    if(plane_z>0.0 && plane_z<3.2) {
+        vec3 point=ray*plane_z;
+        float ceiling=step(0.0,ray.y);
+        float rough=noise(point.xz*32.0)*.010+noise(point.xz*4.0)*.016;
+        float distance_light=pow(clamp(plane_z/3.2,0.0,1.0),3.0);
+        vec3 concrete=mix(vec3(.060,.067,.070),vec3(.105,.112,.113),ceiling);
+        concrete+=rough+distance_light*vec3(.075,.082,.084);
+        float seam=1.0-smoothstep(.008,.023,abs(fract(point.x*.55+.5)-.5));
+        concrete*=1.0-seam*.13;
+        float glass_joint=exp(-pow((3.2-plane_z)*30.0,2.0));
+        chamber=concrete*(1.0-glass_joint*.55);
+    }
+    return chamber;
 }
 
 void main() {
@@ -118,24 +135,24 @@ void main() {
     model_uv.y=1.0-model_uv.y;
     vec3 color=chamber_volume(model_uv,screen_uv);
 
-    vec2 ink_uv = (p-vec2(640.0,190.0))/640.0;
+    vec2 ink_uv = (p-vec2(480.0,30.0))/960.0;
     ink_uv.y = 1.0-ink_uv.y;
     if (ink_uv.x > 0.0 && ink_uv.x < 1.0 && ink_uv.y > 0.0 && ink_uv.y < 1.0) {
         vec2 distortion = curl_flow(ink_uv*6.0, time_s*0.5) * 0.0012;
         float density = texture2D(density_tex, ink_uv+distortion).r;
-        float goal = texture2D(target_tex, ink_uv+distortion*0.55).r;
+        float goal = ink_target(ink_uv+distortion*0.55);
         float hold = smoothstep(.75,1.0,formation)*(1.0-dispersion);
         if (success_age >= 0.0) hold *= exp(-success_age*5.0);
         density = mix(density, max(density*0.45,goal*1.35), hold*0.18);
         density *= 0.72+0.45*fbm(ink_uv*96.0+time_s*0.12);
         float accepted_ink = success_age < 0.0 ? 1.0 : 1.0-smoothstep(0.0,0.8,success_age);
-        density *= accepted_ink;
+        density *= accepted_ink*ink_envelope(ink_uv);
         float extinction = 1.0-exp(-density*2.8);
         float halo = texture2D(density_tex,ink_uv+sim_texel*vec2(2,0)).r +
                      texture2D(density_tex,ink_uv-sim_texel*vec2(2,0)).r +
                      texture2D(density_tex,ink_uv+sim_texel*vec2(0,2)).r +
                      texture2D(density_tex,ink_uv-sim_texel*vec2(0,2)).r;
-        halo *= accepted_ink;
+        halo *= accepted_ink*ink_envelope(ink_uv);
         color = mix(color,vec3(0.20,0.24,0.26),(1.0-exp(-halo*0.16))*(1.0-extinction)*0.45);
         float granular = fbm(ink_uv*170.0 + time_s*0.07);
         vec3 pigment = vec3(0.055,0.065,0.07) + granular*0.025;
@@ -151,8 +168,7 @@ void main() {
     color *= 1.0-impact*0.055;
     float grain = hash(gl_FragCoord.xy + vec2(floor(time_s*24.0),0.0))-0.5;
     color += grain*0.007;
-    if (p.y < 28.0 || p.y > 1046.0)
-        color = texture2D(background_tex, screen_uv).rgb;
+
     float vignette = 1.0-0.16*dot(screen_uv-vec2(0.5),screen_uv-vec2(0.5));
     color *= exposure_value*vec3(0.94,1.0,1.035)*vignette;
 
