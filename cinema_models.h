@@ -11,4 +11,6 @@ void cinema_models_destroy(cinema_models_t *models);
 unsigned cinema_models_depth_texture(const cinema_models_t *models);
 unsigned cinema_models_foreground_texture(const cinema_models_t *models);
 unsigned cinema_models_foreground_depth(const cinema_models_t *models);
+void cinema_models_emitter(double seconds,double failure_age,double success_age,
+                           float point[3],float *release);
 #endif

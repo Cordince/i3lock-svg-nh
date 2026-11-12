@@ -5,6 +5,7 @@ uniform sampler3D contact_sculpt;
 uniform sampler3D skin_noise;
 uniform vec2 screen_size;
 uniform vec3 bounds_low,bounds_high,origin;
+uniform vec3 trace_low,trace_high;
 uniform float yaw,writing,contact;
 
 vec3 local_point(vec3 p) {
@@ -18,16 +19,17 @@ float surface(vec3 world) {
     vec3 outside=max(max(bounds_low-p,p-bounds_high),vec3(0));
     if(dot(outside,outside)>0.0) return length(outside)+.015;
     vec3 uv=(p-bounds_low)/(bounds_high-bounds_low);
-    float a=texture3D(folded_sculpt,uv).r;
-    float b=texture3D(writing_sculpt,uv).r;
-    float c=texture3D(contact_sculpt,uv).r;
-    return mix(mix(a,b,writing),c,contact);
+    if(contact>.9999)return texture3D(contact_sculpt,uv).r;
+    float d=writing<.0001 ? texture3D(folded_sculpt,uv).r :
+            writing>.9999 ? texture3D(writing_sculpt,uv).r :
+            mix(texture3D(folded_sculpt,uv).r,texture3D(writing_sculpt,uv).r,writing);
+    if(contact>.0001)d=mix(d,texture3D(contact_sculpt,uv).r,contact);
+    return d;
 }
 bool trace(vec3 ray,out vec3 p,out float depth) {
     vec3 inverse=1.0/ray;
-    float radius=length(max(abs(bounds_low.xz),abs(bounds_high.xz)));
-    vec3 a=(origin+vec3(-radius,bounds_low.y,-radius))*inverse;
-    vec3 b=(origin+vec3(radius,bounds_high.y,radius))*inverse;
+    vec3 a=trace_low*inverse;
+    vec3 b=trace_high*inverse;
     vec3 near=min(a,b),far=max(a,b);
     float start=max(.15,max(near.x,max(near.y,near.z)));
     float finish=min(14.0,min(far.x,min(far.y,far.z)));

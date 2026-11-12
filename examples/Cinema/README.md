@@ -34,14 +34,21 @@ programmable stages:
 3. Advect ink density and guide its formation toward the current film glyph.
 4. Render the background meshes and trace the continuous foreground sculpt
    into independent color/depth layers.
-5. March 64 intervals through a three-dimensional mist volume, inserting model
+5. Cache mist density and lighting in a view-aligned 3D texture, then march 64
+   intervals through that volume, inserting model
    surfaces at their depth. Rear, middle, and front cloud banks have independent
    world-space currents, rolling deformation, density, and light attenuation.
 6. Composite the volume with animated ink, film grain, glass reflections, and
    color grading.
 
-The ink field keeps evolving while a glyph is held. Each 16-second pass forms,
-holds, and disperses one of the five documented glyphs. Keypresses inject local
+The ink field keeps evolving while a glyph is held. Each 16-second pass opens
+the hand (0.35–1.35 seconds), emits ink from its mouth (1.25–2.8 seconds),
+spreads a turbulent cloud, and gathers it into the current glyph (4–6.6 seconds).
+The hand folds back as the cloud gathers. The glyph holds until 11 seconds,
+then disperses through 14 seconds. The emitter follows the projected 3D hand
+pose, including its wrist rotation. This guided fluid sequence follows the
+production approach described in [Hybride's VFX interview](https://www.artofvfx.com/arrival-philippe-theroux-vfx-supervisor-nicolas-alexandre-noel-cg-supervisor-hybride/).
+Keypresses inject local
 ink and rotational forces. Backspace removes local ink and reverses the force.
 Checking adds circulation. Failure pushes the ink apart and drives a hand
 strike: wind-up, lunge, glass contact at 0.32 seconds, and recoil. A short damped
@@ -72,7 +79,7 @@ exact reconstruction.
 The meshes use perspective, depth testing, geometric surface normals, skin bump
 mapping, and directional lighting. A 3D volume pass accumulates scattering and transmittance along the viewing
 ray and uses the sampled mesh depth to place fog in front of and behind each
-surface. A premultiplied 49-tap filter crosses distant silhouette edges,
+surface. A premultiplied 25-tap filter crosses distant silhouette edges,
 including pixels outside the mesh. The close hand stays focused. The two
 background creatures sway, breathe, and turn slightly, with independent limb
 motion. Ink remains a 2D fluid field. The mist is a procedural participating medium
@@ -90,11 +97,22 @@ The mist field uses a periodic 64-cubed RGBA texture built by
 `cinema_volume.c`: three coherent noise channels and a cellular billow field.
 The shader warps this field into rolling lobes, erodes their edges into wisps,
 and moves the depth-local banks at different speeds and directions. Two
-additional density samples along the light direction shade each ray interval,
+additional density samples along the light direction shade each cached cell,
 producing bright edges and darker cloud interiors. The diffuse baseline is
 small so the bank shapes survive integration instead of averaging into a
 vertical fade. This is procedural advection and approximate volume lighting,
-not a fluid-dynamics solver.
+not a fluid-dynamics solver. The view-aligned cache has approximately one cell
+per ten screen pixels in each screen dimension and 64 depth slices. It preserves
+the layered moving field while sharing expensive lighting evaluations between
+screen pixels.
+
+Foreground tracing uses occupied sculpt bounds and samples only active poses.
+The optical filters use 34 taps in total, down from 74, with comparable blur
+width. Ink advances in steps no larger than 1/30 second. A 1920×1080 Iris Xe
+benchmark using an unmapped window, six warm-up frames and 24 timed frames
+improved from 102.7 ms/frame (9.7 fps) to 34.4 ms/frame (29.1 fps). During
+hand opening and ink emission it measured 35.7 ms/frame (28.0 fps). These are
+local rendering measurements, not a guaranteed desktop frame rate.
 
 The native regression checks measure lateral cloud contrast after subtracting
 each sampled row's mean, then measure five-second motion in a patch clear of

@@ -142,6 +142,18 @@ static uint64_t snapshot_hash(scene_renderer_t *renderer, int64_t time_ms,
 }
 
 int main(void) {
+    float mouth[3],release;
+    cinema_models_emitter(0,-1,-1,mouth,&release);
+    expect(release==0,"folded hand does not emit ink");
+    cinema_models_emitter(1.8,-1,-1,mouth,&release);
+    // The API uses seconds, matching the foreground pose and shader clock.
+    expect(release>.9f&&mouth[2]>1&&mouth[2]<4,"opened hand emits from its physical mouth");
+    cinema_models_emitter(3.1,-1,-1,mouth,&release);
+    expect(release==0,"ink emission ends before the glyph settles");
+    cinema_models_emitter(1.8,-1,0,mouth,&release);
+    expect(release==0,"acceptance stops fresh ink emission");
+    cinema_models_emitter(1.8,0,-1,mouth,&release);
+    expect(release==0,"glass strike does not keep emitting writing ink");
     int screen_number = 0;
     xcb_connection_t *connection = xcb_connect(NULL, &screen_number);
     expect(connection && !xcb_connection_has_error(connection), "connect cinema test display");

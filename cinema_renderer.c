@@ -14,9 +14,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-enum { VELOCITY, DIVERGENCE, PRESSURE, PROJECT, DENSITY, COMPOSITE, PROGRAM_COUNT };
+enum { VELOCITY, DIVERGENCE, PRESSURE, PROJECT, DENSITY, MIST_CACHE, COMPOSITE, PROGRAM_COUNT };
 enum { U_SCREEN, U_TEXEL, U_TIME, U_PHASE, U_STEP, U_FORMATION, U_DISPERSION,
-       U_STATE, U_STATE_AGE, U_SUCCESS, U_IMPULSES, U_EXPOSURE, UNIFORM_COUNT };
+       U_STATE, U_STATE_AGE, U_SUCCESS, U_IMPULSES, U_EXPOSURE, U_EMITTER, U_RELEASE, U_MIST_SLICE, UNIFORM_COUNT };
 
 typedef struct {
     GLuint id;
@@ -31,11 +31,14 @@ struct cinema_renderer {
     cinema_models_t *models;
     GLuint model_texture;
     GLuint volume_noise;
+    GLuint mist_cache;
+    unsigned mist_width,mist_height,mist_slice;
     bool ready;
     unsigned width, height;
     int simulation_size, pressure_iterations;
     double pass_seconds;
     double exposure;
+    float emitter[4],release;
     char *shader_directory;
     GdkPixbuf *background_image;
     GdkPixbuf **glyph_images;
@@ -230,7 +233,14 @@ static bool load_program(cinema_renderer_t *renderer, const char *filename,
         g_free(vertex_source); g_free(common_source); g_free(body);
         return fail(error, "could not load cinema shader %s", filename);
     }
-    gchar *fragment_source = g_strconcat("#version 120\n", common_source, "\n", body, NULL);
+    gchar *mist_source=NULL;
+    if(!strcmp(filename,"mist_cache.frag")) {
+        gchar *path=g_build_filename(renderer->shader_directory,"mist_field.glsl",NULL);
+        bool ok=g_file_get_contents(path,&mist_source,NULL,NULL);g_free(path);
+        if(!ok) {g_free(vertex_source);g_free(common_source);g_free(body);return fail(error,"could not load mist field shader");}
+    }
+    gchar *fragment_source = g_strconcat("#version 120\n", common_source, "\n", mist_source ? mist_source : "", "\n", body, NULL);
+    g_free(mist_source);
     GLuint vertex = compile_shader(GL_VERTEX_SHADER, vertex_source, "vertex", error);
     GLuint fragment = compile_shader(GL_FRAGMENT_SHADER, fragment_source, filename, error);
     g_free(vertex_source); g_free(common_source); g_free(body); g_free(fragment_source);
@@ -253,7 +263,7 @@ static bool load_program(cinema_renderer_t *renderer, const char *filename,
         return fail(error, "%s link: %s", filename, log);
     }
     const char *uniform_names[] = {"screen_size", "sim_texel", "time_s", "phase_s", "step_s",
-        "formation", "dispersion", "state_value", "state_age", "success_age", "impulses", "exposure_value"};
+        "formation", "dispersion", "state_value", "state_age", "success_age", "impulses", "exposure_value", "emitter", "release_value", "mist_slice"};
     for (size_t index = 0; index < UNIFORM_COUNT; ++index)
         program->uniforms[index] = glGetUniformLocation(program->id, uniform_names[index]);
     const char *samplers[] = {"velocity_tex", "density_tex", "pressure_tex", "divergence_tex",
@@ -265,6 +275,7 @@ static bool load_program(cinema_renderer_t *renderer, const char *filename,
     // The composite program does not sample velocity_tex, so its 3D noise
     // sampler can use unit 0. Simulation programs use the 2D binding there.
     glUniform1i(glGetUniformLocation(program->id, "volume_noise_tex"), 0);
+    glUniform1i(glGetUniformLocation(program->id, "mist_cache_tex"), 2);
     glUseProgram(0);
     return true;
 }
@@ -297,7 +308,7 @@ static bool initialize_gpu(cinema_renderer_t *renderer, char error[SCENE_ERROR_L
     if(texture_units<10)
         return fail(error,"native cinematic layers require ten fragment texture units");
     const char *files[] = {"velocity.frag", "divergence.frag", "pressure.frag", "project.frag",
-                           "density.frag", "composite.frag"};
+                           "density.frag", "mist_cache.frag", "composite.frag"};
     for (size_t index = 0; index < PROGRAM_COUNT; ++index) {
         if (!load_program(renderer, files[index], &renderer->programs[index], error))
             return false;
@@ -342,16 +353,19 @@ static void draw_pass(cinema_renderer_t *renderer, int index, GLuint output,
                        double seconds, double phase, double step, size_t glyph) {
     cinema_program_t *program = &renderer->programs[index];
     glBindFramebuffer(GL_FRAMEBUFFER, output ? renderer->framebuffer : 0);
-    if (output)
+    if(index==MIST_CACHE)
+        glFramebufferTextureLayer(GL_FRAMEBUFFER,GL_COLOR_ATTACHMENT0,renderer->mist_cache,0,renderer->mist_slice);
+    else if (output)
         glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, output, 0);
-    glViewport(0, 0, output ? renderer->simulation_size : renderer->width,
-                       output ? renderer->simulation_size : renderer->height);
+    glViewport(0, 0, index==MIST_CACHE ? renderer->mist_width : output ? renderer->simulation_size : renderer->width,
+                       index==MIST_CACHE ? renderer->mist_height : output ? renderer->simulation_size : renderer->height);
     GLuint textures[] = {renderer->velocity[renderer->velocity_index], renderer->density[renderer->density_index],
         renderer->pressure[renderer->pressure_index], renderer->divergence, renderer->glyphs[glyph],
         renderer->background, renderer->model_texture, cinema_models_depth_texture(renderer->models),
         cinema_models_foreground_texture(renderer->models),cinema_models_foreground_depth(renderer->models)};
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_3D, renderer->volume_noise);
+    glActiveTexture(GL_TEXTURE2);glBindTexture(GL_TEXTURE_3D,renderer->mist_cache);
     for (int unit = 0; unit < 10; ++unit) {
         glActiveTexture(GL_TEXTURE0 + unit);
         glBindTexture(GL_TEXTURE_2D, textures[unit]);
@@ -363,7 +377,7 @@ static void draw_pass(cinema_renderer_t *renderer, int index, GLuint output,
     glUniform1f(uniforms[U_TIME], seconds);
     glUniform1f(uniforms[U_PHASE], phase);
     glUniform1f(uniforms[U_STEP], step);
-    double formation = fmin(1.0, fmax(0.0, (phase - 0.8) / 3.0));
+    double formation = fmin(1.0, fmax(0.0, (phase - 4.0) / 2.6));
     double dispersion = fmin(1.0, fmax(0.0, (phase - 11.0) / 3.0));
     glUniform1f(uniforms[U_FORMATION], formation);
     glUniform1f(uniforms[U_DISPERSION], dispersion);
@@ -372,6 +386,9 @@ static void draw_pass(cinema_renderer_t *renderer, int index, GLuint output,
     glUniform1f(uniforms[U_SUCCESS], renderer->success_ms < 0 ? -1 : seconds - renderer->success_ms / 1000.0);
     glUniform4fv(uniforms[U_IMPULSES], 8, &renderer->impulses[0][0]);
     glUniform1f(uniforms[U_EXPOSURE], renderer->exposure);
+    glUniform4fv(uniforms[U_EMITTER],1,renderer->emitter);
+    glUniform1f(uniforms[U_RELEASE],renderer->release);
+    glUniform1f(uniforms[U_MIST_SLICE],renderer->mist_slice);
     glBindBuffer(GL_ARRAY_BUFFER, renderer->vertices);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 0, NULL);
@@ -395,6 +412,19 @@ bool cinema_renderer_render(cinema_renderer_t *renderer, int64_t now_ms,
     int64_t pass = (int64_t)floor(seconds / renderer->pass_seconds);
     size_t glyph = (size_t)pass % renderer->glyph_count;
     double phase = fmod(seconds, renderer->pass_seconds);
+    double failure_age = renderer->state == SCENE_STATE_FAIL ? seconds-renderer->state_ms/1000.0 : -1;
+    double success_age = renderer->success_ms < 0 ? -1 : seconds-renderer->success_ms/1000.0;
+    float mouth[3];
+    cinema_models_emitter(seconds,failure_age,success_age,mouth,&renderer->release);
+    double scale=fmin(renderer->width/1920.0,renderer->height/1080.0);
+    double px=renderer->width*(.5+mouth[0]*1.65/(renderer->width/(double)renderer->height)/mouth[2]*.5);
+    double py=renderer->height*(.5-mouth[1]*1.65/mouth[2]*.5);
+    px=(px-(renderer->width-1920*scale)*.5)/scale;
+    py=(py-(renderer->height-1080*scale)*.5)/scale;
+    renderer->emitter[0]=fmax(.02,fmin(.98,(px-640)/640));
+    renderer->emitter[1]=fmax(.02,fmin(.98,1-(py-190)/640));
+    double dx=.50-renderer->emitter[0],dy=.55-renderer->emitter[1],length=hypot(dx,dy);
+    renderer->emitter[2]=dx/fmax(.001,length);renderer->emitter[3]=dy/fmax(.001,length);
     if (pass != renderer->glyph_pass) {
         for (size_t index = 0; index < 2; ++index) {
             clear_field(renderer, renderer->velocity[index]);
@@ -405,7 +435,7 @@ bool cinema_renderer_render(cinema_renderer_t *renderer, int64_t now_ms,
     }
     double elapsed = renderer->last_ms < 0 ? 1.0 / 60.0 : fmax(0.0, (now_ms - renderer->last_ms) / 1000.0);
     renderer->last_ms = now_ms;
-    int steps = (int)fmin(6, fmax(1, ceil(elapsed * 60)));
+    int steps = (int)fmin(6, fmax(1, ceil(elapsed * 30)));
     double step = fmin(elapsed / steps, 1.0 / 30.0);
     for (int iteration = 0; iteration < steps; ++iteration) {
         draw_pass(renderer, VELOCITY, renderer->velocity[1-renderer->velocity_index], seconds, phase, step, glyph);
@@ -420,12 +450,22 @@ bool cinema_renderer_render(cinema_renderer_t *renderer, int64_t now_ms,
         draw_pass(renderer, DENSITY, renderer->density[1-renderer->density_index], seconds, phase, step, glyph);
         renderer->density_index = 1-renderer->density_index;
     }
-    double failure_age = renderer->state == SCENE_STATE_FAIL ? seconds - renderer->state_ms / 1000.0 : -1;
     renderer->model_texture = cinema_models_render(renderer->models, renderer->width, renderer->height,
                                                    seconds, failure_age,
                                                    renderer->success_ms < 0 ? -1 : seconds-renderer->success_ms/1000.0, error);
     if (!renderer->model_texture)
         return false;
+    unsigned mw=fmax(64,fmin(256,(renderer->width+9)/10)),mh=fmax(36,fmin(144,(renderer->height+9)/10));
+    if(mw!=renderer->mist_width||mh!=renderer->mist_height) {
+        if(!renderer->mist_cache)glGenTextures(1,&renderer->mist_cache);
+        glActiveTexture(GL_TEXTURE2);glBindTexture(GL_TEXTURE_3D,renderer->mist_cache);
+        glTexParameteri(GL_TEXTURE_3D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);glTexParameteri(GL_TEXTURE_3D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_3D,GL_TEXTURE_WRAP_S,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_3D,GL_TEXTURE_WRAP_T,GL_CLAMP_TO_EDGE);glTexParameteri(GL_TEXTURE_3D,GL_TEXTURE_WRAP_R,GL_CLAMP_TO_EDGE);
+        glTexImage3D(GL_TEXTURE_3D,0,GL_RGBA16F,mw,mh,64,0,GL_RGBA,GL_FLOAT,NULL);
+        renderer->mist_width=mw;renderer->mist_height=mh;
+    }
+    for(renderer->mist_slice=0;renderer->mist_slice<64;renderer->mist_slice++)
+        draw_pass(renderer,MIST_CACHE,renderer->mist_cache,seconds,phase,step,glyph);
     draw_pass(renderer, COMPOSITE, 0, seconds, phase, step, glyph);
     glUseProgram(0);
     glActiveTexture(GL_TEXTURE0);
@@ -483,6 +523,7 @@ void cinema_renderer_destroy(cinema_renderer_t *renderer) {
         glDeleteTextures(1, &renderer->divergence);
         glDeleteTextures(1, &renderer->background);
         glDeleteTextures(1, &renderer->volume_noise);
+        glDeleteTextures(1, &renderer->mist_cache);
         if (renderer->glyphs)
             glDeleteTextures(renderer->glyph_count, renderer->glyphs);
         glDeleteFramebuffers(1, &renderer->framebuffer);

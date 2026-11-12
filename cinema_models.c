@@ -256,3 +256,6 @@ unsigned cinema_models_depth_texture(const cinema_models_t *m) {
 }
 unsigned cinema_models_foreground_texture(const cinema_models_t *m) {return m ? m->foreground_color : 0;}
 unsigned cinema_models_foreground_depth(const cinema_models_t *m) {return m ? m->foreground_depth : 0;}
+void cinema_models_emitter(double seconds,double failure_age,double success_age,float point[3],float *release) {
+    cinema_foreground_emitter(seconds,failure_age,success_age,point,release);
+}

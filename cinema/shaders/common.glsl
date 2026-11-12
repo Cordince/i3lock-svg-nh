@@ -8,6 +8,7 @@ uniform sampler2D background_tex;
 uniform sampler2D actor_tex;
 uniform sampler2D model_depth_tex;
 uniform sampler3D volume_noise_tex;
+uniform sampler3D mist_cache_tex;
 uniform sampler2D foreground_tex;
 uniform sampler2D foreground_depth_tex;
 uniform vec2 screen_size;
@@ -21,6 +22,9 @@ uniform float state_value;
 uniform float state_age;
 uniform float success_age;
 uniform float exposure_value;
+uniform vec4 emitter;
+uniform float release_value;
+uniform float mist_slice;
 uniform vec4 impulses[8];
 
 float hash(vec2 p) {

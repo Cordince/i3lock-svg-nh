@@ -27,7 +27,8 @@ baking. The checked-in `.sdf` assets load directly in the C application.
 the upper attachment, and traces the continuous surface. Gradient normals,
 broad wrapped lighting, surface grain and fine hide folds replace polygon-joint
 shading. Four subpixel rays provide fractional silhouette coverage. The hand
-partially opens during writing, spreads against the glass on failure, and
+opens and turns its mouth toward the glass to emit a turbulent ink plume,
+folds back as the plume gathers into a logogram, spreads against the glass on failure, and
 withdraws upward on acceptance without a white fade.
 
 Background and foreground have independent color/depth layers. The compositor
@@ -38,6 +39,9 @@ is drawn afterward and stays sharp.
 
 The older hand OBJ remains a loft study. It is no longer the active foreground
 model. The approved background torso, limb geometry and mist field are retained.
+Mist lighting is cached in a view-aligned volume before depth integration;
+the foreground uses a nine-tap optical filter and occupied-volume trace bounds.
+The ink remains a guided 2D fluid rather than a full 3D fluid simulation.
 
 ## Checks and reference preparation
 
